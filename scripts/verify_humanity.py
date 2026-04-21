@@ -3361,6 +3361,7 @@ def main():
         1870, 1875, 1900, 1950, 1960, 1975, 1980, 1985, 1990,
         2000, 2001, 2010, 2013, 2015, 2022,
         # Historical/reference years for events cited in text (not computed findings)
+        1025,           # Chola maritime expansion (§the-dark-parallel)
         1500,           # European expansion start
         1800,           # post-1800 Preston Curve reference
         1860,           # colonial schooling distribution

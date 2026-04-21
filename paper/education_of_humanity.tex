@@ -109,9 +109,9 @@ scale no individual could invent alone. Formal schooling is the
 latest and highest-bandwidth payload ever delivered through this
 evolved channel.
 
-I argue that education is the necessary and sufficient cause of
-human development: mass schooling is the developmental input that
-loads the parental transmission channel, and the outcomes
+I argue that education is the necessary and sufficient
+population-scale input for the developmental phenotype: mass
+schooling loads the parental transmission channel, and the outcomes
 conventionally tracked as ``human development'' --- fertility,
 longevity, offspring survival --- are the life-history phenotypes
 this input produces. Because the channel operates through parental
@@ -127,7 +127,11 @@ have crossed both development thresholds (TFR below 3.65, life
 expectancy above 69.8 --- the 1960 United States values). Every one
 through education. A great-great-grandparent's school completion
 predicts their great-great-grandchild's child-survival outcomes a
-century later.
+century later. Seven empirical signatures are deduced from the
+biology in advance --- generational timing, multi-generational
+persistence, asymmetric disruption, income independence,
+universality, amplification at low baselines, famine resistance ---
+and tested against the panel; all seven hold.
 
 Easterlin (1981) identified mass schooling as the cause of uneven
 development and asked why the whole world wasn't yet developed; his
@@ -349,7 +353,7 @@ Richerson (1985) formalised parent-to-child cultural transmission as
 the mechanism by which human populations accumulate knowledge across
 generations --- at higher bandwidth than the genetic channel, because
 transmission is continuous across the dependency window rather than
-a single reproductive event. Hawkes et al.\ (1998) closed the loop:
+a single reproductive event. Hawkes (2003) closed the loop:
 post-reproductive human longevity, unique among primates, evolved to
 support grandchild survival, which is why longevity and fertility
 move together as one developmental signature.
@@ -367,11 +371,11 @@ juvenile dependency period and supported by the post-reproductive
 longevity that evolved alongside it.
 
 The two traditions converge in this paper's central claim: that
-education is the necessary and sufficient cause of human development,
-that income and provision are downstream, and that the mechanism
-operates through the biological channel of parental transmission
-across generations. The rest of the paper states the mechanism and
-tests it.
+education is the necessary and sufficient cause of human development
+at the population scale, that income and provision are downstream of
+the same biological channel, and that the channel operates through
+parental transmission across generations. The rest of the paper
+states the mechanism and tests it.
 
 \subsection{Why the Mechanism Has Been Missed}\label{why-the-mechanism-has-been-missed}
 
@@ -443,7 +447,7 @@ the allomothering pattern is itself part of the species adaptation
 load-bearing: human females live decades past menopause because
 post-reproductive women raised grandchildren's survival and
 transmission odds enough to select for the long post-reproductive
-lifespan (Hawkes et al.\ 1998). Dependency, cooperative breeding, and
+lifespan (Hawkes 2003). Dependency, cooperative breeding, and
 the long post-reproductive adult life are three parts of a single
 architecture.
 
@@ -974,7 +978,6 @@ raises the baseline.
 
 \begin{figure}[htbp]
 \centering
-\resizebox{\textwidth}{!}{%
 \begin{tikzpicture}[
   box/.style={rectangle, rounded corners=3pt, draw=black!70, fill=black!3,
               line width=0.7pt, minimum width=2.2cm, minimum height=0.95cm,
@@ -984,8 +987,7 @@ raises the baseline.
   every path/.style={line width=0.7pt, draw=black!60}
 ]
 
-% ── Loop nodes (hexagonal layout, shifted left for radii room) ──
-\begin{scope}[xshift=-2.0cm]
+% ── Loop nodes (hexagonal layout) ──
 \node[box] (edu)  at (90:3.6)   {Education};
 \node[box] (cat)  at (30:3.6)   {Categorical\\literacy};
 \node[box] (hh)   at (-30:3.6)  {Household\\decisions};
@@ -1003,12 +1005,34 @@ raises the baseline.
 
 % ── Centre annotation ──
 \node[font=\small\itshape, text=black!50, align=center] at (0,0) {Each pass\\raises the\\baseline};
-\end{scope}
+\end{tikzpicture}
+\caption{The generational transmission loop. Education installs categorical literacy; categorical literacy shapes household decisions; household decisions drive the fertility transition; fewer children per household releases resources; those resources amplify the next generation's education through parental transmission. Each pass through the \textasciitilde{}25-year cycle raises the baseline.}
+\label{fig:loop}
+\end{figure}
 
-% ── Four radii from Household decisions ──
-% Tips vertically aligned at x=4.8, labels next to Durable/Fragile axis
+\subsection{From Action to Talk: How Education Reaches Beyond the Household}\label{from-action-to-talk-how-education-reaches-beyond-the-household}
+
+Education's effects start in the household but do not stay there. The
+four radii shown in Figure~\ref{fig:radii} extend education's effects
+outward from the Household decisions node of the generational loop
+(Figure~\ref{fig:loop}), with decreasing durability as the radius
+widens.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+  box/.style={rectangle, rounded corners=3pt, draw=black!70, fill=black!3,
+              line width=0.7pt, minimum width=2.4cm, minimum height=0.95cm,
+              font=\small\bfseries, align=center},
+  >=Stealth,
+  every path/.style={line width=0.7pt, draw=black!60}
+]
+
+% ── Anchor node on the left ──
+\node[box] (hh) at (0,0) {Household\\decisions};
 \coordinate (origin) at ($(hh.east)+(0.05,0)$);
 
+% ── Four radii ──
 \draw[-{Stealth[length=5pt]}, line width=1.2pt, black!55]
   (origin) -- (5.2, 3.0);
 \draw[-{Stealth[length=5pt]}, line width=1.2pt, black!55]
@@ -1018,7 +1042,7 @@ raises the baseline.
 \draw[-{Stealth[length=5pt]}, line width=1.2pt, black!55]
   (origin) -- (5.2, -3.6);
 
-% ── Durable/Fragile vertical axis with labels alongside ──
+% ── Durable/Fragile axis ──
 \draw[-{Stealth[length=4pt]}, black!35, line width=0.5pt] (5.5, 3.6) -- (5.5, -4.1);
 \node[font=\footnotesize\itshape, text=black!40, anchor=south] at (5.5, 3.6) {Durable};
 \node[font=\footnotesize\itshape, text=black!40, anchor=north] at (5.5, -4.1) {Fragile};
@@ -1035,18 +1059,14 @@ raises the baseline.
 \node[anchor=west, font=\small\bfseries, text=black] at (5.7, -3.6) {Global};
 \node[anchor=north west, font=\footnotesize\itshape, text=black!55] at (5.7, -3.75) {Talk};
 
-\end{tikzpicture}%
-}
-\caption{The generational transmission loop and four radii of educational effect. The loop traces the causal pathway from education through household decisions back to the next generation's education (\textasciitilde{}25 years). The four radii show how education's effects extend beyond the household with decreasing durability: self-interest compounds; talk requires continuous external commitment.}
-\label{fig:mechanism}
+\end{tikzpicture}
+\caption{Four radii of educational effect. Education's effects extend
+outward from the Household decisions node of the generational loop
+(Figure~\ref{fig:loop}), with durability decreasing as the radius
+widens: self-interest compounds; talk requires continuous external
+commitment.}
+\label{fig:radii}
 \end{figure}
-
-\subsection{From Action to Talk: How Education Reaches Beyond the Household}\label{from-action-to-talk-how-education-reaches-beyond-the-household}
-
-Education's effects start in the household but do not stay there. The
-four radii shown in Figure~\ref{fig:mechanism} extend education's
-effects beyond the generational loop, with decreasing durability as the
-radius widens.
 
 The PT mechanism operates through action --- the household decisions of
 educated adults. But education's effects extend beyond the household,
@@ -1488,6 +1508,9 @@ attention. Education produces the first move; the rest cascades from it.
 
 \section{The Prediction}\label{the-prediction}
 
+The claim this chapter tests is that education is the necessary and
+sufficient population-scale input for the developmental phenotype.
+
 A causal model, if real, entails empirical patterns that the data
 must show (Pearl 2009). These predictions follow from the biology
 set out in Chapters~\ref{longest-juvenile-dependency}--\ref{pt-and-state},
@@ -1496,7 +1519,10 @@ to outcomes. Chapter~\ref{the-panel} is the formal check. If the
 mechanism is real --- if extended juvenile dependency creates a
 biological channel for cultural transmission, and formal education
 is the most powerful payload ever delivered through that channel ---
-then seven empirical patterns must hold.
+then seven empirical patterns must hold. The outcomes across which
+those patterns must appear --- fertility, longevity, offspring
+survival --- are the classical fitness components of life-history
+theory (Stearns 1992).
 
 \begin{enumerate}
 \item \textbf{Generational timing.} Because the juvenile dependency
@@ -1585,7 +1611,7 @@ Section~\ref{the-cases} demonstrate historically.
 Three literatures converge on the substrate this section tests.
 The \emph{evolutionary-anthropology} substrate is the foundation: Konner
 (2010) on extended juvenile dependency; Wrangham (2009) on the caloric
-substrate for the expensive brain; Hrdy (2009) and Hawkes et al.~(1998)
+substrate for the expensive brain; Hrdy (2009) and Hawkes (2003)
 on cooperative breeding and the post-reproductive life; Herculano-Houzel
 (2016) on the energy budget that sustains the primate brain at human
 scale; Tomasello (2014) on the cumulative-cultural ratchet; Dehaene et
@@ -3175,6 +3201,14 @@ European window that is not also in the long human record of organised
 expansion under pressure. The scale is larger because the capacity is
 larger; the humans are what they have always been.
 
+The Chola maritime expansion across the Bay of Bengal in 1025,
+reaching Srivijaya and Kedah, instances the same structure from an
+Indian base centuries before the European maritime projection --- the
+substrate-and-pressure combination produces outward projection in
+whatever geography it obtains, and the form it takes (continental,
+maritime, tributary, settler) reflects local conditions rather than
+population-specific tendencies.
+
 The directing class at the top of the imperial machinery made
 decisions whose costs fell on populations unable to resist. They are
 not named here because the paper is about a mechanism, not about
@@ -3304,11 +3338,23 @@ remain what it has always been, with its hierarchies and its arbitrary
 out-group orientations intact. The peace that follows when the
 Malthusian engine runs out of fuel and the arbitrary othering humans
 always do loses the demographic pressure that has scaled it into mass
-violence for most of recorded history. What remains is the ordinary
-evolutionary baseline at a scale the species has not previously
-experienced: a planet on which most populations have the capacity to
-feed themselves, to defend themselves, and to pressure their own
+violence for most of recorded history. Motive-removal is primary;
+defensive capacity is the backstop. Peace follows not from the
+brittle equilibrium of mutual deterrence but from the dissolution of
+the demographic configuration that made outward projection
+structurally rational --- the nuclear era, capacity without
+motive-removal on both sides, produced suspended near-conflict across
+four decades, not peace. What remains is the ordinary evolutionary
+baseline at a scale the species has not previously experienced: a
+planet on which most populations have the capacity to feed
+themselves, to defend themselves, and to pressure their own
 governments.
+
+The peace claim and the development claim are therefore the same
+claim, through the same mechanism: completing the convergence is what
+dissolves the pressure that produced the four-century window, and the
+decision that extends education is also the decision that extends
+peace.
 
 This is the claim the mechanism supports.
 
@@ -4309,10 +4355,8 @@ Hare, B. \& Woods, V. (2020). \emph{Survival of the Friendliest:
 Understanding Our Origins and Rediscovering Our Common Humanity}.
 Random House.
 
-Hawkes, K., O'Connell, J.F., Jones, N.G.B., Alvarez, H. \& Charnov, E.L.
-(1998). Grandmothering, menopause, and the evolution of human life
-histories. \emph{Proceedings of the National Academy of Sciences},
-95(3), 1336--1339.
+Hawkes, K. (2003). Grandmothers and the evolution of human
+longevity. \emph{American Journal of Human Biology}, 15(3), 380--400.
 
 Herculano-Houzel, S. (2016). \emph{The Human Advantage: A New
 Understanding of How Our Brain Became Remarkable}. MIT Press.
@@ -4387,6 +4431,9 @@ Schultz, T.W. (1961). Investment in Human Capital.
 Sen, A. (1999). \emph{Development as Freedom}. Oxford University Press.
 
 Smil, V. (2017). \emph{Energy and Civilization: A History}. MIT Press.
+
+Stearns, S.C. (1992). \emph{The Evolution of Life Histories}. Oxford
+University Press.
 
 Tomasello, M. (2014). \emph{A Natural History of Human Thinking}.
 Harvard University Press.
