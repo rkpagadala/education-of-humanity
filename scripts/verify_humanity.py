@@ -232,7 +232,7 @@ S_TFR   = os.path.join(REPO_ROOT, "scripts", "residualization", "education_vs_tf
 reg("T1-obs",        1665,   "checkin", ("panel_full_fe.json", "numbers.panel_obs"),
     [(DATA_SEC, None), (APPENDIX_ROBUST, None), (APPENDIX_TWFE, None)], tol=0)
 reg("T1-countries",  185,    "checkin", ("panel_full_fe.json", "numbers.panel_countries"),
-    [(ABSTRACT, 112), (THE_EVIDENCE, None), (DATA_SEC, 3), (APPENDIX_ROBUST, None),
+    [(ABSTRACT, 124), (THE_EVIDENCE, None), (DATA_SEC, 3), (APPENDIX_ROBUST, None),
      ("specialisation-requires-loaded-labour", None),
      ("nine-year-measurement", None),
      (EMPIRICAL, None)], tol=0)
@@ -3354,6 +3354,8 @@ def main():
         185,            # n-countries in full WCDE panel (universal constant)
         # Development-threshold constants (fixed design parameters):
         2.5, 3.65, 4.5, 69.8, 72.6, # TFR/LE threshold variants
+        3.8,  # Uganda §the-decision rhetorical bracket above 3.65 threshold
+              # ("lands at 3.6 or 3.8"); illustration, not empirical claim.
         # WCDE five-year grid / data observation years — used as lookup
         # parameters throughout, not computed findings
         1870, 1875, 1900, 1950, 1960, 1975, 1980, 1985, 1990,
