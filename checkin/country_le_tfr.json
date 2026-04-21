@@ -1,0 +1,167 @@
+{
+  "sources": [
+    "data/life_expectancy_years.csv",
+    "data/children_per_woman_total_fertility.csv",
+    "wcde/data/processed/e0.csv",
+    "wcde/data/processed/tfr.csv"
+  ],
+  "claims": [
+    {
+      "claim": "USA 1960 TFR=3.65",
+      "cited": 3.65,
+      "actual": 3.7,
+      "diff": 0.05,
+      "pass": true
+    },
+    {
+      "claim": "USA 1960 LE=69.8",
+      "cited": 69.8,
+      "actual": 69.8,
+      "diff": 0.0,
+      "pass": true
+    },
+    {
+      "claim": "Japan 1960 TFR=2.0",
+      "cited": 2.0,
+      "actual": 2.0,
+      "diff": 0.0,
+      "pass": true
+    },
+    {
+      "claim": "Japan 1960 LE=67.7",
+      "cited": 67.7,
+      "actual": 67.7,
+      "diff": 0.0,
+      "pass": true
+    },
+    {
+      "claim": "Sri Lanka 1988 LE=69.0",
+      "cited": 69.0,
+      "actual": 69.0,
+      "diff": 0.0,
+      "pass": true
+    },
+    {
+      "claim": "Sri Lanka 1989 LE=67.3",
+      "cited": 67.3,
+      "actual": 67.3,
+      "diff": 0.0,
+      "pass": true
+    },
+    {
+      "claim": "Sri Lanka 1993 LE=69.8",
+      "cited": 69.8,
+      "actual": 70.0,
+      "diff": 0.2,
+      "pass": true
+    },
+    {
+      "claim": "Myanmar 1960 TFR=5.9",
+      "cited": 5.9,
+      "actual": 5.9,
+      "diff": 0.0,
+      "pass": true
+    },
+    {
+      "claim": "Myanmar 2015 TFR=2.3",
+      "cited": 2.3,
+      "actual": 2.3,
+      "diff": 0.0,
+      "pass": true
+    },
+    {
+      "claim": "Myanmar 1960 LE=44.1",
+      "cited": 44.1,
+      "actual": 44.1,
+      "diff": 0.0,
+      "pass": true
+    },
+    {
+      "claim": "Myanmar 2015 LE=65.3",
+      "cited": 65.3,
+      "actual": 65.3,
+      "diff": 0.0,
+      "pass": true
+    },
+    {
+      "claim": "Uganda 1960 LE=45.6",
+      "cited": 45.6,
+      "actual": 45.6,
+      "diff": 0.0,
+      "pass": true
+    },
+    {
+      "claim": "India 1960 LE=45.6",
+      "cited": 45.6,
+      "actual": 45.6,
+      "diff": 0.0,
+      "pass": true
+    },
+    {
+      "claim": "Uganda 1980 LE=43.5",
+      "cited": 43.5,
+      "actual": 43.5,
+      "diff": 0.0,
+      "pass": true
+    },
+    {
+      "claim": "Cuba 1960 LE=63.3",
+      "cited": 63.3,
+      "actual": 63.3,
+      "diff": 0.0,
+      "pass": true
+    },
+    {
+      "claim": "Cuba 1974 LE=69.9",
+      "cited": 69.9,
+      "actual": 69.9,
+      "diff": 0.0,
+      "pass": true
+    },
+    {
+      "claim": "Korea 1965 LE=55.9",
+      "cited": 55.9,
+      "actual": 55.9,
+      "diff": 0.0,
+      "pass": true
+    },
+    {
+      "claim": "China ~1960 LE~53",
+      "cited": 53.0,
+      "actual": 33.4,
+      "diff": -19.6,
+      "pass": false
+    },
+    {
+      "claim": "Bangladesh 2014 LE=70.0",
+      "cited": 70.0,
+      "actual": 70.0,
+      "diff": 0.0,
+      "pass": true
+    },
+    {
+      "claim": "Bangladesh 2014 TFR=2.23",
+      "cited": 2.23,
+      "actual": 2.2,
+      "diff": -0.03,
+      "pass": true
+    },
+    {
+      "claim": "Uganda Table4 TFR=4.39",
+      "cited": 4.39,
+      "actual": 4.4,
+      "diff": 0.01,
+      "pass": true
+    },
+    {
+      "claim": "Uganda Table4 LE=67.7",
+      "cited": 67.7,
+      "actual": 67.7,
+      "diff": 0.0,
+      "pass": true
+    }
+  ],
+  "summary": "21/22 LE/TFR claims passed",
+  "script": "scripts/cases/country_le_tfr.py",
+  "produced": "2026-04-20"
+}

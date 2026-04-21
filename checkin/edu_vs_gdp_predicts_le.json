@@ -1,0 +1,95 @@
+{
+  "method": "Country FE (demeaned), T=1975/1980/1985/1990, outcome=LE(T+25)",
+  "education_variable": "lower secondary completion, both sexes, age 20-24 (WCDE v3)",
+  "gdp_variable": "log GDP per capita, constant 2017 USD (World Bank WDI)",
+  "le_variable": "life expectancy at birth (World Bank WDI)",
+  "data_sources": {
+    "education": "https://dataexplorer.wittgensteincentre.org/wcde-v3/",
+    "gdp": "https://data.worldbank.org/indicator/NY.GDP.PCAP.KD",
+    "life_expectancy": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN"
+  },
+  "numbers": {
+    "lt10": {
+      "edu_r2": 0.506,
+      "edu_n": 58,
+      "edu_countries": 18,
+      "gdp_r2": 0.016,
+      "gdp_n": 45,
+      "gdp_countries": 14
+    },
+    "lt20": {
+      "edu_r2": 0.348,
+      "edu_n": 147,
+      "edu_countries": 43,
+      "gdp_r2": 0.02,
+      "gdp_n": 121,
+      "gdp_countries": 36
+    },
+    "lt30": {
+      "edu_r2": 0.328,
+      "edu_n": 213,
+      "edu_countries": 59,
+      "gdp_r2": 0.024,
+      "gdp_n": 185,
+      "gdp_countries": 54
+    },
+    "lt40": {
+      "edu_r2": 0.297,
+      "edu_n": 285,
+      "edu_countries": 79,
+      "gdp_r2": 0.008,
+      "gdp_n": 255,
+      "gdp_countries": 74
+    },
+    "lt50": {
+      "edu_r2": 0.314,
+      "edu_n": 347,
+      "edu_countries": 92,
+      "gdp_r2": 0.018,
+      "gdp_n": 318,
+      "gdp_countries": 88
+    },
+    "lt60": {
+      "edu_r2": 0.315,
+      "edu_n": 405,
+      "edu_countries": 109,
+      "gdp_r2": 0.01,
+      "gdp_n": 366,
+      "gdp_countries": 101
+    },
+    "lt70": {
+      "edu_r2": 0.325,
+      "edu_n": 454,
+      "edu_countries": 118,
+      "gdp_r2": 0.007,
+      "gdp_n": 403,
+      "gdp_countries": 108
+    },
+    "lt80": {
+      "edu_r2": 0.315,
+      "edu_n": 487,
+      "edu_countries": 127,
+      "gdp_r2": 0.01,
+      "gdp_n": 435,
+      "gdp_countries": 118
+    },
+    "lt90": {
+      "edu_r2": 0.313,
+      "edu_n": 541,
+      "edu_countries": 140,
+      "gdp_r2": 0.019,
+      "gdp_n": 477,
+      "gdp_countries": 128
+    },
+    "all": {
+      "edu_r2": 0.299,
+      "edu_n": 720,
+      "edu_countries": 180,
+      "gdp_r2": 0.041,
+      "gdp_n": 566,
+      "gdp_countries": 148
+    }
+  },
+  "script": "scripts/residualization/education_predicts_le.py",
+  "produced": "2026-04-20"
+}

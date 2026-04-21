@@ -1,0 +1,26 @@
+{
+  "numbers": {
+    "panel_obs": 1665,
+    "panel_countries": 185,
+    "gdp_panel_obs": 1475,
+    "gdp_panel_countries": 179,
+    "ta1_m1_edu_beta": 0.083,
+    "ta1_m1_edu_se": 0.045,
+    "ta1_m1_edu_p": 0.0675,
+    "ta1_m1_r2_within": 0.009,
+    "ta1_m1_n": 1665,
+    "ta1_m2_gdp_beta": 4.256,
+    "ta1_m2_gdp_se": 1.451,
+    "ta1_m2_gdp_p": 0.0034,
+    "ta1_m2_r2_within": 0.031,
+    "ta1_m2_n": 1475,
+    "ta1_m3_edu_beta": 0.223,
+    "ta1_m3_gdp_beta": 3.456,
+    "ta1_m3_r2_within": 0.091,
+    "ta1_m3_n": 1475,
+    "TA1-M1-beta": 0.083,
+    "TA1-M1-R2": 0.009
+  },
+  "script": "scripts/robustness/twfe_child_edu.py",
+  "produced": "2026-04-20"
+}

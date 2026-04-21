@@ -1,0 +1,45 @@
+{
+  "method": "Goodman-Bacon (2021) decomposition of TWFE estimator. Binary treatment: lower secondary completion \u2265 10%. Outcome: child education at T+25. Balanced panel: 185 countries \u00d7 9 periods (1950\u20131990). Weight = (n_sub/N)^2 \u00d7 Var(D\u0303_sub), normalized. Verified: \u03a3(s\u00d7\u03b2) = \u03b2_TWFE to machine precision.",
+  "numbers": {
+    "beta_oneway_binary": 20.22,
+    "beta_twfe_binary": 7.9,
+    "attenuation_binary_pct": 61,
+    "beta_oneway_continuous": 0.483,
+    "beta_twfe_continuous": 0.083,
+    "attenuation_continuous_pct": 83,
+    "n_countries": 185,
+    "n_always_treated": 100,
+    "n_never_treated": 10,
+    "n_timing_groups": 75,
+    "n_comparisons": 44,
+    "clean_weight": 0.072,
+    "clean_weight_pct": 7.2,
+    "clean_weighted_beta": 11.3,
+    "timing_timing_weight": 0.213,
+    "timing_timing_weight_pct": 21.3,
+    "timing_timing_weighted_beta": 1.1,
+    "always_treated_weight": 0.715,
+    "always_treated_weight_pct": 71.5,
+    "always_treated_weighted_beta": 9.6
+  },
+  "comparison_types": {
+    "Timing vs Never-treated": {
+      "count": 8,
+      "weight_sum": 0.072,
+      "weighted_beta": 11.3
+    },
+    "Timing vs Always-treated": {
+      "count": 8,
+      "weight_sum": 0.715,
+      "weighted_beta": 9.6
+    },
+    "Timing vs Timing": {
+      "count": 28,
+      "weight_sum": 0.213,
+      "weighted_beta": 1.1
+    }
+  },
+  "reference": "Goodman-Bacon (2021), Econometrica 89(5): 2261\u20132290",
+  "script": "scripts/robustness/goodman_bacon_decomposition.py",
+  "produced": "2026-04-20"
+}

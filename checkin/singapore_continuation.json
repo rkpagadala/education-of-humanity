@@ -1,0 +1,22 @@
+{
+  "results": {
+    "singapore_college_2020": {
+      "expected": 73.0,
+      "actual": 73.4,
+      "status": "PASS"
+    },
+    "singapore_upper_sec_2020": {
+      "expected": 96.0,
+      "actual": 96.16,
+      "status": "PASS"
+    },
+    "singapore_conditional_continuation": {
+      "expected": 76.0,
+      "actual": 76.33,
+      "status": "PASS"
+    }
+  },
+  "overall": "PASS",
+  "script": "scripts/singapore_continuation.py",
+  "source": "WCDE v3 (wcde/data/processed/college_both.csv, upper_sec_both.csv)"
+}

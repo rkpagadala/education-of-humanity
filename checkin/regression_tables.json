@@ -1,0 +1,234 @@
+{
+  "method": "Country FE with clustered SEs. \u03b2, SE, p-value for education, raw GDP, residualized GDP. Lower secondary, entry=10%.",
+  "results": {
+    "LE": {
+      "60": {
+        "Education": {
+          "beta": 0.2177,
+          "se": 0.0159,
+          "pval": 0.0,
+          "r2": 0.4429,
+          "n": 603,
+          "countries": 122
+        },
+        "GDP (raw)": {
+          "beta": 4.1276,
+          "se": 0.8946,
+          "pval": 0.0,
+          "r2": 0.1091,
+          "n": 507,
+          "countries": 106
+        },
+        "GDP (residualized)": {
+          "beta": -1.4487,
+          "se": 1.4069,
+          "pval": 0.3032,
+          "r2": 0.0086,
+          "n": 507,
+          "countries": 106
+        }
+      },
+      "90": {
+        "Education": {
+          "beta": 0.1737,
+          "se": 0.0111,
+          "pval": 0.0,
+          "r2": 0.4741,
+          "n": 822,
+          "countries": 152
+        },
+        "GDP (raw)": {
+          "beta": 4.7519,
+          "se": 0.6113,
+          "pval": 0.0,
+          "r2": 0.1795,
+          "n": 659,
+          "countries": 126
+        },
+        "GDP (residualized)": {
+          "beta": -0.6289,
+          "se": 1.2111,
+          "pval": 0.6036,
+          "r2": 0.0018,
+          "n": 659,
+          "countries": 126
+        }
+      }
+    },
+    "TFR": {
+      "60": {
+        "Education": {
+          "beta": -0.0504,
+          "se": 0.0034,
+          "pval": 0.0,
+          "r2": 0.6072,
+          "n": 603,
+          "countries": 122
+        },
+        "GDP (raw)": {
+          "beta": -1.1234,
+          "se": 0.1939,
+          "pval": 0.0,
+          "r2": 0.2283,
+          "n": 507,
+          "countries": 106
+        },
+        "GDP (residualized)": {
+          "beta": -0.103,
+          "se": 0.2914,
+          "pval": 0.7238,
+          "r2": 0.0012,
+          "n": 507,
+          "countries": 106
+        }
+      },
+      "90": {
+        "Education": {
+          "beta": -0.0341,
+          "se": 0.0027,
+          "pval": 0.0,
+          "r2": 0.4819,
+          "n": 822,
+          "countries": 152
+        },
+        "GDP (raw)": {
+          "beta": -0.8463,
+          "se": 0.1429,
+          "pval": 0.0,
+          "r2": 0.177,
+          "n": 659,
+          "countries": 126
+        },
+        "GDP (residualized)": {
+          "beta": 0.0366,
+          "se": 0.2266,
+          "pval": 0.8716,
+          "r2": 0.0002,
+          "n": 659,
+          "countries": 126
+        }
+      }
+    },
+    "U5MR": {
+      "60": {
+        "Education": {
+          "beta": -1.3304,
+          "se": 0.1273,
+          "pval": 0.0,
+          "r2": 0.3529,
+          "n": 590,
+          "countries": 119
+        },
+        "GDP (raw)": {
+          "beta": -21.644,
+          "se": 7.2403,
+          "pval": 0.0028,
+          "r2": 0.0591,
+          "n": 504,
+          "countries": 105
+        },
+        "GDP (residualized)": {
+          "beta": 16.2363,
+          "se": 10.9832,
+          "pval": 0.1393,
+          "r2": 0.0213,
+          "n": 504,
+          "countries": 105
+        }
+      },
+      "90": {
+        "Education": {
+          "beta": -0.8503,
+          "se": 0.086,
+          "pval": 0.0,
+          "r2": 0.2803,
+          "n": 787,
+          "countries": 147
+        },
+        "GDP (raw)": {
+          "beta": -17.8876,
+          "se": 4.9776,
+          "pval": 0.0003,
+          "r2": 0.0578,
+          "n": 645,
+          "countries": 123
+        },
+        "GDP (residualized)": {
+          "beta": 13.4975,
+          "se": 8.5652,
+          "pval": 0.1151,
+          "r2": 0.0188,
+          "n": 645,
+          "countries": 123
+        }
+      }
+    },
+    "ChildEdu": {
+      "60": {
+        "Parent Education": {
+          "beta": 0.7351,
+          "se": 0.0422,
+          "pval": 0.0,
+          "r2": 0.6458,
+          "n": 627,
+          "countries": 127
+        },
+        "GDP (raw)": {
+          "beta": 20.2419,
+          "se": 2.7261,
+          "pval": 0.0,
+          "r2": 0.335,
+          "n": 507,
+          "countries": 106
+        },
+        "GDP (residualized)": {
+          "beta": 4.8373,
+          "se": 4.0623,
+          "pval": 0.2337,
+          "r2": 0.0123,
+          "n": 507,
+          "countries": 106
+        }
+      },
+      "90": {
+        "Parent Education": {
+          "beta": 0.4858,
+          "se": 0.034,
+          "pval": 0.0,
+          "r2": 0.5244,
+          "n": 856,
+          "countries": 157
+        },
+        "GDP (raw)": {
+          "beta": 16.4986,
+          "se": 1.9989,
+          "pval": 0.0,
+          "r2": 0.2954,
+          "n": 659,
+          "countries": 126
+        },
+        "GDP (residualized)": {
+          "beta": 2.7241,
+          "se": 3.2516,
+          "pval": 0.4022,
+          "r2": 0.0046,
+          "n": 659,
+          "countries": 126
+        }
+      }
+    }
+  },
+  "country_residuals": {
+    "T3-Maldives-resid": 34.9,
+    "T3-CapeVerde-resid": 26.3,
+    "T3-Bhutan-resid": 26.1,
+    "T3-Tunisia-resid": 25.6,
+    "T3-Nepal-resid": 17.8,
+    "T3-Vietnam-resid": 16.0,
+    "T3-Bangladesh-resid": 15.8,
+    "T3-India-resid": 14.1,
+    "T3-Qatar-resid": -4.8
+  },
+  "script": "scripts/tables/regression_tables.py",
+  "produced": "2026-04-20"
+}

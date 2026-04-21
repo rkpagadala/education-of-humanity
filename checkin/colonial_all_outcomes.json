@@ -1,0 +1,74 @@
+{
+  "sample": "former colonies only, country-year panel",
+  "years": "1985-2015 (every 5 yrs)",
+  "lag_years": 25,
+  "n_panel_obs": 721,
+  "n_countries": 103,
+  "outcomes": {
+    "le": {
+      "r2_education": 0.356,
+      "r2_polity2": 0.2311,
+      "edu_minus_polity": 0.1249,
+      "n_obs_edu": 714,
+      "n_obs_polity": 594,
+      "n_countries_edu": 102,
+      "n_countries_polity": 86,
+      "winner": "edu"
+    },
+    "tfr": {
+      "r2_education": 0.4626,
+      "r2_polity2": 0.2995,
+      "edu_minus_polity": 0.1631,
+      "n_obs_edu": 714,
+      "n_obs_polity": 594,
+      "n_countries_edu": 102,
+      "n_countries_polity": 86,
+      "winner": "edu"
+    },
+    "log_u5mr": {
+      "r2_education": 0.6321,
+      "r2_polity2": 0.2453,
+      "edu_minus_polity": 0.3868,
+      "n_obs_edu": 721,
+      "n_obs_polity": 601,
+      "n_countries_edu": 103,
+      "n_countries_polity": 87,
+      "winner": "edu"
+    },
+    "child_edu": {
+      "r2_education": 0.5087,
+      "r2_polity2": 0.1821,
+      "edu_minus_polity": 0.3265,
+      "n_obs_edu": 721,
+      "n_obs_polity": 601,
+      "n_countries_edu": 103,
+      "n_countries_polity": 87,
+      "winner": "edu"
+    }
+  },
+  "ranked_edu_advantage": [
+    {
+      "outcome": "log U5MR",
+      "column": "log_u5mr",
+      "edu_minus_polity": 0.3868
+    },
+    {
+      "outcome": "Child edu (lower sec)",
+      "column": "child_edu",
+      "edu_minus_polity": 0.3265
+    },
+    {
+      "outcome": "TFR",
+      "column": "tfr",
+      "edu_minus_polity": 0.1631
+    },
+    {
+      "outcome": "LE",
+      "column": "le",
+      "edu_minus_polity": 0.1249
+    }
+  ],
+  "education_wins_all": true,
+  "script": "scripts/robustness/colonial_all_outcomes.py",
+  "produced": "2026-04-20"
+}

@@ -1,0 +1,105 @@
+{
+  "notes": "Log(outcome) robustness for forward-prediction regressions. outcome_{t+25} on parent_edu_t + log_gdp_t + country FE, country-clustered SEs. \u03b2_log interpreted as semi-elasticity: percent change in outcome per 1 pp rise in parental completion. Education remains in percentage points (0-100). Sample: 1975-1990 base years (2000-2015 outcome years).",
+  "results": {
+    "le": {
+      "levels": {
+        "parent_beta": 0.2279,
+        "parent_se": 0.0224,
+        "parent_p": 0.0,
+        "log_gdp_beta": -0.0485,
+        "log_gdp_se": 0.6699,
+        "log_gdp_p": 0.9424,
+        "r2_within": 0.3283,
+        "n": 590,
+        "countries": 172
+      },
+      "log": {
+        "parent_beta": 0.00355,
+        "parent_se": 0.0004,
+        "parent_p": 0.0,
+        "parent_semi_elast_pct_per_pp": 0.355,
+        "parent_semi_elast_se_pct": 0.04,
+        "log_gdp_beta": -0.0078,
+        "log_gdp_se": 0.0112,
+        "log_gdp_p": 0.4901,
+        "r2_within": 0.2693,
+        "n": 590,
+        "countries": 172
+      }
+    },
+    "tfr": {
+      "levels": {
+        "parent_beta": -0.0256,
+        "parent_se": 0.0034,
+        "parent_p": 0.0,
+        "log_gdp_beta": 0.2669,
+        "log_gdp_se": 0.1094,
+        "log_gdp_p": 0.0151,
+        "r2_within": 0.2282,
+        "n": 590,
+        "countries": 172
+      },
+      "log": {
+        "parent_beta": -0.00817,
+        "parent_se": 0.00111,
+        "parent_p": 0.0,
+        "parent_semi_elast_pct_per_pp": -0.817,
+        "parent_semi_elast_se_pct": 0.111,
+        "log_gdp_beta": 0.0569,
+        "log_gdp_se": 0.0374,
+        "log_gdp_p": 0.129,
+        "r2_within": 0.2389,
+        "n": 590,
+        "countries": 172
+      }
+    },
+    "u5mr": {
+      "levels": {
+        "parent_beta": -1.1938,
+        "parent_se": 0.1625,
+        "parent_p": 0.0,
+        "log_gdp_beta": 12.1518,
+        "log_gdp_se": 5.5639,
+        "log_gdp_p": 0.0295,
+        "r2_within": 0.1619,
+        "n": 579,
+        "countries": 168
+      },
+      "log": {
+        "parent_beta": -0.02587,
+        "parent_se": 0.00275,
+        "parent_p": 0.0,
+        "parent_semi_elast_pct_per_pp": -2.587,
+        "parent_semi_elast_se_pct": 0.275,
+        "log_gdp_beta": -0.0792,
+        "log_gdp_se": 0.0827,
+        "log_gdp_p": 0.3388,
+        "r2_within": 0.4533,
+        "n": 579,
+        "countries": 168
+      }
+    }
+  },
+  "numbers": {
+    "le_levels_parent_beta": 0.2279,
+    "le_log_parent_beta": 0.00355,
+    "le_log_semi_elast_pct": 0.355,
+    "le_log_semi_elast_se_pct": 0.04,
+    "le_n": 590,
+    "le_countries": 172,
+    "tfr_levels_parent_beta": -0.0256,
+    "tfr_log_parent_beta": -0.00817,
+    "tfr_log_semi_elast_pct": -0.817,
+    "tfr_log_semi_elast_se_pct": 0.111,
+    "tfr_n": 590,
+    "tfr_countries": 172,
+    "u5mr_levels_parent_beta": -1.1938,
+    "u5mr_log_parent_beta": -0.02587,
+    "u5mr_log_semi_elast_pct": -2.587,
+    "u5mr_log_semi_elast_se_pct": 0.275,
+    "u5mr_n": 579,
+    "u5mr_countries": 168
+  },
+  "script": "scripts/robustness/log_outcomes.py",
+  "produced": "2026-04-20"
+}

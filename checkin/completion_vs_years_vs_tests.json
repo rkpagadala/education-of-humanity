@@ -1,0 +1,191 @@
+{
+  "method": "4-horse race on overlap sample (countries with WCDE completion, WCDE mean years, Barro-Lee mean years, and HLO test scores). Tests whether duration of exposure (years) or fidelity of instruction (test scores) better predicts LE, TFR, U5MR. Country FE, clustered SEs, lags 0 and 10.",
+  "results": {
+    "lag_0": {
+      "le": {
+        "edu_t": {
+          "r2": 0.2724,
+          "beta": 0.23952,
+          "pval": 0.0,
+          "n": 377,
+          "countries": 69
+        },
+        "wcde_mys_t": {
+          "r2": 0.4753,
+          "beta": 3.083837,
+          "pval": 0.0,
+          "n": 377,
+          "countries": 69
+        },
+        "bl_mys_t": {
+          "r2": 0.1517,
+          "beta": 1.062657,
+          "pval": 0.0,
+          "n": 377,
+          "countries": 69
+        },
+        "test_t": {
+          "r2": 0.089,
+          "beta": 0.028096,
+          "pval": 0.000392,
+          "n": 377,
+          "countries": 69
+        }
+      },
+      "tfr": {
+        "edu_t": {
+          "r2": 0.1224,
+          "beta": -0.014216,
+          "pval": 0.02389,
+          "n": 377,
+          "countries": 69
+        },
+        "wcde_mys_t": {
+          "r2": 0.0584,
+          "beta": -0.095669,
+          "pval": 0.036919,
+          "n": 377,
+          "countries": 69
+        },
+        "bl_mys_t": {
+          "r2": 0.022,
+          "beta": -0.035831,
+          "pval": 0.10322,
+          "n": 377,
+          "countries": 69
+        },
+        "test_t": {
+          "r2": 0.0317,
+          "beta": -0.001486,
+          "pval": 0.095888,
+          "n": 377,
+          "countries": 69
+        }
+      },
+      "u5mr": {
+        "edu_t": {
+          "r2": 0.3854,
+          "beta": -0.733799,
+          "pval": 1.2e-05,
+          "n": 384,
+          "countries": 70
+        },
+        "wcde_mys_t": {
+          "r2": 0.416,
+          "beta": -7.416083,
+          "pval": 0.0,
+          "n": 384,
+          "countries": 70
+        },
+        "bl_mys_t": {
+          "r2": 0.1545,
+          "beta": -2.757035,
+          "pval": 1.5e-05,
+          "n": 384,
+          "countries": 70
+        },
+        "test_t": {
+          "r2": 0.1323,
+          "beta": -0.086564,
+          "pval": 0.005628,
+          "n": 384,
+          "countries": 70
+        }
+      }
+    },
+    "lag_10": {
+      "le": {
+        "edu_t": {
+          "r2": 0.0678,
+          "beta": 0.087987,
+          "pval": 0.008281,
+          "n": 311,
+          "countries": 65
+        },
+        "wcde_mys_t": {
+          "r2": 0.1696,
+          "beta": 1.329488,
+          "pval": 0.0,
+          "n": 311,
+          "countries": 65
+        },
+        "bl_mys_t": {
+          "r2": 0.0776,
+          "beta": 0.499995,
+          "pval": 9.6e-05,
+          "n": 311,
+          "countries": 65
+        },
+        "test_t": {
+          "r2": 0.0,
+          "beta": -0.000168,
+          "pval": 0.969403,
+          "n": 311,
+          "countries": 65
+        }
+      },
+      "tfr": {
+        "edu_t": {
+          "r2": 0.2436,
+          "beta": -0.027834,
+          "pval": 0.0,
+          "n": 311,
+          "countries": 65
+        },
+        "wcde_mys_t": {
+          "r2": 0.3301,
+          "beta": -0.309416,
+          "pval": 0.0,
+          "n": 311,
+          "countries": 65
+        },
+        "bl_mys_t": {
+          "r2": 0.104,
+          "beta": -0.096529,
+          "pval": 0.000793,
+          "n": 311,
+          "countries": 65
+        },
+        "test_t": {
+          "r2": 0.0061,
+          "beta": -0.000781,
+          "pval": 0.413295,
+          "n": 311,
+          "countries": 65
+        }
+      },
+      "u5mr": {
+        "edu_t": {
+          "r2": 0.4788,
+          "beta": -0.408813,
+          "pval": 0.000135,
+          "n": 70,
+          "countries": 35
+        },
+        "wcde_mys_t": {
+          "r2": 0.451,
+          "beta": -3.922974,
+          "pval": 0.000463,
+          "n": 70,
+          "countries": 35
+        },
+        "bl_mys_t": {
+          "r2": 0.2977,
+          "beta": -0.948925,
+          "pval": 0.009192,
+          "n": 70,
+          "countries": 35
+        },
+        "test_t": {
+          "r2": 0.0296,
+          "beta": -0.009945,
+          "pval": 0.20867,
+          "n": 70,
+          "countries": 35
+        }
+      }
+    }
+  },
+  "script": "scripts/robustness/completion_vs_years_vs_tests.py",
+  "produced": "2026-04-20"
+}

@@ -1,0 +1,18 @@
+{
+  "numbers": {
+    "Grp-low-beta": 1.585,
+    "Grp-low-R2": 0.706,
+    "Grp-low-n": 423,
+    "Grp-low-countries": 47,
+    "Grp-med-beta": 0.71,
+    "Grp-med-R2": 0.715,
+    "Grp-med-n": 666,
+    "Grp-med-countries": 74,
+    "Grp-high-beta": 0.179,
+    "Grp-high-R2": 0.447,
+    "Grp-high-n": 576,
+    "Grp-high-countries": 64
+  },
+  "script": "scripts/robustness/beta_by_baseline_group.py",
+  "produced": "2026-04-20"
+}

@@ -1,0 +1,49 @@
+{
+  "notes": "Poisson Pseudo-Maximum Likelihood (Santos Silva & Tenreyro 2006) with country dummies and country-clustered sandwich SEs. Outcomes at T+25: total fertility rate, under-5 mortality. Sample: 1975-1990 base years (2000-2015 outcome years); WCDE v3 lower secondary completion + WB WDI.",
+  "results": {
+    "tfr": {
+      "n": 590,
+      "countries": 172,
+      "parent_beta": -0.00908,
+      "parent_se": 0.00138,
+      "parent_p": 0.0,
+      "parent_semi_elast_pct": -0.9039,
+      "parent_semi_elast_se_pct": 0.1367,
+      "log_gdp_beta": 0.0488,
+      "log_gdp_se": 0.0416,
+      "log_gdp_p": 0.2411
+    },
+    "u5mr": {
+      "n": 579,
+      "countries": 168,
+      "parent_beta": -0.03356,
+      "parent_se": 0.00362,
+      "parent_p": 0.0,
+      "parent_semi_elast_pct": -3.3001,
+      "parent_semi_elast_se_pct": 0.3504,
+      "log_gdp_beta": 0.0498,
+      "log_gdp_se": 0.1242,
+      "log_gdp_p": 0.6881
+    }
+  },
+  "numbers": {
+    "tfr_parent_beta": -0.00908,
+    "tfr_parent_se": 0.00138,
+    "tfr_parent_p": 0.0,
+    "tfr_parent_semi_elast_pct": -0.9039,
+    "tfr_parent_semi_elast_se_pct": 0.1367,
+    "tfr_log_gdp_beta": 0.0488,
+    "tfr_n": 590,
+    "tfr_countries": 172,
+    "u5mr_parent_beta": -0.03356,
+    "u5mr_parent_se": 0.00362,
+    "u5mr_parent_p": 0.0,
+    "u5mr_parent_semi_elast_pct": -3.3001,
+    "u5mr_parent_semi_elast_se_pct": 0.3504,
+    "u5mr_log_gdp_beta": 0.0498,
+    "u5mr_n": 579,
+    "u5mr_countries": 168
+  },
+  "script": "scripts/robustness/ppml_outcomes.py",
+  "produced": "2026-04-20"
+}

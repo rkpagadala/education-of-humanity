@@ -1,0 +1,27 @@
+{
+  "source": "data/kerala_srs.csv (India Sample Registration System)",
+  "thresholds": {
+    "TFR": 3.65,
+    "LE": 69.8
+  },
+  "results": {
+    "tfr_crossing": {
+      "expected": 1973,
+      "actual": 1972.5,
+      "status": "PASS"
+    },
+    "le_crossing": {
+      "expected": 1981,
+      "actual": 1981.9,
+      "status": "PASS"
+    },
+    "both_crossed": {
+      "expected": 1982,
+      "actual": 1982,
+      "status": "PASS"
+    }
+  },
+  "overall": "PASS",
+  "script": "scripts/cases/kerala.py",
+  "produced": "2026-04-20"
+}

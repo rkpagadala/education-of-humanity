@@ -1,0 +1,37 @@
+{
+  "notes": "Within-year cross-cohort test of parental transmission. For each country-year in WCDE v3 microdata, lower-secondary completion share of age 20-24 is regressed on the same share for age 45-49 (one generation older, measured simultaneously). Country FE, country-clustered SEs. This specification does not rely on the 25-year forward lag: parent and child are observed in the same year, so any common cross-country time shock in the intervening decades is absorbed by design.",
+  "results": {
+    "full_sample": {
+      "parent_beta": 0.7571,
+      "parent_se": 0.0157,
+      "parent_p": 0.0,
+      "r2_within": 0.816,
+      "n": 5990,
+      "countries": 200
+    },
+    "active_expansion": {
+      "parent_beta": 1.9653,
+      "parent_se": 0.0505,
+      "parent_p": 0.0,
+      "r2_within": 0.7966,
+      "n": 1747,
+      "countries": 171
+    }
+  },
+  "numbers": {
+    "full_beta": 0.7571,
+    "full_se": 0.0157,
+    "full_p": 0.0,
+    "full_r2": 0.816,
+    "full_n": 5990,
+    "full_countries": 200,
+    "active_beta": 1.9653,
+    "active_se": 0.0505,
+    "active_p": 0.0,
+    "active_r2": 0.7966,
+    "active_n": 1747,
+    "active_countries": 171
+  },
+  "script": "scripts/robustness/cross_cohort_within_year.py",
+  "produced": "2026-04-20"
+}

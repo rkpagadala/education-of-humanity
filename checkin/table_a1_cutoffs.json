@@ -1,0 +1,75 @@
+{
+  "method": "Iterative two-way demeaning (country + year) until convergence, no-intercept OLS, cluster-robust SEs by country.",
+  "notes": "Full panel: 1665 obs, 185 countries.",
+  "numbers": {
+    "cutoff_30": {
+      "beta": 0.739,
+      "se": 0.123,
+      "t": 6.0,
+      "p": 0.0,
+      "r2": 0.154,
+      "n": 783,
+      "countries": 137,
+      "iterations": 23
+    },
+    "cutoff_20": {
+      "beta": 1.032,
+      "se": 0.179,
+      "t": 5.8,
+      "p": 0.0,
+      "r2": 0.145,
+      "n": 600,
+      "countries": 118,
+      "iterations": 25
+    },
+    "cutoff_10": {
+      "beta": 1.019,
+      "se": 0.294,
+      "t": 3.5,
+      "p": 0.0005,
+      "r2": 0.067,
+      "n": 358,
+      "countries": 85,
+      "iterations": 28
+    },
+    "all": {
+      "beta": 0.083,
+      "se": 0.045,
+      "t": 1.8,
+      "p": 0.0675,
+      "r2": 0.009,
+      "n": 1665,
+      "countries": 185,
+      "iterations": 2
+    }
+  },
+  "paper_claims": {
+    "30": {
+      "beta": 0.739,
+      "r2": 0.154,
+      "n": 783,
+      "countries": 137
+    },
+    "20": {
+      "beta": 1.032,
+      "r2": 0.145,
+      "n": 600,
+      "countries": 118
+    },
+    "10": {
+      "beta": 1.019,
+      "r2": 0.067,
+      "n": 358,
+      "countries": 85
+    },
+    "None": {
+      "beta": 0.083,
+      "r2": 0.009,
+      "n": 1665,
+      "countries": 185
+    }
+  },
+  "all_pass": true,
+  "script": "scripts/cases/threshold_cutoffs.py",
+  "produced": "2026-04-20"
+}

@@ -1,0 +1,110 @@
+Loading data...
+
+================================================================================
+TEST 1: NICKELL BIAS — Anderson-Hsiao IV vs Standard FE
+================================================================================
+
+Concern: In a short-T dynamic panel with country FE, Nickell (1981) bias
+inflates the autoregressive coefficient (child_edu ~ parent_edu + country FE).
+Anderson-Hsiao (1982): first-difference the equation, use lagged levels
+(edu_{t-1}) as instruments for the differenced regressor.
+
+Model: child_edu(t+25) = beta * parent_edu(t) + alpha_i + epsilon
+AH:    delta_child_edu  = beta * delta_parent_edu + delta_epsilon
+       instrument for delta_parent_edu: parent_edu(t-1) = level at previous period
+
+
+  Ceiling = 60%, entry = 10%
+  Method                        beta       SE          p      n  Ctry
+  -----------------------------------------------------------------
+  Standard FE                 0.7351   0.0422     0.0000    627   127
+  Anderson-Hsiao IV           0.7554   0.0451     0.0000    500   127
+  First-stage F-stat: 28.1 (>10 = strong instrument)
+  FE beta / AH beta ratio: 0.973
+  --> AH beta is positive and significant (p = 0.0000)
+      Coefficient is larger under AH.
+      Nickell bias is not materially affecting the result.
+
+  Ceiling = 90%, entry = 10%
+  Method                        beta       SE          p      n  Ctry
+  -----------------------------------------------------------------
+  Standard FE                 0.4858   0.0340     0.0000    856   157
+  Anderson-Hsiao IV           0.4437   0.0344     0.0000    699   157
+  First-stage F-stat: 39.4 (>10 = strong instrument)
+  FE beta / AH beta ratio: 1.095
+  --> AH beta is positive and significant (p = 0.0000)
+      Coefficient is smaller under AH.
+      Nickell bias is not materially affecting the result.
+
+
+================================================================================
+TEST 2: NONLINEARITY IN RESIDUALIZATION FIRST STAGE
+================================================================================
+
+Concern: The residualization regresses log_GDP on education (linear, with
+country FE) in the first stage. If the true relationship is nonlinear,
+the linear residuals might retain education signal, making residualized
+GDP look weaker than it is.
+
+Method: Add education^2 to the first stage. Compare residualized GDP R^2
+for life expectancy at T+25 under linear vs quadratic first stage.
+If both are near zero, the result is not an artifact of linear specification.
+
+
+  Ceiling = 60%, entry = 10%, n = 450, countries = 93
+  First stage                Stage1 R²  Resid GDP→LE R²
+  -------------------------------------------------------
+  Linear (edu)                  0.3481           0.0100
+  Quadratic (edu + edu²)        0.3915           0.0265
+  Education → LE (ref)                           0.4561
+
+  --> Quadratic first stage: residualized GDP R² = 0.0265 (near zero)
+      Result is NOT an artifact of linear specification.
+
+  Ceiling = 90%, entry = 10%, n = 577, countries = 109
+  First stage                Stage1 R²  Resid GDP→LE R²
+  -------------------------------------------------------
+  Linear (edu)                  0.4167           0.0026
+  Quadratic (edu + edu²)        0.4186           0.0039
+  Education → LE (ref)                           0.4760
+
+  --> Quadratic first stage: residualized GDP R² = 0.0039 (near zero)
+      Result is NOT an artifact of linear specification.
+
+
+================================================================================
+TEST 3: BOOTSTRAPPED CONFIDENCE INTERVALS ON R² COMPARISONS
+================================================================================
+
+Method: Bootstrap 1000 replications, resampling countries with replacement.
+For each replication, compute:
+  - Education R² for LE at T+25 (country FE)
+  - Residualized GDP R² for LE at T+25 (country FE)
+Report 95% CI for both. If CIs don't overlap, the difference is robust.
+
+
+  Ceiling = 60%, entry = 10%, 1000/1000 valid replications
+  n = 450, countries = 93
+
+  Measure                           Point   95% CI lower   95% CI upper
+  ----------------------------------------------------------------------
+  Education R²                     0.4561         0.3257         0.5922
+  Residualized GDP R²              0.0100         0.0001         0.0391
+  Difference (Edu - Resid)         0.4461         0.3147         0.5880
+
+  --> CIs DO NOT OVERLAP. The education R² advantage is statistically robust.
+  --> 95% CI for difference is entirely above zero [0.3147, 0.5880]
+      Education R² is robustly higher than residualized GDP R².
+
+  Ceiling = 90%, entry = 10%, 1000/1000 valid replications
+  n = 577, countries = 109
+
+  Measure                           Point   95% CI lower   95% CI upper
+  ----------------------------------------------------------------------
+  Education R²                     0.4760         0.3802         0.5943
+  Residualized GDP R²              0.0026         0.0000         0.0241
+  Difference (Edu - Resid)         0.4734         0.3712         0.5908
+
+  --> CIs DO NOT OVERLAP. The education R² advantage is statistically robust.
+  --> 95% CI for difference is entirely above zero [0.3712, 0.5908]
+      Education R² is robustly higher than residualized GDP R².

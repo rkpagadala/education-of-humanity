@@ -1,0 +1,32 @@
+{
+  "numbers": {
+    "n_countries": 147
+  },
+  "results": {
+    "n_countries": {
+      "expected": 147,
+      "actual": 147,
+      "status": "PASS"
+    },
+    "edu_alone_r2": {
+      "expected": 0.4504,
+      "actual": 0.4504,
+      "status": "PASS"
+    },
+    "gdp_alone_r2": {
+      "expected": 0.7198,
+      "actual": 0.7198,
+      "status": "PASS"
+    },
+    "resid_gdp_r2": {
+      "expected": 0.2694,
+      "actual": 0.2694,
+      "status": "PASS"
+    },
+    "resid_edu_r2": {
+      "expected": 0.0,
+      "actual": 0.0,
+      "status": "PASS"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "notes": "Period-length robustness. Child cohort years 1975-2015 stepped by 5, 10, and 1 (annual, via linear interpolation of the 5-year WCDE grid). Each specification: child_t ~ parent_{t-25}, country FE, country-clustered SEs. The annual grid mechanically inflates n; the coefficient value is the quantity of interest, not the SE.",
+  "results": {
+    "five_year": {
+      "full": {
+        "parent_beta": 0.4834,
+        "parent_se": 0.0343,
+        "parent_p": 0.0,
+        "r2_within": 0.4568,
+        "n": 1665,
+        "countries": 185
+      },
+      "active_expansion": {
+        "parent_beta": 1.3643,
+        "parent_se": 0.0765,
+        "parent_p": 0.0,
+        "r2_within": 0.6781,
+        "n": 774,
+        "countries": 128
+      }
+    },
+    "ten_year": {
+      "full": {
+        "parent_beta": 0.5105,
+        "parent_se": 0.0343,
+        "parent_p": 0.0,
+        "r2_within": 0.4858,
+        "n": 925,
+        "countries": 185
+      },
+      "active_expansion": {
+        "parent_beta": 1.4365,
+        "parent_se": 0.0778,
+        "parent_p": 0.0,
+        "r2_within": 0.7064,
+        "n": 416,
+        "countries": 113
+      }
+    },
+    "annual": {
+      "full": {
+        "parent_beta": 0.4702,
+        "parent_se": 0.0346,
+        "parent_p": 0.0,
+        "r2_within": 0.4488,
+        "n": 7585,
+        "countries": 185
+      },
+      "active_expansion": {
+        "parent_beta": 1.3258,
+        "parent_se": 0.0779,
+        "parent_p": 0.0,
+        "r2_within": 0.6765,
+        "n": 3548,
+        "countries": 135
+      }
+    }
+  },
+  "numbers": {
+    "five_full_beta": 0.4834,
+    "five_full_n": 1665,
+    "five_active_beta": 1.3643,
+    "five_active_n": 774,
+    "ten_full_beta": 0.5105,
+    "ten_full_n": 925,
+    "ten_active_beta": 1.4365,
+    "ten_active_n": 416,
+    "annual_full_beta": 0.4702,
+    "annual_full_n": 7585,
+    "annual_active_beta": 1.3258,
+    "annual_active_n": 3548
+  },
+  "script": "scripts/robustness/period_length.py",
+  "produced": "2026-04-20"
+}

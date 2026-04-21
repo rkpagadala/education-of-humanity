@@ -1,0 +1,247 @@
+{
+  "source": "wcde/data/processed/completion_both_long.csv",
+  "point_claims": [
+    {
+      "claim": "Korea 1950 lower_sec",
+      "cited": 25.0,
+      "actual": 24.81,
+      "diff": -0.19,
+      "pass": true
+    },
+    {
+      "claim": "Korea 1955 lower_sec",
+      "cited": 25.0,
+      "actual": 30.43,
+      "diff": 5.43,
+      "pass": false
+    },
+    {
+      "claim": "Korea 1985 lower_sec",
+      "cited": 94.0,
+      "actual": 94.38,
+      "diff": 0.38,
+      "pass": true
+    },
+    {
+      "claim": "Korea 1990 lower_sec",
+      "cited": 94.0,
+      "actual": 98.22,
+      "diff": 4.22,
+      "pass": false
+    },
+    {
+      "claim": "Philippines 1950 lower_sec",
+      "cited": 22.0,
+      "actual": 22.16,
+      "diff": 0.16,
+      "pass": true
+    },
+    {
+      "claim": "Cuba 1960 lower_sec",
+      "cited": 40.3,
+      "actual": 40.32,
+      "diff": 0.02,
+      "pass": true
+    },
+    {
+      "claim": "Taiwan 1950 lower_sec",
+      "cited": 18.0,
+      "actual": 17.75,
+      "diff": -0.25,
+      "pass": true
+    },
+    {
+      "claim": "Cambodia 1975 lower_sec",
+      "cited": 10.1,
+      "actual": 10.12,
+      "diff": 0.02,
+      "pass": true
+    },
+    {
+      "claim": "Cambodia 1980 lower_sec",
+      "cited": 9.4,
+      "actual": 9.42,
+      "diff": 0.02,
+      "pass": true
+    },
+    {
+      "claim": "Cambodia 1985 lower_sec",
+      "cited": 9.5,
+      "actual": 9.47,
+      "diff": -0.03,
+      "pass": true
+    },
+    {
+      "claim": "Cambodia 1995 lower_sec",
+      "cited": 35.1,
+      "actual": 35.1,
+      "diff": 0.0,
+      "pass": true
+    },
+    {
+      "claim": "Vietnam 1960 lower_sec",
+      "cited": 20.0,
+      "actual": 20.04,
+      "diff": 0.04,
+      "pass": true
+    },
+    {
+      "claim": "Vietnam 2015 lower_sec",
+      "cited": 80.8,
+      "actual": 80.79,
+      "diff": -0.01,
+      "pass": true
+    },
+    {
+      "claim": "Bangladesh 1960 lower_sec",
+      "cited": 11.4,
+      "actual": 11.39,
+      "diff": -0.01,
+      "pass": true
+    },
+    {
+      "claim": "Nepal 1990 lower_sec ~27%",
+      "cited": 27.0,
+      "actual": 27.16,
+      "diff": 0.16,
+      "pass": true
+    },
+    {
+      "claim": "China 1965 lower_sec",
+      "cited": 30.9,
+      "actual": 31.49,
+      "diff": 0.59,
+      "pass": true
+    },
+    {
+      "claim": "China 1980 lower_sec",
+      "cited": 62.0,
+      "actual": 62.09,
+      "diff": 0.09,
+      "pass": true
+    },
+    {
+      "claim": "China 1990 lower_sec",
+      "cited": 75.0,
+      "actual": 75.1,
+      "diff": 0.1,
+      "pass": true
+    },
+    {
+      "claim": "Singapore 1950 lower_sec",
+      "cited": 13.0,
+      "actual": 13.36,
+      "diff": 0.36,
+      "pass": true
+    },
+    {
+      "claim": "Singapore 1995 lower_sec",
+      "cited": 94.0,
+      "actual": 94.36,
+      "diff": 0.36,
+      "pass": true
+    }
+  ],
+  "korea_expansion": [
+    {
+      "period": "1950-1955",
+      "start": 24.8,
+      "end": 30.4,
+      "gain_pp": 5.6,
+      "pp_per_yr": 1.12
+    },
+    {
+      "period": "1955-1960",
+      "start": 30.4,
+      "end": 41.0,
+      "gain_pp": 10.6,
+      "pp_per_yr": 2.12
+    },
+    {
+      "period": "1960-1965",
+      "start": 41.0,
+      "end": 51.5,
+      "gain_pp": 10.5,
+      "pp_per_yr": 2.1
+    },
+    {
+      "period": "1965-1970",
+      "start": 51.5,
+      "end": 65.1,
+      "gain_pp": 13.6,
+      "pp_per_yr": 2.71
+    },
+    {
+      "period": "1970-1975",
+      "start": 65.1,
+      "end": 77.1,
+      "gain_pp": 12.0,
+      "pp_per_yr": 2.41
+    },
+    {
+      "period": "1975-1980",
+      "start": 77.1,
+      "end": 87.2,
+      "gain_pp": 10.0,
+      "pp_per_yr": 2.0
+    },
+    {
+      "period": "1980-1985",
+      "start": 87.2,
+      "end": 94.4,
+      "gain_pp": 7.2,
+      "pp_per_yr": 1.44
+    },
+    {
+      "period": "1985-1990",
+      "start": 94.4,
+      "end": 98.2,
+      "gain_pp": 3.8,
+      "pp_per_yr": 0.77
+    },
+    {
+      "period": "1990-1995",
+      "start": 98.2,
+      "end": 99.2,
+      "gain_pp": 1.0,
+      "pp_per_yr": 0.2
+    }
+  ],
+  "expansion_rates": [
+    {
+      "country": "Korea",
+      "start_year": 1955,
+      "end_year": 1985,
+      "actual_rate": 2.13,
+      "cited_rate": 2.13,
+      "pass": true
+    },
+    {
+      "country": "Singapore",
+      "start_year": 1950,
+      "end_year": 1995,
+      "actual_rate": 1.8,
+      "cited_rate": 1.8,
+      "pass": true
+    },
+    {
+      "country": "India",
+      "start_year": 1950,
+      "end_year": 2020,
+      "actual_rate": 0.93,
+      "cited_rate": 0.87,
+      "pass": true
+    },
+    {
+      "country": "Bangladesh",
+      "start_year": 1990,
+      "end_year": 2020,
+      "actual_rate": 1.3,
+      "cited_rate": 1.3,
+      "pass": true
+    }
+  ],
+  "summary": "18/20 point claims passed",
+  "script": "scripts/cases/country_education.py",
+  "produced": "2026-04-20"
+}

@@ -1,0 +1,64 @@
+{
+  "specs": {
+    "loose": {
+      "tfr": 4.5,
+      "le": 65.0
+    },
+    "main": {
+      "tfr": 3.65,
+      "le": 69.8
+    },
+    "strict": {
+      "tfr": 2.5,
+      "le": 72.6
+    }
+  },
+  "results": {
+    "Cuba": {
+      "loose": 1964,
+      "main": 1974,
+      "strict": 1980,
+      "shift": 16
+    },
+    "South Korea": {
+      "loose": 1978,
+      "main": 1987,
+      "strict": 1993,
+      "shift": 15
+    },
+    "Sri Lanka": {
+      "loose": 1975,
+      "main": 1993,
+      "strict": 2005,
+      "shift": 30
+    },
+    "China": {
+      "loose": 1982,
+      "main": 1994,
+      "strict": 2001,
+      "shift": 19
+    },
+    "Bangladesh": {
+      "loose": 2005,
+      "main": 2014,
+      "strict": 2019,
+      "shift": 14
+    },
+    "Taiwan": {
+      "loose": 1970,
+      "main": 1970,
+      "strict": 1980,
+      "shift": 10
+    }
+  },
+  "expansion_rates_ppyr": {
+    "Cuba": 1.03,
+    "South Korea": 1.38,
+    "Sri Lanka": 0.96,
+    "China": 1.65,
+    "Bangladesh": 0.84,
+    "Taiwan": 1.59
+  },
+  "script": "scripts/robustness/threshold_robustness.py",
+  "produced": "2026-04-20"
+}

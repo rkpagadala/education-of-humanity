@@ -1,0 +1,15 @@
+{
+  "numbers": {
+    "Fig1-USA-beta-high": 1.91,
+    "Fig1-USA-beta-low": 0.08,
+    "Fig1-Korea-beta-high": 6.47,
+    "Fig1-Korea-beta-3.6": 3.58,
+    "Fig1-Korea-beta-1.8": 1.78,
+    "Fig1-Korea-beta-low": 0.19,
+    "Fig1-Taiwan-beta": 5.11,
+    "Fig1-Phil-beta-high": 4.44,
+    "Fig1-Phil-beta-low": 0.43
+  },
+  "script": "scripts/figures/beta_vs_baseline.py",
+  "produced": "2026-04-20"
+}

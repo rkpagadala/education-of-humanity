@@ -1,0 +1,32 @@
+{
+  "results": {
+    "n_countries": {
+      "expected": 70,
+      "actual": 74,
+      "status": "PASS"
+    },
+    "correlation": {
+      "expected": 0.44,
+      "actual": 0.453,
+      "status": "PASS"
+    },
+    "q1_le": {
+      "expected": 73.5,
+      "actual": 73.91,
+      "status": "PASS"
+    },
+    "q4_le": {
+      "expected": 79.0,
+      "actual": 79.6,
+      "status": "PASS"
+    },
+    "gradient": {
+      "expected": 5.5,
+      "actual": 5.69,
+      "status": "PASS"
+    }
+  },
+  "overall": "PASS",
+  "script": "scripts/cases/college_le_gradient.py",
+  "produced": "2026-04-20"
+}
