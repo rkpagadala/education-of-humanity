@@ -1,15 +1,15 @@
 # Verification Report
 
-Generated: 2026-04-23 01:38
+Generated: 2026-04-23 01:56
 
-## Result: 785/785 PASS
+## Result: 787/787 PASS
 
 | Metric | Count |
 |--------|-------|
-| Verified claims | 785 |
+| Verified claims | 787 |
 | Failed | 0 |
 | Missing | 0 |
-| Literature refs (manual) | 100 |
+| Literature refs (manual) | 102 |
 | Unregistered numbers | 0 |
 | Section offset issues | 0 |
 
@@ -22,7 +22,7 @@ Generated: 2026-04-23 01:38
 | derived | 68 | 0 | 0 |
 | ref | 0 | 0 | 0 |
 | wcde | 24 | 0 | 0 |
-| wdi | 52 | 0 | 0 |
+| wdi | 54 | 0 | 0 |
 
 ## By Paper Section
 
@@ -56,7 +56,7 @@ Generated: 2026-04-23 01:38
 | policy-over-performers | 81 | 81 | 0 |
 | robustness | 210 | 210 | 0 |
 | specialisation-requires-loaded-labour | 1 | 1 | 0 |
-| taiwan-and-korea | 6 | 6 | 0 |
+| taiwan-and-korea | 8 | 8 | 0 |
 | the-cases | 26 | 26 | 0 |
 | the-colonial-test | 17 | 17 | 0 |
 | the-convergence | 6 | 6 | 0 |

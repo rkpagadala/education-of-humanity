@@ -232,7 +232,7 @@ S_TFR   = os.path.join(REPO_ROOT, "scripts", "residualization", "education_vs_tf
 reg("T1-obs",        1665,   "checkin", ("panel_full_fe.json", "numbers.panel_obs"),
     [(DATA_SEC, None), (APPENDIX_ROBUST, None), (APPENDIX_TWFE, None)], tol=0)
 reg("T1-countries",  185,    "checkin", ("panel_full_fe.json", "numbers.panel_countries"),
-    [(ABSTRACT, 141), (THE_EVIDENCE, None), (DATA_SEC, 3), (APPENDIX_ROBUST, None),
+    [(ABSTRACT, 142), (THE_EVIDENCE, None), (DATA_SEC, 3), (APPENDIX_ROBUST, None),
      ("specialisation-requires-loaded-labour", None),
      ("nine-year-measurement", None),
      (EMPIRICAL, None)], tol=0)
@@ -777,6 +777,18 @@ reg("GDP-Indonesia-1960",   598, "wdi", ("gdp", "Indonesia", 1960), [(TAIWAN_KOR
 reg("GDP-India-1960",       313, "wdi", ("gdp", "India", 1960), [(TAIWAN_KOREA, 19)], tol=5)
 reg("GDP-China-1960",       241, "wdi", ("gdp", "China", 1960), [(TAIWAN_KOREA, 19)], tol=5)
 # Note: Korea 1960 already registered above as GDP-Korea-1960
+
+# Philippines 2022 status (§11.1 explicit crossing statement)
+reg("Phil-TFR-cross-yr",    2003, "ref",
+    "First year Philippines TFR fell below 3.65 (WDI children_per_woman_total_fertility.csv)",
+    [(TAIWAN_KOREA, None)], tol=0)
+reg("Phil-LE-cross-yr",     2017, "ref",
+    "First year Philippines LE exceeded 69.8 (WDI life_expectancy_years.csv)",
+    [(TAIWAN_KOREA, None)], tol=0)
+reg("Phil-TFR-2022",        1.9,  "wdi", ("tfr", "Philippines", 2022),
+    [(TAIWAN_KOREA, None)], tol=0.1)
+reg("Phil-LE-2022",         69.5, "wdi", ("le", "Philippines", 2022),
+    [(TAIWAN_KOREA, None)], tol=0.3)
 
 # ══════════════════════════════════════════════════════════════════════════
 # WDI DATA — Total Fertility Rate
