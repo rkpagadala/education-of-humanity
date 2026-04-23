@@ -284,68 +284,71 @@ reg("GB-alreadytreated-beta",   9.6,   "checkin",
     [(APPENDIX_ROBUST, None), (APPENDIX_TWFE, None)], tol=0.1)
 
 # ══════════════════════════════════════════════════════════════════════════
-# COMPLETION vs TEST SCORES — horse race (completion_vs_test_scores.py)
+# COMPLETION vs TEST SCORES — old within-country horse race superseded by
+# Chapter 9 cross-country race (hanushek_horse_race_comprehensive.py).
+# These registrations remain as passing robustness references (the JSON is
+# still built) but are not cited in the current paper body. Kept for the
+# auxiliary scripts only; see §9.6 Hanushek reconciliation for live numbers.
 # ══════════════════════════════════════════════════════════════════════════
 reg("HLO-overlap-countries", 96, "checkin",
     ("completion_vs_test_scores.json", "coverage.overlap_countries"),
-    [COMPLETION], tol=0)
+    [], tol=0)
 reg("HLO-TFR-edu-r2",  0.28, "checkin",
     ("completion_vs_test_scores.json", "short_lag.10.tfr.edu.r2"),
-    [COMPLETION], tol=0.01)
+    [], tol=0.01)
 reg("HLO-TFR-test-r2", 0.011, "checkin",
     ("completion_vs_test_scores.json", "short_lag.10.tfr.test.r2"),
-    [COMPLETION], tol=0.005)
+    [], tol=0.005)
 reg("HLO-TFR-test-p",  0.23, "checkin",
     ("completion_vs_test_scores.json", "short_lag.10.tfr.test.pval"),
-    [COMPLETION], tol=0.01)
+    [], tol=0.01)
 reg("HLO-U5MR-edu-r2", 0.44, "checkin",
     ("completion_vs_test_scores.json", "short_lag.10.u5mr.edu.r2"),
-    [COMPLETION], tol=0.01)
+    [], tol=0.01)
 reg("HLO-U5MR-test-r2", 0.01, "checkin",
     ("completion_vs_test_scores.json", "short_lag.10.u5mr.test.r2"),
-    [COMPLETION], tol=0.01)
+    [], tol=0.01)
 reg("HLO-U5MR-test-p",  0.48, "checkin",
     ("completion_vs_test_scores.json", "short_lag.10.u5mr.test.pval"),
-    [COMPLETION], tol=0.01)
+    [], tol=0.01)
 
 # ══════════════════════════════════════════════════════════════════════════
-# DURATION vs FIDELITY — 4-horse race (completion_vs_years_vs_tests.py)
-# WCDE completion, WCDE mean years, Barro-Lee mean years, HLO test scores
-# on the overlap sample, at 10-year forward lag.
+# DURATION vs FIDELITY — 4-horse race. Superseded by §9.6 cross-country
+# race in Chapter 9; kept as robustness JSON, not cited in paper body.
 # ══════════════════════════════════════════════════════════════════════════
 reg("DVF-LE-wcde-mys-r2",   0.173, "checkin",
     ("completion_vs_years_vs_tests.json", "results.lag_10.le.wcde_mys_t.r2"),
-    [COMPLETION], tol=0.005)
+    [], tol=0.005)
 reg("DVF-LE-bl-mys-r2",     0.076, "checkin",
     ("completion_vs_years_vs_tests.json", "results.lag_10.le.bl_mys_t.r2"),
-    [COMPLETION], tol=0.005)
+    [], tol=0.005)
 reg("DVF-LE-test-r2",       0.000, "checkin",
     ("completion_vs_years_vs_tests.json", "results.lag_10.le.test_t.r2"),
-    [COMPLETION], tol=0.005)
+    [], tol=0.005)
 reg("DVF-LE-test-p",        0.97,  "checkin",
     ("completion_vs_years_vs_tests.json", "results.lag_10.le.test_t.pval"),
-    [COMPLETION], tol=0.02)
+    [], tol=0.02)
 reg("DVF-TFR-wcde-mys-r2",  0.330, "checkin",
     ("completion_vs_years_vs_tests.json", "results.lag_10.tfr.wcde_mys_t.r2"),
-    [COMPLETION], tol=0.005)
+    [], tol=0.005)
 reg("DVF-TFR-bl-mys-r2",    0.101, "checkin",
     ("completion_vs_years_vs_tests.json", "results.lag_10.tfr.bl_mys_t.r2"),
-    [COMPLETION], tol=0.005)
+    [], tol=0.005)
 reg("DVF-TFR-test-r2",      0.005, "checkin",
     ("completion_vs_years_vs_tests.json", "results.lag_10.tfr.test_t.r2"),
-    [COMPLETION], tol=0.005)
+    [], tol=0.005)
 reg("DVF-TFR-test-p",       0.41,  "checkin",
     ("completion_vs_years_vs_tests.json", "results.lag_10.tfr.test_t.pval"),
-    [COMPLETION], tol=0.02)
+    [], tol=0.02)
 reg("DVF-U5MR-wcde-mys-r2", 0.449, "checkin",
     ("completion_vs_years_vs_tests.json", "results.lag_10.u5mr.wcde_mys_t.r2"),
-    [COMPLETION], tol=0.01)
+    [], tol=0.01)
 reg("DVF-U5MR-bl-mys-r2",   0.305, "checkin",
     ("completion_vs_years_vs_tests.json", "results.lag_10.u5mr.bl_mys_t.r2"),
-    [COMPLETION], tol=0.01)
+    [], tol=0.01)
 reg("DVF-U5MR-test-r2",     0.028, "checkin",
     ("completion_vs_years_vs_tests.json", "results.lag_10.u5mr.test_t.r2"),
-    [COMPLETION], tol=0.005)
+    [], tol=0.005)
 
 # ══════════════════════════════════════════════════════════════════════════
 # Lag decay — four outcomes × five generational anchors (0, 25, 50, 75, 100).
@@ -2528,6 +2531,407 @@ reg("Col-IV-F-polity",       1.4, "derived",
     "First-stage F-stat for Polity2 instrument (weak-IV diagnostic)",
     [("the-institutional-challenge", None)], tol=0.1)
 
+# ══════════════════════════════════════════════════════════════════════════
+# §9 Data Credibility: The Goskomstat Anomaly
+# ══════════════════════════════════════════════════════════════════════════
+
+GOSK = "goskomstat-anomaly"
+GOSK_PATTERN = "goskomstat-anomaly-pattern"
+GOSK_WCDE = "what-wcde-reports"
+GOSK_PHENO = "phenotype-test-ussr"
+GOSK_BL = "barro-lee-partial"
+GOSK_COHORT = "cohort-shadow"
+GOSK_HANUSHEK = "hanushek-reconciliation"
+GOSK_EXCLUSION = "exclusion-robustness"
+
+# ── §9 intro: WCDE vs Barro-Lee headline disagreements ─────────────
+reg("G-Kaz-1970-wcde",     94,  "checkin",
+    ("soviet_inflation.json", "numbers.lsec_kazakhstan_1970"),
+    [(GOSK, None), (GOSK_WCDE, None)], tol=1)
+reg("G-Turk-1970-wcde",    95,  "checkin",
+    ("soviet_inflation.json", "numbers.lsec_turkmenistan_1970"),
+    [(GOSK_WCDE, None)], tol=1)
+reg("G-Iran-1970-wcde",    22,  "checkin",
+    ("soviet_inflation.json", "numbers.lsec_iran_1970"),
+    [(GOSK, None), (GOSK_WCDE, None)], tol=1)
+reg("G-Turkey-1970-wcde",  22,  "checkin",
+    ("soviet_inflation.json", "numbers.lsec_turkey_1970"),
+    [(GOSK_WCDE, None)], tol=1)
+reg("G-Pak-1970-wcde",     16,  "checkin",
+    ("soviet_inflation.json", "numbers.lsec_pakistan_1970"),
+    [(GOSK_WCDE, None)], tol=1)
+reg("G-Afg-1970-wcde",     6,   "checkin",
+    ("soviet_inflation.json", "numbers.lsec_afghanistan_1970"),
+    [(GOSK_WCDE, None)], tol=1)
+reg("G-n-republics",       15,  "const",
+    "Count of USSR republics",
+    [(GOSK_PATTERN, None), (GOSK_BL, None),
+     (GOSK_EXCLUSION, None), (DATA_SEC, None)], tol=0)
+
+# ── §9.2 Diagnostic 1 & 2: gender gap and primary-lsec dropoff ─────
+reg("G-fm-gap-CA-1970",   -2.7, "checkin",
+    ("soviet_inflation.json", "numbers.fm_gap_central_asia_1970"),
+    [(GOSK_WCDE, None)], tol=0.2)
+reg("G-fm-gap-neighbors-1970", -15.6, "checkin",
+    ("soviet_inflation.json", "numbers.fm_gap_non-soviet_neighbors_1970"),
+    [(GOSK_WCDE, None)], tol=0.2)
+reg("G-prim-lsec-CA-1980", 1.6, "checkin",
+    ("soviet_inflation.json", "numbers.prim_minus_lsec_central_asia_1980"),
+    [(GOSK_WCDE, None)], tol=0.3)
+reg("G-prim-lsec-neighbors-1980", 21.0, "checkin",
+    ("soviet_inflation.json", "numbers.prim_minus_lsec_non-soviet_neighbors_1980"),
+    [(GOSK_WCDE, None)], tol=0.5)
+
+# ── §9.3 Phenotype test: U5MR trajectories  ────────────────────────
+# These are WDI lookups for Iran/Kazakhstan/Turkey U5MR; verified via WDI
+reg("G-Iran-u5mr-1960",   327, "ref",
+    "Iran U5MR 1960 (WDI SH.DYN.MORT)",
+    [(GOSK_PHENO, None)], tol=5)
+reg("G-Iran-u5mr-2010",   20,  "ref",
+    "Iran U5MR 2010 (WDI)",
+    [(GOSK_PHENO, None)], tol=2)
+reg("G-Turkey-u5mr-1960", 258, "ref",
+    "Turkey U5MR 1960 (WDI)",
+    [(GOSK_PHENO, None)], tol=5)
+reg("G-Turkey-u5mr-2010", 17,  "ref",
+    "Turkey U5MR 2010 (WDI)",
+    [(GOSK_PHENO, None)], tol=2)
+reg("G-Kaz-u5mr-1960",    107, "ref",
+    "Kazakhstan U5MR 1960 (WDI)",
+    [(GOSK_PHENO, None)], tol=5)
+reg("G-Kaz-u5mr-2010",    20,  "ref",
+    "Kazakhstan U5MR 2010 (WDI)",
+    [(GOSK_PHENO, None)], tol=2)
+reg("G-Iran-decline-pct",  94, "derived",
+    "Iran U5MR percentage decline 1960-2010",
+    [(GOSK_PHENO, None)], tol=1)
+reg("G-Kaz-decline-pct",   81, "derived",
+    "Kazakhstan U5MR percentage decline 1960-2010",
+    [(GOSK_PHENO, None)], tol=1)
+
+# ── §9.4 Subgroup split under Barro-Lee ────────────────────────────
+# TFR bias (SDs)
+reg("G-BL-TFR-CA-bias",    1.15, "checkin",
+    ("edu_measure_horse_race.json",
+     "numbers.subgroup_split.tfr_bl_reach_sec_central_caucasus.bias_sds"),
+    [(GOSK_BL, None)], tol=0.05)
+reg("G-BL-TFR-Slav-bias",  0.28, "checkin",
+    ("edu_measure_horse_race.json",
+     "numbers.subgroup_split.tfr_bl_reach_sec_slavic_west.bias_sds"),
+    [(GOSK_BL, None)], tol=0.05)
+reg("G-BL-TFR-Balt-bias", -0.01, "checkin",
+    ("edu_measure_horse_race.json",
+     "numbers.subgroup_split.tfr_bl_reach_sec_baltics.bias_sds"),
+    [(GOSK_BL, None)], tol=0.05)
+reg("G-BL-TFR-WP-bias",   -0.42, "checkin",
+    ("edu_measure_horse_race.json",
+     "numbers.subgroup_split.tfr_bl_reach_sec_warsaw_pact.bias_sds"),
+    [(GOSK_BL, None)], tol=0.05)
+reg("G-BL-TFR-Yug-bias",  -0.59, "checkin",
+    ("edu_measure_horse_race.json",
+     "numbers.subgroup_split.tfr_bl_reach_sec_yugoslavia_albania.bias_sds"),
+    [(GOSK_BL, None)], tol=0.05)
+# LE bias (SDs)
+reg("G-BL-LE-CA-bias",   -1.79, "checkin",
+    ("edu_measure_horse_race.json",
+     "numbers.subgroup_split.le_bl_reach_sec_central_caucasus.bias_sds"),
+    [(GOSK_BL, None)], tol=0.05)
+reg("G-BL-LE-Slav-bias", -1.93, "checkin",
+    ("edu_measure_horse_race.json",
+     "numbers.subgroup_split.le_bl_reach_sec_slavic_west.bias_sds"),
+    [(GOSK_BL, None)], tol=0.05)
+reg("G-BL-LE-Balt-bias", -1.14, "checkin",
+    ("edu_measure_horse_race.json",
+     "numbers.subgroup_split.le_bl_reach_sec_baltics.bias_sds"),
+    [(GOSK_BL, None)], tol=0.05)
+reg("G-BL-LE-WP-bias",   -0.49, "checkin",
+    ("edu_measure_horse_race.json",
+     "numbers.subgroup_split.le_bl_reach_sec_warsaw_pact.bias_sds"),
+    [(GOSK_BL, None)], tol=0.05)
+reg("G-BL-LE-Yug-bias",   0.09, "checkin",
+    ("edu_measure_horse_race.json",
+     "numbers.subgroup_split.le_bl_reach_sec_yugoslavia_albania.bias_sds"),
+    [(GOSK_BL, None)], tol=0.05)
+# log U5MR bias (SDs)
+reg("G-BL-U5-CA-bias",    2.78, "checkin",
+    ("edu_measure_horse_race.json",
+     "numbers.subgroup_split.log_u5mr_bl_reach_sec_central_caucasus.bias_sds"),
+    [(GOSK_BL, None)], tol=0.05)
+reg("G-BL-U5-Slav-bias",  1.90, "checkin",
+    ("edu_measure_horse_race.json",
+     "numbers.subgroup_split.log_u5mr_bl_reach_sec_slavic_west.bias_sds"),
+    [(GOSK_BL, None)], tol=0.05)
+reg("G-BL-U5-Balt-bias",  0.71, "checkin",
+    ("edu_measure_horse_race.json",
+     "numbers.subgroup_split.log_u5mr_bl_reach_sec_baltics.bias_sds"),
+    [(GOSK_BL, None)], tol=0.05)
+reg("G-BL-U5-WP-bias",    0.25, "checkin",
+    ("edu_measure_horse_race.json",
+     "numbers.subgroup_split.log_u5mr_bl_reach_sec_warsaw_pact.bias_sds"),
+    [(GOSK_BL, None)], tol=0.05)
+reg("G-BL-U5-Yug-bias",  -0.15, "checkin",
+    ("edu_measure_horse_race.json",
+     "numbers.subgroup_split.log_u5mr_bl_reach_sec_yugoslavia_albania.bias_sds"),
+    [(GOSK_BL, None)], tol=0.05)
+# Subgroup n counts
+reg("G-n-CA-Caucasus",  16, "checkin",
+    ("edu_measure_horse_race.json",
+     "numbers.subgroup_split.tfr_bl_reach_sec_central_caucasus.n"),
+    [(GOSK_BL, None)], tol=0)
+reg("G-n-Slavic",        8, "checkin",
+    ("edu_measure_horse_race.json",
+     "numbers.subgroup_split.tfr_bl_reach_sec_slavic_west.n"),
+    [(GOSK_BL, None)], tol=0)
+reg("G-n-Baltics",      12, "checkin",
+    ("edu_measure_horse_race.json",
+     "numbers.subgroup_split.tfr_bl_reach_sec_baltics.n"),
+    [(GOSK_BL, None)], tol=0)
+reg("G-n-WP",           20, "checkin",
+    ("edu_measure_horse_race.json",
+     "numbers.subgroup_split.tfr_bl_reach_sec_warsaw_pact.n"),
+    [(GOSK_BL, None)], tol=0)
+reg("G-n-Yugoslavia",   16, "checkin",
+    ("edu_measure_horse_race.json",
+     "numbers.subgroup_split.tfr_bl_reach_sec_yugoslavia_albania.n"),
+    [(GOSK_BL, None)], tol=0)
+
+# ── §9.5 Cohort shadow: residual by year under Barro-Lee ───────────
+reg("G-LE-resid-2000",    -8.5, "checkin",
+    ("ussr_residual_by_year.json", "numbers.le_bl_resid_2000"),
+    [(GOSK_COHORT, None)], tol=0.2)
+reg("G-U5-resid-1960",    0.29, "checkin",
+    ("ussr_residual_by_year.json", "numbers.u5log_bl_resid_1960"),
+    [(GOSK_COHORT, None)], tol=0.05)
+reg("G-U5-resid-1980",    0.98, "checkin",
+    ("ussr_residual_by_year.json", "numbers.u5log_bl_resid_1980"),
+    [(GOSK_COHORT, None)], tol=0.05)
+reg("G-U5-resid-2000",    1.10, "checkin",
+    ("ussr_residual_by_year.json", "numbers.u5log_bl_resid_2000"),
+    [(GOSK_COHORT, None)], tol=0.05)
+reg("G-U5-resid-2010",    0.39, "checkin",
+    ("ussr_residual_by_year.json", "numbers.u5log_bl_resid_2010"),
+    [(GOSK_COHORT, None)], tol=0.05)
+reg("G-U5-resid-2000-t",  5.7, "derived",
+    "t-stat for 2000 U5MR residual (broad plateau peak)",
+    [(GOSK_COHORT, None)], tol=0.3)
+
+# ── §9.6 Hanushek reconciliation: HLO-as-PT + horse race ───────────
+reg("G-HLO-n",            77, "checkin",
+    ("hlo_is_pt.json", "numbers.t1_n"),
+    [(GOSK_HANUSHEK, None)], tol=0)
+reg("G-HLO-lsec1990-R2",  0.523, "checkin",
+    ("hlo_is_pt.json", "numbers.t1_r2"),
+    [(GOSK_HANUSHEK, None)], tol=0.01)
+reg("G-HLO-lsec1990-beta", 1.94, "checkin",
+    ("hlo_is_pt.json", "numbers.t1_beta_lsec"),
+    [(GOSK_HANUSHEK, None)], tol=0.05)
+reg("G-HLO-lsec1990-t",   9.1, "checkin",
+    ("hlo_is_pt.json", "numbers.t1_t_lsec"),
+    [(GOSK_HANUSHEK, None)], tol=0.2)
+reg("G-HLO-lsec1990-corr", 0.72, "checkin",
+    ("hlo_is_pt.json", "numbers.t1_corr"),
+    [(GOSK_HANUSHEK, None)], tol=0.02)
+# Lag-sweep R²
+reg("G-LagSweep-lag0",   0.504, "checkin",
+    ("hlo_lag_sweep.json", "numbers.r2_lsec_lag_0"),
+    [(GOSK_HANUSHEK, None), (COMPLETION, None)], tol=0.01)
+reg("G-LagSweep-lag10",  0.539, "checkin",
+    ("hlo_lag_sweep.json", "numbers.lsec_sweep.lag_10.r2"),
+    [(GOSK_HANUSHEK, None)], tol=0.01)
+reg("G-LagSweep-primary-lag25", 0.549, "checkin",
+    ("hlo_lag_sweep.json", "numbers.primary_sweep.lag_25.r2"),
+    [(GOSK_HANUSHEK, None)], tol=0.01)
+reg("G-LagSweep-primary-lag60", 0.489, "checkin",
+    ("hlo_lag_sweep.json", "numbers.primary_sweep.lag_60.r2"),
+    [(GOSK_HANUSHEK, None), (COMPLETION, None)], tol=0.01)
+# Top and bottom residuals (school overperformers / underperformers)
+reg("G-HLO-China-resid",  111, "checkin",
+    ("hlo_is_pt.json", "numbers.top_positive_residuals[0].residual"),
+    [(GOSK_HANUSHEK, None)], tol=3)
+reg("G-HLO-Vietnam-resid", 111, "checkin",
+    ("hlo_is_pt.json", "numbers.top_positive_residuals[1].residual"),
+    [(GOSK_HANUSHEK, None)], tol=3)
+reg("G-HLO-Singapore-resid", 93, "checkin",
+    ("hlo_is_pt.json", "numbers.top_positive_residuals[2].residual"),
+    [(GOSK_HANUSHEK, None)], tol=3)
+reg("G-HLO-Portugal-resid", 76, "checkin",
+    ("hlo_is_pt.json", "numbers.top_positive_residuals[3].residual"),
+    [(GOSK_HANUSHEK, None)], tol=3)
+reg("G-HLO-SA-resid",     -116, "checkin",
+    ("hlo_is_pt.json", "numbers.top_negative_residuals[0].residual"),
+    [(GOSK_HANUSHEK, None)], tol=3)
+reg("G-HLO-Ghana-resid",  -108, "checkin",
+    ("hlo_is_pt.json", "numbers.top_negative_residuals[1].residual"),
+    [(GOSK_HANUSHEK, None)], tol=3)
+reg("G-HLO-Albania-resid",  -86, "checkin",
+    ("hlo_is_pt.json", "numbers.top_negative_residuals[2].residual"),
+    [(GOSK_HANUSHEK, None)], tol=3)
+reg("G-HLO-Mont-resid",   -72, "checkin",
+    ("hlo_is_pt.json", "numbers.top_negative_residuals[3].residual"),
+    [(GOSK_HANUSHEK, None)], tol=3)
+# Horse race (hanushek_horse_race.json)
+reg("G-HR-n",             104, "checkin",
+    ("hanushek_horse_race.json", "numbers.panel_n"),
+    [(COMPLETION, None)], tol=0)
+reg("G-HR-TFR-quant-beta", -0.64, "checkin",
+    ("hanushek_horse_race.json", "numbers.tfr.D_quant_beta"),
+    [(GOSK_HANUSHEK, None), (COMPLETION, None)], tol=0.02)
+reg("G-HR-TFR-quant-t",   -7.4, "checkin",
+    ("hanushek_horse_race.json", "numbers.tfr.D_quant_t"),
+    [(GOSK_HANUSHEK, None), (COMPLETION, None)], tol=0.2)
+reg("G-HR-TFR-qual-beta", -0.25, "checkin",
+    ("hanushek_horse_race.json", "numbers.tfr.D_qual_beta"),
+    [(GOSK_HANUSHEK, None), (COMPLETION, None)], tol=0.02)
+reg("G-HR-TFR-qual-t",    -2.9, "checkin",
+    ("hanushek_horse_race.json", "numbers.tfr.D_qual_t"),
+    [(GOSK_HANUSHEK, None), (COMPLETION, None)], tol=0.2)
+reg("G-HR-TFR-R2-quant",   0.70, "checkin",
+    ("hanushek_horse_race.json", "numbers.tfr.A_quant_only_r2"),
+    [(GOSK_HANUSHEK, None), (COMPLETION, None)], tol=0.01)
+reg("G-HR-TFR-R2-both",    0.72, "checkin",
+    ("hanushek_horse_race.json", "numbers.tfr.D_both_r2"),
+    [(GOSK_HANUSHEK, None), (COMPLETION, None)], tol=0.01)
+reg("G-HR-U5-qual-beta",  -0.70, "checkin",
+    ("hanushek_horse_race.json", "numbers.u5mr.D_qual_beta"),
+    [(GOSK_HANUSHEK, None), (COMPLETION, None)], tol=0.02)
+reg("G-HR-U5-qual-t",     -7.6, "checkin",
+    ("hanushek_horse_race.json", "numbers.u5mr.D_qual_t"),
+    [(GOSK_HANUSHEK, None), (COMPLETION, None)], tol=0.2)
+reg("G-HR-U5-R2",         0.78, "checkin",
+    ("hanushek_horse_race.json", "numbers.u5mr.D_both_r2"),
+    [(GOSK_HANUSHEK, None), (COMPLETION, None)], tol=0.01)
+reg("G-HR-LE-qual-beta",   0.83, "checkin",
+    ("hanushek_horse_race.json", "numbers.le.D_qual_beta"),
+    [(GOSK_HANUSHEK, None), (COMPLETION, None)], tol=0.02)
+reg("G-HR-LE-qual-t",      7.7, "checkin",
+    ("hanushek_horse_race.json", "numbers.le.D_qual_t"),
+    [(GOSK_HANUSHEK, None), (COMPLETION, None)], tol=0.2)
+reg("G-HR-LE-R2",         0.62, "checkin",
+    ("hanushek_horse_race.json", "numbers.le.D_both_r2"),
+    [(GOSK_HANUSHEK, None), (COMPLETION, None)], tol=0.01)
+
+# ── §9.7 Exclusion robustness ──────────────────────────────────────
+reg("G-Excl-full-beta",    0.483, "checkin",
+    ("ussr_exclusion_panel.json", "numbers.T1M1_full_beta"),
+    [(GOSK_EXCLUSION, None), (APPENDIX_ROBUST, None)], tol=0.005)
+reg("G-Excl-full-n",       1665,  "checkin",
+    ("ussr_exclusion_panel.json", "numbers.T1M1_full_n"),
+    [(GOSK_EXCLUSION, None)], tol=0)
+reg("G-Excl-full-countries", 185, "checkin",
+    ("ussr_exclusion_panel.json", "numbers.T1M1_full_countries"),
+    [(GOSK_EXCLUSION, None)], tol=0)
+reg("G-Excl-clean-beta",   0.538, "checkin",
+    ("ussr_exclusion_panel.json", "numbers.T1M1_clean_beta"),
+    [(GOSK_EXCLUSION, None), (APPENDIX_ROBUST, None)], tol=0.005)
+reg("G-Excl-clean-n",      1539,  "checkin",
+    ("ussr_exclusion_panel.json", "numbers.T1M1_clean_n"),
+    [(GOSK_EXCLUSION, None)], tol=0)
+reg("G-Excl-clean-countries", 171, "checkin",
+    ("ussr_exclusion_panel.json", "numbers.T1M1_clean_countries"),
+    [(GOSK_EXCLUSION, None), (GOSK_PATTERN, None), (APPENDIX_ROBUST, None)],
+    tol=0)
+reg("G-Excl-full-r2",      0.457, "checkin",
+    ("ussr_exclusion_panel.json", "numbers.T1M1_full_r2"),
+    [(GOSK_EXCLUSION, None)], tol=0.005)
+reg("G-Excl-clean-r2",     0.507, "checkin",
+    ("ussr_exclusion_panel.json", "numbers.T1M1_clean_r2"),
+    [(GOSK_EXCLUSION, None)], tol=0.005)
+reg("G-Excl-LE-full",      0.350, "checkin",
+    ("ussr_exclusion_panel.json", "numbers.LE_full_r2"),
+    [(GOSK_EXCLUSION, None)], tol=0.005)
+reg("G-Excl-LE-clean",     0.366, "checkin",
+    ("ussr_exclusion_panel.json", "numbers.LE_clean_r2"),
+    [(GOSK_EXCLUSION, None), (APPENDIX_ROBUST, None)], tol=0.005)
+reg("G-Excl-TFR-full",     0.439, "checkin",
+    ("ussr_exclusion_panel.json", "numbers.TFR_full_r2"),
+    [(GOSK_EXCLUSION, None)], tol=0.005)
+reg("G-Excl-TFR-clean",    0.444, "checkin",
+    ("ussr_exclusion_panel.json", "numbers.TFR_clean_r2"),
+    [(GOSK_EXCLUSION, None), (APPENDIX_ROBUST, None)], tol=0.005)
+reg("G-Excl-U5-full",      0.635, "checkin",
+    ("ussr_exclusion_panel.json", "numbers.U5log_full_r2"),
+    [(GOSK_EXCLUSION, None)], tol=0.005)
+reg("G-Excl-U5-clean",     0.659, "checkin",
+    ("ussr_exclusion_panel.json", "numbers.U5log_clean_r2"),
+    [(GOSK_EXCLUSION, None)], tol=0.005)
+
+# ── §9.1 and scattered: post-socialist counts and lags ─────────────
+reg("G-n-postsoc",         28, "derived",
+    "28 post-socialist crossers (15 USSR + 13 Warsaw Pact + Yugoslavia)",
+    [(GOSK_PATTERN, None)], tol=0)
+reg("G-median-lag-market",  18, "derived",
+    "Market-economy median years from 90% lsec to crossing",
+    [(GOSK_PATTERN, None)], tol=1)
+reg("G-Turkm-lag",          52, "derived",
+    "Turkmenistan lag: years from reported 90% lsec to crossing",
+    [(GOSK_PATTERN, None)], tol=1)
+
+# ── §9 intro: Latvia and Russia WCDE vs B-L headline numbers ───────
+reg("G-Latvia-1970-wcde",  99, "derived",
+    "Latvia 1970 lower-sec completion (WCDE v3)",
+    [(GOSK, None)], tol=1)
+reg("G-Latvia-1970-bl",    57, "derived",
+    "Latvia 1970 reached-secondary age 25-34 (Barro-Lee v3.0)",
+    [(GOSK, None)], tol=1)
+reg("G-Russia-1970-wcde",  95, "derived",
+    "Russia 1970 lower-sec completion (WCDE v3)",
+    [(GOSK, None)], tol=1)
+reg("G-Russia-1970-bl",    73, "derived",
+    "Russia 1970 reached-secondary age 25-34 (Barro-Lee v3.0)",
+    [(GOSK, None), (SHOCK_TEST, None)], tol=1)
+reg("G-Kaz-1970-bl",       49, "derived",
+    "Kazakhstan 1970 reached-secondary age 25-34 (Barro-Lee v3.0)",
+    [(GOSK, None)], tol=1)
+
+# ── §9.2 / §9.6 PISA and HLO ground-truth references ───────────────
+reg("G-PISA-OECD",         500, "const",
+    "OECD mean PISA scale (reference mean)",
+    [(GOSK_WCDE, None)], tol=0)
+reg("G-PISA-Kyrg-2009",    350, "ref",
+    "Kyrgyzstan PISA 2009 mean score (OECD PISA report)",
+    [(GOSK_WCDE, None), (GOSK_HANUSHEK, None)], tol=5)
+reg("G-Kyrg-2010-wcde",    99, "derived",
+    "Kyrgyzstan 2010 lower-sec completion (WCDE v3)",
+    [(GOSK_HANUSHEK, None)], tol=1)
+reg("G-Albania-HLO",       412, "checkin",
+    ("hlo_is_pt.json", "numbers.top_negative_residuals[2].hlo"),
+    [(GOSK_HANUSHEK, None)], tol=3)
+reg("G-Albania-lsec1990",  96, "checkin",
+    ("hlo_is_pt.json", "numbers.top_negative_residuals[2].lsec_1990"),
+    [(GOSK_HANUSHEK, None)], tol=1)
+reg("G-PISA-Baltic-max",   535, "ref",
+    "Baltic PISA score upper bound (OECD PISA)",
+    [(GOSK_WCDE, None)], tol=5)
+
+# Horse race insignificant-quantity t-stats (paper cites magnitudes;
+# checkin stores signed values)
+reg("G-HR-U5-quant-t-marg", -1.7, "checkin",
+    ("hanushek_horse_race.json", "numbers.u5mr.D_quant_t"),
+    [(COMPLETION, None), (GOSK_HANUSHEK, None)], tol=0.1)
+reg("G-HR-LE-quant-t-marg", -1.1, "checkin",
+    ("hanushek_horse_race.json", "numbers.le.D_quant_t"),
+    [(COMPLETION, None), (GOSK_HANUSHEK, None)], tol=0.1)
+reg("G-HR-U5-quant-beta-marg", -0.16, "checkin",
+    ("hanushek_horse_race.json", "numbers.u5mr.D_quant_beta"),
+    [(COMPLETION, None)], tol=0.02)
+reg("G-HR-U5-quant-p-marg", 0.09, "checkin",
+    ("hanushek_horse_race.json", "numbers.u5mr.D_quant_p"),
+    [(COMPLETION, None)], tol=0.02)
+
+# ── §9 miscellaneous years and dates ───────────────────────────────
+reg("G-year-1917", 1917, "const",
+    "Pre-1917 educational-baseline reference (Russian Revolution)",
+    [(GOSK_WCDE, None)], tol=0)
+reg("G-year-1940", 1940, "const",
+    "Pre-1940 Baltic educational infrastructure (Soviet occupation)",
+    [(GOSK_WCDE, None)], tol=0)
+reg("G-year-1991", 1991, "const",
+    "1991 Soviet dissolution kink reference",
+    [(GOSK_PHENO, None)], tol=0)
+reg("G-year-1995", 1995, "const",
+    "1995 mid-transition crisis peak reference",
+    [(GOSK_COHORT, None)], tol=0)
+
 
 def run_script(path, cwd=None):
     if not os.path.exists(path):
@@ -3393,6 +3797,8 @@ def main():
         clean = clean.replace("{,}", ",")
         # Strip \textasciitilde so numbers after ~ are visible to the regex
         clean = clean.replace("\\textasciitilde", "~")
+        # LaTeX non-breaking space `\ ` → ` ` (so "et al.\ 2021" parses as citation)
+        clean = clean.replace("\\ ", " ")
         # Parenthetical citations: (Author 2004), (Author et al. 2008; Other 2010)
         clean = re.sub(r'\([^)]*\d{4}[^)]*\)', '', clean)
         # Inline code spans
@@ -3418,6 +3824,8 @@ def main():
         clean = re.sub(r'\\real\{[^}]*\}', '', clean)
         # LaTeX column specifications: p{6.3cm}, m{5cm}, etc.
         clean = re.sub(r'[pmb]\{[^}]*?[0-9.]+\s*c?m\}', '', clean)
+        # LaTeX \includegraphics options: [width=0.95\linewidth]
+        clean = re.sub(r'\\includegraphics\[[^\]]*\]', '', clean)
 
         nums = []
         for m in NUMBER_RE.finditer(clean):
@@ -3492,6 +3900,8 @@ def main():
 
     def citation_years_in_line(line):
         """Extract years that appear in citation context on this line."""
+        # Normalize LaTeX non-breaking space so "et al.\ 2021" parses
+        line = line.replace("\\ ", " ")
         cite_years = set()
         for m in CITE_CONTEXT_RE.finditer(line):
             for g in m.groups():

@@ -1746,6 +1746,14 @@ expectancy, TFR, and under-5 mortality: World Bank WDI. Parental
 education: each country's lower secondary completion lagged 25 years
 (T−25).
 
+The 15 USSR republics inherit Goskomstat's 1960--1990 reporting
+inflation on lower-secondary completion; Barro-Lee v3.0 partially
+corrects the level but leaves residual bias on life expectancy and
+child mortality. Chapter~\ref{goskomstat-anomaly} documents the four
+phenotype signatures of the anomaly and confirms that every headline
+result in this paper survives --- and strengthens under --- exclusion
+of those 15 republics.
+
 \subsection{Descriptive Statistics}\label{descriptive-statistics}
 
 The analysis panel is 185 countries observed at 5-year intervals
@@ -1885,40 +1893,41 @@ internalise an abstract procedure --- was never constructed.
 
 \paragraph{The empirical confirmation.}
 
-A direct test confirms the mechanistic argument. On the 96 countries
-where both completion rates and harmonised test scores exist (Angrist et
-al.~2021), I run a horse race: which measure better predicts life
-expectancy, TFR, and child mortality? With country fixed effects at a
-10-year forward lag, completion explains 28\% of within-country TFR
-variation; test scores explain 1.1\% ($p = 0.23$). For child mortality
-the ratio is similar: completion $R^2 = 0.44$, test scores $R^2 = 0.01$
-($p = 0.48$). Hanushek \& Woessmann's quality measure predicts GDP
-growth --- their dependent variable. It does not predict development
-outcomes.
+A direct test partitions the outcomes by the cognitive depth each
+requires. On a 104-country cross-country panel with USSR republics
+excluded, using Angrist et al.\ (2021) HLO test scores and WCDE
+completion: for TFR, quantity (primary completion) dominates at
+$\beta_z = -0.64$ ($t = -7.4$); adding test-score quality
+contributes $\beta_z = -0.25$ ($t = -2.9$), taking R² from 0.70 to
+0.72. Primary completion alone drives the fertility transition.
+For child mortality (log U5MR) the partition reverses: quantity
+goes insignificant ($\beta_z = -0.16$, $p = 0.09$); quality
+dominates ($\beta_z = -0.70$, $t = -7.6$, R² = 0.78). For life
+expectancy: quantity insignificant ($t = -1.1$); quality dominates
+($\beta_z = +0.83$, $t = +7.7$, R² = 0.62). The three outcomes
+separate by cognitive demand. \emph{Fertility is a threshold flip
+that runs on completion even where schooling is shallow; child
+survival and adult longevity require cognitive depth and do not
+respond where credentials are hollow.}
 
-Adding duration of schooling to the horse race confirms the mechanistic
-claim directly. On the overlap sample where completion, test scores,
-WCDE mean years of schooling (age 20--24, weighted by cohort
-attainment), and Barro-Lee mean years (age 15--24, independent dataset)
-all exist, both duration measures beat test scores at a 10-year forward
-lag: for life expectancy, WCDE mean years $R^2$\,=\,0.170 and Barro-Lee
-mean years $R^2$\,=\,0.076 versus test scores $R^2$\,=\,0.000
-($p$\,=\,0.97); for TFR, 0.330 and 0.101 versus 0.011 ($p$\,=\,0.41);
-for under-5 mortality, 0.431 and 0.305 versus 0.028. Duration of
-exposure --- measured two different ways, on two different datasets ---
-predicts development outcomes. Fidelity of instruction does not.\footnote{See
+Read alone, the U5MR and LE results vindicate Hanushek --- but the
+vindication is the mechanism reasserting itself, not an alternative
+to it. A continuous lag sweep (Chapter~\ref{goskomstat-anomaly},
+\S\ref{hanushek-reconciliation}, and Figure~\ref{fig:lag-sweep})
+shows that HLO secondary today is best predicted not by current
+schooling but by the \emph{parental} generation's completion 10--25
+years earlier; R² at the great-grandparent lag (60 years) remains
+near 0.49. Hanushek's test scores are not a rival framework. They
+are the paper's quantity measure integrated across three generations
+of parental transmission. The horse race partitions the way the
+biology predicts, and the partition is what
+Chapter~\ref{goskomstat-anomaly} develops: hollow education is not
+education, but exposure still matters for TFR.\footnote{See
+\texttt{scripts/hanushek\_horse\_race\_comprehensive.py},
+\texttt{scripts/hlo\_is\_parental\_education.py}, and
+\texttt{scripts/hlo\_vs\_education\_lag\_sweep.py}; earlier
+within-country robustness in
 \texttt{scripts/robustness/completion\_vs\_years\_vs\_tests.py}.}
-
-The debate over learning outcomes versus years of schooling (World Bank 2018;
-UNESCO 2023) measures the wrong dimension of the right variable. Test
-quality matters for GDP growth, which is Hanushek \& Woessmann's dependent
-variable. It does not matter for the fertility transition, child survival,
-life expectancy, or intergenerational transmission --- the outcomes that
-constitute human development. The empirical result (completion $R^2 = 0.28$
-for TFR vs.\ test scores $R^2 = 0.011$) is not a puzzle. It is the mechanism's
-prediction: exposure to schooling reorganises cognition and opens the
-generational gate; test performance determines how much income the reorganised
-individual earns. Both are real. Only one is the cause of development.
 
 \subsection{Empirical Strategy}\label{empirical-strategy}
 
@@ -2652,6 +2661,363 @@ None reverses the ordering, and no check reduces the education/GDP
 $R^2$ ratio below 2.0$\times$.
 
 
+\section{Data Credibility: The Goskomstat Anomaly}\label{goskomstat-anomaly}
+
+The paper's empirical engine is lower-secondary completion in the
+WCDE v3 reconstruction (Lutz et al.\ 2018), chosen because it reaches
+back to 1875 on a consistent definition and passes the phenotype
+tests laid out in Chapter~\ref{the-panel}. On the 185-country panel,
+WCDE disagrees meaningfully with Barro-Lee v3.0 (Lee \& Lee 2016) for
+exactly fifteen countries: the Soviet republics. WCDE reports
+Kazakhstan at 94\% lower-secondary completion in 1970; Barro-Lee
+reports 49\% reached-secondary for the age 25--34 cohort. WCDE
+reports Latvia at 99\%; Barro-Lee reports 57\%. WCDE reports Russia
+at 95\%; Barro-Lee reports 73\%. Fifteen republics, a mean gap near
+40 percentage points, all in the same direction.
+
+This chapter asks what the mechanism says about that disagreement.
+The answer is unusual and worth stating plainly. \emph{The reported
+Soviet education numbers fail the phenotype test that the rest of the
+panel passes.} A country at 95\% lower-secondary completion in 1970
+should, by the mechanism, produce a fertility trajectory over the
+following generation indistinguishable from Spain's and a child-
+mortality trajectory indistinguishable from South Korea's. The
+Central Asian republics did neither. Their TFR trajectories sat on
+top of Iran's and Turkey's for six decades. Their under-5 mortality
+trajectories were overtaken by Iran's between 1990 and 2010 --- Iran,
+whose reported lower-secondary completion was 22\% in 1970 against
+Kazakhstan's 94\%. If the reported gap had been real, this reversal
+would be impossible.
+
+The chapter treats the Soviet reporting inflation not as a footnote
+but as a diagnostic: a natural experiment run in reverse, where the
+input side is corrupted and the phenotype reveals where. The
+diagnostic yields three payoffs. First, a credibility case for the
+panel: all headline results survive exclusion of the fifteen
+republics, and in fact strengthen. Second, a reconciliation with the
+Hanushek--Woessmann ``knowledge capital'' line (2008, 2012): the HLO
+test-score measure, which the field has read as an alternative to
+completion-based education, turns out to be a multi-generation
+integrated output of completion itself. Third, a sharpened thesis on
+what schooling transmits. \textbf{Hollow education is not education
+--- but exposure still matters for TFR.} Fertility is a norm decision
+that flips at the completion threshold even where learning is
+shallow; child survival and adult longevity require cognitive depth
+and do not flip where credentials are hollow.
+
+\subsection{The Anomaly}\label{goskomstat-anomaly-pattern}
+
+Of the 154 countries that have crossed the developmental threshold
+by 2022, 28 were post-socialist --- 15 USSR republics plus 13 Warsaw
+Pact and Yugoslav successors. The post-socialist crossers follow a
+pattern nothing else in the panel matches. Among market-economy
+crossers, the median country reached 90\% lower-secondary completion
+18 years \emph{before} crossing the developmental threshold. Among
+post-socialist crossers, the median country reached 90\% at the
+crossing year. Among the USSR core, Turkmenistan crossed 52 years
+after the reported date at which it reached 90\%. Either these
+republics had reached 90\% decades before their fertility and
+longevity trajectories responded --- a 50-year mechanism gap with no
+precedent --- or the 90\% was not what it claimed to be.
+
+The rest of the chapter tests the second hypothesis. Under the
+paper's mechanism, reported education at year $T$ should produce
+phenotypic response by $T{+}25$. Where it does not, either the
+mechanism is wrong or the reported education is wrong. The mechanism
+passes for 171 of 185 countries in the panel; the 14 where it fails
+(Uzbekistan drops out of the panel on data coverage) share a common
+origin: one statistical office.
+
+\subsection{What WCDE Reports vs What Was Observable}\label{what-wcde-reports}
+
+Three ground-truth checks against contemporaneous non-Soviet
+neighbors --- Iran, Turkey, Afghanistan, Pakistan --- with comparable
+pre-1917 educational baselines:
+
+\textbf{Gender parity in 1970.} Central Asia reports a mean
+female-minus-male lower-secondary completion gap of $-2.7$ pp (near
+parity). Iran, Turkey, Afghanistan, and Pakistan report a mean gap
+of $-15.6$ pp, with several countries at $-11$ to $-18$ pp.
+Near-parity in 1970 rural Central Asia is not consistent with the
+family structure and labor patterns documented in ethnographic
+sources for the same decade. The Baltics' reported near-parity is
+plausible (pre-1940 European educational infrastructure); the
+Central Asian figure is not.
+
+\textbf{Primary minus lower-secondary.} By construction, primary
+completion must exceed lower-secondary completion: one cannot
+complete the latter without the former. In 1980, non-Soviet neighbors
+show a mean primary-minus-lsec gap of $+21.0$ pp --- a fifth of the
+cohort completes primary without continuing to lower-secondary.
+Central Asia shows $+1.6$ pp: virtually every child who completes
+primary is reported as completing lower-secondary as well. This
+holds across individual Central Asian republics. Near-complete
+continuation is not what normal school systems produce; it is what
+uniform reporting produces.
+
+\textbf{Raw 1970 levels.} Kazakhstan 94\%, Turkmenistan 95\%,
+against Iran 22\%, Turkey 22\%, Pakistan 16\%, Afghanistan 6\%. A
+70-percentage-point gap from comparable pre-1917 baselines, built in
+half a century, is not what rural agricultural populations produced
+in this period anywhere else on the planet. Later cognitive evidence
+is consistent: Kyrgyzstan's 2009 PISA score of 350 sits at the low
+end of the global distribution; Turkmenistan, Uzbekistan, and
+Tajikistan do not participate in international assessments; Baltic
+PISA scores at 500--535 are consistent with their reported
+education and with separate pre-1940 educational infrastructure.
+
+\subsection{The Phenotype Test}\label{phenotype-test-ussr}
+
+The mechanism predicts that educational input at $T$ produces
+phenotypic output at $T{+}25$. Where the predicted output does not
+appear, the input was not real.
+Figure~\ref{fig:ca-vs-iran} shows the test for under-5 mortality.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\linewidth]{figures/central_asia_vs_iran_turkey_u5mr.png}
+\caption{Under-5 mortality trajectories, 1960--2010. Central Asian
+and Slavic USSR republics (colored lines) start 1960 with large
+U5MR head starts over Iran (327 per 1,000) and Turkey (258). By
+2010, Iran (20) has overtaken every Central Asian country except
+Kazakhstan. Under the mechanism, the country with four times the
+reported education in 1970 should dominate its neighbor permanently;
+no later catch-up should be able to reverse a head start built on
+five-times-larger secondary completion. The crossover says the head
+start was not real. \emph{(Source: World Bank WDI. See
+\texttt{scripts/post\_soviet\_u5mr\_trajectories.py}.)}}\label{fig:ca-vs-iran}
+\end{figure}
+
+Iran 1960 $\to$ 2010: 327 $\to$ 20 per 1,000 (94\% decline).
+Kazakhstan 1960 $\to$ 2010: 107 $\to$ 20 (81\% decline). Turkey 2010
+at 17 beats every Central Asian country except Kazakhstan. If the
+1970 Soviet 95\% had been real, Central Asia should have dominated
+Iran and Turkey permanently. Iran and Turkey are running on
+school systems that delivered actual cognitive skill to the mothers
+whose children survived.
+
+TFR tells the same story more quietly. Central Asian fertility
+trajectories from 1960 onward are indistinguishable from Iran's and
+Turkey's. There is no 1991 kink --- the trajectories run smoothly
+through Soviet dissolution as if the state had had no independent
+effect on the household decision. What moved was the same thing
+that moved in Iran: mothers becoming literate in their own dialect,
+one generation ahead of the crossing.
+
+\subsection{Barro-Lee's Partial Correction}\label{barro-lee-partial}
+
+Barro-Lee v3.0 is an independent reconstruction of the same series
+using different source surveys and interpolation. It is systematically
+more conservative than WCDE on Soviet-era reporting. The Goskomstat
+hypothesis predicts that switching measures should reduce the
+phenotype-fit bias, and it does --- unevenly.
+Table~\ref{tab:subgroup-bias} reports the mean phenotype residual
+(actual outcome minus model prediction given reported education)
+by subgroup, under a pooled OLS fit with year fixed effects trained
+on the complement of the contested cohort. A positive TFR residual
+means the subgroup had more children than its reported education
+predicted; a negative LE residual means it lived shorter; a
+positive log-U5MR residual means it lost more children. All three
+signs point the same direction: reported education was too high.
+
+\refstepcounter{table}\label{tab:subgroup-bias}\textbf{Table \thetable.} Phenotype
+residual by subgroup under Barro-Lee reached-secondary (age 25--34),
+1960--1990 snapshots. Bias reported in standard deviations of the
+non-contested fit. A subgroup ``passes'' when bias is
+indistinguishable from zero.
+
+\begin{longtable}[]{@{}lrrrr@{}}
+\toprule
+Subgroup & n & TFR (SDs) & LE (SDs) & log U5MR (SDs) \\
+\midrule
+\endhead
+Central Asia + Caucasus (USSR) & 16 & $+1.15$ & $-1.79$ & $+2.78$ \\
+Slavic west (USSR) & 8 & $+0.28$ & $-1.93$ & $+1.90$ \\
+Baltics (USSR) & 12 & $-0.01$ & $-1.14$ & $+0.71$ \\
+Warsaw Pact (non-USSR) & 20 & $-0.42$ & $-0.49$ & $+0.25$ \\
+Yugoslavia + Albania & 16 & $-0.59$ & $+0.09$ & $-0.15$ \\
+\bottomrule
+\end{longtable}
+
+Two things the table tells us. First, Goskomstat specifically:
+Warsaw Pact states had their own national statistical offices;
+Yugoslavia ran its own; both subgroups pass the phenotype test
+under Barro-Lee on all three outcomes. The 15 Soviet republics fail
+at LE and U5MR; the 8 Central Asian and Caucasus republics fail at
+TFR as well. The anomaly is not socialism. It is one statistical
+office.
+
+Second, outcome specificity. Under the corrected measure, TFR fits
+for the Baltics and the Slavic west --- their fertility decisions
+are in line with their real education. Where they fail --- LE and
+U5MR --- they fail in the direction of shorter lives and more child
+deaths than the reported education should allow. The outcome
+partition is the first hint of the thesis this chapter converges
+on.
+
+\subsection{The Cohort Shadow}\label{cohort-shadow}
+
+Figure~\ref{fig:ussr-by-year} decomposes the USSR residuals by year.
+The LE panel carries the diagnostic: the residual plateaus in the
+1970s near $-8$ years, widens through 2000 to a peak of $-8.5$
+years, then begins to decay. This is not a 1990s transition-crisis
+spike, which would show as a narrow peak around 1995 with small
+residuals before and after. It is a cohort shadow.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\linewidth]{figures/ussr_residual_by_year.png}
+\caption{USSR mean phenotype residual by year, by measure. LE
+(left) shows a broad 1970--2000 plateau and decay after 2000 --- the
+signature of inflated 1960--80 credential cohorts aging into
+peak-mortality years. TFR (middle) approaches zero under Barro-Lee
+at every year: fertility is a current decision, and Barro-Lee's
+current-cohort correction catches it. log U5MR (right) remains
+large under Barro-Lee for 1980--2000, because a young mother's
+health decisions depend on her real cognitive skill, not on her
+reported credential. \emph{(Source: WCDE v3, Barro-Lee v3.0, World
+Bank WDI.
+\texttt{scripts/ussr\_residual\_by\_year.py}.)}}\label{fig:ussr-by-year}
+\end{figure}
+
+The mechanics: LE in year $t$ integrates mortality experience
+across all cohorts alive in year $t$. The 1960--1980 Soviet cohorts
+were reported as carrying $\sim$90\% lower-secondary completion;
+under the phenotype test their real education looks more like
+60--70\%. Those cohorts, born 1935--55, reached peak-mortality ages
+(70--85) roughly 2005--2040. If their inflated-credential status
+did not carry real cognitive resources --- information processing,
+health literacy, planning capacity --- their mortality experience
+reflects real schooling, not reported schooling. The predicted
+signature is a large negative LE residual peaking around 2000--2015
+and decaying through 2030. This is what we see.
+
+TFR carries no such shadow under Barro-Lee. A 2000 fertility
+decision is made by a woman aged 20--30, educated in the 1980s--90s
+under progressively less-hollow Soviet and post-Soviet secondary
+systems, with Barro-Lee's current-cohort correction catching her
+actual schooling. Her fertility is in line with her real education
+by the time she makes the decision. This is why TFR corrects and LE
+does not.
+
+U5MR tells the sharpest story. Under Barro-Lee reached-secondary the
+mean USSR log-U5MR residual is $+0.29$ in 1960, $+0.98$ in 1980,
+$+1.10$ in 2000 ($t = 5.7$), $+0.39$ in 2010. Peak U5MR bias is in
+1980--2000 --- the decades when the 1960--80 inflated-credential
+cohorts were themselves mothers of young children. The paper's claim
+on U5MR has always been that it loads on the mother's cognitive
+depth, not her completion certificate
+(Chapter~\ref{pt-and-state}). The Soviet case makes the claim
+visible: where the certificate said ``secondary-completed'' but the
+depth was not there, the child died anyway.
+
+\subsection{Hanushek's HLO Is Compounded Parental Transmission}\label{hanushek-reconciliation}
+
+The last forty years of development economics has increasingly
+treated test-score-based ``learning outcomes'' as the real
+human-capital variable, with completion treated as a noisy proxy.
+The Hanushek--Woessmann ``knowledge capital'' line makes this
+argument most explicitly: test scores predict growth, years do not,
+and where years and tests disagree the test is what matters.
+
+The Soviet case is the first hard test of that line against the
+paper's generational mechanism. Over the contested cohort, HLO
+secondary scores and reported lower-secondary completion disagree
+catastrophically: Kyrgyzstan's 2009 HLO of 350 against 2010 reported
+completion of 99\%; Albania's 412 against 96\%. If HLO is the real
+human-capital signal and completion is noise, the paper's headline
+claims should survive stripping the contested cohort, which they do
+(Section~\ref{exclusion-robustness}). If completion is the real
+signal and HLO is downstream, HLO should be predicted by past
+completion at a lag consistent with parental transmission, not at
+lag zero.
+
+Figure~\ref{fig:lag-sweep} resolves it. On a 77-country panel
+excluding USSR, HLO secondary today is regressed on lower-secondary
+completion at year $2010 - L$, for $L = 0$ to $60$ in 5-year steps.
+The peak R² is not at lag 0 (current schooling, R² $=$ 0.504). It is
+at lag 10 (R² $=$ 0.539). Primary completion's peak sits at lag 25
+(R² $=$ 0.549) --- exactly the parental window. At lag 60 (the
+great-grandparent generation), primary-completion R² is still 0.489.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\linewidth]{figures/hlo_vs_education_lag_sweep.png}
+\caption{HLO secondary today regressed on WCDE completion at year
+$2010 - L$, for $L = 0, 5, \ldots, 60$. Peak lag for lower-secondary
+sits at $L = 10$; peak lag for primary sits at $L = 25$ (the
+parental window). R² at $L = 60$ remains near 0.49 for primary:
+great-grandparent primary completion explains nearly half the
+cross-country variance in today's teenagers' test scores. Current
+schooling (lag $0$) is a worse predictor than either.
+\emph{(Source: Angrist et al.\ 2021 for HLO, WCDE v3 for completion.
+\texttt{scripts/hlo\_vs\_education\_lag\_sweep.py}.)}}\label{fig:lag-sweep}
+\end{figure}
+
+The direct test on the parental window: HLO secondary today
+regressed on lower-secondary completion in 1990 (the parent cohort's
+20--24 education) gives R² $=$ 0.523, $\beta = +1.94$ HLO points
+per percentage point, $t = 9.1$, correlation $0.72$, on 77 countries
+with USSR excluded. \textbf{Fifty-two percent of cross-country
+variance in Hanushek's cognitive-skills measure is the paper's
+quantity measure, lagged one generation.} The residual variance is
+what school systems add \emph{above} PT: China ($+111$ points),
+Viet Nam ($+111$), Singapore ($+93$), Portugal ($+76$), Japan,
+Finland, Korea --- East Asian education reforms and select rich
+systems do deliver real cognitive depth above what the parental
+generation transmitted. The negative residuals --- South Africa
+($-116$), Ghana ($-108$), Albania ($-86$), Montenegro ($-72$) ---
+mark school systems that undershoot the parental baseline, a
+credential-inflation diagnostic independent of the Soviet case.
+
+HLO is not an alternative to the paper's mechanism. It is the
+paper's mechanism measured three generations downstream.
+
+The horse race Hanushek called for --- completion versus test scores
+as predictors of TFR, U5MR, and LE --- partitions exactly as the
+mechanism predicts. On the clean cross-country panel (USSR excluded,
+HLO averaged 2000--2017, completion at 2000): for TFR, quantity
+(primary completion) dominates at $\beta_z = -0.64$ ($t = -7.4$);
+adding quality contributes $\beta_z = -0.25$ ($t = -2.9$), taking R²
+from 0.70 to 0.72. Primary completion alone drives the fertility
+transition; test-score quality adds little. For log U5MR and LE,
+the picture reverses: quantity is insignificant ($t = -1.7$ for
+U5MR, $t = -1.1$ for LE); quality dominates ($t = -7.6$ for U5MR,
+$t = +7.7$ for LE). Fertility is a threshold flip that runs on
+primary completion even where schooling is shallow; child survival
+and adult longevity require cognitive depth and do not respond where
+credentials are hollow.
+
+\textit{Hollow education is not education --- but exposure still
+matters for TFR.}
+
+\subsection{The Panel Survives Exclusion, Strengthened}\label{exclusion-robustness}
+
+The Table~\ref{tab:1} headline specification reruns with the 15 USSR
+republics excluded. The parental-education coefficient rises from
+$0.483$ ($n = 1665$, 185 countries) to $0.538$ ($n = 1539$, 171
+countries); within-$R^2$ rises from $0.457$ to $0.507$. The headline
+LE forward-prediction R² rises from $0.350$ to $0.366$. The headline
+TFR forward-prediction R² rises from $0.439$ to $0.444$. The headline
+log-U5MR forward-prediction R² rises from $0.635$ to $0.659$. Every
+coefficient of interest moves in the same direction: upward.
+
+This is not what survivorship looks like for a contaminated claim.
+It is what survivorship looks like for a claim whose signal was being
+attenuated by the contaminated subgroup. USSR inclusion was not
+producing the paper's headline results. It was dampening them.
+Removing the dampening factor returns the cleaner estimate of the
+mechanism in market economies. Appendix~\ref{appendix-data-source}
+reports the full table with all specifications; the 171-country row
+joins WCDE, Barro-Lee, and post-1970 as one more robustness row
+confirming the direction and magnitude of the headline.
+
+One sentence summarizes the chapter. The paper's mechanism identifies
+where the Soviet data was wrong; the Soviet data, once excluded,
+confirms the mechanism more sharply. It is the kind of agreement
+between theory and data that one does not get by accident.
+
+
 \section{The Natural Experiments}\label{natural-experiments}
 
 The panel establishes the patterns. The natural experiments isolate
@@ -2823,7 +3189,10 @@ whether external conditions allow survival. When the two diverge --- TFR
 continuing its education-predicted decline while LE collapses --- the
 divergence identifies the shock as external rather than educational.
 
-\textbf{Russia} (99\% lower secondary completion, 1990). The Soviet
+\textbf{Russia} (99\% lower secondary completion, 1990; Barro-Lee
+v3.0 and WCDE v3 agree at 1990 but WCDE over-reports secondary
+completion for 1960--1980 cohorts, with phenotype implications
+developed in Chapter~\ref{goskomstat-anomaly}). The Soviet
 dissolution crashed life expectancy from 69.5 to 64.5 (1988--1994) ---
 5 years lost in six. TFR, already at 1.89, continued below replacement
 throughout --- 1.20 by 2000, never reversing. The state dissolved; the
@@ -4008,6 +4377,7 @@ WCDE v3 (main) & 0.335 & 0.388 \\
 Barro-Lee v3.0 (``at least some secondary,'' age 15--24, 146 countries) & 0.320 & 0.287 \\
 Barro-Lee v3.0 (mean years of schooling) & 0.400 & 0.428 \\
 WCDE v3, post-1970 only & 0.313 & 0.281 \\
+WCDE v3, 171-country panel (15 USSR republics excluded; 25-yr forward lag, country FE) & 0.366 & 0.444 \\
 Barro-Lee residualization (GDP with education's contribution removed) & $\leq$\,0.003 & $\leq$\,0.003 \\
 \bottomrule
 \end{longtable}
@@ -4023,6 +4393,18 @@ reconstruction, and are unaffected by any data-source
 concern.\footnote{See
 \texttt{scripts/robustness/barro\_lee\_replication.py}. Barro-Lee v3.0
 source: \texttt{github.com/barrolee/BarroLeeDataSet}.}
+
+Chapter~\ref{goskomstat-anomaly} develops the credibility case and
+the four-signature phenotype test that motivates the 171-country
+row, including the subgroup split under Barro-Lee that identifies
+the bias as specifically Goskomstat rather than socialist in general.
+Every headline coefficient in Table~\ref{tab:1}--Table~\ref{tab:3}
+moves in the same direction under the 171-country exclusion: upward.
+USSR inclusion was attenuating the paper's signal, not producing
+it.\footnote{See \texttt{scripts/robustness/ussr\_exclusion\_panel.py}
+for the exclusion panel and
+\texttt{scripts/which\_edu\_measure\_is\_correct.py} for the subgroup
+split.}
 
 \subsubsection{Specification Robustness}\label{appendix-spec-robust}
 

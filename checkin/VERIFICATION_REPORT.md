@@ -1,15 +1,15 @@
 # Verification Report
 
-Generated: 2026-04-22 23:04
+Generated: 2026-04-23 00:12
 
-## Result: 684/684 PASS
+## Result: 775/775 PASS
 
 | Metric | Count |
 |--------|-------|
-| Verified claims | 684 |
+| Verified claims | 775 |
 | Failed | 0 |
 | Missing | 0 |
-| Literature refs (manual) | 80 |
+| Literature refs (manual) | 100 |
 | Unregistered numbers | 0 |
 | Section offset issues | 0 |
 
@@ -17,8 +17,8 @@ Generated: 2026-04-22 23:04
 
 | Source | Pass | Fail | Missing |
 |--------|------|------|---------|
-| checkin | 537 | 0 | 0 |
-| const | 3 | 0 | 0 |
+| checkin | 622 | 0 | 0 |
+| const | 9 | 0 | 0 |
 | derived | 68 | 0 | 0 |
 | ref | 0 | 0 | 0 |
 | wcde | 24 | 0 | 0 |
@@ -30,23 +30,30 @@ Generated: 2026-04-22 23:04
 |---------|--------|------|------|
 | abstract | 5 | 5 | 0 |
 | appendix-twfe | 34 | 34 | 0 |
+| barro-lee-partial | 21 | 21 | 0 |
 | cambodia-the-pt-shadow | 8 | 8 | 0 |
 | causal-identification-the-bad-control-problem-and-natural-experiments | 3 | 3 | 0 |
 | china | 15 | 15 | 0 |
-| completion-as-the-operative-variable | 19 | 19 | 0 |
-| data | 3 | 3 | 0 |
+| cohort-shadow | 6 | 6 | 0 |
+| completion-as-the-operative-variable | 20 | 20 | 0 |
+| data | 4 | 4 | 0 |
 | defining-development | 13 | 13 | 0 |
 | descriptive-statistics | 25 | 25 | 0 |
 | education-predicts-development-outcomes-25-years-forward | 83 | 83 | 0 |
 | education-vs-gdp-as-predictors-of-attainment | 91 | 91 | 0 |
 | empirical-strategy | 14 | 14 | 0 |
+| exclusion-robustness | 15 | 15 | 0 |
 | four-further-cases | 16 | 16 | 0 |
 | gdp-has-no-independent-effect | 50 | 50 | 0 |
+| goskomstat-anomaly | 2 | 2 | 0 |
+| goskomstat-anomaly-pattern | 2 | 2 | 0 |
+| hanushek-reconciliation | 33 | 33 | 0 |
 | invisible-from-inside | 1 | 1 | 0 |
 | kerala | 0 | 0 | 0 |
 | nine-year-measurement | 1 | 1 | 0 |
+| phenotype-test-ussr | 1 | 1 | 0 |
 | policy-over-performers | 81 | 81 | 0 |
-| robustness | 205 | 205 | 0 |
+| robustness | 210 | 210 | 0 |
 | specialisation-requires-loaded-labour | 1 | 1 | 0 |
 | taiwan-and-korea | 6 | 6 | 0 |
 | the-cases | 26 | 26 | 0 |
@@ -60,4 +67,5 @@ Generated: 2026-04-22 23:04
 | the-panel | 1 | 1 | 0 |
 | the-shock-test | 16 | 16 | 0 |
 | the-window-supports-a-continuous-dose | 3 | 3 | 0 |
+| what-wcde-reports | 13 | 13 | 0 |
 

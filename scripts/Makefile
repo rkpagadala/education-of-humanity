@@ -92,6 +92,15 @@ analysis: \
 	$(CHECKIN)/log_outcomes.json \
 	$(CHECKIN)/balanced_panel.json \
 	$(CHECKIN)/period_length.json \
+	$(CHECKIN)/soviet_inflation.json \
+	$(CHECKIN)/edu_measure_horse_race.json \
+	$(CHECKIN)/ussr_anomaly_barrolee.json \
+	$(CHECKIN)/ussr_residual_by_year.json \
+	$(CHECKIN)/ussr_exclusion_panel.json \
+	$(CHECKIN)/hanushek_horse_race.json \
+	$(CHECKIN)/hlo_is_pt.json \
+	$(CHECKIN)/hlo_lag_sweep.json \
+	$(CHECKIN)/lsec_thresholds.json
 
 # ── Rules ─────────────────────────────────────────────────────────────
 
@@ -264,6 +273,35 @@ $(CHECKIN)/education_outcomes.json: wcde/education_outcomes.py _shared.py $(ALL_
 	$(PYTHON) $<
 
 $(CHECKIN)/long_run_generational.json: wcde/long_run_generational.py _shared.py $(WCDE_DATA)
+	$(PYTHON) $<
+
+# ── §9 Data Credibility: Goskomstat anomaly + Hanushek reconciliation ─
+
+$(CHECKIN)/soviet_inflation.json: soviet_education_inflation_test.py _shared.py $(WCDE_DATA)
+	$(PYTHON) $<
+
+$(CHECKIN)/edu_measure_horse_race.json: which_edu_measure_is_correct.py _shared.py $(ALL_DATA) $(DATA)/barro_lee_v3.csv
+	$(PYTHON) $<
+
+$(CHECKIN)/ussr_anomaly_barrolee.json: ussr_anomaly_barrolee.py _shared.py $(ALL_DATA) $(DATA)/barro_lee_v3.csv
+	$(PYTHON) $<
+
+$(CHECKIN)/ussr_residual_by_year.json: ussr_residual_by_year.py _shared.py $(ALL_DATA) $(DATA)/barro_lee_v3.csv
+	$(PYTHON) $<
+
+$(CHECKIN)/ussr_exclusion_panel.json: robustness/ussr_exclusion_panel.py _shared.py $(ALL_DATA)
+	$(PYTHON) $<
+
+$(CHECKIN)/hanushek_horse_race.json: hanushek_horse_race_comprehensive.py _shared.py $(ALL_DATA) $(DATA)/hlo_raw.csv $(DATA)/barro_lee_v3.csv ../wcde/data/raw/pop_both.csv
+	$(PYTHON) $<
+
+$(CHECKIN)/hlo_is_pt.json: hlo_is_parental_education.py _shared.py $(ALL_DATA) $(DATA)/hlo_raw.csv $(DATA)/barro_lee_v3.csv
+	$(PYTHON) $<
+
+$(CHECKIN)/hlo_lag_sweep.json: hlo_vs_education_lag_sweep.py _shared.py $(WCDE_DATA) $(DATA)/hlo_raw.csv
+	$(PYTHON) $<
+
+$(CHECKIN)/lsec_thresholds.json: lsec_threshold_forward_test.py _shared.py $(ALL_DATA)
 	$(PYTHON) $<
 
 # ── Clean ─────────────────────────────────────────────────────────────

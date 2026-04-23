@@ -1,0 +1,226 @@
+{
+  "numbers": {
+    "le_wcde_resid_by_year": {
+      "1960": {
+        "mean_resid": -9.616,
+        "se_resid": 2.37,
+        "n_ussr": 12.0
+      },
+      "1970": {
+        "mean_resid": -10.869,
+        "se_resid": 1.627,
+        "n_ussr": 12.0
+      },
+      "1980": {
+        "mean_resid": -10.23,
+        "se_resid": 1.149,
+        "n_ussr": 12.0
+      },
+      "1990": {
+        "mean_resid": -9.121,
+        "se_resid": 0.896,
+        "n_ussr": 12.0
+      },
+      "2000": {
+        "mean_resid": -9.447,
+        "se_resid": 0.932,
+        "n_ussr": 12.0
+      },
+      "2010": {
+        "mean_resid": -7.323,
+        "se_resid": 0.693,
+        "n_ussr": 12.0
+      },
+      "2020": {
+        "mean_resid": -5.21,
+        "se_resid": 0.635,
+        "n_ussr": 13.0
+      }
+    },
+    "le_bl_resid_by_year": {
+      "1960": {
+        "mean_resid": -0.868,
+        "se_resid": 2.221,
+        "n_ussr": 10.0
+      },
+      "1970": {
+        "mean_resid": -4.296,
+        "se_resid": 1.932,
+        "n_ussr": 10.0
+      },
+      "1980": {
+        "mean_resid": -8.194,
+        "se_resid": 1.576,
+        "n_ussr": 10.0
+      },
+      "1990": {
+        "mean_resid": -7.176,
+        "se_resid": 1.002,
+        "n_ussr": 10.0
+      },
+      "2000": {
+        "mean_resid": -8.499,
+        "se_resid": 1.152,
+        "n_ussr": 10.0
+      },
+      "2010": {
+        "mean_resid": -4.837,
+        "se_resid": 0.752,
+        "n_ussr": 10.0
+      }
+    },
+    "tfr_wcde_resid_by_year": {
+      "1960": {
+        "mean_resid": 0.787,
+        "se_resid": 0.504,
+        "n_ussr": 12.0
+      },
+      "1970": {
+        "mean_resid": 1.144,
+        "se_resid": 0.479,
+        "n_ussr": 12.0
+      },
+      "1980": {
+        "mean_resid": 1.153,
+        "se_resid": 0.402,
+        "n_ussr": 12.0
+      },
+      "1990": {
+        "mean_resid": 0.959,
+        "se_resid": 0.31,
+        "n_ussr": 12.0
+      },
+      "2000": {
+        "mean_resid": 0.273,
+        "se_resid": 0.207,
+        "n_ussr": 12.0
+      },
+      "2010": {
+        "mean_resid": 0.336,
+        "se_resid": 0.184,
+        "n_ussr": 12.0
+      },
+      "2020": {
+        "mean_resid": 0.321,
+        "se_resid": 0.188,
+        "n_ussr": 13.0
+      }
+    },
+    "tfr_bl_resid_by_year": {
+      "1960": {
+        "mean_resid": -0.638,
+        "se_resid": 0.497,
+        "n_ussr": 10.0
+      },
+      "1970": {
+        "mean_resid": -0.03,
+        "se_resid": 0.56,
+        "n_ussr": 10.0
+      },
+      "1980": {
+        "mean_resid": 0.622,
+        "se_resid": 0.515,
+        "n_ussr": 10.0
+      },
+      "1990": {
+        "mean_resid": 0.665,
+        "se_resid": 0.373,
+        "n_ussr": 10.0
+      },
+      "2000": {
+        "mean_resid": 0.106,
+        "se_resid": 0.192,
+        "n_ussr": 10.0
+      },
+      "2010": {
+        "mean_resid": -0.026,
+        "se_resid": 0.231,
+        "n_ussr": 10.0
+      }
+    },
+    "u5log_wcde_resid_by_year": {
+      "1960": {
+        "mean_resid": 0.915,
+        "se_resid": 0.187,
+        "n_ussr": 11.0
+      },
+      "1970": {
+        "mean_resid": 1.052,
+        "se_resid": 0.224,
+        "n_ussr": 11.0
+      },
+      "1980": {
+        "mean_resid": 1.178,
+        "se_resid": 0.225,
+        "n_ussr": 11.0
+      },
+      "1990": {
+        "mean_resid": 1.16,
+        "se_resid": 0.23,
+        "n_ussr": 11.0
+      },
+      "2000": {
+        "mean_resid": 1.245,
+        "se_resid": 0.244,
+        "n_ussr": 11.0
+      },
+      "2010": {
+        "mean_resid": 0.753,
+        "se_resid": 0.263,
+        "n_ussr": 11.0
+      }
+    },
+    "u5log_bl_resid_by_year": {
+      "1960": {
+        "mean_resid": 0.285,
+        "se_resid": 0.193,
+        "n_ussr": 9.0
+      },
+      "1970": {
+        "mean_resid": 0.546,
+        "se_resid": 0.258,
+        "n_ussr": 9.0
+      },
+      "1980": {
+        "mean_resid": 0.983,
+        "se_resid": 0.278,
+        "n_ussr": 9.0
+      },
+      "1990": {
+        "mean_resid": 0.943,
+        "se_resid": 0.237,
+        "n_ussr": 9.0
+      },
+      "2000": {
+        "mean_resid": 1.1,
+        "se_resid": 0.194,
+        "n_ussr": 9.0
+      },
+      "2010": {
+        "mean_resid": 0.387,
+        "se_resid": 0.205,
+        "n_ussr": 9.0
+      }
+    },
+    "le_bl_resid_1960": -0.87,
+    "tfr_bl_resid_1960": -0.638,
+    "u5log_bl_resid_1960": 0.29,
+    "le_bl_resid_1970": -4.3,
+    "tfr_bl_resid_1970": -0.03,
+    "u5log_bl_resid_1970": 0.55,
+    "le_bl_resid_1980": -8.19,
+    "tfr_bl_resid_1980": 0.622,
+    "u5log_bl_resid_1980": 0.98,
+    "le_bl_resid_1990": -7.18,
+    "tfr_bl_resid_1990": 0.665,
+    "u5log_bl_resid_1990": 0.94,
+    "le_bl_resid_2000": -8.5,
+    "tfr_bl_resid_2000": 0.106,
+    "u5log_bl_resid_2000": 1.1,
+    "le_bl_resid_2010": -4.84,
+    "tfr_bl_resid_2010": -0.026,
+    "u5log_bl_resid_2010": 0.39
+  },
+  "script": "scripts/ussr_residual_by_year.py",
+  "produced": "2026-04-22"
+}

@@ -1,0 +1,31 @@
+{
+  "numbers": {
+    "ussr_excluded_n": 15,
+    "T1M1_full_beta": 0.483,
+    "T1M1_full_r2": 0.457,
+    "T1M1_full_n": 1665,
+    "T1M1_full_countries": 185,
+    "T1M1_clean_beta": 0.538,
+    "T1M1_clean_r2": 0.507,
+    "T1M1_clean_n": 1539,
+    "T1M1_clean_countries": 171,
+    "T1M1_delta_beta": 0.055,
+    "T1M1_delta_r2": 0.05,
+    "LE_full_r2": 0.35,
+    "LE_full_n": 1608,
+    "LE_clean_r2": 0.366,
+    "LE_clean_n": 1482,
+    "LE_delta_r2": 0.016,
+    "TFR_full_r2": 0.439,
+    "TFR_full_n": 1608,
+    "TFR_clean_r2": 0.444,
+    "TFR_clean_n": 1482,
+    "TFR_delta_r2": 0.005,
+    "U5log_full_r2": 0.635,
+    "U5log_clean_r2": 0.659,
+    "U5log_delta_r2": 0.024,
+    "gate_pass": 0
+  },
+  "script": "scripts/robustness/ussr_exclusion_panel.py",
+  "produced": "2026-04-22"
+}
