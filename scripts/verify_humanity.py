@@ -2932,6 +2932,44 @@ reg("G-year-1995", 1995, "const",
     "1995 mid-transition crisis peak reference",
     [(GOSK_COHORT, None)], tol=0)
 
+# ══════════════════════════════════════════════════════════════════════════
+# CATEGORICAL CT — §4.3 empirical floors for the regime flip
+# (primary_at_le_crossing.py, primary_at_tfr_crossing.py)
+# ══════════════════════════════════════════════════════════════════════════
+CATEGORICAL_CT = "categorical-ct"
+
+reg("CCT-LE-n",            84, "checkin",
+    ("primary_at_le_crossing.json", "n_clean"),
+    [CATEGORICAL_CT], tol=0)
+reg("CCT-LE-primary-p10",  66, "checkin",
+    ("primary_at_le_crossing.json", "primary_at_cross.p10"),
+    [CATEGORICAL_CT], tol=1)
+reg("CCT-LE-primary-median", 86, "checkin",
+    ("primary_at_le_crossing.json", "primary_at_cross.median"),
+    [CATEGORICAL_CT], tol=1)
+reg("CCT-LE-lsec-p10",     42, "checkin",
+    ("primary_at_le_crossing.json", "lsec_at_cross.p10"),
+    [CATEGORICAL_CT], tol=1)
+reg("CCT-LE-lsec-median",  65, "checkin",
+    ("primary_at_le_crossing.json", "lsec_at_cross.median"),
+    [CATEGORICAL_CT], tol=1)
+reg("CCT-LE-gp-primary-median", 24, "checkin",
+    ("primary_at_le_crossing.json", "gp_primary.median"),
+    [CATEGORICAL_CT], tol=1)
+
+reg("CCT-TFR-n",           88, "checkin",
+    ("primary_at_tfr_crossing.json", "n_clean"),
+    [CATEGORICAL_CT], tol=0)
+reg("CCT-TFR-primary-p10", 57, "checkin",
+    ("primary_at_tfr_crossing.json", "primary_at_cross.p10"),
+    [CATEGORICAL_CT], tol=1)
+reg("CCT-TFR-primary-median", 79, "checkin",
+    ("primary_at_tfr_crossing.json", "primary_at_cross.median"),
+    [CATEGORICAL_CT], tol=1)
+reg("CCT-TFR-gp-primary-median", 17, "checkin",
+    ("primary_at_tfr_crossing.json", "gp_primary.median"),
+    [CATEGORICAL_CT], tol=1)
+
 
 def run_script(path, cwd=None):
     if not os.path.exists(path):

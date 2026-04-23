@@ -1,12 +1,12 @@
 # Verification Report
 
-Generated: 2026-04-23 00:50
+Generated: 2026-04-23 01:33
 
-## Result: 775/775 PASS
+## Result: 785/785 PASS
 
 | Metric | Count |
 |--------|-------|
-| Verified claims | 775 |
+| Verified claims | 785 |
 | Failed | 0 |
 | Missing | 0 |
 | Literature refs (manual) | 100 |
@@ -17,7 +17,7 @@ Generated: 2026-04-23 00:50
 
 | Source | Pass | Fail | Missing |
 |--------|------|------|---------|
-| checkin | 622 | 0 | 0 |
+| checkin | 632 | 0 | 0 |
 | const | 9 | 0 | 0 |
 | derived | 68 | 0 | 0 |
 | ref | 0 | 0 | 0 |
@@ -32,6 +32,7 @@ Generated: 2026-04-23 00:50
 | appendix-twfe | 34 | 34 | 0 |
 | barro-lee-partial | 21 | 21 | 0 |
 | cambodia-the-pt-shadow | 8 | 8 | 0 |
+| categorical-ct | 10 | 10 | 0 |
 | causal-identification-the-bad-control-problem-and-natural-experiments | 3 | 3 | 0 |
 | china | 15 | 15 | 0 |
 | cohort-shadow | 6 | 6 | 0 |
