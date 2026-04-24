@@ -36,6 +36,11 @@ PROC = os.path.join(REPO_ROOT, "wcde", "data", "processed")
 DATA = os.path.join(REPO_ROOT, "data")
 CHECKIN = os.path.join(REPO_ROOT, "checkin")
 
+# Shared section-anchor table (also used by review/extract/*.py)
+sys.path.insert(0, os.path.join(REPO_ROOT, "review", "extract"))
+from _anchor import build_section_map as _shared_build_section_map  # noqa: E402
+from _anchor import ABSTRACT_LABEL  # noqa: E402
+
 # ══════════════════════════════════════════════════════════════════════════
 # SECTION LABEL SHORTCUTS
 # ══════════════════════════════════════════════════════════════════════════
@@ -142,39 +147,13 @@ WCDE_NAMES = {
 }
 
 def build_section_map(paper_path):
-    """Parse the .tex file and return a dict mapping each label to (start_line, end_line).
+    """Thin wrapper over review/extract/_anchor.build_section_map.
 
-    The abstract maps to ("abstract", (1, first_section_line - 1)).
-    Each section/subsection runs from its header line to the next header line minus 1.
+    Kept here for callers that already import this name from this module.
+    The shared implementation lives in review/extract/_anchor.py so the
+    review system and the number registry can't drift apart.
     """
-    with open(paper_path) as f:
-        lines = f.readlines()
-
-    # Find all \section and \subsection headers with \label{...}
-    header_re = re.compile(r'\\(?:sub)?section\*?\{.*?\}\\label\{([^}]+)\}')
-    headers = []  # list of (line_no, label)
-    for i, line in enumerate(lines, 1):
-        m = header_re.search(line)
-        if m:
-            headers.append((i, m.group(1)))
-
-    section_map = {}
-
-    # Abstract: line 1 to first header - 1
-    if headers:
-        section_map[ABSTRACT] = (1, headers[0][0] - 1)
-    else:
-        section_map[ABSTRACT] = (1, len(lines))
-
-    # Each header to the next header - 1 (or end of file)
-    for idx, (line_no, label) in enumerate(headers):
-        if idx + 1 < len(headers):
-            end = headers[idx + 1][0] - 1
-        else:
-            end = len(lines)
-        section_map[label] = (line_no, end)
-
-    return section_map
+    return _shared_build_section_map(paper_path)
 
 
 # ══════════════════════════════════════════════════════════════════════════
@@ -232,7 +211,7 @@ S_TFR   = os.path.join(REPO_ROOT, "scripts", "residualization", "education_vs_tf
 reg("T1-obs",        1665,   "checkin", ("panel_full_fe.json", "numbers.panel_obs"),
     [(DATA_SEC, None), (APPENDIX_ROBUST, None), (APPENDIX_TWFE, None)], tol=0)
 reg("T1-countries",  185,    "checkin", ("panel_full_fe.json", "numbers.panel_countries"),
-    [(ABSTRACT, 142), (THE_EVIDENCE, None), (DATA_SEC, 3), (APPENDIX_ROBUST, None),
+    [(ABSTRACT, 143), (THE_EVIDENCE, None), (DATA_SEC, 3), (APPENDIX_ROBUST, None),
      ("specialisation-requires-loaded-labour", None),
      ("nine-year-measurement", None),
      (EMPIRICAL, None)], tol=0)
@@ -2834,7 +2813,8 @@ reg("G-Excl-full-countries", 185, "checkin",
     [(GOSK_EXCLUSION, None)], tol=0)
 reg("G-Excl-clean-beta",   0.538, "checkin",
     ("ussr_exclusion_panel.json", "numbers.T1M1_clean_beta"),
-    [(GOSK_EXCLUSION, None), (APPENDIX_ROBUST, None)], tol=0.005)
+    [(GOSK_EXCLUSION, None), (APPENDIX_ROBUST, None), (EDU_VS_GDP, None)],
+    tol=0.005)
 reg("G-Excl-clean-n",      1539,  "checkin",
     ("ussr_exclusion_panel.json", "numbers.T1M1_clean_n"),
     [(GOSK_EXCLUSION, None)], tol=0)
@@ -2847,7 +2827,7 @@ reg("G-Excl-full-r2",      0.457, "checkin",
     [(GOSK_EXCLUSION, None)], tol=0.005)
 reg("G-Excl-clean-r2",     0.507, "checkin",
     ("ussr_exclusion_panel.json", "numbers.T1M1_clean_r2"),
-    [(GOSK_EXCLUSION, None)], tol=0.005)
+    [(GOSK_EXCLUSION, None), (EDU_VS_GDP, None)], tol=0.005)
 reg("G-Excl-LE-full",      0.350, "checkin",
     ("ussr_exclusion_panel.json", "numbers.LE_full_r2"),
     [(GOSK_EXCLUSION, None)], tol=0.005)

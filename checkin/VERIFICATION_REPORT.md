@@ -1,6 +1,6 @@
 # Verification Report
 
-Generated: 2026-04-23 01:56
+Generated: 2026-04-24 00:17
 
 ## Result: 787/787 PASS
 
@@ -41,7 +41,7 @@ Generated: 2026-04-23 01:56
 | defining-development | 13 | 13 | 0 |
 | descriptive-statistics | 25 | 25 | 0 |
 | education-predicts-development-outcomes-25-years-forward | 83 | 83 | 0 |
-| education-vs-gdp-as-predictors-of-attainment | 91 | 91 | 0 |
+| education-vs-gdp-as-predictors-of-attainment | 93 | 93 | 0 |
 | empirical-strategy | 14 | 14 | 0 |
 | exclusion-robustness | 15 | 15 | 0 |
 | four-further-cases | 16 | 16 | 0 |
