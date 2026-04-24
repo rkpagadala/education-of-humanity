@@ -53,6 +53,14 @@ CORE_DATASETS = [
 # Sovereign countries we don't expect to find in WDI indicators (not issues).
 KNOWN_WDI_GAPS = {"north korea", "taiwan"}
 
+# Microstates WCDE v3 does not track — expected gaps, not data problems.
+# The paper's panel of 185 countries reflects this exclusion.
+KNOWN_WCDE_GAPS = {
+    "andorra", "dominica", "liechtenstein", "marshall islands",
+    "monaco", "nauru", "palau", "saint kitts and nevis",
+    "san marino", "tuvalu",
+}
+
 COUNTRY_COLUMNS = ("country", "Country", "name", "Name", "economy", "Economy")
 
 
@@ -147,6 +155,9 @@ def check_coverage():
                 continue
             if "wdi" in ds.lower() or ds.startswith("data/"):
                 if country in KNOWN_WDI_GAPS:
+                    continue
+            if "wcde" in ds.lower():
+                if country in KNOWN_WCDE_GAPS:
                     continue
             gaps.append((ds, country))
     return gaps
