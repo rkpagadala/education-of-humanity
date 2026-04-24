@@ -1,6 +1,6 @@
 # Verification Report
 
-Generated: 2026-04-24 01:17
+Generated: 2026-04-24 08:17
 
 ## Result: 787/787 PASS
 
@@ -48,7 +48,7 @@ Generated: 2026-04-24 01:17
 | gdp-has-no-independent-effect | 50 | 50 | 0 |
 | goskomstat-anomaly | 2 | 2 | 0 |
 | goskomstat-anomaly-pattern | 2 | 2 | 0 |
-| hanushek-reconciliation | 33 | 33 | 0 |
+| hanushek-reconciliation | 31 | 31 | 0 |
 | invisible-from-inside | 1 | 1 | 0 |
 | kerala | 0 | 0 | 0 |
 | nine-year-measurement | 1 | 1 | 0 |

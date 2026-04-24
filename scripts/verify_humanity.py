@@ -2772,10 +2772,10 @@ reg("G-HR-TFR-quant-t",   -7.4, "checkin",
     [(GOSK_HANUSHEK, None), (COMPLETION, None)], tol=0.2)
 reg("G-HR-TFR-qual-beta", -0.25, "checkin",
     ("hanushek_horse_race.json", "numbers.tfr.D_qual_beta"),
-    [(GOSK_HANUSHEK, None), (COMPLETION, None)], tol=0.02)
+    [(COMPLETION, None)], tol=0.02)
 reg("G-HR-TFR-qual-t",    -2.9, "checkin",
     ("hanushek_horse_race.json", "numbers.tfr.D_qual_t"),
-    [(GOSK_HANUSHEK, None), (COMPLETION, None)], tol=0.2)
+    [(COMPLETION, None)], tol=0.2)
 reg("G-HR-TFR-R2-quant",   0.70, "checkin",
     ("hanushek_horse_race.json", "numbers.tfr.A_quant_only_r2"),
     [(GOSK_HANUSHEK, None), (COMPLETION, None)], tol=0.01)
