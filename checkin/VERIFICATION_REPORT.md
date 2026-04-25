@@ -1,12 +1,12 @@
 # Verification Report
 
-Generated: 2026-04-25 03:00
+Generated: 2026-04-25 10:24
 
-## Result: 953/953 PASS
+## Result: 960/960 PASS
 
 | Metric | Count |
 |--------|-------|
-| Verified claims | 953 |
+| Verified claims | 960 |
 | Failed | 0 |
 | Missing | 0 |
 | Literature refs (manual) | 102 |
@@ -17,7 +17,7 @@ Generated: 2026-04-25 03:00
 
 | Source | Pass | Fail | Missing |
 |--------|------|------|---------|
-| checkin | 797 | 0 | 0 |
+| checkin | 804 | 0 | 0 |
 | const | 10 | 0 | 0 |
 | derived | 68 | 0 | 0 |
 | ref | 0 | 0 | 0 |
@@ -44,7 +44,7 @@ Generated: 2026-04-25 03:00
 | empirical-strategy | 14 | 14 | 0 |
 | exclusion-robustness | 15 | 15 | 0 |
 | four-further-cases | 16 | 16 | 0 |
-| gdp-has-no-independent-effect | 54 | 54 | 0 |
+| gdp-has-no-independent-effect | 61 | 61 | 0 |
 | goskomstat-anomaly | 2 | 2 | 0 |
 | goskomstat-anomaly-pattern | 2 | 2 | 0 |
 | hanushek-reconciliation | 35 | 35 | 0 |

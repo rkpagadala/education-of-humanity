@@ -1951,6 +1951,29 @@ reg("Rob-boot-gdp-hi",    0.03, "checkin", ("robustness_tests.json", "numbers.Ro
 reg("Fert-primary-R2",    0.65, "checkin", ("edu_vs_gdp_tfr_residualized.json", "numbers.Fert-primary-R2"),
     [GDP_INDEP], tol=0.02)
 
+# --- SSA-only robustness footnote in §gdp-has-no-independent-effect ---
+reg("SSA-Fert-primary-R2",     0.58, "checkin",
+    ("ssa_education_tfr.json", "panel_by_level.primary.r2_within"),
+    [GDP_INDEP], tol=0.02)
+reg("SSA-Fert-primary-beta",  -0.046, "checkin",
+    ("ssa_education_tfr.json", "panel_by_level.primary.beta"),
+    [GDP_INDEP], tol=0.005)
+reg("SSA-Fert-primary-se",     0.005, "checkin",
+    ("ssa_education_tfr.json", "panel_by_level.primary.se"),
+    [GDP_INDEP], tol=0.002)
+reg("SSA-Fert-n-countries",    44, "checkin",
+    ("ssa_education_tfr.json", "panel_by_level.primary.n_countries"),
+    [GDP_INDEP], tol=0)
+reg("SSA-Fert-n-obs",          308, "checkin",
+    ("ssa_education_tfr.json", "panel_by_level.primary.n_obs"),
+    [GDP_INDEP], tol=0)
+reg("SSA-cross-n",             10, "checkin",
+    ("ssa_education_tfr.json", "crossing.n"),
+    [GDP_INDEP], tol=0)
+reg("SSA-cross-primary-median", 77, "checkin",
+    ("ssa_education_tfr.json", "crossing.median"),
+    [GDP_INDEP], tol=1)
+
 # --- OVERPERF section: Table 3 residuals + GDP values (L1279-L1290) ---
 reg("T3-Maldives-resid-sec",   34.9,  "derived", "Section dup of T3-Maldives-resid", [OVERPERF], tol=0)
 reg("GDP-Maldives-2015-sec",   9645,  "wdi", ("gdp", "Maldives", 2015), [OVERPERF], tol=500)
@@ -1981,7 +2004,7 @@ reg("T5-Korea-TFR",      1975, "checkin", ("table4_crossings.json", "results.Sou
 reg("T5-Cuba-dev",       1974, "checkin", ("table4_crossings.json", "results.Cuba.both_crossed"),
     [(SEN_CASES, 15), (CUBA, None)], tol=0)
 reg("T5-Cuba-TFR",       1972, "checkin", ("table4_crossings.json", "results.Cuba.tfr_crossing_best"),
-    [(SEN_CASES, 15), (DEF_DEV, 84)], tol=0)
+    [(SEN_CASES, 15), (DEF_DEV, 85)], tol=0)
 # Bangladesh
 reg("T5-Bangladesh-dev",  2014, "checkin", ("table4_crossings.json", "results.Bangladesh.both_crossed"),
     [(SEN_CASES, 16), (BANGLADESH, None)], tol=0)

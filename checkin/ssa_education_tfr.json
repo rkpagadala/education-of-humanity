@@ -1,0 +1,37 @@
+{
+  "method": "Sub-Saharan Africa restriction (UN M49, 48 countries) of the paper's primary -> TFR claim. Three cuts: (1) FE panel, edu(T) -> TFR(T+25), three education levels (primary, lower-sec, upper-sec); (2) primary completion at TFR<3.65 crossing year for SSA crossers; (3) composition-by-level comparison within SSA. T=1960-1990 (5yr step), lag=25.",
+  "ssa_n_countries": 48,
+  "panel_by_level": {
+    "primary": {
+      "beta": -0.0462,
+      "se": 0.0046,
+      "r2_within": 0.58,
+      "n_obs": 308,
+      "n_countries": 44
+    },
+    "lower_sec": {
+      "beta": -0.0649,
+      "se": 0.0075,
+      "r2_within": 0.498,
+      "n_obs": 308,
+      "n_countries": 44
+    },
+    "upper_sec": {
+      "beta": -0.0996,
+      "se": 0.0231,
+      "r2_within": 0.343,
+      "n_obs": 308,
+      "n_countries": 44
+    }
+  },
+  "crossing": {
+    "n": 10,
+    "min": 50.3,
+    "p10": 54.1,
+    "p25": 66.7,
+    "median": 77.0,
+    "p75": 79.1,
+    "p90": 84.6,
+    "max": 87.8
+  }
+}

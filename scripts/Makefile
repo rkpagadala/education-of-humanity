@@ -103,7 +103,8 @@ analysis: \
 	$(CHECKIN)/lsec_thresholds.json \
 	$(CHECKIN)/cs_threshold_robustness.json \
 	$(CHECKIN)/missing_by_period.json \
-	$(CHECKIN)/table7_stepwise.json
+	$(CHECKIN)/table7_stepwise.json \
+	$(CHECKIN)/ssa_education_tfr.json
 
 # ── Rules ─────────────────────────────────────────────────────────────
 
@@ -186,6 +187,9 @@ $(CHECKIN)/edu_vs_gdp_residualized.json: residualization/education_vs_gdp.py _sh
 	$(PYTHON) $<
 
 $(CHECKIN)/edu_vs_gdp_tfr_residualized.json: residualization/education_vs_tfr.py _shared.py $(ALL_DATA)
+	$(PYTHON) $<
+
+$(CHECKIN)/ssa_education_tfr.json: ssa_education_tfr.py _shared.py $(ALL_DATA)
 	$(PYTHON) $<
 
 $(CHECKIN)/edu_vs_gdp_entry_ceiling.json: residualization/by_entry_ceiling.py _shared.py $(ALL_DATA)
