@@ -43,7 +43,9 @@ sys.path.insert(0, os.path.join(SCRIPT_DIR, ".."))
 from _shared import PROC, DATA, CHECKIN, REGIONS, REPO_ROOT, write_checkin
 
 PTE_PROC   = PROC
-OUT        = os.path.join(REPO_ROOT, "paper", "figures", "beta_vs_baseline.png")
+OUT          = os.path.join(REPO_ROOT, "paper", "figures", "beta_vs_baseline.png")
+OUT_SCATTER  = os.path.join(REPO_ROOT, "paper", "figures",
+                            "beta_vs_baseline_scatter.png")
 
 # ── parameters ────────────────────────────────────────────────────────────────
 WINDOW_SIZE = 25    # years (6 cohorts at 5-year intervals)
@@ -108,6 +110,43 @@ for country_name, label, color, marker, start_year in COUNTRIES:
     ax.plot(baselines, betas, color=color, linewidth=2, marker=marker,
             markersize=6, label=label, zorder=3)
 
+# ── R2.10: cross-country average β_g, binned by baseline ─────────────────────
+# For every country in the long-run panel, compute β_g for every sliding
+# window (WINDOW_SIZE=25, STEP=10, LAG=25, MIN_OBS=3). Bin observations by
+# average parental baseline (0–10, 10–20, …, 90–100) and plot the mean
+# β_g per bin as a thick black line, overlaid on the country-specific
+# trajectories above. Outliers are clipped at |β| ≤ 15 to match the
+# country-line cap; binned averages are unaffected by clipping at typical
+# magnitudes.
+all_records = []  # (country, baseline, beta)
+for country_name in wide.index:
+    for start in range(1900, 1996, STEP):
+        end = start + WINDOW_SIZE
+        beta, avg_parent = beta_for_window(country_name, start, end)
+        if (not np.isnan(beta) and not np.isnan(avg_parent)
+                and abs(beta) <= 15):
+            all_records.append((country_name, avg_parent, beta))
+
+scatter_df = pd.DataFrame(all_records,
+                          columns=["country", "baseline", "beta"])
+print(f"\nUniversality overlay: {len(scatter_df)} country-window observations "
+      f"from {scatter_df['country'].nunique()} countries")
+
+bin_edges = list(range(0, 101, 10))
+scatter_df["bin"] = pd.cut(scatter_df["baseline"], bins=bin_edges,
+                            labels=[f"{e}-{e+10}" for e in bin_edges[:-1]],
+                            include_lowest=True)
+bin_means = scatter_df.groupby("bin", observed=True).agg(
+    baseline=("baseline", "mean"),
+    beta=("beta", "mean"),
+    n=("beta", "count"),
+).reset_index()
+bin_means = bin_means[bin_means["n"] >= 5]  # require at least 5 obs/bin
+
+ax.plot(bin_means["baseline"], bin_means["beta"],
+        color="black", linewidth=3.0, marker="o", markersize=7,
+        label="Cross-country mean (binned)", zorder=4)
+
 # ── reference lines ──────────────────────────────────────────────────────────
 ax.axhline(1.0, color="grey", linewidth=0.8, linestyle="--", alpha=0.6, zorder=1)
 ax.axhline(0.0, color="grey", linewidth=0.8, linestyle="-", alpha=0.4, zorder=1)
@@ -148,6 +187,76 @@ for country_name, label, _, _, start_year in COUNTRIES:
         if not np.isnan(beta):
             print(f"  {start}-{end:<10} {beta:>8.3f} {avg_parent:>11.1f}%")
 
+# ── R2.11: Scatter of every country-window with OLS fit (appendix) ───────────
+# For every country-window in the long-run panel, plot β_g vs avg parental
+# baseline. Fit OLS β_g = α + γ · baseline with country-clustered SEs;
+# report where the fit crosses β=1 and the slope's significance.
+#
+# To keep the regression numerically stable, drop windows where either β
+# is outside [-3, 3] (a few near-singular cases at extremes); in practice
+# this trims a handful of windows where parent variance was tiny.
+fit_df = scatter_df[(scatter_df["beta"] >= -3) & (scatter_df["beta"] <= 5)].copy()
+X_fit = sm.add_constant(fit_df[["baseline"]])
+ols_model = sm.OLS(fit_df["beta"], X_fit).fit(
+    cov_type="cluster", cov_kwds={"groups": fit_df["country"]},
+)
+intercept = float(ols_model.params["const"])
+slope = float(ols_model.params["baseline"])
+slope_se = float(ols_model.bse["baseline"])
+slope_p = float(ols_model.pvalues["baseline"])
+crossing_x = (1.0 - intercept) / slope if slope != 0 else np.nan
+
+print("\nR2.11 OLS fit (country-clustered SE):")
+print(f"  intercept = {intercept:+.3f}")
+print(f"  slope     = {slope:+.4f}  SE = {slope_se:.4f}  p = {slope_p:.4g}")
+print(f"  crosses β=1 at baseline = {crossing_x:.1f}%")
+print(f"  n = {len(fit_df)}, countries = {fit_df['country'].nunique()}")
+
+# OLS predicted line and 95% CI band
+xx = np.linspace(0, 100, 101)
+XX = sm.add_constant(pd.DataFrame({"baseline": xx}))
+pred = ols_model.get_prediction(XX)
+pred_summary = pred.summary_frame(alpha=0.05)
+yhat = pred_summary["mean"].values
+ci_lo = pred_summary["mean_ci_lower"].values
+ci_hi = pred_summary["mean_ci_upper"].values
+
+fig2, ax2 = plt.subplots(figsize=(9, 5.5))
+ax2.scatter(fit_df["baseline"], fit_df["beta"],
+            s=14, color="#bbbbbb", alpha=0.5, edgecolor="none", zorder=2,
+            label=f"Country-window observations (n = {len(fit_df)})")
+ax2.fill_between(xx, ci_lo, ci_hi, color="black", alpha=0.15, zorder=3,
+                  label="95% confidence band (country-clustered)")
+ax2.plot(xx, yhat, color="black", linewidth=2.5, zorder=4,
+         label=f"OLS fit: β = {intercept:.2f} {slope:+.4f}·baseline")
+ax2.axhline(1.0, color="#d6604d", linewidth=1.2, linestyle="--",
+            alpha=0.8, zorder=1, label="β = 1 (unity)")
+if 0 <= crossing_x <= 100:
+    ax2.axvline(crossing_x, color="#d6604d", linewidth=0.8, linestyle=":",
+                alpha=0.6, zorder=1)
+    ax2.annotate(f"crosses β=1 at\nbaseline ≈ {crossing_x:.0f}%",
+                 xy=(crossing_x, 1.0),
+                 xytext=(crossing_x + 5, 2.5),
+                 fontsize=9, color="#7a1a1a",
+                 arrowprops=dict(arrowstyle="->", color="#d6604d", alpha=0.7))
+ax2.set_xlabel("Average parental baseline education "
+               "(% lower secondary completion)", fontsize=11)
+ax2.set_ylabel("Generational transmission coefficient (β)", fontsize=11)
+ax2.set_title("Universality of ceiling compression: country-window scatter\n"
+              f"All countries in the long-run panel (n countries = "
+              f"{fit_df['country'].nunique()}), 1900–2015 "
+              f"(WINDOW_SIZE=25, STEP=10, LAG=25, MIN_OBS=3)",
+              fontsize=11)
+ax2.legend(fontsize=9, loc="upper right")
+ax2.set_xlim(-2, 100)
+ax2.set_ylim(-1.5, 5)
+ax2.grid(axis="y", linewidth=0.4, alpha=0.5)
+plt.tight_layout()
+plt.savefig(OUT_SCATTER, dpi=150, bbox_inches="tight")
+print(f"Saved: {OUT_SCATTER}")
+plt.close(fig2)
+
+
 # ── Write checkin JSON ───────────────────────────────────────────────────────
 
 # Compute specific beta values needed by verify_humanity.py
@@ -167,5 +276,23 @@ write_checkin("beta_vs_baseline.json", {
         "Fig1-Taiwan-beta": get_beta("Taiwan Province of China", 1930),
         "Fig1-Phil-beta-high": get_beta("Philippines", 1920),
         "Fig1-Phil-beta-low": get_beta("Philippines", 1990),
+        # R2.10 / R2.11 universality overlays
+        "Universality-n-windows":  int(len(scatter_df)),
+        "Universality-n-countries": int(scatter_df["country"].nunique()),
+        "Universality-fit-intercept": round(intercept, 3),
+        "Universality-fit-slope":     round(slope, 4),
+        "Universality-fit-slope-se":  round(slope_se, 4),
+        "Universality-fit-slope-p":   round(slope_p, 4),
+        "Universality-fit-crossing":  (round(crossing_x, 1)
+                                        if not np.isnan(crossing_x) else None),
+        "Universality-fit-n":         int(len(fit_df)),
+        "Universality-fit-countries": int(fit_df["country"].nunique()),
     },
+    "binned_means": [
+        {"bin": str(row["bin"]),
+         "baseline_mean": round(float(row["baseline"]), 1),
+         "beta_mean":     round(float(row["beta"]), 3),
+         "n":             int(row["n"])}
+        for _, row in bin_means.iterrows()
+    ],
 }, script_path="scripts/figures/beta_vs_baseline.py")

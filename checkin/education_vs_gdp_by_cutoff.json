@@ -100,10 +100,18 @@
     "cutoff_90_edu_t": 16.39,
     "cutoff_90_gdp_se": 2.92,
     "cutoff_90_gdp_t": 6.02,
+    "no_cutoff_edu_beta": 0.589,
     "no_cutoff_edu_r2": 0.533,
+    "no_cutoff_gdp_beta": 14.938,
     "no_cutoff_gdp_r2": 0.245,
-    "no_cutoff_ratio": 2.2
+    "no_cutoff_ratio": 2.2,
+    "no_cutoff_n": 1304,
+    "no_cutoff_countries": 156,
+    "no_cutoff_edu_se": 0.041,
+    "no_cutoff_edu_t": 14.5,
+    "no_cutoff_gdp_se": 2.259,
+    "no_cutoff_gdp_t": 6.61
   },
   "script": "scripts/residualization/by_gdp_cutoff.py",
-  "produced": "2026-04-20"
+  "produced": "2026-04-24"
 }

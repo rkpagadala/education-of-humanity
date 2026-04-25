@@ -63,6 +63,9 @@ tfr.columns = [int(c) for c in tfr.columns]
 gdp_raw = load_wb("gdppercapita_us_inflation_adjusted.csv")
 print(f"  GDP: {len(gdp_raw)} countries, years {gdp_raw.columns[0]}–{gdp_raw.columns[-1]}")
 
+u5mr_raw = load_wb("child_mortality_u5.csv")
+print(f"  U5MR: {len(u5mr_raw)} countries, years {u5mr_raw.columns[0]}–{u5mr_raw.columns[-1]}")
+
 def get_gdp(country_wcde, year):
     key = _SHARED_NAME_MAP.get(country_wcde, country_wcde).lower()
     for k in [country_wcde.lower(), key]:
@@ -83,6 +86,16 @@ def get_tfr(country_wcde, year):
     if country_wcde in tfr.index and year in tfr.columns:
         v = float(tfr.loc[country_wcde, year])
         return v if not np.isnan(v) else np.nan
+    return np.nan
+
+def get_u5mr(country_wcde, year):
+    key = _SHARED_NAME_MAP.get(country_wcde, country_wcde).lower()
+    for k in [country_wcde.lower(), key]:
+        if k in u5mr_raw.index:
+            try:
+                v = float(u5mr_raw.loc[k, str(year)])
+                return v if not np.isnan(v) and v > 0 else np.nan
+            except (KeyError, ValueError, TypeError): pass
     return np.nan
 
 # ── Build panel ───────────────────────────────────────────────────────────────
@@ -117,6 +130,9 @@ for c in countries:
         tfr_t    = get_tfr(c, t)
         tfr_tp25 = get_tfr(c, tp25)
 
+        u5mr_t    = get_u5mr(c, t)
+        u5mr_tp25 = get_u5mr(c, tp25)
+
         if any(np.isnan(x) for x in [low, pri]): continue
 
         # Education at T+25 (for reverse regression: GDP(T) -> edu(T+25))
@@ -137,13 +153,23 @@ for c in countries:
             "gdp_growth_25": (np.log(gdp_tp25) - np.log(gdp_t)) if not np.isnan(gdp_t) and not np.isnan(gdp_tp25) else np.nan,
             "e0_t": e0_t, "e0_tp25": e0_tp25,
             "tfr_t": tfr_t, "tfr_tp25": tfr_tp25,
+            "u5mr_t": u5mr_t, "u5mr_tp25": u5mr_tp25,
         })
 
 panel = pd.DataFrame(rows)
+
+# Log transformations for outcomes that the reviewer recommends presenting
+# in elasticity form (R1.18 / R2.17). LE and TFR are kept in levels as the
+# headline rows of Table 7; the log rows let the reader read all slope
+# coefficients on the same semi-elasticity scale as log GDP.
+for col in ["e0_t", "e0_tp25", "tfr_t", "tfr_tp25", "u5mr_t", "u5mr_tp25"]:
+    panel[f"log_{col}"] = np.log(panel[col].where(panel[col] > 0))
+
 print(f"  Panel: {len(panel)} obs, {panel['country'].nunique()} countries")
 print(f"  GDP coverage (T+25): {panel['log_gdp_tp25'].notna().sum()} obs")
 print(f"  E0 coverage (T+25): {panel['e0_tp25'].notna().sum()} obs")
 print(f"  TFR coverage (T+25): {panel['tfr_tp25'].notna().sum()} obs")
+print(f"  U5MR coverage (T+25): {panel['u5mr_tp25'].notna().sum()} obs")
 
 def run_ols(X_cols, y_col, data, fe=False, country_col="country"):
     """Run OLS (pooled or FE) and return (coefs, r2, n)."""
@@ -219,6 +245,110 @@ for spec, xcols, fe in [
     results["tfr"][spec] = (coefs, r2, n)
     coef_str = ", ".join(f"{k}:{v:.3f}" for k,v in coefs.items()) if coefs else "n/a"
     print(f"  TFR(T+25) | {spec}: {coef_str}, R²={r2:.3f}, n={n}")
+
+# Log-outcome rows: log(LE), log(TFR), log(U5MR) on education + log(initial outcome).
+# Coefficients are semi-elasticities — proportional change in the outcome per
+# percentage-point rise in parental lower-secondary completion. Comparable in
+# units to the log-GDP row above. Cluster-robust SEs by country.
+def fe_clustered(X_cols, y_col, data, country_col="country"):
+    sub = data.dropna(subset=X_cols + [y_col]).copy()
+    if len(sub) < 10:
+        return None
+    for col in X_cols + [y_col]:
+        sub[col + "_dm"] = sub[col] - sub.groupby(country_col)[col].transform("mean")
+    Xd = sub[[c + "_dm" for c in X_cols]].values
+    yd = sub[y_col + "_dm"].values
+    countries = sub[country_col].values
+    ok = ~np.isnan(Xd).any(axis=1) & ~np.isnan(yd)
+    Xd, yd, countries = Xd[ok], yd[ok], countries[ok]
+    if len(yd) < 10:
+        return None
+    XtX_inv = np.linalg.inv(Xd.T @ Xd)
+    beta = XtX_inv @ Xd.T @ yd
+    resid = yd - Xd @ beta
+    # Cluster-by-country meat
+    meat = np.zeros((Xd.shape[1], Xd.shape[1]))
+    for c in np.unique(countries):
+        idx = countries == c
+        u = Xd[idx].T @ resid[idx]
+        meat += np.outer(u, u)
+    G = len(np.unique(countries))
+    N = len(yd)
+    K = Xd.shape[1]
+    cluster_adj = (G / (G - 1)) * ((N - 1) / (N - K))
+    vcov = cluster_adj * (XtX_inv @ meat @ XtX_inv)
+    se = np.sqrt(np.diag(vcov))
+    from scipy import stats as _st
+    tvals = beta / se
+    pvals = 2 * (1 - _st.t.cdf(np.abs(tvals), df=G - 1))
+    ss_tot = np.sum(yd ** 2)
+    ss_res = np.sum(resid ** 2)
+    r2 = 1 - ss_res / ss_tot if ss_tot > 0 else np.nan
+    return {
+        "coefs": dict(zip(X_cols, beta)),
+        "se":    dict(zip(X_cols, se)),
+        "pvals": dict(zip(X_cols, pvals)),
+        "r2":    r2,
+        "n":     int(N),
+        "countries": int(G),
+    }
+
+print()
+# TFR-on-primary specifications (Table 7 substantive choice: primary is the
+# operative channel for fertility — see §"steepest at primary"). Level and
+# log, both with cluster-robust SEs by country.
+print("\nTFR on primary completion (Table 7 substantive spec):")
+results["tfr_pri"] = {}
+for spec, xcols in [
+    ("FE:  pri only",         ["pri_t"]),
+    ("FE:  pri + tfr",        ["pri_t", "tfr_t"]),
+]:
+    res = fe_clustered(xcols, "tfr_tp25", panel)
+    results["tfr_pri"][spec] = res
+    if res is None: continue
+    b = res["coefs"]["pri_t"]; p = res["pvals"]["pri_t"]
+    stars = "***" if p < 0.01 else "**" if p < 0.05 else "*" if p < 0.10 else ""
+    coef_str = ", ".join(f"{k}:{v:.4f}" for k, v in res["coefs"].items())
+    print(f"  TFR(T+25) | {spec}: {coef_str}, R²={res['r2']:.3f}, n={res['n']}, "
+          f"countries={res['countries']}, pri p={p:.4g}{stars}")
+
+print("\nlog(TFR) on primary completion (Table 7 substantive spec):")
+results["log_tfr_tp25_pri"] = {}
+for spec, xcols in [
+    ("FE:  pri only",                       ["pri_t"]),
+    ("FE:  pri + log(TFR)",                 ["pri_t", "log_tfr_t"]),
+]:
+    res = fe_clustered(xcols, "log_tfr_tp25", panel)
+    results["log_tfr_tp25_pri"][spec] = res
+    if res is None: continue
+    b = res["coefs"]["pri_t"]; p = res["pvals"]["pri_t"]
+    stars = "***" if p < 0.01 else "**" if p < 0.05 else "*" if p < 0.10 else ""
+    coef_str = ", ".join(f"{k}:{v:.4f}" for k, v in res["coefs"].items())
+    print(f"  log(TFR)(T+25) | {spec}: {coef_str}, R²={res['r2']:.3f}, n={res['n']}, "
+          f"countries={res['countries']}, pri p={p:.4g}{stars}")
+
+for outcome_label, log_x, log_y in [
+    ("log(LE)",   "log_e0_t",   "log_e0_tp25"),
+    ("log(TFR)",  "log_tfr_t",  "log_tfr_tp25"),
+    ("log(U5MR)", "log_u5mr_t", "log_u5mr_tp25"),
+]:
+    key = log_y
+    results[key] = {}
+    for spec, xcols in [
+        ("FE:  edu only",                       ["low_t"]),
+        (f"FE:  edu + {outcome_label}",         ["low_t", log_x]),
+    ]:
+        res = fe_clustered(xcols, log_y, panel)
+        results[key][spec] = res
+        if res is None:
+            print(f"  {outcome_label}(T+25) | {spec}: insufficient data")
+            continue
+        b = res["coefs"]["low_t"]
+        p = res["pvals"]["low_t"]
+        stars = "***" if p < 0.01 else "**" if p < 0.05 else "*" if p < 0.10 else ""
+        coef_str = ", ".join(f"{k}:{v:.4f}" for k, v in res["coefs"].items())
+        print(f"  {outcome_label}(T+25) | {spec}: {coef_str}, R²={res['r2']:.3f}, "
+              f"n={res['n']}, countries={res['countries']}, edu p={p:.4g}{stars}")
 
 # ── Education levels comparison (GDP, FE) ────────────────────────────────────
 print("\nComparing education levels for GDP prediction (FE):")
@@ -604,6 +734,49 @@ checkin_numbers["T2-LE-R2"] = _safe_r2(results["e0"]["FE:  edu + e0"])
 checkin_numbers["T2-TFR-beta"] = _safe_coef(results["tfr"]["FE:  edu + tfr"], "low_t")
 checkin_numbers["T2-TFR-init"] = _safe_coef(results["tfr"]["FE:  edu + tfr"], "tfr_t")
 checkin_numbers["T2-TFR-R2"] = _safe_r2(results["tfr"]["FE:  edu + tfr"])
+
+# Forward log rows (semi-elasticity per pp education): log(LE), log(TFR), log(U5MR).
+# Cluster-robust SEs by country. Used in Table 7 Panel A:
+#   - log(LE) and log(TFR) appear as second rows under their level counterparts
+#   - log(U5MR) is reported in logs only (right-skewed by construction)
+for tag, key, init_x, label in [
+    ("LE",   "log_e0_tp25",   "log_e0_t",   "log(LE)"),
+    ("TFR",  "log_tfr_tp25",  "log_tfr_t",  "log(TFR)"),
+    ("U5MR", "log_u5mr_tp25", "log_u5mr_t", "log(U5MR)"),
+]:
+    spec = results[key][f"FE:  edu + {label}"]
+    if spec is None:
+        continue
+    checkin_numbers[f"T2-{tag}-beta-log"]      = round(spec["coefs"]["low_t"], 4)
+    checkin_numbers[f"T2-{tag}-init-log"]      = round(spec["coefs"][init_x], 4)
+    checkin_numbers[f"T2-{tag}-se-log"]        = round(spec["se"]["low_t"], 4)
+    checkin_numbers[f"T2-{tag}-init-se-log"]   = round(spec["se"][init_x], 4)
+    checkin_numbers[f"T2-{tag}-p-log"]         = float(f"{spec['pvals']['low_t']:.4g}")
+    checkin_numbers[f"T2-{tag}-init-p-log"]    = float(f"{spec['pvals'][init_x]:.4g}")
+    checkin_numbers[f"T2-{tag}-R2-log"]        = round(spec["r2"], 3)
+    checkin_numbers[f"T2-{tag}-n-log"]         = spec["n"]
+    checkin_numbers[f"T2-{tag}-countries-log"] = spec["countries"]
+
+# TFR-on-primary spec (Table 7 substantive row uses primary, not lower-sec).
+spec_pri = results["tfr_pri"]["FE:  pri + tfr"]
+if spec_pri is not None:
+    checkin_numbers["T2-TFR-pri-beta"]      = round(spec_pri["coefs"]["pri_t"], 4)
+    checkin_numbers["T2-TFR-pri-init"]      = round(spec_pri["coefs"]["tfr_t"], 4)
+    checkin_numbers["T2-TFR-pri-se"]        = round(spec_pri["se"]["pri_t"], 4)
+    checkin_numbers["T2-TFR-pri-p"]         = float(f"{spec_pri['pvals']['pri_t']:.4g}")
+    checkin_numbers["T2-TFR-pri-init-p"]    = float(f"{spec_pri['pvals']['tfr_t']:.4g}")
+    checkin_numbers["T2-TFR-pri-R2"]        = round(spec_pri["r2"], 3)
+    checkin_numbers["T2-TFR-pri-n"]         = spec_pri["n"]
+    checkin_numbers["T2-TFR-pri-countries"] = spec_pri["countries"]
+
+spec_pri_log = results["log_tfr_tp25_pri"]["FE:  pri + log(TFR)"]
+if spec_pri_log is not None:
+    checkin_numbers["T2-TFR-pri-beta-log"]    = round(spec_pri_log["coefs"]["pri_t"], 4)
+    checkin_numbers["T2-TFR-pri-init-log"]    = round(spec_pri_log["coefs"]["log_tfr_t"], 4)
+    checkin_numbers["T2-TFR-pri-se-log"]      = round(spec_pri_log["se"]["pri_t"], 4)
+    checkin_numbers["T2-TFR-pri-p-log"]       = float(f"{spec_pri_log['pvals']['pri_t']:.4g}")
+    checkin_numbers["T2-TFR-pri-init-p-log"]  = float(f"{spec_pri_log['pvals']['log_tfr_t']:.4g}")
+    checkin_numbers["T2-TFR-pri-R2-log"]      = round(spec_pri_log["r2"], 3)
 
 # Reverse (Panel B): GDP -> edu(T+25)
 checkin_numbers["T2-PB-GDP-beta"] = _safe_coef(results_rev["FE:  GDP only"], "log_gdp_t")

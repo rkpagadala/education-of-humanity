@@ -181,9 +181,11 @@ def main():
 
     specs = [
         ("m1", ["parent"],                              False, "child ~ parent [C-FE]"),
-        ("m2", ["parent", "log_gdp"],                   False, "+ log GDP"),
-        ("m3", ["parent", "parent_sq", "log_gdp"],      False, "+ parent²"),
-        ("m4", ["parent", "parent_sq", "log_gdp"],      True,  "+ year FE"),
+        ("m2", ["log_gdp"],                             False, "log GDP only"),
+        ("m3", ["parent", "log_gdp"],                   False, "parent + log GDP"),
+        ("m4", ["parent", "parent_sq", "log_gdp"],      False, "+ parent²"),
+        ("m5", ["parent", "log_gdp"],                   True,  "col 3 + year FE"),
+        ("m6", ["parent", "parent_sq", "log_gdp"],      True,  "col 4 + year FE"),
     ]
 
     results = {}
@@ -253,11 +255,13 @@ def main():
     numbers["sample_countries"] = int(results["m1"]["countries"])
 
     write_checkin("table_1_stepwise.json", {
-        "notes": (f"Stepwise Table 1. Parental education <{ACTIVE_EXPANSION_CUTOFF}% "
-                  "(active expansion). Common sample across all four columns: "
+        "notes": (f"Stepwise Table 1, six columns. Parental education <{ACTIVE_EXPANSION_CUTOFF}% "
+                  "(active expansion). Common sample across all six columns: "
                   "every observation must have contemporaneous log GDP "
                   "non-missing. Country-clustered SEs. Matches the 629-obs / "
                   "105-country sample in scripts/residualization/by_gdp_cutoff.py. "
+                  "Columns: (1) parent only, (2) log GDP only, (3) parent + log GDP, "
+                  "(4) + parent², (5) col 3 + year FE, (6) col 4 + year FE. "
                   "Produced by scripts/tables/table_1_stepwise.py."),
         "models": results,
         "numbers": numbers,

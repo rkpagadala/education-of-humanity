@@ -85,6 +85,7 @@ THE_EVIDENCE = "the-panel"
 APPENDIX_ROBUST = "robustness"
 APPENDIX_FRAME = "difficulties-on-the-theory"
 APPENDIX_TWFE = "appendix-twfe"
+APPENDIX_LISTWISE = "appendix-listwise-deletion"
 POLICY_OVER_PERFORMERS = "policy-over-performers"
 
 # ══════════════════════════════════════════════════════════════════════════
@@ -237,6 +238,134 @@ reg("CS-att-yr35",  21.42,  "checkin", ("callaway_santanna.json", "child_educati
     [(EMPIRICAL, None), (APPENDIX_ROBUST, None), (APPENDIX_TWFE, None), (EDU_PRED, None)], tol=0.05)
 reg("CS-att-se",    1.7,    "checkin", ("callaway_santanna.json", "child_education.att_se"),
     [(EMPIRICAL, None), (APPENDIX_ROBUST, None), (APPENDIX_TWFE, None)], tol=0.1)
+
+# CS entry-threshold robustness (R1.20). Aggregate ATT swept across thresholds
+# {5, 7, 10, 12, 15} percent; pre-trend at e=-1 reported for placebo.
+reg("CS-thr-5",  5.67, "checkin", ("cs_threshold_robustness.json", "thresholds.5.att_aggregate"),
+    [(APPENDIX_TWFE, None)], tol=0.05)
+reg("CS-thr-7",  9.10, "checkin", ("cs_threshold_robustness.json", "thresholds.7.att_aggregate"),
+    [(APPENDIX_TWFE, None)], tol=0.05)
+reg("CS-thr-10", 7.88, "checkin", ("cs_threshold_robustness.json", "thresholds.10.att_aggregate"),
+    [(APPENDIX_TWFE, None)], tol=0.05)
+reg("CS-thr-12", 7.59, "checkin", ("cs_threshold_robustness.json", "thresholds.12.att_aggregate"),
+    [(APPENDIX_TWFE, None)], tol=0.05)
+reg("CS-thr-15", 6.29, "checkin", ("cs_threshold_robustness.json", "thresholds.15.att_aggregate"),
+    [(APPENDIX_TWFE, None)], tol=0.05)
+reg("CS-thr-5-N",  184, "checkin", ("cs_threshold_robustness.json", "thresholds.5.n_treated_countries"),
+    [(APPENDIX_TWFE, None)], tol=0)
+reg("CS-thr-7-N",  181, "checkin", ("cs_threshold_robustness.json", "thresholds.7.n_treated_countries"),
+    [(APPENDIX_TWFE, None)], tol=0)
+reg("CS-thr-10-N", 175, "checkin", ("cs_threshold_robustness.json", "thresholds.10.n_treated_countries"),
+    [(APPENDIX_TWFE, None)], tol=0)
+reg("CS-thr-12-N", 172, "checkin", ("cs_threshold_robustness.json", "thresholds.12.n_treated_countries"),
+    [(APPENDIX_TWFE, None)], tol=0)
+reg("CS-thr-15-N", 167, "checkin", ("cs_threshold_robustness.json", "thresholds.15.n_treated_countries"),
+    [(APPENDIX_TWFE, None)], tol=0)
+
+# R1.29 missing-by-period audit (appendix-listwise-deletion).
+reg("MBP-1975-gdp",   135, "checkin", ("missing_by_period.json", "coverage_by_year.1975.log_gdp"),
+    [(APPENDIX_ROBUST, None)], tol=0)
+reg("MBP-1975-all",   127, "checkin", ("missing_by_period.json", "coverage_by_year.1975.all_vars"),
+    [(APPENDIX_ROBUST, None)], tol=0)
+reg("MBP-1975-drop",  31.4, "checkin", ("missing_by_period.json", "coverage_by_year.1975.listwise_drop_pct"),
+    [(APPENDIX_ROBUST, None)], tol=0.1)
+reg("MBP-1980-gdp",   149, "checkin", ("missing_by_period.json", "coverage_by_year.1980.log_gdp"),
+    [(APPENDIX_ROBUST, None)], tol=0)
+reg("MBP-1980-all",   139, "checkin", ("missing_by_period.json", "coverage_by_year.1980.all_vars"),
+    [(APPENDIX_ROBUST, None)], tol=0)
+reg("MBP-1980-drop",  24.9, "checkin", ("missing_by_period.json", "coverage_by_year.1980.listwise_drop_pct"),
+    [(APPENDIX_ROBUST, None)], tol=0.1)
+reg("MBP-1985-gdp",   156, "checkin", ("missing_by_period.json", "coverage_by_year.1985.log_gdp"),
+    [(APPENDIX_ROBUST, None)], tol=0)
+reg("MBP-1985-all",   145, "checkin", ("missing_by_period.json", "coverage_by_year.1985.all_vars"),
+    [(APPENDIX_ROBUST, None)], tol=0)
+reg("MBP-1985-drop",  21.6, "checkin", ("missing_by_period.json", "coverage_by_year.1985.listwise_drop_pct"),
+    [(APPENDIX_ROBUST, None)], tol=0.1)
+reg("MBP-1990-gdp",   181, "checkin", ("missing_by_period.json", "coverage_by_year.1990.log_gdp"),
+    [(APPENDIX_ROBUST, None)], tol=0)
+reg("MBP-1990-all",   168, "checkin", ("missing_by_period.json", "coverage_by_year.1990.all_vars"),
+    [(APPENDIX_ROBUST, None)], tol=0)
+reg("MBP-1990-drop",   9.2, "checkin", ("missing_by_period.json", "coverage_by_year.1990.listwise_drop_pct"),
+    [(APPENDIX_ROBUST, None)], tol=0.1)
+reg("MBP-1995-gdp",   184, "checkin", ("missing_by_period.json", "coverage_by_year.1995.log_gdp"),
+    [(APPENDIX_ROBUST, None)], tol=0)
+reg("MBP-1995-all",   170, "checkin", ("missing_by_period.json", "coverage_by_year.1995.all_vars"),
+    [(APPENDIX_ROBUST, None)], tol=0)
+reg("MBP-1995-drop",   8.1, "checkin", ("missing_by_period.json", "coverage_by_year.1995.listwise_drop_pct"),
+    [(APPENDIX_ROBUST, None)], tol=0.1)
+reg("MBP-2000-gdp",   187, "checkin", ("missing_by_period.json", "coverage_by_year.2000.log_gdp"),
+    [(APPENDIX_ROBUST, None)], tol=0)
+reg("MBP-2000-all",   172, "checkin", ("missing_by_period.json", "coverage_by_year.2000.all_vars"),
+    [(APPENDIX_ROBUST, None)], tol=0)
+reg("MBP-2000-drop",   7.0, "checkin", ("missing_by_period.json", "coverage_by_year.2000.listwise_drop_pct"),
+    [(APPENDIX_ROBUST, None)], tol=0.1)
+reg("MBP-2005-gdp",   189, "checkin", ("missing_by_period.json", "coverage_by_year.2005.log_gdp"),
+    [(APPENDIX_ROBUST, None)], tol=0)
+reg("MBP-2005-all",   172, "checkin", ("missing_by_period.json", "coverage_by_year.2005.all_vars"),
+    [(APPENDIX_ROBUST, None)], tol=0)
+reg("MBP-2005-drop",   7.0, "checkin", ("missing_by_period.json", "coverage_by_year.2005.listwise_drop_pct"),
+    [(APPENDIX_ROBUST, None)], tol=0.1)
+reg("MBP-2010-gdp",   190, "checkin", ("missing_by_period.json", "coverage_by_year.2010.log_gdp"),
+    [(APPENDIX_ROBUST, None)], tol=0)
+reg("MBP-2010-all",   173, "checkin", ("missing_by_period.json", "coverage_by_year.2010.all_vars"),
+    [(APPENDIX_ROBUST, None)], tol=0)
+reg("MBP-2010-drop",   6.5, "checkin", ("missing_by_period.json", "coverage_by_year.2010.listwise_drop_pct"),
+    [(APPENDIX_ROBUST, None)], tol=0.1)
+reg("MBP-2015-gdp",   191, "checkin", ("missing_by_period.json", "coverage_by_year.2015.log_gdp"),
+    [(APPENDIX_ROBUST, None)], tol=0)
+reg("MBP-2015-all",   173, "checkin", ("missing_by_period.json", "coverage_by_year.2015.all_vars"),
+    [(APPENDIX_ROBUST, None)], tol=0)
+reg("MBP-2015-drop",   6.5, "checkin", ("missing_by_period.json", "coverage_by_year.2015.listwise_drop_pct"),
+    [(APPENDIX_ROBUST, None)], tol=0.1)
+# Listwise stress test betas
+reg("MBP-stress-any-beta",  1.364, "checkin",
+    ("missing_by_period.json", "sample_results.any_available_t1_pair.beta"),
+    [(APPENDIX_ROBUST, None)], tol=0.005)
+reg("MBP-stress-any-n",      783, "checkin",
+    ("missing_by_period.json", "sample_results.any_available_t1_pair.n"),
+    [(APPENDIX_ROBUST, None)], tol=0)
+reg("MBP-stress-any-c",      137, "checkin",
+    ("missing_by_period.json", "sample_results.any_available_t1_pair.countries"),
+    [(APPENDIX_ROBUST, None)], tol=0)
+reg("MBP-stress-t1-beta",   1.353, "checkin",
+    ("missing_by_period.json", "sample_results.listwise_t1_inputs.beta"),
+    [(APPENDIX_ROBUST, None)], tol=0.005)
+reg("MBP-stress-t1-n",       719, "checkin",
+    ("missing_by_period.json", "sample_results.listwise_t1_inputs.n"),
+    [(APPENDIX_ROBUST, None)], tol=0)
+reg("MBP-stress-t1-c",       123, "checkin",
+    ("missing_by_period.json", "sample_results.listwise_t1_inputs.countries"),
+    [(APPENDIX_ROBUST, None)], tol=0)
+reg("MBP-stress-full-beta", 1.354, "checkin",
+    ("missing_by_period.json", "sample_results.listwise_t1_plus_t7.beta"),
+    [(APPENDIX_ROBUST, None)], tol=0.005)
+reg("MBP-stress-full-n",     715, "checkin",
+    ("missing_by_period.json", "sample_results.listwise_t1_plus_t7.n"),
+    [(APPENDIX_ROBUST, None)], tol=0)
+reg("MBP-stress-full-c",     121, "checkin",
+    ("missing_by_period.json", "sample_results.listwise_t1_plus_t7.countries"),
+    [(APPENDIX_ROBUST, None)], tol=0)
+# Per-year LE / TFR / U-5 counts (cells in tab:missing-by-period).
+for _yr in (1975, 1980, 1985):
+    reg(f"MBP-{_yr}-le", 192, "checkin",
+        ("missing_by_period.json", f"coverage_by_year.{_yr}.le"),
+        [(APPENDIX_ROBUST, None)], tol=0)
+    reg(f"MBP-{_yr}-tfr", 192, "checkin",
+        ("missing_by_period.json", f"coverage_by_year.{_yr}.tfr"),
+        [(APPENDIX_ROBUST, None)], tol=0)
+    reg(f"MBP-{_yr}-u5", 186, "checkin",
+        ("missing_by_period.json", f"coverage_by_year.{_yr}.u5"),
+        [(APPENDIX_ROBUST, None)], tol=0)
+for _yr in (1990, 1995, 2000, 2005, 2010, 2015):
+    reg(f"MBP-{_yr}-le", 193, "checkin",
+        ("missing_by_period.json", f"coverage_by_year.{_yr}.le"),
+        [(APPENDIX_ROBUST, None)], tol=0)
+    reg(f"MBP-{_yr}-tfr", 193, "checkin",
+        ("missing_by_period.json", f"coverage_by_year.{_yr}.tfr"),
+        [(APPENDIX_ROBUST, None)], tol=0)
+    reg(f"MBP-{_yr}-u5", 186, "checkin",
+        ("missing_by_period.json", f"coverage_by_year.{_yr}.u5"),
+        [(APPENDIX_ROBUST, None)], tol=0)
 
 # Goodman-Bacon decomposition (full treatment in §appendix-twfe; body pointer
 # in §empirical-strategy cites the 83-percent attenuation headline only).
@@ -397,7 +526,7 @@ reg("LagBeta-n-countries", 142, "checkin", ("lag_coefficients.json", "numbers.n_
 # ══════════════════════════════════════════════════════════════════════════
 reg("LE-lt10-edu-r2",  0.506, "checkin",
     ("edu_vs_gdp_predicts_le.json", "numbers.lt10.edu_r2"),
-    [(EDU_PRED, 16)])
+    [(EDU_PRED, 19)])
 reg("LE-lt10-gdp-r2",  0.016, "checkin",
     ("edu_vs_gdp_predicts_le.json", "numbers.lt10.gdp_r2"),
     [(EDU_PRED, 20)])
@@ -422,7 +551,7 @@ reg("CutOff-30-gdp-r2",    0.214, "checkin",
     [(EDU_VS_GDP, None)])
 reg("CutOff-30-ratio",     3.3,   "checkin",
     ("education_vs_gdp_by_cutoff.json", "numbers.cutoff_30_ratio"),
-    [(EDU_VS_GDP, None), (EDU_PRED, 36)])
+    [(EDU_VS_GDP, None), (EDU_PRED, 20)])
 reg("CutOff-30-edu-beta",  1.376, "checkin",
     ("education_vs_gdp_by_cutoff.json", "numbers.cutoff_30_edu_beta"),
     [(EDU_VS_GDP, None)])
@@ -443,13 +572,13 @@ reg("CutOff-30-gdp-t",     3.5,   "checkin",
     [(EDU_VS_GDP, None), (APPENDIX_ROBUST, None)], tol=0.05)
 reg("CutOff-10-edu-r2",    0.590, "checkin",
     ("education_vs_gdp_by_cutoff.json", "numbers.cutoff_10_edu_r2"),
-    [(EDU_PRED, 16)], tol=0.002)
+    [(EDU_PRED, 19)], tol=0.002)
 reg("CutOff-10-gdp-r2",    0.296, "checkin",
     ("education_vs_gdp_by_cutoff.json", "numbers.cutoff_10_gdp_r2"),
     [(EDU_PRED, 20)], tol=0.002)
 reg("CutOff-50-edu-r2",    0.697, "checkin",
     ("education_vs_gdp_by_cutoff.json", "numbers.cutoff_50_edu_r2"),
-    [(EDU_PRED, 16)])
+    [(EDU_PRED, 19)])
 reg("CutOff-no-edu-r2",    0.533, "checkin",
     ("education_vs_gdp_by_cutoff.json", "numbers.no_cutoff_edu_r2"),
     [(EDU_VS_GDP, None), (APPENDIX_ROBUST, None)])
@@ -457,10 +586,10 @@ reg("CutOff-no-edu-r2",    0.533, "checkin",
 # ── Summary statistics (§descriptive-statistics, Table \ref{tab:summary}) ─────
 reg("Sum-panel-obs",        1665, "checkin",
     ("summary_stats.json", "numbers.panel_obs"),
-    [(DESCRIPTIVE, None), (APPENDIX_ROBUST, None)], tol=0)
+    [(DESCRIPTIVE, None), (APPENDIX_ROBUST, None), (EDU_VS_GDP, None)], tol=0)
 reg("Sum-panel-countries",   185, "checkin",
     ("summary_stats.json", "numbers.panel_countries"),
-    [(DESCRIPTIVE, None)], tol=0)
+    [(DESCRIPTIVE, None), (APPENDIX_ROBUST, None), (EDU_VS_GDP, None)], tol=0)
 reg("Sum-gdp-countries",     178, "checkin",
     ("summary_stats.json", "numbers.gdp_panel_countries"),
     [(DESCRIPTIVE, None), (APPENDIX_ROBUST, None)], tol=0)
@@ -515,13 +644,22 @@ for _c, _eb, _er, _gb, _gr, _rt, _n, _nc in _CUT_CELLS:
         ("education_vs_gdp_by_cutoff.json", f"numbers.cutoff_{_c}_countries"),
         [(APPENDIX_ROBUST, None)], tol=0)
 # "Full" row in the cutoff table: pulls from panel_full_fe.json (n, countries,
-# edu β) and from education_vs_gdp_by_cutoff.json (no-cutoff R² and ratio).
+# edu β, edu se) — the unrestricted full panel, GMM estimate on every
+# observation. The GDP-merged panel_gdp values
+# (no_cutoff_edu_beta = 0.589, n=1304, 156 countries) live in the JSON for
+# completeness but are not the headline Full row.
 reg("TabC-full-edu-beta", 0.483, "checkin",
     ("panel_full_fe.json", "numbers.table1_m1_edu_beta"),
     [(APPENDIX_ROBUST, None), (EDU_VS_GDP, None), (EMPIRICAL, None), (APPENDIX_TWFE, None)], tol=0.005)
+reg("TabC-full-edu-se",   0.034, "checkin",
+    ("panel_full_fe.json", "numbers.table1_m1_edu_se"),
+    [(APPENDIX_ROBUST, None), (EDU_VS_GDP, None)], tol=0.005)
 reg("TabC-full-gdp-beta", 15.787, "checkin",
     ("panel_full_fe.json", "numbers.table1_m2_gdp_beta"),
     [(APPENDIX_ROBUST, None), (EDU_VS_GDP, None)], tol=0.05)
+reg("TabC-full-gdp-se",   2.114, "checkin",
+    ("panel_full_fe.json", "numbers.table1_m2_gdp_se"),
+    [(APPENDIX_ROBUST, None), (EDU_VS_GDP, None)], tol=0.005)
 reg("TabC-full-edu-r2",   0.533, "checkin",
     ("education_vs_gdp_by_cutoff.json", "numbers.no_cutoff_edu_r2"),
     [(APPENDIX_ROBUST, None)], tol=0.005)
@@ -531,6 +669,47 @@ reg("TabC-full-gdp-r2",   0.245, "checkin",
 reg("TabC-full-ratio",    2.2,   "checkin",
     ("education_vs_gdp_by_cutoff.json", "numbers.no_cutoff_ratio"),
     [(APPENDIX_ROBUST, None), (EDU_VS_GDP, None)], tol=0.1)
+# tab:cutoff body table: SE columns and the GDP-merged Full row.
+reg("TabC-10-edu-se",   0.258, "checkin",
+    ("education_vs_gdp_by_cutoff.json", "numbers.cutoff_10_edu_se"),
+    [(EDU_VS_GDP, None)], tol=0.005)
+reg("TabC-10-gdp-se",   3.291,  "checkin",
+    ("education_vs_gdp_by_cutoff.json", "numbers.cutoff_10_gdp_se"),
+    [(EDU_VS_GDP, None)], tol=0.005)
+reg("TabC-50-edu-se",   0.059, "checkin",
+    ("education_vs_gdp_by_cutoff.json", "numbers.cutoff_50_edu_se"),
+    [(EDU_VS_GDP, None)], tol=0.005)
+reg("TabC-50-gdp-se",   3.942,  "checkin",
+    ("education_vs_gdp_by_cutoff.json", "numbers.cutoff_50_gdp_se"),
+    [(EDU_VS_GDP, None)], tol=0.005)
+reg("TabC-fullgdp-edu-beta", 0.589, "checkin",
+    ("education_vs_gdp_by_cutoff.json", "numbers.no_cutoff_edu_beta"),
+    [(EDU_VS_GDP, None)], tol=0.005)
+reg("TabC-fullgdp-edu-se",   0.041, "checkin",
+    ("education_vs_gdp_by_cutoff.json", "numbers.no_cutoff_edu_se"),
+    [(EDU_VS_GDP, None)], tol=0.005)
+reg("TabC-fullgdp-gdp-beta", 14.938, "checkin",
+    ("education_vs_gdp_by_cutoff.json", "numbers.no_cutoff_gdp_beta"),
+    [(EDU_VS_GDP, None)], tol=0.05)
+reg("TabC-fullgdp-gdp-se",   2.259,  "checkin",
+    ("education_vs_gdp_by_cutoff.json", "numbers.no_cutoff_gdp_se"),
+    [(EDU_VS_GDP, None)], tol=0.005)
+reg("TabC-fullgdp-n",        1304,  "checkin",
+    ("education_vs_gdp_by_cutoff.json", "numbers.no_cutoff_n"),
+    [], tol=0)  # GDP-merged subsample n; paper uses unrestricted full panel per R2.04
+reg("TabC-fullgdp-countries", 156,  "checkin",
+    ("education_vs_gdp_by_cutoff.json", "numbers.no_cutoff_countries"),
+    [], tol=0)  # GDP-merged subsample countries; paper uses unrestricted full panel per R2.04
+# tab:cutoff body table N / countries (10% / 50% rows).
+reg("TabC-10-n-body",   275,  "checkin",
+    ("education_vs_gdp_by_cutoff.json", "numbers.cutoff_10_n"),
+    [(EDU_VS_GDP, None)], tol=0)
+reg("TabC-50-n-body",   829,  "checkin",
+    ("education_vs_gdp_by_cutoff.json", "numbers.cutoff_50_n"),
+    [(EDU_VS_GDP, None)], tol=0)
+reg("TabC-50-c-body",   116,  "checkin",
+    ("education_vs_gdp_by_cutoff.json", "numbers.cutoff_50_countries"),
+    [(EDU_VS_GDP, None)], tol=0)
 
 # ══════════════════════════════════════════════════════════════════════════
 # CHECKIN — le_r2_by_lag.json
@@ -577,10 +756,10 @@ reg("AFC-Philippines-gdp",  -3.0,  "checkin",
     [(GDP_INDEP, None)])
 reg("AFC-Indonesia-edu",     5.4,  "checkin",
     ("asian_financial_crisis.json", "numbers.indonesia_edu_gain_1995_2000_pp"),
-    [(GDP_INDEP, 13)])
+    [(GDP_INDEP, 19)])
 reg("AFC-Thailand-prior",   10.0,  "checkin",
     ("asian_financial_crisis.json", "numbers.thailand_lower_sec_gain_1990_1995_pp"),
-    [(GDP_INDEP, 12)])
+    [(GDP_INDEP, 31)])
 
 # ══════════════════════════════════════════════════════════════════════════
 # FIGURE 3 — Country-specific sliding-window betas (beta_vs_baseline.py)
@@ -603,6 +782,25 @@ reg("Fig1-Phil-beta-high",  4.4, "checkin", ("beta_vs_baseline.json", "numbers.F
     [(EDU_VS_GDP, None)], tol=0.1)
 reg("Fig1-Phil-beta-low",   0.4, "checkin", ("beta_vs_baseline.json", "numbers.Fig1-Phil-beta-low"),
     [(EDU_VS_GDP, None)], tol=0.1)
+# R2.10 / R2.11: universality scatter and OLS fit (appendix Figure 2-scatter).
+reg("Univ-fit-intercept", 2.152, "checkin",
+    ("beta_vs_baseline.json", "numbers.Universality-fit-intercept"),
+    [(APPENDIX_ROBUST, None)], tol=0.005)
+reg("Univ-fit-slope",    -0.0246, "checkin",
+    ("beta_vs_baseline.json", "numbers.Universality-fit-slope"),
+    [(APPENDIX_ROBUST, None)], tol=0.0005)
+reg("Univ-fit-slope-se",  0.0019, "checkin",
+    ("beta_vs_baseline.json", "numbers.Universality-fit-slope-se"),
+    [(APPENDIX_ROBUST, None)], tol=0.0005)
+reg("Univ-fit-crossing",  46.8, "checkin",
+    ("beta_vs_baseline.json", "numbers.Universality-fit-crossing"),
+    [(APPENDIX_ROBUST, None)], tol=1)
+reg("Univ-fit-n",         1388, "checkin",
+    ("beta_vs_baseline.json", "numbers.Universality-fit-n"),
+    [(APPENDIX_ROBUST, None), (EDU_VS_GDP, None)], tol=0)
+reg("Univ-fit-countries",  185, "checkin",
+    ("beta_vs_baseline.json", "numbers.Universality-fit-countries"),
+    [(APPENDIX_ROBUST, None)], tol=0)
 
 # ══════════════════════════════════════════════════════════════════════════
 # BASELINE GROUP ANALYSIS (beta_by_baseline_group.py)
@@ -636,29 +834,220 @@ reg("T2-LE-R2",     0.382,  "checkin", ("education_outcomes.json", "numbers.T2-L
     [(EDU_PRED, 20)])
 reg("T2-LE-init",   0.301,  "checkin", ("education_outcomes.json", "numbers.T2-LE-init"),
     [(EDU_PRED, 20)])
+# Lower-sec TFR coefficient still cited under Table 3's residualization
+# narrative (L2636: "...lower secondary completion at T predicts ...
+# -0.032 births per woman..."). Section: gdp-has-no-independent-effect.
 reg("T2-TFR-beta", -0.032,  "checkin", ("education_outcomes.json", "numbers.T2-TFR-beta"),
-    [(EDU_PRED, None)])  # paper shows −0.032 in table and 0.032 in text
-reg("T2-TFR-R2",    0.362,  "checkin", ("education_outcomes.json", "numbers.T2-TFR-R2"),
-    [(EDU_PRED, 20)])
-reg("T2-TFR-init",  0.039,  "checkin", ("education_outcomes.json", "numbers.T2-TFR-init"),
-    [(EDU_PRED, 20), (OVERPERF, None)])
+    [(GDP_INDEP, None)])
+# Table 7's headline TFR row (level + log) uses primary completion as the
+# operative channel for fertility. The lower-sec values are still computed
+# (T2-TFR-beta above, T2-TFR-init / R2 in checkin) but no longer appear in
+# Table 7 — only the prose under Table 3 cites them.
+reg("T2-TFR-pri-beta", -0.048, "checkin",
+    ("education_outcomes.json", "numbers.T2-TFR-pri-beta"),
+    [(EDU_PRED, None)], tol=0.001)
+reg("T2-TFR-pri-init", -0.039, "checkin",
+    ("education_outcomes.json", "numbers.T2-TFR-pri-init"),
+    [(EDU_PRED, None), (GDP_INDEP, None)], tol=0.001)
+reg("T2-TFR-pri-R2",    0.559, "checkin",
+    ("education_outcomes.json", "numbers.T2-TFR-pri-R2"),
+    [(EDU_PRED, None)], tol=0.005)
+reg("T2-TFR-pri-init-p", 0.37, "checkin",
+    ("education_outcomes.json", "numbers.T2-TFR-pri-init-p"),
+    [(GDP_INDEP, None)], tol=0.01)
+# Log-outcome rows added under R1.18 / R2.17. Cluster-robust by country.
+reg("T2-LE-beta-log",   0.0017, "checkin",
+    ("education_outcomes.json", "numbers.T2-LE-beta-log"),
+    [(EDU_PRED, None)], tol=0.0005)
+reg("T2-LE-init-log",   0.247,  "checkin",
+    ("education_outcomes.json", "numbers.T2-LE-init-log"),
+    [(EDU_PRED, None)], tol=0.005)
+reg("T2-LE-R2-log",     0.279,  "checkin",
+    ("education_outcomes.json", "numbers.T2-LE-R2-log"),
+    [(EDU_PRED, None)], tol=0.005)
+# log(TFR) row uses primary (matches the level row above).
+reg("T2-TFR-pri-beta-log", -0.012, "checkin",
+    ("education_outcomes.json", "numbers.T2-TFR-pri-beta-log"),
+    [(EDU_PRED, None)], tol=0.0005)
+reg("T2-TFR-pri-init-log",  0.091, "checkin",
+    ("education_outcomes.json", "numbers.T2-TFR-pri-init-log"),
+    [(EDU_PRED, None)], tol=0.005)
+reg("T2-TFR-pri-R2-log",    0.564, "checkin",
+    ("education_outcomes.json", "numbers.T2-TFR-pri-R2-log"),
+    [(EDU_PRED, None)], tol=0.005)
+reg("T2-U5MR-beta-log", -0.008, "checkin",
+    ("education_outcomes.json", "numbers.T2-U5MR-beta-log"),
+    [(EDU_PRED, None)], tol=0.0005)
+reg("T2-U5MR-init-log",  0.653, "checkin",
+    ("education_outcomes.json", "numbers.T2-U5MR-init-log"),
+    [(EDU_PRED, None)], tol=0.005)
+reg("T2-U5MR-R2-log",    0.686, "checkin",
+    ("education_outcomes.json", "numbers.T2-U5MR-R2-log"),
+    [(EDU_PRED, None)], tol=0.005)
+reg("T2-U5MR-n-log",     1225,  "checkin",
+    ("education_outcomes.json", "numbers.T2-U5MR-n-log"),
+    [(EDU_PRED, None)], tol=0)
+reg("T2-U5MR-countries-log", 175, "checkin",
+    ("education_outcomes.json", "numbers.T2-U5MR-countries-log"),
+    [], tol=0)  # log U5MR row countries count not displayed per-row in current Table 7 layout
 # Panel B
 reg("T2-PB-GDP-beta",   14.42, "checkin", ("education_outcomes.json", "numbers.T2-PB-GDP-beta"),
-    [(EDU_PRED, 69)], tol=0.1)
+    [(EDU_PRED, 19)], tol=0.1)
 reg("T2-PB-GDP-R2",     0.263, "checkin", ("education_outcomes.json", "numbers.T2-PB-GDP-R2"),
     [(EDU_PRED, 20)])
 reg("T2-PB-cond-gdp",   2.87, "checkin", ("education_outcomes.json", "numbers.T2-PB-cond-gdp"),
-    [(EDU_PRED, 36)], tol=0.1)
+    [(EDU_PRED, 20)], tol=0.1)
 reg("T2-PB-cond-edu",   0.485, "checkin", ("education_outcomes.json", "numbers.T2-PB-cond-edu"),
     [(EDU_PRED, 20)], tol=0.01)
 reg("T2-PB-cond-R2",    0.495, "checkin", ("education_outcomes.json", "numbers.T2-PB-cond-R2"),
     [(EDU_PRED, 20)])
 reg("T2-PB-n",          927,   "checkin", ("education_outcomes.json", "numbers.T2-PB-n"),
-    [(EDU_PRED, 16)], tol=0)
+    [(EDU_PRED, 30)], tol=0)
+# R2.15/R2.19 four-column stepwise (table7_stepwise.json).
+# Panel A col 1 (max sample) edu coefs.
+_T7_J = "table7_stepwise.json"
+reg("T7-A-loggdp-c1-beta",   0.0149, "checkin",
+    (_T7_J, f"numbers.panelA_max.log_gdp.c1_edu_only.low_t.beta"),
+    [(EDU_PRED, None)], tol=0.0005)
+reg("T7-A-logle-c1-beta",    0.0029, "checkin",
+    (_T7_J, f"numbers.panelA_max.log_le.c1_edu_only.low_t.beta"),
+    [(EDU_PRED, None)], tol=0.0005)
+reg("T7-A-logtfr-c1-beta",  -0.0137, "checkin",
+    (_T7_J, f"numbers.panelA_max.log_tfr.c1_edu_only.pri_t.beta"),
+    [(EDU_PRED, None)], tol=0.0005)
+reg("T7-A-logu5-c1-beta",   -0.0276, "checkin",
+    (_T7_J, f"numbers.panelA_max.log_u5.c1_edu_only.low_t.beta"),
+    [(EDU_PRED, None)], tol=0.0005)
+# Panel A col 2 (current spec).
+reg("T7-A-loggdp-c2-beta",   0.0114, "checkin",
+    (_T7_J, "numbers.panelA_max.log_gdp.c2_edu_init.low_t.beta"),
+    [(EDU_PRED, None)], tol=0.0005)
+reg("T7-A-logle-c2-beta",    0.0015, "checkin",
+    (_T7_J, "numbers.panelA_max.log_le.c2_edu_init.low_t.beta"),
+    [(EDU_PRED, None)], tol=0.0005)
+reg("T7-A-logtfr-c2-beta",  -0.0124, "checkin",
+    (_T7_J, "numbers.panelA_max.log_tfr.c2_edu_init.pri_t.beta"),
+    [(EDU_PRED, None)], tol=0.0005)
+reg("T7-A-logu5-c2-beta",   -0.0080, "checkin",
+    (_T7_J, "numbers.panelA_max.log_u5.c2_edu_init.low_t.beta"),
+    [(EDU_PRED, None)], tol=0.0005)
+# Panel A col 3.
+reg("T7-A-logle-c3-beta",    0.0021, "checkin",
+    (_T7_J, "numbers.panelA_max.log_le.c3_edu_init_gdp.low_t.beta"),
+    [(EDU_PRED, None)], tol=0.0005)
+reg("T7-A-logtfr-c3-beta",  -0.0116, "checkin",
+    (_T7_J, "numbers.panelA_max.log_tfr.c3_edu_init_gdp.pri_t.beta"),
+    [(EDU_PRED, None)], tol=0.0005)
+reg("T7-A-logu5-c3-beta",   -0.0096, "checkin",
+    (_T7_J, "numbers.panelA_max.log_u5.c3_edu_init_gdp.low_t.beta"),
+    [(EDU_PRED, None)], tol=0.0005)
+# Panel A col 4 (year FE).
+reg("T7-A-loggdp-c4-beta",   0.0037, "checkin",
+    (_T7_J, "numbers.panelA_max.log_gdp.c4_edu_init_gdp_yfe.low_t.beta"),
+    [(EDU_PRED, None)], tol=0.0005)
+reg("T7-A-logle-c4-beta",   -0.0005, "checkin",
+    (_T7_J, "numbers.panelA_max.log_le.c4_edu_init_gdp_yfe.low_t.beta"),
+    [(EDU_PRED, None)], tol=0.0005)
+reg("T7-A-logtfr-c4-beta",  -0.0082, "checkin",
+    (_T7_J, "numbers.panelA_max.log_tfr.c4_edu_init_gdp_yfe.pri_t.beta"),
+    [(EDU_PRED, None)], tol=0.0005)
+reg("T7-A-logu5-c4-beta",   -0.0013, "checkin",
+    (_T7_J, "numbers.panelA_max.log_u5.c4_edu_init_gdp_yfe.low_t.beta"),
+    [(EDU_PRED, None)], tol=0.0005)
+# Panel A row Ns.
+reg("T7-A-loggdp-c1-n",      1205, "checkin",
+    (_T7_J, "numbers.panelA_max.log_gdp.c1_edu_only.n"),
+    [(EDU_PRED, None)], tol=0)
+reg("T7-A-logle-c1-n",       1259, "checkin",
+    (_T7_J, "numbers.panelA_max.log_le.c1_edu_only.n"),
+    [(EDU_PRED, None)], tol=0)
+reg("T7-A-logle-c2-n",       1252, "checkin",
+    (_T7_J, "numbers.panelA_max.log_le.c2_edu_init.n"),
+    [(EDU_PRED, None)], tol=0)
+reg("T7-A-logle-c3-n",        925, "checkin",
+    (_T7_J, "numbers.panelA_max.log_le.c3_edu_init_gdp.n"),
+    [(EDU_PRED, None)], tol=0)
+reg("T7-A-logtfr-c1-n",      1259, "checkin",
+    (_T7_J, "numbers.panelA_max.log_tfr.c1_edu_only.n"),
+    [(EDU_PRED, None)], tol=0)
+reg("T7-A-logtfr-c2-n",      1254, "checkin",
+    (_T7_J, "numbers.panelA_max.log_tfr.c2_edu_init.n"),
+    [(EDU_PRED, None)], tol=0)
+reg("T7-A-logu5-c3-n",        911, "checkin",
+    (_T7_J, "numbers.panelA_max.log_u5.c3_edu_init_gdp.n"),
+    [(EDU_PRED, None)], tol=0)
+# Panel B 4 columns.
+reg("T7-B-b1-beta",         14.42, "checkin",
+    (_T7_J, "numbers.panelB_max.b1_gdp_only.log_gdp_t.beta"),
+    [(EDU_PRED, None)], tol=0.05)
+reg("T7-B-b2-beta",          2.87, "checkin",
+    (_T7_J, "numbers.panelB_max.b2_gdp_init_edu.log_gdp_t.beta"),
+    [(EDU_PRED, None)], tol=0.05)
+reg("T7-B-b3-beta",          2.30, "checkin",
+    (_T7_J, "numbers.panelB_max.b3_gdp_only_yfe.log_gdp_t.beta"),
+    [(EDU_PRED, None)], tol=0.05)
+reg("T7-B-b4-beta",          1.20, "checkin",
+    (_T7_J, "numbers.panelB_max.b4_gdp_init_edu_yfe.log_gdp_t.beta"),
+    [(EDU_PRED, None)], tol=0.05)
+reg("T7-B-b2-edu-beta",     0.485, "checkin",
+    (_T7_J, "numbers.panelB_max.b2_gdp_init_edu.low_t.beta"),
+    [(EDU_PRED, None)], tol=0.005)
+reg("T7-B-b4-edu-beta",     0.145, "checkin",
+    (_T7_J, "numbers.panelB_max.b4_gdp_init_edu_yfe.low_t.beta"),
+    [(EDU_PRED, None)], tol=0.005)
+reg("T7-B-172",              172, "checkin",
+    (_T7_J, "numbers.panelB_max.b1_gdp_only.countries"),
+    [(EDU_PRED, None)], tol=0)
+# Common-sample appendix table (tab:7-common-927).
+reg("T7-cmn-loggdp-c1-beta",  0.0148, "checkin",
+    (_T7_J, "numbers.panelA_common.log_gdp.c1_edu_only.low_t.beta"),
+    [(APPENDIX_ROBUST, None)], tol=0.0005)
+reg("T7-cmn-loggdp-c2-beta",  0.0117, "checkin",
+    (_T7_J, "numbers.panelA_common.log_gdp.c2_edu_init.low_t.beta"),
+    [(APPENDIX_ROBUST, None)], tol=0.0005)
+reg("T7-cmn-loggdp-c4-beta",  0.0040, "checkin",
+    (_T7_J, "numbers.panelA_common.log_gdp.c4_edu_init_gdp_yfe.low_t.beta"),
+    [(APPENDIX_ROBUST, None)], tol=0.0005)
+reg("T7-cmn-logle-c1-beta",   0.0030, "checkin",
+    (_T7_J, "numbers.panelA_common.log_le.c1_edu_only.low_t.beta"),
+    [(APPENDIX_ROBUST, None)], tol=0.0005)
+reg("T7-cmn-logle-c2-beta",   0.0017, "checkin",
+    (_T7_J, "numbers.panelA_common.log_le.c2_edu_init.low_t.beta"),
+    [(APPENDIX_ROBUST, None)], tol=0.0005)
+reg("T7-cmn-logtfr-c1-beta", -0.0124, "checkin",
+    (_T7_J, "numbers.panelA_common.log_tfr.c1_edu_only.pri_t.beta"),
+    [(APPENDIX_ROBUST, None)], tol=0.0005)
+reg("T7-cmn-logtfr-c2-beta", -0.0118, "checkin",
+    (_T7_J, "numbers.panelA_common.log_tfr.c2_edu_init.pri_t.beta"),
+    [(APPENDIX_ROBUST, None)], tol=0.0005)
+reg("T7-cmn-logu5-c1-beta",  -0.0279, "checkin",
+    (_T7_J, "numbers.panelA_common.log_u5.c1_edu_only.low_t.beta"),
+    [(APPENDIX_ROBUST, None)], tol=0.0005)
+reg("T7-cmn-logu5-c2-beta",  -0.0096, "checkin",
+    (_T7_J, "numbers.panelA_common.log_u5.c2_edu_init.low_t.beta"),
+    [(APPENDIX_ROBUST, None)], tol=0.0005)
+reg("T7-cmn-n",                909, "checkin",
+    (_T7_J, "numbers.panelA_common.log_gdp.c1_edu_only.n"),
+    [(APPENDIX_ROBUST, None)], tol=0)
+reg("T7-cmn-c",                168, "checkin",
+    (_T7_J, "numbers.panelA_common.log_gdp.c1_edu_only.countries"),
+    [(APPENDIX_ROBUST, None)], tol=0)
+reg("T7-B-b4-se",             2.18, "checkin",
+    (_T7_J, "numbers.panelB_max.b4_gdp_init_edu_yfe.log_gdp_t.se"),
+    [(EDU_PRED, None)], tol=0.005)
+# 927 inside the label tab:7-common-927 — anchor to APPENDIX_ROBUST as a
+# const so coverage scan sees it (the actual sample size is 909, not 927;
+# the label is named after the headline GDP-merged sample of 927 in
+# Table 7 Panel A).
+reg("T7-cmn-label-927",        927, "const",
+    "Label tab:7-common-927 — kept as const reference to the headline "
+    "Panel-A GDP-merged 927 sample even though the appendix sub-sample is "
+    "the tighter 909/168 intersection.",
+    [(APPENDIX_ROBUST, None)], tol=0)
 # Table 2 values surfaced by coverage scan
 reg("T2-TFR-beta-abs",  0.032, "derived",
-    "abs(T2-TFR-beta) — paper reports absolute value",
-    [EDU_PRED], tol=0.001)
+    "abs(T2-TFR-beta) — paper reports absolute value under Table 3 prose",
+    [GDP_INDEP], tol=0.001)
 reg("T2-LE-beta-sec",   0.109, "checkin", ("education_outcomes.json", "numbers.T2-LE-beta"),
     [EDU_PRED], tol=0.001)
 # Forward R² symmetry
@@ -673,15 +1062,15 @@ reg("LR-countries", 28,     "checkin", ("long_run_generational.json", "numbers.L
 # PARENTAL INCOME COLLAPSE — inline computation
 # ══════════════════════════════════════════════════════════════════════════
 reg("PI-alone-beta",  14.4,  "checkin", ("panel_full_fe.json", "numbers.PI-alone-beta"),
-    [(GDP_INDEP, 35)], tol=0.5)
+    [(GDP_INDEP, 37)], tol=0.5)
 reg("PI-alone-R2",    0.263, "checkin", ("panel_full_fe.json", "numbers.PI-alone-R2"),
-    [(GDP_INDEP, 12)])
+    [(GDP_INDEP, 8)])
 reg("PI-cond-beta",   2.9,   "checkin", ("panel_full_fe.json", "numbers.PI-cond-beta"),
     [(GDP_INDEP, 10)], tol=0.5)
 reg("PI-cond-p",      0.16,  "checkin", ("panel_full_fe.json", "numbers.PI-cond-p"),
-    [(GDP_INDEP, 12)], tol=0.01)
+    [(GDP_INDEP, 8)], tol=0.01)
 reg("PI-edu-alone",   0.540, "checkin", ("panel_full_fe.json", "numbers.PI-edu-alone"),
-    [(GDP_INDEP, 12)])
+    [(GDP_INDEP, 14)])
 
 # ══════════════════════════════════════════════════════════════════════════
 # WCDE EDUCATION DATA — country-specific values cited in the paper
@@ -730,6 +1119,22 @@ reg("Singapore-upper-sec-2020", 96.0, "checkin",
 reg("Singapore-lower-sec-2020", 99.0, "wcde",
     ("lower_sec_both.csv", "Singapore", 2020),
     [(DOSE_CONTINUOUS, None)], tol=1.0)
+# Cross-country tertiary completion panel (§2.4)
+reg("Tertiary-Taiwan-2020", 73, "checkin",
+    ("tertiary_continuation_panel.json", "numbers.taiwan"),
+    [(DOSE_CONTINUOUS, None)], tol=1)
+reg("Tertiary-Sweden-2020", 57, "checkin",
+    ("tertiary_continuation_panel.json", "numbers.sweden"),
+    [(DOSE_CONTINUOUS, None)], tol=1)
+reg("Tertiary-Korea-2020", 54, "checkin",
+    ("tertiary_continuation_panel.json", "numbers.korea_rep"),
+    [(DOSE_CONTINUOUS, None)], tol=1)
+reg("Tertiary-Norway-2020", 47, "checkin",
+    ("tertiary_continuation_panel.json", "numbers.norway"),
+    [(DOSE_CONTINUOUS, None)], tol=1)
+reg("Tertiary-Japan-2020", 32, "checkin",
+    ("tertiary_continuation_panel.json", "numbers.japan"),
+    [(DOSE_CONTINUOUS, None)], tol=1)
 
 # --- Myanmar ---
 
@@ -1084,10 +1489,10 @@ reg("U5MR-post2000-p", 0.04, "checkin",
 # ══════════════════════════════════════════════════════════════════════════
 reg("T1-cutoff30-n",         629, "checkin",
     ("education_vs_gdp_by_cutoff.json", "numbers.cutoff_30_n"),
-    [(EDU_VS_GDP, None)], tol=0)
+    [(EDU_VS_GDP, None), (EDU_PRED, None)], tol=0)
 reg("T1-cutoff30-countries", 105, "checkin",
     ("education_vs_gdp_by_cutoff.json", "numbers.cutoff_30_countries"),
-    [(EDU_VS_GDP, None)], tol=0)
+    [(EDU_VS_GDP, None), (EDU_PRED, None)], tol=0)
 
 # ══════════════════════════════════════════════════════════════════════════
 # TABLE 1 STEPWISE — Section 6.1 (table_1_stepwise.py)
@@ -1095,62 +1500,89 @@ reg("T1-cutoff30-countries", 105, "checkin",
 # 105-country active-expansion sample. Column 1 overlaps numerically
 # with the CutOff-30-edu-beta registration above.
 # ══════════════════════════════════════════════════════════════════════════
-reg("T1-m2-parent-beta",   1.270, "checkin",
-    ("table_1_stepwise.json", "numbers.m2_parent_beta"),
-    [(EDU_VS_GDP, None)], tol=0.005)
-reg("T1-m2-parent-se",     0.059, "checkin",
-    ("table_1_stepwise.json", "numbers.m2_parent_se"),
-    [(EDU_VS_GDP, None)], tol=0.005)
-reg("T1-m2-gdp-beta",      5.02, "checkin",
+# Six-column buildup: m1 parent only (covered by CutOff-30-edu-* above);
+# m2 log-GDP only; m3 parent + log-GDP; m4 + parent²; m5 col 3 + year FE;
+# m6 col 4 + year FE.
+reg("T1-m2-gdp-beta",     13.66, "checkin",
     ("table_1_stepwise.json", "numbers.m2_gdp_beta"),
     [(EDU_VS_GDP, None)], tol=0.05)
-reg("T1-m2-gdp-se",        3.04, "checkin",
+reg("T1-m2-gdp-se",        3.90, "checkin",
     ("table_1_stepwise.json", "numbers.m2_gdp_se"),
     [(EDU_VS_GDP, None)], tol=0.05)
-reg("T1-m2-r2",            0.724, "checkin",
+reg("T1-m2-r2",           0.214, "checkin",
     ("table_1_stepwise.json", "numbers.m2_r2_within"),
     [(EDU_VS_GDP, None)], tol=0.005)
-reg("T1-m3-parent-beta",   2.039, "checkin",
+reg("T1-m3-parent-beta",   1.270, "checkin",
     ("table_1_stepwise.json", "numbers.m3_parent_beta"),
-    [(EDU_VS_GDP, None), (EMPIRICAL, None), (APPENDIX_TWFE, None)], tol=0.005)
-reg("T1-m3-parent-se",     0.273, "checkin",
+    [(EDU_VS_GDP, None)], tol=0.005)
+reg("T1-m3-parent-se",     0.059, "checkin",
     ("table_1_stepwise.json", "numbers.m3_parent_se"),
     [(EDU_VS_GDP, None)], tol=0.005)
-reg("T1-m3-parent-sq-beta", -0.026, "checkin",
-    ("table_1_stepwise.json", "numbers.m3_parent_sq_beta"),
-    [(EDU_VS_GDP, None)], tol=0.005)
-reg("T1-m3-parent-sq-se",   0.008, "checkin",
-    ("table_1_stepwise.json", "numbers.m3_parent_sq_se"),
-    [(EDU_VS_GDP, None)], tol=0.005)
-reg("T1-m3-gdp-beta",       4.57, "checkin",
+reg("T1-m3-gdp-beta",      5.02, "checkin",
     ("table_1_stepwise.json", "numbers.m3_gdp_beta"),
     [(EDU_VS_GDP, None)], tol=0.05)
-reg("T1-m3-gdp-se",         2.75, "checkin",
+reg("T1-m3-gdp-se",        3.04, "checkin",
     ("table_1_stepwise.json", "numbers.m3_gdp_se"),
     [(EDU_VS_GDP, None)], tol=0.05)
-reg("T1-m3-r2",             0.746, "checkin",
+reg("T1-m3-r2",            0.724, "checkin",
     ("table_1_stepwise.json", "numbers.m3_r2_within"),
     [(EDU_VS_GDP, None)], tol=0.005)
-reg("T1-m4-parent-beta",    1.570, "checkin",
+reg("T1-m4-parent-beta",   2.039, "checkin",
     ("table_1_stepwise.json", "numbers.m4_parent_beta"),
     [(EDU_VS_GDP, None), (EMPIRICAL, None), (APPENDIX_TWFE, None)], tol=0.005)
-reg("T1-m4-parent-se",      0.409, "checkin",
+reg("T1-m4-parent-se",     0.273, "checkin",
     ("table_1_stepwise.json", "numbers.m4_parent_se"),
     [(EDU_VS_GDP, None)], tol=0.005)
-reg("T1-m4-parent-sq-beta", -0.019, "checkin",
+reg("T1-m4-parent-sq-beta", -0.026, "checkin",
     ("table_1_stepwise.json", "numbers.m4_parent_sq_beta"),
     [(EDU_VS_GDP, None)], tol=0.005)
-reg("T1-m4-parent-sq-se",   0.010, "checkin",
+reg("T1-m4-parent-sq-se",   0.008, "checkin",
     ("table_1_stepwise.json", "numbers.m4_parent_sq_se"),
     [(EDU_VS_GDP, None)], tol=0.005)
-reg("T1-m4-gdp-beta",       3.99, "checkin",
+reg("T1-m4-gdp-beta",       4.57, "checkin",
     ("table_1_stepwise.json", "numbers.m4_gdp_beta"),
     [(EDU_VS_GDP, None)], tol=0.05)
-reg("T1-m4-gdp-se",         3.00, "checkin",
+reg("T1-m4-gdp-se",         2.75, "checkin",
     ("table_1_stepwise.json", "numbers.m4_gdp_se"),
     [(EDU_VS_GDP, None)], tol=0.05)
-reg("T1-m4-r2",             0.717, "checkin",
+reg("T1-m4-r2",             0.746, "checkin",
     ("table_1_stepwise.json", "numbers.m4_r2_within"),
+    [(EDU_VS_GDP, None)], tol=0.005)
+reg("T1-m5-parent-beta",    0.830, "checkin",
+    ("table_1_stepwise.json", "numbers.m5_parent_beta"),
+    [(EDU_VS_GDP, None)], tol=0.005)
+reg("T1-m5-parent-se",      0.133, "checkin",
+    ("table_1_stepwise.json", "numbers.m5_parent_se"),
+    [(EDU_VS_GDP, None)], tol=0.005)
+reg("T1-m5-gdp-beta",       3.97, "checkin",
+    ("table_1_stepwise.json", "numbers.m5_gdp_beta"),
+    [(EDU_VS_GDP, None)], tol=0.05)
+reg("T1-m5-gdp-se",         3.11, "checkin",
+    ("table_1_stepwise.json", "numbers.m5_gdp_se"),
+    [(EDU_VS_GDP, None)], tol=0.05)
+reg("T1-m5-r2",             0.644, "checkin",
+    ("table_1_stepwise.json", "numbers.m5_r2_within"),
+    [(EDU_VS_GDP, None)], tol=0.005)
+reg("T1-m6-parent-beta",    1.570, "checkin",
+    ("table_1_stepwise.json", "numbers.m6_parent_beta"),
+    [(EDU_VS_GDP, None), (EMPIRICAL, None), (APPENDIX_TWFE, None)], tol=0.005)
+reg("T1-m6-parent-se",      0.409, "checkin",
+    ("table_1_stepwise.json", "numbers.m6_parent_se"),
+    [(EDU_VS_GDP, None)], tol=0.005)
+reg("T1-m6-parent-sq-beta", -0.019, "checkin",
+    ("table_1_stepwise.json", "numbers.m6_parent_sq_beta"),
+    [(EDU_VS_GDP, None)], tol=0.005)
+reg("T1-m6-parent-sq-se",   0.010, "checkin",
+    ("table_1_stepwise.json", "numbers.m6_parent_sq_se"),
+    [(EDU_VS_GDP, None)], tol=0.005)
+reg("T1-m6-gdp-beta",       3.99, "checkin",
+    ("table_1_stepwise.json", "numbers.m6_gdp_beta"),
+    [(EDU_VS_GDP, None)], tol=0.05)
+reg("T1-m6-gdp-se",         3.00, "checkin",
+    ("table_1_stepwise.json", "numbers.m6_gdp_se"),
+    [(EDU_VS_GDP, None)], tol=0.05)
+reg("T1-m6-r2",             0.717, "checkin",
+    ("table_1_stepwise.json", "numbers.m6_r2_within"),
     [(EDU_VS_GDP, None)], tol=0.005)
 
 # ══════════════════════════════════════════════════════════════════════════
@@ -1539,32 +1971,32 @@ reg("GDP-India-2015-sec",      1584,  "wdi", ("gdp", "India", 2015), [OVERPERF],
 # --- TABLE 5 — Crossing dates (table4_crossings.py) ---
 # Taiwan (all ~1970)
 reg("T5-Taiwan-dev",     1970, "checkin", ("table4_crossings.json", "results.Taiwan.both_crossed"),
-    [(SEN_CASES, 15)], tol=0)
+    [(SEN_CASES, 13)], tol=0)
 # S. Korea
 reg("T5-Korea-dev",      1987, "checkin", ("table4_crossings.json", "results.South Korea.both_crossed"),
-    [(SEN_CASES, 16)], tol=0)
+    [(SEN_CASES, 14)], tol=0)
 reg("T5-Korea-TFR",      1975, "checkin", ("table4_crossings.json", "results.South Korea.tfr_crossing_best"),
-    [(SEN_CASES, 16)], tol=0)
+    [(SEN_CASES, 14)], tol=0)
 # Cuba
 reg("T5-Cuba-dev",       1974, "checkin", ("table4_crossings.json", "results.Cuba.both_crossed"),
-    [(SEN_CASES, 17), (CUBA, None)], tol=0)
+    [(SEN_CASES, 15), (CUBA, None)], tol=0)
 reg("T5-Cuba-TFR",       1972, "checkin", ("table4_crossings.json", "results.Cuba.tfr_crossing_best"),
-    [(SEN_CASES, 17), (DEF_DEV, 84)], tol=0)
+    [(SEN_CASES, 15), (DEF_DEV, 84)], tol=0)
 # Bangladesh
 reg("T5-Bangladesh-dev",  2014, "checkin", ("table4_crossings.json", "results.Bangladesh.both_crossed"),
-    [(SEN_CASES, 18), (BANGLADESH, None)], tol=0)
+    [(SEN_CASES, 16), (BANGLADESH, None)], tol=0)
 reg("T5-Bangladesh-TFR",  1995, "checkin", ("table4_crossings.json", "results.Bangladesh.tfr_crossing_best"),
-    [(SEN_CASES, 18)], tol=0)
+    [(SEN_CASES, 16)], tol=0)
 # Sri Lanka
 reg("T5-SriLanka-dev",   1993, "checkin", ("table4_crossings.json", "results.Sri Lanka.both_crossed"),
-    [(SEN_CASES, 19), (SRI_LANKA, None)], tol=0)
+    [(SEN_CASES, 17), (SRI_LANKA, None)], tol=0)
 reg("T5-SriLanka-TFR",   1981, "checkin", ("table4_crossings.json", "results.Sri Lanka.tfr_crossing_best"),
-    [(SEN_CASES, 19), (SRI_LANKA, None)], tol=0)
+    [(SEN_CASES, 17), (SRI_LANKA, None)], tol=0)
 # China
 reg("T5-China-dev",      1994, "checkin", ("table4_crossings.json", "results.China.both_crossed"),
-    [(SEN_CASES, 20), (CHINA, None)], tol=0)
+    [(SEN_CASES, 18), (CHINA, None)], tol=0)
 reg("T5-China-TFR",      1975, "checkin", ("table4_crossings.json", "results.China.tfr_crossing_best"),
-    [(SEN_CASES, 20), (CHINA, None)], tol=0)
+    [(SEN_CASES, 14), (CHINA, None)], tol=0)
 
 # --- SEN_CASES section: thresholds + country values (L1304-L1562) ---
 reg("TFR-threshold-sec",     3.65,   "wdi", ("tfr", "USA", 1960), [SEN_CASES], tol=0.01)
@@ -2517,10 +2949,10 @@ reg("Col-n-colonies-complete", 84, "derived",
     [("the-institutional-challenge", None)], tol=0)
 reg("Col-IV-F-edu",          10.8, "derived",
     "First-stage F-stat for education 1950 instrument (IV table)",
-    [("the-institutional-challenge", None), (APPENDIX_ROBUST, None)], tol=0.1)
+    [("the-institutional-challenge", None), (APPENDIX_ROBUST, None), (CAUSAL, None)], tol=0.1)
 reg("Col-IV-F-polity",       1.4, "derived",
     "First-stage F-stat for Polity2 instrument (weak-IV diagnostic)",
-    [("the-institutional-challenge", None)], tol=0.1)
+    [("the-institutional-challenge", None), (CAUSAL, None)], tol=0.1)
 
 # ══════════════════════════════════════════════════════════════════════════
 # §9 Data Credibility: The Goskomstat Anomaly
@@ -2735,6 +3167,18 @@ reg("G-LagSweep-primary-lag25", 0.549, "checkin",
 reg("G-LagSweep-primary-lag60", 0.489, "checkin",
     ("hlo_lag_sweep.json", "numbers.primary_sweep.lag_60.r2"),
     [(GOSK_HANUSHEK, None), (COMPLETION, None)], tol=0.01)
+reg("G-LagSweep-primary-lag0", 0.469, "checkin",
+    ("hlo_lag_sweep.json", "numbers.r2_primary_lag_0"),
+    [(GOSK_HANUSHEK, None)], tol=0.01)
+reg("G-LagSweep-bootstrap-n", 2000, "checkin",
+    ("hlo_lag_sweep.json", "numbers.bootstrap_n"),
+    [(GOSK_HANUSHEK, None)], tol=0)
+reg("G-LagSweep-pri-peak-pct", 92, "checkin",
+    ("hlo_lag_sweep.json", "numbers.primary_peak_p_pct"),
+    [(GOSK_HANUSHEK, None)], tol=1)
+reg("G-LagSweep-lsec-peak-pct", 87, "checkin",
+    ("hlo_lag_sweep.json", "numbers.lsec_peak_p_pct"),
+    [(GOSK_HANUSHEK, None)], tol=1)
 # Top and bottom residuals (school overperformers / underperformers)
 reg("G-HLO-China-resid",  111, "checkin",
     ("hlo_is_pt.json", "numbers.top_positive_residuals[0].residual"),
@@ -2922,45 +3366,45 @@ reg("G-year-1991", 1991, "const",
     [(GOSK_PHENO, None)], tol=0)
 reg("G-year-1995", 1995, "const",
     "1995 mid-transition crisis peak reference",
-    [(GOSK_COHORT, None)], tol=0)
+    [(GOSK_COHORT, None), (APPENDIX_ROBUST, None)], tol=0)
 
 # ══════════════════════════════════════════════════════════════════════════
-# CATEGORICAL CT — §4.3 empirical floors for the regime flip
+# LITERATE CT — §4.3 empirical floors for the regime flip
 # (primary_at_le_crossing.py, primary_at_tfr_crossing.py)
 # ══════════════════════════════════════════════════════════════════════════
-CATEGORICAL_CT = "categorical-ct"
+LITERATE_CT = "literate-ct"
 
 reg("CCT-LE-n",            84, "checkin",
     ("primary_at_le_crossing.json", "n_clean"),
-    [CATEGORICAL_CT], tol=0)
+    [LITERATE_CT], tol=0)
 reg("CCT-LE-primary-p10",  66, "checkin",
     ("primary_at_le_crossing.json", "primary_at_cross.p10"),
-    [CATEGORICAL_CT], tol=1)
+    [LITERATE_CT], tol=1)
 reg("CCT-LE-primary-median", 86, "checkin",
     ("primary_at_le_crossing.json", "primary_at_cross.median"),
-    [CATEGORICAL_CT], tol=1)
+    [LITERATE_CT], tol=1)
 reg("CCT-LE-lsec-p10",     42, "checkin",
     ("primary_at_le_crossing.json", "lsec_at_cross.p10"),
-    [CATEGORICAL_CT], tol=1)
+    [LITERATE_CT], tol=1)
 reg("CCT-LE-lsec-median",  65, "checkin",
     ("primary_at_le_crossing.json", "lsec_at_cross.median"),
-    [CATEGORICAL_CT], tol=1)
+    [LITERATE_CT], tol=1)
 reg("CCT-LE-gp-primary-median", 24, "checkin",
     ("primary_at_le_crossing.json", "gp_primary.median"),
-    [CATEGORICAL_CT], tol=1)
+    [LITERATE_CT], tol=1)
 
 reg("CCT-TFR-n",           88, "checkin",
     ("primary_at_tfr_crossing.json", "n_clean"),
-    [CATEGORICAL_CT], tol=0)
+    [LITERATE_CT], tol=0)
 reg("CCT-TFR-primary-p10", 57, "checkin",
     ("primary_at_tfr_crossing.json", "primary_at_cross.p10"),
-    [CATEGORICAL_CT], tol=1)
+    [LITERATE_CT], tol=1)
 reg("CCT-TFR-primary-median", 79, "checkin",
     ("primary_at_tfr_crossing.json", "primary_at_cross.median"),
-    [CATEGORICAL_CT], tol=1)
+    [LITERATE_CT], tol=1)
 reg("CCT-TFR-gp-primary-median", 17, "checkin",
     ("primary_at_tfr_crossing.json", "gp_primary.median"),
-    [CATEGORICAL_CT], tol=1)
+    [LITERATE_CT], tol=1)
 
 
 def run_script(path, cwd=None):
@@ -3774,6 +4218,7 @@ def main():
         0.4, 0.5, 1.5,  # LaTeX formatting: headrulewidth, titleformat spacing, vspace
         6.3,            # LaTeX column width for tables
         0.85,           # LaTeX \includegraphics width=0.85\textwidth
+        0.27, 0.69, 1.15,  # Glossary longtable column widths and arraystretch
         85,            # education threshold (>85% lower-sec) — structural cutoff
         # 970, 973, 974, 981, 982 — no longer needed: \textasciitilde is now stripped
         1560, 1696, 1723, 1776,
@@ -3809,7 +4254,11 @@ def main():
         1973,           # Kerala TFR-threshold crossing
         1982,           # Kerala LE-threshold crossing
         1993,           # Cambodia Paris Accords
+        1953,           # Korean War armistice / North-South split
+        1974,           # Cuba LE/TFR threshold-crossing year
         1996,           # India crossover reference year
+        2019,           # Banerjee/Duflo/Kremer Nobel year
+        2021,           # Angrist/Card/Imbens Nobel year
         2035,           # Cambodia grandparent shadow horizon
         2004, 2008, 2009, 2020,  # citation / data vintage years
     }
@@ -4001,6 +4450,10 @@ def main():
         s = s.replace("\u2212", "-")
         s = s.replace("\u2248", "~")
         s = s.replace("{,}", ",")
+        # LaTeX $-$ minus sign: "$-$0.039" \u2192 "-0.039"
+        s = s.replace("$-$", "-")
+        # Bare $...$ math wrappers around numbers (e.g. "$10.8$")
+        s = s.replace("$", "")
         return s
 
     def number_patterns(val):
@@ -4088,17 +4541,16 @@ def main():
 
     # ── Script path existence check ──────────────────────────────────
     print("\n" + "=" * 72)
-    print("SCRIPT PATHS — \\texttt{scripts/...} references in paper")
+    print("SCRIPT PATHS — \\texttt{scripts/...} / \\nolinkurl{scripts/...} references")
     print("=" * 72 + "\n")
     script_ref_pattern = re.compile(
-        r"\\texttt\{(scripts/[A-Za-z0-9_/\\]*?\.py)\}"
+        r"\\(?:texttt|nolinkurl)\{(scripts/[A-Za-z0-9_/\\]*?\.py)\}"
     )
     broken_paths = []
     seen_paths = set()
     for line_no, raw_line in enumerate(paper_lines, start=1):
         for m in script_ref_pattern.finditer(raw_line):
             tex_path = m.group(1)
-            # Strip LaTeX backslash escapes (\_ -> _)
             clean_path = tex_path.replace("\\_", "_")
             abs_path = os.path.join(REPO_ROOT, clean_path)
             if clean_path in seen_paths:
@@ -4112,6 +4564,47 @@ def main():
     else:
         print(f"    All {len(seen_paths)} script paths cited in paper exist")
 
+    # ── Table/figure producer-coverage check ──────────────────────────
+    # Every \label{tab:...|fig:...} must have a script ref inside its block,
+    # except schematic figures on the allow-list.
+    print("\n" + "=" * 72)
+    print("TABLE/FIGURE PRODUCERS — every data label must cite a script")
+    print("=" * 72 + "\n")
+    SCHEMATIC_ALLOWLIST = {"fig:loop", "fig:radii"}
+    label_pattern = re.compile(r"\\label\{(tab:[^}]+|fig:[^}]+)\}")
+    # Block ends at next label, \refstepcounter{table}, \begin{figure},
+    # or a new section. Multi-panel tables (two \end{longtable}s under one
+    # label) are handled because we do not stop at \end{longtable}.
+    next_block_pattern = re.compile(
+        r"\\label\{(tab:|fig:)|\\refstepcounter\{table\}|\\begin\{figure\}|\\section|\\subsection"
+    )
+    labels_missing_producer = []
+    labels_seen = []
+    for i, line in enumerate(paper_lines):
+        for m in label_pattern.finditer(line):
+            lbl = m.group(1)
+            labels_seen.append((i + 1, lbl))
+            if lbl in SCHEMATIC_ALLOWLIST:
+                continue
+            tail = min(len(paper_lines), i + 200)
+            for j in range(i + 1, tail):
+                if next_block_pattern.search(paper_lines[j]):
+                    tail = j
+                    break
+            back = max(0, i - 10)
+            window = "\n".join(paper_lines[back:tail])
+            if not script_ref_pattern.search(window):
+                labels_missing_producer.append((i + 1, lbl))
+    if labels_missing_producer:
+        for line_no, lbl in labels_missing_producer:
+            print(f"    ✗ L{line_no:<5} {lbl} — no \\texttt/\\nolinkurl{{scripts/...py}} in block")
+        print(f"\n  Fix: add a producer ref in the block, or allow-list the label "
+              f"in SCHEMATIC_ALLOWLIST if it is a schematic.")
+    else:
+        covered = len(labels_seen) - len(SCHEMATIC_ALLOWLIST & {l for _, l in labels_seen})
+        print(f"    All {covered} data-bearing labels cite a producing script "
+              f"({len(SCHEMATIC_ALLOWLIST)} schematics allow-listed)")
+
     # ── Summary ──────────────────────────────────────────────────────
     total = passed + failed + missing
     print("\n" + "=" * 72)
@@ -4119,6 +4612,8 @@ def main():
           f"{ref_count} REF (manual check)")
     print(f"COVERAGE: {len(unregistered_lines)} lines with unregistered numbers")
     print(f"SCRIPT PATHS: {len(broken_paths)} broken, {len(seen_paths) - len(broken_paths)} OK")
+    print(f"PRODUCER COVERAGE: {len(labels_missing_producer)} labels missing producer, "
+          f"{len(labels_seen) - len(labels_missing_producer)} OK")
     print("=" * 72)
 
     # ── Write markdown report ────────────────────────────────────────
@@ -4131,13 +4626,12 @@ def main():
     if failed > 0:
         sys.exit(1)
     if missing > 0:
-        # MISSING means a dispatch/source that should have produced a value
-        # returned None (stale checkin, broken dependency). Always fatal —
-        # the --fast path used to skip this, which silently hid regressions.
         sys.exit(1)
     if line_issues > 0:
         sys.exit(1)
     if broken_paths:
+        sys.exit(1)
+    if labels_missing_producer:
         sys.exit(1)
 
 

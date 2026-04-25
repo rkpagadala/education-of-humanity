@@ -54,8 +54,13 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(SCRIPT_DIR, ".."))
 from _shared import PROC as WCDE_PROC, DATA as WB_DIR, REPO_ROOT, write_checkin
 
-FIG_PATH = os.path.join(REPO_ROOT, "paper", "figures", "outcomes_beta_by_lag.png")
-GDP_LAG_MAX = 25  # cap for raw (non-backfilled) log-GDP predictor, per fig_a1
+FIG_PATH      = os.path.join(REPO_ROOT, "paper", "figures", "outcomes_beta_by_lag.png")
+FIG_PATH_4A   = os.path.join(REPO_ROOT, "paper", "figures", "outcomes_beta_by_lag_4a.png")
+FIG_PATH_4B   = os.path.join(REPO_ROOT, "paper", "figures", "outcomes_beta_by_lag_4b.png")
+GDP_LAG_MAX = 45  # cap for raw (non-backfilled) log-GDP predictor; reflects
+                  # WDI coverage (data start 1960), feasible up to lag ~45
+                  # given outcome panel 1960-2015 and MIN_OBS / MIN_OBS_PER_C.
+LAG_4A_MAX  = 45  # x-axis cap for Figure 4A (the GDP-availability window)
 
 LAG_MIN     = 0
 LAG_MAX     = 100
@@ -157,6 +162,13 @@ for key, label, outcome_df, logit, use_edu in OUTCOMES:
     out_flat = out_mat.ravel()
 
     for lag in lags:
+        if use_edu and lag == 0:
+            results[key]["beta"].append(np.nan)
+            results[key]["se"].append(np.nan)
+            results[key]["t"].append(np.nan)
+            results[key]["n"].append(0)
+            print(f"  lag={lag:3d}  skipped (identity: predictor == outcome)")
+            continue
         pred_cols = [y - lag for y in _outcome_yrs]
         edu_pred = _mat(edu, pred_cols).ravel()
         b, s, t, n = standardized_beta(edu_pred, out_flat, _country_labels_flat)
@@ -184,6 +196,11 @@ for key, label, outcome_df, logit, use_edu in OUTCOMES:
             gdp_results[key]["se"].append(np.nan)
             gdp_results[key]["t"].append(np.nan)
             continue
+        if use_edu and lag == 0:
+            gdp_results[key]["beta"].append(np.nan)
+            gdp_results[key]["se"].append(np.nan)
+            gdp_results[key]["t"].append(np.nan)
+            continue
         pred_cols = [y - lag for y in _outcome_yrs]
         gdp_pred = _log_nonpos_to_nan(_mat(gdp_orig, pred_cols)).ravel()
         b, s, t, _ = standardized_beta(gdp_pred, out_flat, _country_labels_flat)
@@ -200,33 +217,74 @@ PLOT_ORDER = [
     ("tfr",   "Total fertility rate",    "#2ca25f"),   # green
     ("le",    "Life expectancy",         "#1f6feb"),   # blue
 ]
+
+
+def _plot_lag(ax, lags_, results_, gdp_results_, *, x_max, show_gdp,
+              gen_marks):
+    for key, long_label, color in PLOT_ORDER:
+        y_edu = [abs(b) if not np.isnan(b) else np.nan for b in results_[key]["beta"]]
+        ax.plot(lags_, y_edu, linestyle="-", linewidth=2.0, marker="o", markersize=3.8,
+                color=color, label=f"Education -> {long_label}")
+        if show_gdp:
+            y_gdp = [abs(b) if not np.isnan(b) else np.nan
+                     for b in gdp_results_[key]["beta"]]
+            ax.plot(lags_, y_gdp, linestyle="--", linewidth=1.6, marker="s", markersize=3.5,
+                    color=color, alpha=0.75,
+                    label=f"GDP -> {long_label}")
+    for lag_mark, text in gen_marks:
+        ax.axvline(lag_mark, color="0.7", linestyle=":", linewidth=0.9, zorder=0)
+        ax.text(lag_mark, 1.00, text, rotation=90, va="top", ha="right",
+                fontsize=8, color="0.35")
+    ax.set_xlim(0, x_max)
+    ax.set_ylim(0.0, 1.02)
+    ax.set_xlabel("Lag (years) between predictor and outcome")
+    ax.set_ylabel(r"Standardized $|\beta|$ (within-country FE)")
+    ax.grid(True, linestyle=":", linewidth=0.6, color="0.8", zorder=0)
+    ax.set_axisbelow(True)
+    legend = ax.legend(loc="upper right", frameon=True, framealpha=0.95, fontsize=9)
+    legend.get_frame().set_edgecolor("0.8")
+
+
+# Figure 4A — lags 0..GDP_LAG_MAX, both education and GDP on the same scale.
+fig_a, ax_a = plt.subplots(figsize=(9, 5.5))
+_plot_lag(ax_a, lags, results, gdp_results,
+          x_max=LAG_4A_MAX, show_gdp=True,
+          gen_marks=[(25, "1 generation")])
+ax_a.set_title("Figure 4A: Education vs. log GDP per capita, lags 0-45\n"
+               "GDP-availability window (raw WDI 1960+); same axis as education",
+               fontsize=11)
+plt.tight_layout()
+plt.savefig(FIG_PATH_4A, dpi=200, bbox_inches="tight")
+print(f"\nSaved: {FIG_PATH_4A}")
+plt.close()
+
+# Figure 4B — lags 0..100, education only.
+fig_b, ax_b = plt.subplots(figsize=(9, 5.5))
+_plot_lag(ax_b, lags, results, gdp_results,
+          x_max=100, show_gdp=False,
+          gen_marks=[(25, "1 generation"), (50, "2 generations"),
+                     (75, "3 generations")])
+ax_b.set_title("Figure 4B: Education across 0-100 year lags\n"
+               "WCDE 1875-2015; long-run persistence beyond GDP's coverage window",
+               fontsize=11)
+plt.tight_layout()
+plt.savefig(FIG_PATH_4B, dpi=200, bbox_inches="tight")
+print(f"Saved: {FIG_PATH_4B}")
+plt.close()
+
+# Combined figure (kept for backward compatibility with anything that still
+# references outcomes_beta_by_lag.png; the paper now uses 4A and 4B).
 fig, ax = plt.subplots(figsize=(9, 5.5))
-for key, long_label, color in PLOT_ORDER:
-    y_edu = [abs(b) if not np.isnan(b) else np.nan for b in results[key]["beta"]]
-    y_gdp = [abs(b) if not np.isnan(b) else np.nan for b in gdp_results[key]["beta"]]
-    ax.plot(lags, y_edu, linestyle="-", linewidth=2.0, marker="o", markersize=3.8,
-            color=color, label=f"Education -> {long_label}")
-    ax.plot(lags, y_gdp, linestyle="--", linewidth=1.6, marker="s", markersize=3.5,
-            color=color, alpha=0.75,
-            label=f"GDP -> {long_label}")
-for lag_mark, text in [(25, "1 generation"), (50, "2 generations"), (75, "3 generations")]:
-    ax.axvline(lag_mark, color="0.7", linestyle=":", linewidth=0.9, zorder=0)
-    ax.text(lag_mark, 1.00, text, rotation=90, va="top", ha="right",
-            fontsize=8, color="0.35")
-ax.set_xlim(0, 100)
-ax.set_ylim(0.0, 1.02)
-ax.set_xlabel("Lag (years) between predictor and outcome")
-ax.set_ylabel(r"Standardized $|\beta|$ (within-country FE)")
+_plot_lag(ax, lags, results, gdp_results,
+          x_max=100, show_gdp=True,
+          gen_marks=[(25, "1 generation"), (50, "2 generations"),
+                     (75, "3 generations")])
 ax.set_title("Education vs. GDP across 0-100 year lags\n"
              "Solid = education (WCDE 1875-2015); dashed = log GDP (WDI 1960+, raw)",
              fontsize=11)
-ax.grid(True, linestyle=":", linewidth=0.6, color="0.8", zorder=0)
-ax.set_axisbelow(True)
-legend = ax.legend(loc="upper right", frameon=True, framealpha=0.95, fontsize=9)
-legend.get_frame().set_edgecolor("0.8")
 plt.tight_layout()
 plt.savefig(FIG_PATH, dpi=200, bbox_inches="tight")
-print(f"\nSaved: {FIG_PATH}")
+print(f"Saved: {FIG_PATH}")
 plt.close()
 
 

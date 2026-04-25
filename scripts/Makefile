@@ -100,7 +100,10 @@ analysis: \
 	$(CHECKIN)/hanushek_horse_race.json \
 	$(CHECKIN)/hlo_is_pt.json \
 	$(CHECKIN)/hlo_lag_sweep.json \
-	$(CHECKIN)/lsec_thresholds.json
+	$(CHECKIN)/lsec_thresholds.json \
+	$(CHECKIN)/cs_threshold_robustness.json \
+	$(CHECKIN)/missing_by_period.json \
+	$(CHECKIN)/table7_stepwise.json
 
 # ── Rules ─────────────────────────────────────────────────────────────
 
@@ -302,6 +305,15 @@ $(CHECKIN)/hlo_lag_sweep.json: hlo_vs_education_lag_sweep.py _shared.py $(WCDE_D
 	$(PYTHON) $<
 
 $(CHECKIN)/lsec_thresholds.json: lsec_threshold_forward_test.py _shared.py $(ALL_DATA)
+	$(PYTHON) $<
+
+$(CHECKIN)/cs_threshold_robustness.json: robustness/cs_threshold_robustness.py _shared.py $(WCDE_DATA) $(ALL_DATA)
+	$(PYTHON) $<
+
+$(CHECKIN)/missing_by_period.json: robustness/missing_by_period.py _shared.py $(WCDE_DATA) $(ALL_DATA)
+	$(PYTHON) $<
+
+$(CHECKIN)/table7_stepwise.json: wcde/table7_stepwise.py _shared.py $(WCDE_DATA) $(ALL_DATA)
 	$(PYTHON) $<
 
 # ── Clean ─────────────────────────────────────────────────────────────

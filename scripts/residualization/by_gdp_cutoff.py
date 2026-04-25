@@ -181,9 +181,23 @@ gb, gr2, _, _ = fe_beta_r2("log_gdp", "child_low", panel_gdp)
 ratio = er2 / gr2
 print(f"  no cut  {eb:8.3f} {er2:8.3f} "
       f"{gb:10.3f} {gr2:8.3f} {ratio:7.1f}x {n:6d} {nc:5d}")
+numbers["no_cutoff_edu_beta"] = round(eb, 3)
 numbers["no_cutoff_edu_r2"] = round(er2, 3)
+numbers["no_cutoff_gdp_beta"] = round(gb, 3)
 numbers["no_cutoff_gdp_r2"] = round(gr2, 3)
 numbers["no_cutoff_ratio"] = round(ratio, 1)
+numbers["no_cutoff_n"] = n
+numbers["no_cutoff_countries"] = nc
+edu_cl_full = clustered_fe("parent_low", "child_low", panel_gdp)
+gdp_cl_full = clustered_fe("log_gdp",    "child_low", panel_gdp)
+if edu_cl_full is not None:
+    numbers["no_cutoff_edu_se"] = round(edu_cl_full["se"], 3)
+    numbers["no_cutoff_edu_t"] = (round(edu_cl_full["beta"] / edu_cl_full["se"], 2)
+                                  if edu_cl_full["se"] > 0 else None)
+if gdp_cl_full is not None:
+    numbers["no_cutoff_gdp_se"] = round(gdp_cl_full["se"], 3)
+    numbers["no_cutoff_gdp_t"] = (round(gdp_cl_full["beta"] / gdp_cl_full["se"], 2)
+                                  if gdp_cl_full["se"] > 0 else None)
 
 # ── Write checkin JSON ──────────────────────────────────────────────────────
 write_checkin("education_vs_gdp_by_cutoff.json", {
