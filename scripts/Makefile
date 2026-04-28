@@ -102,6 +102,7 @@ analysis: \
 	$(CHECKIN)/hlo_lag_sweep.json \
 	$(CHECKIN)/lsec_thresholds.json \
 	$(CHECKIN)/cs_threshold_robustness.json \
+	$(CHECKIN)/permutation_null.json \
 	$(CHECKIN)/missing_by_period.json \
 	$(CHECKIN)/table7_stepwise.json \
 	$(CHECKIN)/ssa_education_tfr.json
@@ -238,6 +239,9 @@ $(CHECKIN)/backfill_all_outcomes.json: robustness/backfill_all_outcomes.py _shar
 	$(PYTHON) $<
 
 $(CHECKIN)/lag_coefficients.json: robustness/lag_coefficients.py _shared.py $(ALL_DATA)
+	$(PYTHON) $<
+
+$(CHECKIN)/permutation_null.json: robustness/permutation_null.py _shared.py $(WCDE)/completion_both_long.csv
 	$(PYTHON) $<
 
 $(CHECKIN)/edu_vs_resid_gdp_bars_beta.json: figures/edu_vs_resid_gdp_bars_beta.py _shared.py residualization/_shared.py $(ALL_DATA)

@@ -1,12 +1,12 @@
 # Verification Report
 
-Generated: 2026-04-25 11:19
+Generated: 2026-04-28 02:43
 
-## Result: 960/960 PASS
+## Result: 972/972 PASS
 
 | Metric | Count |
 |--------|-------|
-| Verified claims | 960 |
+| Verified claims | 972 |
 | Failed | 0 |
 | Missing | 0 |
 | Literature refs (manual) | 102 |
@@ -17,8 +17,8 @@ Generated: 2026-04-25 11:19
 
 | Source | Pass | Fail | Missing |
 |--------|------|------|---------|
-| checkin | 804 | 0 | 0 |
-| const | 10 | 0 | 0 |
+| checkin | 815 | 0 | 0 |
+| const | 11 | 0 | 0 |
 | derived | 68 | 0 | 0 |
 | ref | 0 | 0 | 0 |
 | wcde | 24 | 0 | 0 |
@@ -29,6 +29,7 @@ Generated: 2026-04-25 11:19
 | Section | Claims | Pass | Fail |
 |---------|--------|------|------|
 | abstract | 5 | 5 | 0 |
+| appendix-permutation | 12 | 12 | 0 |
 | appendix-twfe | 44 | 44 | 0 |
 | barro-lee-partial | 21 | 21 | 0 |
 | cambodia-the-pt-shadow | 8 | 8 | 0 |
@@ -44,13 +45,14 @@ Generated: 2026-04-25 11:19
 | empirical-strategy | 14 | 14 | 0 |
 | exclusion-robustness | 15 | 15 | 0 |
 | four-further-cases | 16 | 16 | 0 |
-| gdp-has-no-independent-effect | 61 | 61 | 0 |
+| gdp-has-no-independent-effect | 63 | 63 | 0 |
 | goskomstat-anomaly | 2 | 2 | 0 |
 | goskomstat-anomaly-pattern | 2 | 2 | 0 |
 | hanushek-reconciliation | 35 | 35 | 0 |
 | invisible-from-inside | 1 | 1 | 0 |
 | kerala | 0 | 0 | 0 |
 | literate-ct | 10 | 10 | 0 |
+| methodological-frontier | 1 | 1 | 0 |
 | nine-year-measurement | 1 | 1 | 0 |
 | phenotype-test-ussr | 1 | 1 | 0 |
 | policy-over-performers | 80 | 80 | 0 |

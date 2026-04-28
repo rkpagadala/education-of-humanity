@@ -535,6 +535,28 @@ that is where cross-country variance lives. The channel --- from fire
 to formal schooling --- runs under every case the paper analyses and
 every prediction it makes (Section~\ref{longest-juvenile-dependency}).
 
+A note on this work's provenance. The framing --- one species, one
+mechanism, the convergence as a species-level signature --- emerged
+from a long prior period of reading evolutionary anthropology, human
+development theory, and adjacent literatures while plotting and
+re-plotting public country-level data, until the patterns the graphs
+were already showing resolved, under the combined frames, into a
+single shape. The data was not the bottleneck; the panels these
+tests use are public and have been throughout the period in which
+the question has been asked. The training pipeline does not produce
+simultaneous fluency in evolutionary anthropology and human
+development theory, and the framing required both. Once the framing
+stabilised, the empirical test in Sections~\ref{the-panel}
+through~\ref{the-cases} was built as a software project against
+public datasets, with the verifier and adversarial-test apparatus
+designed in from the start. The seven signatures the panel tests
+are not pre-registered in the academic sense; they are what the
+framing of Sections~\ref{longest-juvenile-dependency}
+through~\ref{why-education-is-invisible} requires the data to show
+if the mechanism is real, derived during the testing phase as the
+operational form of the framing's requirements. Testing and writing
+took roughly fifty days. Workflow specifics are in the Acknowledgments.
+
 
 \section{The Longest Juvenile Dependency}\label{longest-juvenile-dependency}
 
@@ -1497,10 +1519,11 @@ the data supports.
 
 Second, sufficiency. Primary completion alone is empirically
 insufficient for the full developmental phenotype. Fertility falls
-hardest at the primary-to-secondary transition (Lutz \& Kebede 2018;
-Section~\ref{gdp-has-no-independent-effect} documents the
+hardest at primary
+(Section~\ref{gdp-has-no-independent-effect} documents the
 composition-by-level result in the panel), but life-expectancy gains
-and the next-generation completion signal accumulate with deeper exposure.
+and the next-generation completion signal accumulate with deeper
+exposure (Lutz \& Kebede 2018).
 Nine years is the empirical floor at which the mechanism reliably
 crosses the development threshold
 (Chapter~\ref{the-panel}).
@@ -1763,8 +1786,8 @@ educated output ever has been. What separates this synthesis from competing ones
 
 Educated women have fewer children. The decline is continuous, steepest at the bottom, and requires no threshold to trigger.
 
-Fertility declines continuously as female secondary
-completion rises. The evolutionary mechanism is a shift in reproductive
+Fertility declines continuously as female education
+rises. The evolutionary mechanism is a shift in reproductive
 strategy, not an override of the reproductive drive: in high-mortality
 environments, the optimal strategy is quantity --- have many children
 because some will die. Education changes both inputs to this calculus.
@@ -1908,7 +1931,7 @@ Chapter~\ref{the-panel} tests all seven in the panel; Chapter~\ref{natural-exper
 
 \section{The Panel}\label{the-panel}
 
-Education predicts every development outcome one generation forward; log GDP per capita, once education's contribution is removed, predicts none of them. These results are not found by searching for a pattern --- they are the seven predictions of the biological mechanism (Chapter~\ref{the-prediction}), tested against 185 countries over 65 years. All seven hold.
+Education predicts every development outcome one generation forward; log GDP per capita, once education's contribution is removed, predicts none of them. These results follow from the biology --- the seven predictions of the mechanism in Chapter~\ref{the-prediction}, tested against 185 countries over 65 years. All seven hold.
 
 Each subsection below shows where one of the seven biological
 predictions (Chapter~\ref{the-prediction}) appears in the 185-country
@@ -2935,7 +2958,13 @@ errors. ``GDP $R^2$ (edu removed)'' is the predictive power of log
 GDP per capita after stripping out education's contribution
 (Frisch-Waugh-Lovell). Sample sizes: $n=822$ (152 countries) for LE
 and TFR; $n=856$ (157 countries) for child education; $n=787$ (147
-countries) for under-5 mortality. Producers:
+countries) for under-5 mortality. $T=1960$--$1990$ is the full WB
+WDI GDP window (raw coverage starts in 1960); the pre-1960 backfill
+exercise that pushes GDP to lag~100 (missing years fixed at the
+\$500 subsistence floor) is in §\ref{robustness} and shows GDP's
+coefficient crosses zero and loses significance by lag~55--60 for
+all four outcomes
+(\nolinkurl{scripts/robustness/backfill_all_outcomes.py}). Producers:
 \nolinkurl{scripts/residualization/education_vs_gdp.py},
 \nolinkurl{scripts/residualization/education_vs_tfr.py},
 \nolinkurl{scripts/residualization/child_education.py}.
@@ -3062,6 +3091,14 @@ Once primary education is included, initial fertility does not predict
 subsequent fertility one generation forward (Table~\ref{tab:2},
 Panel A, TFR row: initial outcome β=$-$0.039, $p=0.37$).
 Demographic momentum does not drive the transition --- educated women's decisions do.
+
+A permutation null rules out the chance-correlation alternative.
+Reshuffling the parent--child match across countries (200 iterations)
+places the real $\beta=0.483$ at least 53 SDs above either null --- the
+within-year null, which preserves global temporal trends, and the full
+shuffle, which breaks every systematic link. Common trends, panel
+autocorrelation, and serial correlation cannot generate the observed
+coefficient (Appendix~\ref{appendix-permutation}).
 
 \subsection{Universality Across Subsamples (Prediction~\ref{pred:universality})}\label{policy-over-performers}
 
@@ -3445,7 +3482,7 @@ R² $=$ 0.469 at lag 0, peaks at lag 25 (R² $=$ 0.549), and is still
 at R² $=$ 0.489 at lag 60. \textbf{Great-grandparent primary
 completion in 1950 explains nearly half the cross-country variance
 in today's teenagers' test scores --- essentially as much as current
-schooling does.}
+schooling does} (the bootstrap does not statistically separate the two).
 
 A 2,000-draw country-resampling bootstrap confirms the shape but
 does not pin the specific peak. The 95\% CI on the R² difference
@@ -4295,7 +4332,7 @@ educated elites alone were not numerous enough to reduce aggregate
 fertility. Once mass schooling reached most of each country's
 population, aggregate fertility fell. The same sequence is visible in
 every post-war case in the paper's sample: fertility falls one
-generation after secondary completion rises
+generation after education extends
 (Section~\ref{demographic-structure-and-the-fertility-transition}).
 The mechanism is the same in each case and the timing is the same in
 each case, because the mechanism is the same species-level trait
@@ -4387,7 +4424,7 @@ What the pin factory required, and what Smith took as given, was labour that cou
 
 Smith's account starts after the loading. The substrate that made loadable labour possible --- the cultural-transmission channel (Chapter~\ref{cultural-transmission}) running through written language into categorical cognition --- was inside the frame of the factory by the time he observed it, not outside. He attributed to specialisation what belonged to the substrate that specialisation presupposed. The founding error propagated through two distinct descendant lines. The wage-frame line --- Smith to Schultz to Becker (Section~\ref{human-capital-and-the-wage-frame}) --- prices the loaded labour rather than naming what loaded it. The capabilities frame --- Sen (Section~\ref{sen-and-dreze-two-routings}) --- enumerates what educated agency produces without specifying the categorical reorganisation that makes the agency possible. Both lines rest on the substrate; both omit it from their causal accounts.
 
-The cost is not conceptual alone. Policy built on Smith tells countries to specialise into export markets to get rich. Korea did the opposite; Taiwan did the opposite; Bangladesh did the opposite. Each built the substrate first and the specialisation followed. The bio claim predicts this ordering; Smith's frame, taken as primary, reverses it.
+The cost is not conceptual alone. Policy built on Smith tells countries to specialise into export markets to get rich. Korea did the opposite; Taiwan did the opposite; Bangladesh did the opposite. Each built the substrate first and the specialisation followed. The mechanism predicts this ordering; Smith's frame, taken as primary, reverses it.
 
 \subsection{Sen and Drèze: Two Routings, One Mechanism}\label{sen-and-dreze-two-routings}
 
@@ -4395,7 +4432,7 @@ Sen (1999) and Drèze and Sen (1989) are the closest frameworks to the one I mak
 
 Sen argues that development is what people are able to do and to be, not what they earn. The list of capabilities --- to live a long life, to be literate, to participate politically --- is the right list, and measuring development in those terms is a correction of the GDP-primary frame. Drèze and Sen's claim that democracy with a free press prevents famine is a genuinely novel observation largely right on its own evidence.
 
-What the frame underdetermines is the mechanism that produces the capabilities in the first place. Sen treats them as parallel expressions of human freedom --- coequal axes of wellbeing. The bio claim is that they are serial consequences of a single substrate. Educated cognition makes categorical choice possible (Chapter~\ref{education-as-payload}); categorical choice, applied at the household scale, produces the fertility transition, the mortality transition, and the political capacity that the capabilities list comprises. The list is the output of one mechanism, not a set of independent dimensions.
+What the frame underdetermines is the mechanism that produces the capabilities in the first place. Sen treats them as parallel expressions of human freedom --- coequal axes of wellbeing. The mechanism is that they are serial consequences of a single substrate. Educated cognition makes categorical choice possible (Chapter~\ref{education-as-payload}); categorical choice, applied at the household scale, produces the fertility transition, the mortality transition, and the political capacity that the capabilities list comprises. The list is the output of one mechanism, not a set of independent dimensions.
 
 The distinction matters most for the growth-mediated / support-led dichotomy. Drèze and Sen describe two routings of fiscal resources --- through market growth or through state service provision --- and identify democratic accountability as the feature that determines which populations receive which routing. Both routings, in their own data, produce development only where they reach an educated population. The China case (Section~\ref{china}), matched on mean years of schooling to the fastest movers in the support-led list, shows the residual attributed to ``support-led'' routing is education itself. Bihar and Kerala (Section~\ref{the-famine-test}), under one constitution and one national press, isolate the mechanism: where most households are educated, the community-level shield forms and famine does not arrive; where most households are not, the shield does not form and press coverage alone does not substitute.
 
@@ -4429,7 +4466,7 @@ Regime type is a variance amplifier, not a cause. The decision variable is educa
 
 The colonial instrumental-variable contest (Section~\ref{the-colonial-test}) makes the same point from the institutional literature's own preferred instrument. Settler mortality --- the instrument that grounds the institutionalist identification strategy --- turns out to predict education at first-stage $F = 10.8$ and institutions at $F = 1.4$. The effect the instrument identifies is the educational one. Tables~\ref{tab:a6} and~\ref{tab:a7} give the full results.
 
-The pattern is general. Settler mortality picks up where Protestant settlers built schools. Coloniser religion picks up Reformation-era literacy. Polity2 picks up the regime that loaded the channel. Each instrument's identification rests on its correlation with educational loading; remove the educational channel from the picture and each instrument's first-stage F drops below the conventional threshold for valid identification. The institutional literature has been measuring downstream artefacts of educational loading and reading them as causes.
+The pattern is general. Low settler mortality marks where Protestant settlers survived to build schools. Coloniser religion picks up Reformation-era literacy. Polity2 picks up the regime that loaded the channel. Each instrument's identification rests on its correlation with educational loading; remove the educational channel from the picture and each instrument's first-stage F drops below the conventional threshold for valid identification. The institutional literature has been measuring downstream artefacts of educational loading and reading them as causes.
 
 \refstepcounter{table}\label{tab:a5}Table~\thetable: Regime type and education gain rate.
 
@@ -4608,11 +4645,12 @@ the channel itself. The discipline's working assumption that any claim
 not estimated through its preferred apparatus is suspect --- that
 $1+1=2$ is not established knowledge in development economics until
 someone has run the regression --- is a methodological reflex, not an
-epistemic standard. Evolutionary anthropology has established the
-mechanism through sixty years of convergent evidence from comparative
-primatology, ethnography, developmental psychology, archaeology, and
-life-history theory. Those methods have produced a settled picture of
-what the human species is. Development economics has produced a
+epistemic standard. Evolutionary biology, in the 200 years since Wallace,
+has established the mechanism --- drawing on comparative primatology,
+ethnography, developmental psychology, archaeology, life-history
+theory, and the evolutionary anthropology that synthesises them.
+Those methods have produced a settled picture of what the human
+species is. Development economics has produced a
 sequence of frameworks --- Big Push, structural adjustment,
 institutions, randomised intervention --- that replace rather than
 extend each other. One field is a river. The other is the surface
@@ -4645,9 +4683,9 @@ The whole world is not yet developed because the substrate-level investment is g
 
 Schultz (1961) and Becker (1964) founded the human capital school on the observation that education raises individual wage productivity and can be treated, economically, as an investment yielding private returns. The framework is the operating frame of labour economics and much of education policy. Measurement of the private return to individual schooling is well developed within it.
 
-The bio claim is that the private labour-market return is the secondary channel. Education's primary developmental effect is not on the educated person's wages but on their children's lives --- through the cognitive and decision-making traits transmitted parent-to-child (Chapter~\ref{pt-and-state}). A mother's education shows up in her children's mortality, nutrition, and school completion at effect sizes that dwarf its effect on her own wages. The Gakidou et al.\ (2010) decomposition (Section~\ref{the-deaton-objection}) captures this at population scale: a half-of-mortality-decline intergenerational effect, not a labour-market effect.
+The mechanism is that, in the first-generation transition from illiterate to literate, the private labour-market return is the secondary channel. Education's primary effect during that transition is not on the newly-educated person's wages but on their children's lives --- through the cognitive and decision-making traits transmitted parent-to-child (Chapter~\ref{pt-and-state}). A mother's education shows up in her children's mortality, nutrition, and school completion at effect sizes that dwarf its effect on her own wages. The Gakidou et al.\ (2010) decomposition (Section~\ref{the-deaton-objection}) captures this at population scale during the developing-country transition window: a half-of-mortality-decline intergenerational effect, not a labour-market effect.
 
-Human capital theory treats this downstream effect as an externality and sometimes adds it to private returns. The bio claim reverses the ordering. The intergenerational population-level effect is primary; the private wage return is the smaller, more variable side channel. Korea, Taiwan, Singapore, and every other country that made education the singular priority received the developmental compounding whether or not the policy frame named the mechanism correctly.
+Human capital theory treats this downstream effect as an externality and sometimes adds it to private returns. The mechanism reverses the ordering for the transition itself. During the illiterate-to-literate crossing the intergenerational population-level effect is primary and the private wage return is the smaller, more variable side channel. Every country whose population crossed the educational threshold received the developmental compounding, whether or not the policy frame named the mechanism correctly. Korea, Taiwan, Cuba, Sri Lanka, Bangladesh did it in one generation under singular priority; the others did it slower under competing priorities, but the channel ran the same way. Once a population is past the threshold and home niches are fully literate, the intergenerational effect compresses toward the ceiling and the wage return becomes the dominant marginal signal --- but by then the developmental work is done.
 
 The framework's narrower consequence is a misdirection of measurement. Decades of Mincerian wage-return estimation now anchor the policy question of whether schooling is ``worth it'' in developing countries. The answer from wage data is contingent and often uncertain. The answer from intergenerational outcome data is uniform and large. The disagreement is a frame choice, not a measurement dispute.
 
@@ -4655,9 +4693,9 @@ The framework's narrower consequence is a misdirection of measurement. Decades o
 
 Pritchett (2013) argues that schooling in many developing countries fails to produce learning: children sit in classrooms for years and finish unable to read, do arithmetic, or reason at grade level. The measurement is accurate; cross-national assessments confirm wide gaps between years of schooling and measured proficiency. The policy consequence Pritchett draws is that schooling quality, not schooling coverage, is the development variable.
 
-The bio claim disagrees on the mechanism. Duration of exposure to the categorical, symbolically organised environment of formal schooling is what restructures cognition (Chapter~\ref{education-as-payload}). Test scores measure one narrow output of that restructuring at a particular moment in a child's life; they do not capture the restructuring that has already taken place. The restructuring itself is observable at the neural level, not inferred from behaviour: Dehaene et al.\ (2010) document the physical reorganisation of the brain's visual processing pathways in newly literate adults, and numeracy recruits parietal circuits unavailable to innumerate populations (Gordon 2004; Frank et al.\ 2008; Chapter~\ref{education-as-payload}). These structural changes persist whether or not the curricular content on which they were installed is retained for a particular test. The panel is the population-scale evidence. Years in school predict life expectancy, under-five mortality, and fertility at effect sizes an order of magnitude larger than test-score variation across countries at the same mean years of schooling. A child with nine years of low-quality schooling in rural Bangladesh reaches adulthood with a different cognitive architecture than a child with three years of high-quality schooling, and the household-scale behaviour that follows reflects the first child's architecture, not the second's score.
+The biology disagrees on the mechanism. Duration of exposure to the categorical, symbolically organised environment of formal schooling is what restructures cognition (Chapter~\ref{education-as-payload}). Test scores measure one narrow output of that restructuring at a particular moment in a child's life; they do not capture the restructuring that has already taken place. The restructuring itself is observable at the neural level, not inferred from behaviour: Dehaene et al.\ (2010) document the physical reorganisation of the brain's visual processing pathways in newly literate adults, and numeracy recruits parietal circuits unavailable to innumerate populations (Gordon 2004; Frank et al.\ 2008; Chapter~\ref{education-as-payload}). These structural changes persist whether or not the curricular content on which they were installed is retained for a particular test. The panel is the population-scale evidence. Years in school predict life expectancy, under-five mortality, and fertility at effect sizes an order of magnitude larger than test-score variation across countries at the same mean years of schooling. A child with nine years of low-quality schooling in rural Bangladesh reaches adulthood with a different cognitive architecture than a child with three years of high-quality schooling, and the household-scale behaviour that follows reflects the first child's architecture, not the second's score.
 
-The schooling-without-learning frame is a level-of-measurement mistake. Learning is measured in content absorbed; the bio claim is that schooling's primary effect is categorical --- the brain's reorganisation toward symbolic and propositional thought --- and that content is the disposable vehicle on which duration rides (Section~\ref{duration-over-fidelity}). This is a strong claim, and it implies that the curriculum wars that dominate education policy are second-order. The historical record is the test.
+The schooling-without-learning frame is a level-of-measurement mistake. Learning is measured in content absorbed; the mechanism is that schooling's primary effect is categorical --- the brain's reorganisation toward symbolic and propositional thought --- and that content is the disposable vehicle on which duration rides (Section~\ref{duration-over-fidelity}). This is a strong claim, and it implies that the curriculum wars that dominate education policy are second-order. The historical record is the test.
 
 Four successful educational expansions ran through content regimes with nothing in common at the level of curriculum and produced the same cognitive outcome and the same subsequent development trajectory.
 
@@ -4783,13 +4821,18 @@ supportive throughout. The views in this paper are my own. Drèze and
 Sen saw the right anomalies and asked the right questions. This paper
 is one answer.
 
-Code and statistical analysis were written by Claude (Anthropic)
-under my specification and architectural direction. Prose drafting was
-assisted by Claude. Every empirical claim in this paper was verified
-against the data by reproducible scripts, not by trusting the language
-model's output; all scripts and data are published with the paper. The
-theoretical framework, analytical design, test specifications,
-arguments, conclusions, and all errors are my own.
+I am a software engineer of twenty-five years' practice, self-taught
+in the substantive literatures over the same period. I directed
+Claude (Anthropic) to implement code and statistical analysis against
+my specifications and architectural direction, and used Claude to
+assist prose drafting under my editorial direction. Every numerical
+claim in this paper was verified against source data by reproducible
+scripts, not by trusting the language model's output; the headline
+empirical result was further checked against an adversarial-test
+package designed to break it. All scripts, data, and tests are
+published with the paper. The theoretical framework, analytical
+design, test specifications, arguments, conclusions, and all errors
+are my own.
 
 
 \appendix
@@ -5008,6 +5051,32 @@ the paper sets up --- not because it happens to produce a larger
 number.
 
 % subsections A.2 through A.9 populated by Pass A.3–A.6 relocations
+
+\subsection{Permutation Null Distribution}\label{appendix-permutation}
+
+The checks in this appendix vary the specification or the sample. The
+permutation test holds both fixed and reshuffles the country-level
+parent--child match: for each iteration the parental column is permuted,
+the headline regression (Table~\ref{tab:1}, column~1) is refit on the
+same panel (1{,}665 obs, 185 countries, 1975--2015), and the resulting
+$\beta$ is recorded. Two schemes, 200 iterations each.
+
+\emph{Within-year shuffle.} Permuting parental values among countries
+within the same year preserves the global temporal distribution of
+parental completion --- the conservative null. The null mean is
+$0.102$ (SD $0.005$, range $[0.087, 0.115]$). The real $\beta=0.483$
+sits 77 SDs above. That the within-year null centers well above zero
+is itself informative: preserving each year's marginal distribution
+already encodes part of the cross-year expansion. The 77-SD gap says
+global trends are nowhere near sufficient to produce the headline
+coefficient.
+
+\emph{Full shuffle.} Permuting parental values across all country-years
+breaks every systematic link --- the aggressive null. The null mean is
+$0.001$ (SD $0.009$, range $[-0.022, 0.021]$). The real $\beta=0.483$
+sits 53 SDs above; no permutation in 200 produced a coefficient
+remotely close to the observed value. Producer:
+\texttt{scripts/robustness/permutation\_null.py}.
 
 \subsection{Other Robustness Checks}\label{robustness}
 

@@ -85,6 +85,7 @@ THE_EVIDENCE = "the-panel"
 APPENDIX_ROBUST = "robustness"
 APPENDIX_FRAME = "difficulties-on-the-theory"
 APPENDIX_TWFE = "appendix-twfe"
+APPENDIX_PERMUTATION = "appendix-permutation"
 APPENDIX_LISTWISE = "appendix-listwise-deletion"
 POLICY_OVER_PERFORMERS = "policy-over-performers"
 
@@ -650,7 +651,8 @@ for _c, _eb, _er, _gb, _gr, _rt, _n, _nc in _CUT_CELLS:
 # completeness but are not the headline Full row.
 reg("TabC-full-edu-beta", 0.483, "checkin",
     ("panel_full_fe.json", "numbers.table1_m1_edu_beta"),
-    [(APPENDIX_ROBUST, None), (EDU_VS_GDP, None), (EMPIRICAL, None), (APPENDIX_TWFE, None)], tol=0.005)
+    [(APPENDIX_ROBUST, None), (EDU_VS_GDP, None), (EMPIRICAL, None),
+     (APPENDIX_TWFE, None), (APPENDIX_PERMUTATION, None)], tol=0.005)
 reg("TabC-full-edu-se",   0.034, "checkin",
     ("panel_full_fe.json", "numbers.table1_m1_edu_se"),
     [(APPENDIX_ROBUST, None), (EDU_VS_GDP, None)], tol=0.005)
@@ -3314,6 +3316,41 @@ reg("G-Excl-U5-clean",     0.659, "checkin",
     ("ussr_exclusion_panel.json", "numbers.U5log_clean_r2"),
     [(GOSK_EXCLUSION, None)], tol=0.005)
 
+# ── §3041 / Appendix Permutation Null Distribution ─────────────────
+reg("Perm-niter",          200,    "checkin",
+    ("permutation_null.json", "n_iter"),
+    [(GDP_INDEP, None), (APPENDIX_PERMUTATION, None)], tol=0)
+reg("Perm-within-z",       77,     "checkin",
+    ("permutation_null.json", "within_year.z"),
+    [(APPENDIX_PERMUTATION, None)], tol=1)
+reg("Perm-within-mean",    0.102,  "checkin",
+    ("permutation_null.json", "within_year.null_mean"),
+    [(APPENDIX_PERMUTATION, None)], tol=0.005)
+reg("Perm-within-sd",      0.005,  "checkin",
+    ("permutation_null.json", "within_year.null_sd"),
+    [(APPENDIX_PERMUTATION, None)], tol=0.001)
+reg("Perm-within-min",     0.087,  "checkin",
+    ("permutation_null.json", "within_year.null_min"),
+    [(APPENDIX_PERMUTATION, None)], tol=0.005)
+reg("Perm-within-max",     0.115,  "checkin",
+    ("permutation_null.json", "within_year.null_max"),
+    [(APPENDIX_PERMUTATION, None)], tol=0.005)
+reg("Perm-full-z",         53,     "checkin",
+    ("permutation_null.json", "full.z"),
+    [(GDP_INDEP, None), (APPENDIX_PERMUTATION, None)], tol=1)
+reg("Perm-full-mean",      0.001,  "checkin",
+    ("permutation_null.json", "full.null_mean"),
+    [(APPENDIX_PERMUTATION, None)], tol=0.001)
+reg("Perm-full-sd",        0.009,  "checkin",
+    ("permutation_null.json", "full.null_sd"),
+    [(APPENDIX_PERMUTATION, None)], tol=0.001)
+reg("Perm-full-min",      -0.022,  "checkin",
+    ("permutation_null.json", "full.null_min"),
+    [(APPENDIX_PERMUTATION, None)], tol=0.005)
+reg("Perm-full-max",       0.021,  "checkin",
+    ("permutation_null.json", "full.null_max"),
+    [(APPENDIX_PERMUTATION, None)], tol=0.005)
+
 # ── §9.1 and scattered: post-socialist counts and lags ─────────────
 reg("G-n-postsoc",         28, "derived",
     "28 post-socialist crossers (15 USSR + 13 Warsaw Pact + Yugoslavia)",
@@ -3390,6 +3427,9 @@ reg("G-year-1991", 1991, "const",
 reg("G-year-1995", 1995, "const",
     "1995 mid-transition crisis peak reference",
     [(GOSK_COHORT, None), (APPENDIX_ROBUST, None)], tol=0)
+reg("G-wallace-200", 200, "const",
+    "Wallace/Darwin tradition timeframe (~200 years; pre-1858 natural-history milieu through 2026)",
+    [("methodological-frontier", None)], tol=0)
 
 # ══════════════════════════════════════════════════════════════════════════
 # LITERATE CT — §4.3 empirical floors for the regime flip
