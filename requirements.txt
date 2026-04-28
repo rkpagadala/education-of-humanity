@@ -4,4 +4,5 @@ matplotlib>=3.6
 seaborn>=0.12
 scipy>=1.9
 statsmodels>=0.13
+linearmodels>=6.0
 xlrd>=2.0.1

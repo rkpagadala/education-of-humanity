@@ -303,7 +303,7 @@ $(CHECKIN)/ussr_residual_by_year.json: ussr_residual_by_year.py _shared.py $(ALL
 $(CHECKIN)/ussr_exclusion_panel.json: robustness/ussr_exclusion_panel.py _shared.py $(ALL_DATA)
 	$(PYTHON) $<
 
-$(CHECKIN)/hanushek_horse_race.json: hanushek_horse_race_comprehensive.py _shared.py $(ALL_DATA) $(DATA)/hlo_raw.csv $(DATA)/barro_lee_v3.csv ../wcde/data/raw/pop_both.csv
+$(CHECKIN)/hanushek_horse_race.json: hanushek_horse_race_comprehensive.py _shared.py $(ALL_DATA) $(DATA)/hlo_raw.csv $(DATA)/barro_lee_v3.csv $(WCDE)/population_2015.csv
 	$(PYTHON) $<
 
 $(CHECKIN)/hlo_is_pt.json: hlo_is_parental_education.py _shared.py $(ALL_DATA) $(DATA)/hlo_raw.csv $(DATA)/barro_lee_v3.csv
