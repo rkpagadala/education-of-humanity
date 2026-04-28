@@ -60,5 +60,5 @@
   ],
   "summary": "8/8 GDP claims passed",
   "script": "scripts/cases/country_gdp.py",
-  "produced": "2026-04-20"
+  "produced": "2026-04-28"
 }
