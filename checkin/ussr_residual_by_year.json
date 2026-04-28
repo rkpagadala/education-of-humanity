@@ -222,5 +222,5 @@
     "u5log_bl_resid_2010": 0.39
   },
   "script": "scripts/ussr_residual_by_year.py",
-  "produced": "2026-04-22"
+  "produced": "2026-04-28"
 }

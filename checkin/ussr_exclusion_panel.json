@@ -27,5 +27,5 @@
     "gate_pass": 0
   },
   "script": "scripts/robustness/ussr_exclusion_panel.py",
-  "produced": "2026-04-22"
+  "produced": "2026-04-28"
 }

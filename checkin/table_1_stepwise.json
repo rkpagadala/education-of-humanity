@@ -219,5 +219,5 @@
     "sample_countries": 105
   },
   "script": "scripts/tables/table_1_stepwise.py",
-  "produced": "2026-04-24"
+  "produced": "2026-04-28"
 }

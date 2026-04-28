@@ -157,5 +157,5 @@
     "philippines_college_gain_2000_2005_pp": 1.8
   },
   "script": "scripts/robustness/asian_financial_crisis.py",
-  "produced": "2026-04-20"
+  "produced": "2026-04-28"
 }

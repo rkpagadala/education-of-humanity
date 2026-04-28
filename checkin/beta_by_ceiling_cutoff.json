@@ -43,5 +43,5 @@
     "panelB_no_cutoff_r2": 0.457
   },
   "script": "scripts/robustness/beta_by_ceiling_cutoff.py",
-  "produced": "2026-04-20"
+  "produced": "2026-04-28"
 }

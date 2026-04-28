@@ -41,5 +41,5 @@
     "child_mortality_countries": 147
   },
   "script": "scripts/figures/edu_vs_resid_gdp_bars_beta.py",
-  "produced": "2026-04-20"
+  "produced": "2026-04-28"
 }

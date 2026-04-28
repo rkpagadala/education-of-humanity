@@ -113,5 +113,5 @@
     "no_cutoff_gdp_t": 6.61
   },
   "script": "scripts/residualization/by_gdp_cutoff.py",
-  "produced": "2026-04-24"
+  "produced": "2026-04-28"
 }

@@ -32,5 +32,5 @@
     "sufficiency_100pct_threshold": 95
   },
   "script": "scripts/lsec_threshold_forward_test.py",
-  "produced": "2026-04-22"
+  "produced": "2026-04-28"
 }

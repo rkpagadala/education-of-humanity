@@ -97,5 +97,5 @@
   },
   "overall": "PASS",
   "script": "scripts/cases/threshold_crossings.py",
-  "produced": "2026-04-20"
+  "produced": "2026-04-28"
 }

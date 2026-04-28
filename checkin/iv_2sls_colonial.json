@@ -10,5 +10,5 @@
   "tfr_edu_first_stage_F": 10.79,
   "tfr_inst_first_stage_F": 1.78,
   "script": "scripts/robustness/iv_2sls_colonial.py",
-  "produced": "2026-04-20"
+  "produced": "2026-04-28"
 }

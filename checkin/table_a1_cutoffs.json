@@ -71,5 +71,5 @@
   },
   "all_pass": true,
   "script": "scripts/cases/threshold_cutoffs.py",
-  "produced": "2026-04-20"
+  "produced": "2026-04-28"
 }

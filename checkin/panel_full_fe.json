@@ -35,5 +35,5 @@
     "PI-cond-R2": 0.006
   },
   "script": "scripts/tables/panel_full_fe.py",
-  "produced": "2026-04-20"
+  "produced": "2026-04-28"
 }

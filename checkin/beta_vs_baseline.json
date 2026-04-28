@@ -82,5 +82,5 @@
     }
   ],
   "script": "scripts/figures/beta_vs_baseline.py",
-  "produced": "2026-04-24"
+  "produced": "2026-04-28"
 }

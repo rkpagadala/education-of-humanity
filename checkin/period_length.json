@@ -71,5 +71,5 @@
     "annual_active_n": 3548
   },
   "script": "scripts/robustness/period_length.py",
-  "produced": "2026-04-20"
+  "produced": "2026-04-28"
 }

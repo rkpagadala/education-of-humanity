@@ -13,5 +13,5 @@
     "tfr_ussr_bias_sds": 0.08
   },
   "script": "scripts/ussr_anomaly_barrolee.py",
-  "produced": "2026-04-22"
+  "produced": "2026-04-28"
 }

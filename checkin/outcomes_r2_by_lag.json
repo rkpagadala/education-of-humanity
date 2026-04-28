@@ -172,5 +172,5 @@
     "gdp_le_r2_lag100": null
   },
   "script": "scripts/figures/outcomes_r2_by_lag.py",
-  "produced": "2026-04-20"
+  "produced": "2026-04-28"
 }

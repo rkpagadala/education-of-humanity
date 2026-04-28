@@ -28,5 +28,5 @@
   },
   "overall": "PASS",
   "script": "scripts/cases/college_le_gradient.py",
-  "produced": "2026-04-20"
+  "produced": "2026-04-28"
 }

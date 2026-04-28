@@ -617,5 +617,5 @@
     "gdp_cedu_t_lag100": null
   },
   "script": "scripts/robustness/lag_coefficients.py",
-  "produced": "2026-04-24"
+  "produced": "2026-04-28"
 }

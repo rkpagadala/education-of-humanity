@@ -26,5 +26,5 @@
   "China-peers-band1.0-2000-LE-gap": 2.5,
   "China-peers-band1.0-2000-U5-gap": 0.3,
   "script": "scripts/cases/china_band_sensitivity.py",
-  "produced": "2026-04-20"
+  "produced": "2026-04-28"
 }

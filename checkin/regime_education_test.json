@@ -35,5 +35,5 @@
   "transition_test_n": 50,
   "transition_test_p": 0.5713,
   "script": "scripts/robustness/regime_education.py",
-  "produced": "2026-04-20"
+  "produced": "2026-04-28"
 }
