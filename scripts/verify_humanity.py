@@ -216,7 +216,7 @@ S_TFR   = os.path.join(REPO_ROOT, "scripts", "residualization", "education_vs_tf
 reg("T1-obs",        1665,   "checkin", ("panel_full_fe.json", "numbers.panel_obs"),
     [(DATA_SEC, None), (APPENDIX_ROBUST, None), (APPENDIX_TWFE, None)], tol=0)
 reg("T1-countries",  185,    "checkin", ("panel_full_fe.json", "numbers.panel_countries"),
-    [(ABSTRACT, 145), (THE_EVIDENCE, None), (DATA_SEC, 3), (APPENDIX_ROBUST, None),
+    [(ABSTRACT, 143), (THE_EVIDENCE, None), (DATA_SEC, 3), (APPENDIX_ROBUST, None),
      ("specialisation-requires-loaded-labour", None),
      ("nine-year-measurement", None),
      (EMPIRICAL, None)], tol=0)
