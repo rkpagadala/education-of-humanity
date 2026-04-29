@@ -324,11 +324,20 @@ The 2SLS confirms the reinterpretation.
 
 # ── Save checkin ─────────────────────────────────────────────────────
 
+from scipy import stats as _stats
+_r = results["log_gdp_2020"]["education"]
+_t_2sls = _r["second_stage_t"]
+_n_iv = _r["n"]
+_p_2sls = 2 * (1 - _stats.t.cdf(abs(_t_2sls), df=max(_n_iv - 2, 1)))
 checkin = {
     "n_colonies": int(len(df)),
+    "n_colonies_complete": int(_n_iv),
     "gdp_edu_first_stage_F": round(results["log_gdp_2020"]["education"]["first_stage_F"], 2),
     "gdp_inst_first_stage_F": round(results["log_gdp_2020"]["institution"]["first_stage_F"], 2),
     "gdp_edu_2sls_coef": round(results["log_gdp_2020"]["education"]["second_stage_coef"], 4),
+    "gdp_edu_2sls_t": round(_t_2sls, 2),
+    "gdp_edu_2sls_p": round(float(_p_2sls), 4),
+    "gdp_edu_wu_hausman_p": round(results["log_gdp_2020"]["education"]["hausman_p"], 4),
     "gdp_inst_2sls_coef": round(results["log_gdp_2020"]["institution"]["second_stage_coef"], 4),
     "gdp_edu_wald": round(results["log_gdp_2020"]["education"]["wald_estimate"], 4),
     "le_edu_first_stage_F": round(results["le_2020"]["education"]["first_stage_F"], 2),

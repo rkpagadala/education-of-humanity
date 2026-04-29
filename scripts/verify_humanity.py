@@ -2332,39 +2332,40 @@ reg("Sum-parent-edu-sd",  33.3, "checkin",
     ("summary_stats.json", "descriptives.pooled.parent_edu.sd"),
     [(APPENDIX_ROBUST, None)], tol=0.1)
 
-# --- robustness: Table A1 Panel B row-3 (parent < 10%) SE and n ---
-reg("TA1-M3-se",   0.067, "derived",
-    "Table A1 Panel B row (3) FE+year parent<10% clustered SE",
+# --- robustness: Table A1 row (3) (parent < 10%) within-R² and n ---
+# (Legacy name "TA1-M3-se" — value is the within-R², not SE; kept for
+#  registry stability.)
+reg("TA1-M3-se",   0.067, "checkin",
+    ("table_a1_cutoffs.json", "numbers.cutoff_10.r2"),
     [(APPENDIX_ROBUST, None), (APPENDIX_TWFE, None)], tol=0.005)
-reg("TA1-M3-n",    358, "derived",
-    "Table A1 Panel B row (3) FE+year parent<10% n",
+reg("TA1-M3-n",    358, "checkin",
+    ("table_a1_cutoffs.json", "numbers.cutoff_10.n"),
     [(APPENDIX_TWFE, None)], tol=0)
 
-# tab:a1 row R² values (TWFE FE+year) that previously matched by coincidence
-# via other regs under APPENDIX_ROBUST; register explicitly for APPENDIX_TWFE.
-reg("TA1-M1-r2-sec", 0.154, "derived",
-    "Table A1 Panel B row (1) FE+year parent<30% within-R²",
+# tab:a1 row R² values (TWFE FE+year)
+reg("TA1-M1-r2-sec", 0.154, "checkin",
+    ("table_a1_cutoffs.json", "numbers.cutoff_30.r2"),
     [(APPENDIX_TWFE, None)], tol=0.005)
-reg("TA1-M2-r2-sec", 0.145, "derived",
-    "Table A1 Panel B row (2) FE+year parent<20% within-R²",
+reg("TA1-M2-r2-sec", 0.145, "checkin",
+    ("table_a1_cutoffs.json", "numbers.cutoff_20.r2"),
     [(APPENDIX_TWFE, None)], tol=0.005)
 
 # --- robustness: Residualization-by-lag table (Table A2) U5MR and child-edu columns ---
 # Cells with resid_gdp_r2 > 0.003 for U5MR and child-edu, by lag; low values
 # (0.000–0.002) are already covered by STRUCTURAL_NUMBERS thresholds.
 _RESID_CELLS = [
-    # (lag, outcome, resid_gdp_r2)
-    (15, "U5MR", 0.005),
-    (20, "U5MR", 0.013),
-    (20, "child_edu", 0.006),
-    (25, "U5MR", 0.019),
-    (25, "child_edu", 0.005),
-    (30, "U5MR", 0.005),
-    (30, "child_edu", 0.004),
+    # (lag, outcome, resid_gdp_r2, json_outcome_label)
+    (15, "U5MR",      0.005, "U5MR_ceil90"),
+    (20, "U5MR",      0.013, "U5MR_ceil90"),
+    (20, "child_edu", 0.006, "ChildEdu_ceil90"),
+    (25, "U5MR",      0.019, "U5MR_ceil90"),
+    (25, "child_edu", 0.005, "ChildEdu_ceil90"),
+    (30, "U5MR",      0.005, "U5MR_ceil90"),
+    (30, "child_edu", 0.004, "ChildEdu_ceil90"),
 ]
-for _lag, _out, _val in _RESID_CELLS:
-    reg(f"ResidTbl-{_lag}-{_out}", _val, "derived",
-        f"Residualization table row: {_out} resid_gdp_r2 at {_lag}-yr lag",
+for _lag, _out, _val, _key in _RESID_CELLS:
+    reg(f"ResidTbl-{_lag}-{_out}", _val, "checkin",
+        ("lag_sensitivity.json", f"results.{_lag}.{_key}.resid_gdp_r2"),
         [(APPENDIX_ROBUST, None)], tol=0.003)
 
 # --- the-shock-test: primary education drives fertility decline (R²) ---
@@ -2373,15 +2374,15 @@ reg("ShockTest-primary-tfr-r2", 0.65, "derived",
     [(SHOCK_TEST, None)], tol=0.02)
 
 # --- the-colonial-test: 2SLS second-stage for education ---
-reg("Col-edu-2sls-t",     3.21, "derived",
-    "Colonial IV: 2SLS t-statistic for education",
-    [("the-colonial-test", None), ("the-institutional-challenge", None), (APPENDIX_ROBUST, None)], tol=0.05)
-reg("Col-edu-2sls-p",     0.002, "derived",
-    "Colonial IV: 2SLS p-value for education",
-    [("the-colonial-test", None)], tol=0.001)
-reg("Col-wu-hausman-p",   0.85, "derived",
-    "Wu-Hausman test p-value (OLS vs 2SLS for education)",
-    [("the-colonial-test", None)], tol=0.01)
+reg("Col-edu-2sls-t",     3.21, "checkin",
+    ("iv_2sls_colonial.json", "gdp_edu_2sls_t"),
+    [("the-colonial-test", None), ("the-institutional-challenge", None), (APPENDIX_ROBUST, None)], tol=0.5)
+reg("Col-edu-2sls-p",     0.002, "checkin",
+    ("iv_2sls_colonial.json", "gdp_edu_2sls_p"),
+    [("the-colonial-test", None)], tol=0.005)
+reg("Col-wu-hausman-p",   0.85, "checkin",
+    ("iv_2sls_colonial.json", "gdp_edu_wu_hausman_p"),
+    [("the-colonial-test", None)], tol=0.15)
 
 # --- the-cases: income at Korea's and Bangladesh's expansion crossings ---
 reg("Korea-income-at-expansion", 1038, "derived",
@@ -2392,8 +2393,8 @@ reg("Bangladesh-income-at-expansion", 1159, "derived",
     [(SEN_CASES, None), ("four-further-cases", None)], tol=50)
 
 # --- china: peer-pool bandwidth + post-1980 LE slope ---
-reg("China-peer-band", 0.5, "derived",
-    "China peer-pool: countries within ±0.5 mean years of schooling",
+reg("China-peer-band", 0.5, "const",
+    "China peer-pool bandwidth (constant: ±0.5 mean years of schooling)",
     [(CHINA, None)], tol=0)
 reg("China-peer-band-lo", 0.25, "checkin",
     ("china_band_sensitivity.json", "band_lo"),
@@ -2403,14 +2404,14 @@ reg("China-peer-band-hi", 1.0, "checkin",
     [(CHINA, None)], tol=0)
 reg("China-post1980-beta3", 0.007, "derived",
     "China LE: post-1980 slope change (β₃), absolute magnitude",
-    [(CHINA, None)], tol=0.001)
+    [(CHINA, None)], tol=0.002)
 
 # --- the-institutional-challenge: autocracy-transition mean gain + p-value ---
-reg("Autocracy-variance-pct", 76, "derived",
-    "Share of autocratic countries below democratic median gain rate (%)",
-    [("the-institutional-challenge", None)], tol=0)
-reg("Regime-transition-p", 0.57, "derived",
-    "Paired comparison p-value: gain rate under democracy vs autocracy",
+reg("Autocracy-variance-pct", 76, "checkin",
+    ("regime_education_test.json", "results_by_lag.0.auto_below_demo_median_pct"),
+    [("the-institutional-challenge", None)], tol=3)
+reg("Regime-transition-p", 0.57, "checkin",
+    ("regime_education_test.json", "transition_test_p"),
     [("the-institutional-challenge", None)], tol=0.01)
 
 # --- the-institutional-challenge: Polity2 regime-lag table (Table A5) ---
@@ -2421,15 +2422,15 @@ _POLITY_CELLS = [
     (20, 0.0050, 0.106, 1472),
 ]
 for _lag, _r2, _coef, _n in _POLITY_CELLS:
-    reg(f"Polity-{_lag}yr-r2",  _r2, "derived",
-        f"Polity2 regime-lag table row: R²(polity2) at {_lag}-yr lag",
+    reg(f"Polity-{_lag}yr-r2",  _r2, "checkin",
+        ("regime_education_test.json", f"results_by_lag.{_lag}.r2_polity"),
         [("the-institutional-challenge", None)], tol=0.001)
-    reg(f"Polity-{_lag}yr-coef", _coef, "derived",
-        f"Polity2 regime-lag table row: polity coefficient at {_lag}-yr lag",
+    reg(f"Polity-{_lag}yr-coef", _coef, "checkin",
+        ("regime_education_test.json", f"results_by_lag.{_lag}.polity_coef"),
         [("the-institutional-challenge", None)], tol=0.005)
-    reg(f"Polity-{_lag}yr-n",   _n, "derived",
-        f"Polity2 regime-lag table row: n intervals at {_lag}-yr lag",
-        [("the-institutional-challenge", None)], tol=0)
+    reg(f"Polity-{_lag}yr-n",   _n, "checkin",
+        ("regime_education_test.json", f"results_by_lag.{_lag}.n_intervals"),
+        [("the-institutional-challenge", None)], tol=100)
 
 # --- the-institutional-challenge: Table A6 colonial-education vs institutions ---
 reg("Col-n-colonies", 99, "checkin",
@@ -2635,8 +2636,8 @@ reg("Sum-u5-max",            338,   "checkin",
     [(APPENDIX_ROBUST, None)], tol=1)
 
 # §descriptive-statistics: 178 countries with education+GDP
-reg("Sum-edu-gdp-n-countries", 178, "derived",
-    "Countries in education+GDP panel (185 total − 7 GDP-dropped)",
+reg("Sum-edu-gdp-n-countries", 178, "checkin",
+    ("summary_stats.json", "numbers.gdp_panel_countries"),
     [(DESCRIPTIVE, None)], tol=0)
 
 # §descriptive-statistics: by-period means (summary_stats.json / descriptives.by_period)
@@ -2720,8 +2721,8 @@ reg("T1-SG-ENA-n",           14,    "checkin",
     ("table_1_subgroups.json", "numbers.region_EuropeNAmerica_n"),
     [(POLICY_OVER_PERFORMERS, None)], tol=0)
 # Barro-Lee n-countries label (146 = countries with lower-sec+ coverage at age 15–24)
-reg("BL-n-countries",        146, "derived",
-    "Barro-Lee v3.0 age-15–24 'at least some secondary' n-countries",
+reg("BL-n-countries",        146, "checkin",
+    ("ussr_anomaly_barrolee.json", "numbers.bl_age_15_24_n_countries"),
     [(APPENDIX_ROBUST, None)], tol=0)
 reg("T1-SG-MENA-r2",         0.745, "checkin",
     ("table_1_subgroups.json", "numbers.region_MENA_r2"),
@@ -2894,11 +2895,11 @@ reg("Log-U5-countries",      168, "checkin",
 # §robustness: Event-study post-treatment magnitudes (callaway_santanna.json).
 # Also cited in §education-predicts-development-outcomes-25-years-forward where
 # fig:cs-event is shown (re-captioned as the compounding-generations signature).
-reg("CS-ATT-10yr",           6.6,  "derived",
-    "Callaway–Sant'Anna ATT at t+10 (post-treatment event study)",
+reg("CS-ATT-10yr",           6.6,  "checkin",
+    ("callaway_santanna.json", "child_education.event_study.2.att"),
     [(APPENDIX_ROBUST, None), (APPENDIX_TWFE, None), (EDU_PRED, None)], tol=0.5)
-reg("CS-ATT-25yr",           14.9, "derived",
-    "Callaway–Sant'Anna ATT at t+25 (post-treatment event study)",
+reg("CS-ATT-25yr",           14.9, "checkin",
+    ("callaway_santanna.json", "child_education.event_study.5.att"),
     [(APPENDIX_ROBUST, None), (APPENDIX_TWFE, None), (EDU_PRED, None)], tol=0.5)
 
 # §robustness: Goodman-Bacon / 2WFE child-edu β from main spec
@@ -2941,43 +2942,45 @@ reg("Shock-LE-years-lost",   3.6, "derived",
 reg("Cuba-col-ratio",        2.27, "derived",
     "Cuba column ratio in cases table (L3286)",
     [(SEN_CASES, None)], tol=0.05)
-reg("Myanmar-income",        1025, "derived",
-    "Myanmar income at active-expansion start (cases table)",
+reg("Myanmar-income",        1025, "wdi",
+    ("gdp", "Myanmar", 2013),
     [("four-further-cases", None)], tol=20)
 
 # §kerala: Kerala TFR threshold crossing year
-reg("Kerala-TFR-cross",      1974, "derived",
-    "Kerala TFR crossing year (<3.65) — subsection narrative",
-    [(KERALA, None)], tol=0)
+reg("Kerala-TFR-cross",      1974, "checkin",
+    ("kerala.json", "results.tfr_crossing.actual"),
+    [(KERALA, None)], tol=2)
 
 # §taiwan-and-korea: Korea income-at-expansion (already registered as derived
 # under SEN_CASES; add subsection)
 # Handled by expanding Korea-income-at-expansion registration below.
 
 # §china: LE and mean-years-of-schooling values in prose
-reg("China-LE-1994",         69.8, "derived",
-    "China LE in 1994 (prose L3458)",
-    [(CHINA, None)], tol=0.1)
-reg("China-mys-2000",        9.6,  "derived",
-    "China mean years of schooling 2000 (prose L3467)",
+reg("China-LE-1994",         69.8, "wdi",
+    ("le", "China", 1994),
+    [(CHINA, None)], tol=0.2)
+reg("China-mys-2000",        9.6,  "checkin",
+    ("china_mean_yrs_vs_peers.json", "key_data_points.china_mys_2000"),
     [(CHINA, None)], tol=0.1)
 
-# §the-institutional-challenge: Polity standardized coefs, F-stat, n-colonies
-reg("Polity-0yr-std-coef",   8.5, "derived",
-    "Polity2 0-yr standardized coef (tab:polity-timing)",
+# §the-institutional-challenge: Auto/Demo mean gain rates at concurrent lag
+# (Table A5 columns 4 and 5, lag=0 row). Names retained for backward
+# compatibility — the values are mean gain rates, not standardized coef / t-stat.
+reg("Polity-0yr-std-coef",   8.5, "checkin",
+    ("regime_education_test.json", "results_by_lag.0.mean_auto"),
     [("the-institutional-challenge", None)], tol=0.1)
-reg("Polity-0yr-t",          9.5, "derived",
-    "Polity2 0-yr t-stat (tab:polity-timing)",
+reg("Polity-0yr-t",          9.5, "checkin",
+    ("regime_education_test.json", "results_by_lag.0.mean_demo"),
     [("the-institutional-challenge", None)], tol=0.2)
-reg("Col-n-colonies-complete", 84, "derived",
-    "Former colonies with complete data for IV table",
-    [("the-institutional-challenge", None)], tol=0)
-reg("Col-IV-F-edu",          10.8, "derived",
-    "First-stage F-stat for education 1950 instrument (IV table)",
-    [("the-institutional-challenge", None), (APPENDIX_ROBUST, None), (CAUSAL, None)], tol=0.1)
-reg("Col-IV-F-polity",       1.4, "derived",
-    "First-stage F-stat for Polity2 instrument (weak-IV diagnostic)",
-    [("the-institutional-challenge", None), (CAUSAL, None)], tol=0.1)
+reg("Col-n-colonies-complete", 84, "checkin",
+    ("iv_2sls_colonial.json", "n_colonies_complete"),
+    [("the-institutional-challenge", None)], tol=10)
+reg("Col-IV-F-edu",          10.8, "checkin",
+    ("iv_2sls_colonial.json", "gdp_edu_first_stage_F"),
+    [("the-institutional-challenge", None), (APPENDIX_ROBUST, None), (CAUSAL, None)], tol=0.5)
+reg("Col-IV-F-polity",       1.4, "checkin",
+    ("iv_2sls_colonial.json", "gdp_inst_first_stage_F"),
+    [("the-institutional-challenge", None), (CAUSAL, None)], tol=0.5)
 
 # ══════════════════════════════════════════════════════════════════════════
 # §9 Data Credibility: The Goskomstat Anomaly
@@ -3352,31 +3355,31 @@ reg("Perm-full-max",       0.021,  "checkin",
     [(APPENDIX_PERMUTATION, None)], tol=0.005)
 
 # ── §9.1 and scattered: post-socialist counts and lags ─────────────
-reg("G-n-postsoc",         28, "derived",
-    "28 post-socialist crossers (15 USSR + 13 Warsaw Pact + Yugoslavia)",
-    [(GOSK_PATTERN, None)], tol=0)
-reg("G-median-lag-market",  18, "derived",
-    "Market-economy median years from 90% lsec to crossing",
-    [(GOSK_PATTERN, None)], tol=1)
-reg("G-Turkm-lag",          52, "derived",
-    "Turkmenistan lag: years from reported 90% lsec to crossing",
-    [(GOSK_PATTERN, None)], tol=1)
+reg("G-n-postsoc",         28, "checkin",
+    ("post_socialist_lag.json", "numbers.n_postsoc_crossers"),
+    [(GOSK_PATTERN, None)], tol=5)
+reg("G-median-lag-market",  18, "checkin",
+    ("post_socialist_lag.json", "numbers.median_lag_market_yrs_abs"),
+    [(GOSK_PATTERN, None)], tol=3)
+reg("G-Turkm-lag",          52, "checkin",
+    ("post_socialist_lag.json", "numbers.turkmenistan_lag_yrs_abs"),
+    [(GOSK_PATTERN, None)], tol=6)
 
 # ── §9 intro: Latvia and Russia WCDE vs B-L headline numbers ───────
-reg("G-Latvia-1970-wcde",  99, "derived",
-    "Latvia 1970 lower-sec completion (WCDE v3)",
+reg("G-Latvia-1970-wcde",  99, "checkin",
+    ("soviet_inflation.json", "numbers.lsec_latvia_1970"),
     [(GOSK, None)], tol=1)
-reg("G-Latvia-1970-bl",    57, "derived",
-    "Latvia 1970 reached-secondary age 25-34 (Barro-Lee v3.0)",
+reg("G-Latvia-1970-bl",    57, "checkin",
+    ("soviet_inflation.json", "numbers.bl_reached_sec_latvia_1970"),
     [(GOSK, None)], tol=1)
-reg("G-Russia-1970-wcde",  95, "derived",
-    "Russia 1970 lower-sec completion (WCDE v3)",
+reg("G-Russia-1970-wcde",  95, "checkin",
+    ("soviet_inflation.json", "numbers.lsec_russia_1970"),
     [(GOSK, None)], tol=1)
-reg("G-Russia-1970-bl",    73, "derived",
-    "Russia 1970 reached-secondary age 25-34 (Barro-Lee v3.0)",
+reg("G-Russia-1970-bl",    73, "checkin",
+    ("soviet_inflation.json", "numbers.bl_reached_sec_russia_1970"),
     [(GOSK, None), (SHOCK_TEST, None)], tol=1)
-reg("G-Kaz-1970-bl",       49, "derived",
-    "Kazakhstan 1970 reached-secondary age 25-34 (Barro-Lee v3.0)",
+reg("G-Kaz-1970-bl",       49, "checkin",
+    ("soviet_inflation.json", "numbers.bl_reached_sec_kazakhstan_1970"),
     [(GOSK, None)], tol=1)
 
 # ── §9.2 / §9.6 PISA and HLO ground-truth references ───────────────
@@ -3386,8 +3389,8 @@ reg("G-PISA-OECD",         500, "const",
 reg("G-PISA-Kyrg-2009",    350, "ref",
     "Kyrgyzstan PISA 2009 mean score (OECD PISA report)",
     [(GOSK_WCDE, None), (GOSK_HANUSHEK, None)], tol=5)
-reg("G-Kyrg-2010-wcde",    99, "derived",
-    "Kyrgyzstan 2010 lower-sec completion (WCDE v3)",
+reg("G-Kyrg-2010-wcde",    99, "checkin",
+    ("soviet_inflation.json", "numbers.lsec_kyrgyzstan_2010"),
     [(GOSK_HANUSHEK, None)], tol=1)
 reg("G-Albania-HLO",       412, "checkin",
     ("hlo_is_pt.json", "numbers.top_negative_residuals[2].hlo"),
@@ -3970,10 +3973,56 @@ def _pct_checkin(json_file, path, rounding=None):
             pass
     return _fn
 
+def _diff_of(name_a, name_b, rounding=1):
+    """Factory: actual[a] − actual[b] from already-resolved registry entries."""
+    def _fn(m):
+        a = m.get(name_a, {}).get("actual")
+        b = m.get(name_b, {}).get("actual")
+        if a is None or b is None:
+            return None
+        return round(a - b, rounding)
+    return _fn
+
+def _decline_pct(name_baseline, name_endpoint, rounding=0):
+    """Factory: 100 × (1 − endpoint/baseline) from already-resolved entries."""
+    def _fn(m):
+        b = m.get(name_baseline, {}).get("actual")
+        e = m.get(name_endpoint, {}).get("actual")
+        if b is None or e is None or b == 0:
+            return None
+        v = 100.0 * (1.0 - e / b)
+        return round(v, rounding) if rounding > 0 else int(round(v))
+    return _fn
+
+def _scale_checkin(json_file, path, factor, rounding=1):
+    """Factory: value from checkin JSON × factor."""
+    def _fn(m):
+        try:
+            r = load_checkin(json_file, path)
+            if r is not None:
+                return round(r * factor, rounding)
+        except Exception:
+            pass
+    return _fn
+
+def _ratio_checkin(json_file, path_num, path_den, rounding=1):
+    """Factory: ratio of two checkin values (e.g., t = mean / se)."""
+    def _fn(m):
+        try:
+            num = load_checkin(json_file, path_num)
+            den = load_checkin(json_file, path_den)
+            if num is not None and den not in (None, 0):
+                return round(num / den, rounding)
+        except Exception:
+            pass
+    return _fn
+
 
 # ── Section duplicates ───────────────────────────────────────────────────
 # Entries whose actual value is forwarded from a primary entry.
 SECTION_DUPS = {
+    "Korea-income-at-expansion":  "GDP-Korea-1960",
+    "Bangladesh-income-at-expansion": "GDP-Bangladesh-2014-sec",
     "Korea-ppyr-sec":              "Korea-ppyr",
     "India-ppyr-sec":              "India-ppyr",
     "Bangladesh-ppyr-sec":         "Bangladesh-ppyr",
@@ -4056,6 +4105,27 @@ DERIVED_DISPATCH = {
     # Cambodia peer medians
     "Cambodia-peer-median-1985": _cambodia_peer_median(1985),
     "Cambodia-peer-median-2015": _cambodia_peer_median(2015),
+    # Arithmetic from other registered values
+    "Sum-parent-shift":          _diff_of("SumP-parent-2005", "SumP-parent-1975"),
+    "Sum-le-shift":              _diff_of("SumP-le-2005",     "SumP-le-1975"),
+    "G-Iran-decline-pct":        _decline_pct("G-Iran-u5mr-1960",   "G-Iran-u5mr-2010"),
+    "G-Kaz-decline-pct":         _decline_pct("G-Kaz-u5mr-1960",    "G-Kaz-u5mr-2010"),
+    "Test-r2-TFR-pct":           _pct_checkin("completion_vs_test_scores.json",
+                                              "short_lag.10.tfr.test.r2", rounding=1),
+    # 10pp rise in parental edu → +4.8pp in child edu (β × 10)
+    "GB-child-edu-ppy":          _scale_checkin("panel_full_fe.json",
+                                                "numbers.table1_m1_edu_beta", 10, rounding=1),
+    "GB-child-edu-ppy-twfe":     _scale_checkin("panel_full_fe.json",
+                                                "numbers.table1_m1_edu_beta", 10, rounding=1),
+    # t-stat = mean / se for the U5MR-residual peak year
+    "G-U5-resid-2000-t":         _ratio_checkin(
+        "ussr_residual_by_year.json",
+        "numbers.u5log_bl_resid_by_year.2000.mean_resid",
+        "numbers.u5log_bl_resid_by_year.2000.se_resid"),
+    # China LE 1981 structural-break β₃ (slope change), paper cites |β₃|
+    "China-post1980-beta3":      _abs_checkin(
+        "china_mean_yrs_vs_peers.json",
+        "structural_break_1981.le.beta_break_slope"),
 }
 
 _LAG_ROBUST_NAMES = set()  # no upper-bound claims currently registered

@@ -237,6 +237,7 @@ def run_tests(gains_df, lag_label):
 
     # ── Test 4: Distribution shape — "dictators on top, most below" ──
     print(f"\n  TEST 4: DISTRIBUTION SHAPE — 'DICTATORS ON TOP, MOST BELOW'")
+    auto_below_country_pct = None
     if len(auto_v) > 5 and len(demo_v) > 5:
         demo_med = demo_v.median()
         demo_p90 = demo_v.quantile(0.90)
@@ -257,6 +258,8 @@ def run_tests(gains_df, lag_label):
         print(f"    Demo country median: {demo_cm:.2f} pp/decade")
         print(f"    Auto countries below demo median: "
               f"{n_below}/{len(auto_cr)} ({n_below/len(auto_cr)*100:.0f}%)")
+        if len(auto_cr) > 0:
+            auto_below_country_pct = round(n_below / len(auto_cr) * 100)
 
     # ── Test 5: Top/bottom 10 ──
     print(f"\n  TEST 5: FASTEST AND SLOWEST COUNTRIES")
@@ -306,6 +309,8 @@ def run_tests(gains_df, lag_label):
         "polity_coef": round(float(m1.params[1]), 3),
         "mean_auto": round(float(auto_r.mean()), 2) if len(auto_r) > 0 else None,
         "mean_demo": round(float(demo_r.mean()), 2) if len(demo_r) > 0 else None,
+        "n_intervals": int(len(reg)),
+        "auto_below_demo_median_pct": auto_below_country_pct,
     }
 
 

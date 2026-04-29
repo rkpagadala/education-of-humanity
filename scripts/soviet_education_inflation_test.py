@@ -27,7 +27,7 @@ import pandas as pd
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, SCRIPT_DIR)
-from _shared import PROC, write_checkin
+from _shared import PROC, DATA, write_checkin
 
 CENTRAL_ASIA = [
     "Kazakhstan", "Uzbekistan", "Turkmenistan",
@@ -163,12 +163,37 @@ def main():
                      ("Iran (Islamic Republic of)", "iran"),
                      ("Afghanistan", "afghanistan"),
                      ("Pakistan", "pakistan"),
-                     ("Turkey", "turkey")]:
-        for y in (1970, 1980):
+                     ("Turkey", "turkey"),
+                     ("Latvia", "latvia"),
+                     ("Russian Federation", "russia"),
+                     ("Kyrgyzstan", "kyrgyzstan")]:
+        for y in (1970, 1980, 2010):
             if c in lsec_b.index and y in lsec_b.columns:
                 v = lsec_b.loc[c, y]
                 numbers[f"lsec_{label}_{y}"] = (
                     round(float(v), 1) if not pd.isna(v) else None)
+
+    # Barro-Lee v3.0 reached-secondary age 25–34 for the headline
+    # WCDE-vs-BL comparison cited in §goskomstat-anomaly. The paper
+    # quotes Latvia/Russia/Kazakhstan 1970 to motivate the 50-pp wedge
+    # the IIASA reconstruction inherited from Goskomstat.
+    bl_path = os.path.join(DATA, "barro_lee_v3.csv")
+    if os.path.exists(bl_path):
+        bl = pd.read_csv(bl_path)
+        for c, label in [("Latvia", "latvia"),
+                         ("Russian Federation", "russia"),
+                         ("Kazakhstan", "kazakhstan")]:
+            # Barro-Lee categories are mutually exclusive highest-level
+            # attained (lu+lp+ls+lh = 100). "Reached secondary" =
+            # those whose highest level is at least lower secondary
+            # (some secondary or above) = ls + lh.
+            row = bl[(bl["country"] == c) &
+                     (bl["agefrom"] == 25) &
+                     (bl["year"] == 1970) &
+                     (bl["sex"] == "MF")]
+            if len(row) == 1:
+                reached = float(row["ls"].iloc[0]) + float(row["lh"].iloc[0])
+                numbers[f"bl_reached_sec_{label}_1970"] = round(reached)
 
     write_checkin("soviet_inflation.json", {
         "numbers": numbers,

@@ -242,11 +242,19 @@ def main():
           f"{r2['ussr_mean_resid']:+.3f} = "
           f"{r2['ussr_resid_bias_std']:+.2f} SDs")
 
+    # Total Barro-Lee panel countries at age 15-24 (cited in §appendix-robust
+    # alternative-measure table footnote)
+    bl_age15 = pd.read_csv(os.path.join(DATA, "barro_lee_v3.csv"))
+    bl_age15 = bl_age15[(bl_age15['agefrom'] == 15) &
+                        (bl_age15['ageto'] == 24)]
+    bl_15_24_countries = int(bl_age15['country'].nunique())
+
     write_checkin("ussr_anomaly_barrolee.json", {
         "numbers": {
             "n_ussr_countries": r1["n_countries"],
             "n_non_ussr_obs": r1["n_non"],
             "n_ussr_obs": r1["n_ussr"],
+            "bl_age_15_24_n_countries": bl_15_24_countries,
             # LE panel
             "le_beta_per_yr": round(r1["beta1"], 3),
             "le_sigma_global": round(r1["sigma"], 2),

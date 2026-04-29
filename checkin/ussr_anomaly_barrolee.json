@@ -3,6 +3,7 @@
     "n_ussr_countries": 10,
     "n_non_ussr_obs": 749,
     "n_ussr_obs": 60,
+    "bl_age_15_24_n_countries": 146,
     "le_beta_per_yr": 2.783,
     "le_sigma_global": 6.07,
     "le_ussr_mean_resid_yrs": -5.6,

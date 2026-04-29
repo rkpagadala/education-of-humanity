@@ -1,8 +1,12 @@
 {
   "n_colonies": 99,
+  "n_colonies_complete": 90,
   "gdp_edu_first_stage_F": 10.79,
   "gdp_inst_first_stage_F": 1.38,
   "gdp_edu_2sls_coef": 0.0585,
+  "gdp_edu_2sls_t": 2.96,
+  "gdp_edu_2sls_p": 0.004,
+  "gdp_edu_wu_hausman_p": 0.9278,
   "gdp_inst_2sls_coef": 0.4233,
   "gdp_edu_wald": 0.0585,
   "le_edu_first_stage_F": 10.79,

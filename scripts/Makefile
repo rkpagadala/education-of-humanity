@@ -123,7 +123,8 @@ analysis: \
 	$(CHECKIN)/permutation_null.json \
 	$(CHECKIN)/missing_by_period.json \
 	$(CHECKIN)/table7_stepwise.json \
-	$(CHECKIN)/ssa_education_tfr.json
+	$(CHECKIN)/ssa_education_tfr.json \
+	$(CHECKIN)/post_socialist_lag.json
 
 # ── Rules ─────────────────────────────────────────────────────────────
 
@@ -209,6 +210,9 @@ $(CHECKIN)/edu_vs_gdp_tfr_residualized.json: residualization/education_vs_tfr.py
 	$(RUN)
 
 $(CHECKIN)/ssa_education_tfr.json: ssa_education_tfr.py _shared.py $(ALL_DATA)
+	$(RUN)
+
+$(CHECKIN)/post_socialist_lag.json: post_socialist_lag.py _shared.py $(ALL_DATA)
 	$(RUN)
 
 $(CHECKIN)/edu_vs_gdp_entry_ceiling.json: residualization/by_entry_ceiling.py _shared.py $(ALL_DATA)
