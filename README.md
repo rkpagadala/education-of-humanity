@@ -1,8 +1,8 @@
 # Education of Humanity — Replication Code and Data
 
-Every empirical claim in the paper traces to a script that produces it from source data. This repo is the minimum needed to verify that.
+**Website:** [educationfirst.world](https://educationfirst.world) — paper, evidence, country cases, and chatbot.
 
-**Paper:** [educationfirst.world](https://educationfirst.world)
+Every empirical claim in the paper traces to a script that produces it from source data. This repo is the minimum needed to verify that.
 
 ## Verify
 
