@@ -3,7 +3,7 @@ Does education predict happiness better than GDP?
 
 Merges World Happiness Report (2015-2023) Cantril ladder scores with
 WCDE lower-secondary completion (both sexes, age 20-24) and World Bank
-GDP per capita (constant 2017 USD).
+GDP per capita (constant 2015 USD).
 
 Runs three OLS regressions on the cross-country panel:
   1. Happiness ~ Education

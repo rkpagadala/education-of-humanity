@@ -1,7 +1,7 @@
 {
   "method": "Country FE (demeaned). Entry-cohort design: for each threshold (10-90%), find first year each country crosses it, then include all T-year observations from entry onward. T = 1960/1965/.../1990, outcome = LE(T+25). Education interpolated from WCDE 5-year to annual (linear).",
   "education_variable": "lower secondary completion, both sexes, age 20-24 (WCDE v3)",
-  "gdp_variable": "log GDP per capita, constant 2017 USD (World Bank WDI)",
+  "gdp_variable": "log GDP per capita, constant 2015 USD (World Bank WDI)",
   "le_variable": "life expectancy at birth (World Bank WDI)",
   "thresholds": {
     "10": {
@@ -654,5 +654,5 @@
     }
   },
   "script": "scripts/residualization/by_entry_threshold.py",
-  "produced": "2026-04-28"
+  "produced": "2026-04-29"
 }

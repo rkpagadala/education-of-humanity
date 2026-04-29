@@ -18,7 +18,7 @@ Method (identical to le_r2_by_lag_backfilled.py):
     - Outcome at year T (WDI 1960-2015, or WCDE for ChildEdu)
     - Predictor A: lower-secondary completion at T-L (WCDE, 1875-2015)
     - Predictor B: log GDP/cap at T-L, backfilled to $500/cap for all
-                   country-years before 1960 (constant 2017 USD), no lag cap.
+                   country-years before 1960 (constant 2015 USD), no lag cap.
     - Country fixed effects: demean each series by country mean.
     - Record within-country R² for each predictor.
 
@@ -50,7 +50,7 @@ LAG_STEP    = 5
 PANEL_START = 1960   # outcome panel start (WDI coverage)
 PANEL_END   = 2015   # outcome panel end
 
-SUBSISTENCE_GDP = 500    # constant 2017 USD (approximate pre-industrial income)
+SUBSISTENCE_GDP = 500    # constant 2015 USD (approximate pre-industrial income)
 BACKFILL_START  = 1870   # earliest year to backfill GDP
 BACKFILL_END    = 1959   # last year before WDI GDP data begins
 
@@ -115,7 +115,7 @@ print(f"N countries (intersection of edu/GDP/LE/TFR/U5): {len(countries)}")
 print(f"GDP original columns:   {min(gdp_orig.columns)}–{max(gdp_orig.columns)}")
 print(f"GDP backfilled columns: {min(gdp_back.columns)}–{max(gdp_back.columns)}")
 print(f"Education columns:      {min(edu.columns)}–{max(edu.columns)}")
-print(f"Subsistence backfill value: ${SUBSISTENCE_GDP}/capita (constant 2017 USD)\n")
+print(f"Subsistence backfill value: ${SUBSISTENCE_GDP}/capita (constant 2015 USD)\n")
 
 
 # ── within-country R² (vectorized: country-FE via demean, closed-form R²) ────

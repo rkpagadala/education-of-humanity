@@ -195,7 +195,7 @@
   "variable_labels": {
     "parent_edu": "Parental lower secondary completion (%, T$-$25)",
     "child_edu": "Child lower secondary completion (%, T)",
-    "log_gdp": "Log GDP per capita (constant 2017 USD)",
+    "log_gdp": "Log GDP per capita (constant 2015 USD)",
     "life_exp": "Life expectancy at birth (years)",
     "tfr": "Total fertility rate (births per woman)",
     "u5mr": "Under-5 mortality (per 1{,}000 live births)"
@@ -579,5 +579,5 @@
     ]
   },
   "script": "scripts/tables/summary_stats.py",
-  "produced": "2026-04-28"
+  "produced": "2026-04-29"
 }

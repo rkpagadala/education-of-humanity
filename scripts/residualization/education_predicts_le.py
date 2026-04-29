@@ -46,7 +46,7 @@ DATA
 - Life expectancy: World Bank WDI, indicator SP.DYN.LE00.IN
   URL: https://data.worldbank.org/indicator/SP.DYN.LE00.IN
 
-- GDP per capita: World Bank WDI, constant 2017 USD, indicator NY.GDP.PCAP.KD
+- GDP per capita: World Bank WDI, constant 2015 USD, indicator NY.GDP.PCAP.KD
   URL: https://data.worldbank.org/indicator/NY.GDP.PCAP.KD
   Log-transformed (standard in economics — a 10% GDP increase matters more
   when you're poor than when you're rich).
@@ -205,7 +205,7 @@ print(f"At <10%: GDP R² is effectively zero ({results['lt10']['gdp_r2']}).")
 write_checkin("edu_vs_gdp_predicts_le.json", {
     "method": "Country FE (demeaned), T=1975/1980/1985/1990, outcome=LE(T+25)",
     "education_variable": "lower secondary completion, both sexes, age 20-24 (WCDE v3)",
-    "gdp_variable": "log GDP per capita, constant 2017 USD (World Bank WDI)",
+    "gdp_variable": "log GDP per capita, constant 2015 USD (World Bank WDI)",
     "le_variable": "life expectancy at birth (World Bank WDI)",
     "data_sources": {
         "education": "https://dataexplorer.wittgensteincentre.org/wcde-v3/",

@@ -16,7 +16,7 @@
 """
 cases/country_gdp.py
 
-Load World Bank GDP per capita data (constant 2017 USD) and verify every
+Load World Bank GDP per capita data (constant 2015 USD) and verify every
 country-specific GDP figure cited in the paper.
 """
 
@@ -60,7 +60,7 @@ CLAIMS = [
 # ── Run checks ───────────────────────────────────────────────────────────────
 results = []
 print("=" * 80)
-print("COUNTRY GDP VERIFICATION (constant 2017 USD)")
+print("COUNTRY GDP VERIFICATION (constant 2015 USD)")
 print("=" * 80)
 print(f"{'Claim':<30} {'Cited':>10} {'Actual':>10} {'Diff%':>8} {'OK?':>5}")
 print("-" * 80)

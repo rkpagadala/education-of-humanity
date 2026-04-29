@@ -28,7 +28,7 @@ DATA
 Same as residualization/education_predicts_le.py:
 - Education: WCDE v3, lower secondary completion, both sexes, age 20-24
 - Life expectancy: World Bank WDI (SP.DYN.LE00.IN)
-- GDP: World Bank WDI, constant 2017 USD (NY.GDP.PCAP.KD), log-transformed
+- GDP: World Bank WDI, constant 2015 USD (NY.GDP.PCAP.KD), log-transformed
 
 OUTPUT
 ------
@@ -57,7 +57,7 @@ print(f"  Education: {edu['country'].nunique()} countries, "
 le_raw = load_wb("life_expectancy_years.csv")
 print(f"  Life expectancy: {len(le_raw)} countries")
 
-# GDP per capita: World Bank WDI, constant 2017 USD
+# GDP per capita: World Bank WDI, constant 2015 USD
 gdp_raw = load_wb("gdppercapita_us_inflation_adjusted.csv")
 print(f"  GDP: {len(gdp_raw)} countries")
 
@@ -164,7 +164,7 @@ checkin = {
         "Education interpolated from WCDE 5-year to annual (linear)."
     ),
     "education_variable": "lower secondary completion, both sexes, age 20-24 (WCDE v3)",
-    "gdp_variable": "log GDP per capita, constant 2017 USD (World Bank WDI)",
+    "gdp_variable": "log GDP per capita, constant 2015 USD (World Bank WDI)",
     "le_variable": "life expectancy at birth (World Bank WDI)",
     "thresholds": results,
 }

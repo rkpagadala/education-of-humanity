@@ -1,7 +1,7 @@
 {
   "method": "Country FE (demeaned). Cutoff applied to education(T). T = [1975, 1980, 1985, 1990], lag = 25. Outcomes: LE, TFR, log U5MR, child education (lower-sec at T+25).",
   "education_variable": "lower secondary completion, both sexes, age 20-24 (WCDE v3)",
-  "gdp_variable": "log GDP per capita, constant 2017 USD (World Bank WDI)",
+  "gdp_variable": "log GDP per capita, constant 2015 USD (World Bank WDI)",
   "outcome_variables": {
     "le": "life expectancy at birth (WDI SP.DYN.LE00.IN)",
     "tfr": "total fertility rate (WDI SP.DYN.TFRT.IN)",
@@ -271,5 +271,5 @@
     }
   },
   "script": "scripts/residualization/cutoff_all_outcomes.py",
-  "produced": "2026-04-28"
+  "produced": "2026-04-29"
 }

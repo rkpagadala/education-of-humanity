@@ -12,7 +12,7 @@ Produces two artefacts cited in the Appendix:
 
 Data sources:
   - Education (both sexes, age 20-24): wcde/data/processed/lower_sec_both.csv
-  - GDP: data/gdppercapita_us_inflation_adjusted.csv (constant 2017 USD)
+  - GDP: data/gdppercapita_us_inflation_adjusted.csv (constant 2015 USD)
   - Life expectancy: data/life_expectancy_years.csv
   - TFR: data/children_per_woman_total_fertility.csv
   - U-5 mortality: data/child_mortality_u5.csv
@@ -96,7 +96,7 @@ def main():
     vars_ = [
         ("parent_edu",  "Parental lower secondary completion (%, T$-$25)"),
         ("child_edu",   "Child lower secondary completion (%, T)"),
-        ("log_gdp",     "Log GDP per capita (constant 2017 USD)"),
+        ("log_gdp",     "Log GDP per capita (constant 2015 USD)"),
         ("life_exp",    "Life expectancy at birth (years)"),
         ("tfr",         "Total fertility rate (births per woman)"),
         ("u5mr",        "Under-5 mortality (per 1{,}000 live births)"),

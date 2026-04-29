@@ -1146,10 +1146,10 @@ reg("Tertiary-Japan-2020", 32, "checkin",
 # --- Philippines ---
 
 # ══════════════════════════════════════════════════════════════════════════
-# WDI DATA — GDP per capita (constant 2017 USD, inflation adjusted)
+# WDI DATA — GDP per capita (constant 2015 USD, inflation adjusted)
 # ══════════════════════════════════════════════════════════════════════════
 
-# Table 3 GDP values (2015, constant 2017 USD)
+# Table 3 GDP values (2015, constant 2015 USD)
 
 # Korea-Costa Rica comparison (Section 9)
 reg("GDP-Korea-1960",     1038,  "wdi", ("gdp", "Korea", 1960), [], tol=5)

@@ -21,7 +21,7 @@ Matches scripts/residualization/education_predicts_le.py:
   - T years: 1975, 1980, 1985, 1990 (WCDE 5-year intervals)
   - Lag: 25 years → outcomes at 2000, 2005, 2010, 2015
   - Education: WCDE v3, lower secondary completion, both sexes, age 20-24
-  - GDP: log GDP per capita, constant 2017 USD (WDI)
+  - GDP: log GDP per capita, constant 2015 USD (WDI)
   - U5MR: log-transformed (standard for mortality; compresses skew)
   - Child education: lower secondary completion at T+25 in the same country
 
@@ -200,7 +200,7 @@ write_checkin("cutoff_all_outcomes.json", {
         "Outcomes: LE, TFR, log U5MR, child education (lower-sec at T+25)."
     ),
     "education_variable": "lower secondary completion, both sexes, age 20-24 (WCDE v3)",
-    "gdp_variable": "log GDP per capita, constant 2017 USD (World Bank WDI)",
+    "gdp_variable": "log GDP per capita, constant 2015 USD (World Bank WDI)",
     "outcome_variables": {
         "le": "life expectancy at birth (WDI SP.DYN.LE00.IN)",
         "tfr": "total fertility rate (WDI SP.DYN.TFRT.IN)",

@@ -121,7 +121,7 @@ ax2.scatter(latest["log_gdp"], latest["happiness_score"],
 xfit2 = np.linspace(latest["log_gdp"].min(), latest["log_gdp"].max(), 100)
 yfit2 = m_gdp.params["const"] + m_gdp.params["log_gdp"] * xfit2
 ax2.plot(xfit2, yfit2, color="#b2182b", linewidth=2)
-ax2.set_xlabel("log GDP per capita (constant 2017 USD)", fontsize=12)
+ax2.set_xlabel("log GDP per capita (constant 2015 USD)", fontsize=12)
 ax2.set_title(f"B.  log(GDP) → Happiness\nR² = {m_gdp.rsquared:.3f}", fontsize=13)
 
 fig.suptitle("Happiness tracks income, not education", fontsize=14, fontweight="bold", y=1.02)

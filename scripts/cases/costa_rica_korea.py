@@ -2,14 +2,14 @@
 cases/costa_rica_korea.py
 
 Verify the Korea vs Costa Rica comparison (Section 9):
-  - Costa Rica 1960 GDP: $3,609; Korea 1960 GDP: $1,038 (constant 2017 USD)
+  - Costa Rica 1960 GDP: $3,609; Korea 1960 GDP: $1,038 (constant 2015 USD)
   - Ratio: 3.5x
   - By 1990: Korea $9,673 (9-fold increase); Costa Rica $6,037 (1.7-fold increase)
   - Korea expansion rate: 8-14 pp per five years (WCDE lower_sec)
   - Costa Rica expansion rate: 3-6 pp per five years
 
 Data sources:
-  - GDP: data/gdppercapita_us_inflation_adjusted.csv (World Bank, constant 2017 USD)
+  - GDP: data/gdppercapita_us_inflation_adjusted.csv (World Bank, constant 2015 USD)
   - Education: wcde/data/processed/lower_sec_both.csv (WCDE v3)
 
 Output: checkin/costa_rica_korea.json

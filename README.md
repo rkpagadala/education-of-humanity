@@ -63,7 +63,7 @@ The scripts are included so you can audit the method. To re-run them, download W
 | Variable | Source | Indicator |
 |----------|--------|-----------|
 | Education | [WCDE v3](https://www.wittgensteincentre.org/en/wcde.htm) | Lower secondary completion, both sexes, age 20-24 |
-| GDP per capita | [World Bank WDI](https://databank.worldbank.org/source/world-development-indicators) | Constant 2017 USD (NY.GDP.PCAP.KD) |
+| GDP per capita | [World Bank WDI](https://databank.worldbank.org/source/world-development-indicators) | Constant 2015 USD (NY.GDP.PCAP.KD) |
 | Life expectancy | World Bank WDI | SP.DYN.LE00.IN |
 | Fertility | World Bank WDI | SP.DYN.TFRT.IN |
 | Child mortality | World Bank WDI | Under-5 per 1,000 live births |

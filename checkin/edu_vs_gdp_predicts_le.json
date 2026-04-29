@@ -1,7 +1,7 @@
 {
   "method": "Country FE (demeaned), T=1975/1980/1985/1990, outcome=LE(T+25)",
   "education_variable": "lower secondary completion, both sexes, age 20-24 (WCDE v3)",
-  "gdp_variable": "log GDP per capita, constant 2017 USD (World Bank WDI)",
+  "gdp_variable": "log GDP per capita, constant 2015 USD (World Bank WDI)",
   "le_variable": "life expectancy at birth (World Bank WDI)",
   "data_sources": {
     "education": "https://dataexplorer.wittgensteincentre.org/wcde-v3/",
@@ -91,5 +91,5 @@
     }
   },
   "script": "scripts/residualization/education_predicts_le.py",
-  "produced": "2026-04-28"
+  "produced": "2026-04-29"
 }

@@ -22,5 +22,5 @@
     "TA1-M1-R2": 0.009
   },
   "script": "scripts/robustness/twfe_child_edu.py",
-  "produced": "2026-04-28"
+  "produced": "2026-04-29"
 }

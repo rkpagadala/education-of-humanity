@@ -1,0 +1,96 @@
+{
+  "method": "Direct CSV lookup. WCDE world row from cohort_lower_sec_both.csv; WDI world row from gdppercapita_us_inflation_adjusted.csv. Tolerance: \u00b12pp for education, \u00b15% for GDP.",
+  "handout": {
+    "global_edu_pct": {
+      "1965": 28.0,
+      "1990": 45.0,
+      "2015": 65.0
+    },
+    "global_gdp_usd": {
+      "1965": 3000.0,
+      "1990": 5000.0,
+      "2015": 10500.0
+    },
+    "bangladesh_edu_pct": {
+      "1965": 14.0,
+      "1990": 23.0,
+      "2015": 53.0
+    },
+    "bangladesh_gdp_usd": {
+      "1990": 279.0,
+      "2015": 1086.0
+    }
+  },
+  "results": {
+    "global_edu_pct": {
+      "1965": {
+        "claim": 28.0,
+        "actual": 39.55,
+        "verdict": "MISMATCH"
+      },
+      "1990": {
+        "claim": 45.0,
+        "actual": 61.25,
+        "verdict": "MISMATCH"
+      },
+      "2015": {
+        "claim": 65.0,
+        "actual": 74.2,
+        "verdict": "MISMATCH"
+      }
+    },
+    "global_gdp_usd": {
+      "1965": {
+        "claim": 3000.0,
+        "actual": 4316.32,
+        "verdict": "MISMATCH"
+      },
+      "1990": {
+        "claim": 5000.0,
+        "actual": 6783.21,
+        "verdict": "MISMATCH"
+      },
+      "2015": {
+        "claim": 10500.0,
+        "actual": 10161.94,
+        "verdict": "OK"
+      }
+    },
+    "bangladesh_edu_pct": {
+      "1965": {
+        "claim": 14.0,
+        "actual": 12.94,
+        "verdict": "OK"
+      },
+      "1990": {
+        "claim": 23.0,
+        "actual": 23.07,
+        "verdict": "OK"
+      },
+      "2015": {
+        "claim": 53.0,
+        "actual": 52.65,
+        "verdict": "OK"
+      }
+    },
+    "bangladesh_gdp_usd": {
+      "1990": {
+        "claim": 279.0,
+        "actual": 473.44,
+        "verdict": "MISMATCH"
+      },
+      "2015": {
+        "claim": 1086.0,
+        "actual": 1224.39,
+        "verdict": "MISMATCH"
+      }
+    }
+  },
+  "summary": {
+    "ok": 4,
+    "mismatch": 7,
+    "missing": 0
+  },
+  "script": "scripts/handout/verify_handout_globals.py",
+  "produced": "2026-04-29"
+}

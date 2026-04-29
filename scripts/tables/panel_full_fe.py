@@ -16,7 +16,7 @@ not this script.
 Data sources:
   - Education: wcde/data/processed/lower_sec_both.csv (WCDE v3, completion %)
   - Female education: wcde/data/processed/lower_sec_female.csv
-  - GDP: data/gdppercapita_us_inflation_adjusted.csv (World Bank, constant 2017 USD)
+  - GDP: data/gdppercapita_us_inflation_adjusted.csv (World Bank, constant 2015 USD)
 
 Output: checkin/panel_full_fe.json
 """
