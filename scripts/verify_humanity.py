@@ -119,6 +119,9 @@ WDI_NAMES = {
     "Indonesia": "Indonesia",
     "Russia": "Russian Federation",
     "South Africa": "South Africa",
+    "Iran": "Iran, Islamic Rep.",
+    "Turkey": "Turkiye",
+    "Kazakhstan": "Kazakhstan",
 }
 
 # WCDE country name mapping
@@ -1165,10 +1168,10 @@ reg("GDP-China-1960",       241, "wdi", ("gdp", "China", 1960), [(TAIWAN_KOREA, 
 # Note: Korea 1960 already registered above as GDP-Korea-1960
 
 # Philippines 2022 status (§11.1 explicit crossing statement)
-reg("Phil-TFR-cross-yr",    2003, "ref",
+reg("Phil-TFR-cross-yr",    2003, "derived",
     "First year Philippines TFR fell below 3.65 (WDI children_per_woman_total_fertility.csv)",
     [(TAIWAN_KOREA, None)], tol=0)
-reg("Phil-LE-cross-yr",     2017, "ref",
+reg("Phil-LE-cross-yr",     2017, "derived",
     "First year Philippines LE exceeded 69.8 (WDI life_expectancy_years.csv)",
     [(TAIWAN_KOREA, None)], tol=0)
 reg("Phil-TFR-2022",        1.9,  "wdi", ("tfr", "Philippines", 2022),
@@ -2534,12 +2537,14 @@ reg("ResidTab-CE-raw-r2",    0.303, "checkin",
 reg("ResidTab-U5-edu-r2",    0.284, "checkin",
     ("lag_sensitivity.json", "results.25.U5MR_ceil90.edu_r2"),
     [(GDP_INDEP, None)], tol=0.01)
-# Ratio column values (resid_gdp_r2/edu_r2):
+# Residualized-GDP p-values (paper Table 3 col 5). Frozen paper values
+# drifted from regression_tables.json (LE 0.6026, CE 0.401) so left as
+# manual-check REF rather than wired with a wide tolerance.
 reg("ResidTab-LE-ratio",     0.56,  "derived",
-    "LE resid/edu ratio (paper table col 5)",
+    "LE residualized-GDP p-value (paper table col 5; frozen)",
     [(GDP_INDEP, None)], tol=0.01)
 reg("ResidTab-CE-ratio",     0.31,  "derived",
-    "child-edu resid/edu ratio (paper table col 5)",
+    "child-edu residualized-GDP p-value (paper table col 5; frozen)",
     [(GDP_INDEP, None)], tol=0.01)
 
 # §gdp-has-no-independent-effect: 74 countries with lower-sec >85% in 2010
@@ -3035,23 +3040,17 @@ reg("G-prim-lsec-neighbors-1980", 21.0, "checkin",
 
 # ── §9.3 Phenotype test: U5MR trajectories  ────────────────────────
 # These are WDI lookups for Iran/Kazakhstan/Turkey U5MR; verified via WDI
-reg("G-Iran-u5mr-1960",   327, "ref",
-    "Iran U5MR 1960 (WDI SH.DYN.MORT)",
+reg("G-Iran-u5mr-1960",   327, "wdi", ("u5mr", "Iran", 1960),
     [(GOSK_PHENO, None)], tol=5)
-reg("G-Iran-u5mr-2010",   20,  "ref",
-    "Iran U5MR 2010 (WDI)",
+reg("G-Iran-u5mr-2010",   20,  "wdi", ("u5mr", "Iran", 2010),
     [(GOSK_PHENO, None)], tol=2)
-reg("G-Turkey-u5mr-1960", 258, "ref",
-    "Turkey U5MR 1960 (WDI)",
+reg("G-Turkey-u5mr-1960", 258, "wdi", ("u5mr", "Turkey", 1960),
     [(GOSK_PHENO, None)], tol=5)
-reg("G-Turkey-u5mr-2010", 17,  "ref",
-    "Turkey U5MR 2010 (WDI)",
+reg("G-Turkey-u5mr-2010", 17,  "wdi", ("u5mr", "Turkey", 2010),
     [(GOSK_PHENO, None)], tol=2)
-reg("G-Kaz-u5mr-1960",    107, "ref",
-    "Kazakhstan U5MR 1960 (WDI)",
+reg("G-Kaz-u5mr-1960",    107, "wdi", ("u5mr", "Kazakhstan", 1960),
     [(GOSK_PHENO, None)], tol=5)
-reg("G-Kaz-u5mr-2010",    20,  "ref",
-    "Kazakhstan U5MR 2010 (WDI)",
+reg("G-Kaz-u5mr-2010",    20,  "wdi", ("u5mr", "Kazakhstan", 2010),
     [(GOSK_PHENO, None)], tol=2)
 reg("G-Iran-decline-pct",  94, "derived",
     "Iran U5MR percentage decline 1960-2010",
@@ -3513,6 +3512,7 @@ def load_wdi(indicator, country, year):
         "gdp": "gdppercapita_us_inflation_adjusted.csv",
         "tfr": "children_per_woman_total_fertility.csv",
         "le":  "life_expectancy_years.csv",
+        "u5mr": "child_mortality_u5.csv",
     }
     wdi_name = WDI_NAMES.get(country, country)
     filename = file_map.get(indicator)
@@ -3527,6 +3527,9 @@ def load_wdi(indicator, country, year):
         matches = [x for x in df.index if x.lower() == wdi_name.lower()]
         if matches:
             wdi_name = matches[0]
+        elif country in df.index:
+            # Fall back to bare country name (some CSVs use short forms)
+            wdi_name = country
         else:
             return None
     col = str(year)
@@ -4018,6 +4021,42 @@ def _ratio_checkin(json_file, path_num, path_den, rounding=1):
     return _fn
 
 
+def _first_crossing(country, indicator, threshold, direction):
+    """Factory: first year a WDI indicator crosses a threshold.
+
+    direction='below': first year value < threshold (TFR transition)
+    direction='above': first year value > threshold (LE transition)
+    """
+    def _fn(m):
+        file_map = {
+            "tfr": "children_per_woman_total_fertility.csv",
+            "le":  "life_expectancy_years.csv",
+        }
+        filename = file_map.get(indicator)
+        if not filename:
+            return None
+        path = os.path.join(DATA, filename)
+        if not os.path.exists(path):
+            return None
+        df = pd.read_csv(path, index_col="Country")
+        wdi_name = WDI_NAMES.get(country, country)
+        if wdi_name not in df.index:
+            return None
+        row = df.loc[wdi_name].dropna()
+        for col, val in row.items():
+            try:
+                year = int(col)
+                v = float(val)
+            except (ValueError, TypeError):
+                continue
+            if direction == "below" and v < threshold:
+                return year
+            if direction == "above" and v > threshold:
+                return year
+        return None
+    return _fn
+
+
 # ── Section duplicates ───────────────────────────────────────────────────
 # Entries whose actual value is forwarded from a primary entry.
 SECTION_DUPS = {
@@ -4126,6 +4165,9 @@ DERIVED_DISPATCH = {
     "China-post1980-beta3":      _abs_checkin(
         "china_mean_yrs_vs_peers.json",
         "structural_break_1981.le.beta_break_slope"),
+    # Philippines first-crossing years (WDI scan)
+    "Phil-TFR-cross-yr":         _first_crossing("Philippines", "tfr", 3.65, "below"),
+    "Phil-LE-cross-yr":          _first_crossing("Philippines", "le",  69.8, "above"),
 }
 
 _LAG_ROBUST_NAMES = set()  # no upper-bound claims currently registered

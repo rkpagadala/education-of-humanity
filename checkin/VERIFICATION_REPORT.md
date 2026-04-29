@@ -1,15 +1,15 @@
 # Verification Report
 
-Generated: 2026-04-28 20:53
+Generated: 2026-04-28 22:09
 
-## Result: 1031/1031 PASS
+## Result: 1039/1039 PASS
 
 | Metric | Count |
 |--------|-------|
-| Verified claims | 1031 |
+| Verified claims | 1039 |
 | Failed | 0 |
 | Missing | 0 |
-| Literature refs (manual) | 43 |
+| Literature refs (manual) | 35 |
 | Unregistered numbers | 0 |
 | Section offset issues | 0 |
 
@@ -19,10 +19,10 @@ Generated: 2026-04-28 20:53
 |--------|------|------|---------|
 | checkin | 860 | 0 | 0 |
 | const | 12 | 0 | 0 |
-| derived | 79 | 0 | 0 |
+| derived | 81 | 0 | 0 |
 | ref | 0 | 0 | 0 |
 | wcde | 24 | 0 | 0 |
-| wdi | 56 | 0 | 0 |
+| wdi | 62 | 0 | 0 |
 
 ## By Paper Section
 
@@ -54,11 +54,11 @@ Generated: 2026-04-28 20:53
 | literate-ct | 10 | 10 | 0 |
 | methodological-frontier | 1 | 1 | 0 |
 | nine-year-measurement | 1 | 1 | 0 |
-| phenotype-test-ussr | 3 | 3 | 0 |
+| phenotype-test-ussr | 9 | 9 | 0 |
 | policy-over-performers | 80 | 80 | 0 |
 | robustness | 309 | 309 | 0 |
 | specialisation-requires-loaded-labour | 1 | 1 | 0 |
-| taiwan-and-korea | 9 | 9 | 0 |
+| taiwan-and-korea | 11 | 11 | 0 |
 | the-cases | 28 | 28 | 0 |
 | the-colonial-test | 20 | 20 | 0 |
 | the-convergence | 6 | 6 | 0 |
