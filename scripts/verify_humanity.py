@@ -2320,6 +2320,18 @@ reg("Bihar-grain-drop",    19,     "ref", "India grain production drop 1965-66 (
 reg("Kerala-female-lit",   39,     "ref", "Kerala female literacy ~1966 (%)",         [FAMINE_TEST], tol=1)
 reg("Kerala-1943-deaths",  90000,  "ref", "Travancore famine 1943 deaths",            [FAMINE_TEST], tol=5000)
 reg("Kerala-1966-yr",      1966,   "ref", "Year of Bihar-Kerala comparison",          [FAMINE_TEST], tol=0)
+reg("Ireland-deaths",      1000000, "ref", "Great Irish Famine excess deaths (Mokyr 1983; Ó Gráda 1999)",      [FAMINE_TEST], tol=0)
+reg("Ireland-emigration",  1500000, "ref", "Famine-decade emigration outflow (Mokyr 1983)",                    [FAMINE_TEST], tol=0)
+reg("Ireland-1841-lit",    47,      "ref", "Ireland aggregate literacy, 1841 Census, age 5+ (Ó Gráda 1995)",    [FAMINE_TEST], tol=0)
+reg("Ireland-Ulster-lit",  60,      "ref", "Protestant Ulster literacy, 1841 Census (Ó Gráda 1995)",            [FAMINE_TEST], tol=0)
+reg("Ireland-Connacht-lit", 30,     "ref", "Catholic Connacht/west Munster literacy, 1841 (Ó Gráda 1995)",     [FAMINE_TEST], tol=0)
+reg("Ireland-PenalStart",  1695,    "ref", "Penal Laws began",                                                  [FAMINE_TEST], tol=0)
+reg("Ireland-PenalEnd",    1829,    "ref", "Catholic Emancipation",                                             [FAMINE_TEST], tol=0)
+reg("Ireland-NSA",         1831,    "ref", "National School Act",                                               [FAMINE_TEST], tol=0)
+reg("Ireland-blight",      1845,    "ref", "Year potato blight reached Ireland",                                [FAMINE_TEST], tol=0)
+reg("Ireland-150yr",       150,     "ref", "Years from Penal Laws to potato blight",                            [FAMINE_TEST], tol=0)
+reg("Ireland-NSA-gap",     14,      "ref", "Years from National School Act to blight",                          [FAMINE_TEST], tol=0)
+reg("Ireland-OGrada-yr",   1999,    "ref", "Ó~Gráda 1999 citation year",                                         [FAMINE_TEST], tol=0)
 
 # ══════════════════════════════════════════════════════════════════════════
 # SECTION COVERAGE — remaining values surfaced by coverage scan
@@ -3009,7 +3021,7 @@ reg("G-Turk-1970-wcde",    95,  "checkin",
     [(GOSK_WCDE, None)], tol=1)
 reg("G-Iran-1970-wcde",    22,  "checkin",
     ("soviet_inflation.json", "numbers.lsec_iran_1970"),
-    [(GOSK, None), (GOSK_WCDE, None)], tol=1)
+    [(GOSK_WCDE, None)], tol=1)
 reg("G-Turkey-1970-wcde",  22,  "checkin",
     ("soviet_inflation.json", "numbers.lsec_turkey_1970"),
     [(GOSK_WCDE, None)], tol=1)
@@ -3144,6 +3156,203 @@ reg("G-n-Yugoslavia",   16, "checkin",
     ("edu_measure_horse_race.json",
      "numbers.subgroup_split.tfr_bl_reach_sec_yugoslavia_albania.n"),
     [(GOSK_BL, None)], tol=0)
+
+# ── §9.4b Moscow Meridian: per-republic residuals + distance ──────
+GOSK_MERIDIAN = "moscow-meridian"
+
+# Per-republic LE σ and log U5MR σ residuals (WCDE lsec 1960–2020)
+# Indexed by country in checkin/ussr_per_country_residuals.json
+def _G_PCR(key):
+    return ("ussr_per_country_residuals.json", f"wcde.{key}")
+
+# Westward republics
+reg("G-MM-Latvia-LE-sd",      -1.06, "checkin",
+    _G_PCR("latvia.le_resid_sd"), [(GOSK_MERIDIAN, None)], tol=0.05)
+reg("G-MM-Latvia-U5-sd",       0.75, "checkin",
+    _G_PCR("latvia.u5log_resid_sd"), [(GOSK_MERIDIAN, None)], tol=0.05)
+reg("G-MM-Estonia-LE-sd",     -0.89, "checkin",
+    _G_PCR("estonia.le_resid_sd"), [(GOSK_MERIDIAN, None)], tol=0.05)
+reg("G-MM-Estonia-U5-sd",      0.57, "checkin",
+    _G_PCR("estonia.u5log_resid_sd"), [(GOSK_MERIDIAN, None)], tol=0.05)
+reg("G-MM-Lithuania-LE-sd",   -0.81, "checkin",
+    _G_PCR("lithuania.le_resid_sd"), [(GOSK_MERIDIAN, None)], tol=0.05)
+reg("G-MM-Lithuania-U5-sd",    0.35, "checkin",
+    _G_PCR("lithuania.u5log_resid_sd"), [(GOSK_MERIDIAN, None)], tol=0.05)
+reg("G-MM-Belarus-LE-sd",     -0.96, "checkin",
+    _G_PCR("belarus.le_resid_sd"), [(GOSK_MERIDIAN, None)], tol=0.05)
+reg("G-MM-Belarus-U5-sd",      0.43, "checkin",
+    _G_PCR("belarus.u5log_resid_sd"),
+    [(GOSK, None), (GOSK_MERIDIAN, None)], tol=0.05)
+reg("G-MM-Moldova-LE-sd",     -1.41, "checkin",
+    _G_PCR("republic of moldova.le_resid_sd"),
+    [(GOSK_MERIDIAN, None)], tol=0.05)
+reg("G-MM-Moldova-U5-sd",      1.87, "checkin",
+    _G_PCR("republic of moldova.u5log_resid_sd"),
+    [(GOSK_MERIDIAN, None)], tol=0.05)
+reg("G-MM-Ukraine-LE-sd",     -0.95, "checkin",
+    _G_PCR("ukraine.le_resid_sd"), [(GOSK_MERIDIAN, None)], tol=0.05)
+reg("G-MM-Ukraine-U5-sd",      1.09, "checkin",
+    _G_PCR("ukraine.u5log_resid_sd"), [(GOSK_MERIDIAN, None)], tol=0.05)
+# Russia (metropole)
+reg("G-MM-Russia-LE-sd",      -1.40, "checkin",
+    _G_PCR("russian federation.le_resid_sd"),
+    [(GOSK_MERIDIAN, None)], tol=0.05)
+reg("G-MM-Russia-U5-sd",       1.13, "checkin",
+    _G_PCR("russian federation.u5log_resid_sd"),
+    [(GOSK_MERIDIAN, None)], tol=0.05)
+# Eastward republics
+reg("G-MM-Armenia-LE-sd",     -1.42, "checkin",
+    _G_PCR("armenia.le_resid_sd"), [(GOSK_MERIDIAN, None)], tol=0.05)
+reg("G-MM-Armenia-U5-sd",      2.77, "checkin",
+    _G_PCR("armenia.u5log_resid_sd"), [(GOSK_MERIDIAN, None)], tol=0.05)
+reg("G-MM-Georgia-LE-sd",     -1.51, "checkin",
+    _G_PCR("georgia.le_resid_sd"), [(GOSK_MERIDIAN, None)], tol=0.05)
+reg("G-MM-Georgia-U5-sd",      2.58, "checkin",
+    _G_PCR("georgia.u5log_resid_sd"),
+    [(GOSK, None), (GOSK_MERIDIAN, None)], tol=0.05)
+reg("G-MM-Azerbaijan-LE-sd",  -2.20, "checkin",
+    _G_PCR("azerbaijan.le_resid_sd"),
+    [(GOSK_MERIDIAN, None)], tol=0.05)
+reg("G-MM-Azerbaijan-U5-sd",   3.63, "checkin",
+    _G_PCR("azerbaijan.u5log_resid_sd"),
+    [(GOSK_MERIDIAN, None)], tol=0.05)
+reg("G-MM-Turkmenistan-LE-sd", -2.31, "checkin",
+    _G_PCR("turkmenistan.le_resid_sd"),
+    [(GOSK_MERIDIAN, None)], tol=0.05)
+reg("G-MM-Turkmenistan-U5-sd", 4.00, "checkin",
+    _G_PCR("turkmenistan.u5log_resid_sd"),
+    [(GOSK_MERIDIAN, None)], tol=0.05)
+reg("G-MM-Tajikistan-LE-sd",  -2.20, "checkin",
+    _G_PCR("tajikistan.le_resid_sd"),
+    [(GOSK_MERIDIAN, None)], tol=0.05)
+reg("G-MM-Tajikistan-U5-sd",   3.73, "checkin",
+    _G_PCR("tajikistan.u5log_resid_sd"),
+    [(GOSK_MERIDIAN, None)], tol=0.05)
+reg("G-MM-Uzbekistan-LE-sd",  -1.00, "checkin",
+    _G_PCR("uzbekistan.le_resid_sd"),
+    [(GOSK_MERIDIAN, None)], tol=0.05)
+reg("G-MM-Kyrgyzstan-LE-sd",  -1.80, "checkin",
+    _G_PCR("kyrgyzstan.le_resid_sd"),
+    [(GOSK_MERIDIAN, None)], tol=0.05)
+reg("G-MM-Kyrgyzstan-U5-sd",   3.23, "checkin",
+    _G_PCR("kyrgyzstan.u5log_resid_sd"),
+    [(GOSK_MERIDIAN, None)], tol=0.05)
+reg("G-MM-Kazakhstan-LE-sd",  -1.90, "checkin",
+    _G_PCR("kazakhstan.le_resid_sd"),
+    [(GOSK_MERIDIAN, None)], tol=0.05)
+reg("G-MM-Kazakhstan-U5-sd",   2.69, "checkin",
+    _G_PCR("kazakhstan.u5log_resid_sd"),
+    [(GOSK_MERIDIAN, None)], tol=0.05)
+
+# Distances from Moscow (km). The chapter intro cites two unsigned
+# great-circle distances; the table uses signed east-of-Moscow km
+# for all 15 republics. All 17 are constants from haversine on
+# Soviet-era capital coords (see CAPITALS dict in
+# scripts/ussr_metropole_distance.py).
+reg("G-MM-Belarus-dist-km",    676, "const",
+    "Great-circle Minsk to Moscow (haversine), Soviet-era capitals",
+    [(GOSK, None)], tol=2)
+reg("G-MM-Georgia-dist-km",   1646, "const",
+    "Great-circle Tbilisi to Moscow (haversine), Soviet-era capitals",
+    [(GOSK, None)], tol=2)
+# Table column: signed east-of-Moscow km (negative = west)
+reg("G-MM-Latvia-east-km",    -844, "const",
+    "Signed east-of-Moscow km, Riga", [(GOSK_MERIDIAN, None)], tol=2)
+reg("G-MM-Estonia-east-km",   -804, "const",
+    "Signed east-of-Moscow km, Tallinn",
+    [(GOSK_MERIDIAN, None)], tol=2)
+reg("G-MM-Lithuania-east-km", -771, "const",
+    "Signed east-of-Moscow km, Vilnius",
+    [(GOSK_MERIDIAN, None)], tol=2)
+reg("G-MM-Belarus-east-km",   -629, "const",
+    "Signed east-of-Moscow km, Minsk",
+    [(GOSK_MERIDIAN, None)], tol=2)
+reg("G-MM-Moldova-east-km",   -547, "const",
+    "Signed east-of-Moscow km, Chisinau",
+    [(GOSK_MERIDIAN, None)], tol=2)
+reg("G-MM-Ukraine-east-km",   -444, "const",
+    "Signed east-of-Moscow km, Kyiv",
+    [(GOSK_MERIDIAN, None)], tol=2)
+reg("G-MM-Armenia-east-km",    431, "const",
+    "Signed east-of-Moscow km, Yerevan",
+    [(GOSK_MERIDIAN, None)], tol=2)
+reg("G-MM-Georgia-east-km",    451, "const",
+    "Signed east-of-Moscow km, Tbilisi",
+    [(GOSK_MERIDIAN, None)], tol=2)
+reg("G-MM-Azerbaijan-east-km", 765, "const",
+    "Signed east-of-Moscow km, Baku",
+    [(GOSK_MERIDIAN, None)], tol=2)
+reg("G-MM-Turkmenistan-east-km", 1291, "const",
+    "Signed east-of-Moscow km, Ashgabat",
+    [(GOSK_MERIDIAN, None)], tol=2)
+reg("G-MM-Tajikistan-east-km",  1934, "const",
+    "Signed east-of-Moscow km, Dushanbe",
+    [(GOSK_MERIDIAN, None)], tol=2)
+reg("G-MM-Uzbekistan-east-km",  1961, "const",
+    "Signed east-of-Moscow km, Tashkent",
+    [(GOSK_MERIDIAN, None)], tol=2)
+reg("G-MM-Kyrgyzstan-east-km",  2285, "const",
+    "Signed east-of-Moscow km, Frunze",
+    [(GOSK_MERIDIAN, None)], tol=2)
+reg("G-MM-Kazakhstan-east-km",  2422, "const",
+    "Signed east-of-Moscow km, Alma-Ata",
+    [(GOSK_MERIDIAN, None)], tol=2)
+# Range-endpoint shorthand cited in chapter intro and §data:
+# "2.6 to 4.0 σ" frames the eastward inflation magnitude
+reg("G-MM-east-low-rounded",   2.6, "const",
+    "Eastward U5MR residual lower bound (Georgia +2.58, rounded)",
+    [(GOSK, None), (DATA_SEC, None),
+     ("causal-identification-the-bad-control-problem-and-natural-experiments", None)],
+    tol=0.05)
+reg("G-MM-east-high-rounded",  4.0, "const",
+    "Eastward U5MR residual upper bound (Turkmenistan +4.00, rounded)",
+    [(GOSK, None), (DATA_SEC, None),
+     ("causal-identification-the-bad-control-problem-and-natural-experiments", None)],
+    tol=0.05)
+# Year of Moldova annexation cited in moscow-meridian
+reg("G-MM-Moldova-annex-yr",  1940, "const",
+    "Year Moldova annexed by USSR (Bessarabia)",
+    [(GOSK_MERIDIAN, None)], tol=0)
+
+# Group means + correlations
+reg("G-MM-west-mean-U5-sd",   0.84, "checkin",
+    ("ussr_metropole_direction.json", "group_means_u5log_sd.west"),
+    [(GOSK_MERIDIAN, None), (GOSK, None)], tol=0.03)
+reg("G-MM-east-mean-U5-sd",   3.23, "checkin",
+    ("ussr_metropole_direction.json", "group_means_u5log_sd.east"),
+    [(GOSK_MERIDIAN, None), (GOSK, None)], tol=0.03)
+reg("G-MM-east-corr",         0.86, "checkin",
+    ("ussr_metropole_distance.json",
+     "correlations_excl_russia.dist_to_u5log_sd"),
+    [(GOSK_MERIDIAN, None)], tol=0.03)
+reg("G-MM-east-within-corr",  0.27, "checkin",
+    ("ussr_metropole_direction.json",
+     "correlations.east_dist_to_u5log"),
+    [(GOSK_MERIDIAN, None)], tol=0.03)
+reg("G-MM-n-13",              13, "const",
+    "Non-Russia, non-Uzbekistan republics with multi-year residuals",
+    [(GOSK_MERIDIAN, None)], tol=0)
+reg("G-MM-n-west",             6, "const",
+    "Westward USSR republics (Belarus, Ukraine, Lith, Lat, Est, Mol)",
+    [(GOSK_MERIDIAN, None), (GOSK, None), (DATA_SEC, None)], tol=0)
+reg("G-MM-n-east",             8, "const",
+    "Eastward USSR republics (Geo, Arm, Az, Turkm, Uz, Tj, Kg, Kz)",
+    [(GOSK_MERIDIAN, None), (GOSK, None), (DATA_SEC, None)], tol=0)
+reg("G-MM-Kunaev-yrs",        17, "const",
+    "Kunaev years on full Politburo (1971–1987)",
+    [(GOSK_MERIDIAN, None)], tol=0)
+reg("G-MM-east-low-sd",      2.58, "checkin",
+    _G_PCR("georgia.u5log_resid_sd"),
+    [(GOSK_MERIDIAN, None), (GOSK, None)], tol=0.05)
+reg("G-MM-east-high-sd",     4.00, "checkin",
+    _G_PCR("turkmenistan.u5log_resid_sd"),
+    [(GOSK_MERIDIAN, None), (GOSK, None)], tol=0.05)
+reg("G-MM-west-low-sd",      0.35, "checkin",
+    _G_PCR("lithuania.u5log_resid_sd"),
+    [(GOSK_MERIDIAN, None)], tol=0.05)
+reg("G-MM-west-high-sd",     1.87, "checkin",
+    _G_PCR("republic of moldova.u5log_resid_sd"),
+    [(GOSK_MERIDIAN, None)], tol=0.05)
 
 # ── §9.5 Cohort shadow: residual by year under Barro-Lee ───────────
 reg("G-LE-resid-2000",    -8.5, "checkin",

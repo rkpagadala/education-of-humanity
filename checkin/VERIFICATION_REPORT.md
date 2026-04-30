@@ -1,15 +1,15 @@
 # Verification Report
 
-Generated: 2026-04-29 09:23
+Generated: 2026-04-30 00:02
 
-## Result: 1039/1039 PASS
+## Result: 1099/1099 PASS
 
 | Metric | Count |
 |--------|-------|
-| Verified claims | 1039 |
+| Verified claims | 1099 |
 | Failed | 0 |
 | Missing | 0 |
-| Literature refs (manual) | 35 |
+| Literature refs (manual) | 47 |
 | Unregistered numbers | 0 |
 | Section offset issues | 0 |
 
@@ -17,8 +17,8 @@ Generated: 2026-04-29 09:23
 
 | Source | Pass | Fail | Missing |
 |--------|------|------|---------|
-| checkin | 860 | 0 | 0 |
-| const | 12 | 0 | 0 |
+| checkin | 897 | 0 | 0 |
+| const | 35 | 0 | 0 |
 | derived | 81 | 0 | 0 |
 | ref | 0 | 0 | 0 |
 | wcde | 24 | 0 | 0 |
@@ -33,11 +33,11 @@ Generated: 2026-04-29 09:23
 | appendix-twfe | 51 | 51 | 0 |
 | barro-lee-partial | 21 | 21 | 0 |
 | cambodia-the-pt-shadow | 8 | 8 | 0 |
-| causal-identification-the-bad-control-problem-and-natural-experiments | 5 | 5 | 0 |
+| causal-identification-the-bad-control-problem-and-natural-experiments | 7 | 7 | 0 |
 | china | 19 | 19 | 0 |
 | cohort-shadow | 7 | 7 | 0 |
 | completion-as-the-operative-variable | 21 | 21 | 0 |
-| data | 4 | 4 | 0 |
+| data | 8 | 8 | 0 |
 | defining-development | 13 | 13 | 0 |
 | descriptive-statistics | 28 | 28 | 0 |
 | education-predicts-development-outcomes-25-years-forward | 126 | 126 | 0 |
@@ -46,13 +46,14 @@ Generated: 2026-04-29 09:23
 | exclusion-robustness | 15 | 15 | 0 |
 | four-further-cases | 18 | 18 | 0 |
 | gdp-has-no-independent-effect | 63 | 63 | 0 |
-| goskomstat-anomaly | 7 | 7 | 0 |
+| goskomstat-anomaly | 18 | 18 | 0 |
 | goskomstat-anomaly-pattern | 5 | 5 | 0 |
 | hanushek-reconciliation | 36 | 36 | 0 |
 | invisible-from-inside | 1 | 1 | 0 |
 | kerala | 1 | 1 | 0 |
 | literate-ct | 10 | 10 | 0 |
 | methodological-frontier | 1 | 1 | 0 |
+| moscow-meridian | 56 | 56 | 0 |
 | nine-year-measurement | 1 | 1 | 0 |
 | phenotype-test-ussr | 9 | 9 | 0 |
 | policy-over-performers | 80 | 80 | 0 |

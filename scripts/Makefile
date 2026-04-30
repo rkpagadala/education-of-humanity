@@ -114,6 +114,10 @@ analysis: \
 	$(CHECKIN)/edu_measure_horse_race.json \
 	$(CHECKIN)/ussr_anomaly_barrolee.json \
 	$(CHECKIN)/ussr_residual_by_year.json \
+	$(CHECKIN)/ussr_per_country_residuals.json \
+	$(CHECKIN)/ussr_metropole_distance.json \
+	$(CHECKIN)/ussr_metropole_direction.json \
+	$(CHECKIN)/ussr_politburo_voice.json \
 	$(CHECKIN)/ussr_exclusion_panel.json \
 	$(CHECKIN)/hanushek_horse_race.json \
 	$(CHECKIN)/hlo_is_pt.json \
@@ -320,6 +324,18 @@ $(CHECKIN)/ussr_anomaly_barrolee.json: ussr_anomaly_barrolee.py _shared.py $(ALL
 	$(RUN)
 
 $(CHECKIN)/ussr_residual_by_year.json: ussr_residual_by_year.py _shared.py $(ALL_DATA) $(DATA)/barro_lee_v3.csv
+	$(RUN)
+
+$(CHECKIN)/ussr_per_country_residuals.json: ussr_per_country_residuals.py _shared.py $(ALL_DATA) $(DATA)/barro_lee_v3.csv
+	$(RUN)
+
+$(CHECKIN)/ussr_metropole_distance.json: ussr_metropole_distance.py _shared.py $(CHECKIN)/ussr_per_country_residuals.json
+	$(RUN)
+
+$(CHECKIN)/ussr_metropole_direction.json: ussr_metropole_direction.py _shared.py $(CHECKIN)/ussr_per_country_residuals.json
+	$(RUN)
+
+$(CHECKIN)/ussr_politburo_voice.json: ussr_politburo_voice.py _shared.py $(CHECKIN)/ussr_per_country_residuals.json
 	$(RUN)
 
 $(CHECKIN)/ussr_exclusion_panel.json: robustness/ussr_exclusion_panel.py _shared.py $(ALL_DATA)

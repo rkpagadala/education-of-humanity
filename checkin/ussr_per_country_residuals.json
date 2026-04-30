@@ -1,0 +1,262 @@
+{
+  "wcde": {
+    "lithuania": {
+      "le_resid": -4.529,
+      "le_resid_sd": -0.807,
+      "tfr_resid": -0.0018,
+      "tfr_resid_sd": 0.018,
+      "u5log_resid": 0.17,
+      "u5log_resid_sd": 0.346,
+      "mean_abs_le_u5_sd": 0.576
+    },
+    "belarus": {
+      "le_resid": -5.607,
+      "le_resid_sd": -0.96,
+      "tfr_resid": -0.0899,
+      "tfr_resid_sd": -0.118,
+      "u5log_resid": 0.216,
+      "u5log_resid_sd": 0.431,
+      "mean_abs_le_u5_sd": 0.696
+    },
+    "estonia": {
+      "le_resid": -5.448,
+      "le_resid_sd": -0.888,
+      "tfr_resid": 0.0532,
+      "tfr_resid_sd": 0.08,
+      "u5log_resid": 0.259,
+      "u5log_resid_sd": 0.568,
+      "mean_abs_le_u5_sd": 0.728
+    },
+    "latvia": {
+      "le_resid": -6.382,
+      "le_resid_sd": -1.063,
+      "tfr_resid": -0.0512,
+      "tfr_resid_sd": -0.049,
+      "u5log_resid": 0.378,
+      "u5log_resid_sd": 0.753,
+      "mean_abs_le_u5_sd": 0.908
+    },
+    "uzbekistan": {
+      "le_resid": -4.408,
+      "le_resid_sd": -1.002,
+      "tfr_resid": 1.0653,
+      "tfr_resid_sd": 1.471,
+      "u5log_resid": null,
+      "u5log_resid_sd": null,
+      "mean_abs_le_u5_sd": 1.002
+    },
+    "ukraine": {
+      "le_resid": -5.594,
+      "le_resid_sd": -0.951,
+      "tfr_resid": -0.2745,
+      "tfr_resid_sd": -0.312,
+      "u5log_resid": 0.57,
+      "u5log_resid_sd": 1.086,
+      "mean_abs_le_u5_sd": 1.019
+    },
+    "russian federation": {
+      "le_resid": -8.046,
+      "le_resid_sd": -1.402,
+      "tfr_resid": -0.1201,
+      "tfr_resid_sd": -0.102,
+      "u5log_resid": 0.586,
+      "u5log_resid_sd": 1.134,
+      "mean_abs_le_u5_sd": 1.268
+    },
+    "republic of moldova": {
+      "le_resid": -8.331,
+      "le_resid_sd": -1.406,
+      "tfr_resid": 0.0279,
+      "tfr_resid_sd": 0.031,
+      "u5log_resid": 0.971,
+      "u5log_resid_sd": 1.867,
+      "mean_abs_le_u5_sd": 1.636
+    },
+    "georgia": {
+      "le_resid": -9.087,
+      "le_resid_sd": -1.515,
+      "tfr_resid": 0.5269,
+      "tfr_resid_sd": 0.591,
+      "u5log_resid": 1.304,
+      "u5log_resid_sd": 2.58,
+      "mean_abs_le_u5_sd": 2.047
+    },
+    "armenia": {
+      "le_resid": -8.863,
+      "le_resid_sd": -1.421,
+      "tfr_resid": 0.6653,
+      "tfr_resid_sd": 0.623,
+      "u5log_resid": 1.402,
+      "u5log_resid_sd": 2.775,
+      "mean_abs_le_u5_sd": 2.098
+    },
+    "kazakhstan": {
+      "le_resid": -11.553,
+      "le_resid_sd": -1.897,
+      "tfr_resid": 1.0753,
+      "tfr_resid_sd": 1.167,
+      "u5log_resid": 1.382,
+      "u5log_resid_sd": 2.688,
+      "mean_abs_le_u5_sd": 2.293
+    },
+    "kyrgyzstan": {
+      "le_resid": -11.074,
+      "le_resid_sd": -1.803,
+      "tfr_resid": 1.8504,
+      "tfr_resid_sd": 1.953,
+      "u5log_resid": 1.657,
+      "u5log_resid_sd": 3.228,
+      "mean_abs_le_u5_sd": 2.515
+    },
+    "azerbaijan": {
+      "le_resid": -13.548,
+      "le_resid_sd": -2.197,
+      "tfr_resid": 1.2875,
+      "tfr_resid_sd": 1.253,
+      "u5log_resid": 1.881,
+      "u5log_resid_sd": 3.631,
+      "mean_abs_le_u5_sd": 2.914
+    },
+    "tajikistan": {
+      "le_resid": -13.337,
+      "le_resid_sd": -2.201,
+      "tfr_resid": 2.833,
+      "tfr_resid_sd": 2.974,
+      "u5log_resid": 1.924,
+      "u5log_resid_sd": 3.733,
+      "mean_abs_le_u5_sd": 2.967
+    },
+    "turkmenistan": {
+      "le_resid": -14.093,
+      "le_resid_sd": -2.305,
+      "tfr_resid": 2.5146,
+      "tfr_resid_sd": 2.59,
+      "u5log_resid": 2.069,
+      "u5log_resid_sd": 3.996,
+      "mean_abs_le_u5_sd": 3.151
+    }
+  },
+  "barro_lee": {
+    "lithuania": {
+      "le_resid": -1.515,
+      "le_resid_sd": -0.268,
+      "tfr_resid": -0.5024,
+      "tfr_resid_sd": -0.463,
+      "u5log_resid": -0.043,
+      "u5log_resid_sd": -0.104,
+      "mean_abs_le_u5_sd": 0.186
+    },
+    "latvia": {
+      "le_resid": -0.944,
+      "le_resid_sd": -0.156,
+      "tfr_resid": -1.0461,
+      "tfr_resid_sd": -0.953,
+      "u5log_resid": -0.09,
+      "u5log_resid_sd": -0.262,
+      "mean_abs_le_u5_sd": 0.209
+    },
+    "estonia": {
+      "le_resid": -4.641,
+      "le_resid_sd": -0.791,
+      "tfr_resid": -0.2205,
+      "tfr_resid_sd": -0.178,
+      "u5log_resid": 0.205,
+      "u5log_resid_sd": 0.406,
+      "mean_abs_le_u5_sd": 0.598
+    },
+    "ukraine": {
+      "le_resid": -3.333,
+      "le_resid_sd": -0.558,
+      "tfr_resid": -0.6501,
+      "tfr_resid_sd": -0.604,
+      "u5log_resid": 0.364,
+      "u5log_resid_sd": 0.639,
+      "mean_abs_le_u5_sd": 0.599
+    },
+    "russian federation": {
+      "le_resid": -4.826,
+      "le_resid_sd": -0.808,
+      "tfr_resid": -0.6807,
+      "tfr_resid_sd": -0.603,
+      "u5log_resid": 0.392,
+      "u5log_resid_sd": 0.65,
+      "mean_abs_le_u5_sd": 0.729
+    },
+    "republic of moldova": {
+      "le_resid": -5.553,
+      "le_resid_sd": -0.963,
+      "tfr_resid": -0.4737,
+      "tfr_resid_sd": -0.443,
+      "u5log_resid": 0.683,
+      "u5log_resid_sd": 1.281,
+      "mean_abs_le_u5_sd": 1.122
+    },
+    "kazakhstan": {
+      "le_resid": -7.426,
+      "le_resid_sd": -1.268,
+      "tfr_resid": 0.1932,
+      "tfr_resid_sd": 0.212,
+      "u5log_resid": 0.947,
+      "u5log_resid_sd": 1.743,
+      "mean_abs_le_u5_sd": 1.506
+    },
+    "kyrgyzstan": {
+      "le_resid": -7.533,
+      "le_resid_sd": -1.304,
+      "tfr_resid": 1.1835,
+      "tfr_resid_sd": 1.125,
+      "u5log_resid": 1.24,
+      "u5log_resid_sd": 2.363,
+      "mean_abs_le_u5_sd": 1.833
+    },
+    "armenia": {
+      "le_resid": -7.994,
+      "le_resid_sd": -1.379,
+      "tfr_resid": 0.5135,
+      "tfr_resid_sd": 0.428,
+      "u5log_resid": 1.259,
+      "u5log_resid_sd": 2.483,
+      "mean_abs_le_u5_sd": 1.931
+    },
+    "tajikistan": {
+      "le_resid": -12.684,
+      "le_resid_sd": -2.191,
+      "tfr_resid": 2.8506,
+      "tfr_resid_sd": 2.673,
+      "u5log_resid": 1.8,
+      "u5log_resid_sd": 3.469,
+      "mean_abs_le_u5_sd": 2.83
+    }
+  },
+  "wcde_ranking_low_to_high_le_u5": [
+    "lithuania",
+    "belarus",
+    "estonia",
+    "latvia",
+    "uzbekistan",
+    "ukraine",
+    "russian federation",
+    "republic of moldova",
+    "georgia",
+    "armenia",
+    "kazakhstan",
+    "kyrgyzstan",
+    "azerbaijan",
+    "tajikistan",
+    "turkmenistan"
+  ],
+  "barro_lee_ranking_low_to_high_le_u5": [
+    "lithuania",
+    "latvia",
+    "estonia",
+    "ukraine",
+    "russian federation",
+    "republic of moldova",
+    "kazakhstan",
+    "kyrgyzstan",
+    "armenia",
+    "tajikistan"
+  ],
+  "script": "scripts/ussr_per_country_residuals.py",
+  "produced": "2026-04-29"
+}
