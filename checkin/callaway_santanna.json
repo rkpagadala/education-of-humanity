@@ -1,0 +1,206 @@
+{
+  "method": "Callaway & Sant'Anna (2021) group-time ATT. Treatment: lower secondary \u2265 10%. Control: not-yet-treated at each (g,t). Panel: 185 countries, 1950\u20131990, 5yr. Bootstrap: 500 reps, clustered by country.",
+  "child_education": {
+    "att_aggregate": 7.88,
+    "att_se": 1.7,
+    "att_ci_lo": 4.37,
+    "att_ci_hi": 11.04,
+    "twfe_beta": 7.9,
+    "cs_over_twfe": 1.0,
+    "n_gt_cells": 63,
+    "event_study": {
+      "-7": {
+        "att": 2.19,
+        "se": 8.45,
+        "ci_lo": -16.37,
+        "ci_hi": 15.53
+      },
+      "-6": {
+        "att": 2.05,
+        "se": 4.46,
+        "ci_lo": -7.87,
+        "ci_hi": 9.39
+      },
+      "-5": {
+        "att": 0.79,
+        "se": 2.92,
+        "ci_lo": -5.02,
+        "ci_hi": 5.78
+      },
+      "-4": {
+        "att": -1.18,
+        "se": 1.9,
+        "ci_lo": -5.18,
+        "ci_hi": 2.08
+      },
+      "-3": {
+        "att": -1.49,
+        "se": 1.12,
+        "ci_lo": -3.68,
+        "ci_hi": 0.4
+      },
+      "-2": {
+        "att": -1.26,
+        "se": 0.55,
+        "ci_lo": -2.39,
+        "ci_hi": -0.23
+      },
+      "-1": {
+        "att": 0.0,
+        "se": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0
+      },
+      "0": {
+        "att": 1.3,
+        "se": 0.46,
+        "ci_lo": 0.28,
+        "ci_hi": 2.12
+      },
+      "1": {
+        "att": 3.52,
+        "se": 1.01,
+        "ci_lo": 1.5,
+        "ci_hi": 5.48
+      },
+      "2": {
+        "att": 6.61,
+        "se": 1.66,
+        "ci_lo": 3.43,
+        "ci_hi": 10.05
+      },
+      "3": {
+        "att": 9.3,
+        "se": 2.31,
+        "ci_lo": 4.67,
+        "ci_hi": 13.65
+      },
+      "4": {
+        "att": 11.87,
+        "se": 2.95,
+        "ci_lo": 6.03,
+        "ci_hi": 17.44
+      },
+      "5": {
+        "att": 14.85,
+        "se": 3.44,
+        "ci_lo": 7.7,
+        "ci_hi": 21.4
+      },
+      "6": {
+        "att": 21.14,
+        "se": 4.06,
+        "ci_lo": 13.33,
+        "ci_hi": 28.25
+      },
+      "7": {
+        "att": 21.42,
+        "se": 5.53,
+        "ci_lo": 9.98,
+        "ci_hi": 30.84
+      }
+    }
+  },
+  "life_expectancy": {
+    "att_aggregate": -2.86,
+    "att_se": 0.82,
+    "att_ci_lo": -4.45,
+    "att_ci_hi": -1.23,
+    "n_gt_cells": 63,
+    "event_study": {
+      "-7": {
+        "att": -1.38,
+        "se": 3.47,
+        "ci_lo": -7.97,
+        "ci_hi": 5.83
+      },
+      "-6": {
+        "att": -1.86,
+        "se": 2.2,
+        "ci_lo": -6.74,
+        "ci_hi": 1.76
+      },
+      "-5": {
+        "att": -3.24,
+        "se": 1.75,
+        "ci_lo": -7.26,
+        "ci_hi": -0.15
+      },
+      "-4": {
+        "att": -1.67,
+        "se": 1.12,
+        "ci_lo": -4.11,
+        "ci_hi": 0.35
+      },
+      "-3": {
+        "att": -1.06,
+        "se": 0.7,
+        "ci_lo": -2.38,
+        "ci_hi": 0.27
+      },
+      "-2": {
+        "att": 0.07,
+        "se": 0.26,
+        "ci_lo": -0.43,
+        "ci_hi": 0.59
+      },
+      "-1": {
+        "att": 0.0,
+        "se": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0
+      },
+      "0": {
+        "att": -0.83,
+        "se": 0.37,
+        "ci_lo": -1.51,
+        "ci_hi": -0.08
+      },
+      "1": {
+        "att": -2.17,
+        "se": 0.97,
+        "ci_lo": -4.35,
+        "ci_hi": -0.52
+      },
+      "2": {
+        "att": -2.97,
+        "se": 0.94,
+        "ci_lo": -4.77,
+        "ci_hi": -1.04
+      },
+      "3": {
+        "att": -3.26,
+        "se": 1.07,
+        "ci_lo": -5.29,
+        "ci_hi": -1.2
+      },
+      "4": {
+        "att": -3.86,
+        "se": 1.31,
+        "ci_lo": -6.43,
+        "ci_hi": -1.48
+      },
+      "5": {
+        "att": -4.15,
+        "se": 1.71,
+        "ci_lo": -7.38,
+        "ci_hi": -0.81
+      },
+      "6": {
+        "att": -5.02,
+        "se": 1.66,
+        "ci_lo": -8.2,
+        "ci_hi": -1.53
+      },
+      "7": {
+        "att": -7.14,
+        "se": 1.88,
+        "ci_lo": -10.82,
+        "ci_hi": -3.19
+      }
+    }
+  },
+  "reference": "Callaway & Sant'Anna (2021), J. Econometrics 225(2): 200\u2013230",
+  "script": "scripts/robustness/callaway_santanna.py",
+  "produced": "2026-04-20"
+}

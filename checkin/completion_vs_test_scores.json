@@ -1,0 +1,187 @@
+{
+  "method": "Horse race between lower secondary completion (WCDE v3) and harmonized test scores (HLO, Angrist et al. 2021) as predictors of LE, TFR, U5MR. Country FE, clustered SEs. Cross-sectional (lag=0) and short-lag (10, 15yr) specifications. Overlap sample only (countries with both measures). 25-year lag impossible: test data begins 2000.",
+  "coverage": {
+    "completion_countries": 180,
+    "completion_obs": 1440,
+    "overlap_countries": 96,
+    "overlap_obs": 461
+  },
+  "cross_sectional": {
+    "le": {
+      "edu": {
+        "beta": 0.2402,
+        "se": 0.0403,
+        "pval": 0.0,
+        "r2": 0.292,
+        "n": 450,
+        "countries": 85
+      },
+      "test": {
+        "beta": 0.027,
+        "se": 0.0075,
+        "pval": 0.0003,
+        "r2": 0.0793,
+        "n": 450,
+        "countries": 85
+      }
+    },
+    "tfr": {
+      "edu": {
+        "beta": -0.0119,
+        "se": 0.0051,
+        "pval": 0.0204,
+        "r2": 0.0831,
+        "n": 450,
+        "countries": 85
+      },
+      "test": {
+        "beta": -0.0013,
+        "se": 0.0008,
+        "pval": 0.1173,
+        "r2": 0.021,
+        "n": 450,
+        "countries": 85
+      }
+    },
+    "u5mr": {
+      "edu": {
+        "beta": -0.743,
+        "se": 0.141,
+        "pval": 0.0,
+        "r2": 0.4181,
+        "n": 452,
+        "countries": 85
+      },
+      "test": {
+        "beta": -0.0819,
+        "se": 0.0292,
+        "pval": 0.005,
+        "r2": 0.1134,
+        "n": 452,
+        "countries": 85
+      }
+    }
+  },
+  "short_lag": {
+    "10": {
+      "le": {
+        "edu": {
+          "beta": 0.0682,
+          "se": 0.0256,
+          "pval": 0.0077,
+          "r2": 0.041,
+          "n": 371,
+          "countries": 81
+        },
+        "test": {
+          "beta": -0.0012,
+          "se": 0.0042,
+          "pval": 0.7751,
+          "r2": 0.0003,
+          "n": 371,
+          "countries": 81
+        }
+      },
+      "tfr": {
+        "edu": {
+          "beta": -0.029,
+          "se": 0.0045,
+          "pval": 0.0,
+          "r2": 0.2759,
+          "n": 371,
+          "countries": 81
+        },
+        "test": {
+          "beta": -0.0011,
+          "se": 0.0009,
+          "pval": 0.2289,
+          "r2": 0.0111,
+          "n": 371,
+          "countries": 81
+        }
+      },
+      "u5mr": {
+        "edu": {
+          "beta": -0.3927,
+          "se": 0.1036,
+          "pval": 0.0002,
+          "r2": 0.4424,
+          "n": 78,
+          "countries": 39
+        },
+        "test": {
+          "beta": -0.0057,
+          "se": 0.008,
+          "pval": 0.4766,
+          "r2": 0.0106,
+          "n": 78,
+          "countries": 39
+        }
+      }
+    },
+    "15": {
+      "le": {
+        "edu": {
+          "beta": -0.0159,
+          "se": 0.0454,
+          "pval": 0.7263,
+          "r2": 0.0011,
+          "n": 192,
+          "countries": 66
+        },
+        "test": {
+          "beta": 0.0185,
+          "se": 0.0085,
+          "pval": 0.0299,
+          "r2": 0.0529,
+          "n": 192,
+          "countries": 66
+        }
+      },
+      "tfr": {
+        "edu": {
+          "beta": -0.0343,
+          "se": 0.0063,
+          "pval": 0.0,
+          "r2": 0.3247,
+          "n": 192,
+          "countries": 66
+        },
+        "test": {
+          "beta": 0.0003,
+          "se": 0.001,
+          "pval": 0.7545,
+          "r2": 0.001,
+          "n": 192,
+          "countries": 66
+        }
+      },
+      "u5mr": {
+        "edu": null,
+        "test": null
+      }
+    }
+  },
+  "sample_comparison": {
+    "le": {
+      "full_r2": 0.2524,
+      "full_n": 1440,
+      "overlap_r2": 0.292,
+      "overlap_n": 450
+    },
+    "tfr": {
+      "full_r2": 0.3638,
+      "full_n": 1440,
+      "overlap_r2": 0.0831,
+      "overlap_n": 450
+    },
+    "u5mr": {
+      "full_r2": 0.2774,
+      "full_n": 1400,
+      "overlap_r2": 0.4181,
+      "overlap_n": 452
+    }
+  },
+  "script": "scripts/robustness/completion_vs_test_scores.py",
+  "produced": "2026-04-28"
+}

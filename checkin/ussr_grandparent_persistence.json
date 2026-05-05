@@ -1,0 +1,145 @@
+{
+  "rows": [
+    {
+      "country": "uzbekistan",
+      "culture": "Muslim Central Asia",
+      "prim_1880": NaN,
+      "prim_1900": NaN,
+      "prim_1920": NaN,
+      "le_resid_sd": -1.002,
+      "u5log_resid_sd": NaN
+    },
+    {
+      "country": "lithuania",
+      "culture": "Catholic Baltic",
+      "prim_1880": 0.42,
+      "prim_1900": 6.39,
+      "prim_1920": 36.72,
+      "le_resid_sd": -0.807,
+      "u5log_resid_sd": 0.346
+    },
+    {
+      "country": "belarus",
+      "culture": "Orthodox Slavic",
+      "prim_1880": 0.65,
+      "prim_1900": 10.14,
+      "prim_1920": 52.93,
+      "le_resid_sd": -0.96,
+      "u5log_resid_sd": 0.431
+    },
+    {
+      "country": "estonia",
+      "culture": "Lutheran Baltic",
+      "prim_1880": 4.67,
+      "prim_1900": 27.58,
+      "prim_1920": 73.97,
+      "le_resid_sd": -0.888,
+      "u5log_resid_sd": 0.568
+    },
+    {
+      "country": "latvia",
+      "culture": "Lutheran Baltic",
+      "prim_1880": 67.91,
+      "prim_1900": 82.71,
+      "prim_1920": 91.82,
+      "le_resid_sd": -1.063,
+      "u5log_resid_sd": 0.753
+    },
+    {
+      "country": "ukraine",
+      "culture": "Orthodox Slavic",
+      "prim_1880": 0.0,
+      "prim_1900": 0.0,
+      "prim_1920": 0.26,
+      "le_resid_sd": -0.951,
+      "u5log_resid_sd": 1.086
+    },
+    {
+      "country": "russian federation",
+      "culture": "Orthodox Slavic",
+      "prim_1880": 6.08,
+      "prim_1900": 31.15,
+      "prim_1920": 80.13,
+      "le_resid_sd": -1.402,
+      "u5log_resid_sd": 1.134
+    },
+    {
+      "country": "republic of moldova",
+      "culture": "Orthodox",
+      "prim_1880": 0.0,
+      "prim_1900": 0.0,
+      "prim_1920": 0.0,
+      "le_resid_sd": -1.406,
+      "u5log_resid_sd": 1.867
+    },
+    {
+      "country": "georgia",
+      "culture": "Orthodox Caucasus",
+      "prim_1880": 0.01,
+      "prim_1900": 0.38,
+      "prim_1920": 13.66,
+      "le_resid_sd": -1.515,
+      "u5log_resid_sd": 2.58
+    },
+    {
+      "country": "kazakhstan",
+      "culture": "Muslim/Steppe",
+      "prim_1880": 8.89,
+      "prim_1900": 34.31,
+      "prim_1920": 66.89,
+      "le_resid_sd": -1.897,
+      "u5log_resid_sd": 2.688
+    },
+    {
+      "country": "armenia",
+      "culture": "Orthodox Caucasus",
+      "prim_1880": 0.01,
+      "prim_1900": 0.17,
+      "prim_1920": 5.0,
+      "le_resid_sd": -1.421,
+      "u5log_resid_sd": 2.775
+    },
+    {
+      "country": "kyrgyzstan",
+      "culture": "Muslim Central Asia",
+      "prim_1880": 0.08,
+      "prim_1900": 0.93,
+      "prim_1920": 8.84,
+      "le_resid_sd": -1.803,
+      "u5log_resid_sd": 3.228
+    },
+    {
+      "country": "azerbaijan",
+      "culture": "Muslim Caucasus",
+      "prim_1880": 0.92,
+      "prim_1900": 8.33,
+      "prim_1920": 39.83,
+      "le_resid_sd": -2.197,
+      "u5log_resid_sd": 3.631
+    },
+    {
+      "country": "tajikistan",
+      "culture": "Muslim Central Asia",
+      "prim_1880": 0.3,
+      "prim_1900": 2.51,
+      "prim_1920": 16.19,
+      "le_resid_sd": -2.201,
+      "u5log_resid_sd": 3.733
+    },
+    {
+      "country": "turkmenistan",
+      "culture": "Muslim Central Asia",
+      "prim_1880": 0.21,
+      "prim_1900": 2.56,
+      "prim_1920": 22.62,
+      "le_resid_sd": -2.305,
+      "u5log_resid_sd": 3.996
+    }
+  ],
+  "correlations": {
+    "prim_1900_to_u5log_sd": -0.4020308750840203,
+    "prim_1920_to_u5log_sd": -0.46830606839483385
+  },
+  "script": "scripts/ussr_grandparent_persistence.py",
+  "produced": "2026-04-29"
+}

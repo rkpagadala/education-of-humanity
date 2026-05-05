@@ -1,0 +1,22 @@
+{
+  "baseline_year": 2025,
+  "target_year": 2030,
+  "target_pct": 100.0,
+  "below_threshold_filter": 90.0,
+  "years_remaining": 5,
+  "korea_record_pp_per_yr": 2.13,
+  "n_countries_below_threshold": 159,
+  "implied_pace_pp_per_yr": {
+    "median": 8.28,
+    "mean": 9.36,
+    "p25": 5.16,
+    "p75": 13.5,
+    "min": 2.05,
+    "max": 19.22
+  },
+  "n_countries_above_korea_max": 156,
+  "n_countries_above_2x_korea_max": 136,
+  "n_countries_above_4pp_per_yr": 139,
+  "median_pace_exceeds_korea_max": true,
+  "median_pace_exceeds_4pp": true
+}

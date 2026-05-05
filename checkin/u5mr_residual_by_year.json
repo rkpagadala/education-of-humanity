@@ -1,0 +1,100 @@
+{
+  "method": "Residualized GDP \u2192 U5MR swept by outcome year cutoff. Clustered SEs by country (matching tables/regression_tables.py). Tests Lutz hypothesis: MDG-era health interventions create GDP signal for child mortality independent of education. Entry >= 10%, ceiling <= 90%, T=1960-1990, lag=25.",
+  "sweep": [
+    {
+      "outcome_year_cutoff": 1990,
+      "edu_r2": 0.3313,
+      "edu_pval": 0.0,
+      "raw_gdp_r2": 0.2518,
+      "resid_gdp_r2": 0.0181,
+      "resid_pvalue": 0.2937,
+      "n_obs": 202,
+      "n_countries": 101
+    },
+    {
+      "outcome_year_cutoff": 1995,
+      "edu_r2": 0.3265,
+      "edu_pval": 0.0,
+      "raw_gdp_r2": 0.2397,
+      "resid_gdp_r2": 0.0092,
+      "resid_pvalue": 0.2401,
+      "n_obs": 314,
+      "n_countries": 112
+    },
+    {
+      "outcome_year_cutoff": 2000,
+      "edu_r2": 0.3131,
+      "edu_pval": 0.0,
+      "raw_gdp_r2": 0.1903,
+      "resid_gdp_r2": 0.0031,
+      "resid_pvalue": 0.4998,
+      "n_obs": 431,
+      "n_countries": 124
+    },
+    {
+      "outcome_year_cutoff": 2005,
+      "edu_r2": 0.2821,
+      "edu_pval": 0.0,
+      "raw_gdp_r2": 0.1494,
+      "resid_gdp_r2": 0.0001,
+      "resid_pvalue": 0.9222,
+      "n_obs": 550,
+      "n_countries": 133
+    },
+    {
+      "outcome_year_cutoff": 2010,
+      "edu_r2": 0.2686,
+      "edu_pval": 0.0,
+      "raw_gdp_r2": 0.0968,
+      "resid_gdp_r2": 0.0041,
+      "resid_pvalue": 0.401,
+      "n_obs": 669,
+      "n_countries": 142
+    },
+    {
+      "outcome_year_cutoff": 2015,
+      "edu_r2": 0.2803,
+      "edu_pval": 0.0,
+      "raw_gdp_r2": 0.0578,
+      "resid_gdp_r2": 0.0188,
+      "resid_pvalue": 0.1151,
+      "n_obs": 787,
+      "n_countries": 147
+    },
+    {
+      "outcome_year_cutoff": 2020,
+      "edu_r2": 0.2803,
+      "edu_pval": 0.0,
+      "raw_gdp_r2": 0.0578,
+      "resid_gdp_r2": 0.0188,
+      "resid_pvalue": 0.1151,
+      "n_obs": 787,
+      "n_countries": 147
+    }
+  ],
+  "before_after_2000": {
+    "Before 2000": {
+      "edu_r2": 0.3265,
+      "resid_gdp_r2": 0.0092,
+      "resid_pvalue": 0.2401,
+      "n_obs": 314,
+      "n_countries": 112
+    },
+    "After 2000": {
+      "edu_r2": 0.2092,
+      "resid_gdp_r2": 0.0266,
+      "resid_pvalue": 0.046,
+      "n_obs": 457,
+      "n_countries": 124
+    },
+    "All years": {
+      "edu_r2": 0.2803,
+      "resid_gdp_r2": 0.0188,
+      "resid_pvalue": 0.1151,
+      "n_obs": 787,
+      "n_countries": 147
+    }
+  },
+  "script": "scripts/robustness/u5mr_residual_by_year.py",
+  "produced": "2026-04-28"
+}

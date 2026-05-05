@@ -1,0 +1,132 @@
+{
+  "method": "Per-period country coverage by variable (1975-2015, 5-yr). Listwise-deletion stress test: re-estimate the active-expansion (<30%) parental-education coefficient on three nested samples.",
+  "coverage_by_year": {
+    "1975": {
+      "any_var_max": 192,
+      "parent_edu": 185,
+      "child_edu": 185,
+      "log_gdp": 135,
+      "le": 192,
+      "tfr": 192,
+      "u5": 186,
+      "edu_only": 185,
+      "all_vars": 127,
+      "listwise_drop_pct": 31.4
+    },
+    "1980": {
+      "any_var_max": 192,
+      "parent_edu": 185,
+      "child_edu": 185,
+      "log_gdp": 149,
+      "le": 192,
+      "tfr": 192,
+      "u5": 186,
+      "edu_only": 185,
+      "all_vars": 139,
+      "listwise_drop_pct": 24.9
+    },
+    "1985": {
+      "any_var_max": 192,
+      "parent_edu": 185,
+      "child_edu": 185,
+      "log_gdp": 156,
+      "le": 192,
+      "tfr": 192,
+      "u5": 186,
+      "edu_only": 185,
+      "all_vars": 145,
+      "listwise_drop_pct": 21.6
+    },
+    "1990": {
+      "any_var_max": 193,
+      "parent_edu": 185,
+      "child_edu": 185,
+      "log_gdp": 181,
+      "le": 193,
+      "tfr": 193,
+      "u5": 186,
+      "edu_only": 185,
+      "all_vars": 168,
+      "listwise_drop_pct": 9.2
+    },
+    "1995": {
+      "any_var_max": 193,
+      "parent_edu": 185,
+      "child_edu": 185,
+      "log_gdp": 184,
+      "le": 193,
+      "tfr": 193,
+      "u5": 186,
+      "edu_only": 185,
+      "all_vars": 170,
+      "listwise_drop_pct": 8.1
+    },
+    "2000": {
+      "any_var_max": 193,
+      "parent_edu": 185,
+      "child_edu": 185,
+      "log_gdp": 187,
+      "le": 193,
+      "tfr": 193,
+      "u5": 186,
+      "edu_only": 185,
+      "all_vars": 172,
+      "listwise_drop_pct": 7.0
+    },
+    "2005": {
+      "any_var_max": 193,
+      "parent_edu": 185,
+      "child_edu": 185,
+      "log_gdp": 189,
+      "le": 193,
+      "tfr": 193,
+      "u5": 186,
+      "edu_only": 185,
+      "all_vars": 172,
+      "listwise_drop_pct": 7.0
+    },
+    "2010": {
+      "any_var_max": 193,
+      "parent_edu": 185,
+      "child_edu": 185,
+      "log_gdp": 190,
+      "le": 193,
+      "tfr": 193,
+      "u5": 186,
+      "edu_only": 185,
+      "all_vars": 173,
+      "listwise_drop_pct": 6.5
+    },
+    "2015": {
+      "any_var_max": 193,
+      "parent_edu": 185,
+      "child_edu": 185,
+      "log_gdp": 191,
+      "le": 193,
+      "tfr": 193,
+      "u5": 186,
+      "edu_only": 185,
+      "all_vars": 173,
+      "listwise_drop_pct": 6.5
+    }
+  },
+  "sample_results": {
+    "any_available_t1_pair": {
+      "beta": 1.364,
+      "n": 783,
+      "countries": 137
+    },
+    "listwise_t1_inputs": {
+      "beta": 1.353,
+      "n": 719,
+      "countries": 123
+    },
+    "listwise_t1_plus_t7": {
+      "beta": 1.354,
+      "n": 715,
+      "countries": 121
+    }
+  },
+  "script": "scripts/robustness/missing_by_period.py",
+  "produced": "2026-04-28"
+}

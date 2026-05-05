@@ -1,0 +1,51 @@
+{
+  "notes": "Wooldridge (2010, \u00a710.5) regression-based F-test for strict exogeneity. Add parent education at t-20 (one-period lead of parent_{t-25}) to the FE regression; test H0: \u03b3=0. Non-rejection is consistent with strict exogeneity. 5-year panel, country FE, country-clustered SEs.",
+  "results": {
+    "full_panel": {
+      "n": 1665,
+      "countries": 185,
+      "parent_beta_baseline": 0.483,
+      "parent_se_baseline": 0.034,
+      "parent_beta_with_lead": -0.694,
+      "parent_se_with_lead": 0.097,
+      "lead_beta": 1.275,
+      "lead_se": 0.114,
+      "lead_t": 11.148,
+      "lead_p": 0.0,
+      "f_stat": 124.268,
+      "strict_exog_rejected_5pct": true
+    },
+    "active_expansion": {
+      "n": 774,
+      "countries": 128,
+      "parent_beta_baseline": 1.364,
+      "parent_se_baseline": 0.077,
+      "parent_beta_with_lead": 0.61,
+      "parent_se_with_lead": 0.302,
+      "lead_beta": 0.655,
+      "lead_se": 0.281,
+      "lead_t": 2.329,
+      "lead_p": 0.0202,
+      "f_stat": 5.424,
+      "strict_exog_rejected_5pct": true
+    }
+  },
+  "numbers": {
+    "full_n": 1665,
+    "full_countries": 185,
+    "full_lead_beta": 1.275,
+    "full_lead_se": 0.114,
+    "full_lead_p": 0.0,
+    "full_f_stat": 124.268,
+    "full_strict_exog_rejected": 1,
+    "active_n": 774,
+    "active_countries": 128,
+    "active_lead_beta": 0.655,
+    "active_lead_se": 0.281,
+    "active_lead_p": 0.0202,
+    "active_f_stat": 5.424,
+    "active_strict_exog_rejected": 1
+  },
+  "script": "scripts/robustness/wooldridge_exogeneity.py",
+  "produced": "2026-04-28"
+}

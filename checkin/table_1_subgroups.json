@@ -1,0 +1,177 @@
+{
+  "notes": "Table 1 Column 1 spec (child ~ parent, country FE, clustered SE) re-estimated on subsamples of the 629-obs / 105-country active-expansion sample (<30% parental completion, contemporaneous GDP present). Produced by scripts/tables/table_1_subgroups.py.",
+  "numbers": {
+    "headline_beta": 1.3761270922950377,
+    "headline_n": 629,
+    "headline_countries": 105,
+    "region_SSA_beta": 1.22,
+    "region_SSA_se": 0.109,
+    "region_SSA_p": 0.0,
+    "region_SSA_r2": 0.702,
+    "region_SSA_n": 301,
+    "region_SSA_countries": 40,
+    "region_MENA_beta": 1.145,
+    "region_MENA_se": 0.176,
+    "region_MENA_p": 0.0,
+    "region_MENA_r2": 0.745,
+    "region_MENA_n": 61,
+    "region_MENA_countries": 12,
+    "region_SouthAsia_beta": 2.444,
+    "region_SouthAsia_se": 0.515,
+    "region_SouthAsia_p": 0.0,
+    "region_SouthAsia_r2": 0.72,
+    "region_SouthAsia_n": 57,
+    "region_SouthAsia_countries": 8,
+    "region_EastAsiaPacific_beta": 1.491,
+    "region_EastAsiaPacific_se": 0.097,
+    "region_EastAsiaPacific_p": 0.0,
+    "region_EastAsiaPacific_r2": 0.823,
+    "region_EastAsiaPacific_n": 84,
+    "region_EastAsiaPacific_countries": 17,
+    "region_LAC_beta": 1.272,
+    "region_LAC_se": 0.091,
+    "region_LAC_p": 0.0,
+    "region_LAC_r2": 0.829,
+    "region_LAC_n": 112,
+    "region_LAC_countries": 23,
+    "region_EuropeNAmerica_beta": 2.057,
+    "region_EuropeNAmerica_se": 0.156,
+    "region_EuropeNAmerica_p": 0.0,
+    "region_EuropeNAmerica_r2": 0.762,
+    "region_EuropeNAmerica_n": 14,
+    "region_EuropeNAmerica_countries": 5,
+    "pre_1990_beta": 1.364,
+    "pre_1990_se": 0.172,
+    "pre_1990_n": 279,
+    "pre_1990_countries": 99,
+    "pre_1990_r2": 0.575,
+    "post_1990_beta": 1.332,
+    "post_1990_se": 0.116,
+    "post_1990_n": 338,
+    "post_1990_countries": 72,
+    "post_1990_r2": 0.621,
+    "gdp_low_beta": 1.295,
+    "gdp_low_se": 0.153,
+    "gdp_low_n": 208,
+    "gdp_low_countries": 33,
+    "gdp_low_r2": 0.663,
+    "gdp_middle_beta": 1.276,
+    "gdp_middle_se": 0.091,
+    "gdp_middle_n": 205,
+    "gdp_middle_countries": 44,
+    "gdp_middle_r2": 0.761,
+    "gdp_high_beta": 1.393,
+    "gdp_high_se": 0.137,
+    "gdp_high_n": 205,
+    "gdp_high_countries": 53,
+    "gdp_high_r2": 0.667
+  },
+  "results": {
+    "headline": {
+      "beta": 1.3761270922950377,
+      "se": 0.08343728473961534,
+      "p": 0.0,
+      "r2": 0.6993836208042312,
+      "n": 629,
+      "countries": 105
+    },
+    "by_region": {
+      "SSA": {
+        "beta": 1.2202744706235293,
+        "se": 0.10920726616145063,
+        "p": 0.0,
+        "r2": 0.7022635755829301,
+        "n": 301,
+        "countries": 40
+      },
+      "MENA": {
+        "beta": 1.1449194617447074,
+        "se": 0.17593012169685968,
+        "p": 4.1837326048010937e-08,
+        "r2": 0.7454484582901978,
+        "n": 61,
+        "countries": 12
+      },
+      "South Asia": {
+        "beta": 2.4440875483333744,
+        "se": 0.5151272984385291,
+        "p": 1.9125380886553245e-05,
+        "r2": 0.7204713357657871,
+        "n": 57,
+        "countries": 8
+      },
+      "East Asia & Pacific": {
+        "beta": 1.4906439054783092,
+        "se": 0.09740490711610124,
+        "p": 0.0,
+        "r2": 0.8233881303896695,
+        "n": 84,
+        "countries": 17
+      },
+      "LAC": {
+        "beta": 1.2717990892309192,
+        "se": 0.09100619990189575,
+        "p": 0.0,
+        "r2": 0.8294953947062003,
+        "n": 112,
+        "countries": 23
+      },
+      "Europe & N.America": {
+        "beta": 2.0571600733164517,
+        "se": 0.15587324551243914,
+        "p": 1.0351660781893202e-06,
+        "r2": 0.7617750576226751,
+        "n": 14,
+        "countries": 5
+      }
+    },
+    "by_period": {
+      "pre_1990": {
+        "beta": 1.363889227118681,
+        "se": 0.17163647510280186,
+        "p": 2.0694557179012918e-13,
+        "r2": 0.575458362991089,
+        "n": 279,
+        "countries": 99
+      },
+      "post_1990": {
+        "beta": 1.3320816022659003,
+        "se": 0.116050064527184,
+        "p": 0.0,
+        "r2": 0.6210162645533757,
+        "n": 338,
+        "countries": 72
+      }
+    },
+    "by_gdp_tercile": {
+      "q33": 6.682,
+      "q67": 7.782,
+      "low": {
+        "beta": 1.2950416647525536,
+        "se": 0.15328615122284597,
+        "p": 1.1324274851176597e-14,
+        "r2": 0.662852164843523,
+        "n": 208,
+        "countries": 33
+      },
+      "middle": {
+        "beta": 1.275736482895578,
+        "se": 0.09077537638817654,
+        "p": 0.0,
+        "r2": 0.7614350622586278,
+        "n": 205,
+        "countries": 44
+      },
+      "high": {
+        "beta": 1.393151791482193,
+        "se": 0.13664903852513358,
+        "p": 0.0,
+        "r2": 0.6666662967938386,
+        "n": 205,
+        "countries": 53
+      }
+    }
+  },
+  "script": "scripts/tables/table_1_subgroups.py",
+  "produced": "2026-04-28"
+}

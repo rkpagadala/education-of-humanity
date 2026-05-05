@@ -1,0 +1,63 @@
+{
+  "results": {
+    "trajectory": {
+      "1965": {
+        "expected": 30.9,
+        "actual": 31.49,
+        "diff": 0.59,
+        "status": "PASS"
+      },
+      "1980": {
+        "expected": 62.0,
+        "actual": 62.09,
+        "diff": 0.09,
+        "status": "PASS"
+      },
+      "1990": {
+        "expected": 75.0,
+        "actual": 75.1,
+        "diff": 0.1,
+        "status": "PASS"
+      }
+    },
+    "cohort_gains": {
+      "1975": {
+        "expected": 10.6,
+        "actual": 10.63,
+        "diff": 0.03,
+        "status": "PASS"
+      },
+      "1980": {
+        "expected": 15.0,
+        "actual": 15.0,
+        "diff": 0.0,
+        "status": "PASS"
+      }
+    },
+    "provision_discontinuity": {
+      "china_le_1965": 54.4,
+      "peer_avg_le": 60.32,
+      "peer_le_range": [
+        47.8,
+        68.75
+      ],
+      "n_peers": 18,
+      "expected_china_le": 54.4,
+      "expected_peer_avg": 60,
+      "expected_peer_range": [
+        48,
+        69
+      ]
+    },
+    "le_gain": {
+      "le_1965": 54.4,
+      "le_1980": 65.5,
+      "gain": 11.1,
+      "expected_1965": 53,
+      "expected_1980": 64
+    }
+  },
+  "overall": "PASS",
+  "script": "scripts/cases/china_cultural_revolution.py",
+  "produced": "2026-04-28"
+}

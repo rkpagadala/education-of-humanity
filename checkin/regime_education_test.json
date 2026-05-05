@@ -1,0 +1,45 @@
+{
+  "data": "Polity5 p5v2018.xls \u00d7 WCDE lower_sec_both.csv",
+  "n_countries": 160,
+  "lags_tested": [
+    0,
+    15,
+    20
+  ],
+  "results_by_lag": {
+    "0": {
+      "r2_polity": 0.0015,
+      "r2_starting": 0.0,
+      "r2_both": 0.0021,
+      "polity_coef": 0.056,
+      "mean_auto": 8.48,
+      "mean_demo": 9.45,
+      "n_intervals": 1782,
+      "auto_below_demo_median_pct": 74
+    },
+    "15": {
+      "r2_polity": 0.0067,
+      "r2_starting": 0.0002,
+      "r2_both": 0.0076,
+      "polity_coef": 0.122,
+      "mean_auto": 8.1,
+      "mean_demo": 10.04,
+      "n_intervals": 1503,
+      "auto_below_demo_median_pct": 71
+    },
+    "20": {
+      "r2_polity": 0.005,
+      "r2_starting": 0.0004,
+      "r2_both": 0.0052,
+      "polity_coef": 0.106,
+      "mean_auto": 8.14,
+      "mean_demo": 10.26,
+      "n_intervals": 1417,
+      "auto_below_demo_median_pct": 68
+    }
+  },
+  "transition_test_n": 50,
+  "transition_test_p": 0.5713,
+  "script": "scripts/robustness/regime_education.py",
+  "produced": "2026-04-28"
+}

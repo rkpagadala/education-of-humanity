@@ -1,0 +1,85 @@
+{
+  "method": "Symmetric Frisch-Waugh test. For each (outcome, edu-level) cell with country FE and entry-cohort 10/60: report edu\u2192Y, GDP\u2192Y, GDP_resid\u2192Y (current paper), and edu_resid\u2192Y (symmetric). edu_keep and GDP_keep are retention ratios. T=1960-1990 (5yr), lag=25.",
+  "threshold": 10,
+  "ceiling": 60,
+  "results": {
+    "life_expectancy": {
+      "primary": {
+        "edu_r2": 0.253575478160338,
+        "gdp_r2": 0.013813572714089378,
+        "gdp_resid_r2": 0.03754425363697408,
+        "edu_resid_r2": 0.32403699762840504,
+        "edu_explains_gdp_r2": 0.26740204555256186,
+        "gdp_explains_edu_r2": 0.26740204555256253,
+        "edu_resid_retention": 1.277871977129877,
+        "gdp_resid_retention": 2.717924928912866,
+        "n": 443,
+        "countries": 90
+      },
+      "lower_secondary": {
+        "edu_r2": 0.4428901934285379,
+        "gdp_r2": 0.10911928723730782,
+        "gdp_resid_r2": 0.00863547996265433,
+        "edu_resid_r2": 0.3577943640280816,
+        "edu_explains_gdp_r2": 0.3575869980660119,
+        "gdp_explains_edu_r2": 0.3575869980660118,
+        "edu_resid_retention": 0.8078624664463544,
+        "gdp_resid_retention": 0.07913797992351497,
+        "n": 603,
+        "countries": 122
+      },
+      "upper_secondary": {
+        "edu_r2": 0.5050950305526067,
+        "gdp_r2": 0.18438548217479278,
+        "gdp_resid_r2": 0.0006042841992485001,
+        "edu_resid_r2": 0.29759737245544987,
+        "edu_explains_gdp_r2": 0.4172466536182703,
+        "gdp_explains_edu_r2": 0.4172466536182703,
+        "edu_resid_retention": 0.5891908541049375,
+        "gdp_resid_retention": 0.003277287301153428,
+        "n": 605,
+        "countries": 120
+      }
+    },
+    "tfr": {
+      "primary": {
+        "edu_r2": 0.6974408952272731,
+        "gdp_r2": 0.2622735184515039,
+        "gdp_resid_r2": 0.00807777186387448,
+        "edu_resid_r2": 0.4540957684373442,
+        "edu_explains_gdp_r2": 0.26740204555256186,
+        "gdp_explains_edu_r2": 0.26740204555256253,
+        "edu_resid_retention": 0.6510885317233502,
+        "gdp_resid_retention": 0.030799037247704875,
+        "n": 443,
+        "countries": 90
+      },
+      "lower_secondary": {
+        "edu_r2": 0.6072246789044324,
+        "gdp_r2": 0.2283223015047778,
+        "gdp_resid_r2": 0.0012327833213385605,
+        "edu_resid_r2": 0.3384240550329887,
+        "edu_explains_gdp_r2": 0.3575869980660119,
+        "gdp_explains_edu_r2": 0.3575869980660118,
+        "edu_resid_retention": 0.5573292173229529,
+        "gdp_resid_retention": 0.0053993119078328995,
+        "n": 603,
+        "countries": 122
+      },
+      "upper_secondary": {
+        "edu_r2": 0.42856037335415464,
+        "gdp_r2": 0.10582641330707832,
+        "gdp_resid_r2": 0.005964510681430351,
+        "edu_resid_r2": 0.2540302810878369,
+        "edu_explains_gdp_r2": 0.4172466536182703,
+        "gdp_explains_edu_r2": 0.4172466536182703,
+        "edu_resid_retention": 0.5927526128924449,
+        "gdp_resid_retention": 0.056361266483850564,
+        "n": 605,
+        "countries": 120
+      }
+    }
+  },
+  "script": "scripts/residualization/symmetry_test.py",
+  "produced": "2026-04-29"
+}

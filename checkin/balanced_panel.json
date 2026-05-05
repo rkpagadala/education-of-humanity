@@ -1,0 +1,65 @@
+{
+  "notes": "Balanced-panel robustness. 'Balanced' (full) = countries observed in all 9 cohort years 1975..2015. 'Balanced' (active expansion) = countries with the maximum number of below-30% obs in the active-expansion sample (the deepest-observed subset, since balance by strict equality is not identified once the cutoff is applied). Country FE, country-clustered SEs.",
+  "results": {
+    "full_unbalanced": {
+      "parent_beta": 0.4834,
+      "parent_se": 0.0343,
+      "parent_p": 0.0,
+      "r2_within": 0.4568,
+      "n": 1665,
+      "countries": 185,
+      "obs_per_country_min": 9,
+      "obs_per_country_max": 9,
+      "obs_per_country_mean": 9.0
+    },
+    "full_balanced": {
+      "parent_beta": 0.4834,
+      "parent_se": 0.0343,
+      "parent_p": 0.0,
+      "r2_within": 0.4568,
+      "n": 1665,
+      "countries": 185,
+      "obs_per_country_min": 9,
+      "obs_per_country_max": 9,
+      "obs_per_country_mean": 9.0
+    },
+    "active_unbalanced": {
+      "parent_beta": 1.3643,
+      "parent_se": 0.0765,
+      "parent_p": 0.0,
+      "r2_within": 0.6781,
+      "n": 774,
+      "countries": 128,
+      "obs_per_country_min": 2,
+      "obs_per_country_max": 9,
+      "obs_per_country_mean": 6.05
+    },
+    "active_balanced_max": {
+      "parent_beta": 1.49,
+      "parent_se": 0.1242,
+      "parent_p": 0.0,
+      "r2_within": 0.6627,
+      "n": 423,
+      "countries": 47,
+      "obs_per_country_min": 9,
+      "obs_per_country_max": 9,
+      "obs_per_country_mean": 9.0
+    }
+  },
+  "numbers": {
+    "full_unbal_beta": 0.4834,
+    "full_unbal_n": 1665,
+    "full_unbal_countries": 185,
+    "full_bal_beta": 0.4834,
+    "full_bal_n": 1665,
+    "full_bal_countries": 185,
+    "active_unbal_beta": 1.3643,
+    "active_unbal_n": 774,
+    "active_unbal_countries": 128,
+    "active_bal_max_beta": 1.49,
+    "active_bal_max_n": 423,
+    "active_bal_max_countries": 47
+  },
+  "script": "scripts/robustness/balanced_panel.py",
+  "produced": "2026-04-28"
+}

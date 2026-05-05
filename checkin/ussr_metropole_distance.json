@@ -1,0 +1,130 @@
+{
+  "rows": [
+    {
+      "country": "russian federation",
+      "capital": "Moscow",
+      "dist_km": 0.0,
+      "le_resid_sd": -1.402,
+      "u5log_resid_sd": 1.134,
+      "le_u5_sd": 1.268
+    },
+    {
+      "country": "belarus",
+      "capital": "Minsk",
+      "dist_km": 675.7559294668727,
+      "le_resid_sd": -0.96,
+      "u5log_resid_sd": 0.431,
+      "le_u5_sd": 0.696
+    },
+    {
+      "country": "ukraine",
+      "capital": "Kyiv",
+      "dist_km": 755.7409823288132,
+      "le_resid_sd": -0.951,
+      "u5log_resid_sd": 1.086,
+      "le_u5_sd": 1.019
+    },
+    {
+      "country": "lithuania",
+      "capital": "Vilnius",
+      "dist_km": 790.4063967230256,
+      "le_resid_sd": -0.807,
+      "u5log_resid_sd": 0.346,
+      "le_u5_sd": 0.576
+    },
+    {
+      "country": "latvia",
+      "capital": "Riga",
+      "dist_km": 841.5704666256215,
+      "le_resid_sd": -1.063,
+      "u5log_resid_sd": 0.753,
+      "le_u5_sd": 0.908
+    },
+    {
+      "country": "estonia",
+      "capital": "Tallinn",
+      "dist_km": 866.963881458174,
+      "le_resid_sd": -0.888,
+      "u5log_resid_sd": 0.568,
+      "le_u5_sd": 0.728
+    },
+    {
+      "country": "republic of moldova",
+      "capital": "Chisinau",
+      "dist_km": 1144.6056420567459,
+      "le_resid_sd": -1.406,
+      "u5log_resid_sd": 1.867,
+      "le_u5_sd": 1.636
+    },
+    {
+      "country": "georgia",
+      "capital": "Tbilisi",
+      "dist_km": 1646.208353501266,
+      "le_resid_sd": -1.515,
+      "u5log_resid_sd": 2.58,
+      "le_u5_sd": 2.047
+    },
+    {
+      "country": "armenia",
+      "capital": "Yerevan",
+      "dist_km": 1803.5375064969146,
+      "le_resid_sd": -1.421,
+      "u5log_resid_sd": 2.775,
+      "le_u5_sd": 2.098
+    },
+    {
+      "country": "azerbaijan",
+      "capital": "Baku",
+      "dist_km": 1927.3842854841519,
+      "le_resid_sd": -2.197,
+      "u5log_resid_sd": 3.631,
+      "le_u5_sd": 2.914
+    },
+    {
+      "country": "turkmenistan",
+      "capital": "Ashgabat",
+      "dist_km": 2508.4194970243925,
+      "le_resid_sd": -2.305,
+      "u5log_resid_sd": 3.996,
+      "le_u5_sd": 3.151
+    },
+    {
+      "country": "uzbekistan",
+      "capital": "Tashkent",
+      "dist_km": 2791.021351905689,
+      "le_resid_sd": -1.002,
+      "u5log_resid_sd": NaN,
+      "le_u5_sd": 1.002
+    },
+    {
+      "country": "kyrgyzstan",
+      "capital": "Frunze",
+      "dist_km": 2988.2927497072965,
+      "le_resid_sd": -1.803,
+      "u5log_resid_sd": 3.228,
+      "le_u5_sd": 2.515
+    },
+    {
+      "country": "tajikistan",
+      "capital": "Dushanbe",
+      "dist_km": 2991.443253381667,
+      "le_resid_sd": -2.201,
+      "u5log_resid_sd": 3.733,
+      "le_u5_sd": 2.967
+    },
+    {
+      "country": "kazakhstan",
+      "capital": "Alma-Ata",
+      "dist_km": 3102.8384996958644,
+      "le_resid_sd": -1.897,
+      "u5log_resid_sd": 2.688,
+      "le_u5_sd": 2.293
+    }
+  ],
+  "correlations_excl_russia": {
+    "dist_to_u5log_sd": 0.8634425824946856,
+    "dist_to_le_sd": -0.7251690103527546
+  },
+  "script": "scripts/ussr_metropole_distance.py",
+  "produced": "2026-04-29"
+}

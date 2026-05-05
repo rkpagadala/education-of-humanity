@@ -1,0 +1,18 @@
+{
+  "numbers": {
+    "n_ussr_countries": 10,
+    "n_non_ussr_obs": 749,
+    "n_ussr_obs": 60,
+    "bl_age_15_24_n_countries": 146,
+    "le_beta_per_yr": 2.783,
+    "le_sigma_global": 6.07,
+    "le_ussr_mean_resid_yrs": -5.6,
+    "le_ussr_bias_sds": -0.92,
+    "tfr_beta_per_yr": -0.4832,
+    "tfr_sigma_global": 1.054,
+    "tfr_ussr_mean_resid": 0.089,
+    "tfr_ussr_bias_sds": 0.08
+  },
+  "script": "scripts/ussr_anomaly_barrolee.py",
+  "produced": "2026-04-28"
+}

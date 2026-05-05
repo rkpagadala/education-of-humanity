@@ -1,0 +1,139 @@
+{
+  "method": "Country FE, residualized GDP. Female vs both-sexes lower secondary. Entry=10%, ceilings 60/90. T=1960-1990, lag=25.",
+  "results": {
+    "both": {
+      "LE": {
+        "60": {
+          "edu_r2": 0.443,
+          "raw_gdp_r2": 0.109,
+          "resid_gdp_r2": 0.009,
+          "n": 603,
+          "countries": 122
+        },
+        "90": {
+          "edu_r2": 0.474,
+          "raw_gdp_r2": 0.18,
+          "resid_gdp_r2": 0.002,
+          "n": 822,
+          "countries": 152
+        }
+      },
+      "TFR": {
+        "60": {
+          "edu_r2": 0.607,
+          "raw_gdp_r2": 0.228,
+          "resid_gdp_r2": 0.001,
+          "n": 603,
+          "countries": 122
+        },
+        "90": {
+          "edu_r2": 0.482,
+          "raw_gdp_r2": 0.177,
+          "resid_gdp_r2": 0.0,
+          "n": 822,
+          "countries": 152
+        }
+      },
+      "U5MR": {
+        "60": {
+          "edu_r2": 0.353,
+          "raw_gdp_r2": 0.059,
+          "resid_gdp_r2": 0.021,
+          "n": 590,
+          "countries": 119
+        },
+        "90": {
+          "edu_r2": 0.28,
+          "raw_gdp_r2": 0.058,
+          "resid_gdp_r2": 0.019,
+          "n": 787,
+          "countries": 147
+        }
+      },
+      "ChildEdu": {
+        "60": {
+          "edu_r2": 0.646,
+          "raw_gdp_r2": 0.335,
+          "resid_gdp_r2": 0.012,
+          "n": 627,
+          "countries": 127
+        },
+        "90": {
+          "edu_r2": 0.524,
+          "raw_gdp_r2": 0.295,
+          "resid_gdp_r2": 0.005,
+          "n": 856,
+          "countries": 157
+        }
+      }
+    },
+    "female": {
+      "LE": {
+        "60": {
+          "edu_r2": 0.447,
+          "raw_gdp_r2": 0.119,
+          "resid_gdp_r2": 0.002,
+          "n": 477,
+          "countries": 106
+        },
+        "90": {
+          "edu_r2": 0.524,
+          "raw_gdp_r2": 0.201,
+          "resid_gdp_r2": 0.0,
+          "n": 694,
+          "countries": 136
+        }
+      },
+      "TFR": {
+        "60": {
+          "edu_r2": 0.613,
+          "raw_gdp_r2": 0.179,
+          "resid_gdp_r2": 0.0,
+          "n": 477,
+          "countries": 106
+        },
+        "90": {
+          "edu_r2": 0.513,
+          "raw_gdp_r2": 0.11,
+          "resid_gdp_r2": 0.014,
+          "n": 694,
+          "countries": 136
+        }
+      },
+      "U5MR": {
+        "60": {
+          "edu_r2": 0.339,
+          "raw_gdp_r2": 0.066,
+          "resid_gdp_r2": 0.01,
+          "n": 466,
+          "countries": 103
+        },
+        "90": {
+          "edu_r2": 0.295,
+          "raw_gdp_r2": 0.065,
+          "resid_gdp_r2": 0.011,
+          "n": 659,
+          "countries": 131
+        }
+      },
+      "ChildEdu": {
+        "60": {
+          "edu_r2": 0.695,
+          "raw_gdp_r2": 0.304,
+          "resid_gdp_r2": 0.006,
+          "n": 501,
+          "countries": 111
+        },
+        "90": {
+          "edu_r2": 0.546,
+          "raw_gdp_r2": 0.241,
+          "resid_gdp_r2": 0.0,
+          "n": 727,
+          "countries": 141
+        }
+      }
+    }
+  },
+  "script": "scripts/residualization/female_education.py",
+  "produced": "2026-04-28"
+}

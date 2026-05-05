@@ -1,0 +1,4305 @@
+{
+  "method": "Country FE (demeaned). Entry-cohort with ceiling: enter when country first crosses entry threshold, include observations while education <= ceiling. T = 1960-1990 (5yr), outcome = LE(T+25). Education interpolated from WCDE 5-year to annual (linear).",
+  "ceilings": {
+    "50": {
+      "10": {
+        "edu_r2": 0.428,
+        "edu_n": 523,
+        "edu_countries": 115,
+        "gdp_r2": 0.106,
+        "gdp_n": 442,
+        "gdp_countries": 96
+      },
+      "11": {
+        "edu_r2": 0.436,
+        "edu_n": 495,
+        "edu_countries": 110,
+        "gdp_r2": 0.093,
+        "gdp_n": 419,
+        "gdp_countries": 92
+      },
+      "12": {
+        "edu_r2": 0.439,
+        "edu_n": 475,
+        "edu_countries": 109,
+        "gdp_r2": 0.086,
+        "gdp_n": 403,
+        "gdp_countries": 91
+      },
+      "13": {
+        "edu_r2": 0.451,
+        "edu_n": 452,
+        "edu_countries": 107,
+        "gdp_r2": 0.102,
+        "gdp_n": 385,
+        "gdp_countries": 89
+      },
+      "14": {
+        "edu_r2": 0.442,
+        "edu_n": 439,
+        "edu_countries": 103,
+        "gdp_r2": 0.089,
+        "gdp_n": 372,
+        "gdp_countries": 85
+      },
+      "15": {
+        "edu_r2": 0.434,
+        "edu_n": 422,
+        "edu_countries": 103,
+        "gdp_r2": 0.085,
+        "gdp_n": 356,
+        "gdp_countries": 85
+      },
+      "16": {
+        "edu_r2": 0.46,
+        "edu_n": 408,
+        "edu_countries": 101,
+        "gdp_r2": 0.08,
+        "gdp_n": 343,
+        "gdp_countries": 83
+      },
+      "17": {
+        "edu_r2": 0.438,
+        "edu_n": 385,
+        "edu_countries": 99,
+        "gdp_r2": 0.053,
+        "gdp_n": 323,
+        "gdp_countries": 81
+      },
+      "18": {
+        "edu_r2": 0.431,
+        "edu_n": 368,
+        "edu_countries": 97,
+        "gdp_r2": 0.057,
+        "gdp_n": 309,
+        "gdp_countries": 79
+      },
+      "19": {
+        "edu_r2": 0.421,
+        "edu_n": 351,
+        "edu_countries": 95,
+        "gdp_r2": 0.05,
+        "gdp_n": 294,
+        "gdp_countries": 77
+      },
+      "20": {
+        "edu_r2": 0.403,
+        "edu_n": 340,
+        "edu_countries": 93,
+        "gdp_r2": 0.033,
+        "gdp_n": 283,
+        "gdp_countries": 75
+      },
+      "21": {
+        "edu_r2": 0.408,
+        "edu_n": 325,
+        "edu_countries": 89,
+        "gdp_r2": 0.037,
+        "gdp_n": 273,
+        "gdp_countries": 72
+      },
+      "22": {
+        "edu_r2": 0.451,
+        "edu_n": 302,
+        "edu_countries": 83,
+        "gdp_r2": 0.034,
+        "gdp_n": 254,
+        "gdp_countries": 67
+      },
+      "23": {
+        "edu_r2": 0.433,
+        "edu_n": 291,
+        "edu_countries": 83,
+        "gdp_r2": 0.027,
+        "gdp_n": 244,
+        "gdp_countries": 67
+      },
+      "24": {
+        "edu_r2": 0.403,
+        "edu_n": 277,
+        "edu_countries": 81,
+        "gdp_r2": 0.018,
+        "gdp_n": 231,
+        "gdp_countries": 65
+      },
+      "25": {
+        "edu_r2": 0.36,
+        "edu_n": 264,
+        "edu_countries": 80,
+        "gdp_r2": 0.018,
+        "gdp_n": 219,
+        "gdp_countries": 64
+      },
+      "26": {
+        "edu_r2": 0.398,
+        "edu_n": 250,
+        "edu_countries": 78,
+        "gdp_r2": 0.018,
+        "gdp_n": 207,
+        "gdp_countries": 62
+      },
+      "27": {
+        "edu_r2": 0.37,
+        "edu_n": 237,
+        "edu_countries": 77,
+        "gdp_r2": 0.01,
+        "gdp_n": 195,
+        "gdp_countries": 61
+      },
+      "28": {
+        "edu_r2": 0.382,
+        "edu_n": 225,
+        "edu_countries": 75,
+        "gdp_r2": 0.013,
+        "gdp_n": 186,
+        "gdp_countries": 60
+      },
+      "29": {
+        "edu_r2": 0.36,
+        "edu_n": 217,
+        "edu_countries": 75,
+        "gdp_r2": 0.01,
+        "gdp_n": 178,
+        "gdp_countries": 60
+      },
+      "30": {
+        "edu_r2": 0.324,
+        "edu_n": 203,
+        "edu_countries": 73,
+        "gdp_r2": 0.009,
+        "gdp_n": 167,
+        "gdp_countries": 59
+      },
+      "31": {
+        "edu_r2": 0.394,
+        "edu_n": 181,
+        "edu_countries": 67,
+        "gdp_r2": 0.017,
+        "gdp_n": 147,
+        "gdp_countries": 53
+      },
+      "32": {
+        "edu_r2": 0.373,
+        "edu_n": 164,
+        "edu_countries": 63,
+        "gdp_r2": 0.009,
+        "gdp_n": 135,
+        "gdp_countries": 51
+      },
+      "33": {
+        "edu_r2": 0.291,
+        "edu_n": 148,
+        "edu_countries": 59,
+        "gdp_r2": 0.003,
+        "gdp_n": 123,
+        "gdp_countries": 48
+      },
+      "34": {
+        "edu_r2": 0.362,
+        "edu_n": 138,
+        "edu_countries": 56,
+        "gdp_r2": 0.015,
+        "gdp_n": 113,
+        "gdp_countries": 45
+      },
+      "35": {
+        "edu_r2": 0.461,
+        "edu_n": 131,
+        "edu_countries": 54,
+        "gdp_r2": 0.019,
+        "gdp_n": 108,
+        "gdp_countries": 44
+      },
+      "36": {
+        "edu_r2": 0.428,
+        "edu_n": 115,
+        "edu_countries": 48,
+        "gdp_r2": 0.029,
+        "gdp_n": 99,
+        "gdp_countries": 41
+      },
+      "37": {
+        "edu_r2": 0.439,
+        "edu_n": 89,
+        "edu_countries": 36,
+        "gdp_r2": 0.023,
+        "gdp_n": 80,
+        "gdp_countries": 32
+      },
+      "38": {
+        "edu_r2": 0.376,
+        "edu_n": 74,
+        "edu_countries": 31,
+        "gdp_r2": 0.01,
+        "gdp_n": 65,
+        "gdp_countries": 27
+      },
+      "39": {
+        "edu_r2": 0.471,
+        "edu_n": 62,
+        "edu_countries": 27,
+        "gdp_r2": 0.015,
+        "gdp_n": 54,
+        "gdp_countries": 23
+      },
+      "40": {
+        "edu_r2": 0.396,
+        "edu_n": 52,
+        "edu_countries": 23,
+        "gdp_r2": 0.01,
+        "gdp_n": 48,
+        "gdp_countries": 21
+      },
+      "41": {
+        "edu_r2": 0.442,
+        "edu_n": 42,
+        "edu_countries": 18,
+        "gdp_r2": 0.012,
+        "gdp_n": 38,
+        "gdp_countries": 16
+      },
+      "42": {
+        "edu_r2": 0.211,
+        "edu_n": 32,
+        "edu_countries": 14,
+        "gdp_r2": 0.058,
+        "gdp_n": 28,
+        "gdp_countries": 12
+      },
+      "43": {
+        "edu_r2": 0.138,
+        "edu_n": 26,
+        "edu_countries": 11,
+        "gdp_r2": 0.05,
+        "gdp_n": 24,
+        "gdp_countries": 10
+      },
+      "44": {
+        "edu_r2": 0.107,
+        "edu_n": 19,
+        "edu_countries": 8,
+        "gdp_r2": 0.05,
+        "gdp_n": 17,
+        "gdp_countries": 7
+      },
+      "45": {
+        "edu_r2": 0.036,
+        "edu_n": 15,
+        "edu_countries": 6,
+        "gdp_r2": 0.043,
+        "gdp_n": 15,
+        "gdp_countries": 6
+      },
+      "46": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "47": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "48": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "49": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      }
+    },
+    "55": {
+      "10": {
+        "edu_r2": 0.438,
+        "edu_n": 564,
+        "edu_countries": 119,
+        "gdp_r2": 0.106,
+        "gdp_n": 478,
+        "gdp_countries": 103
+      },
+      "11": {
+        "edu_r2": 0.447,
+        "edu_n": 536,
+        "edu_countries": 114,
+        "gdp_r2": 0.094,
+        "gdp_n": 455,
+        "gdp_countries": 99
+      },
+      "12": {
+        "edu_r2": 0.452,
+        "edu_n": 516,
+        "edu_countries": 113,
+        "gdp_r2": 0.087,
+        "gdp_n": 439,
+        "gdp_countries": 98
+      },
+      "13": {
+        "edu_r2": 0.466,
+        "edu_n": 493,
+        "edu_countries": 111,
+        "gdp_r2": 0.103,
+        "gdp_n": 421,
+        "gdp_countries": 96
+      },
+      "14": {
+        "edu_r2": 0.457,
+        "edu_n": 480,
+        "edu_countries": 107,
+        "gdp_r2": 0.089,
+        "gdp_n": 408,
+        "gdp_countries": 92
+      },
+      "15": {
+        "edu_r2": 0.452,
+        "edu_n": 463,
+        "edu_countries": 107,
+        "gdp_r2": 0.085,
+        "gdp_n": 392,
+        "gdp_countries": 92
+      },
+      "16": {
+        "edu_r2": 0.475,
+        "edu_n": 449,
+        "edu_countries": 105,
+        "gdp_r2": 0.08,
+        "gdp_n": 379,
+        "gdp_countries": 90
+      },
+      "17": {
+        "edu_r2": 0.459,
+        "edu_n": 426,
+        "edu_countries": 103,
+        "gdp_r2": 0.055,
+        "gdp_n": 359,
+        "gdp_countries": 88
+      },
+      "18": {
+        "edu_r2": 0.455,
+        "edu_n": 409,
+        "edu_countries": 101,
+        "gdp_r2": 0.058,
+        "gdp_n": 345,
+        "gdp_countries": 86
+      },
+      "19": {
+        "edu_r2": 0.448,
+        "edu_n": 392,
+        "edu_countries": 99,
+        "gdp_r2": 0.051,
+        "gdp_n": 330,
+        "gdp_countries": 84
+      },
+      "20": {
+        "edu_r2": 0.43,
+        "edu_n": 381,
+        "edu_countries": 97,
+        "gdp_r2": 0.033,
+        "gdp_n": 319,
+        "gdp_countries": 82
+      },
+      "21": {
+        "edu_r2": 0.433,
+        "edu_n": 366,
+        "edu_countries": 93,
+        "gdp_r2": 0.035,
+        "gdp_n": 309,
+        "gdp_countries": 79
+      },
+      "22": {
+        "edu_r2": 0.485,
+        "edu_n": 344,
+        "edu_countries": 88,
+        "gdp_r2": 0.033,
+        "gdp_n": 290,
+        "gdp_countries": 74
+      },
+      "23": {
+        "edu_r2": 0.471,
+        "edu_n": 333,
+        "edu_countries": 88,
+        "gdp_r2": 0.026,
+        "gdp_n": 280,
+        "gdp_countries": 74
+      },
+      "24": {
+        "edu_r2": 0.443,
+        "edu_n": 319,
+        "edu_countries": 86,
+        "gdp_r2": 0.018,
+        "gdp_n": 267,
+        "gdp_countries": 72
+      },
+      "25": {
+        "edu_r2": 0.41,
+        "edu_n": 307,
+        "edu_countries": 86,
+        "gdp_r2": 0.016,
+        "gdp_n": 256,
+        "gdp_countries": 72
+      },
+      "26": {
+        "edu_r2": 0.457,
+        "edu_n": 293,
+        "edu_countries": 84,
+        "gdp_r2": 0.014,
+        "gdp_n": 244,
+        "gdp_countries": 70
+      },
+      "27": {
+        "edu_r2": 0.429,
+        "edu_n": 280,
+        "edu_countries": 83,
+        "gdp_r2": 0.007,
+        "gdp_n": 232,
+        "gdp_countries": 69
+      },
+      "28": {
+        "edu_r2": 0.435,
+        "edu_n": 268,
+        "edu_countries": 81,
+        "gdp_r2": 0.008,
+        "gdp_n": 223,
+        "gdp_countries": 68
+      },
+      "29": {
+        "edu_r2": 0.422,
+        "edu_n": 260,
+        "edu_countries": 81,
+        "gdp_r2": 0.005,
+        "gdp_n": 215,
+        "gdp_countries": 68
+      },
+      "30": {
+        "edu_r2": 0.386,
+        "edu_n": 246,
+        "edu_countries": 79,
+        "gdp_r2": 0.004,
+        "gdp_n": 204,
+        "gdp_countries": 67
+      },
+      "31": {
+        "edu_r2": 0.46,
+        "edu_n": 224,
+        "edu_countries": 73,
+        "gdp_r2": 0.004,
+        "gdp_n": 184,
+        "gdp_countries": 61
+      },
+      "32": {
+        "edu_r2": 0.451,
+        "edu_n": 210,
+        "edu_countries": 72,
+        "gdp_r2": 0.0,
+        "gdp_n": 173,
+        "gdp_countries": 60
+      },
+      "33": {
+        "edu_r2": 0.405,
+        "edu_n": 195,
+        "edu_countries": 69,
+        "gdp_r2": 0.0,
+        "gdp_n": 162,
+        "gdp_countries": 58
+      },
+      "34": {
+        "edu_r2": 0.474,
+        "edu_n": 185,
+        "edu_countries": 67,
+        "gdp_r2": 0.0,
+        "gdp_n": 152,
+        "gdp_countries": 56
+      },
+      "35": {
+        "edu_r2": 0.555,
+        "edu_n": 178,
+        "edu_countries": 65,
+        "gdp_r2": 0.0,
+        "gdp_n": 147,
+        "gdp_countries": 55
+      },
+      "36": {
+        "edu_r2": 0.537,
+        "edu_n": 165,
+        "edu_countries": 62,
+        "gdp_r2": 0.0,
+        "gdp_n": 139,
+        "gdp_countries": 53
+      },
+      "37": {
+        "edu_r2": 0.515,
+        "edu_n": 141,
+        "edu_countries": 53,
+        "gdp_r2": 0.0,
+        "gdp_n": 121,
+        "gdp_countries": 46
+      },
+      "38": {
+        "edu_r2": 0.495,
+        "edu_n": 127,
+        "edu_countries": 49,
+        "gdp_r2": 0.002,
+        "gdp_n": 107,
+        "gdp_countries": 42
+      },
+      "39": {
+        "edu_r2": 0.54,
+        "edu_n": 114,
+        "edu_countries": 45,
+        "gdp_r2": 0.014,
+        "gdp_n": 95,
+        "gdp_countries": 38
+      },
+      "40": {
+        "edu_r2": 0.503,
+        "edu_n": 106,
+        "edu_countries": 43,
+        "gdp_r2": 0.019,
+        "gdp_n": 90,
+        "gdp_countries": 37
+      },
+      "41": {
+        "edu_r2": 0.523,
+        "edu_n": 92,
+        "edu_countries": 37,
+        "gdp_r2": 0.024,
+        "gdp_n": 78,
+        "gdp_countries": 32
+      },
+      "42": {
+        "edu_r2": 0.439,
+        "edu_n": 77,
+        "edu_countries": 31,
+        "gdp_r2": 0.064,
+        "gdp_n": 63,
+        "gdp_countries": 26
+      },
+      "43": {
+        "edu_r2": 0.427,
+        "edu_n": 63,
+        "edu_countries": 25,
+        "gdp_r2": 0.069,
+        "gdp_n": 52,
+        "gdp_countries": 21
+      },
+      "44": {
+        "edu_r2": 0.389,
+        "edu_n": 56,
+        "edu_countries": 23,
+        "gdp_r2": 0.025,
+        "gdp_n": 45,
+        "gdp_countries": 19
+      },
+      "45": {
+        "edu_r2": 0.34,
+        "edu_n": 44,
+        "edu_countries": 18,
+        "gdp_r2": 0.038,
+        "gdp_n": 40,
+        "gdp_countries": 17
+      },
+      "46": {
+        "edu_r2": 0.387,
+        "edu_n": 33,
+        "edu_countries": 13,
+        "gdp_r2": 0.138,
+        "gdp_n": 30,
+        "gdp_countries": 12
+      },
+      "47": {
+        "edu_r2": 0.292,
+        "edu_n": 28,
+        "edu_countries": 11,
+        "gdp_r2": 0.112,
+        "gdp_n": 25,
+        "gdp_countries": 10
+      },
+      "48": {
+        "edu_r2": 0.218,
+        "edu_n": 25,
+        "edu_countries": 10,
+        "gdp_r2": 0.023,
+        "gdp_n": 22,
+        "gdp_countries": 9
+      },
+      "49": {
+        "edu_r2": 0.277,
+        "edu_n": 22,
+        "edu_countries": 9,
+        "gdp_r2": 0.0,
+        "gdp_n": 19,
+        "gdp_countries": 8
+      },
+      "50": {
+        "edu_r2": 0.621,
+        "edu_n": 11,
+        "edu_countries": 5,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "51": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "52": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "53": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      }
+    },
+    "60": {
+      "10": {
+        "edu_r2": 0.443,
+        "edu_n": 603,
+        "edu_countries": 122,
+        "gdp_r2": 0.109,
+        "gdp_n": 507,
+        "gdp_countries": 106
+      },
+      "11": {
+        "edu_r2": 0.452,
+        "edu_n": 575,
+        "edu_countries": 117,
+        "gdp_r2": 0.098,
+        "gdp_n": 484,
+        "gdp_countries": 102
+      },
+      "12": {
+        "edu_r2": 0.458,
+        "edu_n": 555,
+        "edu_countries": 116,
+        "gdp_r2": 0.091,
+        "gdp_n": 468,
+        "gdp_countries": 101
+      },
+      "13": {
+        "edu_r2": 0.472,
+        "edu_n": 532,
+        "edu_countries": 114,
+        "gdp_r2": 0.105,
+        "gdp_n": 450,
+        "gdp_countries": 99
+      },
+      "14": {
+        "edu_r2": 0.463,
+        "edu_n": 519,
+        "edu_countries": 110,
+        "gdp_r2": 0.091,
+        "gdp_n": 437,
+        "gdp_countries": 95
+      },
+      "15": {
+        "edu_r2": 0.46,
+        "edu_n": 502,
+        "edu_countries": 110,
+        "gdp_r2": 0.087,
+        "gdp_n": 421,
+        "gdp_countries": 95
+      },
+      "16": {
+        "edu_r2": 0.482,
+        "edu_n": 488,
+        "edu_countries": 108,
+        "gdp_r2": 0.083,
+        "gdp_n": 408,
+        "gdp_countries": 93
+      },
+      "17": {
+        "edu_r2": 0.467,
+        "edu_n": 465,
+        "edu_countries": 106,
+        "gdp_r2": 0.059,
+        "gdp_n": 388,
+        "gdp_countries": 91
+      },
+      "18": {
+        "edu_r2": 0.463,
+        "edu_n": 448,
+        "edu_countries": 104,
+        "gdp_r2": 0.06,
+        "gdp_n": 374,
+        "gdp_countries": 89
+      },
+      "19": {
+        "edu_r2": 0.462,
+        "edu_n": 431,
+        "edu_countries": 102,
+        "gdp_r2": 0.054,
+        "gdp_n": 359,
+        "gdp_countries": 87
+      },
+      "20": {
+        "edu_r2": 0.448,
+        "edu_n": 420,
+        "edu_countries": 100,
+        "gdp_r2": 0.038,
+        "gdp_n": 348,
+        "gdp_countries": 85
+      },
+      "21": {
+        "edu_r2": 0.453,
+        "edu_n": 405,
+        "edu_countries": 96,
+        "gdp_r2": 0.04,
+        "gdp_n": 338,
+        "gdp_countries": 82
+      },
+      "22": {
+        "edu_r2": 0.498,
+        "edu_n": 383,
+        "edu_countries": 91,
+        "gdp_r2": 0.037,
+        "gdp_n": 319,
+        "gdp_countries": 77
+      },
+      "23": {
+        "edu_r2": 0.485,
+        "edu_n": 372,
+        "edu_countries": 91,
+        "gdp_r2": 0.031,
+        "gdp_n": 309,
+        "gdp_countries": 77
+      },
+      "24": {
+        "edu_r2": 0.466,
+        "edu_n": 358,
+        "edu_countries": 89,
+        "gdp_r2": 0.023,
+        "gdp_n": 296,
+        "gdp_countries": 75
+      },
+      "25": {
+        "edu_r2": 0.442,
+        "edu_n": 346,
+        "edu_countries": 89,
+        "gdp_r2": 0.02,
+        "gdp_n": 285,
+        "gdp_countries": 75
+      },
+      "26": {
+        "edu_r2": 0.477,
+        "edu_n": 332,
+        "edu_countries": 87,
+        "gdp_r2": 0.018,
+        "gdp_n": 273,
+        "gdp_countries": 73
+      },
+      "27": {
+        "edu_r2": 0.458,
+        "edu_n": 319,
+        "edu_countries": 86,
+        "gdp_r2": 0.011,
+        "gdp_n": 261,
+        "gdp_countries": 72
+      },
+      "28": {
+        "edu_r2": 0.461,
+        "edu_n": 307,
+        "edu_countries": 84,
+        "gdp_r2": 0.011,
+        "gdp_n": 252,
+        "gdp_countries": 71
+      },
+      "29": {
+        "edu_r2": 0.45,
+        "edu_n": 299,
+        "edu_countries": 84,
+        "gdp_r2": 0.008,
+        "gdp_n": 244,
+        "gdp_countries": 71
+      },
+      "30": {
+        "edu_r2": 0.426,
+        "edu_n": 287,
+        "edu_countries": 84,
+        "gdp_r2": 0.006,
+        "gdp_n": 234,
+        "gdp_countries": 71
+      },
+      "31": {
+        "edu_r2": 0.493,
+        "edu_n": 266,
+        "edu_countries": 79,
+        "gdp_r2": 0.007,
+        "gdp_n": 215,
+        "gdp_countries": 66
+      },
+      "32": {
+        "edu_r2": 0.49,
+        "edu_n": 252,
+        "edu_countries": 78,
+        "gdp_r2": 0.002,
+        "gdp_n": 204,
+        "gdp_countries": 65
+      },
+      "33": {
+        "edu_r2": 0.447,
+        "edu_n": 238,
+        "edu_countries": 76,
+        "gdp_r2": 0.0,
+        "gdp_n": 193,
+        "gdp_countries": 63
+      },
+      "34": {
+        "edu_r2": 0.503,
+        "edu_n": 229,
+        "edu_countries": 75,
+        "gdp_r2": 0.001,
+        "gdp_n": 184,
+        "gdp_countries": 62
+      },
+      "35": {
+        "edu_r2": 0.557,
+        "edu_n": 222,
+        "edu_countries": 73,
+        "gdp_r2": 0.001,
+        "gdp_n": 179,
+        "gdp_countries": 61
+      },
+      "36": {
+        "edu_r2": 0.53,
+        "edu_n": 210,
+        "edu_countries": 71,
+        "gdp_r2": 0.001,
+        "gdp_n": 171,
+        "gdp_countries": 59
+      },
+      "37": {
+        "edu_r2": 0.517,
+        "edu_n": 190,
+        "edu_countries": 66,
+        "gdp_r2": 0.0,
+        "gdp_n": 155,
+        "gdp_countries": 54
+      },
+      "38": {
+        "edu_r2": 0.506,
+        "edu_n": 176,
+        "edu_countries": 62,
+        "gdp_r2": 0.0,
+        "gdp_n": 141,
+        "gdp_countries": 50
+      },
+      "39": {
+        "edu_r2": 0.537,
+        "edu_n": 164,
+        "edu_countries": 60,
+        "gdp_r2": 0.0,
+        "gdp_n": 130,
+        "gdp_countries": 48
+      },
+      "40": {
+        "edu_r2": 0.525,
+        "edu_n": 157,
+        "edu_countries": 59,
+        "gdp_r2": 0.0,
+        "gdp_n": 125,
+        "gdp_countries": 47
+      },
+      "41": {
+        "edu_r2": 0.524,
+        "edu_n": 143,
+        "edu_countries": 54,
+        "gdp_r2": 0.001,
+        "gdp_n": 113,
+        "gdp_countries": 43
+      },
+      "42": {
+        "edu_r2": 0.468,
+        "edu_n": 130,
+        "edu_countries": 51,
+        "gdp_r2": 0.021,
+        "gdp_n": 100,
+        "gdp_countries": 40
+      },
+      "43": {
+        "edu_r2": 0.404,
+        "edu_n": 119,
+        "edu_countries": 48,
+        "gdp_r2": 0.015,
+        "gdp_n": 91,
+        "gdp_countries": 37
+      },
+      "44": {
+        "edu_r2": 0.388,
+        "edu_n": 113,
+        "edu_countries": 47,
+        "gdp_r2": 0.001,
+        "gdp_n": 85,
+        "gdp_countries": 36
+      },
+      "45": {
+        "edu_r2": 0.347,
+        "edu_n": 102,
+        "edu_countries": 44,
+        "gdp_r2": 0.003,
+        "gdp_n": 79,
+        "gdp_countries": 34
+      },
+      "46": {
+        "edu_r2": 0.372,
+        "edu_n": 87,
+        "edu_countries": 37,
+        "gdp_r2": 0.012,
+        "gdp_n": 65,
+        "gdp_countries": 27
+      },
+      "47": {
+        "edu_r2": 0.343,
+        "edu_n": 76,
+        "edu_countries": 32,
+        "gdp_r2": 0.006,
+        "gdp_n": 60,
+        "gdp_countries": 25
+      },
+      "48": {
+        "edu_r2": 0.324,
+        "edu_n": 68,
+        "edu_countries": 29,
+        "gdp_r2": 0.003,
+        "gdp_n": 52,
+        "gdp_countries": 22
+      },
+      "49": {
+        "edu_r2": 0.39,
+        "edu_n": 59,
+        "edu_countries": 25,
+        "gdp_r2": 0.002,
+        "gdp_n": 47,
+        "gdp_countries": 20
+      },
+      "50": {
+        "edu_r2": 0.563,
+        "edu_n": 40,
+        "edu_countries": 17,
+        "gdp_r2": 0.007,
+        "gdp_n": 32,
+        "gdp_countries": 14
+      },
+      "51": {
+        "edu_r2": 0.38,
+        "edu_n": 26,
+        "edu_countries": 12,
+        "gdp_r2": 0.156,
+        "gdp_n": 22,
+        "gdp_countries": 10
+      },
+      "52": {
+        "edu_r2": 0.302,
+        "edu_n": 20,
+        "edu_countries": 9,
+        "gdp_r2": 0.18,
+        "gdp_n": 16,
+        "gdp_countries": 7
+      },
+      "53": {
+        "edu_r2": 0.024,
+        "edu_n": 10,
+        "edu_countries": 4,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "54": {
+        "edu_r2": 0.024,
+        "edu_n": 10,
+        "edu_countries": 4,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "55": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "56": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "57": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "58": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "59": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      }
+    },
+    "65": {
+      "10": {
+        "edu_r2": 0.457,
+        "edu_n": 642,
+        "edu_countries": 126,
+        "gdp_r2": 0.118,
+        "gdp_n": 540,
+        "gdp_countries": 111
+      },
+      "11": {
+        "edu_r2": 0.468,
+        "edu_n": 614,
+        "edu_countries": 121,
+        "gdp_r2": 0.108,
+        "gdp_n": 517,
+        "gdp_countries": 107
+      },
+      "12": {
+        "edu_r2": 0.474,
+        "edu_n": 594,
+        "edu_countries": 120,
+        "gdp_r2": 0.101,
+        "gdp_n": 501,
+        "gdp_countries": 106
+      },
+      "13": {
+        "edu_r2": 0.489,
+        "edu_n": 571,
+        "edu_countries": 118,
+        "gdp_r2": 0.116,
+        "gdp_n": 483,
+        "gdp_countries": 104
+      },
+      "14": {
+        "edu_r2": 0.482,
+        "edu_n": 558,
+        "edu_countries": 114,
+        "gdp_r2": 0.103,
+        "gdp_n": 470,
+        "gdp_countries": 100
+      },
+      "15": {
+        "edu_r2": 0.481,
+        "edu_n": 541,
+        "edu_countries": 114,
+        "gdp_r2": 0.1,
+        "gdp_n": 454,
+        "gdp_countries": 100
+      },
+      "16": {
+        "edu_r2": 0.501,
+        "edu_n": 527,
+        "edu_countries": 112,
+        "gdp_r2": 0.097,
+        "gdp_n": 441,
+        "gdp_countries": 98
+      },
+      "17": {
+        "edu_r2": 0.49,
+        "edu_n": 504,
+        "edu_countries": 110,
+        "gdp_r2": 0.073,
+        "gdp_n": 421,
+        "gdp_countries": 96
+      },
+      "18": {
+        "edu_r2": 0.489,
+        "edu_n": 487,
+        "edu_countries": 108,
+        "gdp_r2": 0.076,
+        "gdp_n": 407,
+        "gdp_countries": 94
+      },
+      "19": {
+        "edu_r2": 0.489,
+        "edu_n": 470,
+        "edu_countries": 106,
+        "gdp_r2": 0.07,
+        "gdp_n": 392,
+        "gdp_countries": 92
+      },
+      "20": {
+        "edu_r2": 0.479,
+        "edu_n": 459,
+        "edu_countries": 104,
+        "gdp_r2": 0.055,
+        "gdp_n": 381,
+        "gdp_countries": 90
+      },
+      "21": {
+        "edu_r2": 0.486,
+        "edu_n": 444,
+        "edu_countries": 100,
+        "gdp_r2": 0.059,
+        "gdp_n": 371,
+        "gdp_countries": 87
+      },
+      "22": {
+        "edu_r2": 0.525,
+        "edu_n": 422,
+        "edu_countries": 95,
+        "gdp_r2": 0.057,
+        "gdp_n": 352,
+        "gdp_countries": 82
+      },
+      "23": {
+        "edu_r2": 0.515,
+        "edu_n": 411,
+        "edu_countries": 95,
+        "gdp_r2": 0.051,
+        "gdp_n": 342,
+        "gdp_countries": 82
+      },
+      "24": {
+        "edu_r2": 0.5,
+        "edu_n": 397,
+        "edu_countries": 93,
+        "gdp_r2": 0.043,
+        "gdp_n": 329,
+        "gdp_countries": 80
+      },
+      "25": {
+        "edu_r2": 0.485,
+        "edu_n": 385,
+        "edu_countries": 93,
+        "gdp_r2": 0.041,
+        "gdp_n": 318,
+        "gdp_countries": 80
+      },
+      "26": {
+        "edu_r2": 0.512,
+        "edu_n": 371,
+        "edu_countries": 91,
+        "gdp_r2": 0.038,
+        "gdp_n": 306,
+        "gdp_countries": 78
+      },
+      "27": {
+        "edu_r2": 0.496,
+        "edu_n": 358,
+        "edu_countries": 90,
+        "gdp_r2": 0.03,
+        "gdp_n": 294,
+        "gdp_countries": 77
+      },
+      "28": {
+        "edu_r2": 0.504,
+        "edu_n": 347,
+        "edu_countries": 89,
+        "gdp_r2": 0.032,
+        "gdp_n": 285,
+        "gdp_countries": 76
+      },
+      "29": {
+        "edu_r2": 0.497,
+        "edu_n": 339,
+        "edu_countries": 89,
+        "gdp_r2": 0.028,
+        "gdp_n": 277,
+        "gdp_countries": 76
+      },
+      "30": {
+        "edu_r2": 0.461,
+        "edu_n": 327,
+        "edu_countries": 89,
+        "gdp_r2": 0.026,
+        "gdp_n": 267,
+        "gdp_countries": 76
+      },
+      "31": {
+        "edu_r2": 0.514,
+        "edu_n": 306,
+        "edu_countries": 84,
+        "gdp_r2": 0.03,
+        "gdp_n": 248,
+        "gdp_countries": 71
+      },
+      "32": {
+        "edu_r2": 0.504,
+        "edu_n": 292,
+        "edu_countries": 83,
+        "gdp_r2": 0.021,
+        "gdp_n": 237,
+        "gdp_countries": 70
+      },
+      "33": {
+        "edu_r2": 0.472,
+        "edu_n": 278,
+        "edu_countries": 81,
+        "gdp_r2": 0.017,
+        "gdp_n": 226,
+        "gdp_countries": 68
+      },
+      "34": {
+        "edu_r2": 0.51,
+        "edu_n": 269,
+        "edu_countries": 80,
+        "gdp_r2": 0.021,
+        "gdp_n": 217,
+        "gdp_countries": 67
+      },
+      "35": {
+        "edu_r2": 0.543,
+        "edu_n": 263,
+        "edu_countries": 79,
+        "gdp_r2": 0.021,
+        "gdp_n": 212,
+        "gdp_countries": 66
+      },
+      "36": {
+        "edu_r2": 0.525,
+        "edu_n": 252,
+        "edu_countries": 78,
+        "gdp_r2": 0.022,
+        "gdp_n": 205,
+        "gdp_countries": 65
+      },
+      "37": {
+        "edu_r2": 0.51,
+        "edu_n": 233,
+        "edu_countries": 74,
+        "gdp_r2": 0.013,
+        "gdp_n": 190,
+        "gdp_countries": 61
+      },
+      "38": {
+        "edu_r2": 0.5,
+        "edu_n": 220,
+        "edu_countries": 71,
+        "gdp_r2": 0.016,
+        "gdp_n": 177,
+        "gdp_countries": 58
+      },
+      "39": {
+        "edu_r2": 0.508,
+        "edu_n": 209,
+        "edu_countries": 70,
+        "gdp_r2": 0.02,
+        "gdp_n": 167,
+        "gdp_countries": 57
+      },
+      "40": {
+        "edu_r2": 0.501,
+        "edu_n": 202,
+        "edu_countries": 69,
+        "gdp_r2": 0.02,
+        "gdp_n": 162,
+        "gdp_countries": 56
+      },
+      "41": {
+        "edu_r2": 0.495,
+        "edu_n": 188,
+        "edu_countries": 64,
+        "gdp_r2": 0.016,
+        "gdp_n": 150,
+        "gdp_countries": 52
+      },
+      "42": {
+        "edu_r2": 0.457,
+        "edu_n": 175,
+        "edu_countries": 61,
+        "gdp_r2": 0.008,
+        "gdp_n": 137,
+        "gdp_countries": 49
+      },
+      "43": {
+        "edu_r2": 0.425,
+        "edu_n": 164,
+        "edu_countries": 58,
+        "gdp_r2": 0.012,
+        "gdp_n": 128,
+        "gdp_countries": 46
+      },
+      "44": {
+        "edu_r2": 0.418,
+        "edu_n": 158,
+        "edu_countries": 57,
+        "gdp_r2": 0.026,
+        "gdp_n": 122,
+        "gdp_countries": 45
+      },
+      "45": {
+        "edu_r2": 0.399,
+        "edu_n": 147,
+        "edu_countries": 55,
+        "gdp_r2": 0.021,
+        "gdp_n": 117,
+        "gdp_countries": 44
+      },
+      "46": {
+        "edu_r2": 0.42,
+        "edu_n": 134,
+        "edu_countries": 50,
+        "gdp_r2": 0.016,
+        "gdp_n": 105,
+        "gdp_countries": 39
+      },
+      "47": {
+        "edu_r2": 0.389,
+        "edu_n": 120,
+        "edu_countries": 44,
+        "gdp_r2": 0.034,
+        "gdp_n": 99,
+        "gdp_countries": 37
+      },
+      "48": {
+        "edu_r2": 0.378,
+        "edu_n": 111,
+        "edu_countries": 41,
+        "gdp_r2": 0.039,
+        "gdp_n": 90,
+        "gdp_countries": 34
+      },
+      "49": {
+        "edu_r2": 0.365,
+        "edu_n": 98,
+        "edu_countries": 36,
+        "gdp_r2": 0.042,
+        "gdp_n": 81,
+        "gdp_countries": 30
+      },
+      "50": {
+        "edu_r2": 0.374,
+        "edu_n": 82,
+        "edu_countries": 31,
+        "gdp_r2": 0.054,
+        "gdp_n": 68,
+        "gdp_countries": 26
+      },
+      "51": {
+        "edu_r2": 0.289,
+        "edu_n": 67,
+        "edu_countries": 26,
+        "gdp_r2": 0.023,
+        "gdp_n": 57,
+        "gdp_countries": 22
+      },
+      "52": {
+        "edu_r2": 0.326,
+        "edu_n": 61,
+        "edu_countries": 24,
+        "gdp_r2": 0.028,
+        "gdp_n": 51,
+        "gdp_countries": 20
+      },
+      "53": {
+        "edu_r2": 0.296,
+        "edu_n": 52,
+        "edu_countries": 21,
+        "gdp_r2": 0.023,
+        "gdp_n": 43,
+        "gdp_countries": 17
+      },
+      "54": {
+        "edu_r2": 0.293,
+        "edu_n": 48,
+        "edu_countries": 19,
+        "gdp_r2": 0.027,
+        "gdp_n": 41,
+        "gdp_countries": 16
+      },
+      "55": {
+        "edu_r2": 0.192,
+        "edu_n": 42,
+        "edu_countries": 17,
+        "gdp_r2": 0.023,
+        "gdp_n": 36,
+        "gdp_countries": 14
+      },
+      "56": {
+        "edu_r2": 0.182,
+        "edu_n": 38,
+        "edu_countries": 16,
+        "gdp_r2": 0.028,
+        "gdp_n": 32,
+        "gdp_countries": 13
+      },
+      "57": {
+        "edu_r2": 0.24,
+        "edu_n": 28,
+        "edu_countries": 11,
+        "gdp_r2": 0.03,
+        "gdp_n": 26,
+        "gdp_countries": 10
+      },
+      "58": {
+        "edu_r2": 0.298,
+        "edu_n": 22,
+        "edu_countries": 8,
+        "gdp_r2": 0.026,
+        "gdp_n": 22,
+        "gdp_countries": 8
+      },
+      "59": {
+        "edu_r2": 0.303,
+        "edu_n": 17,
+        "edu_countries": 6,
+        "gdp_r2": 0.035,
+        "gdp_n": 17,
+        "gdp_countries": 6
+      },
+      "60": {
+        "edu_r2": 0.237,
+        "edu_n": 10,
+        "edu_countries": 4,
+        "gdp_r2": 0.375,
+        "gdp_n": 10,
+        "gdp_countries": 4
+      },
+      "61": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "62": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "63": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      }
+    },
+    "70": {
+      "10": {
+        "edu_r2": 0.46,
+        "edu_n": 677,
+        "edu_countries": 132,
+        "gdp_r2": 0.121,
+        "gdp_n": 560,
+        "gdp_countries": 114
+      },
+      "11": {
+        "edu_r2": 0.471,
+        "edu_n": 649,
+        "edu_countries": 127,
+        "gdp_r2": 0.111,
+        "gdp_n": 537,
+        "gdp_countries": 110
+      },
+      "12": {
+        "edu_r2": 0.478,
+        "edu_n": 629,
+        "edu_countries": 126,
+        "gdp_r2": 0.105,
+        "gdp_n": 521,
+        "gdp_countries": 109
+      },
+      "13": {
+        "edu_r2": 0.493,
+        "edu_n": 606,
+        "edu_countries": 124,
+        "gdp_r2": 0.12,
+        "gdp_n": 503,
+        "gdp_countries": 107
+      },
+      "14": {
+        "edu_r2": 0.487,
+        "edu_n": 593,
+        "edu_countries": 120,
+        "gdp_r2": 0.108,
+        "gdp_n": 490,
+        "gdp_countries": 103
+      },
+      "15": {
+        "edu_r2": 0.487,
+        "edu_n": 576,
+        "edu_countries": 120,
+        "gdp_r2": 0.105,
+        "gdp_n": 474,
+        "gdp_countries": 103
+      },
+      "16": {
+        "edu_r2": 0.506,
+        "edu_n": 562,
+        "edu_countries": 118,
+        "gdp_r2": 0.102,
+        "gdp_n": 461,
+        "gdp_countries": 101
+      },
+      "17": {
+        "edu_r2": 0.497,
+        "edu_n": 539,
+        "edu_countries": 116,
+        "gdp_r2": 0.08,
+        "gdp_n": 441,
+        "gdp_countries": 99
+      },
+      "18": {
+        "edu_r2": 0.497,
+        "edu_n": 522,
+        "edu_countries": 114,
+        "gdp_r2": 0.083,
+        "gdp_n": 427,
+        "gdp_countries": 97
+      },
+      "19": {
+        "edu_r2": 0.499,
+        "edu_n": 505,
+        "edu_countries": 112,
+        "gdp_r2": 0.077,
+        "gdp_n": 412,
+        "gdp_countries": 95
+      },
+      "20": {
+        "edu_r2": 0.49,
+        "edu_n": 494,
+        "edu_countries": 110,
+        "gdp_r2": 0.063,
+        "gdp_n": 401,
+        "gdp_countries": 93
+      },
+      "21": {
+        "edu_r2": 0.498,
+        "edu_n": 479,
+        "edu_countries": 106,
+        "gdp_r2": 0.067,
+        "gdp_n": 391,
+        "gdp_countries": 90
+      },
+      "22": {
+        "edu_r2": 0.536,
+        "edu_n": 457,
+        "edu_countries": 101,
+        "gdp_r2": 0.065,
+        "gdp_n": 372,
+        "gdp_countries": 85
+      },
+      "23": {
+        "edu_r2": 0.528,
+        "edu_n": 446,
+        "edu_countries": 101,
+        "gdp_r2": 0.06,
+        "gdp_n": 362,
+        "gdp_countries": 85
+      },
+      "24": {
+        "edu_r2": 0.519,
+        "edu_n": 432,
+        "edu_countries": 99,
+        "gdp_r2": 0.052,
+        "gdp_n": 349,
+        "gdp_countries": 83
+      },
+      "25": {
+        "edu_r2": 0.508,
+        "edu_n": 420,
+        "edu_countries": 99,
+        "gdp_r2": 0.052,
+        "gdp_n": 338,
+        "gdp_countries": 83
+      },
+      "26": {
+        "edu_r2": 0.53,
+        "edu_n": 406,
+        "edu_countries": 97,
+        "gdp_r2": 0.048,
+        "gdp_n": 326,
+        "gdp_countries": 81
+      },
+      "27": {
+        "edu_r2": 0.516,
+        "edu_n": 393,
+        "edu_countries": 96,
+        "gdp_r2": 0.04,
+        "gdp_n": 314,
+        "gdp_countries": 80
+      },
+      "28": {
+        "edu_r2": 0.524,
+        "edu_n": 382,
+        "edu_countries": 95,
+        "gdp_r2": 0.044,
+        "gdp_n": 305,
+        "gdp_countries": 79
+      },
+      "29": {
+        "edu_r2": 0.518,
+        "edu_n": 374,
+        "edu_countries": 95,
+        "gdp_r2": 0.04,
+        "gdp_n": 297,
+        "gdp_countries": 79
+      },
+      "30": {
+        "edu_r2": 0.495,
+        "edu_n": 362,
+        "edu_countries": 95,
+        "gdp_r2": 0.036,
+        "gdp_n": 287,
+        "gdp_countries": 79
+      },
+      "31": {
+        "edu_r2": 0.538,
+        "edu_n": 341,
+        "edu_countries": 90,
+        "gdp_r2": 0.04,
+        "gdp_n": 268,
+        "gdp_countries": 74
+      },
+      "32": {
+        "edu_r2": 0.533,
+        "edu_n": 327,
+        "edu_countries": 89,
+        "gdp_r2": 0.032,
+        "gdp_n": 257,
+        "gdp_countries": 73
+      },
+      "33": {
+        "edu_r2": 0.509,
+        "edu_n": 313,
+        "edu_countries": 87,
+        "gdp_r2": 0.03,
+        "gdp_n": 246,
+        "gdp_countries": 71
+      },
+      "34": {
+        "edu_r2": 0.536,
+        "edu_n": 304,
+        "edu_countries": 86,
+        "gdp_r2": 0.037,
+        "gdp_n": 237,
+        "gdp_countries": 70
+      },
+      "35": {
+        "edu_r2": 0.561,
+        "edu_n": 298,
+        "edu_countries": 85,
+        "gdp_r2": 0.037,
+        "gdp_n": 232,
+        "gdp_countries": 69
+      },
+      "36": {
+        "edu_r2": 0.543,
+        "edu_n": 287,
+        "edu_countries": 84,
+        "gdp_r2": 0.039,
+        "gdp_n": 225,
+        "gdp_countries": 68
+      },
+      "37": {
+        "edu_r2": 0.518,
+        "edu_n": 269,
+        "edu_countries": 81,
+        "gdp_r2": 0.028,
+        "gdp_n": 211,
+        "gdp_countries": 65
+      },
+      "38": {
+        "edu_r2": 0.513,
+        "edu_n": 256,
+        "edu_countries": 78,
+        "gdp_r2": 0.033,
+        "gdp_n": 198,
+        "gdp_countries": 62
+      },
+      "39": {
+        "edu_r2": 0.516,
+        "edu_n": 245,
+        "edu_countries": 77,
+        "gdp_r2": 0.042,
+        "gdp_n": 188,
+        "gdp_countries": 61
+      },
+      "40": {
+        "edu_r2": 0.512,
+        "edu_n": 238,
+        "edu_countries": 76,
+        "gdp_r2": 0.043,
+        "gdp_n": 183,
+        "gdp_countries": 60
+      },
+      "41": {
+        "edu_r2": 0.522,
+        "edu_n": 226,
+        "edu_countries": 73,
+        "gdp_r2": 0.04,
+        "gdp_n": 172,
+        "gdp_countries": 57
+      },
+      "42": {
+        "edu_r2": 0.481,
+        "edu_n": 215,
+        "edu_countries": 72,
+        "gdp_r2": 0.024,
+        "gdp_n": 161,
+        "gdp_countries": 56
+      },
+      "43": {
+        "edu_r2": 0.45,
+        "edu_n": 204,
+        "edu_countries": 69,
+        "gdp_r2": 0.028,
+        "gdp_n": 152,
+        "gdp_countries": 53
+      },
+      "44": {
+        "edu_r2": 0.448,
+        "edu_n": 198,
+        "edu_countries": 68,
+        "gdp_r2": 0.046,
+        "gdp_n": 146,
+        "gdp_countries": 52
+      },
+      "45": {
+        "edu_r2": 0.422,
+        "edu_n": 187,
+        "edu_countries": 66,
+        "gdp_r2": 0.041,
+        "gdp_n": 141,
+        "gdp_countries": 51
+      },
+      "46": {
+        "edu_r2": 0.434,
+        "edu_n": 175,
+        "edu_countries": 62,
+        "gdp_r2": 0.034,
+        "gdp_n": 130,
+        "gdp_countries": 47
+      },
+      "47": {
+        "edu_r2": 0.428,
+        "edu_n": 163,
+        "edu_countries": 58,
+        "gdp_r2": 0.055,
+        "gdp_n": 124,
+        "gdp_countries": 45
+      },
+      "48": {
+        "edu_r2": 0.417,
+        "edu_n": 155,
+        "edu_countries": 56,
+        "gdp_r2": 0.058,
+        "gdp_n": 116,
+        "gdp_countries": 43
+      },
+      "49": {
+        "edu_r2": 0.418,
+        "edu_n": 143,
+        "edu_countries": 52,
+        "gdp_r2": 0.058,
+        "gdp_n": 108,
+        "gdp_countries": 40
+      },
+      "50": {
+        "edu_r2": 0.422,
+        "edu_n": 128,
+        "edu_countries": 48,
+        "gdp_r2": 0.082,
+        "gdp_n": 95,
+        "gdp_countries": 36
+      },
+      "51": {
+        "edu_r2": 0.349,
+        "edu_n": 115,
+        "edu_countries": 45,
+        "gdp_r2": 0.045,
+        "gdp_n": 85,
+        "gdp_countries": 33
+      },
+      "52": {
+        "edu_r2": 0.361,
+        "edu_n": 107,
+        "edu_countries": 42,
+        "gdp_r2": 0.043,
+        "gdp_n": 77,
+        "gdp_countries": 30
+      },
+      "53": {
+        "edu_r2": 0.33,
+        "edu_n": 98,
+        "edu_countries": 39,
+        "gdp_r2": 0.039,
+        "gdp_n": 69,
+        "gdp_countries": 27
+      },
+      "54": {
+        "edu_r2": 0.28,
+        "edu_n": 91,
+        "edu_countries": 36,
+        "gdp_r2": 0.043,
+        "gdp_n": 65,
+        "gdp_countries": 25
+      },
+      "55": {
+        "edu_r2": 0.229,
+        "edu_n": 83,
+        "edu_countries": 33,
+        "gdp_r2": 0.032,
+        "gdp_n": 60,
+        "gdp_countries": 23
+      },
+      "56": {
+        "edu_r2": 0.226,
+        "edu_n": 78,
+        "edu_countries": 32,
+        "gdp_r2": 0.039,
+        "gdp_n": 55,
+        "gdp_countries": 22
+      },
+      "57": {
+        "edu_r2": 0.257,
+        "edu_n": 63,
+        "edu_countries": 26,
+        "gdp_r2": 0.045,
+        "gdp_n": 48,
+        "gdp_countries": 19
+      },
+      "58": {
+        "edu_r2": 0.239,
+        "edu_n": 58,
+        "edu_countries": 25,
+        "gdp_r2": 0.031,
+        "gdp_n": 44,
+        "gdp_countries": 18
+      },
+      "59": {
+        "edu_r2": 0.19,
+        "edu_n": 48,
+        "edu_countries": 21,
+        "gdp_r2": 0.037,
+        "gdp_n": 36,
+        "gdp_countries": 15
+      },
+      "60": {
+        "edu_r2": 0.303,
+        "edu_n": 36,
+        "edu_countries": 17,
+        "gdp_r2": 0.142,
+        "gdp_n": 28,
+        "gdp_countries": 13
+      },
+      "61": {
+        "edu_r2": 0.268,
+        "edu_n": 26,
+        "edu_countries": 12,
+        "gdp_r2": 0.229,
+        "gdp_n": 20,
+        "gdp_countries": 9
+      },
+      "62": {
+        "edu_r2": 0.454,
+        "edu_n": 18,
+        "edu_countries": 9,
+        "gdp_r2": 0.652,
+        "gdp_n": 12,
+        "gdp_countries": 6
+      },
+      "63": {
+        "edu_r2": 0.192,
+        "edu_n": 10,
+        "edu_countries": 5,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "64": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "65": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "66": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "67": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "68": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      }
+    },
+    "75": {
+      "10": {
+        "edu_r2": 0.462,
+        "edu_n": 702,
+        "edu_countries": 134,
+        "gdp_r2": 0.13,
+        "gdp_n": 578,
+        "gdp_countries": 115
+      },
+      "11": {
+        "edu_r2": 0.473,
+        "edu_n": 674,
+        "edu_countries": 129,
+        "gdp_r2": 0.121,
+        "gdp_n": 555,
+        "gdp_countries": 111
+      },
+      "12": {
+        "edu_r2": 0.481,
+        "edu_n": 654,
+        "edu_countries": 128,
+        "gdp_r2": 0.115,
+        "gdp_n": 539,
+        "gdp_countries": 110
+      },
+      "13": {
+        "edu_r2": 0.497,
+        "edu_n": 631,
+        "edu_countries": 126,
+        "gdp_r2": 0.131,
+        "gdp_n": 521,
+        "gdp_countries": 108
+      },
+      "14": {
+        "edu_r2": 0.491,
+        "edu_n": 618,
+        "edu_countries": 122,
+        "gdp_r2": 0.119,
+        "gdp_n": 508,
+        "gdp_countries": 104
+      },
+      "15": {
+        "edu_r2": 0.491,
+        "edu_n": 601,
+        "edu_countries": 122,
+        "gdp_r2": 0.117,
+        "gdp_n": 492,
+        "gdp_countries": 104
+      },
+      "16": {
+        "edu_r2": 0.511,
+        "edu_n": 587,
+        "edu_countries": 120,
+        "gdp_r2": 0.115,
+        "gdp_n": 479,
+        "gdp_countries": 102
+      },
+      "17": {
+        "edu_r2": 0.502,
+        "edu_n": 564,
+        "edu_countries": 118,
+        "gdp_r2": 0.093,
+        "gdp_n": 459,
+        "gdp_countries": 100
+      },
+      "18": {
+        "edu_r2": 0.503,
+        "edu_n": 547,
+        "edu_countries": 116,
+        "gdp_r2": 0.097,
+        "gdp_n": 445,
+        "gdp_countries": 98
+      },
+      "19": {
+        "edu_r2": 0.507,
+        "edu_n": 530,
+        "edu_countries": 114,
+        "gdp_r2": 0.093,
+        "gdp_n": 430,
+        "gdp_countries": 96
+      },
+      "20": {
+        "edu_r2": 0.499,
+        "edu_n": 519,
+        "edu_countries": 112,
+        "gdp_r2": 0.078,
+        "gdp_n": 419,
+        "gdp_countries": 94
+      },
+      "21": {
+        "edu_r2": 0.508,
+        "edu_n": 504,
+        "edu_countries": 108,
+        "gdp_r2": 0.084,
+        "gdp_n": 409,
+        "gdp_countries": 91
+      },
+      "22": {
+        "edu_r2": 0.545,
+        "edu_n": 482,
+        "edu_countries": 103,
+        "gdp_r2": 0.084,
+        "gdp_n": 390,
+        "gdp_countries": 86
+      },
+      "23": {
+        "edu_r2": 0.538,
+        "edu_n": 471,
+        "edu_countries": 103,
+        "gdp_r2": 0.08,
+        "gdp_n": 380,
+        "gdp_countries": 86
+      },
+      "24": {
+        "edu_r2": 0.528,
+        "edu_n": 457,
+        "edu_countries": 101,
+        "gdp_r2": 0.07,
+        "gdp_n": 367,
+        "gdp_countries": 84
+      },
+      "25": {
+        "edu_r2": 0.52,
+        "edu_n": 445,
+        "edu_countries": 101,
+        "gdp_r2": 0.071,
+        "gdp_n": 356,
+        "gdp_countries": 84
+      },
+      "26": {
+        "edu_r2": 0.541,
+        "edu_n": 431,
+        "edu_countries": 99,
+        "gdp_r2": 0.069,
+        "gdp_n": 344,
+        "gdp_countries": 82
+      },
+      "27": {
+        "edu_r2": 0.53,
+        "edu_n": 418,
+        "edu_countries": 98,
+        "gdp_r2": 0.061,
+        "gdp_n": 332,
+        "gdp_countries": 81
+      },
+      "28": {
+        "edu_r2": 0.537,
+        "edu_n": 407,
+        "edu_countries": 97,
+        "gdp_r2": 0.066,
+        "gdp_n": 323,
+        "gdp_countries": 80
+      },
+      "29": {
+        "edu_r2": 0.533,
+        "edu_n": 399,
+        "edu_countries": 97,
+        "gdp_r2": 0.063,
+        "gdp_n": 315,
+        "gdp_countries": 80
+      },
+      "30": {
+        "edu_r2": 0.513,
+        "edu_n": 387,
+        "edu_countries": 97,
+        "gdp_r2": 0.061,
+        "gdp_n": 305,
+        "gdp_countries": 80
+      },
+      "31": {
+        "edu_r2": 0.554,
+        "edu_n": 366,
+        "edu_countries": 92,
+        "gdp_r2": 0.066,
+        "gdp_n": 286,
+        "gdp_countries": 75
+      },
+      "32": {
+        "edu_r2": 0.547,
+        "edu_n": 352,
+        "edu_countries": 91,
+        "gdp_r2": 0.056,
+        "gdp_n": 275,
+        "gdp_countries": 74
+      },
+      "33": {
+        "edu_r2": 0.526,
+        "edu_n": 338,
+        "edu_countries": 89,
+        "gdp_r2": 0.056,
+        "gdp_n": 264,
+        "gdp_countries": 72
+      },
+      "34": {
+        "edu_r2": 0.552,
+        "edu_n": 329,
+        "edu_countries": 88,
+        "gdp_r2": 0.065,
+        "gdp_n": 255,
+        "gdp_countries": 71
+      },
+      "35": {
+        "edu_r2": 0.574,
+        "edu_n": 323,
+        "edu_countries": 87,
+        "gdp_r2": 0.065,
+        "gdp_n": 250,
+        "gdp_countries": 70
+      },
+      "36": {
+        "edu_r2": 0.559,
+        "edu_n": 312,
+        "edu_countries": 86,
+        "gdp_r2": 0.067,
+        "gdp_n": 243,
+        "gdp_countries": 69
+      },
+      "37": {
+        "edu_r2": 0.544,
+        "edu_n": 294,
+        "edu_countries": 83,
+        "gdp_r2": 0.054,
+        "gdp_n": 229,
+        "gdp_countries": 66
+      },
+      "38": {
+        "edu_r2": 0.54,
+        "edu_n": 281,
+        "edu_countries": 80,
+        "gdp_r2": 0.06,
+        "gdp_n": 216,
+        "gdp_countries": 63
+      },
+      "39": {
+        "edu_r2": 0.545,
+        "edu_n": 270,
+        "edu_countries": 79,
+        "gdp_r2": 0.075,
+        "gdp_n": 206,
+        "gdp_countries": 62
+      },
+      "40": {
+        "edu_r2": 0.539,
+        "edu_n": 263,
+        "edu_countries": 78,
+        "gdp_r2": 0.073,
+        "gdp_n": 201,
+        "gdp_countries": 61
+      },
+      "41": {
+        "edu_r2": 0.544,
+        "edu_n": 251,
+        "edu_countries": 75,
+        "gdp_r2": 0.071,
+        "gdp_n": 190,
+        "gdp_countries": 58
+      },
+      "42": {
+        "edu_r2": 0.505,
+        "edu_n": 240,
+        "edu_countries": 74,
+        "gdp_r2": 0.053,
+        "gdp_n": 179,
+        "gdp_countries": 57
+      },
+      "43": {
+        "edu_r2": 0.481,
+        "edu_n": 229,
+        "edu_countries": 71,
+        "gdp_r2": 0.06,
+        "gdp_n": 170,
+        "gdp_countries": 54
+      },
+      "44": {
+        "edu_r2": 0.481,
+        "edu_n": 223,
+        "edu_countries": 70,
+        "gdp_r2": 0.082,
+        "gdp_n": 164,
+        "gdp_countries": 53
+      },
+      "45": {
+        "edu_r2": 0.466,
+        "edu_n": 213,
+        "edu_countries": 69,
+        "gdp_r2": 0.072,
+        "gdp_n": 160,
+        "gdp_countries": 53
+      },
+      "46": {
+        "edu_r2": 0.473,
+        "edu_n": 201,
+        "edu_countries": 65,
+        "gdp_r2": 0.067,
+        "gdp_n": 149,
+        "gdp_countries": 49
+      },
+      "47": {
+        "edu_r2": 0.465,
+        "edu_n": 191,
+        "edu_countries": 63,
+        "gdp_r2": 0.089,
+        "gdp_n": 144,
+        "gdp_countries": 48
+      },
+      "48": {
+        "edu_r2": 0.45,
+        "edu_n": 184,
+        "edu_countries": 62,
+        "gdp_r2": 0.082,
+        "gdp_n": 137,
+        "gdp_countries": 47
+      },
+      "49": {
+        "edu_r2": 0.458,
+        "edu_n": 174,
+        "edu_countries": 60,
+        "gdp_r2": 0.081,
+        "gdp_n": 130,
+        "gdp_countries": 45
+      },
+      "50": {
+        "edu_r2": 0.468,
+        "edu_n": 159,
+        "edu_countries": 56,
+        "gdp_r2": 0.104,
+        "gdp_n": 117,
+        "gdp_countries": 41
+      },
+      "51": {
+        "edu_r2": 0.41,
+        "edu_n": 148,
+        "edu_countries": 55,
+        "gdp_r2": 0.07,
+        "gdp_n": 109,
+        "gdp_countries": 40
+      },
+      "52": {
+        "edu_r2": 0.418,
+        "edu_n": 140,
+        "edu_countries": 52,
+        "gdp_r2": 0.07,
+        "gdp_n": 101,
+        "gdp_countries": 37
+      },
+      "53": {
+        "edu_r2": 0.396,
+        "edu_n": 132,
+        "edu_countries": 50,
+        "gdp_r2": 0.065,
+        "gdp_n": 94,
+        "gdp_countries": 35
+      },
+      "54": {
+        "edu_r2": 0.368,
+        "edu_n": 126,
+        "edu_countries": 48,
+        "gdp_r2": 0.072,
+        "gdp_n": 90,
+        "gdp_countries": 33
+      },
+      "55": {
+        "edu_r2": 0.345,
+        "edu_n": 118,
+        "edu_countries": 45,
+        "gdp_r2": 0.065,
+        "gdp_n": 85,
+        "gdp_countries": 31
+      },
+      "56": {
+        "edu_r2": 0.344,
+        "edu_n": 113,
+        "edu_countries": 44,
+        "gdp_r2": 0.072,
+        "gdp_n": 80,
+        "gdp_countries": 30
+      },
+      "57": {
+        "edu_r2": 0.353,
+        "edu_n": 101,
+        "edu_countries": 41,
+        "gdp_r2": 0.065,
+        "gdp_n": 75,
+        "gdp_countries": 29
+      },
+      "58": {
+        "edu_r2": 0.367,
+        "edu_n": 92,
+        "edu_countries": 38,
+        "gdp_r2": 0.055,
+        "gdp_n": 69,
+        "gdp_countries": 27
+      },
+      "59": {
+        "edu_r2": 0.334,
+        "edu_n": 83,
+        "edu_countries": 35,
+        "gdp_r2": 0.056,
+        "gdp_n": 62,
+        "gdp_countries": 25
+      },
+      "60": {
+        "edu_r2": 0.508,
+        "edu_n": 70,
+        "edu_countries": 31,
+        "gdp_r2": 0.004,
+        "gdp_n": 53,
+        "gdp_countries": 23
+      },
+      "61": {
+        "edu_r2": 0.45,
+        "edu_n": 55,
+        "edu_countries": 24,
+        "gdp_r2": 0.003,
+        "gdp_n": 42,
+        "gdp_countries": 18
+      },
+      "62": {
+        "edu_r2": 0.636,
+        "edu_n": 46,
+        "edu_countries": 21,
+        "gdp_r2": 0.013,
+        "gdp_n": 33,
+        "gdp_countries": 15
+      },
+      "63": {
+        "edu_r2": 0.599,
+        "edu_n": 35,
+        "edu_countries": 16,
+        "gdp_r2": 0.007,
+        "gdp_n": 27,
+        "gdp_countries": 12
+      },
+      "64": {
+        "edu_r2": 0.669,
+        "edu_n": 25,
+        "edu_countries": 11,
+        "gdp_r2": 0.008,
+        "gdp_n": 21,
+        "gdp_countries": 9
+      },
+      "65": {
+        "edu_r2": 0.717,
+        "edu_n": 23,
+        "edu_countries": 10,
+        "gdp_r2": 0.002,
+        "gdp_n": 19,
+        "gdp_countries": 8
+      },
+      "66": {
+        "edu_r2": 0.732,
+        "edu_n": 16,
+        "edu_countries": 7,
+        "gdp_r2": 0.059,
+        "gdp_n": 12,
+        "gdp_countries": 5
+      },
+      "67": {
+        "edu_r2": 0.691,
+        "edu_n": 14,
+        "edu_countries": 6,
+        "gdp_r2": 0.001,
+        "gdp_n": 10,
+        "gdp_countries": 4
+      },
+      "68": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "69": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "70": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "71": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "72": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "73": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      }
+    },
+    "80": {
+      "10": {
+        "edu_r2": 0.47,
+        "edu_n": 732,
+        "edu_countries": 137,
+        "gdp_r2": 0.144,
+        "gdp_n": 605,
+        "gdp_countries": 120
+      },
+      "11": {
+        "edu_r2": 0.482,
+        "edu_n": 704,
+        "edu_countries": 132,
+        "gdp_r2": 0.136,
+        "gdp_n": 582,
+        "gdp_countries": 116
+      },
+      "12": {
+        "edu_r2": 0.491,
+        "edu_n": 684,
+        "edu_countries": 131,
+        "gdp_r2": 0.132,
+        "gdp_n": 566,
+        "gdp_countries": 115
+      },
+      "13": {
+        "edu_r2": 0.507,
+        "edu_n": 661,
+        "edu_countries": 129,
+        "gdp_r2": 0.148,
+        "gdp_n": 548,
+        "gdp_countries": 113
+      },
+      "14": {
+        "edu_r2": 0.502,
+        "edu_n": 648,
+        "edu_countries": 125,
+        "gdp_r2": 0.138,
+        "gdp_n": 535,
+        "gdp_countries": 109
+      },
+      "15": {
+        "edu_r2": 0.504,
+        "edu_n": 631,
+        "edu_countries": 125,
+        "gdp_r2": 0.136,
+        "gdp_n": 519,
+        "gdp_countries": 109
+      },
+      "16": {
+        "edu_r2": 0.523,
+        "edu_n": 617,
+        "edu_countries": 123,
+        "gdp_r2": 0.136,
+        "gdp_n": 506,
+        "gdp_countries": 107
+      },
+      "17": {
+        "edu_r2": 0.516,
+        "edu_n": 594,
+        "edu_countries": 121,
+        "gdp_r2": 0.115,
+        "gdp_n": 486,
+        "gdp_countries": 105
+      },
+      "18": {
+        "edu_r2": 0.518,
+        "edu_n": 577,
+        "edu_countries": 119,
+        "gdp_r2": 0.121,
+        "gdp_n": 472,
+        "gdp_countries": 103
+      },
+      "19": {
+        "edu_r2": 0.523,
+        "edu_n": 560,
+        "edu_countries": 117,
+        "gdp_r2": 0.118,
+        "gdp_n": 457,
+        "gdp_countries": 101
+      },
+      "20": {
+        "edu_r2": 0.517,
+        "edu_n": 549,
+        "edu_countries": 115,
+        "gdp_r2": 0.104,
+        "gdp_n": 446,
+        "gdp_countries": 99
+      },
+      "21": {
+        "edu_r2": 0.528,
+        "edu_n": 534,
+        "edu_countries": 111,
+        "gdp_r2": 0.112,
+        "gdp_n": 436,
+        "gdp_countries": 96
+      },
+      "22": {
+        "edu_r2": 0.563,
+        "edu_n": 512,
+        "edu_countries": 106,
+        "gdp_r2": 0.114,
+        "gdp_n": 417,
+        "gdp_countries": 91
+      },
+      "23": {
+        "edu_r2": 0.557,
+        "edu_n": 501,
+        "edu_countries": 106,
+        "gdp_r2": 0.111,
+        "gdp_n": 407,
+        "gdp_countries": 91
+      },
+      "24": {
+        "edu_r2": 0.549,
+        "edu_n": 487,
+        "edu_countries": 104,
+        "gdp_r2": 0.1,
+        "gdp_n": 394,
+        "gdp_countries": 89
+      },
+      "25": {
+        "edu_r2": 0.543,
+        "edu_n": 475,
+        "edu_countries": 104,
+        "gdp_r2": 0.103,
+        "gdp_n": 383,
+        "gdp_countries": 89
+      },
+      "26": {
+        "edu_r2": 0.563,
+        "edu_n": 461,
+        "edu_countries": 102,
+        "gdp_r2": 0.105,
+        "gdp_n": 371,
+        "gdp_countries": 87
+      },
+      "27": {
+        "edu_r2": 0.556,
+        "edu_n": 448,
+        "edu_countries": 101,
+        "gdp_r2": 0.097,
+        "gdp_n": 359,
+        "gdp_countries": 86
+      },
+      "28": {
+        "edu_r2": 0.565,
+        "edu_n": 437,
+        "edu_countries": 100,
+        "gdp_r2": 0.104,
+        "gdp_n": 350,
+        "gdp_countries": 85
+      },
+      "29": {
+        "edu_r2": 0.562,
+        "edu_n": 429,
+        "edu_countries": 100,
+        "gdp_r2": 0.102,
+        "gdp_n": 342,
+        "gdp_countries": 85
+      },
+      "30": {
+        "edu_r2": 0.547,
+        "edu_n": 417,
+        "edu_countries": 100,
+        "gdp_r2": 0.102,
+        "gdp_n": 332,
+        "gdp_countries": 85
+      },
+      "31": {
+        "edu_r2": 0.585,
+        "edu_n": 396,
+        "edu_countries": 95,
+        "gdp_r2": 0.112,
+        "gdp_n": 313,
+        "gdp_countries": 80
+      },
+      "32": {
+        "edu_r2": 0.581,
+        "edu_n": 382,
+        "edu_countries": 94,
+        "gdp_r2": 0.104,
+        "gdp_n": 302,
+        "gdp_countries": 79
+      },
+      "33": {
+        "edu_r2": 0.567,
+        "edu_n": 368,
+        "edu_countries": 92,
+        "gdp_r2": 0.107,
+        "gdp_n": 291,
+        "gdp_countries": 77
+      },
+      "34": {
+        "edu_r2": 0.591,
+        "edu_n": 359,
+        "edu_countries": 91,
+        "gdp_r2": 0.12,
+        "gdp_n": 282,
+        "gdp_countries": 76
+      },
+      "35": {
+        "edu_r2": 0.609,
+        "edu_n": 353,
+        "edu_countries": 90,
+        "gdp_r2": 0.121,
+        "gdp_n": 277,
+        "gdp_countries": 75
+      },
+      "36": {
+        "edu_r2": 0.595,
+        "edu_n": 342,
+        "edu_countries": 89,
+        "gdp_r2": 0.123,
+        "gdp_n": 270,
+        "gdp_countries": 74
+      },
+      "37": {
+        "edu_r2": 0.581,
+        "edu_n": 324,
+        "edu_countries": 86,
+        "gdp_r2": 0.108,
+        "gdp_n": 256,
+        "gdp_countries": 71
+      },
+      "38": {
+        "edu_r2": 0.579,
+        "edu_n": 311,
+        "edu_countries": 83,
+        "gdp_r2": 0.119,
+        "gdp_n": 243,
+        "gdp_countries": 68
+      },
+      "39": {
+        "edu_r2": 0.586,
+        "edu_n": 300,
+        "edu_countries": 82,
+        "gdp_r2": 0.141,
+        "gdp_n": 233,
+        "gdp_countries": 67
+      },
+      "40": {
+        "edu_r2": 0.582,
+        "edu_n": 293,
+        "edu_countries": 81,
+        "gdp_r2": 0.143,
+        "gdp_n": 228,
+        "gdp_countries": 66
+      },
+      "41": {
+        "edu_r2": 0.584,
+        "edu_n": 281,
+        "edu_countries": 78,
+        "gdp_r2": 0.145,
+        "gdp_n": 217,
+        "gdp_countries": 63
+      },
+      "42": {
+        "edu_r2": 0.554,
+        "edu_n": 270,
+        "edu_countries": 77,
+        "gdp_r2": 0.124,
+        "gdp_n": 206,
+        "gdp_countries": 62
+      },
+      "43": {
+        "edu_r2": 0.534,
+        "edu_n": 259,
+        "edu_countries": 74,
+        "gdp_r2": 0.137,
+        "gdp_n": 197,
+        "gdp_countries": 59
+      },
+      "44": {
+        "edu_r2": 0.533,
+        "edu_n": 253,
+        "edu_countries": 73,
+        "gdp_r2": 0.164,
+        "gdp_n": 191,
+        "gdp_countries": 58
+      },
+      "45": {
+        "edu_r2": 0.53,
+        "edu_n": 244,
+        "edu_countries": 73,
+        "gdp_r2": 0.157,
+        "gdp_n": 187,
+        "gdp_countries": 58
+      },
+      "46": {
+        "edu_r2": 0.537,
+        "edu_n": 233,
+        "edu_countries": 70,
+        "gdp_r2": 0.149,
+        "gdp_n": 177,
+        "gdp_countries": 55
+      },
+      "47": {
+        "edu_r2": 0.525,
+        "edu_n": 224,
+        "edu_countries": 69,
+        "gdp_r2": 0.178,
+        "gdp_n": 172,
+        "gdp_countries": 54
+      },
+      "48": {
+        "edu_r2": 0.51,
+        "edu_n": 218,
+        "edu_countries": 69,
+        "gdp_r2": 0.165,
+        "gdp_n": 166,
+        "gdp_countries": 54
+      },
+      "49": {
+        "edu_r2": 0.521,
+        "edu_n": 208,
+        "edu_countries": 67,
+        "gdp_r2": 0.16,
+        "gdp_n": 159,
+        "gdp_countries": 52
+      },
+      "50": {
+        "edu_r2": 0.531,
+        "edu_n": 193,
+        "edu_countries": 63,
+        "gdp_r2": 0.192,
+        "gdp_n": 146,
+        "gdp_countries": 48
+      },
+      "51": {
+        "edu_r2": 0.495,
+        "edu_n": 182,
+        "edu_countries": 62,
+        "gdp_r2": 0.17,
+        "gdp_n": 138,
+        "gdp_countries": 47
+      },
+      "52": {
+        "edu_r2": 0.495,
+        "edu_n": 175,
+        "edu_countries": 60,
+        "gdp_r2": 0.162,
+        "gdp_n": 131,
+        "gdp_countries": 45
+      },
+      "53": {
+        "edu_r2": 0.495,
+        "edu_n": 165,
+        "edu_countries": 57,
+        "gdp_r2": 0.161,
+        "gdp_n": 122,
+        "gdp_countries": 42
+      },
+      "54": {
+        "edu_r2": 0.483,
+        "edu_n": 160,
+        "edu_countries": 56,
+        "gdp_r2": 0.185,
+        "gdp_n": 119,
+        "gdp_countries": 41
+      },
+      "55": {
+        "edu_r2": 0.478,
+        "edu_n": 153,
+        "edu_countries": 54,
+        "gdp_r2": 0.184,
+        "gdp_n": 115,
+        "gdp_countries": 40
+      },
+      "56": {
+        "edu_r2": 0.48,
+        "edu_n": 148,
+        "edu_countries": 53,
+        "gdp_r2": 0.193,
+        "gdp_n": 110,
+        "gdp_countries": 39
+      },
+      "57": {
+        "edu_r2": 0.477,
+        "edu_n": 138,
+        "edu_countries": 52,
+        "gdp_r2": 0.197,
+        "gdp_n": 105,
+        "gdp_countries": 38
+      },
+      "58": {
+        "edu_r2": 0.486,
+        "edu_n": 130,
+        "edu_countries": 50,
+        "gdp_r2": 0.186,
+        "gdp_n": 100,
+        "gdp_countries": 37
+      },
+      "59": {
+        "edu_r2": 0.467,
+        "edu_n": 121,
+        "edu_countries": 48,
+        "gdp_r2": 0.188,
+        "gdp_n": 94,
+        "gdp_countries": 36
+      },
+      "60": {
+        "edu_r2": 0.605,
+        "edu_n": 107,
+        "edu_countries": 44,
+        "gdp_r2": 0.199,
+        "gdp_n": 83,
+        "gdp_countries": 33
+      },
+      "61": {
+        "edu_r2": 0.555,
+        "edu_n": 95,
+        "edu_countries": 40,
+        "gdp_r2": 0.141,
+        "gdp_n": 74,
+        "gdp_countries": 30
+      },
+      "62": {
+        "edu_r2": 0.629,
+        "edu_n": 87,
+        "edu_countries": 38,
+        "gdp_r2": 0.279,
+        "gdp_n": 66,
+        "gdp_countries": 28
+      },
+      "63": {
+        "edu_r2": 0.614,
+        "edu_n": 75,
+        "edu_countries": 33,
+        "gdp_r2": 0.276,
+        "gdp_n": 59,
+        "gdp_countries": 25
+      },
+      "64": {
+        "edu_r2": 0.671,
+        "edu_n": 61,
+        "edu_countries": 26,
+        "gdp_r2": 0.317,
+        "gdp_n": 49,
+        "gdp_countries": 20
+      },
+      "65": {
+        "edu_r2": 0.679,
+        "edu_n": 59,
+        "edu_countries": 25,
+        "gdp_r2": 0.317,
+        "gdp_n": 47,
+        "gdp_countries": 19
+      },
+      "66": {
+        "edu_r2": 0.692,
+        "edu_n": 47,
+        "edu_countries": 20,
+        "gdp_r2": 0.423,
+        "gdp_n": 37,
+        "gdp_countries": 15
+      },
+      "67": {
+        "edu_r2": 0.685,
+        "edu_n": 45,
+        "edu_countries": 19,
+        "gdp_r2": 0.396,
+        "gdp_n": 35,
+        "gdp_countries": 14
+      },
+      "68": {
+        "edu_r2": 0.739,
+        "edu_n": 31,
+        "edu_countries": 13,
+        "gdp_r2": 0.308,
+        "gdp_n": 27,
+        "gdp_countries": 11
+      },
+      "69": {
+        "edu_r2": 0.741,
+        "edu_n": 25,
+        "edu_countries": 11,
+        "gdp_r2": 0.577,
+        "gdp_n": 21,
+        "gdp_countries": 9
+      },
+      "70": {
+        "edu_r2": 0.754,
+        "edu_n": 21,
+        "edu_countries": 9,
+        "gdp_r2": 0.57,
+        "gdp_n": 19,
+        "gdp_countries": 8
+      },
+      "71": {
+        "edu_r2": 0.761,
+        "edu_n": 19,
+        "edu_countries": 8,
+        "gdp_r2": 0.59,
+        "gdp_n": 17,
+        "gdp_countries": 7
+      },
+      "72": {
+        "edu_r2": 0.728,
+        "edu_n": 14,
+        "edu_countries": 6,
+        "gdp_r2": 0.695,
+        "gdp_n": 12,
+        "gdp_countries": 5
+      },
+      "73": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "74": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "75": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "76": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "77": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "78": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      }
+    },
+    "85": {
+      "10": {
+        "edu_r2": 0.467,
+        "edu_n": 768,
+        "edu_countries": 141,
+        "gdp_r2": 0.16,
+        "gdp_n": 634,
+        "gdp_countries": 124
+      },
+      "11": {
+        "edu_r2": 0.478,
+        "edu_n": 740,
+        "edu_countries": 136,
+        "gdp_r2": 0.153,
+        "gdp_n": 611,
+        "gdp_countries": 120
+      },
+      "12": {
+        "edu_r2": 0.488,
+        "edu_n": 720,
+        "edu_countries": 135,
+        "gdp_r2": 0.15,
+        "gdp_n": 595,
+        "gdp_countries": 119
+      },
+      "13": {
+        "edu_r2": 0.504,
+        "edu_n": 697,
+        "edu_countries": 133,
+        "gdp_r2": 0.168,
+        "gdp_n": 577,
+        "gdp_countries": 117
+      },
+      "14": {
+        "edu_r2": 0.499,
+        "edu_n": 684,
+        "edu_countries": 129,
+        "gdp_r2": 0.158,
+        "gdp_n": 564,
+        "gdp_countries": 113
+      },
+      "15": {
+        "edu_r2": 0.502,
+        "edu_n": 667,
+        "edu_countries": 129,
+        "gdp_r2": 0.158,
+        "gdp_n": 548,
+        "gdp_countries": 113
+      },
+      "16": {
+        "edu_r2": 0.52,
+        "edu_n": 653,
+        "edu_countries": 127,
+        "gdp_r2": 0.158,
+        "gdp_n": 535,
+        "gdp_countries": 111
+      },
+      "17": {
+        "edu_r2": 0.514,
+        "edu_n": 630,
+        "edu_countries": 125,
+        "gdp_r2": 0.139,
+        "gdp_n": 515,
+        "gdp_countries": 109
+      },
+      "18": {
+        "edu_r2": 0.516,
+        "edu_n": 613,
+        "edu_countries": 123,
+        "gdp_r2": 0.146,
+        "gdp_n": 501,
+        "gdp_countries": 107
+      },
+      "19": {
+        "edu_r2": 0.523,
+        "edu_n": 596,
+        "edu_countries": 121,
+        "gdp_r2": 0.144,
+        "gdp_n": 486,
+        "gdp_countries": 105
+      },
+      "20": {
+        "edu_r2": 0.518,
+        "edu_n": 585,
+        "edu_countries": 119,
+        "gdp_r2": 0.131,
+        "gdp_n": 475,
+        "gdp_countries": 103
+      },
+      "21": {
+        "edu_r2": 0.529,
+        "edu_n": 570,
+        "edu_countries": 115,
+        "gdp_r2": 0.141,
+        "gdp_n": 465,
+        "gdp_countries": 100
+      },
+      "22": {
+        "edu_r2": 0.561,
+        "edu_n": 548,
+        "edu_countries": 110,
+        "gdp_r2": 0.146,
+        "gdp_n": 446,
+        "gdp_countries": 95
+      },
+      "23": {
+        "edu_r2": 0.556,
+        "edu_n": 537,
+        "edu_countries": 110,
+        "gdp_r2": 0.144,
+        "gdp_n": 436,
+        "gdp_countries": 95
+      },
+      "24": {
+        "edu_r2": 0.549,
+        "edu_n": 523,
+        "edu_countries": 108,
+        "gdp_r2": 0.135,
+        "gdp_n": 423,
+        "gdp_countries": 93
+      },
+      "25": {
+        "edu_r2": 0.545,
+        "edu_n": 511,
+        "edu_countries": 108,
+        "gdp_r2": 0.14,
+        "gdp_n": 412,
+        "gdp_countries": 93
+      },
+      "26": {
+        "edu_r2": 0.564,
+        "edu_n": 497,
+        "edu_countries": 106,
+        "gdp_r2": 0.144,
+        "gdp_n": 400,
+        "gdp_countries": 91
+      },
+      "27": {
+        "edu_r2": 0.558,
+        "edu_n": 484,
+        "edu_countries": 105,
+        "gdp_r2": 0.138,
+        "gdp_n": 388,
+        "gdp_countries": 90
+      },
+      "28": {
+        "edu_r2": 0.57,
+        "edu_n": 473,
+        "edu_countries": 104,
+        "gdp_r2": 0.146,
+        "gdp_n": 379,
+        "gdp_countries": 89
+      },
+      "29": {
+        "edu_r2": 0.567,
+        "edu_n": 465,
+        "edu_countries": 104,
+        "gdp_r2": 0.146,
+        "gdp_n": 371,
+        "gdp_countries": 89
+      },
+      "30": {
+        "edu_r2": 0.554,
+        "edu_n": 453,
+        "edu_countries": 104,
+        "gdp_r2": 0.148,
+        "gdp_n": 361,
+        "gdp_countries": 89
+      },
+      "31": {
+        "edu_r2": 0.59,
+        "edu_n": 432,
+        "edu_countries": 99,
+        "gdp_r2": 0.161,
+        "gdp_n": 342,
+        "gdp_countries": 84
+      },
+      "32": {
+        "edu_r2": 0.588,
+        "edu_n": 418,
+        "edu_countries": 98,
+        "gdp_r2": 0.157,
+        "gdp_n": 331,
+        "gdp_countries": 83
+      },
+      "33": {
+        "edu_r2": 0.576,
+        "edu_n": 404,
+        "edu_countries": 96,
+        "gdp_r2": 0.164,
+        "gdp_n": 320,
+        "gdp_countries": 81
+      },
+      "34": {
+        "edu_r2": 0.598,
+        "edu_n": 395,
+        "edu_countries": 95,
+        "gdp_r2": 0.18,
+        "gdp_n": 311,
+        "gdp_countries": 80
+      },
+      "35": {
+        "edu_r2": 0.613,
+        "edu_n": 389,
+        "edu_countries": 94,
+        "gdp_r2": 0.182,
+        "gdp_n": 306,
+        "gdp_countries": 79
+      },
+      "36": {
+        "edu_r2": 0.599,
+        "edu_n": 378,
+        "edu_countries": 93,
+        "gdp_r2": 0.184,
+        "gdp_n": 299,
+        "gdp_countries": 78
+      },
+      "37": {
+        "edu_r2": 0.594,
+        "edu_n": 360,
+        "edu_countries": 90,
+        "gdp_r2": 0.172,
+        "gdp_n": 285,
+        "gdp_countries": 75
+      },
+      "38": {
+        "edu_r2": 0.592,
+        "edu_n": 347,
+        "edu_countries": 87,
+        "gdp_r2": 0.186,
+        "gdp_n": 272,
+        "gdp_countries": 72
+      },
+      "39": {
+        "edu_r2": 0.598,
+        "edu_n": 336,
+        "edu_countries": 86,
+        "gdp_r2": 0.216,
+        "gdp_n": 262,
+        "gdp_countries": 71
+      },
+      "40": {
+        "edu_r2": 0.594,
+        "edu_n": 329,
+        "edu_countries": 85,
+        "gdp_r2": 0.216,
+        "gdp_n": 257,
+        "gdp_countries": 70
+      },
+      "41": {
+        "edu_r2": 0.594,
+        "edu_n": 317,
+        "edu_countries": 82,
+        "gdp_r2": 0.22,
+        "gdp_n": 246,
+        "gdp_countries": 67
+      },
+      "42": {
+        "edu_r2": 0.57,
+        "edu_n": 306,
+        "edu_countries": 81,
+        "gdp_r2": 0.205,
+        "gdp_n": 235,
+        "gdp_countries": 66
+      },
+      "43": {
+        "edu_r2": 0.553,
+        "edu_n": 295,
+        "edu_countries": 78,
+        "gdp_r2": 0.223,
+        "gdp_n": 226,
+        "gdp_countries": 63
+      },
+      "44": {
+        "edu_r2": 0.553,
+        "edu_n": 289,
+        "edu_countries": 77,
+        "gdp_r2": 0.253,
+        "gdp_n": 220,
+        "gdp_countries": 62
+      },
+      "45": {
+        "edu_r2": 0.56,
+        "edu_n": 280,
+        "edu_countries": 77,
+        "gdp_r2": 0.244,
+        "gdp_n": 216,
+        "gdp_countries": 62
+      },
+      "46": {
+        "edu_r2": 0.562,
+        "edu_n": 269,
+        "edu_countries": 74,
+        "gdp_r2": 0.235,
+        "gdp_n": 206,
+        "gdp_countries": 59
+      },
+      "47": {
+        "edu_r2": 0.549,
+        "edu_n": 260,
+        "edu_countries": 73,
+        "gdp_r2": 0.266,
+        "gdp_n": 201,
+        "gdp_countries": 58
+      },
+      "48": {
+        "edu_r2": 0.538,
+        "edu_n": 254,
+        "edu_countries": 73,
+        "gdp_r2": 0.261,
+        "gdp_n": 195,
+        "gdp_countries": 58
+      },
+      "49": {
+        "edu_r2": 0.547,
+        "edu_n": 244,
+        "edu_countries": 71,
+        "gdp_r2": 0.258,
+        "gdp_n": 188,
+        "gdp_countries": 56
+      },
+      "50": {
+        "edu_r2": 0.557,
+        "edu_n": 229,
+        "edu_countries": 67,
+        "gdp_r2": 0.296,
+        "gdp_n": 175,
+        "gdp_countries": 52
+      },
+      "51": {
+        "edu_r2": 0.53,
+        "edu_n": 218,
+        "edu_countries": 66,
+        "gdp_r2": 0.28,
+        "gdp_n": 167,
+        "gdp_countries": 51
+      },
+      "52": {
+        "edu_r2": 0.531,
+        "edu_n": 211,
+        "edu_countries": 64,
+        "gdp_r2": 0.277,
+        "gdp_n": 160,
+        "gdp_countries": 49
+      },
+      "53": {
+        "edu_r2": 0.533,
+        "edu_n": 201,
+        "edu_countries": 61,
+        "gdp_r2": 0.281,
+        "gdp_n": 151,
+        "gdp_countries": 46
+      },
+      "54": {
+        "edu_r2": 0.525,
+        "edu_n": 196,
+        "edu_countries": 60,
+        "gdp_r2": 0.31,
+        "gdp_n": 148,
+        "gdp_countries": 45
+      },
+      "55": {
+        "edu_r2": 0.527,
+        "edu_n": 190,
+        "edu_countries": 59,
+        "gdp_r2": 0.311,
+        "gdp_n": 144,
+        "gdp_countries": 44
+      },
+      "56": {
+        "edu_r2": 0.528,
+        "edu_n": 185,
+        "edu_countries": 58,
+        "gdp_r2": 0.32,
+        "gdp_n": 139,
+        "gdp_countries": 43
+      },
+      "57": {
+        "edu_r2": 0.522,
+        "edu_n": 175,
+        "edu_countries": 57,
+        "gdp_r2": 0.317,
+        "gdp_n": 134,
+        "gdp_countries": 42
+      },
+      "58": {
+        "edu_r2": 0.535,
+        "edu_n": 168,
+        "edu_countries": 56,
+        "gdp_r2": 0.31,
+        "gdp_n": 130,
+        "gdp_countries": 42
+      },
+      "59": {
+        "edu_r2": 0.522,
+        "edu_n": 159,
+        "edu_countries": 54,
+        "gdp_r2": 0.317,
+        "gdp_n": 124,
+        "gdp_countries": 41
+      },
+      "60": {
+        "edu_r2": 0.624,
+        "edu_n": 146,
+        "edu_countries": 51,
+        "gdp_r2": 0.37,
+        "gdp_n": 114,
+        "gdp_countries": 39
+      },
+      "61": {
+        "edu_r2": 0.583,
+        "edu_n": 135,
+        "edu_countries": 48,
+        "gdp_r2": 0.319,
+        "gdp_n": 106,
+        "gdp_countries": 37
+      },
+      "62": {
+        "edu_r2": 0.618,
+        "edu_n": 127,
+        "edu_countries": 46,
+        "gdp_r2": 0.433,
+        "gdp_n": 98,
+        "gdp_countries": 35
+      },
+      "63": {
+        "edu_r2": 0.603,
+        "edu_n": 118,
+        "edu_countries": 44,
+        "gdp_r2": 0.441,
+        "gdp_n": 92,
+        "gdp_countries": 33
+      },
+      "64": {
+        "edu_r2": 0.638,
+        "edu_n": 106,
+        "edu_countries": 39,
+        "gdp_r2": 0.479,
+        "gdp_n": 84,
+        "gdp_countries": 30
+      },
+      "65": {
+        "edu_r2": 0.634,
+        "edu_n": 105,
+        "edu_countries": 39,
+        "gdp_r2": 0.471,
+        "gdp_n": 83,
+        "gdp_countries": 30
+      },
+      "66": {
+        "edu_r2": 0.619,
+        "edu_n": 94,
+        "edu_countries": 35,
+        "gdp_r2": 0.535,
+        "gdp_n": 74,
+        "gdp_countries": 27
+      },
+      "67": {
+        "edu_r2": 0.607,
+        "edu_n": 93,
+        "edu_countries": 35,
+        "gdp_r2": 0.51,
+        "gdp_n": 73,
+        "gdp_countries": 27
+      },
+      "68": {
+        "edu_r2": 0.662,
+        "edu_n": 79,
+        "edu_countries": 31,
+        "gdp_r2": 0.452,
+        "gdp_n": 65,
+        "gdp_countries": 25
+      },
+      "69": {
+        "edu_r2": 0.648,
+        "edu_n": 74,
+        "edu_countries": 30,
+        "gdp_r2": 0.534,
+        "gdp_n": 60,
+        "gdp_countries": 24
+      },
+      "70": {
+        "edu_r2": 0.653,
+        "edu_n": 70,
+        "edu_countries": 28,
+        "gdp_r2": 0.53,
+        "gdp_n": 58,
+        "gdp_countries": 23
+      },
+      "71": {
+        "edu_r2": 0.668,
+        "edu_n": 66,
+        "edu_countries": 26,
+        "gdp_r2": 0.536,
+        "gdp_n": 56,
+        "gdp_countries": 22
+      },
+      "72": {
+        "edu_r2": 0.684,
+        "edu_n": 61,
+        "edu_countries": 25,
+        "gdp_r2": 0.529,
+        "gdp_n": 51,
+        "gdp_countries": 21
+      },
+      "73": {
+        "edu_r2": 0.653,
+        "edu_n": 50,
+        "edu_countries": 20,
+        "gdp_r2": 0.49,
+        "gdp_n": 43,
+        "gdp_countries": 17
+      },
+      "74": {
+        "edu_r2": 0.716,
+        "edu_n": 42,
+        "edu_countries": 17,
+        "gdp_r2": 0.693,
+        "gdp_n": 36,
+        "gdp_countries": 14
+      },
+      "75": {
+        "edu_r2": 0.745,
+        "edu_n": 36,
+        "edu_countries": 15,
+        "gdp_r2": 0.564,
+        "gdp_n": 30,
+        "gdp_countries": 12
+      },
+      "76": {
+        "edu_r2": 0.725,
+        "edu_n": 31,
+        "edu_countries": 13,
+        "gdp_r2": 0.588,
+        "gdp_n": 25,
+        "gdp_countries": 10
+      },
+      "77": {
+        "edu_r2": 0.683,
+        "edu_n": 23,
+        "edu_countries": 10,
+        "gdp_r2": 0.703,
+        "gdp_n": 19,
+        "gdp_countries": 8
+      },
+      "78": {
+        "edu_r2": 0.775,
+        "edu_n": 21,
+        "edu_countries": 9,
+        "gdp_r2": 0.709,
+        "gdp_n": 17,
+        "gdp_countries": 7
+      },
+      "79": {
+        "edu_r2": 0.728,
+        "edu_n": 17,
+        "edu_countries": 8,
+        "gdp_r2": 0.65,
+        "gdp_n": 15,
+        "gdp_countries": 7
+      },
+      "80": {
+        "edu_r2": 0.679,
+        "edu_n": 11,
+        "edu_countries": 5,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "81": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "82": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "83": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "84": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      }
+    },
+    "90": {
+      "10": {
+        "edu_r2": 0.474,
+        "edu_n": 822,
+        "edu_countries": 152,
+        "gdp_r2": 0.18,
+        "gdp_n": 659,
+        "gdp_countries": 126
+      },
+      "11": {
+        "edu_r2": 0.486,
+        "edu_n": 794,
+        "edu_countries": 147,
+        "gdp_r2": 0.174,
+        "gdp_n": 636,
+        "gdp_countries": 122
+      },
+      "12": {
+        "edu_r2": 0.496,
+        "edu_n": 774,
+        "edu_countries": 146,
+        "gdp_r2": 0.172,
+        "gdp_n": 620,
+        "gdp_countries": 121
+      },
+      "13": {
+        "edu_r2": 0.512,
+        "edu_n": 751,
+        "edu_countries": 144,
+        "gdp_r2": 0.192,
+        "gdp_n": 602,
+        "gdp_countries": 119
+      },
+      "14": {
+        "edu_r2": 0.509,
+        "edu_n": 738,
+        "edu_countries": 140,
+        "gdp_r2": 0.182,
+        "gdp_n": 589,
+        "gdp_countries": 115
+      },
+      "15": {
+        "edu_r2": 0.512,
+        "edu_n": 721,
+        "edu_countries": 140,
+        "gdp_r2": 0.184,
+        "gdp_n": 573,
+        "gdp_countries": 115
+      },
+      "16": {
+        "edu_r2": 0.529,
+        "edu_n": 707,
+        "edu_countries": 138,
+        "gdp_r2": 0.186,
+        "gdp_n": 560,
+        "gdp_countries": 113
+      },
+      "17": {
+        "edu_r2": 0.525,
+        "edu_n": 684,
+        "edu_countries": 136,
+        "gdp_r2": 0.168,
+        "gdp_n": 540,
+        "gdp_countries": 111
+      },
+      "18": {
+        "edu_r2": 0.528,
+        "edu_n": 667,
+        "edu_countries": 134,
+        "gdp_r2": 0.177,
+        "gdp_n": 526,
+        "gdp_countries": 109
+      },
+      "19": {
+        "edu_r2": 0.536,
+        "edu_n": 650,
+        "edu_countries": 132,
+        "gdp_r2": 0.177,
+        "gdp_n": 511,
+        "gdp_countries": 107
+      },
+      "20": {
+        "edu_r2": 0.531,
+        "edu_n": 639,
+        "edu_countries": 130,
+        "gdp_r2": 0.165,
+        "gdp_n": 500,
+        "gdp_countries": 105
+      },
+      "21": {
+        "edu_r2": 0.543,
+        "edu_n": 624,
+        "edu_countries": 126,
+        "gdp_r2": 0.177,
+        "gdp_n": 490,
+        "gdp_countries": 102
+      },
+      "22": {
+        "edu_r2": 0.574,
+        "edu_n": 602,
+        "edu_countries": 121,
+        "gdp_r2": 0.186,
+        "gdp_n": 471,
+        "gdp_countries": 97
+      },
+      "23": {
+        "edu_r2": 0.57,
+        "edu_n": 591,
+        "edu_countries": 121,
+        "gdp_r2": 0.185,
+        "gdp_n": 461,
+        "gdp_countries": 97
+      },
+      "24": {
+        "edu_r2": 0.564,
+        "edu_n": 577,
+        "edu_countries": 119,
+        "gdp_r2": 0.177,
+        "gdp_n": 448,
+        "gdp_countries": 95
+      },
+      "25": {
+        "edu_r2": 0.562,
+        "edu_n": 565,
+        "edu_countries": 119,
+        "gdp_r2": 0.186,
+        "gdp_n": 437,
+        "gdp_countries": 95
+      },
+      "26": {
+        "edu_r2": 0.58,
+        "edu_n": 551,
+        "edu_countries": 117,
+        "gdp_r2": 0.194,
+        "gdp_n": 425,
+        "gdp_countries": 93
+      },
+      "27": {
+        "edu_r2": 0.576,
+        "edu_n": 538,
+        "edu_countries": 116,
+        "gdp_r2": 0.188,
+        "gdp_n": 413,
+        "gdp_countries": 92
+      },
+      "28": {
+        "edu_r2": 0.586,
+        "edu_n": 527,
+        "edu_countries": 115,
+        "gdp_r2": 0.199,
+        "gdp_n": 404,
+        "gdp_countries": 91
+      },
+      "29": {
+        "edu_r2": 0.585,
+        "edu_n": 519,
+        "edu_countries": 115,
+        "gdp_r2": 0.2,
+        "gdp_n": 396,
+        "gdp_countries": 91
+      },
+      "30": {
+        "edu_r2": 0.575,
+        "edu_n": 507,
+        "edu_countries": 115,
+        "gdp_r2": 0.205,
+        "gdp_n": 386,
+        "gdp_countries": 91
+      },
+      "31": {
+        "edu_r2": 0.606,
+        "edu_n": 486,
+        "edu_countries": 110,
+        "gdp_r2": 0.221,
+        "gdp_n": 367,
+        "gdp_countries": 86
+      },
+      "32": {
+        "edu_r2": 0.607,
+        "edu_n": 472,
+        "edu_countries": 109,
+        "gdp_r2": 0.225,
+        "gdp_n": 356,
+        "gdp_countries": 85
+      },
+      "33": {
+        "edu_r2": 0.599,
+        "edu_n": 458,
+        "edu_countries": 107,
+        "gdp_r2": 0.235,
+        "gdp_n": 345,
+        "gdp_countries": 83
+      },
+      "34": {
+        "edu_r2": 0.619,
+        "edu_n": 449,
+        "edu_countries": 106,
+        "gdp_r2": 0.256,
+        "gdp_n": 336,
+        "gdp_countries": 82
+      },
+      "35": {
+        "edu_r2": 0.631,
+        "edu_n": 443,
+        "edu_countries": 105,
+        "gdp_r2": 0.258,
+        "gdp_n": 331,
+        "gdp_countries": 81
+      },
+      "36": {
+        "edu_r2": 0.619,
+        "edu_n": 432,
+        "edu_countries": 104,
+        "gdp_r2": 0.26,
+        "gdp_n": 324,
+        "gdp_countries": 80
+      },
+      "37": {
+        "edu_r2": 0.616,
+        "edu_n": 414,
+        "edu_countries": 101,
+        "gdp_r2": 0.255,
+        "gdp_n": 310,
+        "gdp_countries": 77
+      },
+      "38": {
+        "edu_r2": 0.616,
+        "edu_n": 401,
+        "edu_countries": 98,
+        "gdp_r2": 0.272,
+        "gdp_n": 297,
+        "gdp_countries": 74
+      },
+      "39": {
+        "edu_r2": 0.621,
+        "edu_n": 390,
+        "edu_countries": 97,
+        "gdp_r2": 0.308,
+        "gdp_n": 287,
+        "gdp_countries": 73
+      },
+      "40": {
+        "edu_r2": 0.618,
+        "edu_n": 383,
+        "edu_countries": 96,
+        "gdp_r2": 0.312,
+        "gdp_n": 282,
+        "gdp_countries": 72
+      },
+      "41": {
+        "edu_r2": 0.619,
+        "edu_n": 371,
+        "edu_countries": 93,
+        "gdp_r2": 0.319,
+        "gdp_n": 271,
+        "gdp_countries": 69
+      },
+      "42": {
+        "edu_r2": 0.597,
+        "edu_n": 360,
+        "edu_countries": 92,
+        "gdp_r2": 0.302,
+        "gdp_n": 260,
+        "gdp_countries": 68
+      },
+      "43": {
+        "edu_r2": 0.584,
+        "edu_n": 349,
+        "edu_countries": 89,
+        "gdp_r2": 0.323,
+        "gdp_n": 251,
+        "gdp_countries": 65
+      },
+      "44": {
+        "edu_r2": 0.585,
+        "edu_n": 343,
+        "edu_countries": 88,
+        "gdp_r2": 0.353,
+        "gdp_n": 245,
+        "gdp_countries": 64
+      },
+      "45": {
+        "edu_r2": 0.591,
+        "edu_n": 334,
+        "edu_countries": 88,
+        "gdp_r2": 0.349,
+        "gdp_n": 241,
+        "gdp_countries": 64
+      },
+      "46": {
+        "edu_r2": 0.593,
+        "edu_n": 323,
+        "edu_countries": 85,
+        "gdp_r2": 0.343,
+        "gdp_n": 231,
+        "gdp_countries": 61
+      },
+      "47": {
+        "edu_r2": 0.583,
+        "edu_n": 314,
+        "edu_countries": 84,
+        "gdp_r2": 0.377,
+        "gdp_n": 226,
+        "gdp_countries": 60
+      },
+      "48": {
+        "edu_r2": 0.572,
+        "edu_n": 308,
+        "edu_countries": 84,
+        "gdp_r2": 0.371,
+        "gdp_n": 220,
+        "gdp_countries": 60
+      },
+      "49": {
+        "edu_r2": 0.578,
+        "edu_n": 298,
+        "edu_countries": 82,
+        "gdp_r2": 0.37,
+        "gdp_n": 213,
+        "gdp_countries": 58
+      },
+      "50": {
+        "edu_r2": 0.586,
+        "edu_n": 283,
+        "edu_countries": 78,
+        "gdp_r2": 0.409,
+        "gdp_n": 200,
+        "gdp_countries": 54
+      },
+      "51": {
+        "edu_r2": 0.57,
+        "edu_n": 272,
+        "edu_countries": 77,
+        "gdp_r2": 0.405,
+        "gdp_n": 192,
+        "gdp_countries": 53
+      },
+      "52": {
+        "edu_r2": 0.567,
+        "edu_n": 265,
+        "edu_countries": 75,
+        "gdp_r2": 0.398,
+        "gdp_n": 185,
+        "gdp_countries": 51
+      },
+      "53": {
+        "edu_r2": 0.569,
+        "edu_n": 255,
+        "edu_countries": 72,
+        "gdp_r2": 0.405,
+        "gdp_n": 176,
+        "gdp_countries": 48
+      },
+      "54": {
+        "edu_r2": 0.564,
+        "edu_n": 250,
+        "edu_countries": 71,
+        "gdp_r2": 0.435,
+        "gdp_n": 173,
+        "gdp_countries": 47
+      },
+      "55": {
+        "edu_r2": 0.574,
+        "edu_n": 244,
+        "edu_countries": 70,
+        "gdp_r2": 0.441,
+        "gdp_n": 169,
+        "gdp_countries": 46
+      },
+      "56": {
+        "edu_r2": 0.575,
+        "edu_n": 239,
+        "edu_countries": 69,
+        "gdp_r2": 0.45,
+        "gdp_n": 164,
+        "gdp_countries": 45
+      },
+      "57": {
+        "edu_r2": 0.554,
+        "edu_n": 229,
+        "edu_countries": 68,
+        "gdp_r2": 0.439,
+        "gdp_n": 159,
+        "gdp_countries": 44
+      },
+      "58": {
+        "edu_r2": 0.557,
+        "edu_n": 222,
+        "edu_countries": 67,
+        "gdp_r2": 0.429,
+        "gdp_n": 155,
+        "gdp_countries": 44
+      },
+      "59": {
+        "edu_r2": 0.542,
+        "edu_n": 214,
+        "edu_countries": 66,
+        "gdp_r2": 0.432,
+        "gdp_n": 149,
+        "gdp_countries": 43
+      },
+      "60": {
+        "edu_r2": 0.623,
+        "edu_n": 203,
+        "edu_countries": 65,
+        "gdp_r2": 0.496,
+        "gdp_n": 140,
+        "gdp_countries": 42
+      },
+      "61": {
+        "edu_r2": 0.597,
+        "edu_n": 192,
+        "edu_countries": 62,
+        "gdp_r2": 0.47,
+        "gdp_n": 132,
+        "gdp_countries": 40
+      },
+      "62": {
+        "edu_r2": 0.619,
+        "edu_n": 184,
+        "edu_countries": 60,
+        "gdp_r2": 0.577,
+        "gdp_n": 124,
+        "gdp_countries": 38
+      },
+      "63": {
+        "edu_r2": 0.606,
+        "edu_n": 175,
+        "edu_countries": 58,
+        "gdp_r2": 0.591,
+        "gdp_n": 118,
+        "gdp_countries": 36
+      },
+      "64": {
+        "edu_r2": 0.621,
+        "edu_n": 164,
+        "edu_countries": 54,
+        "gdp_r2": 0.616,
+        "gdp_n": 110,
+        "gdp_countries": 33
+      },
+      "65": {
+        "edu_r2": 0.609,
+        "edu_n": 163,
+        "edu_countries": 54,
+        "gdp_r2": 0.6,
+        "gdp_n": 109,
+        "gdp_countries": 33
+      },
+      "66": {
+        "edu_r2": 0.593,
+        "edu_n": 155,
+        "edu_countries": 53,
+        "gdp_r2": 0.625,
+        "gdp_n": 102,
+        "gdp_countries": 32
+      },
+      "67": {
+        "edu_r2": 0.582,
+        "edu_n": 154,
+        "edu_countries": 53,
+        "gdp_r2": 0.606,
+        "gdp_n": 101,
+        "gdp_countries": 32
+      },
+      "68": {
+        "edu_r2": 0.583,
+        "edu_n": 141,
+        "edu_countries": 50,
+        "gdp_r2": 0.564,
+        "gdp_n": 93,
+        "gdp_countries": 30
+      },
+      "69": {
+        "edu_r2": 0.562,
+        "edu_n": 137,
+        "edu_countries": 50,
+        "gdp_r2": 0.631,
+        "gdp_n": 89,
+        "gdp_countries": 30
+      },
+      "70": {
+        "edu_r2": 0.581,
+        "edu_n": 132,
+        "edu_countries": 48,
+        "gdp_r2": 0.63,
+        "gdp_n": 87,
+        "gdp_countries": 29
+      },
+      "71": {
+        "edu_r2": 0.632,
+        "edu_n": 125,
+        "edu_countries": 45,
+        "gdp_r2": 0.633,
+        "gdp_n": 85,
+        "gdp_countries": 28
+      },
+      "72": {
+        "edu_r2": 0.631,
+        "edu_n": 120,
+        "edu_countries": 44,
+        "gdp_r2": 0.638,
+        "gdp_n": 80,
+        "gdp_countries": 27
+      },
+      "73": {
+        "edu_r2": 0.634,
+        "edu_n": 109,
+        "edu_countries": 41,
+        "gdp_r2": 0.601,
+        "gdp_n": 75,
+        "gdp_countries": 26
+      },
+      "74": {
+        "edu_r2": 0.602,
+        "edu_n": 100,
+        "edu_countries": 38,
+        "gdp_r2": 0.68,
+        "gdp_n": 69,
+        "gdp_countries": 24
+      },
+      "75": {
+        "edu_r2": 0.643,
+        "edu_n": 93,
+        "edu_countries": 36,
+        "gdp_r2": 0.631,
+        "gdp_n": 64,
+        "gdp_countries": 23
+      },
+      "76": {
+        "edu_r2": 0.657,
+        "edu_n": 81,
+        "edu_countries": 31,
+        "gdp_r2": 0.616,
+        "gdp_n": 56,
+        "gdp_countries": 20
+      },
+      "77": {
+        "edu_r2": 0.597,
+        "edu_n": 75,
+        "edu_countries": 30,
+        "gdp_r2": 0.658,
+        "gdp_n": 52,
+        "gdp_countries": 20
+      },
+      "78": {
+        "edu_r2": 0.58,
+        "edu_n": 71,
+        "edu_countries": 28,
+        "gdp_r2": 0.634,
+        "gdp_n": 48,
+        "gdp_countries": 18
+      },
+      "79": {
+        "edu_r2": 0.572,
+        "edu_n": 67,
+        "edu_countries": 27,
+        "gdp_r2": 0.603,
+        "gdp_n": 46,
+        "gdp_countries": 18
+      },
+      "80": {
+        "edu_r2": 0.568,
+        "edu_n": 55,
+        "edu_countries": 22,
+        "gdp_r2": 0.556,
+        "gdp_n": 38,
+        "gdp_countries": 15
+      },
+      "81": {
+        "edu_r2": 0.528,
+        "edu_n": 45,
+        "edu_countries": 19,
+        "gdp_r2": 0.492,
+        "gdp_n": 32,
+        "gdp_countries": 13
+      },
+      "82": {
+        "edu_r2": 0.621,
+        "edu_n": 36,
+        "edu_countries": 16,
+        "gdp_r2": 0.655,
+        "gdp_n": 25,
+        "gdp_countries": 11
+      },
+      "83": {
+        "edu_r2": 0.583,
+        "edu_n": 31,
+        "edu_countries": 14,
+        "gdp_r2": 0.602,
+        "gdp_n": 22,
+        "gdp_countries": 10
+      },
+      "84": {
+        "edu_r2": 0.739,
+        "edu_n": 21,
+        "edu_countries": 10,
+        "gdp_r2": 0.476,
+        "gdp_n": 17,
+        "gdp_countries": 8
+      },
+      "85": {
+        "edu_r2": 0.716,
+        "edu_n": 20,
+        "edu_countries": 10,
+        "gdp_r2": 0.427,
+        "gdp_n": 16,
+        "gdp_countries": 8
+      },
+      "86": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "87": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "88": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      },
+      "89": {
+        "edu_r2": null,
+        "edu_n": 0,
+        "edu_countries": 0,
+        "gdp_r2": null,
+        "gdp_n": 0,
+        "gdp_countries": 0
+      }
+    }
+  },
+  "script": "scripts/residualization/by_entry_ceiling.py",
+  "produced": "2026-04-28"
+}

@@ -1,0 +1,240 @@
+{
+  "numbers": {
+    "cr_1960_gdp": 3609.0,
+    "kr_1960_gdp": 1038.0,
+    "gdp_ratio_1960": 3.48,
+    "cr_1990_gdp": 6037.0,
+    "kr_1990_gdp": 9673.0,
+    "kr_fold_increase": 9.32,
+    "cr_fold_increase": 1.67,
+    "kr_5yr_gains": [
+      {
+        "period": "1950-1955",
+        "gain_pp": 5.62
+      },
+      {
+        "period": "1955-1960",
+        "gain_pp": 10.58
+      },
+      {
+        "period": "1960-1965",
+        "gain_pp": 10.52
+      },
+      {
+        "period": "1965-1970",
+        "gain_pp": 13.56
+      },
+      {
+        "period": "1970-1975",
+        "gain_pp": 12.05
+      },
+      {
+        "period": "1975-1980",
+        "gain_pp": 10.02
+      },
+      {
+        "period": "1980-1985",
+        "gain_pp": 7.22
+      },
+      {
+        "period": "1985-1990",
+        "gain_pp": 3.84
+      },
+      {
+        "period": "1990-1995",
+        "gain_pp": 1.0
+      },
+      {
+        "period": "1995-2000",
+        "gain_pp": 0.22
+      },
+      {
+        "period": "2000-2005",
+        "gain_pp": 0.21
+      },
+      {
+        "period": "2005-2010",
+        "gain_pp": -0.74
+      },
+      {
+        "period": "2010-2015",
+        "gain_pp": 0.95
+      },
+      {
+        "period": "2015-2020",
+        "gain_pp": 27.81
+      },
+      {
+        "period": "2020-2025",
+        "gain_pp": 0.52
+      }
+    ],
+    "cr_5yr_gains": [
+      {
+        "period": "1950-1955",
+        "gain_pp": 2.97
+      },
+      {
+        "period": "1955-1960",
+        "gain_pp": 3.84
+      },
+      {
+        "period": "1960-1965",
+        "gain_pp": 4.9
+      },
+      {
+        "period": "1965-1970",
+        "gain_pp": 5.84
+      },
+      {
+        "period": "1970-1975",
+        "gain_pp": 5.71
+      },
+      {
+        "period": "1975-1980",
+        "gain_pp": 5.43
+      },
+      {
+        "period": "1980-1985",
+        "gain_pp": 2.58
+      },
+      {
+        "period": "1985-1990",
+        "gain_pp": -2.38
+      },
+      {
+        "period": "1990-1995",
+        "gain_pp": 1.45
+      },
+      {
+        "period": "1995-2000",
+        "gain_pp": 5.36
+      },
+      {
+        "period": "2000-2005",
+        "gain_pp": 6.38
+      },
+      {
+        "period": "2005-2010",
+        "gain_pp": 6.06
+      },
+      {
+        "period": "2010-2015",
+        "gain_pp": 5.12
+      },
+      {
+        "period": "2015-2020",
+        "gain_pp": 5.37
+      },
+      {
+        "period": "2020-2025",
+        "gain_pp": 4.28
+      }
+    ],
+    "kr_expansion_gains": [
+      {
+        "period": "1950-1955",
+        "gain_pp": 5.62
+      },
+      {
+        "period": "1955-1960",
+        "gain_pp": 10.58
+      },
+      {
+        "period": "1960-1965",
+        "gain_pp": 10.52
+      },
+      {
+        "period": "1965-1970",
+        "gain_pp": 13.56
+      },
+      {
+        "period": "1970-1975",
+        "gain_pp": 12.05
+      },
+      {
+        "period": "1975-1980",
+        "gain_pp": 10.02
+      },
+      {
+        "period": "1980-1985",
+        "gain_pp": 7.22
+      }
+    ],
+    "cr_expansion_gains": [
+      {
+        "period": "1950-1955",
+        "gain_pp": 2.97
+      },
+      {
+        "period": "1955-1960",
+        "gain_pp": 3.84
+      },
+      {
+        "period": "1960-1965",
+        "gain_pp": 4.9
+      },
+      {
+        "period": "1965-1970",
+        "gain_pp": 5.84
+      },
+      {
+        "period": "1970-1975",
+        "gain_pp": 5.71
+      },
+      {
+        "period": "1975-1980",
+        "gain_pp": 5.43
+      },
+      {
+        "period": "1980-1985",
+        "gain_pp": 2.58
+      },
+      {
+        "period": "1990-1995",
+        "gain_pp": 1.45
+      },
+      {
+        "period": "1995-2000",
+        "gain_pp": 5.36
+      },
+      {
+        "period": "2000-2005",
+        "gain_pp": 6.38
+      },
+      {
+        "period": "2005-2010",
+        "gain_pp": 6.06
+      },
+      {
+        "period": "2010-2015",
+        "gain_pp": 5.12
+      },
+      {
+        "period": "2015-2020",
+        "gain_pp": 5.37
+      }
+    ],
+    "kr_expansion_range_pp": [
+      5.6,
+      13.6
+    ],
+    "cr_expansion_range_pp": [
+      1.4,
+      6.4
+    ]
+  },
+  "paper_claims": {
+    "cr_1960_gdp": 3609,
+    "kr_1960_gdp": 1038,
+    "ratio_1960": 3.5,
+    "kr_1990_gdp": 9673,
+    "kr_fold": 9.0,
+    "cr_1990_gdp": 6037,
+    "cr_fold": 1.7,
+    "kr_expansion_pp": "8-14",
+    "cr_expansion_pp": "3-6"
+  },
+  "script": "scripts/cases/costa_rica_korea.py",
+  "produced": "2026-04-29"
+}

@@ -1,0 +1,169 @@
+{
+  "rows": [
+    {
+      "country": "ukraine",
+      "capital": "Kyiv",
+      "dist_km": 755.7409823288132,
+      "east_km": -443.68391628603115,
+      "north_km": -589.9669222980355,
+      "le_resid_sd": -0.951,
+      "u5log_resid_sd": 1.086,
+      "le_u5_sd": 1.019,
+      "direction": "west (Europe)"
+    },
+    {
+      "country": "belarus",
+      "capital": "Minsk",
+      "dist_km": 675.7559294668727,
+      "east_km": -628.8127709542978,
+      "north_km": -206.28882791098548,
+      "le_resid_sd": -0.96,
+      "u5log_resid_sd": 0.431,
+      "le_u5_sd": 0.696,
+      "direction": "west (Europe)"
+    },
+    {
+      "country": "estonia",
+      "capital": "Tallinn",
+      "dist_km": 866.963881458174,
+      "east_km": -803.7476447914984,
+      "north_km": 409.33076396394955,
+      "le_resid_sd": -0.888,
+      "u5log_resid_sd": 0.568,
+      "le_u5_sd": 0.728,
+      "direction": "west (Europe)"
+    },
+    {
+      "country": "latvia",
+      "capital": "Riga",
+      "dist_km": 841.5704666256215,
+      "east_km": -844.1351524689655,
+      "north_km": 132.7445034282738,
+      "le_resid_sd": -1.063,
+      "u5log_resid_sd": 0.753,
+      "le_u5_sd": 0.908,
+      "direction": "west (Europe)"
+    },
+    {
+      "country": "lithuania",
+      "capital": "Vilnius",
+      "dist_km": 790.4063967230256,
+      "east_km": -770.964920762551,
+      "north_km": -118.82289861237568,
+      "le_resid_sd": -0.807,
+      "u5log_resid_sd": 0.346,
+      "le_u5_sd": 0.576,
+      "direction": "west (Europe)"
+    },
+    {
+      "country": "republic of moldova",
+      "capital": "Chisinau",
+      "dist_km": 1144.6056420567459,
+      "east_km": -547.3575960085561,
+      "north_km": -972.4329919846595,
+      "le_resid_sd": -1.406,
+      "u5log_resid_sd": 1.867,
+      "le_u5_sd": 1.636,
+      "direction": "west (Europe)"
+    },
+    {
+      "country": "georgia",
+      "capital": "Tbilisi",
+      "dist_km": 1646.208353501266,
+      "east_km": 450.92632419998864,
+      "north_km": -1561.2546065382558,
+      "le_resid_sd": -1.515,
+      "u5log_resid_sd": 2.58,
+      "le_u5_sd": 2.047,
+      "direction": "east (Asia)"
+    },
+    {
+      "country": "armenia",
+      "capital": "Yerevan",
+      "dist_km": 1803.5375064969146,
+      "east_km": 431.43548168155104,
+      "north_km": -1731.1493349584775,
+      "le_resid_sd": -1.421,
+      "u5log_resid_sd": 2.775,
+      "le_u5_sd": 2.098,
+      "direction": "east (Asia)"
+    },
+    {
+      "country": "azerbaijan",
+      "capital": "Baku",
+      "dist_km": 1927.3842854841519,
+      "east_km": 765.4927640878002,
+      "north_km": -1706.4529417507201,
+      "le_resid_sd": -2.197,
+      "u5log_resid_sd": 3.631,
+      "le_u5_sd": 2.914,
+      "direction": "east (Asia)"
+    },
+    {
+      "country": "kazakhstan",
+      "capital": "Alma-Ata",
+      "dist_km": 3102.8384996958644,
+      "east_km": 2421.805886380106,
+      "north_km": -1393.69497157757,
+      "le_resid_sd": -1.897,
+      "u5log_resid_sd": 2.688,
+      "le_u5_sd": 2.293,
+      "direction": "east (Asia)"
+    },
+    {
+      "country": "uzbekistan",
+      "capital": "Tashkent",
+      "dist_km": 2791.021351905689,
+      "east_km": 1961.4118057961048,
+      "north_km": -1607.467218051734,
+      "le_resid_sd": -1.002,
+      "u5log_resid_sd": NaN,
+      "le_u5_sd": 1.002,
+      "direction": "east (Asia)"
+    },
+    {
+      "country": "turkmenistan",
+      "capital": "Ashgabat",
+      "dist_km": 2508.4194970243925,
+      "east_km": 1290.9515164648346,
+      "north_km": -1978.791556088574,
+      "le_resid_sd": -2.305,
+      "u5log_resid_sd": 3.996,
+      "le_u5_sd": 3.151,
+      "direction": "east (Asia)"
+    },
+    {
+      "country": "tajikistan",
+      "capital": "Dushanbe",
+      "dist_km": 2991.443253381667,
+      "east_km": 1933.7960804271765,
+      "north_km": -1912.1079585798316,
+      "le_resid_sd": -2.201,
+      "u5log_resid_sd": 3.733,
+      "le_u5_sd": 2.967,
+      "direction": "east (Asia)"
+    },
+    {
+      "country": "kyrgyzstan",
+      "capital": "Frunze",
+      "dist_km": 2988.2927497072965,
+      "east_km": 2284.5372045685995,
+      "north_km": -1432.3240890938898,
+      "le_resid_sd": -1.803,
+      "u5log_resid_sd": 3.228,
+      "le_u5_sd": 2.515,
+      "direction": "east (Asia)"
+    }
+  ],
+  "correlations": {
+    "all_dist_to_u5log": 0.8634425824946856,
+    "west_dist_to_u5log": 0.8233788832408624,
+    "east_dist_to_u5log": 0.2682558885454692
+  },
+  "group_means_u5log_sd": {
+    "west": 0.8418333333333333,
+    "east": 3.2330000000000005
+  },
+  "script": "scripts/ussr_metropole_direction.py",
+  "produced": "2026-04-29"
+}

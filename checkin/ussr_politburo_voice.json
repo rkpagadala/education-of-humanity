@@ -1,0 +1,117 @@
+{
+  "rows": [
+    {
+      "country": "russian federation",
+      "pb_person_years": 249,
+      "le_resid_sd": -1.402,
+      "u5log_resid_sd": 1.134,
+      "le_u5_sd": 1.268
+    },
+    {
+      "country": "ukraine",
+      "pb_person_years": 64,
+      "le_resid_sd": -0.951,
+      "u5log_resid_sd": 1.086,
+      "le_u5_sd": 1.019
+    },
+    {
+      "country": "latvia",
+      "pb_person_years": 18,
+      "le_resid_sd": -1.063,
+      "u5log_resid_sd": 0.753,
+      "le_u5_sd": 0.908
+    },
+    {
+      "country": "belarus",
+      "pb_person_years": 18,
+      "le_resid_sd": -0.96,
+      "u5log_resid_sd": 0.431,
+      "le_u5_sd": 0.696
+    },
+    {
+      "country": "kazakhstan",
+      "pb_person_years": 17,
+      "le_resid_sd": -1.897,
+      "u5log_resid_sd": 2.688,
+      "le_u5_sd": 2.293
+    },
+    {
+      "country": "armenia",
+      "pb_person_years": 14,
+      "le_resid_sd": -1.421,
+      "u5log_resid_sd": 2.775,
+      "le_u5_sd": 2.098
+    },
+    {
+      "country": "georgia",
+      "pb_person_years": 7,
+      "le_resid_sd": -1.515,
+      "u5log_resid_sd": 2.58,
+      "le_u5_sd": 2.047
+    },
+    {
+      "country": "azerbaijan",
+      "pb_person_years": 6,
+      "le_resid_sd": -2.197,
+      "u5log_resid_sd": 3.631,
+      "le_u5_sd": 2.914
+    },
+    {
+      "country": "lithuania",
+      "pb_person_years": 0,
+      "le_resid_sd": -0.807,
+      "u5log_resid_sd": 0.346,
+      "le_u5_sd": 0.576
+    },
+    {
+      "country": "estonia",
+      "pb_person_years": 0,
+      "le_resid_sd": -0.888,
+      "u5log_resid_sd": 0.568,
+      "le_u5_sd": 0.728
+    },
+    {
+      "country": "uzbekistan",
+      "pb_person_years": 0,
+      "le_resid_sd": -1.002,
+      "u5log_resid_sd": NaN,
+      "le_u5_sd": 1.002
+    },
+    {
+      "country": "turkmenistan",
+      "pb_person_years": 0,
+      "le_resid_sd": -2.305,
+      "u5log_resid_sd": 3.996,
+      "le_u5_sd": 3.151
+    },
+    {
+      "country": "tajikistan",
+      "pb_person_years": 0,
+      "le_resid_sd": -2.201,
+      "u5log_resid_sd": 3.733,
+      "le_u5_sd": 2.967
+    },
+    {
+      "country": "kyrgyzstan",
+      "pb_person_years": 0,
+      "le_resid_sd": -1.803,
+      "u5log_resid_sd": 3.228,
+      "le_u5_sd": 2.515
+    },
+    {
+      "country": "republic of moldova",
+      "pb_person_years": 0,
+      "le_resid_sd": -1.406,
+      "u5log_resid_sd": 1.867,
+      "le_u5_sd": 1.636
+    }
+  ],
+  "summary_excl_russia": {
+    "zero_pb_u5_mean_sd": 2.2896666666666667,
+    "any_pb_u5_mean_sd": 1.9920000000000002,
+    "n_zero": 6,
+    "n_any": 7
+  },
+  "script": "scripts/ussr_politburo_voice.py",
+  "produced": "2026-04-29"
+}

@@ -1,0 +1,14 @@
+{
+  "method": "First-crossing interpolation: year of 90% lower-sec completion (WCDE v3) minus year of phenotype crossing (TFR<3.65 AND LE>69.8, WDI). Negative = 90% came first.",
+  "numbers": {
+    "n_total_crossers": 80,
+    "n_postsoc_crossers": 24,
+    "median_lag_market_yrs": 16.1,
+    "median_lag_postsoc_yrs": -2.9,
+    "turkmenistan_lag_yrs": -56.6,
+    "median_lag_market_yrs_abs": 16,
+    "turkmenistan_lag_yrs_abs": 57
+  },
+  "script": "scripts/post_socialist_lag.py",
+  "produced": "2026-04-28"
+}

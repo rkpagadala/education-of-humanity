@@ -1,0 +1,11 @@
+{
+  "numbers": {
+    "Rob-quad-resid-R2": 0.02,
+    "Rob-boot-edu-lo": 0.34,
+    "Rob-boot-edu-hi": 0.58,
+    "Rob-boot-gdp-lo": 0.0,
+    "Rob-boot-gdp-hi": 0.03
+  },
+  "script": "scripts/robustness/robustness_tests.py",
+  "produced": "2026-04-28"
+}

@@ -1,0 +1,301 @@
+{
+  "n_ajr_base": 64,
+  "n_n61_sample": 61,
+  "univar_r2_log_gdp_2020": {
+    "edu_1950": {
+      "r2": 0.518,
+      "n": 61
+    },
+    "avexpr": {
+      "r2": 0.525,
+      "n": 61
+    },
+    "logem4": {
+      "r2": 0.544,
+      "n": 61
+    },
+    "edu_1900_cohort_lsec": {
+      "r2": 0.248,
+      "n": 61
+    },
+    "protestant": {
+      "r2": 0.055,
+      "n": 61
+    },
+    "edu_plus_religion": {
+      "r2": 0.521,
+      "n": 61
+    }
+  },
+  "n_protestant": 26,
+  "n_catholic": 35,
+  "n_crossed_by_2022": 37,
+  "n_protestant_crossed": 16,
+  "n_catholic_crossed": 21,
+  "drops": [
+    {
+      "country": "C\u00f4te d'Ivoire",
+      "reason": "no edu_1950"
+    },
+    {
+      "country": "Ethiopia",
+      "reason": "never colonized in COLONIES dict"
+    },
+    {
+      "country": "Hong Kong, China",
+      "reason": "no edu_1950"
+    }
+  ],
+  "correlations": {
+    "corr_edu1900_avexpr": 0.405,
+    "corr_edu1900_logem4": -0.447,
+    "corr_edu1900_polity2": 0.285,
+    "corr_edu1950_avexpr": 0.621,
+    "corr_edu1950_loggdp2020": 0.72,
+    "corr_avexpr_loggdp2020": 0.725,
+    "corr_protestant_edu1950": 0.392
+  },
+  "horse_race": {
+    "log_gdp_2020": {
+      "n": 61,
+      "edu_coef": 0.3308,
+      "edu_t": 2.67,
+      "edu_p": 0.0099,
+      "avexpr_coef": 0.4498,
+      "avexpr_t": 3.89,
+      "avexpr_p": 0.0003,
+      "logem4_coef": -0.4843,
+      "logem4_t": -4.19,
+      "logem4_p": 0.0001,
+      "r2": 0.727,
+      "vif_edu": 2.0,
+      "vif_avexpr": 1.74,
+      "vif_logem4": 1.74
+    },
+    "le_2020": {
+      "n": 61,
+      "edu_coef": -0.0168,
+      "edu_t": -0.02,
+      "edu_p": 0.9823,
+      "avexpr_coef": 2.2065,
+      "avexpr_t": 3.13,
+      "avexpr_p": 0.0027,
+      "logem4_coef": -4.1795,
+      "logem4_t": -5.93,
+      "logem4_p": 0.0,
+      "r2": 0.665,
+      "vif_edu": 2.0,
+      "vif_avexpr": 1.74,
+      "vif_logem4": 1.74
+    },
+    "tfr_2020": {
+      "n": 61,
+      "edu_coef": 0.0952,
+      "edu_t": 0.59,
+      "edu_p": 0.5571,
+      "avexpr_coef": -0.4171,
+      "avexpr_t": -2.78,
+      "avexpr_p": 0.0074,
+      "logem4_coef": 0.8472,
+      "logem4_t": 5.64,
+      "logem4_p": 0.0,
+      "r2": 0.606,
+      "vif_edu": 2.0,
+      "vif_avexpr": 1.74,
+      "vif_logem4": 1.74
+    },
+    "logpgp95_ajr": {
+      "n": 61,
+      "edu_coef": 0.151,
+      "edu_t": 1.55,
+      "edu_p": 0.1273,
+      "avexpr_coef": 0.4205,
+      "avexpr_t": 4.63,
+      "avexpr_p": 0.0,
+      "logem4_coef": -0.4166,
+      "logem4_t": -4.58,
+      "logem4_p": 0.0,
+      "r2": 0.727,
+      "vif_edu": 2.0,
+      "vif_avexpr": 1.74,
+      "vif_logem4": 1.74
+    }
+  },
+  "horse_race_holm_p": {
+    "log_gdp_2020": 0.0396,
+    "logpgp95_ajr": 0.3819,
+    "tfr_2020": 1.0,
+    "le_2020": 0.9823
+  },
+  "mediation": {
+    "log_gdp_2020": {
+      "forward": {
+        "n": 61,
+        "total_c": 0.623,
+        "direct_cprime": 0.3886,
+        "indirect_ab": 0.2344,
+        "indirect_ci_lo": 0.12,
+        "indirect_ci_hi": 0.3816,
+        "sobel_z": 3.56,
+        "sobel_p": 0.0004,
+        "prop_mediated": 0.376
+      },
+      "reverse": {
+        "n": 61,
+        "total_c": 0.0913,
+        "direct_cprime": 0.0449,
+        "indirect_ab": 0.0465,
+        "indirect_ci_lo": 0.0178,
+        "indirect_ci_hi": 0.1185,
+        "sobel_z": 3.03,
+        "sobel_p": 0.0024,
+        "prop_mediated": 0.509
+      }
+    },
+    "le_2020": {
+      "forward": {
+        "n": 61,
+        "total_c": 3.0279,
+        "direct_cprime": 2.2161,
+        "indirect_ab": 0.8118,
+        "indirect_ci_lo": 0.1965,
+        "indirect_ci_hi": 1.5148,
+        "sobel_z": 2.1,
+        "sobel_p": 0.0355,
+        "prop_mediated": 0.268
+      },
+      "reverse": {
+        "n": 61,
+        "total_c": 0.4561,
+        "direct_cprime": 0.2326,
+        "indirect_ab": 0.2235,
+        "indirect_ci_lo": 0.0883,
+        "indirect_ci_hi": 0.6124,
+        "sobel_z": 2.84,
+        "sobel_p": 0.0045,
+        "prop_mediated": 0.49
+      }
+    },
+    "tfr_2020": {
+      "forward": {
+        "n": 61,
+        "total_c": -0.5546,
+        "direct_cprime": -0.4288,
+        "indirect_ab": -0.1258,
+        "indirect_ci_lo": -0.2686,
+        "indirect_ci_hi": 0.0109,
+        "sobel_z": -1.6,
+        "sobel_p": 0.1093,
+        "prop_mediated": 0.227
+      },
+      "reverse": {
+        "n": 61,
+        "total_c": -0.0694,
+        "direct_cprime": -0.0258,
+        "indirect_ab": -0.0437,
+        "indirect_ci_lo": -0.1232,
+        "indirect_ci_hi": -0.017,
+        "sobel_z": -2.77,
+        "sobel_p": 0.0056,
+        "prop_mediated": 0.629
+      }
+    }
+  },
+  "crossing_year_prediction": {
+    "n_crossers_with_edu": 37,
+    "edu_at_cross_median_pct": 65.0,
+    "edu_at_cross_mean_pct": 63.8,
+    "edu_at_cross_p10_pct": 42.4,
+    "edu_at_cross_p25_pct": 50.4,
+    "n_below_global_p10": 4,
+    "n_below_global_median": 19,
+    "global_panel_median_lsec_at_le_cross": 65.0,
+    "global_panel_p10_lsec_at_le_cross": 42.0
+  },
+  "first_difference_M1": {
+    "le_1975": {
+      "n": 61,
+      "beta": -0.1317,
+      "t": -3.17,
+      "p": 0.0025,
+      "r2": 0.145
+    },
+    "tfr_1975": {
+      "n": 61,
+      "beta": -0.0505,
+      "t": -3.75,
+      "p": 0.0004,
+      "r2": 0.193
+    }
+  },
+  "beta_g_buckets": {
+    "Q1_low": {
+      "n": 16,
+      "edu_1950_mean": 0.9,
+      "beta_g": 2.427,
+      "t": 0.72,
+      "r2": 0.036
+    },
+    "Q2": {
+      "n": 15,
+      "edu_1950_mean": 5.2,
+      "beta_g": 1.982,
+      "t": 1.86,
+      "r2": 0.21
+    },
+    "Q3": {
+      "n": 15,
+      "edu_1950_mean": 12.5,
+      "beta_g": 1.968,
+      "t": 2.03,
+      "r2": 0.241
+    },
+    "Q4_high": {
+      "n": 15,
+      "edu_1950_mean": 35.9,
+      "beta_g": 0.797,
+      "t": 7.04,
+      "r2": 0.792
+    }
+  },
+  "m2_female_differential": {
+    "edu_1950": {
+      "n": 61,
+      "beta": 0.226,
+      "t": 5.3,
+      "r2": 0.323
+    },
+    "edu_female_1950": {
+      "n": 61,
+      "beta": 0.2237,
+      "t": 5.24,
+      "r2": 0.318
+    }
+  },
+  "m5_hollow_edu_check": {
+    "Viet Nam": {
+      "edu_2000": 58.8,
+      "le_2020": 75.4,
+      "le_predicted_from_edu": 70.8,
+      "le_residual": 4.54
+    }
+  },
+  "m7_settler_mortality_vs_latitude": {
+    "n": 61,
+    "corr_logem4_abs_lat": -0.465,
+    "r2_logem4_on_abs_lat": 0.216
+  },
+  "m10_avexpr_temporal_mismatch": {
+    "n_with_independence": 61,
+    "median_years_post_indep": 34,
+    "n_avexpr_25plus_years_post_indep": 55
+  },
+  "t33_avexpr_iv_for_education": {
+    "n": 61,
+    "first_stage_F": 37.13,
+    "second_stage_edu_coef": 0.0844,
+    "second_stage_t": 6.74
+  },
+  "script": "scripts/robustness/ajr_n61_deep_dive.py",
+  "produced": "2026-05-02"
+}

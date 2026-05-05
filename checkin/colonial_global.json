@@ -1,0 +1,2973 @@
+{
+  "n_full_panel": 181,
+  "drops": [
+    {
+      "country": "Antigua and Barbuda",
+      "reason": "no edu_1950"
+    },
+    {
+      "country": "Barbados",
+      "reason": "no edu_1950"
+    },
+    {
+      "country": "Brunei Darussalam",
+      "reason": "no edu_1950"
+    },
+    {
+      "country": "Djibouti",
+      "reason": "no edu_1950"
+    },
+    {
+      "country": "Eritrea",
+      "reason": "no edu_1950"
+    },
+    {
+      "country": "French Guiana",
+      "reason": "no 2020 outcome"
+    },
+    {
+      "country": "Grenada",
+      "reason": "no edu_1950"
+    },
+    {
+      "country": "Guadeloupe",
+      "reason": "no 2020 outcome"
+    },
+    {
+      "country": "Guam",
+      "reason": "no edu_1950"
+    },
+    {
+      "country": "Libyan Arab Jamahiriya",
+      "reason": "no edu_1950"
+    },
+    {
+      "country": "Martinique",
+      "reason": "no 2020 outcome"
+    },
+    {
+      "country": "Mauritania",
+      "reason": "no edu_1950"
+    },
+    {
+      "country": "Mayotte",
+      "reason": "no edu_1950"
+    },
+    {
+      "country": "Papua New Guinea",
+      "reason": "no edu_1950"
+    },
+    {
+      "country": "Reunion",
+      "reason": "no 2020 outcome"
+    },
+    {
+      "country": "Seychelles",
+      "reason": "no edu_1950"
+    },
+    {
+      "country": "United States Virgin Islands",
+      "reason": "no edu_1950"
+    },
+    {
+      "country": "Uzbekistan",
+      "reason": "no edu_1950"
+    },
+    {
+      "country": "Western Sahara",
+      "reason": "no edu_1950"
+    }
+  ],
+  "n_in_ajr64": 62,
+  "n_out_ajr64": 119,
+  "n_ever_colonized": 109,
+  "n_never_colonized": 72,
+  "n_crossed_by_2022": 125,
+  "tier_sizes": {
+    "full_panel": 181,
+    "ajr_64_only": 62,
+    "non_ajr_64": 119,
+    "ever_colonized": 109,
+    "never_colonized": 72,
+    "entry_cohort_10_90": 89,
+    "entry_cohort_20_90": 58,
+    "entry_cohort_30_90": 40,
+    "entry_cohort_50_90": 22,
+    "entry_cohort_70_90": 6,
+    "below_90": 173,
+    "ajr_64_entry_10_90": 27,
+    "ajr_64_entry_20_90": 11,
+    "ajr_64_below_90": 62
+  },
+  "b1_horse_race": {
+    "full_panel": {
+      "polity2_avg_1980_2010": {
+        "log_gdp_2020": {
+          "n": 96,
+          "label": "full_panel | log_gdp_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.736,
+          "z_edu_1950_coef": 0.2449,
+          "z_edu_1950_t": 1.96,
+          "z_edu_1950_p": 0.0528,
+          "z_polity2_avg_1980_2010_coef": 0.2288,
+          "z_polity2_avg_1980_2010_t": 2.01,
+          "z_polity2_avg_1980_2010_p": 0.0472,
+          "z_log_gdp_1960_coef": 1.005,
+          "z_log_gdp_1960_t": 7.97,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "le_2020": {
+          "n": 96,
+          "label": "full_panel | le_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.554,
+          "z_edu_1950_coef": 1.17,
+          "z_edu_1950_t": 1.35,
+          "z_edu_1950_p": 0.1803,
+          "z_polity2_avg_1980_2010_coef": 1.7897,
+          "z_polity2_avg_1980_2010_t": 2.27,
+          "z_polity2_avg_1980_2010_p": 0.0258,
+          "z_log_gdp_1960_coef": 4.0481,
+          "z_log_gdp_1960_t": 4.63,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "tfr_2020": {
+          "n": 96,
+          "label": "full_panel | tfr_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.415,
+          "z_edu_1950_coef": -0.0655,
+          "z_edu_1950_t": -0.4,
+          "z_edu_1950_p": 0.6869,
+          "z_polity2_avg_1980_2010_coef": -0.5767,
+          "z_polity2_avg_1980_2010_t": -3.91,
+          "z_polity2_avg_1980_2010_p": 0.0002,
+          "z_log_gdp_1960_coef": -0.3449,
+          "z_log_gdp_1960_t": -2.11,
+          "z_log_gdp_1960_p": 0.0376
+        },
+        "u5mr_2015": {
+          "n": 96,
+          "label": "full_panel | u5mr_2015 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.414,
+          "z_edu_1950_coef": -2.3628,
+          "z_edu_1950_t": -0.58,
+          "z_edu_1950_p": 0.5627,
+          "z_polity2_avg_1980_2010_coef": -8.4067,
+          "z_polity2_avg_1980_2010_t": -2.27,
+          "z_polity2_avg_1980_2010_p": 0.0256,
+          "z_log_gdp_1960_coef": -14.011,
+          "z_log_gdp_1960_t": -3.41,
+          "z_log_gdp_1960_p": 0.001
+        }
+      },
+      "polity2_avg_1995_2010": {
+        "log_gdp_2020": {
+          "n": 96,
+          "label": "full_panel | log_gdp_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.727,
+          "z_edu_1950_coef": 0.2913,
+          "z_edu_1950_t": 2.32,
+          "z_edu_1950_p": 0.0223,
+          "z_polity2_avg_1995_2010_coef": 0.0993,
+          "z_polity2_avg_1995_2010_t": 0.96,
+          "z_polity2_avg_1995_2010_p": 0.342,
+          "z_log_gdp_1960_coef": 1.0642,
+          "z_log_gdp_1960_t": 8.6,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "le_2020": {
+          "n": 96,
+          "label": "full_panel | le_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.534,
+          "z_edu_1950_coef": 1.5553,
+          "z_edu_1950_t": 1.78,
+          "z_edu_1950_p": 0.0787,
+          "z_polity2_avg_1995_2010_coef": 0.7091,
+          "z_polity2_avg_1995_2010_t": 0.98,
+          "z_polity2_avg_1995_2010_p": 0.3309,
+          "z_log_gdp_1960_coef": 4.5303,
+          "z_log_gdp_1960_t": 5.24,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "tfr_2020": {
+          "n": 96,
+          "label": "full_panel | tfr_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.373,
+          "z_edu_1950_coef": -0.1348,
+          "z_edu_1950_t": -0.81,
+          "z_edu_1950_p": 0.4173,
+          "z_polity2_avg_1995_2010_coef": -0.3921,
+          "z_polity2_avg_1995_2010_t": -2.86,
+          "z_polity2_avg_1995_2010_p": 0.0053,
+          "z_log_gdp_1960_coef": -0.455,
+          "z_log_gdp_1960_t": -2.78,
+          "z_log_gdp_1960_p": 0.0065
+        },
+        "u5mr_2015": {
+          "n": 96,
+          "label": "full_panel | u5mr_2015 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.39,
+          "z_edu_1950_coef": -3.9634,
+          "z_edu_1950_t": -0.97,
+          "z_edu_1950_p": 0.3358,
+          "z_polity2_avg_1995_2010_coef": -3.9547,
+          "z_polity2_avg_1995_2010_t": -1.16,
+          "z_polity2_avg_1995_2010_p": 0.2474,
+          "z_log_gdp_1960_coef": -16.1035,
+          "z_log_gdp_1960_t": -3.98,
+          "z_log_gdp_1960_p": 0.0001
+        }
+      },
+      "polity2_2015": {
+        "log_gdp_2020": {
+          "n": 95,
+          "label": "full_panel | log_gdp_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.723,
+          "z_edu_1950_coef": 0.3149,
+          "z_edu_1950_t": 2.49,
+          "z_edu_1950_p": 0.0146,
+          "z_polity2_2015_coef": 0.0194,
+          "z_polity2_2015_t": 0.2,
+          "z_polity2_2015_p": 0.8451,
+          "z_log_gdp_1960_coef": 1.0891,
+          "z_log_gdp_1960_t": 8.89,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "le_2020": {
+          "n": 95,
+          "label": "full_panel | le_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.528,
+          "z_edu_1950_coef": 1.9152,
+          "z_edu_1950_t": 2.17,
+          "z_edu_1950_p": 0.033,
+          "z_polity2_2015_coef": -0.3642,
+          "z_polity2_2015_t": -0.53,
+          "z_polity2_2015_p": 0.6,
+          "z_log_gdp_1960_coef": 4.7907,
+          "z_log_gdp_1960_t": 5.59,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "tfr_2020": {
+          "n": 95,
+          "label": "full_panel | tfr_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.321,
+          "z_edu_1950_coef": -0.2153,
+          "z_edu_1950_t": -1.25,
+          "z_edu_1950_p": 0.2139,
+          "z_polity2_2015_coef": -0.1269,
+          "z_polity2_2015_t": -0.94,
+          "z_polity2_2015_p": 0.3484,
+          "z_log_gdp_1960_coef": -0.5399,
+          "z_log_gdp_1960_t": -3.24,
+          "z_log_gdp_1960_p": 0.0017
+        },
+        "u5mr_2015": {
+          "n": 95,
+          "label": "full_panel | u5mr_2015 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.379,
+          "z_edu_1950_coef": -5.7171,
+          "z_edu_1950_t": -1.38,
+          "z_edu_1950_p": 0.1715,
+          "z_polity2_2015_coef": 1.4196,
+          "z_polity2_2015_t": 0.44,
+          "z_polity2_2015_p": 0.6628,
+          "z_log_gdp_1960_coef": -17.4134,
+          "z_log_gdp_1960_t": -4.33,
+          "z_log_gdp_1960_p": 0.0
+        }
+      }
+    },
+    "ajr_64_only": {
+      "polity2_avg_1980_2010": {
+        "log_gdp_2020": {
+          "n": 48,
+          "label": "ajr_64_only | log_gdp_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.677,
+          "z_edu_1950_coef": 0.2627,
+          "z_edu_1950_t": 1.5,
+          "z_edu_1950_p": 0.1418,
+          "z_polity2_avg_1980_2010_coef": 0.1439,
+          "z_polity2_avg_1980_2010_t": 1.01,
+          "z_polity2_avg_1980_2010_p": 0.3177,
+          "z_log_gdp_1960_coef": 0.7649,
+          "z_log_gdp_1960_t": 4.55,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "le_2020": {
+          "n": 48,
+          "label": "ajr_64_only | le_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.509,
+          "z_edu_1950_coef": 0.4063,
+          "z_edu_1950_t": 0.35,
+          "z_edu_1950_p": 0.7299,
+          "z_polity2_avg_1980_2010_coef": 2.3017,
+          "z_polity2_avg_1980_2010_t": 2.43,
+          "z_polity2_avg_1980_2010_p": 0.0194,
+          "z_log_gdp_1960_coef": 2.9918,
+          "z_log_gdp_1960_t": 2.67,
+          "z_log_gdp_1960_p": 0.0105
+        },
+        "tfr_2020": {
+          "n": 48,
+          "label": "ajr_64_only | tfr_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.52,
+          "z_edu_1950_coef": 0.0941,
+          "z_edu_1950_t": 0.44,
+          "z_edu_1950_p": 0.6614,
+          "z_polity2_avg_1980_2010_coef": -0.7413,
+          "z_polity2_avg_1980_2010_t": -4.29,
+          "z_polity2_avg_1980_2010_p": 0.0001,
+          "z_log_gdp_1960_coef": -0.3737,
+          "z_log_gdp_1960_t": -1.83,
+          "z_log_gdp_1960_p": 0.0739
+        },
+        "u5mr_2015": {
+          "n": 48,
+          "label": "ajr_64_only | u5mr_2015 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.458,
+          "z_edu_1950_coef": 2.2424,
+          "z_edu_1950_t": 0.41,
+          "z_edu_1950_p": 0.6865,
+          "z_polity2_avg_1980_2010_coef": -14.8148,
+          "z_polity2_avg_1980_2010_t": -3.31,
+          "z_polity2_avg_1980_2010_p": 0.0019,
+          "z_log_gdp_1960_coef": -11.1372,
+          "z_log_gdp_1960_t": -2.11,
+          "z_log_gdp_1960_p": 0.0407
+        }
+      },
+      "polity2_avg_1995_2010": {
+        "log_gdp_2020": {
+          "n": 48,
+          "label": "ajr_64_only | log_gdp_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.672,
+          "z_edu_1950_coef": 0.2979,
+          "z_edu_1950_t": 1.73,
+          "z_edu_1950_p": 0.0904,
+          "z_polity2_avg_1995_2010_coef": 0.0775,
+          "z_polity2_avg_1995_2010_t": 0.58,
+          "z_polity2_avg_1995_2010_p": 0.5633,
+          "z_log_gdp_1960_coef": 0.7807,
+          "z_log_gdp_1960_t": 4.62,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "le_2020": {
+          "n": 48,
+          "label": "ajr_64_only | le_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.47,
+          "z_edu_1950_coef": 0.927,
+          "z_edu_1950_t": 0.78,
+          "z_edu_1950_p": 0.4369,
+          "z_polity2_avg_1995_2010_coef": 1.363,
+          "z_polity2_avg_1995_2010_t": 1.49,
+          "z_polity2_avg_1995_2010_p": 0.1431,
+          "z_log_gdp_1960_coef": 3.2163,
+          "z_log_gdp_1960_t": 2.77,
+          "z_log_gdp_1960_p": 0.0081
+        },
+        "tfr_2020": {
+          "n": 48,
+          "label": "ajr_64_only | tfr_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.464,
+          "z_edu_1950_coef": -0.0237,
+          "z_edu_1950_t": -0.11,
+          "z_edu_1950_p": 0.9144,
+          "z_polity2_avg_1995_2010_coef": -0.5846,
+          "z_polity2_avg_1995_2010_t": -3.45,
+          "z_polity2_avg_1995_2010_p": 0.0013,
+          "z_log_gdp_1960_coef": -0.4118,
+          "z_log_gdp_1960_t": -1.92,
+          "z_log_gdp_1960_p": 0.0619
+        },
+        "u5mr_2015": {
+          "n": 48,
+          "label": "ajr_64_only | u5mr_2015 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.408,
+          "z_edu_1950_coef": -0.3771,
+          "z_edu_1950_t": -0.07,
+          "z_edu_1950_p": 0.9467,
+          "z_polity2_avg_1995_2010_coef": -10.907,
+          "z_polity2_avg_1995_2010_t": -2.51,
+          "z_polity2_avg_1995_2010_p": 0.0157,
+          "z_log_gdp_1960_coef": -12.0804,
+          "z_log_gdp_1960_t": -2.2,
+          "z_log_gdp_1960_p": 0.0334
+        }
+      },
+      "polity2_2015": {
+        "log_gdp_2020": {
+          "n": 47,
+          "label": "ajr_64_only | log_gdp_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.668,
+          "z_edu_1950_coef": 0.3056,
+          "z_edu_1950_t": 1.77,
+          "z_edu_1950_p": 0.0841,
+          "z_polity2_2015_coef": 0.0543,
+          "z_polity2_2015_t": 0.43,
+          "z_polity2_2015_p": 0.6675,
+          "z_log_gdp_1960_coef": 0.7905,
+          "z_log_gdp_1960_t": 4.68,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "le_2020": {
+          "n": 47,
+          "label": "ajr_64_only | le_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.441,
+          "z_edu_1950_coef": 1.2574,
+          "z_edu_1950_t": 1.03,
+          "z_edu_1950_p": 0.3078,
+          "z_polity2_2015_coef": 0.4274,
+          "z_polity2_2015_t": 0.48,
+          "z_polity2_2015_p": 0.6314,
+          "z_log_gdp_1960_coef": 3.4886,
+          "z_log_gdp_1960_t": 2.93,
+          "z_log_gdp_1960_p": 0.0054
+        },
+        "tfr_2020": {
+          "n": 47,
+          "label": "ajr_64_only | tfr_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.346,
+          "z_edu_1950_coef": -0.1347,
+          "z_edu_1950_t": -0.56,
+          "z_edu_1950_p": 0.5772,
+          "z_polity2_2015_coef": -0.2614,
+          "z_polity2_2015_t": -1.5,
+          "z_polity2_2015_p": 0.1405,
+          "z_log_gdp_1960_coef": -0.5078,
+          "z_log_gdp_1960_t": -2.17,
+          "z_log_gdp_1960_p": 0.0356
+        },
+        "u5mr_2015": {
+          "n": 47,
+          "label": "ajr_64_only | u5mr_2015 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.33,
+          "z_edu_1950_coef": -2.8045,
+          "z_edu_1950_t": -0.47,
+          "z_edu_1950_p": 0.6413,
+          "z_polity2_2015_coef": -3.8978,
+          "z_polity2_2015_t": -0.9,
+          "z_polity2_2015_p": 0.3741,
+          "z_log_gdp_1960_coef": -14.0927,
+          "z_log_gdp_1960_t": -2.41,
+          "z_log_gdp_1960_p": 0.0201
+        }
+      }
+    },
+    "non_ajr_64": {
+      "polity2_avg_1980_2010": {
+        "log_gdp_2020": {
+          "n": 48,
+          "label": "non_ajr_64 | log_gdp_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.765,
+          "z_edu_1950_coef": 0.1447,
+          "z_edu_1950_t": 0.78,
+          "z_edu_1950_p": 0.4402,
+          "z_polity2_avg_1980_2010_coef": 0.32,
+          "z_polity2_avg_1980_2010_t": 1.79,
+          "z_polity2_avg_1980_2010_p": 0.0796,
+          "z_log_gdp_1960_coef": 1.1874,
+          "z_log_gdp_1960_t": 6.21,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "le_2020": {
+          "n": 48,
+          "label": "non_ajr_64 | le_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.572,
+          "z_edu_1950_coef": 0.9863,
+          "z_edu_1950_t": 0.74,
+          "z_edu_1950_p": 0.4614,
+          "z_polity2_avg_1980_2010_coef": 1.4848,
+          "z_polity2_avg_1980_2010_t": 1.16,
+          "z_polity2_avg_1980_2010_p": 0.2503,
+          "z_log_gdp_1960_coef": 5.1661,
+          "z_log_gdp_1960_t": 3.78,
+          "z_log_gdp_1960_p": 0.0005
+        },
+        "tfr_2020": {
+          "n": 48,
+          "label": "non_ajr_64 | tfr_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.359,
+          "z_edu_1950_coef": -0.1249,
+          "z_edu_1950_t": -0.5,
+          "z_edu_1950_p": 0.6206,
+          "z_polity2_avg_1980_2010_coef": -0.4454,
+          "z_polity2_avg_1980_2010_t": -1.85,
+          "z_polity2_avg_1980_2010_p": 0.0709,
+          "z_log_gdp_1960_coef": -0.3886,
+          "z_log_gdp_1960_t": -1.51,
+          "z_log_gdp_1960_p": 0.1393
+        },
+        "u5mr_2015": {
+          "n": 48,
+          "label": "non_ajr_64 | u5mr_2015 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.41,
+          "z_edu_1950_coef": -4.0697,
+          "z_edu_1950_t": -0.66,
+          "z_edu_1950_p": 0.5118,
+          "z_polity2_avg_1980_2010_coef": -3.0275,
+          "z_polity2_avg_1980_2010_t": -0.51,
+          "z_polity2_avg_1980_2010_p": 0.6109,
+          "z_log_gdp_1960_coef": -18.1477,
+          "z_log_gdp_1960_t": -2.86,
+          "z_log_gdp_1960_p": 0.0064
+        }
+      },
+      "polity2_avg_1995_2010": {
+        "log_gdp_2020": {
+          "n": 48,
+          "label": "non_ajr_64 | log_gdp_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.753,
+          "z_edu_1950_coef": 0.193,
+          "z_edu_1950_t": 1.01,
+          "z_edu_1950_p": 0.3167,
+          "z_polity2_avg_1995_2010_coef": 0.1563,
+          "z_polity2_avg_1995_2010_t": 0.96,
+          "z_polity2_avg_1995_2010_p": 0.3414,
+          "z_log_gdp_1960_coef": 1.2816,
+          "z_log_gdp_1960_t": 6.92,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "le_2020": {
+          "n": 48,
+          "label": "non_ajr_64 | le_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.56,
+          "z_edu_1950_coef": 1.3147,
+          "z_edu_1950_t": 0.98,
+          "z_edu_1950_p": 0.334,
+          "z_polity2_avg_1995_2010_coef": 0.4505,
+          "z_polity2_avg_1995_2010_t": 0.39,
+          "z_polity2_avg_1995_2010_p": 0.6967,
+          "z_log_gdp_1960_coef": 5.6758,
+          "z_log_gdp_1960_t": 4.34,
+          "z_log_gdp_1960_p": 0.0001
+        },
+        "tfr_2020": {
+          "n": 48,
+          "label": "non_ajr_64 | tfr_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.33,
+          "z_edu_1950_coef": -0.1775,
+          "z_edu_1950_t": -0.69,
+          "z_edu_1950_p": 0.4922,
+          "z_polity2_avg_1995_2010_coef": -0.2559,
+          "z_polity2_avg_1995_2010_t": -1.17,
+          "z_polity2_avg_1995_2010_p": 0.2483,
+          "z_log_gdp_1960_coef": -0.5095,
+          "z_log_gdp_1960_t": -2.04,
+          "z_log_gdp_1960_p": 0.047
+        },
+        "u5mr_2015": {
+          "n": 48,
+          "label": "non_ajr_64 | u5mr_2015 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.407,
+          "z_edu_1950_coef": -5.5616,
+          "z_edu_1950_t": -0.9,
+          "z_edu_1950_p": 0.3723,
+          "z_polity2_avg_1995_2010_coef": 1.243,
+          "z_polity2_avg_1995_2010_t": 0.24,
+          "z_polity2_avg_1995_2010_p": 0.8144,
+          "z_log_gdp_1960_coef": -19.7597,
+          "z_log_gdp_1960_t": -3.29,
+          "z_log_gdp_1960_p": 0.002
+        }
+      },
+      "polity2_2015": {
+        "log_gdp_2020": {
+          "n": 48,
+          "label": "non_ajr_64 | log_gdp_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.748,
+          "z_edu_1950_coef": 0.2262,
+          "z_edu_1950_t": 1.16,
+          "z_edu_1950_p": 0.2535,
+          "z_polity2_2015_coef": 0.0581,
+          "z_polity2_2015_t": 0.37,
+          "z_polity2_2015_p": 0.7166,
+          "z_log_gdp_1960_coef": 1.3149,
+          "z_log_gdp_1960_t": 7.18,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "le_2020": {
+          "n": 48,
+          "label": "non_ajr_64 | le_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.562,
+          "z_edu_1950_coef": 1.7604,
+          "z_edu_1950_t": 1.29,
+          "z_edu_1950_p": 0.2044,
+          "z_polity2_2015_coef": -0.6069,
+          "z_polity2_2015_t": -0.55,
+          "z_polity2_2015_p": 0.5875,
+          "z_log_gdp_1960_coef": 5.8803,
+          "z_log_gdp_1960_t": 4.59,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "tfr_2020": {
+          "n": 48,
+          "label": "non_ajr_64 | tfr_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.31,
+          "z_edu_1950_coef": -0.2493,
+          "z_edu_1950_t": -0.94,
+          "z_edu_1950_p": 0.3511,
+          "z_polity2_2015_coef": -0.0565,
+          "z_polity2_2015_t": -0.26,
+          "z_polity2_2015_p": 0.7938,
+          "z_log_gdp_1960_coef": -0.5694,
+          "z_log_gdp_1960_t": -2.3,
+          "z_log_gdp_1960_p": 0.0264
+        },
+        "u5mr_2015": {
+          "n": 48,
+          "label": "non_ajr_64 | u5mr_2015 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.419,
+          "z_edu_1950_coef": -7.3647,
+          "z_edu_1950_t": -1.19,
+          "z_edu_1950_p": 0.2419,
+          "z_polity2_2015_coef": 5.0351,
+          "z_polity2_2015_t": 1.0,
+          "z_polity2_2015_p": 0.3238,
+          "z_log_gdp_1960_coef": -20.1368,
+          "z_log_gdp_1960_t": -3.46,
+          "z_log_gdp_1960_p": 0.0012
+        }
+      }
+    },
+    "ever_colonized": {
+      "polity2_avg_1980_2010": {
+        "log_gdp_2020": {
+          "n": 69,
+          "label": "ever_colonized | log_gdp_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.649,
+          "z_edu_1950_coef": 0.2449,
+          "z_edu_1950_t": 1.62,
+          "z_edu_1950_p": 0.1109,
+          "z_polity2_avg_1980_2010_coef": 0.1616,
+          "z_polity2_avg_1980_2010_t": 1.29,
+          "z_polity2_avg_1980_2010_p": 0.2009,
+          "z_log_gdp_1960_coef": 0.8091,
+          "z_log_gdp_1960_t": 5.51,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "le_2020": {
+          "n": 69,
+          "label": "ever_colonized | le_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.438,
+          "z_edu_1950_coef": 1.213,
+          "z_edu_1950_t": 1.12,
+          "z_edu_1950_p": 0.2656,
+          "z_polity2_avg_1980_2010_coef": 1.2568,
+          "z_polity2_avg_1980_2010_t": 1.41,
+          "z_polity2_avg_1980_2010_p": 0.1632,
+          "z_log_gdp_1960_coef": 3.3077,
+          "z_log_gdp_1960_t": 3.16,
+          "z_log_gdp_1960_p": 0.0024
+        },
+        "tfr_2020": {
+          "n": 69,
+          "label": "ever_colonized | tfr_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.395,
+          "z_edu_1950_coef": -0.0599,
+          "z_edu_1950_t": -0.29,
+          "z_edu_1950_p": 0.7705,
+          "z_polity2_avg_1980_2010_coef": -0.5975,
+          "z_polity2_avg_1980_2010_t": -3.54,
+          "z_polity2_avg_1980_2010_p": 0.0007,
+          "z_log_gdp_1960_coef": -0.3516,
+          "z_log_gdp_1960_t": -1.77,
+          "z_log_gdp_1960_p": 0.0806
+        },
+        "u5mr_2015": {
+          "n": 69,
+          "label": "ever_colonized | u5mr_2015 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.356,
+          "z_edu_1950_coef": -1.5877,
+          "z_edu_1950_t": -0.3,
+          "z_edu_1950_p": 0.7653,
+          "z_polity2_avg_1980_2010_coef": -8.4136,
+          "z_polity2_avg_1980_2010_t": -1.93,
+          "z_polity2_avg_1980_2010_p": 0.0586,
+          "z_log_gdp_1960_coef": -13.9803,
+          "z_log_gdp_1960_t": -2.72,
+          "z_log_gdp_1960_p": 0.0083
+        }
+      },
+      "polity2_avg_1995_2010": {
+        "log_gdp_2020": {
+          "n": 69,
+          "label": "ever_colonized | log_gdp_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.642,
+          "z_edu_1950_coef": 0.2837,
+          "z_edu_1950_t": 1.88,
+          "z_edu_1950_p": 0.0641,
+          "z_polity2_avg_1995_2010_coef": 0.0693,
+          "z_polity2_avg_1995_2010_t": 0.6,
+          "z_polity2_avg_1995_2010_p": 0.5536,
+          "z_log_gdp_1960_coef": 0.8376,
+          "z_log_gdp_1960_t": 5.73,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "le_2020": {
+          "n": 69,
+          "label": "ever_colonized | le_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.423,
+          "z_edu_1950_coef": 1.549,
+          "z_edu_1950_t": 1.44,
+          "z_edu_1950_p": 0.155,
+          "z_polity2_avg_1995_2010_coef": 0.4415,
+          "z_polity2_avg_1995_2010_t": 0.53,
+          "z_polity2_avg_1995_2010_p": 0.5976,
+          "z_log_gdp_1960_coef": 3.5464,
+          "z_log_gdp_1960_t": 3.39,
+          "z_log_gdp_1960_p": 0.0012
+        },
+        "tfr_2020": {
+          "n": 69,
+          "label": "ever_colonized | tfr_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.352,
+          "z_edu_1950_coef": -0.1393,
+          "z_edu_1950_t": -0.67,
+          "z_edu_1950_p": 0.5059,
+          "z_polity2_avg_1995_2010_coef": -0.4373,
+          "z_polity2_avg_1995_2010_t": -2.72,
+          "z_polity2_avg_1995_2010_p": 0.0084,
+          "z_log_gdp_1960_coef": -0.4255,
+          "z_log_gdp_1960_t": -2.1,
+          "z_log_gdp_1960_p": 0.0393
+        },
+        "u5mr_2015": {
+          "n": 69,
+          "label": "ever_colonized | u5mr_2015 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.33,
+          "z_edu_1950_coef": -3.404,
+          "z_edu_1950_t": -0.64,
+          "z_edu_1950_p": 0.5241,
+          "z_polity2_avg_1995_2010_coef": -4.1803,
+          "z_polity2_avg_1995_2010_t": -1.02,
+          "z_polity2_avg_1995_2010_p": 0.3128,
+          "z_log_gdp_1960_coef": -15.3649,
+          "z_log_gdp_1960_t": -2.98,
+          "z_log_gdp_1960_p": 0.0041
+        }
+      },
+      "polity2_2015": {
+        "log_gdp_2020": {
+          "n": 68,
+          "label": "ever_colonized | log_gdp_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.643,
+          "z_edu_1950_coef": 0.2711,
+          "z_edu_1950_t": 1.8,
+          "z_edu_1950_p": 0.0762,
+          "z_polity2_2015_coef": 0.0987,
+          "z_polity2_2015_t": 0.88,
+          "z_polity2_2015_p": 0.3802,
+          "z_log_gdp_1960_coef": 0.8454,
+          "z_log_gdp_1960_t": 5.78,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "le_2020": {
+          "n": 68,
+          "label": "ever_colonized | le_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.419,
+          "z_edu_1950_coef": 1.7108,
+          "z_edu_1950_t": 1.58,
+          "z_edu_1950_p": 0.1199,
+          "z_polity2_2015_coef": -0.0265,
+          "z_polity2_2015_t": -0.03,
+          "z_polity2_2015_p": 0.9738,
+          "z_log_gdp_1960_coef": 3.6475,
+          "z_log_gdp_1960_t": 3.46,
+          "z_log_gdp_1960_p": 0.001
+        },
+        "tfr_2020": {
+          "n": 68,
+          "label": "ever_colonized | tfr_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.309,
+          "z_edu_1950_coef": -0.192,
+          "z_edu_1950_t": -0.89,
+          "z_edu_1950_p": 0.3743,
+          "z_polity2_2015_coef": -0.2793,
+          "z_polity2_2015_t": -1.75,
+          "z_polity2_2015_p": 0.0845,
+          "z_log_gdp_1960_coef": -0.4781,
+          "z_log_gdp_1960_t": -2.29,
+          "z_log_gdp_1960_p": 0.0252
+        },
+        "u5mr_2015": {
+          "n": 68,
+          "label": "ever_colonized | u5mr_2015 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.317,
+          "z_edu_1950_coef": -4.5096,
+          "z_edu_1950_t": -0.84,
+          "z_edu_1950_p": 0.4051,
+          "z_polity2_2015_coef": -0.8156,
+          "z_polity2_2015_t": -0.2,
+          "z_polity2_2015_p": 0.8389,
+          "z_log_gdp_1960_coef": -16.1126,
+          "z_log_gdp_1960_t": -3.08,
+          "z_log_gdp_1960_p": 0.003
+        }
+      }
+    },
+    "never_colonized": {
+      "polity2_avg_1980_2010": {
+        "log_gdp_2020": {
+          "n": 27,
+          "label": "never_colonized | log_gdp_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.681,
+          "z_edu_1950_coef": 0.152,
+          "z_edu_1950_t": 0.83,
+          "z_edu_1950_p": 0.4149,
+          "z_polity2_avg_1980_2010_coef": 0.2501,
+          "z_polity2_avg_1980_2010_t": 1.33,
+          "z_polity2_avg_1980_2010_p": 0.195,
+          "z_log_gdp_1960_coef": 0.7708,
+          "z_log_gdp_1960_t": 4.1,
+          "z_log_gdp_1960_p": 0.0004
+        },
+        "le_2020": {
+          "n": 27,
+          "label": "never_colonized | le_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.492,
+          "z_edu_1950_coef": 0.2286,
+          "z_edu_1950_t": 0.25,
+          "z_edu_1950_p": 0.8055,
+          "z_polity2_avg_1980_2010_coef": 1.9553,
+          "z_polity2_avg_1980_2010_t": 2.08,
+          "z_polity2_avg_1980_2010_p": 0.0487,
+          "z_log_gdp_1960_coef": 1.8241,
+          "z_log_gdp_1960_t": 1.94,
+          "z_log_gdp_1960_p": 0.0652
+        },
+        "tfr_2020": {
+          "n": 27,
+          "label": "never_colonized | tfr_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.201,
+          "z_edu_1950_coef": -0.0483,
+          "z_edu_1950_t": -0.37,
+          "z_edu_1950_p": 0.7113,
+          "z_polity2_avg_1980_2010_coef": -0.265,
+          "z_polity2_avg_1980_2010_t": -2.01,
+          "z_polity2_avg_1980_2010_p": 0.0566,
+          "z_log_gdp_1960_coef": 0.0947,
+          "z_log_gdp_1960_t": 0.72,
+          "z_log_gdp_1960_p": 0.4816
+        },
+        "u5mr_2015": {
+          "n": 27,
+          "label": "never_colonized | u5mr_2015 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.27,
+          "z_edu_1950_coef": -2.3261,
+          "z_edu_1950_t": -0.69,
+          "z_edu_1950_p": 0.4977,
+          "z_polity2_avg_1980_2010_coef": -4.172,
+          "z_polity2_avg_1980_2010_t": -1.21,
+          "z_polity2_avg_1980_2010_p": 0.2396,
+          "z_log_gdp_1960_coef": -2.9383,
+          "z_log_gdp_1960_t": -0.85,
+          "z_log_gdp_1960_p": 0.4052
+        }
+      },
+      "polity2_avg_1995_2010": {
+        "log_gdp_2020": {
+          "n": 27,
+          "label": "never_colonized | log_gdp_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.665,
+          "z_edu_1950_coef": 0.1824,
+          "z_edu_1950_t": 0.97,
+          "z_edu_1950_p": 0.3428,
+          "z_polity2_avg_1995_2010_coef": 0.1419,
+          "z_polity2_avg_1995_2010_t": 0.77,
+          "z_polity2_avg_1995_2010_p": 0.4463,
+          "z_log_gdp_1960_coef": 0.8253,
+          "z_log_gdp_1960_t": 4.44,
+          "z_log_gdp_1960_p": 0.0002
+        },
+        "le_2020": {
+          "n": 27,
+          "label": "never_colonized | le_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.438,
+          "z_edu_1950_coef": 0.425,
+          "z_edu_1950_t": 0.44,
+          "z_edu_1950_p": 0.6651,
+          "z_polity2_avg_1995_2010_coef": 1.2295,
+          "z_polity2_avg_1995_2010_t": 1.3,
+          "z_polity2_avg_1995_2010_p": 0.2049,
+          "z_log_gdp_1960_coef": 2.2136,
+          "z_log_gdp_1960_t": 2.31,
+          "z_log_gdp_1960_p": 0.0299
+        },
+        "tfr_2020": {
+          "n": 27,
+          "label": "never_colonized | tfr_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.134,
+          "z_edu_1950_coef": -0.0695,
+          "z_edu_1950_t": -0.52,
+          "z_edu_1950_p": 0.611,
+          "z_polity2_avg_1995_2010_coef": -0.1822,
+          "z_polity2_avg_1995_2010_t": -1.39,
+          "z_polity2_avg_1995_2010_p": 0.1778,
+          "z_log_gdp_1960_coef": 0.0466,
+          "z_log_gdp_1960_t": 0.35,
+          "z_log_gdp_1960_p": 0.7292
+        },
+        "u5mr_2015": {
+          "n": 27,
+          "label": "never_colonized | u5mr_2015 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.24,
+          "z_edu_1950_coef": -2.848,
+          "z_edu_1950_t": -0.82,
+          "z_edu_1950_p": 0.4189,
+          "z_polity2_avg_1995_2010_coef": -2.3269,
+          "z_polity2_avg_1995_2010_t": -0.69,
+          "z_polity2_avg_1995_2010_p": 0.496,
+          "z_log_gdp_1960_coef": -3.8596,
+          "z_log_gdp_1960_t": -1.13,
+          "z_log_gdp_1960_p": 0.2699
+        }
+      },
+      "polity2_2015": {
+        "log_gdp_2020": {
+          "n": 27,
+          "label": "never_colonized | log_gdp_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.657,
+          "z_edu_1950_coef": 0.2483,
+          "z_edu_1950_t": 1.27,
+          "z_edu_1950_p": 0.2153,
+          "z_polity2_2015_coef": -0.0419,
+          "z_polity2_2015_t": -0.22,
+          "z_polity2_2015_p": 0.8286,
+          "z_log_gdp_1960_coef": 0.8807,
+          "z_log_gdp_1960_t": 4.69,
+          "z_log_gdp_1960_p": 0.0001
+        },
+        "le_2020": {
+          "n": 27,
+          "label": "never_colonized | le_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.398,
+          "z_edu_1950_coef": 0.7676,
+          "z_edu_1950_t": 0.75,
+          "z_edu_1950_p": 0.462,
+          "z_polity2_2015_coef": 0.2106,
+          "z_polity2_2015_t": 0.21,
+          "z_polity2_2015_p": 0.8362,
+          "z_log_gdp_1960_coef": 2.5261,
+          "z_log_gdp_1960_t": 2.55,
+          "z_log_gdp_1960_p": 0.0178
+        },
+        "tfr_2020": {
+          "n": 27,
+          "label": "never_colonized | tfr_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.062,
+          "z_edu_1950_coef": -0.1269,
+          "z_edu_1950_t": -0.88,
+          "z_edu_1950_p": 0.3854,
+          "z_polity2_2015_coef": -0.0145,
+          "z_polity2_2015_t": -0.1,
+          "z_polity2_2015_p": 0.919,
+          "z_log_gdp_1960_coef": -0.0046,
+          "z_log_gdp_1960_t": -0.03,
+          "z_log_gdp_1960_p": 0.9739
+        },
+        "u5mr_2015": {
+          "n": 27,
+          "label": "never_colonized | u5mr_2015 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.231,
+          "z_edu_1950_coef": -4.2861,
+          "z_edu_1950_t": -1.2,
+          "z_edu_1950_p": 0.2406,
+          "z_polity2_2015_coef": 1.5892,
+          "z_polity2_2015_t": 0.46,
+          "z_polity2_2015_p": 0.6533,
+          "z_log_gdp_1960_coef": -5.0306,
+          "z_log_gdp_1960_t": -1.47,
+          "z_log_gdp_1960_p": 0.1561
+        }
+      }
+    },
+    "entry_cohort_10_90": {
+      "polity2_avg_1980_2010": {
+        "log_gdp_2020": {
+          "n": 45,
+          "label": "entry_cohort_10_90 | log_gdp_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.684,
+          "z_edu_1950_coef": 0.1243,
+          "z_edu_1950_t": 0.9,
+          "z_edu_1950_p": 0.3737,
+          "z_polity2_avg_1980_2010_coef": 0.097,
+          "z_polity2_avg_1980_2010_t": 0.73,
+          "z_polity2_avg_1980_2010_p": 0.4711,
+          "z_log_gdp_1960_coef": 0.8724,
+          "z_log_gdp_1960_t": 5.5,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "le_2020": {
+          "n": 45,
+          "label": "entry_cohort_10_90 | le_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.525,
+          "z_edu_1950_coef": -0.004,
+          "z_edu_1950_t": -0.0,
+          "z_edu_1950_p": 0.9964,
+          "z_polity2_avg_1980_2010_coef": 1.4249,
+          "z_polity2_avg_1980_2010_t": 1.67,
+          "z_polity2_avg_1980_2010_p": 0.1022,
+          "z_log_gdp_1960_coef": 3.657,
+          "z_log_gdp_1960_t": 3.6,
+          "z_log_gdp_1960_p": 0.0008
+        },
+        "tfr_2020": {
+          "n": 45,
+          "label": "entry_cohort_10_90 | tfr_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.371,
+          "z_edu_1950_coef": 0.0505,
+          "z_edu_1950_t": 0.46,
+          "z_edu_1950_p": 0.6467,
+          "z_polity2_avg_1980_2010_coef": -0.3358,
+          "z_polity2_avg_1980_2010_t": -3.18,
+          "z_polity2_avg_1980_2010_p": 0.0028,
+          "z_log_gdp_1960_coef": -0.1514,
+          "z_log_gdp_1960_t": -1.2,
+          "z_log_gdp_1960_p": 0.2351
+        },
+        "u5mr_2015": {
+          "n": 45,
+          "label": "entry_cohort_10_90 | u5mr_2015 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.518,
+          "z_edu_1950_coef": -0.3988,
+          "z_edu_1950_t": -0.19,
+          "z_edu_1950_p": 0.854,
+          "z_polity2_avg_1980_2010_coef": -4.4314,
+          "z_polity2_avg_1980_2010_t": -2.13,
+          "z_polity2_avg_1980_2010_p": 0.039,
+          "z_log_gdp_1960_coef": -7.6823,
+          "z_log_gdp_1960_t": -3.11,
+          "z_log_gdp_1960_p": 0.0034
+        }
+      },
+      "polity2_avg_1995_2010": {
+        "log_gdp_2020": {
+          "n": 45,
+          "label": "entry_cohort_10_90 | log_gdp_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.693,
+          "z_edu_1950_coef": 0.1085,
+          "z_edu_1950_t": 0.79,
+          "z_edu_1950_p": 0.4321,
+          "z_polity2_avg_1995_2010_coef": 0.1564,
+          "z_polity2_avg_1995_2010_t": 1.31,
+          "z_polity2_avg_1995_2010_p": 0.1962,
+          "z_log_gdp_1960_coef": 0.8699,
+          "z_log_gdp_1960_t": 6.06,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "le_2020": {
+          "n": 45,
+          "label": "entry_cohort_10_90 | le_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.525,
+          "z_edu_1950_coef": -0.1295,
+          "z_edu_1950_t": -0.15,
+          "z_edu_1950_p": 0.8847,
+          "z_polity2_avg_1995_2010_coef": 1.2765,
+          "z_polity2_avg_1995_2010_t": 1.65,
+          "z_polity2_avg_1995_2010_p": 0.1061,
+          "z_log_gdp_1960_coef": 4.0075,
+          "z_log_gdp_1960_t": 4.3,
+          "z_log_gdp_1960_p": 0.0001
+        },
+        "tfr_2020": {
+          "n": 45,
+          "label": "entry_cohort_10_90 | tfr_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.344,
+          "z_edu_1950_coef": 0.0775,
+          "z_edu_1950_t": 0.69,
+          "z_edu_1950_p": 0.4936,
+          "z_polity2_avg_1995_2010_coef": -0.276,
+          "z_polity2_avg_1995_2010_t": -2.83,
+          "z_polity2_avg_1995_2010_p": 0.0073,
+          "z_log_gdp_1960_coef": -0.2434,
+          "z_log_gdp_1960_t": -2.07,
+          "z_log_gdp_1960_p": 0.045
+        },
+        "u5mr_2015": {
+          "n": 45,
+          "label": "entry_cohort_10_90 | u5mr_2015 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.501,
+          "z_edu_1950_coef": -0.0754,
+          "z_edu_1950_t": -0.03,
+          "z_edu_1950_p": 0.9728,
+          "z_polity2_avg_1995_2010_coef": -3.3256,
+          "z_polity2_avg_1995_2010_t": -1.74,
+          "z_polity2_avg_1995_2010_p": 0.09,
+          "z_log_gdp_1960_coef": -9.0168,
+          "z_log_gdp_1960_t": -3.91,
+          "z_log_gdp_1960_p": 0.0003
+        }
+      },
+      "polity2_2015": {
+        "log_gdp_2020": {
+          "n": 45,
+          "label": "entry_cohort_10_90 | log_gdp_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.684,
+          "z_edu_1950_coef": 0.105,
+          "z_edu_1950_t": 0.75,
+          "z_edu_1950_p": 0.4599,
+          "z_polity2_2015_coef": 0.0866,
+          "z_polity2_2015_t": 0.73,
+          "z_polity2_2015_p": 0.4669,
+          "z_log_gdp_1960_coef": 0.9101,
+          "z_log_gdp_1960_t": 6.47,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "le_2020": {
+          "n": 45,
+          "label": "entry_cohort_10_90 | le_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.507,
+          "z_edu_1950_coef": -0.1834,
+          "z_edu_1950_t": -0.2,
+          "z_edu_1950_p": 0.8425,
+          "z_polity2_2015_coef": 0.8168,
+          "z_polity2_2015_t": 1.06,
+          "z_polity2_2015_p": 0.2939,
+          "z_log_gdp_1960_coef": 4.3111,
+          "z_log_gdp_1960_t": 4.7,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "tfr_2020": {
+          "n": 45,
+          "label": "entry_cohort_10_90 | tfr_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.253,
+          "z_edu_1950_coef": 0.0822,
+          "z_edu_1950_t": 0.68,
+          "z_edu_1950_p": 0.5023,
+          "z_polity2_2015_coef": -0.1459,
+          "z_polity2_2015_t": -1.44,
+          "z_polity2_2015_p": 0.1588,
+          "z_log_gdp_1960_coef": -0.3159,
+          "z_log_gdp_1960_t": -2.6,
+          "z_log_gdp_1960_p": 0.0128
+        },
+        "u5mr_2015": {
+          "n": 45,
+          "label": "entry_cohort_10_90 | u5mr_2015 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.467,
+          "z_edu_1950_coef": -0.2267,
+          "z_edu_1950_t": -0.1,
+          "z_edu_1950_p": 0.9222,
+          "z_polity2_2015_coef": -0.8484,
+          "z_polity2_2015_t": -0.44,
+          "z_polity2_2015_p": 0.6629,
+          "z_log_gdp_1960_coef": -10.0915,
+          "z_log_gdp_1960_t": -4.38,
+          "z_log_gdp_1960_p": 0.0001
+        }
+      }
+    },
+    "entry_cohort_20_90": {
+      "polity2_avg_1980_2010": {
+        "log_gdp_2020": {
+          "n": 25,
+          "label": "entry_cohort_20_90 | log_gdp_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.734,
+          "z_edu_1950_coef": 0.07,
+          "z_edu_1950_t": 0.5,
+          "z_edu_1950_p": 0.6254,
+          "z_polity2_avg_1980_2010_coef": 0.4108,
+          "z_polity2_avg_1980_2010_t": 1.78,
+          "z_polity2_avg_1980_2010_p": 0.0896,
+          "z_log_gdp_1960_coef": 0.525,
+          "z_log_gdp_1960_t": 2.1,
+          "z_log_gdp_1960_p": 0.0478
+        },
+        "le_2020": {
+          "n": 25,
+          "label": "entry_cohort_20_90 | le_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.549,
+          "z_edu_1950_coef": 0.0546,
+          "z_edu_1950_t": 0.05,
+          "z_edu_1950_p": 0.9568,
+          "z_polity2_avg_1980_2010_coef": 4.2185,
+          "z_polity2_avg_1980_2010_t": 2.59,
+          "z_polity2_avg_1980_2010_p": 0.0171,
+          "z_log_gdp_1960_coef": 0.1339,
+          "z_log_gdp_1960_t": 0.08,
+          "z_log_gdp_1960_p": 0.9401
+        },
+        "tfr_2020": {
+          "n": 25,
+          "label": "entry_cohort_20_90 | tfr_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.517,
+          "z_edu_1950_coef": -0.0962,
+          "z_edu_1950_t": -0.81,
+          "z_edu_1950_p": 0.4269,
+          "z_polity2_avg_1980_2010_coef": -0.796,
+          "z_polity2_avg_1980_2010_t": -4.1,
+          "z_polity2_avg_1980_2010_p": 0.0005,
+          "z_log_gdp_1960_coef": 0.4713,
+          "z_log_gdp_1960_t": 2.24,
+          "z_log_gdp_1960_p": 0.0357
+        },
+        "u5mr_2015": {
+          "n": 25,
+          "label": "entry_cohort_20_90 | u5mr_2015 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.57,
+          "z_edu_1950_coef": -3.4784,
+          "z_edu_1950_t": -1.43,
+          "z_edu_1950_p": 0.1667,
+          "z_polity2_avg_1980_2010_coef": -13.6559,
+          "z_polity2_avg_1980_2010_t": -3.44,
+          "z_polity2_avg_1980_2010_p": 0.0025,
+          "z_log_gdp_1960_coef": 4.8653,
+          "z_log_gdp_1960_t": 1.13,
+          "z_log_gdp_1960_p": 0.2699
+        }
+      },
+      "polity2_avg_1995_2010": {
+        "log_gdp_2020": {
+          "n": 25,
+          "label": "entry_cohort_20_90 | log_gdp_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.737,
+          "z_edu_1950_coef": 0.0762,
+          "z_edu_1950_t": 0.54,
+          "z_edu_1950_p": 0.5943,
+          "z_polity2_avg_1995_2010_coef": 0.3128,
+          "z_polity2_avg_1995_2010_t": 1.86,
+          "z_polity2_avg_1995_2010_p": 0.0763,
+          "z_log_gdp_1960_coef": 0.6578,
+          "z_log_gdp_1960_t": 3.51,
+          "z_log_gdp_1960_p": 0.0021
+        },
+        "le_2020": {
+          "n": 25,
+          "label": "entry_cohort_20_90 | le_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.469,
+          "z_edu_1950_coef": -0.0965,
+          "z_edu_1950_t": -0.09,
+          "z_edu_1950_p": 0.9299,
+          "z_polity2_avg_1995_2010_coef": 2.0708,
+          "z_polity2_avg_1995_2010_t": 1.6,
+          "z_polity2_avg_1995_2010_p": 0.1238,
+          "z_log_gdp_1960_coef": 2.364,
+          "z_log_gdp_1960_t": 1.64,
+          "z_log_gdp_1960_p": 0.1158
+        },
+        "tfr_2020": {
+          "n": 25,
+          "label": "entry_cohort_20_90 | tfr_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.586,
+          "z_edu_1950_coef": -0.1131,
+          "z_edu_1950_t": -1.03,
+          "z_edu_1950_p": 0.3166,
+          "z_polity2_avg_1995_2010_coef": -0.6324,
+          "z_polity2_avg_1995_2010_t": -4.81,
+          "z_polity2_avg_1995_2010_p": 0.0001,
+          "z_log_gdp_1960_coef": 0.2339,
+          "z_log_gdp_1960_t": 1.59,
+          "z_log_gdp_1960_p": 0.1257
+        },
+        "u5mr_2015": {
+          "n": 25,
+          "label": "entry_cohort_20_90 | u5mr_2015 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.477,
+          "z_edu_1950_coef": -3.2038,
+          "z_edu_1950_t": -1.19,
+          "z_edu_1950_p": 0.2464,
+          "z_polity2_avg_1995_2010_coef": -7.8442,
+          "z_polity2_avg_1995_2010_t": -2.45,
+          "z_polity2_avg_1995_2010_p": 0.0232,
+          "z_log_gdp_1960_coef": -1.4882,
+          "z_log_gdp_1960_t": -0.42,
+          "z_log_gdp_1960_p": 0.6812
+        }
+      },
+      "polity2_2015": {
+        "log_gdp_2020": {
+          "n": 25,
+          "label": "entry_cohort_20_90 | log_gdp_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.705,
+          "z_edu_1950_coef": 0.0305,
+          "z_edu_1950_t": 0.21,
+          "z_edu_1950_p": 0.8368,
+          "z_polity2_2015_coef": 0.1395,
+          "z_polity2_2015_t": 0.88,
+          "z_polity2_2015_p": 0.3899,
+          "z_log_gdp_1960_coef": 0.8079,
+          "z_log_gdp_1960_t": 4.58,
+          "z_log_gdp_1960_p": 0.0002
+        },
+        "le_2020": {
+          "n": 25,
+          "label": "entry_cohort_20_90 | le_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.436,
+          "z_edu_1950_coef": -0.3637,
+          "z_edu_1950_t": -0.33,
+          "z_edu_1950_p": 0.7429,
+          "z_polity2_2015_coef": 1.2942,
+          "z_polity2_2015_t": 1.09,
+          "z_polity2_2015_p": 0.2886,
+          "z_log_gdp_1960_coef": 3.1259,
+          "z_log_gdp_1960_t": 2.37,
+          "z_log_gdp_1960_p": 0.0274
+        },
+        "tfr_2020": {
+          "n": 25,
+          "label": "entry_cohort_20_90 | tfr_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.446,
+          "z_edu_1950_coef": -0.0386,
+          "z_edu_1950_t": -0.31,
+          "z_edu_1950_p": 0.7606,
+          "z_polity2_2015_coef": -0.4701,
+          "z_polity2_2015_t": -3.46,
+          "z_polity2_2015_p": 0.0023,
+          "z_log_gdp_1960_coef": 0.048,
+          "z_log_gdp_1960_t": 0.32,
+          "z_log_gdp_1960_p": 0.753
+        },
+        "u5mr_2015": {
+          "n": 25,
+          "label": "entry_cohort_20_90 | u5mr_2015 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.393,
+          "z_edu_1950_coef": -2.1681,
+          "z_edu_1950_t": -0.76,
+          "z_edu_1950_p": 0.4529,
+          "z_polity2_2015_coef": -4.654,
+          "z_polity2_2015_t": -1.51,
+          "z_polity2_2015_p": 0.1456,
+          "z_log_gdp_1960_coef": -4.5298,
+          "z_log_gdp_1960_t": -1.33,
+          "z_log_gdp_1960_p": 0.1989
+        }
+      }
+    },
+    "entry_cohort_30_90": {
+      "polity2_avg_1980_2010": {
+        "log_gdp_2020": {
+          "n": 17,
+          "label": "entry_cohort_30_90 | log_gdp_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.877,
+          "z_edu_1950_coef": -0.0969,
+          "z_edu_1950_t": -1.28,
+          "z_edu_1950_p": 0.224,
+          "z_polity2_avg_1980_2010_coef": 0.2461,
+          "z_polity2_avg_1980_2010_t": 1.76,
+          "z_polity2_avg_1980_2010_p": 0.1025,
+          "z_log_gdp_1960_coef": 0.5101,
+          "z_log_gdp_1960_t": 3.64,
+          "z_log_gdp_1960_p": 0.003
+        },
+        "le_2020": {
+          "n": 17,
+          "label": "entry_cohort_30_90 | le_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.773,
+          "z_edu_1950_coef": -0.4968,
+          "z_edu_1950_t": -0.92,
+          "z_edu_1950_p": 0.3768,
+          "z_polity2_avg_1980_2010_coef": 3.1921,
+          "z_polity2_avg_1980_2010_t": 3.19,
+          "z_polity2_avg_1980_2010_p": 0.0071,
+          "z_log_gdp_1960_coef": 0.4836,
+          "z_log_gdp_1960_t": 0.48,
+          "z_log_gdp_1960_p": 0.6377
+        },
+        "tfr_2020": {
+          "n": 17,
+          "label": "entry_cohort_30_90 | tfr_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.591,
+          "z_edu_1950_coef": -0.088,
+          "z_edu_1950_t": -1.24,
+          "z_edu_1950_p": 0.2358,
+          "z_polity2_avg_1980_2010_coef": -0.423,
+          "z_polity2_avg_1980_2010_t": -3.24,
+          "z_polity2_avg_1980_2010_p": 0.0065,
+          "z_log_gdp_1960_coef": 0.1827,
+          "z_log_gdp_1960_t": 1.4,
+          "z_log_gdp_1960_p": 0.1862
+        },
+        "u5mr_2015": {
+          "n": 17,
+          "label": "entry_cohort_30_90 | u5mr_2015 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.712,
+          "z_edu_1950_coef": -0.7752,
+          "z_edu_1950_t": -0.74,
+          "z_edu_1950_p": 0.4703,
+          "z_polity2_avg_1980_2010_coef": -8.4927,
+          "z_polity2_avg_1980_2010_t": -4.42,
+          "z_polity2_avg_1980_2010_p": 0.0007,
+          "z_log_gdp_1960_coef": 3.6396,
+          "z_log_gdp_1960_t": 1.89,
+          "z_log_gdp_1960_p": 0.0813
+        }
+      },
+      "polity2_avg_1995_2010": {
+        "log_gdp_2020": {
+          "n": 17,
+          "label": "entry_cohort_30_90 | log_gdp_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.884,
+          "z_edu_1950_coef": -0.0953,
+          "z_edu_1950_t": -1.29,
+          "z_edu_1950_p": 0.2189,
+          "z_polity2_avg_1995_2010_coef": 0.1999,
+          "z_polity2_avg_1995_2010_t": 2.01,
+          "z_polity2_avg_1995_2010_p": 0.0658,
+          "z_log_gdp_1960_coef": 0.5821,
+          "z_log_gdp_1960_t": 5.83,
+          "z_log_gdp_1960_p": 0.0001
+        },
+        "le_2020": {
+          "n": 17,
+          "label": "entry_cohort_30_90 | le_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.615,
+          "z_edu_1950_coef": -0.4841,
+          "z_edu_1950_t": -0.68,
+          "z_edu_1950_p": 0.5059,
+          "z_polity2_avg_1995_2010_coef": 0.7547,
+          "z_polity2_avg_1995_2010_t": 0.79,
+          "z_polity2_avg_1995_2010_p": 0.4435,
+          "z_log_gdp_1960_coef": 2.661,
+          "z_log_gdp_1960_t": 2.78,
+          "z_log_gdp_1960_p": 0.0157
+        },
+        "tfr_2020": {
+          "n": 17,
+          "label": "entry_cohort_30_90 | tfr_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.682,
+          "z_edu_1950_coef": -0.0909,
+          "z_edu_1950_t": -1.45,
+          "z_edu_1950_p": 0.1695,
+          "z_polity2_avg_1995_2010_coef": -0.3493,
+          "z_polity2_avg_1995_2010_t": -4.14,
+          "z_polity2_avg_1995_2010_p": 0.0012,
+          "z_log_gdp_1960_coef": 0.0627,
+          "z_log_gdp_1960_t": 0.74,
+          "z_log_gdp_1960_p": 0.4719
+        },
+        "u5mr_2015": {
+          "n": 17,
+          "label": "entry_cohort_30_90 | u5mr_2015 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.381,
+          "z_edu_1950_coef": -0.8136,
+          "z_edu_1950_t": -0.53,
+          "z_edu_1950_p": 0.6034,
+          "z_polity2_avg_1995_2010_coef": -3.0065,
+          "z_polity2_avg_1995_2010_t": -1.46,
+          "z_polity2_avg_1995_2010_p": 0.1685,
+          "z_log_gdp_1960_coef": -1.4781,
+          "z_log_gdp_1960_t": -0.71,
+          "z_log_gdp_1960_p": 0.4875
+        }
+      },
+      "polity2_2015": {
+        "log_gdp_2020": {
+          "n": 17,
+          "label": "entry_cohort_30_90 | log_gdp_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.868,
+          "z_edu_1950_coef": -0.115,
+          "z_edu_1950_t": -1.44,
+          "z_edu_1950_p": 0.1732,
+          "z_polity2_2015_coef": 0.1334,
+          "z_polity2_2015_t": 1.4,
+          "z_polity2_2015_p": 0.1838,
+          "z_log_gdp_1960_coef": 0.646,
+          "z_log_gdp_1960_t": 6.9,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "le_2020": {
+          "n": 17,
+          "label": "entry_cohort_30_90 | le_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.607,
+          "z_edu_1950_coef": -0.5597,
+          "z_edu_1950_t": -0.77,
+          "z_edu_1950_p": 0.4541,
+          "z_polity2_2015_coef": 0.5111,
+          "z_polity2_2015_t": 0.59,
+          "z_polity2_2015_p": 0.5639,
+          "z_log_gdp_1960_coef": 2.8979,
+          "z_log_gdp_1960_t": 3.41,
+          "z_log_gdp_1960_p": 0.0047
+        },
+        "tfr_2020": {
+          "n": 17,
+          "label": "entry_cohort_30_90 | tfr_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.739,
+          "z_edu_1950_coef": -0.0423,
+          "z_edu_1950_t": -0.74,
+          "z_edu_1950_p": 0.4744,
+          "z_polity2_2015_coef": -0.3333,
+          "z_polity2_2015_t": -4.88,
+          "z_polity2_2015_p": 0.0003,
+          "z_log_gdp_1960_coef": 0.0047,
+          "z_log_gdp_1960_t": 0.07,
+          "z_log_gdp_1960_p": 0.9451
+        },
+        "u5mr_2015": {
+          "n": 17,
+          "label": "entry_cohort_30_90 | u5mr_2015 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.344,
+          "z_edu_1950_coef": -0.4963,
+          "z_edu_1950_t": -0.31,
+          "z_edu_1950_p": 0.7606,
+          "z_polity2_2015_coef": -2.1518,
+          "z_polity2_2015_t": -1.13,
+          "z_polity2_2015_p": 0.2775,
+          "z_log_gdp_1960_coef": -2.3601,
+          "z_log_gdp_1960_t": -1.26,
+          "z_log_gdp_1960_p": 0.2295
+        }
+      }
+    },
+    "entry_cohort_50_90": {
+      "polity2_avg_1980_2010": {
+        "log_gdp_2020": {
+          "n": 9,
+          "label": "entry_cohort_50_90 | log_gdp_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "insufficient": true
+        },
+        "le_2020": {
+          "n": 9,
+          "label": "entry_cohort_50_90 | le_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "insufficient": true
+        },
+        "tfr_2020": {
+          "n": 9,
+          "label": "entry_cohort_50_90 | tfr_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "insufficient": true
+        },
+        "u5mr_2015": {
+          "n": 9,
+          "label": "entry_cohort_50_90 | u5mr_2015 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "insufficient": true
+        }
+      },
+      "polity2_avg_1995_2010": {
+        "log_gdp_2020": {
+          "n": 9,
+          "label": "entry_cohort_50_90 | log_gdp_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "insufficient": true
+        },
+        "le_2020": {
+          "n": 9,
+          "label": "entry_cohort_50_90 | le_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "insufficient": true
+        },
+        "tfr_2020": {
+          "n": 9,
+          "label": "entry_cohort_50_90 | tfr_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "insufficient": true
+        },
+        "u5mr_2015": {
+          "n": 9,
+          "label": "entry_cohort_50_90 | u5mr_2015 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "insufficient": true
+        }
+      },
+      "polity2_2015": {
+        "log_gdp_2020": {
+          "n": 9,
+          "label": "entry_cohort_50_90 | log_gdp_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "insufficient": true
+        },
+        "le_2020": {
+          "n": 9,
+          "label": "entry_cohort_50_90 | le_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "insufficient": true
+        },
+        "tfr_2020": {
+          "n": 9,
+          "label": "entry_cohort_50_90 | tfr_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "insufficient": true
+        },
+        "u5mr_2015": {
+          "n": 9,
+          "label": "entry_cohort_50_90 | u5mr_2015 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "insufficient": true
+        }
+      }
+    },
+    "below_90": {
+      "polity2_avg_1980_2010": {
+        "log_gdp_2020": {
+          "n": 91,
+          "label": "below_90 | log_gdp_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.709,
+          "z_edu_1950_coef": 0.26,
+          "z_edu_1950_t": 2.01,
+          "z_edu_1950_p": 0.0476,
+          "z_polity2_avg_1980_2010_coef": 0.2109,
+          "z_polity2_avg_1980_2010_t": 1.82,
+          "z_polity2_avg_1980_2010_p": 0.072,
+          "z_log_gdp_1960_coef": 0.9523,
+          "z_log_gdp_1960_t": 7.42,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "le_2020": {
+          "n": 91,
+          "label": "below_90 | le_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.518,
+          "z_edu_1950_coef": 1.0973,
+          "z_edu_1950_t": 1.22,
+          "z_edu_1950_p": 0.2249,
+          "z_polity2_avg_1980_2010_coef": 1.6989,
+          "z_polity2_avg_1980_2010_t": 2.11,
+          "z_polity2_avg_1980_2010_p": 0.0373,
+          "z_log_gdp_1960_coef": 3.9172,
+          "z_log_gdp_1960_t": 4.4,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "tfr_2020": {
+          "n": 91,
+          "label": "below_90 | tfr_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.397,
+          "z_edu_1950_coef": -0.1226,
+          "z_edu_1950_t": -0.73,
+          "z_edu_1950_p": 0.4679,
+          "z_polity2_avg_1980_2010_coef": -0.5522,
+          "z_polity2_avg_1980_2010_t": -3.67,
+          "z_polity2_avg_1980_2010_p": 0.0004,
+          "z_log_gdp_1960_coef": -0.3162,
+          "z_log_gdp_1960_t": -1.89,
+          "z_log_gdp_1960_p": 0.0614
+        },
+        "u5mr_2015": {
+          "n": 91,
+          "label": "below_90 | u5mr_2015 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.393,
+          "z_edu_1950_coef": -3.7794,
+          "z_edu_1950_t": -0.9,
+          "z_edu_1950_p": 0.3732,
+          "z_polity2_avg_1980_2010_coef": -7.8576,
+          "z_polity2_avg_1980_2010_t": -2.08,
+          "z_polity2_avg_1980_2010_p": 0.0405,
+          "z_log_gdp_1960_coef": -13.0608,
+          "z_log_gdp_1960_t": -3.12,
+          "z_log_gdp_1960_p": 0.0025
+        }
+      },
+      "polity2_avg_1995_2010": {
+        "log_gdp_2020": {
+          "n": 91,
+          "label": "below_90 | log_gdp_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.699,
+          "z_edu_1950_coef": 0.3062,
+          "z_edu_1950_t": 2.35,
+          "z_edu_1950_p": 0.021,
+          "z_polity2_avg_1995_2010_coef": 0.0835,
+          "z_polity2_avg_1995_2010_t": 0.78,
+          "z_polity2_avg_1995_2010_p": 0.4384,
+          "z_log_gdp_1960_coef": 1.0045,
+          "z_log_gdp_1960_t": 7.94,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "le_2020": {
+          "n": 91,
+          "label": "below_90 | le_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.498,
+          "z_edu_1950_coef": 1.4826,
+          "z_edu_1950_t": 1.63,
+          "z_edu_1950_p": 0.1064,
+          "z_polity2_avg_1995_2010_coef": 0.637,
+          "z_polity2_avg_1995_2010_t": 0.85,
+          "z_polity2_avg_1995_2010_p": 0.3972,
+          "z_log_gdp_1960_coef": 4.3458,
+          "z_log_gdp_1960_t": 4.92,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "tfr_2020": {
+          "n": 91,
+          "label": "below_90 | tfr_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.355,
+          "z_edu_1950_coef": -0.1866,
+          "z_edu_1950_t": -1.08,
+          "z_edu_1950_p": 0.2818,
+          "z_polity2_avg_1995_2010_coef": -0.375,
+          "z_polity2_avg_1995_2010_t": -2.64,
+          "z_polity2_avg_1995_2010_p": 0.0098,
+          "z_log_gdp_1960_coef": -0.4177,
+          "z_log_gdp_1960_t": -2.49,
+          "z_log_gdp_1960_p": 0.0145
+        },
+        "u5mr_2015": {
+          "n": 91,
+          "label": "below_90 | u5mr_2015 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.37,
+          "z_edu_1950_coef": -5.3627,
+          "z_edu_1950_t": -1.26,
+          "z_edu_1950_p": 0.2119,
+          "z_polity2_avg_1995_2010_coef": -3.4918,
+          "z_polity2_avg_1995_2010_t": -0.99,
+          "z_polity2_avg_1995_2010_p": 0.323,
+          "z_log_gdp_1960_coef": -14.9201,
+          "z_log_gdp_1960_t": -3.6,
+          "z_log_gdp_1960_p": 0.0005
+        }
+      },
+      "polity2_2015": {
+        "log_gdp_2020": {
+          "n": 90,
+          "label": "below_90 | log_gdp_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.696,
+          "z_edu_1950_coef": 0.3315,
+          "z_edu_1950_t": 2.53,
+          "z_edu_1950_p": 0.0134,
+          "z_polity2_2015_coef": 0.004,
+          "z_polity2_2015_t": 0.04,
+          "z_polity2_2015_p": 0.9689,
+          "z_log_gdp_1960_coef": 1.0247,
+          "z_log_gdp_1960_t": 8.14,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "le_2020": {
+          "n": 90,
+          "label": "below_90 | le_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.493,
+          "z_edu_1950_coef": 1.8753,
+          "z_edu_1950_t": 2.04,
+          "z_edu_1950_p": 0.044,
+          "z_polity2_2015_coef": -0.4474,
+          "z_polity2_2015_t": -0.62,
+          "z_polity2_2015_p": 0.5345,
+          "z_log_gdp_1960_coef": 4.5491,
+          "z_log_gdp_1960_t": 5.17,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "tfr_2020": {
+          "n": 90,
+          "label": "below_90 | tfr_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.304,
+          "z_edu_1950_coef": -0.2747,
+          "z_edu_1950_t": -1.54,
+          "z_edu_1950_p": 0.128,
+          "z_polity2_2015_coef": -0.1081,
+          "z_polity2_2015_t": -0.77,
+          "z_polity2_2015_p": 0.4415,
+          "z_log_gdp_1960_coef": -0.4888,
+          "z_log_gdp_1960_t": -2.85,
+          "z_log_gdp_1960_p": 0.0054
+        },
+        "u5mr_2015": {
+          "n": 90,
+          "label": "below_90 | u5mr_2015 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.362,
+          "z_edu_1950_coef": -7.2813,
+          "z_edu_1950_t": -1.69,
+          "z_edu_1950_p": 0.0945,
+          "z_polity2_2015_coef": 1.9398,
+          "z_polity2_2015_t": 0.58,
+          "z_polity2_2015_p": 0.5661,
+          "z_log_gdp_1960_coef": -15.935,
+          "z_log_gdp_1960_t": -3.86,
+          "z_log_gdp_1960_p": 0.0002
+        }
+      }
+    },
+    "ajr_64_entry_10_90": {
+      "polity2_avg_1980_2010": {
+        "log_gdp_2020": {
+          "n": 23,
+          "label": "ajr_64_entry_10_90 | log_gdp_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.665,
+          "z_edu_1950_coef": 0.2152,
+          "z_edu_1950_t": 0.97,
+          "z_edu_1950_p": 0.3454,
+          "z_polity2_avg_1980_2010_coef": -0.2566,
+          "z_polity2_avg_1980_2010_t": -1.6,
+          "z_polity2_avg_1980_2010_p": 0.1255,
+          "z_log_gdp_1960_coef": 0.7887,
+          "z_log_gdp_1960_t": 3.61,
+          "z_log_gdp_1960_p": 0.0019
+        },
+        "le_2020": {
+          "n": 23,
+          "label": "ajr_64_entry_10_90 | le_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.426,
+          "z_edu_1950_coef": -0.8876,
+          "z_edu_1950_t": -0.58,
+          "z_edu_1950_p": 0.5694,
+          "z_polity2_avg_1980_2010_coef": -0.3167,
+          "z_polity2_avg_1980_2010_t": -0.29,
+          "z_polity2_avg_1980_2010_p": 0.7772,
+          "z_log_gdp_1960_coef": 4.4562,
+          "z_log_gdp_1960_t": 2.96,
+          "z_log_gdp_1960_p": 0.0081
+        },
+        "tfr_2020": {
+          "n": 23,
+          "label": "ajr_64_entry_10_90 | tfr_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.377,
+          "z_edu_1950_coef": 0.2118,
+          "z_edu_1950_t": 1.42,
+          "z_edu_1950_p": 0.1717,
+          "z_polity2_avg_1980_2010_coef": -0.0867,
+          "z_polity2_avg_1980_2010_t": -0.81,
+          "z_polity2_avg_1980_2010_p": 0.4291,
+          "z_log_gdp_1960_coef": -0.4193,
+          "z_log_gdp_1960_t": -2.86,
+          "z_log_gdp_1960_p": 0.01
+        },
+        "u5mr_2015": {
+          "n": 23,
+          "label": "ajr_64_entry_10_90 | u5mr_2015 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.59,
+          "z_edu_1950_coef": 4.9991,
+          "z_edu_1950_t": 1.64,
+          "z_edu_1950_p": 0.1167,
+          "z_polity2_avg_1980_2010_coef": -0.4376,
+          "z_polity2_avg_1980_2010_t": -0.2,
+          "z_polity2_avg_1980_2010_p": 0.8437,
+          "z_log_gdp_1960_coef": -13.3652,
+          "z_log_gdp_1960_t": -4.47,
+          "z_log_gdp_1960_p": 0.0003
+        }
+      },
+      "polity2_avg_1995_2010": {
+        "log_gdp_2020": {
+          "n": 23,
+          "label": "ajr_64_entry_10_90 | log_gdp_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.645,
+          "z_edu_1950_coef": 0.2069,
+          "z_edu_1950_t": 0.9,
+          "z_edu_1950_p": 0.3819,
+          "z_polity2_avg_1995_2010_coef": -0.1861,
+          "z_polity2_avg_1995_2010_t": -1.16,
+          "z_polity2_avg_1995_2010_p": 0.2585,
+          "z_log_gdp_1960_coef": 0.7473,
+          "z_log_gdp_1960_t": 3.34,
+          "z_log_gdp_1960_p": 0.0034
+        },
+        "le_2020": {
+          "n": 23,
+          "label": "ajr_64_entry_10_90 | le_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.44,
+          "z_edu_1950_coef": -0.6921,
+          "z_edu_1950_t": -0.45,
+          "z_edu_1950_p": 0.6558,
+          "z_polity2_avg_1995_2010_coef": -0.7912,
+          "z_polity2_avg_1995_2010_t": -0.75,
+          "z_polity2_avg_1995_2010_p": 0.463,
+          "z_log_gdp_1960_coef": 4.4027,
+          "z_log_gdp_1960_t": 2.98,
+          "z_log_gdp_1960_p": 0.0077
+        },
+        "tfr_2020": {
+          "n": 23,
+          "label": "ajr_64_entry_10_90 | tfr_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.357,
+          "z_edu_1950_coef": 0.179,
+          "z_edu_1950_t": 1.17,
+          "z_edu_1950_p": 0.2563,
+          "z_polity2_avg_1995_2010_coef": 0.0189,
+          "z_polity2_avg_1995_2010_t": 0.18,
+          "z_polity2_avg_1995_2010_p": 0.86,
+          "z_log_gdp_1960_coef": -0.433,
+          "z_log_gdp_1960_t": -2.93,
+          "z_log_gdp_1960_p": 0.0087
+        },
+        "u5mr_2015": {
+          "n": 23,
+          "label": "ajr_64_entry_10_90 | u5mr_2015 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.596,
+          "z_edu_1950_coef": 4.4258,
+          "z_edu_1950_t": 1.45,
+          "z_edu_1950_p": 0.1628,
+          "z_polity2_avg_1995_2010_coef": 1.2088,
+          "z_polity2_avg_1995_2010_t": 0.57,
+          "z_polity2_avg_1995_2010_p": 0.5728,
+          "z_log_gdp_1960_coef": -13.4294,
+          "z_log_gdp_1960_t": -4.55,
+          "z_log_gdp_1960_p": 0.0002
+        }
+      },
+      "polity2_2015": {
+        "log_gdp_2020": {
+          "n": 23,
+          "label": "ajr_64_entry_10_90 | log_gdp_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.631,
+          "z_edu_1950_coef": 0.1897,
+          "z_edu_1950_t": 0.8,
+          "z_edu_1950_p": 0.4333,
+          "z_polity2_2015_coef": -0.1268,
+          "z_polity2_2015_t": -0.78,
+          "z_polity2_2015_p": 0.4429,
+          "z_log_gdp_1960_coef": 0.7386,
+          "z_log_gdp_1960_t": 3.24,
+          "z_log_gdp_1960_p": 0.0043
+        },
+        "le_2020": {
+          "n": 23,
+          "label": "ajr_64_entry_10_90 | le_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.432,
+          "z_edu_1950_coef": -0.7497,
+          "z_edu_1950_t": -0.48,
+          "z_edu_1950_p": 0.6337,
+          "z_polity2_2015_coef": -0.5784,
+          "z_polity2_2015_t": -0.55,
+          "z_polity2_2015_p": 0.5907,
+          "z_log_gdp_1960_coef": 4.3626,
+          "z_log_gdp_1960_t": 2.93,
+          "z_log_gdp_1960_p": 0.0087
+        },
+        "tfr_2020": {
+          "n": 23,
+          "label": "ajr_64_entry_10_90 | tfr_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.366,
+          "z_edu_1950_coef": 0.1628,
+          "z_edu_1950_t": 1.07,
+          "z_edu_1950_p": 0.3001,
+          "z_polity2_2015_coef": 0.0577,
+          "z_polity2_2015_t": 0.55,
+          "z_polity2_2015_p": 0.5867,
+          "z_log_gdp_1960_coef": -0.4288,
+          "z_log_gdp_1960_t": -2.91,
+          "z_log_gdp_1960_p": 0.0089
+        },
+        "u5mr_2015": {
+          "n": 23,
+          "label": "ajr_64_entry_10_90 | u5mr_2015 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.604,
+          "z_edu_1950_coef": 4.1451,
+          "z_edu_1950_t": 1.37,
+          "z_edu_1950_p": 0.1877,
+          "z_polity2_2015_coef": 1.8018,
+          "z_polity2_2015_t": 0.87,
+          "z_polity2_2015_p": 0.3952,
+          "z_log_gdp_1960_coef": -13.2994,
+          "z_log_gdp_1960_t": -4.55,
+          "z_log_gdp_1960_p": 0.0002
+        }
+      }
+    },
+    "ajr_64_entry_20_90": {
+      "polity2_avg_1980_2010": {
+        "log_gdp_2020": {
+          "n": 7,
+          "label": "ajr_64_entry_20_90 | log_gdp_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "insufficient": true
+        },
+        "le_2020": {
+          "n": 7,
+          "label": "ajr_64_entry_20_90 | le_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "insufficient": true
+        },
+        "tfr_2020": {
+          "n": 7,
+          "label": "ajr_64_entry_20_90 | tfr_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "insufficient": true
+        },
+        "u5mr_2015": {
+          "n": 7,
+          "label": "ajr_64_entry_20_90 | u5mr_2015 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "insufficient": true
+        }
+      },
+      "polity2_avg_1995_2010": {
+        "log_gdp_2020": {
+          "n": 7,
+          "label": "ajr_64_entry_20_90 | log_gdp_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "insufficient": true
+        },
+        "le_2020": {
+          "n": 7,
+          "label": "ajr_64_entry_20_90 | le_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "insufficient": true
+        },
+        "tfr_2020": {
+          "n": 7,
+          "label": "ajr_64_entry_20_90 | tfr_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "insufficient": true
+        },
+        "u5mr_2015": {
+          "n": 7,
+          "label": "ajr_64_entry_20_90 | u5mr_2015 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "insufficient": true
+        }
+      },
+      "polity2_2015": {
+        "log_gdp_2020": {
+          "n": 7,
+          "label": "ajr_64_entry_20_90 | log_gdp_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "insufficient": true
+        },
+        "le_2020": {
+          "n": 7,
+          "label": "ajr_64_entry_20_90 | le_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "insufficient": true
+        },
+        "tfr_2020": {
+          "n": 7,
+          "label": "ajr_64_entry_20_90 | tfr_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "insufficient": true
+        },
+        "u5mr_2015": {
+          "n": 7,
+          "label": "ajr_64_entry_20_90 | u5mr_2015 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "insufficient": true
+        }
+      }
+    },
+    "ajr_64_below_90": {
+      "polity2_avg_1980_2010": {
+        "log_gdp_2020": {
+          "n": 48,
+          "label": "ajr_64_below_90 | log_gdp_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.677,
+          "z_edu_1950_coef": 0.2627,
+          "z_edu_1950_t": 1.5,
+          "z_edu_1950_p": 0.1418,
+          "z_polity2_avg_1980_2010_coef": 0.1439,
+          "z_polity2_avg_1980_2010_t": 1.01,
+          "z_polity2_avg_1980_2010_p": 0.3177,
+          "z_log_gdp_1960_coef": 0.7649,
+          "z_log_gdp_1960_t": 4.55,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "le_2020": {
+          "n": 48,
+          "label": "ajr_64_below_90 | le_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.509,
+          "z_edu_1950_coef": 0.4063,
+          "z_edu_1950_t": 0.35,
+          "z_edu_1950_p": 0.7299,
+          "z_polity2_avg_1980_2010_coef": 2.3017,
+          "z_polity2_avg_1980_2010_t": 2.43,
+          "z_polity2_avg_1980_2010_p": 0.0194,
+          "z_log_gdp_1960_coef": 2.9918,
+          "z_log_gdp_1960_t": 2.67,
+          "z_log_gdp_1960_p": 0.0105
+        },
+        "tfr_2020": {
+          "n": 48,
+          "label": "ajr_64_below_90 | tfr_2020 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.52,
+          "z_edu_1950_coef": 0.0941,
+          "z_edu_1950_t": 0.44,
+          "z_edu_1950_p": 0.6614,
+          "z_polity2_avg_1980_2010_coef": -0.7413,
+          "z_polity2_avg_1980_2010_t": -4.29,
+          "z_polity2_avg_1980_2010_p": 0.0001,
+          "z_log_gdp_1960_coef": -0.3737,
+          "z_log_gdp_1960_t": -1.83,
+          "z_log_gdp_1960_p": 0.0739
+        },
+        "u5mr_2015": {
+          "n": 48,
+          "label": "ajr_64_below_90 | u5mr_2015 ~ z(edu_1950) + z(polity2_avg_1980_2010) + z(log_gdp_1960)",
+          "r2": 0.458,
+          "z_edu_1950_coef": 2.2424,
+          "z_edu_1950_t": 0.41,
+          "z_edu_1950_p": 0.6865,
+          "z_polity2_avg_1980_2010_coef": -14.8148,
+          "z_polity2_avg_1980_2010_t": -3.31,
+          "z_polity2_avg_1980_2010_p": 0.0019,
+          "z_log_gdp_1960_coef": -11.1372,
+          "z_log_gdp_1960_t": -2.11,
+          "z_log_gdp_1960_p": 0.0407
+        }
+      },
+      "polity2_avg_1995_2010": {
+        "log_gdp_2020": {
+          "n": 48,
+          "label": "ajr_64_below_90 | log_gdp_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.672,
+          "z_edu_1950_coef": 0.2979,
+          "z_edu_1950_t": 1.73,
+          "z_edu_1950_p": 0.0904,
+          "z_polity2_avg_1995_2010_coef": 0.0775,
+          "z_polity2_avg_1995_2010_t": 0.58,
+          "z_polity2_avg_1995_2010_p": 0.5633,
+          "z_log_gdp_1960_coef": 0.7807,
+          "z_log_gdp_1960_t": 4.62,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "le_2020": {
+          "n": 48,
+          "label": "ajr_64_below_90 | le_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.47,
+          "z_edu_1950_coef": 0.927,
+          "z_edu_1950_t": 0.78,
+          "z_edu_1950_p": 0.4369,
+          "z_polity2_avg_1995_2010_coef": 1.363,
+          "z_polity2_avg_1995_2010_t": 1.49,
+          "z_polity2_avg_1995_2010_p": 0.1431,
+          "z_log_gdp_1960_coef": 3.2163,
+          "z_log_gdp_1960_t": 2.77,
+          "z_log_gdp_1960_p": 0.0081
+        },
+        "tfr_2020": {
+          "n": 48,
+          "label": "ajr_64_below_90 | tfr_2020 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.464,
+          "z_edu_1950_coef": -0.0237,
+          "z_edu_1950_t": -0.11,
+          "z_edu_1950_p": 0.9144,
+          "z_polity2_avg_1995_2010_coef": -0.5846,
+          "z_polity2_avg_1995_2010_t": -3.45,
+          "z_polity2_avg_1995_2010_p": 0.0013,
+          "z_log_gdp_1960_coef": -0.4118,
+          "z_log_gdp_1960_t": -1.92,
+          "z_log_gdp_1960_p": 0.0619
+        },
+        "u5mr_2015": {
+          "n": 48,
+          "label": "ajr_64_below_90 | u5mr_2015 ~ z(edu_1950) + z(polity2_avg_1995_2010) + z(log_gdp_1960)",
+          "r2": 0.408,
+          "z_edu_1950_coef": -0.3771,
+          "z_edu_1950_t": -0.07,
+          "z_edu_1950_p": 0.9467,
+          "z_polity2_avg_1995_2010_coef": -10.907,
+          "z_polity2_avg_1995_2010_t": -2.51,
+          "z_polity2_avg_1995_2010_p": 0.0157,
+          "z_log_gdp_1960_coef": -12.0804,
+          "z_log_gdp_1960_t": -2.2,
+          "z_log_gdp_1960_p": 0.0334
+        }
+      },
+      "polity2_2015": {
+        "log_gdp_2020": {
+          "n": 47,
+          "label": "ajr_64_below_90 | log_gdp_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.668,
+          "z_edu_1950_coef": 0.3056,
+          "z_edu_1950_t": 1.77,
+          "z_edu_1950_p": 0.0841,
+          "z_polity2_2015_coef": 0.0543,
+          "z_polity2_2015_t": 0.43,
+          "z_polity2_2015_p": 0.6675,
+          "z_log_gdp_1960_coef": 0.7905,
+          "z_log_gdp_1960_t": 4.68,
+          "z_log_gdp_1960_p": 0.0
+        },
+        "le_2020": {
+          "n": 47,
+          "label": "ajr_64_below_90 | le_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.441,
+          "z_edu_1950_coef": 1.2574,
+          "z_edu_1950_t": 1.03,
+          "z_edu_1950_p": 0.3078,
+          "z_polity2_2015_coef": 0.4274,
+          "z_polity2_2015_t": 0.48,
+          "z_polity2_2015_p": 0.6314,
+          "z_log_gdp_1960_coef": 3.4886,
+          "z_log_gdp_1960_t": 2.93,
+          "z_log_gdp_1960_p": 0.0054
+        },
+        "tfr_2020": {
+          "n": 47,
+          "label": "ajr_64_below_90 | tfr_2020 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.346,
+          "z_edu_1950_coef": -0.1347,
+          "z_edu_1950_t": -0.56,
+          "z_edu_1950_p": 0.5772,
+          "z_polity2_2015_coef": -0.2614,
+          "z_polity2_2015_t": -1.5,
+          "z_polity2_2015_p": 0.1405,
+          "z_log_gdp_1960_coef": -0.5078,
+          "z_log_gdp_1960_t": -2.17,
+          "z_log_gdp_1960_p": 0.0356
+        },
+        "u5mr_2015": {
+          "n": 47,
+          "label": "ajr_64_below_90 | u5mr_2015 ~ z(edu_1950) + z(polity2_2015) + z(log_gdp_1960)",
+          "r2": 0.33,
+          "z_edu_1950_coef": -2.8045,
+          "z_edu_1950_t": -0.47,
+          "z_edu_1950_p": 0.6413,
+          "z_polity2_2015_coef": -3.8978,
+          "z_polity2_2015_t": -0.9,
+          "z_polity2_2015_p": 0.3741,
+          "z_log_gdp_1960_coef": -14.0927,
+          "z_log_gdp_1960_t": -2.41,
+          "z_log_gdp_1960_p": 0.0201
+        }
+      }
+    }
+  },
+  "b1b_delta_edu_horse_race": {
+    "full_panel": {
+      "log_gdp_2020": {
+        "n": 96,
+        "label": "full_panel | log_gdp_2020",
+        "r2": 0.768,
+        "z_delta_edu_1950_2000_coef": 0.332,
+        "z_delta_edu_1950_2000_t": 4.15,
+        "z_delta_edu_1950_2000_p": 0.0001,
+        "z_polity2_avg_1980_2010_coef": 0.3126,
+        "z_polity2_avg_1980_2010_t": 3.09,
+        "z_polity2_avg_1980_2010_p": 0.0026,
+        "z_log_gdp_1960_coef": 1.0766,
+        "z_log_gdp_1960_t": 10.56,
+        "z_log_gdp_1960_p": 0.0
+      },
+      "le_2020": {
+        "n": 96,
+        "label": "full_panel | le_2020",
+        "r2": 0.602,
+        "z_delta_edu_1950_2000_coef": 2.0343,
+        "z_delta_edu_1950_2000_t": 3.64,
+        "z_delta_edu_1950_2000_p": 0.0005,
+        "z_polity2_avg_1980_2010_coef": 2.2075,
+        "z_polity2_avg_1980_2010_t": 3.12,
+        "z_polity2_avg_1980_2010_p": 0.0024,
+        "z_log_gdp_1960_coef": 4.3146,
+        "z_log_gdp_1960_t": 6.05,
+        "z_log_gdp_1960_p": 0.0
+      },
+      "tfr_2020": {
+        "n": 96,
+        "label": "full_panel | tfr_2020",
+        "r2": 0.575,
+        "z_delta_edu_1950_2000_coef": -0.5574,
+        "z_delta_edu_1950_2000_t": -5.91,
+        "z_delta_edu_1950_2000_p": 0.0,
+        "z_polity2_avg_1980_2010_coef": -0.6175,
+        "z_polity2_avg_1980_2010_t": -5.18,
+        "z_polity2_avg_1980_2010_p": 0.0,
+        "z_log_gdp_1960_coef": -0.2849,
+        "z_log_gdp_1960_t": -2.37,
+        "z_log_gdp_1960_p": 0.02
+      },
+      "u5mr_2015": {
+        "n": 96,
+        "label": "full_panel | u5mr_2015",
+        "r2": 0.531,
+        "z_delta_edu_1950_2000_coef": -12.0596,
+        "z_delta_edu_1950_2000_t": -4.85,
+        "z_delta_edu_1950_2000_p": 0.0,
+        "z_polity2_avg_1980_2010_coef": -9.5618,
+        "z_polity2_avg_1980_2010_t": -3.04,
+        "z_polity2_avg_1980_2010_p": 0.0031,
+        "z_log_gdp_1960_coef": -13.2055,
+        "z_log_gdp_1960_t": -4.17,
+        "z_log_gdp_1960_p": 0.0001
+      }
+    },
+    "ajr_64_only": {
+      "log_gdp_2020": {
+        "n": 48,
+        "label": "ajr_64_only | log_gdp_2020",
+        "r2": 0.717,
+        "z_delta_edu_1950_2000_coef": 0.3229,
+        "z_delta_edu_1950_2000_t": 2.95,
+        "z_delta_edu_1950_2000_p": 0.005,
+        "z_polity2_avg_1980_2010_coef": 0.2516,
+        "z_polity2_avg_1980_2010_t": 2.01,
+        "z_polity2_avg_1980_2010_p": 0.0511,
+        "z_log_gdp_1960_coef": 0.804,
+        "z_log_gdp_1960_t": 6.15,
+        "z_log_gdp_1960_p": 0.0
+      },
+      "le_2020": {
+        "n": 48,
+        "label": "ajr_64_only | le_2020",
+        "r2": 0.557,
+        "z_delta_edu_1950_2000_coef": 1.6407,
+        "z_delta_edu_1950_2000_t": 2.22,
+        "z_delta_edu_1950_2000_p": 0.0315,
+        "z_polity2_avg_1980_2010_coef": 2.5873,
+        "z_polity2_avg_1980_2010_t": 3.05,
+        "z_polity2_avg_1980_2010_p": 0.0038,
+        "z_log_gdp_1960_coef": 2.6507,
+        "z_log_gdp_1960_t": 3.0,
+        "z_log_gdp_1960_p": 0.0044
+      },
+      "tfr_2020": {
+        "n": 48,
+        "label": "ajr_64_only | tfr_2020",
+        "r2": 0.694,
+        "z_delta_edu_1950_2000_coef": -0.5706,
+        "z_delta_edu_1950_2000_t": -5.04,
+        "z_delta_edu_1950_2000_p": 0.0,
+        "z_polity2_avg_1980_2010_coef": -0.7742,
+        "z_polity2_avg_1980_2010_t": -5.96,
+        "z_polity2_avg_1980_2010_p": 0.0,
+        "z_log_gdp_1960_coef": -0.1183,
+        "z_log_gdp_1960_t": -0.87,
+        "z_log_gdp_1960_p": 0.387
+      },
+      "u5mr_2015": {
+        "n": 48,
+        "label": "ajr_64_only | u5mr_2015",
+        "r2": 0.588,
+        "z_delta_edu_1950_2000_coef": -12.016,
+        "z_delta_edu_1950_2000_t": -3.76,
+        "z_delta_edu_1950_2000_p": 0.0005,
+        "z_polity2_avg_1980_2010_coef": -15.4337,
+        "z_polity2_avg_1980_2010_t": -4.2,
+        "z_polity2_avg_1980_2010_p": 0.0001,
+        "z_log_gdp_1960_coef": -5.6051,
+        "z_log_gdp_1960_t": -1.46,
+        "z_log_gdp_1960_p": 0.1501
+      }
+    },
+    "non_ajr_64": {
+      "log_gdp_2020": {
+        "n": 48,
+        "label": "non_ajr_64 | log_gdp_2020",
+        "r2": 0.807,
+        "z_delta_edu_1950_2000_coef": 0.3735,
+        "z_delta_edu_1950_2000_t": 3.23,
+        "z_delta_edu_1950_2000_p": 0.0024,
+        "z_polity2_avg_1980_2010_coef": 0.358,
+        "z_polity2_avg_1980_2010_t": 2.34,
+        "z_polity2_avg_1980_2010_p": 0.0238,
+        "z_log_gdp_1960_coef": 1.2354,
+        "z_log_gdp_1960_t": 8.08,
+        "z_log_gdp_1960_p": 0.0
+      },
+      "le_2020": {
+        "n": 48,
+        "label": "non_ajr_64 | le_2020",
+        "r2": 0.646,
+        "z_delta_edu_1950_2000_coef": 2.6139,
+        "z_delta_edu_1950_2000_t": 3.15,
+        "z_delta_edu_1950_2000_p": 0.0029,
+        "z_polity2_avg_1980_2010_coef": 1.7419,
+        "z_polity2_avg_1980_2010_t": 1.59,
+        "z_polity2_avg_1980_2010_p": 0.1194,
+        "z_log_gdp_1960_coef": 5.489,
+        "z_log_gdp_1960_t": 5.0,
+        "z_log_gdp_1960_p": 0.0
+      },
+      "tfr_2020": {
+        "n": 48,
+        "label": "non_ajr_64 | tfr_2020",
+        "r2": 0.518,
+        "z_delta_edu_1950_2000_coef": -0.5765,
+        "z_delta_edu_1950_2000_t": -3.86,
+        "z_delta_edu_1950_2000_p": 0.0004,
+        "z_polity2_avg_1980_2010_coef": -0.4733,
+        "z_polity2_avg_1980_2010_t": -2.4,
+        "z_polity2_avg_1980_2010_p": 0.0208,
+        "z_log_gdp_1960_coef": -0.4149,
+        "z_log_gdp_1960_t": -2.1,
+        "z_log_gdp_1960_p": 0.0415
+      },
+      "u5mr_2015": {
+        "n": 48,
+        "label": "non_ajr_64 | u5mr_2015",
+        "r2": 0.534,
+        "z_delta_edu_1950_2000_coef": -13.2005,
+        "z_delta_edu_1950_2000_t": -3.51,
+        "z_delta_edu_1950_2000_p": 0.001,
+        "z_polity2_avg_1980_2010_coef": -4.043,
+        "z_polity2_avg_1980_2010_t": -0.81,
+        "z_polity2_avg_1980_2010_p": 0.42,
+        "z_log_gdp_1960_coef": -19.3365,
+        "z_log_gdp_1960_t": -3.89,
+        "z_log_gdp_1960_p": 0.0003
+      }
+    },
+    "entry_cohort_10_90": {
+      "log_gdp_2020": {
+        "n": 45,
+        "label": "entry_cohort_10_90 | log_gdp_2020",
+        "r2": 0.697,
+        "z_delta_edu_1950_2000_coef": 0.1715,
+        "z_delta_edu_1950_2000_t": 1.6,
+        "z_delta_edu_1950_2000_p": 0.1168,
+        "z_polity2_avg_1980_2010_coef": 0.1195,
+        "z_polity2_avg_1980_2010_t": 0.91,
+        "z_polity2_avg_1980_2010_p": 0.3681,
+        "z_log_gdp_1960_coef": 0.9596,
+        "z_log_gdp_1960_t": 7.34,
+        "z_log_gdp_1960_p": 0.0
+      },
+      "le_2020": {
+        "n": 45,
+        "label": "entry_cohort_10_90 | le_2020",
+        "r2": 0.575,
+        "z_delta_edu_1950_2000_coef": 1.4417,
+        "z_delta_edu_1950_2000_t": 2.18,
+        "z_delta_edu_1950_2000_p": 0.0351,
+        "z_polity2_avg_1980_2010_coef": 1.6095,
+        "z_polity2_avg_1980_2010_t": 1.98,
+        "z_polity2_avg_1980_2010_p": 0.054,
+        "z_log_gdp_1960_coef": 3.7363,
+        "z_log_gdp_1960_t": 4.63,
+        "z_log_gdp_1960_p": 0.0
+      },
+      "tfr_2020": {
+        "n": 45,
+        "label": "entry_cohort_10_90 | tfr_2020",
+        "r2": 0.499,
+        "z_delta_edu_1950_2000_coef": -0.2534,
+        "z_delta_edu_1950_2000_t": -3.28,
+        "z_delta_edu_1950_2000_p": 0.0021,
+        "z_polity2_avg_1980_2010_coef": -0.368,
+        "z_polity2_avg_1980_2010_t": -3.89,
+        "z_polity2_avg_1980_2010_p": 0.0004,
+        "z_log_gdp_1960_coef": -0.1343,
+        "z_log_gdp_1960_t": -1.42,
+        "z_log_gdp_1960_p": 0.1619
+      },
+      "u5mr_2015": {
+        "n": 45,
+        "label": "entry_cohort_10_90 | u5mr_2015",
+        "r2": 0.581,
+        "z_delta_edu_1950_2000_coef": -3.9731,
+        "z_delta_edu_1950_2000_t": -2.5,
+        "z_delta_edu_1950_2000_p": 0.0164,
+        "z_polity2_avg_1980_2010_coef": -4.942,
+        "z_polity2_avg_1980_2010_t": -2.54,
+        "z_polity2_avg_1980_2010_p": 0.015,
+        "z_log_gdp_1960_coef": -8.1561,
+        "z_log_gdp_1960_t": -4.21,
+        "z_log_gdp_1960_p": 0.0001
+      }
+    },
+    "entry_cohort_20_90": {
+      "log_gdp_2020": {
+        "n": 25,
+        "label": "entry_cohort_20_90 | log_gdp_2020",
+        "r2": 0.751,
+        "z_delta_edu_1950_2000_coef": 0.1771,
+        "z_delta_edu_1950_2000_t": 1.29,
+        "z_delta_edu_1950_2000_p": 0.2106,
+        "z_polity2_avg_1980_2010_coef": 0.2356,
+        "z_polity2_avg_1980_2010_t": 0.95,
+        "z_polity2_avg_1980_2010_p": 0.3528,
+        "z_log_gdp_1960_coef": 0.7423,
+        "z_log_gdp_1960_t": 2.93,
+        "z_log_gdp_1960_p": 0.0079
+      },
+      "le_2020": {
+        "n": 25,
+        "label": "entry_cohort_20_90 | le_2020",
+        "r2": 0.592,
+        "z_delta_edu_1950_2000_coef": 1.4276,
+        "z_delta_edu_1950_2000_t": 1.5,
+        "z_delta_edu_1950_2000_p": 0.1475,
+        "z_polity2_avg_1980_2010_coef": 2.9804,
+        "z_polity2_avg_1980_2010_t": 1.74,
+        "z_polity2_avg_1980_2010_p": 0.0971,
+        "z_log_gdp_1960_coef": 1.5009,
+        "z_log_gdp_1960_t": 0.86,
+        "z_log_gdp_1960_p": 0.401
+      },
+      "tfr_2020": {
+        "n": 25,
+        "label": "entry_cohort_20_90 | tfr_2020",
+        "r2": 0.535,
+        "z_delta_edu_1950_2000_coef": -0.144,
+        "z_delta_edu_1950_2000_t": -1.23,
+        "z_delta_edu_1950_2000_p": 0.2313,
+        "z_polity2_avg_1980_2010_coef": -0.6401,
+        "z_polity2_avg_1980_2010_t": -3.03,
+        "z_polity2_avg_1980_2010_p": 0.0064,
+        "z_log_gdp_1960_coef": 0.2649,
+        "z_log_gdp_1960_t": 1.23,
+        "z_log_gdp_1960_p": 0.2325
+      },
+      "u5mr_2015": {
+        "n": 25,
+        "label": "entry_cohort_20_90 | u5mr_2015",
+        "r2": 0.542,
+        "z_delta_edu_1950_2000_coef": -2.0201,
+        "z_delta_edu_1950_2000_t": -0.8,
+        "z_delta_edu_1950_2000_p": 0.4304,
+        "z_polity2_avg_1980_2010_coef": -10.7404,
+        "z_polity2_avg_1980_2010_t": -2.36,
+        "z_polity2_avg_1980_2010_p": 0.0278,
+        "z_log_gdp_1960_coef": 0.3599,
+        "z_log_gdp_1960_t": 0.08,
+        "z_log_gdp_1960_p": 0.9388
+      }
+    },
+    "entry_cohort_30_90": {
+      "log_gdp_2020": {
+        "n": 17,
+        "label": "entry_cohort_30_90 | log_gdp_2020",
+        "r2": 0.874,
+        "z_delta_edu_1950_2000_coef": 0.0891,
+        "z_delta_edu_1950_2000_t": 1.14,
+        "z_delta_edu_1950_2000_p": 0.2755,
+        "z_polity2_avg_1980_2010_coef": 0.2128,
+        "z_polity2_avg_1980_2010_t": 1.47,
+        "z_polity2_avg_1980_2010_p": 0.1647,
+        "z_log_gdp_1960_coef": 0.5363,
+        "z_log_gdp_1960_t": 3.7,
+        "z_log_gdp_1960_p": 0.0027
+      },
+      "le_2020": {
+        "n": 17,
+        "label": "entry_cohort_30_90 | le_2020",
+        "r2": 0.774,
+        "z_delta_edu_1950_2000_coef": 0.5191,
+        "z_delta_edu_1950_2000_t": 0.94,
+        "z_delta_edu_1950_2000_p": 0.3642,
+        "z_polity2_avg_1980_2010_coef": 2.9989,
+        "z_polity2_avg_1980_2010_t": 2.94,
+        "z_polity2_avg_1980_2010_p": 0.0115,
+        "z_log_gdp_1960_coef": 0.6425,
+        "z_log_gdp_1960_t": 0.63,
+        "z_log_gdp_1960_p": 0.5411
+      },
+      "tfr_2020": {
+        "n": 17,
+        "label": "entry_cohort_30_90 | tfr_2020",
+        "r2": 0.574,
+        "z_delta_edu_1950_2000_coef": 0.0723,
+        "z_delta_edu_1950_2000_t": 0.98,
+        "z_delta_edu_1950_2000_p": 0.3439,
+        "z_polity2_avg_1980_2010_coef": -0.4502,
+        "z_polity2_avg_1980_2010_t": -3.31,
+        "z_polity2_avg_1980_2010_p": 0.0056,
+        "z_log_gdp_1960_coef": 0.203,
+        "z_log_gdp_1960_t": 1.49,
+        "z_log_gdp_1960_p": 0.161
+      },
+      "u5mr_2015": {
+        "n": 17,
+        "label": "entry_cohort_30_90 | u5mr_2015",
+        "r2": 0.709,
+        "z_delta_edu_1950_2000_coef": 0.7124,
+        "z_delta_edu_1950_2000_t": 0.67,
+        "z_delta_edu_1950_2000_p": 0.5157,
+        "z_polity2_avg_1980_2010_coef": -8.7587,
+        "z_polity2_avg_1980_2010_t": -4.45,
+        "z_polity2_avg_1980_2010_p": 0.0007,
+        "z_log_gdp_1960_coef": 3.8487,
+        "z_log_gdp_1960_t": 1.95,
+        "z_log_gdp_1960_p": 0.0735
+      }
+    },
+    "below_90": {
+      "log_gdp_2020": {
+        "n": 91,
+        "label": "below_90 | log_gdp_2020",
+        "r2": 0.771,
+        "z_delta_edu_1950_2000_coef": 0.4483,
+        "z_delta_edu_1950_2000_t": 5.38,
+        "z_delta_edu_1950_2000_p": 0.0,
+        "z_polity2_avg_1980_2010_coef": 0.2728,
+        "z_polity2_avg_1980_2010_t": 2.81,
+        "z_polity2_avg_1980_2010_p": 0.0061,
+        "z_log_gdp_1960_coef": 0.9454,
+        "z_log_gdp_1960_t": 9.4,
+        "z_log_gdp_1960_p": 0.0
+      },
+      "le_2020": {
+        "n": 91,
+        "label": "below_90 | le_2020",
+        "r2": 0.608,
+        "z_delta_edu_1950_2000_coef": 2.7479,
+        "z_delta_edu_1950_2000_t": 4.67,
+        "z_delta_edu_1950_2000_p": 0.0,
+        "z_polity2_avg_1980_2010_coef": 1.9337,
+        "z_polity2_avg_1980_2010_t": 2.82,
+        "z_polity2_avg_1980_2010_p": 0.0059,
+        "z_log_gdp_1960_coef": 3.6175,
+        "z_log_gdp_1960_t": 5.09,
+        "z_log_gdp_1960_p": 0.0
+      },
+      "tfr_2020": {
+        "n": 91,
+        "label": "below_90 | tfr_2020",
+        "r2": 0.606,
+        "z_delta_edu_1950_2000_coef": -0.6781,
+        "z_delta_edu_1950_2000_t": -6.87,
+        "z_delta_edu_1950_2000_p": 0.0,
+        "z_polity2_avg_1980_2010_coef": -0.567,
+        "z_polity2_avg_1980_2010_t": -4.93,
+        "z_polity2_avg_1980_2010_p": 0.0,
+        "z_log_gdp_1960_coef": -0.1654,
+        "z_log_gdp_1960_t": -1.39,
+        "z_log_gdp_1960_p": 0.1684
+      },
+      "u5mr_2015": {
+        "n": 91,
+        "label": "below_90 | u5mr_2015",
+        "r2": 0.548,
+        "z_delta_edu_1950_2000_coef": -14.7357,
+        "z_delta_edu_1950_2000_t": -5.56,
+        "z_delta_edu_1950_2000_p": 0.0,
+        "z_polity2_avg_1980_2010_coef": -8.5043,
+        "z_polity2_avg_1980_2010_t": -2.76,
+        "z_polity2_avg_1980_2010_p": 0.0071,
+        "z_log_gdp_1960_coef": -10.3623,
+        "z_log_gdp_1960_t": -3.24,
+        "z_log_gdp_1960_p": 0.0017
+      }
+    },
+    "ajr_64_entry_10_90": {
+      "log_gdp_2020": {
+        "n": 23,
+        "label": "ajr_64_entry_10_90 | log_gdp_2020",
+        "r2": 0.65,
+        "z_delta_edu_1950_2000_coef": -0.0486,
+        "z_delta_edu_1950_2000_t": -0.28,
+        "z_delta_edu_1950_2000_p": 0.7828,
+        "z_polity2_avg_1980_2010_coef": -0.248,
+        "z_polity2_avg_1980_2010_t": -1.36,
+        "z_polity2_avg_1980_2010_p": 0.1904,
+        "z_log_gdp_1960_coef": 0.9346,
+        "z_log_gdp_1960_t": 5.84,
+        "z_log_gdp_1960_p": 0.0
+      },
+      "le_2020": {
+        "n": 23,
+        "label": "ajr_64_entry_10_90 | le_2020",
+        "r2": 0.426,
+        "z_delta_edu_1950_2000_coef": 0.6761,
+        "z_delta_edu_1950_2000_t": 0.58,
+        "z_delta_edu_1950_2000_p": 0.5708,
+        "z_polity2_avg_1980_2010_coef": -0.11,
+        "z_polity2_avg_1980_2010_t": -0.09,
+        "z_polity2_avg_1980_2010_p": 0.9298,
+        "z_log_gdp_1960_coef": 3.8749,
+        "z_log_gdp_1960_t": 3.59,
+        "z_log_gdp_1960_p": 0.0019
+      },
+      "tfr_2020": {
+        "n": 23,
+        "label": "ajr_64_entry_10_90 | tfr_2020",
+        "r2": 0.454,
+        "z_delta_edu_1950_2000_coef": -0.2384,
+        "z_delta_edu_1950_2000_t": -2.23,
+        "z_delta_edu_1950_2000_p": 0.0377,
+        "z_polity2_avg_1980_2010_coef": -0.1752,
+        "z_polity2_avg_1980_2010_t": -1.56,
+        "z_polity2_avg_1980_2010_p": 0.1345,
+        "z_log_gdp_1960_coef": -0.2839,
+        "z_log_gdp_1960_t": -2.89,
+        "z_log_gdp_1960_p": 0.0094
+      },
+      "u5mr_2015": {
+        "n": 23,
+        "label": "ajr_64_entry_10_90 | u5mr_2015",
+        "r2": 0.574,
+        "z_delta_edu_1950_2000_coef": -3.2557,
+        "z_delta_edu_1950_2000_t": -1.37,
+        "z_delta_edu_1950_2000_p": 0.1856,
+        "z_polity2_avg_1980_2010_coef": -1.3213,
+        "z_polity2_avg_1980_2010_t": -0.53,
+        "z_polity2_avg_1980_2010_p": 0.6019,
+        "z_log_gdp_1960_coef": -10.0674,
+        "z_log_gdp_1960_t": -4.61,
+        "z_log_gdp_1960_p": 0.0002
+      }
+    },
+    "ajr_64_entry_20_90": {
+      "log_gdp_2020": {
+        "n": 7,
+        "label": "ajr_64_entry_20_90 | log_gdp_2020",
+        "insufficient": true
+      },
+      "le_2020": {
+        "n": 7,
+        "label": "ajr_64_entry_20_90 | le_2020",
+        "insufficient": true
+      },
+      "tfr_2020": {
+        "n": 7,
+        "label": "ajr_64_entry_20_90 | tfr_2020",
+        "insufficient": true
+      },
+      "u5mr_2015": {
+        "n": 7,
+        "label": "ajr_64_entry_20_90 | u5mr_2015",
+        "insufficient": true
+      }
+    },
+    "ajr_64_below_90": {
+      "log_gdp_2020": {
+        "n": 48,
+        "label": "ajr_64_below_90 | log_gdp_2020",
+        "r2": 0.717,
+        "z_delta_edu_1950_2000_coef": 0.3229,
+        "z_delta_edu_1950_2000_t": 2.95,
+        "z_delta_edu_1950_2000_p": 0.005,
+        "z_polity2_avg_1980_2010_coef": 0.2516,
+        "z_polity2_avg_1980_2010_t": 2.01,
+        "z_polity2_avg_1980_2010_p": 0.0511,
+        "z_log_gdp_1960_coef": 0.804,
+        "z_log_gdp_1960_t": 6.15,
+        "z_log_gdp_1960_p": 0.0
+      },
+      "le_2020": {
+        "n": 48,
+        "label": "ajr_64_below_90 | le_2020",
+        "r2": 0.557,
+        "z_delta_edu_1950_2000_coef": 1.6407,
+        "z_delta_edu_1950_2000_t": 2.22,
+        "z_delta_edu_1950_2000_p": 0.0315,
+        "z_polity2_avg_1980_2010_coef": 2.5873,
+        "z_polity2_avg_1980_2010_t": 3.05,
+        "z_polity2_avg_1980_2010_p": 0.0038,
+        "z_log_gdp_1960_coef": 2.6507,
+        "z_log_gdp_1960_t": 3.0,
+        "z_log_gdp_1960_p": 0.0044
+      },
+      "tfr_2020": {
+        "n": 48,
+        "label": "ajr_64_below_90 | tfr_2020",
+        "r2": 0.694,
+        "z_delta_edu_1950_2000_coef": -0.5706,
+        "z_delta_edu_1950_2000_t": -5.04,
+        "z_delta_edu_1950_2000_p": 0.0,
+        "z_polity2_avg_1980_2010_coef": -0.7742,
+        "z_polity2_avg_1980_2010_t": -5.96,
+        "z_polity2_avg_1980_2010_p": 0.0,
+        "z_log_gdp_1960_coef": -0.1183,
+        "z_log_gdp_1960_t": -0.87,
+        "z_log_gdp_1960_p": 0.387
+      },
+      "u5mr_2015": {
+        "n": 48,
+        "label": "ajr_64_below_90 | u5mr_2015",
+        "r2": 0.588,
+        "z_delta_edu_1950_2000_coef": -12.016,
+        "z_delta_edu_1950_2000_t": -3.76,
+        "z_delta_edu_1950_2000_p": 0.0005,
+        "z_polity2_avg_1980_2010_coef": -15.4337,
+        "z_polity2_avg_1980_2010_t": -4.2,
+        "z_polity2_avg_1980_2010_p": 0.0001,
+        "z_log_gdp_1960_coef": -5.6051,
+        "z_log_gdp_1960_t": -1.46,
+        "z_log_gdp_1960_p": 0.1501
+      }
+    }
+  },
+  "b3_authoritarian_high_edu_crossers": [
+    {
+      "country": "Belarus",
+      "polity2_avg": -3.95,
+      "edu_1950": 41.1,
+      "crossing_year": 1964
+    },
+    {
+      "country": "Cuba",
+      "polity2_avg": -7.0,
+      "edu_1950": 20.3,
+      "crossing_year": 1974
+    },
+    {
+      "country": "Singapore",
+      "polity2_avg": -3.61,
+      "edu_1950": 13.4,
+      "crossing_year": 1974
+    },
+    {
+      "country": "Democratic People's Republic of Korea",
+      "polity2_avg": -9.55,
+      "edu_1950": 30.9,
+      "crossing_year": 1988
+    },
+    {
+      "country": "Kuwait",
+      "polity2_avg": -7.73,
+      "edu_1950": 14.7,
+      "crossing_year": 1989
+    },
+    {
+      "country": "Bahrain",
+      "polity2_avg": -8.74,
+      "edu_1950": 13.3,
+      "crossing_year": 1991
+    },
+    {
+      "country": "Azerbaijan",
+      "polity2_avg": -5.85,
+      "edu_1950": 67.7,
+      "crossing_year": 2009
+    },
+    {
+      "country": "Kazakhstan",
+      "polity2_avg": -5.4,
+      "edu_1950": 56.1,
+      "crossing_year": 2012
+    },
+    {
+      "country": "Kyrgyzstan",
+      "polity2_avg": -1.2,
+      "edu_1950": 51.9,
+      "crossing_year": 2012
+    },
+    {
+      "country": "Tajikistan",
+      "polity2_avg": -3.3,
+      "edu_1950": 39.4,
+      "crossing_year": 2016
+    },
+    {
+      "country": "Turkmenistan",
+      "polity2_avg": -8.95,
+      "edu_1950": 62.3,
+      "crossing_year": 2022
+    }
+  ],
+  "b3_democratic_low_edu_non_crossers": [
+    {
+      "country": "Botswana",
+      "polity2_avg": 7.23,
+      "edu_1950": 1.4,
+      "le_2020": 67.6,
+      "tfr_2020": 2.86
+    },
+    {
+      "country": "Namibia",
+      "polity2_avg": 6.0,
+      "edu_1950": 5.9,
+      "le_2020": 64.1,
+      "tfr_2020": 3.35
+    }
+  ],
+  "b4_crossing_floor_global": {
+    "n": 125,
+    "median_pct": 72.7,
+    "p10_pct": 43.0,
+    "by_tier": {
+      "full_panel": {
+        "n_crossers": 125,
+        "edu_at_cross_median": 72.7,
+        "edu_at_cross_p10": 43.0
+      },
+      "ajr_64_only": {
+        "n_crossers": 37,
+        "edu_at_cross_median": 65.0,
+        "edu_at_cross_p10": 42.4
+      },
+      "non_ajr_64": {
+        "n_crossers": 88,
+        "edu_at_cross_median": 76.0,
+        "edu_at_cross_p10": 45.2
+      },
+      "ever_colonized": {
+        "n_crossers": 60,
+        "edu_at_cross_median": 65.1,
+        "edu_at_cross_p10": 41.7
+      },
+      "never_colonized": {
+        "n_crossers": 65,
+        "edu_at_cross_median": 84.4,
+        "edu_at_cross_p10": 46.0
+      },
+      "entry_cohort_10_90": {
+        "n_crossers": 81,
+        "edu_at_cross_median": 76.0,
+        "edu_at_cross_p10": 48.6
+      },
+      "entry_cohort_20_90": {
+        "n_crossers": 56,
+        "edu_at_cross_median": 84.5,
+        "edu_at_cross_p10": 62.3
+      },
+      "entry_cohort_30_90": {
+        "n_crossers": 40,
+        "edu_at_cross_median": 85.8,
+        "edu_at_cross_p10": 69.3
+      },
+      "entry_cohort_50_90": {
+        "n_crossers": 22,
+        "edu_at_cross_median": 94.5,
+        "edu_at_cross_p10": 77.4
+      },
+      "entry_cohort_70_90": {
+        "n_crossers": 6,
+        "edu_at_cross_median": 92.0,
+        "edu_at_cross_p10": 83.8
+      },
+      "below_90": {
+        "n_crossers": 117,
+        "edu_at_cross_median": 70.3,
+        "edu_at_cross_p10": 42.6
+      },
+      "ajr_64_entry_10_90": {
+        "n_crossers": 24,
+        "edu_at_cross_median": 68.8,
+        "edu_at_cross_p10": 48.4
+      },
+      "ajr_64_entry_20_90": {
+        "n_crossers": 10,
+        "edu_at_cross_median": 77.6,
+        "edu_at_cross_p10": 69.1
+      },
+      "ajr_64_below_90": {
+        "n_crossers": 37,
+        "edu_at_cross_median": 65.0,
+        "edu_at_cross_p10": 42.4
+      }
+    }
+  },
+  "b5_beta_g_buckets_global": {
+    "Q1_low": {
+      "n": 46,
+      "edu_1950_mean": 1.3,
+      "beta_g": 2.645,
+      "t": 2.78,
+      "r2": 0.149
+    },
+    "Q2": {
+      "n": 45,
+      "edu_1950_mean": 7.0,
+      "beta_g": 2.05,
+      "t": 2.59,
+      "r2": 0.135
+    },
+    "Q3": {
+      "n": 45,
+      "edu_1950_mean": 20.1,
+      "beta_g": 1.818,
+      "t": 4.58,
+      "r2": 0.328
+    },
+    "Q4_high": {
+      "n": 45,
+      "edu_1950_mean": 63.6,
+      "beta_g": 0.258,
+      "t": 5.58,
+      "r2": 0.42
+    }
+  },
+  "b6_within_region": {
+    "East Asia & Pacific": {
+      "n": 17,
+      "label": "East Asia & Pacific",
+      "r2": 0.438,
+      "z_edu_1950_coef": 0.8109,
+      "z_edu_1950_t": 2.46,
+      "z_edu_1950_p": 0.0275,
+      "z_polity2_avg_1980_2010_coef": 0.0232,
+      "z_polity2_avg_1980_2010_t": 0.07,
+      "z_polity2_avg_1980_2010_p": 0.9449
+    },
+    "Europe & Central Asia": {
+      "n": 41,
+      "label": "Europe & Central Asia",
+      "r2": 0.522,
+      "z_edu_1950_coef": 0.2938,
+      "z_edu_1950_t": 2.31,
+      "z_edu_1950_p": 0.0264,
+      "z_polity2_avg_1980_2010_coef": 0.7773,
+      "z_polity2_avg_1980_2010_t": 6.11,
+      "z_polity2_avg_1980_2010_p": 0.0
+    },
+    "Latin America & Caribbean": {
+      "n": 24,
+      "label": "Latin America & Caribbean",
+      "r2": 0.223,
+      "z_edu_1950_coef": 0.3347,
+      "z_edu_1950_t": 2.4,
+      "z_edu_1950_p": 0.0259,
+      "z_polity2_avg_1980_2010_coef": 0.102,
+      "z_polity2_avg_1980_2010_t": 0.73,
+      "z_polity2_avg_1980_2010_p": 0.473
+    },
+    "Middle East & North Africa": {
+      "n": 15,
+      "label": "Middle East & North Africa",
+      "r2": 0.453,
+      "z_edu_1950_coef": 1.0143,
+      "z_edu_1950_t": 3.16,
+      "z_edu_1950_p": 0.0083,
+      "z_polity2_avg_1980_2010_coef": -0.6525,
+      "z_polity2_avg_1980_2010_t": -2.03,
+      "z_polity2_avg_1980_2010_p": 0.0652
+    },
+    "Sub-Saharan Africa": {
+      "n": 40,
+      "label": "Sub-Saharan Africa",
+      "r2": 0.165,
+      "z_edu_1950_coef": 0.164,
+      "z_edu_1950_t": 1.2,
+      "z_edu_1950_p": 0.237,
+      "z_polity2_avg_1980_2010_coef": 0.2409,
+      "z_polity2_avg_1980_2010_t": 1.77,
+      "z_polity2_avg_1980_2010_p": 0.0857
+    }
+  },
+  "edu_1950_median_global": 11.3,
+  "script": "scripts/robustness/colonial_global.py",
+  "produced": "2026-05-02"
+}

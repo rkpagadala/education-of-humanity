@@ -1,0 +1,17 @@
+{
+  "korea_ls_pct_at_year_start": 30.43,
+  "korea_ls_pct_at_year_end": 94.38,
+  "year_start": 1955,
+  "year_end": 1985,
+  "korea_pp_gain": 63.95,
+  "korea_actual_years": 30,
+  "korea_actual_rate_pp_per_yr": 2.13,
+  "cohort_offset_years": 7,
+  "korea_starting_cohort_ls_completion_year": 1948,
+  "korea_ending_cohort_ls_completion_year": 1978,
+  "biological_load_years_per_cohort": 9,
+  "biological_first_full_cohort_year": 1964,
+  "biological_cohort_span_to_universal": 16,
+  "biological_max_rate_pp_per_yr": 4.35,
+  "korea_share_of_biological_pace": 0.49
+}

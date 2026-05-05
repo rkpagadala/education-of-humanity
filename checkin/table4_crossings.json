@@ -1,0 +1,101 @@
+{
+  "thresholds": {
+    "TFR": 3.65,
+    "LE": 69.8
+  },
+  "results": {
+    "Taiwan": {
+      "expected_both": 1970,
+      "tfr_crossing_wdi": null,
+      "tfr_crossing_wcde": 1970,
+      "le_crossing_wdi": null,
+      "le_crossing_wcde": 1970,
+      "tfr_crossing_best": 1970,
+      "le_crossing_best": 1970,
+      "both_crossed": 1970,
+      "status": "PASS"
+    },
+    "South Korea": {
+      "expected_both": 1987,
+      "tfr_crossing_wdi": 1975,
+      "tfr_crossing_wcde": 1975,
+      "le_crossing_wdi": 1987,
+      "le_crossing_wcde": 1985,
+      "tfr_crossing_best": 1975,
+      "le_crossing_best": 1987,
+      "both_crossed": 1987,
+      "status": "PASS"
+    },
+    "Cuba": {
+      "expected_both": 1974,
+      "tfr_crossing_wdi": 1972,
+      "tfr_crossing_wcde": 1975,
+      "le_crossing_wdi": 1974,
+      "le_crossing_wcde": 1975,
+      "tfr_crossing_best": 1972,
+      "le_crossing_best": 1974,
+      "both_crossed": 1974,
+      "status": "PASS"
+    },
+    "Bangladesh": {
+      "expected_both": 2014,
+      "tfr_crossing_wdi": 1995,
+      "tfr_crossing_wcde": 1995,
+      "le_crossing_wdi": 2014,
+      "le_crossing_wcde": 2015,
+      "tfr_crossing_best": 1995,
+      "le_crossing_best": 2014,
+      "both_crossed": 2014,
+      "status": "PASS"
+    },
+    "Sri Lanka": {
+      "expected_both": 1993,
+      "tfr_crossing_wdi": 1981,
+      "tfr_crossing_wcde": 1980,
+      "le_crossing_wdi": 1993,
+      "le_crossing_wcde": 1980,
+      "tfr_crossing_best": 1981,
+      "le_crossing_best": 1993,
+      "both_crossed": 1993,
+      "status": "PASS"
+    },
+    "China": {
+      "expected_both": 1994,
+      "tfr_crossing_wdi": 1975,
+      "tfr_crossing_wcde": 1975,
+      "le_crossing_wdi": 1994,
+      "le_crossing_wcde": 1995,
+      "tfr_crossing_best": 1975,
+      "le_crossing_best": 1994,
+      "both_crossed": 1994,
+      "status": "PASS"
+    },
+    "Kerala": {
+      "expected_both": 1982,
+      "tfr_crossing_wdi": null,
+      "tfr_crossing_wcde": null,
+      "le_crossing_wdi": null,
+      "le_crossing_wcde": null,
+      "tfr_crossing_best": null,
+      "le_crossing_best": null,
+      "both_crossed": null,
+      "status": "NOTE"
+    },
+    "Uganda": {
+      "expected_both": null,
+      "latest_tfr": 4.388,
+      "latest_le": 67.675,
+      "tfr_crossing_wdi": null,
+      "tfr_crossing_wcde": null,
+      "le_crossing_wdi": null,
+      "le_crossing_wcde": null,
+      "tfr_crossing_best": null,
+      "le_crossing_best": null,
+      "both_crossed": null,
+      "status": "INFO"
+    }
+  },
+  "overall": "PASS",
+  "script": "scripts/cases/threshold_crossings.py",
+  "produced": "2026-04-28"
+}

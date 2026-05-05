@@ -1,0 +1,43 @@
+{
+  "method": "Compare handout GDP claims against the file at data/gdppercapita_us_inflation_adjusted.csv (NY.GDP.PCAP.KD, constant 2015 USD per data/rebuild_datasets.py). Cross-reference Atlas-method GNI per capita (NY.GNP.PCAP.CD) from public Bank data; Atlas reference values not in local file.",
+  "results": {
+    "countries": {
+      "bangladesh": {
+        "1965": {
+          "handout": 100.0,
+          "file_constant_2015_usd": 466.3,
+          "atlas_gni_reference": null,
+          "verdict": "no match"
+        },
+        "1990": {
+          "handout": 279.0,
+          "file_constant_2015_usd": 473.44,
+          "atlas_gni_reference": 290.0,
+          "verdict": "matches Atlas"
+        },
+        "2015": {
+          "handout": 1086.0,
+          "file_constant_2015_usd": 1224.39,
+          "atlas_gni_reference": 1080.0,
+          "verdict": "matches Atlas"
+        }
+      },
+      "niger": {
+        "2015": {
+          "handout": 360.0,
+          "file_constant_2015_usd": 485.66,
+          "atlas_gni_reference": 390.0,
+          "verdict": "no match"
+        }
+      }
+    },
+    "file_basis": "constant 2015 USD (NY.GDP.PCAP.KD)",
+    "paper_label_inconsistency": {
+      "2017_label_count": 0,
+      "2015_label_count": 30,
+      "correct_basis": "constant 2015 USD"
+    }
+  },
+  "script": "scripts/handout/usd_basis_check.py",
+  "produced": "2026-04-29"
+}

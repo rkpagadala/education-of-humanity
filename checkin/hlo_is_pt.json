@@ -1,0 +1,91 @@
+{
+  "numbers": {
+    "t1_n": 77,
+    "t1_beta_lsec": 1.941,
+    "t1_t_lsec": 9.07,
+    "t1_intercept": 310.9,
+    "t1_r2": 0.523,
+    "t1_corr": 0.723,
+    "t2_n": 73,
+    "t2_beta_yrs": 15.91,
+    "t2_r2": 0.438,
+    "top_positive_residuals": [
+      {
+        "country": "china",
+        "hlo": 568.0,
+        "lsec_1990": 75.1,
+        "residual": 111.0
+      },
+      {
+        "country": "viet nam",
+        "hlo": 521.0,
+        "lsec_1990": 51.0,
+        "residual": 111.0
+      },
+      {
+        "country": "singapore",
+        "hlo": 576.0,
+        "lsec_1990": 89.0,
+        "residual": 93.0
+      },
+      {
+        "country": "portugal",
+        "hlo": 494.0,
+        "lsec_1990": 55.3,
+        "residual": 76.0
+      },
+      {
+        "country": "costa rica",
+        "hlo": 442.0,
+        "lsec_1990": 43.5,
+        "residual": 47.0
+      },
+      {
+        "country": "thailand",
+        "hlo": 444.0,
+        "lsec_1990": 44.9,
+        "residual": 45.0
+      }
+    ],
+    "top_negative_residuals": [
+      {
+        "country": "south africa",
+        "hlo": 320.0,
+        "lsec_1990": 64.5,
+        "residual": -116.0
+      },
+      {
+        "country": "ghana",
+        "hlo": 297.0,
+        "lsec_1990": 48.5,
+        "residual": -108.0
+      },
+      {
+        "country": "albania",
+        "hlo": 412.0,
+        "lsec_1990": 96.3,
+        "residual": -86.0
+      },
+      {
+        "country": "montenegro",
+        "hlo": 429.0,
+        "lsec_1990": 97.8,
+        "residual": -72.0
+      },
+      {
+        "country": "dominican republic",
+        "hlo": 365.0,
+        "lsec_1990": 56.1,
+        "residual": -55.0
+      },
+      {
+        "country": "philippines",
+        "hlo": 378.0,
+        "lsec_1990": 62.5,
+        "residual": -55.0
+      }
+    ]
+  },
+  "script": "scripts/hlo_is_parental_education.py",
+  "produced": "2026-04-28"
+}

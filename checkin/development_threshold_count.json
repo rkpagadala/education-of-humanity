@@ -1,0 +1,16 @@
+{
+  "numbers": {
+    "countries_crossing_both": 154,
+    "countries_not_crossing": 63,
+    "pop_crossed": 6243473699,
+    "pop_world": 7801972000,
+    "pct_developed": 80.0,
+    "tfr_threshold": 3.65,
+    "le_threshold": 69.8,
+    "snapshot_year": 2022,
+    "pop_year": 2020,
+    "no_pop_match_count": 22
+  },
+  "script": "scripts/cases/development_threshold_count.py",
+  "produced": "2026-04-28"
+}

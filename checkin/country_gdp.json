@@ -1,0 +1,64 @@
+{
+  "source": "data/gdppercapita_us_inflation_adjusted.csv",
+  "claims": [
+    {
+      "claim": "Korea 1960 GDP",
+      "cited": 1038,
+      "actual": 1038.0,
+      "diff_pct": 0.0,
+      "pass": true
+    },
+    {
+      "claim": "Costa Rica 1960 GDP",
+      "cited": 3609,
+      "actual": 3609.0,
+      "diff_pct": 0.0,
+      "pass": true
+    },
+    {
+      "claim": "Costa Rica 1990 GDP",
+      "cited": 6037,
+      "actual": 6037.0,
+      "diff_pct": 0.0,
+      "pass": true
+    },
+    {
+      "claim": "Korea 1990 GDP",
+      "cited": 9673,
+      "actual": 9673.0,
+      "diff_pct": 0.0,
+      "pass": true
+    },
+    {
+      "claim": "Bangladesh 2014 GDP",
+      "cited": 1159,
+      "actual": 1159.0,
+      "diff_pct": 0.0,
+      "pass": true
+    },
+    {
+      "claim": "Nepal ~1990 GDP",
+      "cited": 423,
+      "actual": 423.0,
+      "diff_pct": 0.0,
+      "pass": true
+    },
+    {
+      "claim": "Myanmar 2015 GDP (<$1200)",
+      "cited": 1200,
+      "actual": 1167.0,
+      "diff_pct": -0.0275,
+      "pass": true
+    },
+    {
+      "claim": "Qatar 2015 GDP (~$69k)",
+      "cited": 69000,
+      "actual": 68985.0,
+      "diff_pct": -0.0002,
+      "pass": true
+    }
+  ],
+  "summary": "8/8 GDP claims passed",
+  "script": "scripts/cases/country_gdp.py",
+  "produced": "2026-04-29"
+}

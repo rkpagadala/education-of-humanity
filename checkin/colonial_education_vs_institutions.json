@@ -1,0 +1,13 @@
+{
+  "n_colonies": 99,
+  "n_protestant": 41,
+  "n_catholic": 58,
+  "r2_colonial_education": 0.348,
+  "r2_education_1950": 0.462,
+  "r2_polity2": 0.115,
+  "r2_religion": 0.055,
+  "r2_education_2020": 0.688,
+  "r2_education_1950_plus_religion": 0.462,
+  "script": "scripts/robustness/colonial_vs_institutions.py",
+  "produced": "2026-04-28"
+}

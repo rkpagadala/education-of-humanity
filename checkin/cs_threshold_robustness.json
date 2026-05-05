@@ -1,0 +1,48 @@
+{
+  "method": "Callaway-Sant'Anna group-time ATT for child education at T+25, swept across entry thresholds 5-15%. Same panel as callaway_santanna.py (1950-1990 5-yr, 185 countries). ATT (post) is the unweighted average across post-treatment (g,t) cells with at least two treated and two not-yet-treated controls; pre-trend ATT (e=-1) is the placebo evaluated one period before crossing.",
+  "thresholds": {
+    "5": {
+      "att_aggregate": 5.67,
+      "pre_trend_e_minus_1": 0.0,
+      "n_cohorts": 8,
+      "n_treated_countries": 184,
+      "n_post_cells": 27
+    },
+    "7": {
+      "att_aggregate": 9.1,
+      "pre_trend_e_minus_1": 0.0,
+      "n_cohorts": 7,
+      "n_treated_countries": 181,
+      "n_post_cells": 34
+    },
+    "10": {
+      "att_aggregate": 7.88,
+      "pre_trend_e_minus_1": 0.0,
+      "n_cohorts": 8,
+      "n_treated_countries": 175,
+      "n_post_cells": 35
+    },
+    "12": {
+      "att_aggregate": 7.59,
+      "pre_trend_e_minus_1": 0.0,
+      "n_cohorts": 8,
+      "n_treated_countries": 172,
+      "n_post_cells": 36
+    },
+    "15": {
+      "att_aggregate": 6.29,
+      "pre_trend_e_minus_1": 0.0,
+      "n_cohorts": 8,
+      "n_treated_countries": 167,
+      "n_post_cells": 36
+    }
+  },
+  "panel_countries": 185,
+  "panel_periods": [
+    1950,
+    1990
+  ],
+  "lag_years": 25,
+  "script": "scripts/robustness/cs_threshold_robustness.py",
+  "produced": "2026-04-28"
+}

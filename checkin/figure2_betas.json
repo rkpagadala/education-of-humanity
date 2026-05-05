@@ -1,0 +1,400 @@
+{
+  "parameters": {
+    "window_size": 25,
+    "step": 10,
+    "lag": 25,
+    "min_obs": 3
+  },
+  "all_windows": {
+    "USA": [
+      {
+        "window": "1900-1925",
+        "beta": 1.911,
+        "avg_parent_pct": 13.4
+      },
+      {
+        "window": "1910-1935",
+        "beta": 1.7,
+        "avg_parent_pct": 20.2
+      },
+      {
+        "window": "1920-1945",
+        "beta": 1.36,
+        "avg_parent_pct": 29.1
+      },
+      {
+        "window": "1930-1955",
+        "beta": 0.974,
+        "avg_parent_pct": 40.2
+      },
+      {
+        "window": "1940-1965",
+        "beta": 0.63,
+        "avg_parent_pct": 53.0
+      },
+      {
+        "window": "1950-1975",
+        "beta": 0.389,
+        "avg_parent_pct": 66.3
+      },
+      {
+        "window": "1960-1985",
+        "beta": 0.226,
+        "avg_parent_pct": 77.9
+      },
+      {
+        "window": "1970-1995",
+        "beta": 0.066,
+        "avg_parent_pct": 86.6
+      },
+      {
+        "window": "1980-2005",
+        "beta": 0.078,
+        "avg_parent_pct": 91.7
+      },
+      {
+        "window": "1990-2015",
+        "beta": 0.682,
+        "avg_parent_pct": 94.3
+      }
+    ],
+    "Korea": [
+      {
+        "window": "1920-1945",
+        "beta": 6.474,
+        "avg_parent_pct": 1.1
+      },
+      {
+        "window": "1930-1955",
+        "beta": 3.576,
+        "avg_parent_pct": 2.9
+      },
+      {
+        "window": "1940-1965",
+        "beta": 2.892,
+        "avg_parent_pct": 6.7
+      },
+      {
+        "window": "1950-1975",
+        "beta": 2.603,
+        "avg_parent_pct": 13.3
+      },
+      {
+        "window": "1960-1985",
+        "beta": 1.777,
+        "avg_parent_pct": 23.3
+      },
+      {
+        "window": "1970-1995",
+        "beta": 0.695,
+        "avg_parent_pct": 38.7
+      },
+      {
+        "window": "1980-2005",
+        "beta": 0.191,
+        "avg_parent_pct": 58.7
+      },
+      {
+        "window": "1990-2015",
+        "beta": 0.023,
+        "avg_parent_pct": 78.9
+      }
+    ],
+    "Taiwan": [
+      {
+        "window": "1930-1955",
+        "beta": 5.113,
+        "avg_parent_pct": 1.2
+      },
+      {
+        "window": "1940-1965",
+        "beta": 2.602,
+        "avg_parent_pct": 3.8
+      },
+      {
+        "window": "1950-1975",
+        "beta": 2.775,
+        "avg_parent_pct": 8.9
+      },
+      {
+        "window": "1960-1985",
+        "beta": 3.479,
+        "avg_parent_pct": 16.1
+      },
+      {
+        "window": "1970-1995",
+        "beta": 1.295,
+        "avg_parent_pct": 27.7
+      },
+      {
+        "window": "1980-2005",
+        "beta": 0.188,
+        "avg_parent_pct": 46.7
+      },
+      {
+        "window": "1990-2015",
+        "beta": 0.039,
+        "avg_parent_pct": 70.2
+      }
+    ],
+    "Philippines": [
+      {
+        "window": "1920-1945",
+        "beta": 4.438,
+        "avg_parent_pct": 1.5
+      },
+      {
+        "window": "1930-1955",
+        "beta": 3.205,
+        "avg_parent_pct": 3.3
+      },
+      {
+        "window": "1940-1965",
+        "beta": 1.894,
+        "avg_parent_pct": 6.3
+      },
+      {
+        "window": "1950-1975",
+        "beta": 1.47,
+        "avg_parent_pct": 12.0
+      },
+      {
+        "window": "1960-1985",
+        "beta": 1.713,
+        "avg_parent_pct": 18.6
+      },
+      {
+        "window": "1970-1995",
+        "beta": 1.148,
+        "avg_parent_pct": 27.1
+      },
+      {
+        "window": "1980-2005",
+        "beta": 0.637,
+        "avg_parent_pct": 37.1
+      },
+      {
+        "window": "1990-2015",
+        "beta": 0.432,
+        "avg_parent_pct": 48.8
+      }
+    ],
+    "Bangladesh": [
+      {
+        "window": "1900-1925",
+        "beta": 2.126,
+        "avg_parent_pct": 0.7
+      },
+      {
+        "window": "1910-1935",
+        "beta": 2.49,
+        "avg_parent_pct": 1.1
+      },
+      {
+        "window": "1920-1945",
+        "beta": 2.18,
+        "avg_parent_pct": 1.6
+      },
+      {
+        "window": "1930-1955",
+        "beta": 2.146,
+        "avg_parent_pct": 2.4
+      },
+      {
+        "window": "1940-1965",
+        "beta": 2.664,
+        "avg_parent_pct": 3.5
+      },
+      {
+        "window": "1950-1975",
+        "beta": 2.163,
+        "avg_parent_pct": 5.0
+      },
+      {
+        "window": "1960-1985",
+        "beta": 1.279,
+        "avg_parent_pct": 7.2
+      },
+      {
+        "window": "1970-1995",
+        "beta": 1.339,
+        "avg_parent_pct": 10.2
+      },
+      {
+        "window": "1980-2005",
+        "beta": 2.232,
+        "avg_parent_pct": 13.7
+      },
+      {
+        "window": "1990-2015",
+        "beta": 2.969,
+        "avg_parent_pct": 17.6
+      }
+    ],
+    "India": [
+      {
+        "window": "1900-1925",
+        "beta": 2.38,
+        "avg_parent_pct": 0.8
+      },
+      {
+        "window": "1910-1935",
+        "beta": 2.235,
+        "avg_parent_pct": 1.3
+      },
+      {
+        "window": "1920-1945",
+        "beta": 2.127,
+        "avg_parent_pct": 2.1
+      },
+      {
+        "window": "1930-1955",
+        "beta": 2.311,
+        "avg_parent_pct": 3.3
+      },
+      {
+        "window": "1940-1965",
+        "beta": 2.641,
+        "avg_parent_pct": 4.8
+      },
+      {
+        "window": "1950-1975",
+        "beta": 2.669,
+        "avg_parent_pct": 6.9
+      },
+      {
+        "window": "1960-1985",
+        "beta": 1.959,
+        "avg_parent_pct": 9.9
+      },
+      {
+        "window": "1970-1995",
+        "beta": 1.353,
+        "avg_parent_pct": 14.5
+      },
+      {
+        "window": "1980-2005",
+        "beta": 1.284,
+        "avg_parent_pct": 20.8
+      },
+      {
+        "window": "1990-2015",
+        "beta": 1.609,
+        "avg_parent_pct": 27.8
+      }
+    ]
+  },
+  "verification": {
+    "USA": [
+      {
+        "claim_baseline": 13,
+        "claim_beta": 1.9,
+        "actual_beta": 1.911,
+        "actual_baseline": 13.4,
+        "window": "1900-1925",
+        "diff": 0.011,
+        "status": "OK"
+      },
+      {
+        "claim_baseline": 92,
+        "claim_beta": 0.08,
+        "actual_beta": 0.078,
+        "actual_baseline": 91.7,
+        "window": "1980-2005",
+        "diff": 0.002,
+        "status": "OK"
+      }
+    ],
+    "Korea": [
+      {
+        "claim_baseline": 1,
+        "claim_beta": 6.5,
+        "actual_beta": 6.474,
+        "actual_baseline": 1.1,
+        "window": "1920-1945",
+        "diff": 0.026,
+        "status": "OK"
+      },
+      {
+        "claim_baseline": 3,
+        "claim_beta": 3.6,
+        "actual_beta": 3.576,
+        "actual_baseline": 2.9,
+        "window": "1930-1955",
+        "diff": 0.024,
+        "status": "OK"
+      },
+      {
+        "claim_baseline": 23,
+        "claim_beta": 1.8,
+        "actual_beta": 1.777,
+        "actual_baseline": 23.3,
+        "window": "1960-1985",
+        "diff": 0.023,
+        "status": "OK"
+      },
+      {
+        "claim_baseline": 59,
+        "claim_beta": 0.2,
+        "actual_beta": 0.191,
+        "actual_baseline": 58.7,
+        "window": "1980-2005",
+        "diff": 0.009,
+        "status": "OK"
+      }
+    ],
+    "Taiwan": [
+      {
+        "claim_baseline": 1.2,
+        "claim_beta": 5.1,
+        "actual_beta": 5.113,
+        "actual_baseline": 1.2,
+        "window": "1930-1955",
+        "diff": 0.013,
+        "status": "OK"
+      }
+    ],
+    "Philippines": [
+      {
+        "claim_baseline": 1.5,
+        "claim_beta": 4.4,
+        "actual_beta": 4.438,
+        "actual_baseline": 1.5,
+        "window": "1920-1945",
+        "diff": 0.038,
+        "status": "OK"
+      },
+      {
+        "claim_baseline": 49,
+        "claim_beta": 0.4,
+        "actual_beta": 0.432,
+        "actual_baseline": 48.8,
+        "window": "1990-2015",
+        "diff": 0.032,
+        "status": "OK"
+      }
+    ],
+    "Bangladesh": [
+      {
+        "claim_baseline": "1-18",
+        "claim_beta": "~2",
+        "actual_avg_beta": 2.159,
+        "actual_range": [
+          1.279,
+          2.969
+        ]
+      }
+    ],
+    "India": [
+      {
+        "claim_baseline": 28,
+        "claim_beta": "~2",
+        "actual_beta": 1.609,
+        "actual_baseline": 27.8,
+        "window": "1990-2015"
+      }
+    ]
+  },
+  "script": "scripts/cases/figure2_betas.py",
+  "produced": "2026-04-28"
+}

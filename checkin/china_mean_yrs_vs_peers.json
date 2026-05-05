@@ -1,0 +1,509 @@
+{
+  "method": "China LE and U5MR vs education-matched peers. Matching on mean years of schooling (WCDE v3 proportions, age 20-24, both sexes, \u00b10.5 years). LE and U5MR from World Bank WDI (annual). Structural break test at 1981 (barefoot doctor removal).",
+  "band": 0.5,
+  "key_data_points": {
+    "china_mys_1965": 5.89,
+    "china_mys_1980": 8.01,
+    "china_mys_2000": 9.62,
+    "china_le_1965": 53.001,
+    "peer_le_1965": 59.6,
+    "le_gap_1965": -6.6,
+    "le_gap_1980": -2.7,
+    "le_gap_1991": 0.1,
+    "le_gap_1992": 0.3,
+    "le_gap_2000": 2.7,
+    "le_gap_2015": 4.7,
+    "u5_gap_1965": 14.2,
+    "u5_gap_1980": 11.9,
+    "u5_gap_2000": -0.5,
+    "u5_gap_2015": -15.8,
+    "le_crossover_year": 1991
+  },
+  "structural_break_1981": {
+    "le": {
+      "pre_slope": 0.3106,
+      "post_slope": 0.3037,
+      "beta_break_slope": -0.0069,
+      "se_break_slope": 0.0302,
+      "p_break_slope": 0.8206,
+      "beta_break_level": -1.8073,
+      "p_break_level": 0.0,
+      "r2": 0.9707,
+      "n": 36,
+      "chow_F": 18.038,
+      "chow_p": 0.0
+    },
+    "u5mr": {
+      "pre_slope": -1.3311,
+      "post_slope": -0.6093,
+      "beta_break_slope": 0.7218,
+      "se_break_slope": 0.3084,
+      "p_break_slope": 0.0257,
+      "beta_break_level": 6.5998,
+      "p_break_level": 0.0435,
+      "r2": 0.7277,
+      "n": 36,
+      "chow_F": 4.008,
+      "chow_p": 0.028
+    }
+  },
+  "peer_le_gains": {
+    "Philippines": 3.0,
+    "Peru": 8.7,
+    "Panama": 7.0,
+    "Viet Nam": 11.2
+  },
+  "n_provision_countries": 108,
+  "annual_data": [
+    {
+      "year": 1960,
+      "mean_yrs": 5.07,
+      "china_le": 33.4,
+      "peer_le": 57.6,
+      "china_u5": 309.0,
+      "peer_u5": 119.7
+    },
+    {
+      "year": 1961,
+      "mean_yrs": 5.24,
+      "china_le": 40.2,
+      "peer_le": 58.0,
+      "china_u5": 262.0,
+      "peer_u5": 116.2
+    },
+    {
+      "year": 1962,
+      "mean_yrs": 5.4,
+      "china_le": 51.0,
+      "peer_le": 58.5,
+      "china_u5": 168.0,
+      "peer_u5": 112.0
+    },
+    {
+      "year": 1963,
+      "mean_yrs": 5.56,
+      "china_le": 51.7,
+      "peer_le": 58.8,
+      "china_u5": 148.0,
+      "peer_u5": 108.5
+    },
+    {
+      "year": 1964,
+      "mean_yrs": 5.72,
+      "china_le": 52.3,
+      "peer_le": 59.2,
+      "china_u5": 131.0,
+      "peer_u5": 104.8
+    },
+    {
+      "year": 1965,
+      "mean_yrs": 5.89,
+      "china_le": 53.0,
+      "peer_le": 59.6,
+      "china_u5": 115.0,
+      "peer_u5": 100.8
+    },
+    {
+      "year": 1966,
+      "mean_yrs": 5.98,
+      "china_le": 53.7,
+      "peer_le": 59.9,
+      "china_u5": 121.0,
+      "peer_u5": 98.3
+    },
+    {
+      "year": 1967,
+      "mean_yrs": 6.07,
+      "china_le": 54.4,
+      "peer_le": 60.2,
+      "china_u5": 130.0,
+      "peer_u5": 95.1
+    },
+    {
+      "year": 1968,
+      "mean_yrs": 6.17,
+      "china_le": 55.2,
+      "peer_le": 60.6,
+      "china_u5": 131.0,
+      "peer_u5": 92.2
+    },
+    {
+      "year": 1969,
+      "mean_yrs": 6.26,
+      "china_le": 56.0,
+      "peer_le": 60.9,
+      "china_u5": 119.0,
+      "peer_u5": 89.3
+    },
+    {
+      "year": 1970,
+      "mean_yrs": 6.35,
+      "china_le": 56.8,
+      "peer_le": 61.2,
+      "china_u5": 113.0,
+      "peer_u5": 86.7
+    },
+    {
+      "year": 1971,
+      "mean_yrs": 6.49,
+      "china_le": 57.7,
+      "peer_le": 61.6,
+      "china_u5": 107.0,
+      "peer_u5": 83.2
+    },
+    {
+      "year": 1972,
+      "mean_yrs": 6.62,
+      "china_le": 58.6,
+      "peer_le": 61.8,
+      "china_u5": 101.0,
+      "peer_u5": 80.8
+    },
+    {
+      "year": 1973,
+      "mean_yrs": 6.75,
+      "china_le": 59.5,
+      "peer_le": 62.3,
+      "china_u5": 95.9,
+      "peer_u5": 77.0
+    },
+    {
+      "year": 1974,
+      "mean_yrs": 6.89,
+      "china_le": 60.2,
+      "peer_le": 62.8,
+      "china_u5": 90.4,
+      "peer_u5": 72.9
+    },
+    {
+      "year": 1975,
+      "mean_yrs": 7.02,
+      "china_le": 61.0,
+      "peer_le": 63.2,
+      "china_u5": 84.9,
+      "peer_u5": 70.7
+    },
+    {
+      "year": 1976,
+      "mean_yrs": 7.22,
+      "china_le": 61.2,
+      "peer_le": 63.7,
+      "china_u5": 79.6,
+      "peer_u5": 67.7
+    },
+    {
+      "year": 1977,
+      "mean_yrs": 7.42,
+      "china_le": 62.5,
+      "peer_le": 64.3,
+      "china_u5": 74.5,
+      "peer_u5": 64.4
+    },
+    {
+      "year": 1978,
+      "mean_yrs": 7.62,
+      "china_le": 63.1,
+      "peer_le": 65.1,
+      "china_u5": 69.9,
+      "peer_u5": 59.6
+    },
+    {
+      "year": 1979,
+      "mean_yrs": 7.81,
+      "china_le": 63.7,
+      "peer_le": 66.4,
+      "china_u5": 66.0,
+      "peer_u5": 53.8
+    },
+    {
+      "year": 1980,
+      "mean_yrs": 8.01,
+      "china_le": 64.2,
+      "peer_le": 66.9,
+      "china_u5": 62.5,
+      "peer_u5": 50.6
+    },
+    {
+      "year": 1981,
+      "mean_yrs": 8.14,
+      "china_le": 64.8,
+      "peer_le": 67.3,
+      "china_u5": 59.7,
+      "peer_u5": 48.0
+    },
+    {
+      "year": 1982,
+      "mean_yrs": 8.27,
+      "china_le": 65.2,
+      "peer_le": 67.6,
+      "china_u5": 57.5,
+      "peer_u5": 46.0
+    },
+    {
+      "year": 1983,
+      "mean_yrs": 8.4,
+      "china_le": 65.7,
+      "peer_le": 68.0,
+      "china_u5": 55.8,
+      "peer_u5": 43.5
+    },
+    {
+      "year": 1984,
+      "mean_yrs": 8.53,
+      "china_le": 66.1,
+      "peer_le": 68.3,
+      "china_u5": 54.7,
+      "peer_u5": 42.7
+    },
+    {
+      "year": 1985,
+      "mean_yrs": 8.65,
+      "china_le": 66.5,
+      "peer_le": 68.5,
+      "china_u5": 54.0,
+      "peer_u5": 41.3
+    },
+    {
+      "year": 1986,
+      "mean_yrs": 8.67,
+      "china_le": 66.9,
+      "peer_le": 68.5,
+      "china_u5": 53.8,
+      "peer_u5": 41.2
+    },
+    {
+      "year": 1987,
+      "mean_yrs": 8.69,
+      "china_le": 67.3,
+      "peer_le": 68.5,
+      "china_u5": 53.8,
+      "peer_u5": 41.1
+    },
+    {
+      "year": 1988,
+      "mean_yrs": 8.7,
+      "china_le": 67.6,
+      "peer_le": 68.5,
+      "china_u5": 53.9,
+      "peer_u5": 41.2
+    },
+    {
+      "year": 1989,
+      "mean_yrs": 8.72,
+      "china_le": 67.9,
+      "peer_le": 68.5,
+      "china_u5": 53.9,
+      "peer_u5": 41.1
+    },
+    {
+      "year": 1990,
+      "mean_yrs": 8.73,
+      "china_le": 68.2,
+      "peer_le": 68.5,
+      "china_u5": 53.7,
+      "peer_u5": 41.4
+    },
+    {
+      "year": 1991,
+      "mean_yrs": 8.81,
+      "china_le": 68.6,
+      "peer_le": 68.5,
+      "china_u5": 53.2,
+      "peer_u5": 41.2
+    },
+    {
+      "year": 1992,
+      "mean_yrs": 8.88,
+      "china_le": 69.1,
+      "peer_le": 68.7,
+      "china_u5": 52.2,
+      "peer_u5": 40.4
+    },
+    {
+      "year": 1993,
+      "mean_yrs": 8.96,
+      "china_le": 69.5,
+      "peer_le": 68.7,
+      "china_u5": 50.8,
+      "peer_u5": 40.8
+    },
+    {
+      "year": 1994,
+      "mean_yrs": 9.04,
+      "china_le": 69.8,
+      "peer_le": 68.7,
+      "china_u5": 49.2,
+      "peer_u5": 40.7
+    },
+    {
+      "year": 1995,
+      "mean_yrs": 9.11,
+      "china_le": 70.4,
+      "peer_le": 68.9,
+      "china_u5": 47.4,
+      "peer_u5": 40.1
+    },
+    {
+      "year": 1996,
+      "mean_yrs": 9.21,
+      "china_le": 70.8,
+      "peer_le": 69.0,
+      "china_u5": 45.5,
+      "peer_u5": 39.6
+    },
+    {
+      "year": 1997,
+      "mean_yrs": 9.31,
+      "china_le": 71.2,
+      "peer_le": 69.2,
+      "china_u5": 43.5,
+      "peer_u5": 39.0
+    },
+    {
+      "year": 1998,
+      "mean_yrs": 9.42,
+      "china_le": 71.6,
+      "peer_le": 69.3,
+      "china_u5": 41.5,
+      "peer_u5": 38.6
+    },
+    {
+      "year": 1999,
+      "mean_yrs": 9.52,
+      "china_le": 72.0,
+      "peer_le": 69.4,
+      "china_u5": 39.2,
+      "peer_u5": 37.8
+    },
+    {
+      "year": 2000,
+      "mean_yrs": 9.62,
+      "china_le": 72.3,
+      "peer_le": 69.6,
+      "china_u5": 36.8,
+      "peer_u5": 37.3
+    },
+    {
+      "year": 2001,
+      "mean_yrs": 9.74,
+      "china_le": 72.7,
+      "peer_le": 69.7,
+      "china_u5": 34.2,
+      "peer_u5": 36.5
+    },
+    {
+      "year": 2002,
+      "mean_yrs": 9.86,
+      "china_le": 73.0,
+      "peer_le": 70.0,
+      "china_u5": 31.5,
+      "peer_u5": 36.0
+    },
+    {
+      "year": 2003,
+      "mean_yrs": 9.98,
+      "china_le": 73.4,
+      "peer_le": 70.3,
+      "china_u5": 28.9,
+      "peer_u5": 34.7
+    },
+    {
+      "year": 2004,
+      "mean_yrs": 10.1,
+      "china_le": 73.7,
+      "peer_le": 70.7,
+      "china_u5": 26.3,
+      "peer_u5": 33.5
+    },
+    {
+      "year": 2005,
+      "mean_yrs": 10.22,
+      "china_le": 74.1,
+      "peer_le": 70.9,
+      "china_u5": 24.0,
+      "peer_u5": 32.9
+    },
+    {
+      "year": 2006,
+      "mean_yrs": 10.34,
+      "china_le": 74.4,
+      "peer_le": 71.1,
+      "china_u5": 21.9,
+      "peer_u5": 31.7
+    },
+    {
+      "year": 2007,
+      "mean_yrs": 10.45,
+      "china_le": 74.8,
+      "peer_le": 71.5,
+      "china_u5": 20.1,
+      "peer_u5": 30.2
+    },
+    {
+      "year": 2008,
+      "mean_yrs": 10.56,
+      "china_le": 74.8,
+      "peer_le": 71.7,
+      "china_u5": 18.5,
+      "peer_u5": 30.0
+    },
+    {
+      "year": 2009,
+      "mean_yrs": 10.68,
+      "china_le": 75.3,
+      "peer_le": 71.9,
+      "china_u5": 17.0,
+      "peer_u5": 28.8
+    },
+    {
+      "year": 2010,
+      "mean_yrs": 10.79,
+      "china_le": 75.7,
+      "peer_le": 72.0,
+      "china_u5": 15.8,
+      "peer_u5": 28.3
+    },
+    {
+      "year": 2011,
+      "mean_yrs": 10.94,
+      "china_le": 75.9,
+      "peer_le": 72.3,
+      "china_u5": 14.6,
+      "peer_u5": 26.7
+    },
+    {
+      "year": 2012,
+      "mean_yrs": 11.09,
+      "china_le": 76.2,
+      "peer_le": 72.5,
+      "china_u5": 13.5,
+      "peer_u5": 25.3
+    },
+    {
+      "year": 2013,
+      "mean_yrs": 11.23,
+      "china_le": 76.5,
+      "peer_le": 72.6,
+      "china_u5": 12.5,
+      "peer_u5": 25.7
+    },
+    {
+      "year": 2014,
+      "mean_yrs": 11.38,
+      "china_le": 76.7,
+      "peer_le": 72.4,
+      "china_u5": 11.6,
+      "peer_u5": 26.2
+    },
+    {
+      "year": 2015,
+      "mean_yrs": 11.53,
+      "china_le": 77.0,
+      "peer_le": 72.3,
+      "china_u5": 10.7,
+      "peer_u5": 26.5
+    }
+  ],
+  "script": "scripts/cases/china_mean_years.py",
+  "produced": "2026-04-28"
+}
