@@ -55,7 +55,7 @@ PT_AGENCY = "the-generational-transmission-mechanism"
 KIN = "from-action-to-talk-how-education-reaches-beyond-the-household"
 DEMOG = "demographic-structure-and-the-fertility-transition"
 HOW_EDU = "education-as-payload"
-CAUSAL = "causal-identification-the-bad-control-problem-and-natural-experiments"
+CAUSAL = "identification"
 DATA_SEC = "data"
 DESCRIPTIVE = "descriptive-statistics"
 COMPLETION = "completion-as-the-operative-variable"
@@ -82,7 +82,7 @@ POLICY = "the-decision"
 CONCL = "the-decision"
 REFS = "references"
 THE_EVIDENCE = "the-panel"
-APPENDIX_ROBUST = "robustness"
+APPENDIX_ROBUST = "appendix-other-robustness"
 APPENDIX_FRAME = "difficulties-on-the-theory"
 APPENDIX_TWFE = "appendix-twfe"
 APPENDIX_PERMUTATION = "appendix-permutation"
@@ -2146,8 +2146,8 @@ reg("Portugal-1875-primary",      0.1,   "wcde",
 # §The Colonial Test main text + Tables A6/A7 + §appendix-colonial-iv +
 # §causal-identification (cross-section).
 INST_CHAL = "the-institutional-challenge"
-APPX_COL_IV = "robustness"
-CAUSAL_BAD = "causal-identification-the-bad-control-problem-and-natural-experiments"
+APPX_COL_IV = "appendix-other-robustness"
+CAUSAL_BAD = "identification"
 reg("IV-edu-F",                   10.71, "checkin",
     ("iv_2sls_colonial_icrg.json", "gdp_edu_first_stage_F"),
     [(COLONIAL, None), (INST_CHAL, None), (APPX_COL_IV, None)],
@@ -2757,7 +2757,7 @@ reg("Sum-le-shift",          8.6,   "derived",
     "Life expectancy rise (2005–2015 70.1 − 1975–1989 61.4 ≈ 8.6y)",
     [(DESCRIPTIVE, None)], tol=0.2)
 
-# §robustness: Table 1 subgroups — r² and countries-counts not yet registered
+# §appendix-other-robustness: Table 1 subgroups — r² and countries-counts not yet registered
 reg("T1-SG-MENA-n",          61,    "checkin",
     ("table_1_subgroups.json", "numbers.region_MENA_n"),
     [(POLICY_OVER_PERFORMERS, None)], tol=0)
@@ -2874,7 +2874,7 @@ reg("BalPanel-headline-ref", 1.376, "checkin",
     ("education_vs_gdp_by_cutoff.json", "numbers.cutoff_30_edu_beta"),
     [(APPENDIX_ROBUST, None)], tol=0.02)
 
-# §robustness: Lag-sensitivity table cells (lag_sensitivity.json)
+# §appendix-other-robustness: Lag-sensitivity table cells (lag_sensitivity.json)
 # 15 / 20 / 25 / 30 yr rows, ceiling≤90% — edu_r2 for LE, TFR, U5, CE.
 # Paper L2720–2723 column order: LE, TFR, U5, CE (interleaved with raw_r2).
 reg("LagTab-15-LE-edu-r2",   0.455, "checkin",
@@ -2917,7 +2917,7 @@ reg("LagTab-30-CE-edu-r2",   0.461, "checkin",
     ("lag_sensitivity.json", "results.30.ChildEdu_ceil90.edu_r2"),
     [(APPENDIX_ROBUST, None)], tol=0.005)
 
-# §robustness: Period-length panel cells (period_length.json)
+# §appendix-other-robustness: Period-length panel cells (period_length.json)
 reg("PL-10-active-se",       0.078, "checkin",
     ("period_length.json", "results.ten_year.active_expansion.parent_se"),
     [(APPENDIX_ROBUST, None)], tol=0.005)
@@ -2928,7 +2928,7 @@ reg("PL-annual-active-countries", 135, "checkin",
     ("period_length.json", "results.annual.active_expansion.countries"),
     [(APPENDIX_ROBUST, None)], tol=0)
 
-# §robustness: PPML/Log-outcome n-countries
+# §appendix-other-robustness: PPML/Log-outcome n-countries
 reg("PPML-TFR-countries",    172, "checkin",
     ("ppml_outcomes.json", "numbers.tfr_countries"),
     [(APPENDIX_ROBUST, None)], tol=0)
@@ -2945,7 +2945,7 @@ reg("Log-U5-countries",      168, "checkin",
     ("log_outcomes.json", "results.u5mr.log.countries"),
     [(APPENDIX_ROBUST, None)], tol=0)
 
-# §robustness: Event-study post-treatment magnitudes (callaway_santanna.json).
+# §appendix-other-robustness: Event-study post-treatment magnitudes (callaway_santanna.json).
 # Also cited in §education-predicts-development-outcomes-25-years-forward where
 # fig:cs-event is shown (re-captioned as the compounding-generations signature).
 reg("CS-ATT-10yr",           6.6,  "checkin",
@@ -2955,7 +2955,7 @@ reg("CS-ATT-25yr",           14.9, "checkin",
     ("callaway_santanna.json", "child_education.event_study.5.att"),
     [(APPENDIX_ROBUST, None), (APPENDIX_TWFE, None), (EDU_PRED, None)], tol=0.5)
 
-# §robustness: Goodman-Bacon / 2WFE child-edu β from main spec
+# §appendix-other-robustness: Goodman-Bacon / 2WFE child-edu β from main spec
 reg("GB-child-edu-ppy-twfe",      4.8,  "derived",
     "4.8-point child-edu gain in appendix-twfe narrative",
     [(APPENDIX_TWFE, None)], tol=0.1)
@@ -2963,7 +2963,7 @@ reg("GB-child-edu-ppy",      4.8,  "derived",
     "Parent-edu β in GB context: 10-pt rise → +4.8 pp in child edu one gen later",
     [(APPENDIX_ROBUST, None)], tol=0.5)
 
-# §robustness: N-counts in prose summaries
+# §appendix-other-robustness: N-counts in prose summaries
 reg("Narr-LE-n-obs",         822, "checkin",
     ("lag_sensitivity.json", "results.25.LE_ceil90.n"),
     [(APPENDIX_ROBUST, None)], tol=0)
@@ -3335,12 +3335,12 @@ reg("G-MM-Kazakhstan-east-km",  2422, "const",
 reg("G-MM-east-low-rounded",   2.6, "const",
     "Eastward U5MR residual lower bound (Georgia +2.58, rounded)",
     [(GOSK, None), (DATA_SEC, None),
-     ("causal-identification-the-bad-control-problem-and-natural-experiments", None)],
+     ("identification", None)],
     tol=0.05)
 reg("G-MM-east-high-rounded",  4.0, "const",
     "Eastward U5MR residual upper bound (Turkmenistan +4.00, rounded)",
     [(GOSK, None), (DATA_SEC, None),
-     ("causal-identification-the-bad-control-problem-and-natural-experiments", None)],
+     ("identification", None)],
     tol=0.05)
 # Year of Moldova annexation cited in moscow-meridian
 reg("G-MM-Moldova-annex-yr",  1940, "const",

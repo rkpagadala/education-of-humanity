@@ -1,6 +1,6 @@
 # Verification Report
 
-Generated: 2026-05-04 20:26
+Generated: 2026-05-06 10:14
 
 ## Result: 1092/1092 PASS
 
@@ -29,11 +29,11 @@ Generated: 2026-05-04 20:26
 | Section | Claims | Pass | Fail |
 |---------|--------|------|------|
 | abstract | 5 | 5 | 0 |
+| appendix-other-robustness | 316 | 316 | 0 |
 | appendix-permutation | 12 | 12 | 0 |
 | appendix-twfe | 51 | 51 | 0 |
 | barro-lee-partial | 21 | 21 | 0 |
 | cambodia-the-pt-shadow | 8 | 8 | 0 |
-| causal-identification-the-bad-control-problem-and-natural-experiments | 7 | 7 | 0 |
 | china | 19 | 19 | 0 |
 | cohort-shadow | 7 | 7 | 0 |
 | completion-as-the-operative-variable | 21 | 21 | 0 |
@@ -50,6 +50,7 @@ Generated: 2026-05-04 20:26
 | goskomstat-anomaly | 18 | 18 | 0 |
 | goskomstat-anomaly-pattern | 5 | 5 | 0 |
 | hanushek-reconciliation | 36 | 36 | 0 |
+| identification | 7 | 7 | 0 |
 | invisible-from-inside | 1 | 1 | 0 |
 | kerala | 1 | 1 | 0 |
 | korea-and-philippines | 11 | 11 | 0 |
@@ -58,7 +59,6 @@ Generated: 2026-05-04 20:26
 | moscow-meridian | 56 | 56 | 0 |
 | phenotype-test-ussr | 9 | 9 | 0 |
 | policy-over-performers | 80 | 80 | 0 |
-| robustness | 316 | 316 | 0 |
 | specialisation-requires-loaded-labour | 1 | 1 | 0 |
 | the-colonial-test | 14 | 14 | 0 |
 | the-convergence | 4 | 4 | 0 |
