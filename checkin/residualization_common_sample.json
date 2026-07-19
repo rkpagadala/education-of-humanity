@@ -1,0 +1,74 @@
+{
+  "method": "Common-sample robustness for the Residualised-GDP table. Inner-join on (country, t) over rows where LE (T+28), TFR (T+5), child education (T+28), and U5MR (T+12) are ALL observed, given edu(T) and log GDP(T). Outcome-specific lags: TFR uses LAG_TFR=5 (biological parent-of-newborn timing); U5MR uses LAG_CHILDREARING=12 (childrearing window); LE and child education use LAG_GENERATION=28 (time-to-agency / edu\u2192edu transmission). Entry-cohort filter (entry=10, ceiling=90) matches headline. Country-FE Frisch-Waugh-Lovell residualisation, country-clustered standard errors for the residual-GDP p-value.",
+  "outcome_lags": {
+    "le_tp28": 28,
+    "tfr_tp5": 5,
+    "u5mr_tp12": 12,
+    "log_u5mr_tp12": 12,
+    "ced_tp28": 28
+  },
+  "common_sample": {
+    "n": 645,
+    "n_countries": 123,
+    "n_pre_fe_filter": 652,
+    "n_countries_pre_fe_filter": 130
+  },
+  "headline_sample_sizes": {
+    "life_expectancy": {
+      "n": 822,
+      "n_countries": 152
+    },
+    "tfr": {
+      "n": 822,
+      "n_countries": 152
+    },
+    "child_education": {
+      "n": 856,
+      "n_countries": 157
+    },
+    "log_u5mr": {
+      "n": 787,
+      "n_countries": 147
+    }
+  },
+  "results": {
+    "life_expectancy": {
+      "edu_r2": 0.5063508176004352,
+      "raw_gdp_r2": 0.19619099000980825,
+      "resid_gdp_r2": 0.0009141811907805017,
+      "edu_gdp_r2": 0.4284822134709044,
+      "p_resid": 0.7212531364891632,
+      "n": 645,
+      "n_countries": 123
+    },
+    "tfr": {
+      "edu_r2": 0.6758964370066438,
+      "raw_gdp_r2": 0.2906654118928795,
+      "resid_gdp_r2": 1.6806554401836507e-06,
+      "edu_gdp_r2": 0.4284822134709044,
+      "p_resid": 0.9870356792386608,
+      "n": 645,
+      "n_countries": 123
+    },
+    "child_education": {
+      "edu_r2": 0.5668427172593462,
+      "raw_gdp_r2": 0.2971215592874094,
+      "resid_gdp_r2": 0.004778318618770747,
+      "edu_gdp_r2": 0.4284822134709044,
+      "p_resid": 0.39383787206990006,
+      "n": 645,
+      "n_countries": 123
+    },
+    "log_u5mr": {
+      "edu_r2": 0.7299423875922949,
+      "raw_gdp_r2": 0.3871987293639459,
+      "resid_gdp_r2": 0.00694398145010695,
+      "edu_gdp_r2": 0.4284822134709044,
+      "p_resid": 0.334762408907165,
+      "n": 645,
+      "n_countries": 123
+    }
+  },
+  "conclusion_holds": true,
+  "script": "scripts/residualization/residualization_common_sample.py"
+}

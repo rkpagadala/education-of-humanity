@@ -1,0 +1,1224 @@
+{
+  "method": "min lsec(20-24) at T across non-oil joint crossers, where T = first year both TFR<3.65 and LE>69.8 hold and neither threshold was already met at first observation",
+  "lag_years": 0,
+  "tfr_threshold": 3.65,
+  "le_threshold": 69.8,
+  "n_crossers_used": 73,
+  "n_oil_excluded": 6,
+  "n_left_censored_T": 46,
+  "n_left_censored_lag": 9,
+  "n_never_crossed": 59,
+  "floor_pct": 36.2,
+  "binding_country": "saint vincent and the grenadines",
+  "binding_T_joint": 1986,
+  "p10_pct": 41.4,
+  "median_pct": 67.7,
+  "p90_pct": 95.7,
+  "max_pct": 111.0,
+  "sufficiency_floor_pct": 35.0,
+  "sufficiency_lag_median_yr": 22.0,
+  "sufficiency_lag_p90_yr": 56.4,
+  "sufficiency_lag_max_yr": 72.0,
+  "sustained_rate_floor_pp_per_yr": 1.25,
+  "channel_disruption_notes": {
+    "sri lanka": "war \u2014 civil war 1983\u20132009 overlaps the back half of the 1960\u21921993 window",
+    "guyana": "hollow (emigration) \u2014 sustained net emigration of educated population since the 1966 Burnham era; lsec attainment rose to 93% but home-niche stock never accumulated (population 760k in 1980 \u2192 800k in 2022 despite high TFR; ~70%+ of college-educated emigrated)",
+    "mongolia": "hollow (content + collapse) \u2014 Soviet-era schooling content was politically constrained (the \u00a710 mechanism), then the 1990s post-Soviet macro collapse disrupted the demographic transition while lsec stayed high",
+    "tonga": "hollow (emigration) \u2014 Pacific small-island emigration to NZ/Australia/US; same mechanism as Guyana, diaspora exceeds home population",
+    "palestine": "occupation \u2014 channel-disruption analogue of war; territorial governance fragmented across the lag window",
+    "trinidad and tobago": "hollow (emigration) \u2014 Caribbean brain drain; population 1.0M in 1980 \u2192 1.4M in 2022 despite high TFR; substantial diaspora in UK/US/Canada",
+    "egypt": "hollow (content, rural lsec) \u2014 post-2008 rural TFR rose 18.8% (rural Upper Egypt 3.6\u21924.1) while urban rose 7.4%, and by 2013 TFRs converged across education levels (UN/UNFPA fertility-trends report); the lsec credential exists but cohort-driven transmission isn't running, especially in rural areas; TIMSS 2015 ranks Egypt 49/50 reading, 38/39 science"
+  },
+  "rate_subset_n": 30,
+  "rate_subset_lag_median_yr": 24.4,
+  "rate_subset_lag_p90_yr": 53.1,
+  "rate_subset_lag_max_yr_all": 69.9,
+  "rate_subset_lag_max_yr_no_disruption": 33.0,
+  "rate_subset_lag_max_yr_no_disruption_binding": "indonesia",
+  "all_crossers": [
+    {
+      "country": "saint vincent and the grenadines",
+      "T_joint": 1986,
+      "tfr_year": 1983,
+      "le_year": 1986,
+      "lsec_at_T": 36.2,
+      "year_reached_floor": 1985.0,
+      "floor_left_censored": false,
+      "lag_from_floor": 1.0,
+      "lsec_rate_pp_per_yr": 1.02,
+      "in_rate_subset": false
+    },
+    {
+      "country": "syria",
+      "T_joint": 2005,
+      "tfr_year": 2005,
+      "le_year": 1990,
+      "lsec_at_T": 37.0,
+      "year_reached_floor": 1993.3,
+      "floor_left_censored": false,
+      "lag_from_floor": 11.7,
+      "lsec_rate_pp_per_yr": 0.86,
+      "in_rate_subset": false
+    },
+    {
+      "country": "honduras",
+      "T_joint": 2009,
+      "tfr_year": 2005,
+      "le_year": 2009,
+      "lsec_at_T": 37.7,
+      "year_reached_floor": 2007.0,
+      "floor_left_censored": false,
+      "lag_from_floor": 2.0,
+      "lsec_rate_pp_per_yr": 0.77,
+      "in_rate_subset": false
+    },
+    {
+      "country": "nicaragua",
+      "T_joint": 2005,
+      "tfr_year": 1996,
+      "le_year": 2005,
+      "lsec_at_T": 38.9,
+      "year_reached_floor": 1998.2,
+      "floor_left_censored": false,
+      "lag_from_floor": 6.8,
+      "lsec_rate_pp_per_yr": 0.82,
+      "in_rate_subset": false
+    },
+    {
+      "country": "morocco",
+      "T_joint": 2008,
+      "tfr_year": 1993,
+      "le_year": 2008,
+      "lsec_at_T": 39.9,
+      "year_reached_floor": 2003.0,
+      "floor_left_censored": false,
+      "lag_from_floor": 5.0,
+      "lsec_rate_pp_per_yr": 1.12,
+      "in_rate_subset": false
+    },
+    {
+      "country": "cape verde",
+      "T_joint": 2003,
+      "tfr_year": 2000,
+      "le_year": 2003,
+      "lsec_at_T": 40.4,
+      "year_reached_floor": 2001.3,
+      "floor_left_censored": false,
+      "lag_from_floor": 1.7,
+      "lsec_rate_pp_per_yr": 1.15,
+      "in_rate_subset": false
+    },
+    {
+      "country": "cambodia",
+      "T_joint": 2017,
+      "tfr_year": 1976,
+      "le_year": 2017,
+      "lsec_at_T": 40.8,
+      "year_reached_floor": 1995.0,
+      "floor_left_censored": false,
+      "lag_from_floor": 22.0,
+      "lsec_rate_pp_per_yr": 0.78,
+      "in_rate_subset": false
+    },
+    {
+      "country": "maldives",
+      "T_joint": 1999,
+      "tfr_year": 1997,
+      "le_year": 1999,
+      "lsec_at_T": 41.3,
+      "year_reached_floor": 1997.0,
+      "floor_left_censored": false,
+      "lag_from_floor": 2.0,
+      "lsec_rate_pp_per_yr": 2.58,
+      "in_rate_subset": true
+    },
+    {
+      "country": "tunisia",
+      "T_joint": 1993,
+      "tfr_year": 1989,
+      "le_year": 1993,
+      "lsec_at_T": 41.8,
+      "year_reached_floor": 1988.1,
+      "floor_left_censored": false,
+      "lag_from_floor": 4.9,
+      "lsec_rate_pp_per_yr": 1.84,
+      "in_rate_subset": true
+    },
+    {
+      "country": "macao",
+      "T_joint": 1973,
+      "tfr_year": 1965,
+      "le_year": 1973,
+      "lsec_at_T": 42.2,
+      "year_reached_floor": 1969.6,
+      "floor_left_censored": false,
+      "lag_from_floor": 3.4,
+      "lsec_rate_pp_per_yr": 1.66,
+      "in_rate_subset": true
+    },
+    {
+      "country": "guatemala",
+      "T_joint": 2010,
+      "tfr_year": 2008,
+      "le_year": 2010,
+      "lsec_at_T": 42.8,
+      "year_reached_floor": 2003.9,
+      "floor_left_censored": false,
+      "lag_from_floor": 6.1,
+      "lsec_rate_pp_per_yr": 0.77,
+      "in_rate_subset": false
+    },
+    {
+      "country": "costa rica",
+      "T_joint": 1980,
+      "tfr_year": 1980,
+      "le_year": 1975,
+      "lsec_at_T": 43.3,
+      "year_reached_floor": 1972.5,
+      "floor_left_censored": false,
+      "lag_from_floor": 7.5,
+      "lsec_rate_pp_per_yr": 0.9,
+      "in_rate_subset": false
+    },
+    {
+      "country": "hong kong",
+      "T_joint": 1969,
+      "tfr_year": 1969,
+      "le_year": 1967,
+      "lsec_at_T": 43.5,
+      "year_reached_floor": 1962.1,
+      "floor_left_censored": false,
+      "lag_from_floor": 6.9,
+      "lsec_rate_pp_per_yr": 1.7,
+      "in_rate_subset": true
+    },
+    {
+      "country": "saint lucia",
+      "T_joint": 1987,
+      "tfr_year": 1987,
+      "le_year": 1983,
+      "lsec_at_T": 45.2,
+      "year_reached_floor": 1977.5,
+      "floor_left_censored": false,
+      "lag_from_floor": 9.5,
+      "lsec_rate_pp_per_yr": 1.28,
+      "in_rate_subset": true
+    },
+    {
+      "country": "iraq",
+      "T_joint": 2017,
+      "tfr_year": 2017,
+      "le_year": 2015,
+      "lsec_at_T": 46.7,
+      "year_reached_floor": 1983.0,
+      "floor_left_censored": false,
+      "lag_from_floor": 34.0,
+      "lsec_rate_pp_per_yr": 0.74,
+      "in_rate_subset": false
+    },
+    {
+      "country": "paraguay",
+      "T_joint": 2000,
+      "tfr_year": 2000,
+      "le_year": 2000,
+      "lsec_at_T": 47.5,
+      "year_reached_floor": 1988.1,
+      "floor_left_censored": false,
+      "lag_from_floor": 11.9,
+      "lsec_rate_pp_per_yr": 0.84,
+      "in_rate_subset": false
+    },
+    {
+      "country": "mauritius",
+      "T_joint": 1991,
+      "tfr_year": 1971,
+      "le_year": 1991,
+      "lsec_at_T": 48.6,
+      "year_reached_floor": 1978.0,
+      "floor_left_censored": false,
+      "lag_from_floor": 13.0,
+      "lsec_rate_pp_per_yr": 1.05,
+      "in_rate_subset": false
+    },
+    {
+      "country": "belize",
+      "T_joint": 2003,
+      "tfr_year": 2000,
+      "le_year": 2003,
+      "lsec_at_T": 49.0,
+      "year_reached_floor": 1987.4,
+      "floor_left_censored": false,
+      "lag_from_floor": 15.6,
+      "lsec_rate_pp_per_yr": 1.14,
+      "in_rate_subset": false
+    },
+    {
+      "country": "vietnam",
+      "T_joint": 1993,
+      "tfr_year": 1988,
+      "le_year": 1993,
+      "lsec_at_T": 50.1,
+      "year_reached_floor": 1967.9,
+      "floor_left_censored": false,
+      "lag_from_floor": 25.1,
+      "lsec_rate_pp_per_yr": 1.2,
+      "in_rate_subset": false
+    },
+    {
+      "country": "bangladesh",
+      "T_joint": 2014,
+      "tfr_year": 1995,
+      "le_year": 2014,
+      "lsec_at_T": 51.0,
+      "year_reached_floor": 2002.4,
+      "floor_left_censored": false,
+      "lag_from_floor": 11.6,
+      "lsec_rate_pp_per_yr": 0.89,
+      "in_rate_subset": false
+    },
+    {
+      "country": "colombia",
+      "T_joint": 1995,
+      "tfr_year": 1982,
+      "le_year": 1995,
+      "lsec_at_T": 51.3,
+      "year_reached_floor": 1977.5,
+      "floor_left_censored": false,
+      "lag_from_floor": 17.5,
+      "lsec_rate_pp_per_yr": 1.19,
+      "in_rate_subset": false
+    },
+    {
+      "country": "ecuador",
+      "T_joint": 1993,
+      "tfr_year": 1991,
+      "le_year": 1993,
+      "lsec_at_T": 53.5,
+      "year_reached_floor": 1975.8,
+      "floor_left_censored": false,
+      "lag_from_floor": 17.2,
+      "lsec_rate_pp_per_yr": 0.93,
+      "in_rate_subset": false
+    },
+    {
+      "country": "thailand",
+      "T_joint": 1996,
+      "tfr_year": 1978,
+      "le_year": 1996,
+      "lsec_at_T": 57.6,
+      "year_reached_floor": 1982.1,
+      "floor_left_censored": false,
+      "lag_from_floor": 13.9,
+      "lsec_rate_pp_per_yr": 1.42,
+      "in_rate_subset": true
+    },
+    {
+      "country": "aruba",
+      "T_joint": 1976,
+      "tfr_year": 1966,
+      "le_year": 1976,
+      "lsec_at_T": 57.6,
+      "year_reached_floor": 1961.9,
+      "floor_left_censored": false,
+      "lag_from_floor": 14.1,
+      "lsec_rate_pp_per_yr": 0.99,
+      "in_rate_subset": false
+    },
+    {
+      "country": "el salvador",
+      "T_joint": 2007,
+      "tfr_year": 1994,
+      "le_year": 2007,
+      "lsec_at_T": 57.7,
+      "year_reached_floor": 1983.8,
+      "floor_left_censored": false,
+      "lag_from_floor": 23.2,
+      "lsec_rate_pp_per_yr": 0.95,
+      "in_rate_subset": false
+    },
+    {
+      "country": "solomon islands",
+      "T_joint": 2022,
+      "tfr_year": 2022,
+      "le_year": 2018,
+      "lsec_at_T": 58.1,
+      "year_reached_floor": 2000.1,
+      "floor_left_censored": false,
+      "lag_from_floor": 21.9,
+      "lsec_rate_pp_per_yr": 0.94,
+      "in_rate_subset": false
+    },
+    {
+      "country": "vanuatu",
+      "T_joint": 2022,
+      "tfr_year": 2022,
+      "le_year": 2012,
+      "lsec_at_T": 58.2,
+      "year_reached_floor": 1998.6,
+      "floor_left_censored": false,
+      "lag_from_floor": 23.4,
+      "lsec_rate_pp_per_yr": 0.83,
+      "in_rate_subset": false
+    },
+    {
+      "country": "panama",
+      "T_joint": 1983,
+      "tfr_year": 1983,
+      "le_year": 1982,
+      "lsec_at_T": 58.5,
+      "year_reached_floor": 1967.4,
+      "floor_left_censored": false,
+      "lag_from_floor": 15.6,
+      "lsec_rate_pp_per_yr": 1.18,
+      "in_rate_subset": false
+    },
+    {
+      "country": "dominican republic",
+      "T_joint": 1997,
+      "tfr_year": 1986,
+      "le_year": 1997,
+      "lsec_at_T": 60.5,
+      "year_reached_floor": 1974.3,
+      "floor_left_censored": false,
+      "lag_from_floor": 22.7,
+      "lsec_rate_pp_per_yr": 1.01,
+      "in_rate_subset": false
+    },
+    {
+      "country": "bhutan",
+      "T_joint": 2013,
+      "tfr_year": 1999,
+      "le_year": 2013,
+      "lsec_at_T": 62.5,
+      "year_reached_floor": 2002.4,
+      "floor_left_censored": false,
+      "lag_from_floor": 10.6,
+      "lsec_rate_pp_per_yr": 1.53,
+      "in_rate_subset": true
+    },
+    {
+      "country": "singapore",
+      "T_joint": 1974,
+      "tfr_year": 1968,
+      "le_year": 1974,
+      "lsec_at_T": 64.8,
+      "year_reached_floor": 1962.0,
+      "floor_left_censored": false,
+      "lag_from_floor": 12.0,
+      "lsec_rate_pp_per_yr": 1.96,
+      "in_rate_subset": true
+    },
+    {
+      "country": "brazil",
+      "T_joint": 2001,
+      "tfr_year": 1984,
+      "le_year": 2001,
+      "lsec_at_T": 65.0,
+      "year_reached_floor": 1972.9,
+      "floor_left_censored": false,
+      "lag_from_floor": 28.1,
+      "lsec_rate_pp_per_yr": 1.15,
+      "in_rate_subset": false
+    },
+    {
+      "country": "turkey",
+      "T_joint": 1996,
+      "tfr_year": 1987,
+      "le_year": 1996,
+      "lsec_at_T": 65.2,
+      "year_reached_floor": 1978.0,
+      "floor_left_censored": false,
+      "lag_from_floor": 18.0,
+      "lsec_rate_pp_per_yr": 1.57,
+      "in_rate_subset": true
+    },
+    {
+      "country": "iran",
+      "T_joint": 2000,
+      "tfr_year": 1994,
+      "le_year": 2000,
+      "lsec_at_T": 65.9,
+      "year_reached_floor": 1978.5,
+      "floor_left_censored": false,
+      "lag_from_floor": 21.5,
+      "lsec_rate_pp_per_yr": 1.23,
+      "in_rate_subset": false
+    },
+    {
+      "country": "mexico",
+      "T_joint": 1993,
+      "tfr_year": 1988,
+      "le_year": 1993,
+      "lsec_at_T": 67.0,
+      "year_reached_floor": 1974.3,
+      "floor_left_censored": false,
+      "lag_from_floor": 18.7,
+      "lsec_rate_pp_per_yr": 1.32,
+      "in_rate_subset": true
+    },
+    {
+      "country": "venezuela",
+      "T_joint": 1988,
+      "tfr_year": 1988,
+      "le_year": 1985,
+      "lsec_at_T": 67.2,
+      "year_reached_floor": 1964.5,
+      "floor_left_censored": false,
+      "lag_from_floor": 23.5,
+      "lsec_rate_pp_per_yr": 1.12,
+      "in_rate_subset": false
+    },
+    {
+      "country": "puerto rico",
+      "T_joint": 1967,
+      "tfr_year": 1967,
+      "le_year": 1966,
+      "lsec_at_T": 67.7,
+      "year_reached_floor": 1950.0,
+      "floor_left_censored": true,
+      "lag_from_floor": 17.0,
+      "lsec_rate_pp_per_yr": 2.05,
+      "in_rate_subset": false
+    },
+    {
+      "country": "lebanon",
+      "T_joint": 1991,
+      "tfr_year": 1985,
+      "le_year": 1991,
+      "lsec_at_T": 67.7,
+      "year_reached_floor": 1969.4,
+      "floor_left_censored": false,
+      "lag_from_floor": 21.6,
+      "lsec_rate_pp_per_yr": 1.05,
+      "in_rate_subset": false
+    },
+    {
+      "country": "india",
+      "T_joint": 2017,
+      "tfr_year": 1996,
+      "le_year": 2017,
+      "lsec_at_T": 70.3,
+      "year_reached_floor": 1987.6,
+      "floor_left_censored": false,
+      "lag_from_floor": 29.4,
+      "lsec_rate_pp_per_yr": 0.95,
+      "in_rate_subset": false
+    },
+    {
+      "country": "algeria",
+      "T_joint": 1999,
+      "tfr_year": 1995,
+      "le_year": 1999,
+      "lsec_at_T": 71.7,
+      "year_reached_floor": 1981.1,
+      "floor_left_censored": false,
+      "lag_from_floor": 17.9,
+      "lsec_rate_pp_per_yr": 1.24,
+      "in_rate_subset": false
+    },
+    {
+      "country": "sri lanka",
+      "T_joint": 1993,
+      "tfr_year": 1981,
+      "le_year": 1993,
+      "lsec_at_T": 71.9,
+      "year_reached_floor": 1960.0,
+      "floor_left_censored": false,
+      "lag_from_floor": 33.0,
+      "lsec_rate_pp_per_yr": 1.26,
+      "in_rate_subset": true
+    },
+    {
+      "country": "cuba",
+      "T_joint": 1974,
+      "tfr_year": 1972,
+      "le_year": 1974,
+      "lsec_at_T": 72.6,
+      "year_reached_floor": 1957.7,
+      "floor_left_censored": false,
+      "lag_from_floor": 16.3,
+      "lsec_rate_pp_per_yr": 1.92,
+      "in_rate_subset": true
+    },
+    {
+      "country": "french polynesia",
+      "T_joint": 1987,
+      "tfr_year": 1987,
+      "le_year": 1984,
+      "lsec_at_T": 73.2,
+      "year_reached_floor": 1962.0,
+      "floor_left_censored": false,
+      "lag_from_floor": 25.0,
+      "lsec_rate_pp_per_yr": 1.53,
+      "in_rate_subset": true
+    },
+    {
+      "country": "jordan",
+      "T_joint": 2012,
+      "tfr_year": 2012,
+      "le_year": 1989,
+      "lsec_at_T": 73.6,
+      "year_reached_floor": 1963.0,
+      "floor_left_censored": false,
+      "lag_from_floor": 49.0,
+      "lsec_rate_pp_per_yr": 1.19,
+      "in_rate_subset": false
+    },
+    {
+      "country": "peru",
+      "T_joint": 2000,
+      "tfr_year": 1993,
+      "le_year": 2000,
+      "lsec_at_T": 74.1,
+      "year_reached_floor": 1966.6,
+      "floor_left_censored": false,
+      "lag_from_floor": 33.4,
+      "lsec_rate_pp_per_yr": 1.22,
+      "in_rate_subset": false
+    },
+    {
+      "country": "chile",
+      "T_joint": 1981,
+      "tfr_year": 1972,
+      "le_year": 1981,
+      "lsec_at_T": 75.0,
+      "year_reached_floor": 1963.0,
+      "floor_left_censored": false,
+      "lag_from_floor": 18.0,
+      "lsec_rate_pp_per_yr": 1.7,
+      "in_rate_subset": true
+    },
+    {
+      "country": "egypt",
+      "T_joint": 2014,
+      "tfr_year": 1999,
+      "le_year": 2014,
+      "lsec_at_T": 75.9,
+      "year_reached_floor": 1980.1,
+      "floor_left_censored": false,
+      "lag_from_floor": 33.9,
+      "lsec_rate_pp_per_yr": 1.26,
+      "in_rate_subset": true
+    },
+    {
+      "country": "malaysia",
+      "T_joint": 1987,
+      "tfr_year": 1987,
+      "le_year": 1985,
+      "lsec_at_T": 76.2,
+      "year_reached_floor": 1970.5,
+      "floor_left_censored": false,
+      "lag_from_floor": 16.5,
+      "lsec_rate_pp_per_yr": 1.49,
+      "in_rate_subset": true
+    },
+    {
+      "country": "nepal",
+      "T_joint": 2022,
+      "tfr_year": 2002,
+      "le_year": 2022,
+      "lsec_at_T": 76.2,
+      "year_reached_floor": 1996.9,
+      "floor_left_censored": false,
+      "lag_from_floor": 25.1,
+      "lsec_rate_pp_per_yr": 1.3,
+      "in_rate_subset": true
+    },
+    {
+      "country": "philippines",
+      "T_joint": 2017,
+      "tfr_year": 2003,
+      "le_year": 2017,
+      "lsec_at_T": 76.3,
+      "year_reached_floor": 1967.0,
+      "floor_left_censored": false,
+      "lag_from_floor": 50.0,
+      "lsec_rate_pp_per_yr": 0.94,
+      "in_rate_subset": false
+    },
+    {
+      "country": "jamaica",
+      "T_joint": 1984,
+      "tfr_year": 1980,
+      "le_year": 1984,
+      "lsec_at_T": 78.8,
+      "year_reached_floor": 1963.6,
+      "floor_left_censored": false,
+      "lag_from_floor": 20.4,
+      "lsec_rate_pp_per_yr": 1.59,
+      "in_rate_subset": true
+    },
+    {
+      "country": "china",
+      "T_joint": 1994,
+      "tfr_year": 1975,
+      "le_year": 1994,
+      "lsec_at_T": 79.2,
+      "year_reached_floor": 1968.5,
+      "floor_left_censored": false,
+      "lag_from_floor": 25.5,
+      "lsec_rate_pp_per_yr": 1.45,
+      "in_rate_subset": true
+    },
+    {
+      "country": "suriname",
+      "T_joint": 2011,
+      "tfr_year": 1986,
+      "le_year": 2011,
+      "lsec_at_T": 80.2,
+      "year_reached_floor": 1964.2,
+      "floor_left_censored": false,
+      "lag_from_floor": 46.8,
+      "lsec_rate_pp_per_yr": 1.04,
+      "in_rate_subset": false
+    },
+    {
+      "country": "curacao",
+      "T_joint": 1976,
+      "tfr_year": 1969,
+      "le_year": 1976,
+      "lsec_at_T": 81.0,
+      "year_reached_floor": 1950.0,
+      "floor_left_censored": true,
+      "lag_from_floor": 26.0,
+      "lsec_rate_pp_per_yr": 1.42,
+      "in_rate_subset": false
+    },
+    {
+      "country": "indonesia",
+      "T_joint": 2017,
+      "tfr_year": 1986,
+      "le_year": 2017,
+      "lsec_at_T": 81.6,
+      "year_reached_floor": 1984.0,
+      "floor_left_censored": false,
+      "lag_from_floor": 33.0,
+      "lsec_rate_pp_per_yr": 1.29,
+      "in_rate_subset": true
+    },
+    {
+      "country": "macedonia",
+      "T_joint": 1984,
+      "tfr_year": 1961,
+      "le_year": 1984,
+      "lsec_at_T": 85.4,
+      "year_reached_floor": 1960.2,
+      "floor_left_censored": false,
+      "lag_from_floor": 23.8,
+      "lsec_rate_pp_per_yr": 1.93,
+      "in_rate_subset": true
+    },
+    {
+      "country": "new caledonia",
+      "T_joint": 1991,
+      "tfr_year": 1981,
+      "le_year": 1991,
+      "lsec_at_T": 86.1,
+      "year_reached_floor": 1959.0,
+      "floor_left_censored": false,
+      "lag_from_floor": 32.0,
+      "lsec_rate_pp_per_yr": 1.81,
+      "in_rate_subset": true
+    },
+    {
+      "country": "bosnia and herzegovina",
+      "T_joint": 1981,
+      "tfr_year": 1964,
+      "le_year": 1981,
+      "lsec_at_T": 88.0,
+      "year_reached_floor": 1952.5,
+      "floor_left_censored": false,
+      "lag_from_floor": 28.5,
+      "lsec_rate_pp_per_yr": 2.47,
+      "in_rate_subset": true
+    },
+    {
+      "country": "united states",
+      "T_joint": 1961,
+      "tfr_year": 1961,
+      "le_year": 1961,
+      "lsec_at_T": 89.8,
+      "year_reached_floor": 1950.0,
+      "floor_left_censored": true,
+      "lag_from_floor": 11.0,
+      "lsec_rate_pp_per_yr": 6.99,
+      "in_rate_subset": false
+    },
+    {
+      "country": "mongolia",
+      "T_joint": 2013,
+      "tfr_year": 1992,
+      "le_year": 2013,
+      "lsec_at_T": 90.1,
+      "year_reached_floor": 1954.3,
+      "floor_left_censored": false,
+      "lag_from_floor": 58.7,
+      "lsec_rate_pp_per_yr": 2.29,
+      "in_rate_subset": true
+    },
+    {
+      "country": "trinidad and tobago",
+      "T_joint": 2004,
+      "tfr_year": 1971,
+      "le_year": 2004,
+      "lsec_at_T": 91.0,
+      "year_reached_floor": 1964.6,
+      "floor_left_censored": false,
+      "lag_from_floor": 39.4,
+      "lsec_rate_pp_per_yr": 1.5,
+      "in_rate_subset": true
+    },
+    {
+      "country": "bahamas",
+      "T_joint": 1983,
+      "tfr_year": 1974,
+      "le_year": 1983,
+      "lsec_at_T": 92.7,
+      "year_reached_floor": 1950.0,
+      "floor_left_censored": true,
+      "lag_from_floor": 33.0,
+      "lsec_rate_pp_per_yr": 2.69,
+      "in_rate_subset": false
+    },
+    {
+      "country": "guyana",
+      "T_joint": 2022,
+      "tfr_year": 1983,
+      "le_year": 2022,
+      "lsec_at_T": 93.0,
+      "year_reached_floor": 1952.1,
+      "floor_left_censored": false,
+      "lag_from_floor": 69.9,
+      "lsec_rate_pp_per_yr": 1.29,
+      "in_rate_subset": true
+    },
+    {
+      "country": "albania",
+      "T_joint": 1980,
+      "tfr_year": 1980,
+      "le_year": 1980,
+      "lsec_at_T": 94.3,
+      "year_reached_floor": 1954.9,
+      "floor_left_censored": false,
+      "lag_from_floor": 25.1,
+      "lsec_rate_pp_per_yr": 3.05,
+      "in_rate_subset": true
+    },
+    {
+      "country": "tonga",
+      "T_joint": 2014,
+      "tfr_year": 2014,
+      "le_year": 2002,
+      "lsec_at_T": 94.9,
+      "year_reached_floor": 1956.6,
+      "floor_left_censored": false,
+      "lag_from_floor": 57.4,
+      "lsec_rate_pp_per_yr": 1.66,
+      "in_rate_subset": true
+    },
+    {
+      "country": "south korea",
+      "T_joint": 1987,
+      "tfr_year": 1975,
+      "le_year": 1987,
+      "lsec_at_T": 95.9,
+      "year_reached_floor": 1957.2,
+      "floor_left_censored": false,
+      "lag_from_floor": 29.8,
+      "lsec_rate_pp_per_yr": 2.5,
+      "in_rate_subset": true
+    },
+    {
+      "country": "tajikistan",
+      "T_joint": 2016,
+      "tfr_year": 2000,
+      "le_year": 2016,
+      "lsec_at_T": 96.5,
+      "year_reached_floor": 1950.0,
+      "floor_left_censored": true,
+      "lag_from_floor": 66.0,
+      "lsec_rate_pp_per_yr": 3.93,
+      "in_rate_subset": false
+    },
+    {
+      "country": "kyrgyzstan",
+      "T_joint": 2012,
+      "tfr_year": 1990,
+      "le_year": 2012,
+      "lsec_at_T": 98.6,
+      "year_reached_floor": 1950.0,
+      "floor_left_censored": true,
+      "lag_from_floor": 62.0,
+      "lsec_rate_pp_per_yr": 4.65,
+      "in_rate_subset": false
+    },
+    {
+      "country": "kazakhstan",
+      "T_joint": 2012,
+      "tfr_year": 1968,
+      "le_year": 2012,
+      "lsec_at_T": 99.0,
+      "year_reached_floor": 1950.0,
+      "floor_left_censored": true,
+      "lag_from_floor": 62.0,
+      "lsec_rate_pp_per_yr": 4.54,
+      "in_rate_subset": false
+    },
+    {
+      "country": "armenia",
+      "T_joint": 1999,
+      "tfr_year": 1968,
+      "le_year": 1999,
+      "lsec_at_T": 99.1,
+      "year_reached_floor": 1950.0,
+      "floor_left_censored": true,
+      "lag_from_floor": 49.0,
+      "lsec_rate_pp_per_yr": 6.86,
+      "in_rate_subset": false
+    },
+    {
+      "country": "azerbaijan",
+      "T_joint": 2009,
+      "tfr_year": 1979,
+      "le_year": 2009,
+      "lsec_at_T": 99.3,
+      "year_reached_floor": 1950.0,
+      "floor_left_censored": true,
+      "lag_from_floor": 59.0,
+      "lsec_rate_pp_per_yr": 5.15,
+      "in_rate_subset": false
+    },
+    {
+      "country": "turkmenistan",
+      "T_joint": 2022,
+      "tfr_year": 1994,
+      "le_year": 2022,
+      "lsec_at_T": 100.0,
+      "year_reached_floor": 1950.0,
+      "floor_left_censored": true,
+      "lag_from_floor": 72.0,
+      "lsec_rate_pp_per_yr": 5.25,
+      "in_rate_subset": false
+    },
+    {
+      "country": "palestine",
+      "T_joint": 2019,
+      "tfr_year": 2019,
+      "le_year": 1996,
+      "lsec_at_T": 111.0,
+      "year_reached_floor": 1966.4,
+      "floor_left_censored": false,
+      "lag_from_floor": 52.6,
+      "lsec_rate_pp_per_yr": 1.36,
+      "in_rate_subset": true
+    }
+  ],
+  "oil_excluded": [
+    {
+      "country": "bahrain",
+      "T_joint": 1991,
+      "tfr_year": 1991,
+      "le_year": 1978,
+      "lsec_at_T": 53.5,
+      "year_reached_floor": 1964.8,
+      "floor_left_censored": false,
+      "lag_from_floor": 26.2,
+      "lsec_rate_pp_per_yr": 1.22,
+      "in_rate_subset": false
+    },
+    {
+      "country": "kuwait",
+      "T_joint": 1989,
+      "tfr_year": 1989,
+      "le_year": 1975,
+      "lsec_at_T": 57.9,
+      "year_reached_floor": 1967.3,
+      "floor_left_censored": false,
+      "lag_from_floor": 21.7,
+      "lsec_rate_pp_per_yr": 1.03,
+      "in_rate_subset": false
+    },
+    {
+      "country": "oman",
+      "T_joint": 2002,
+      "tfr_year": 2002,
+      "le_year": 1992,
+      "lsec_at_T": 66.3,
+      "year_reached_floor": 1984.2,
+      "floor_left_censored": false,
+      "lag_from_floor": 17.8,
+      "lsec_rate_pp_per_yr": 1.29,
+      "in_rate_subset": true
+    },
+    {
+      "country": "qatar",
+      "T_joint": 1995,
+      "tfr_year": 1995,
+      "le_year": 1980,
+      "lsec_at_T": 52.5,
+      "year_reached_floor": 1967.8,
+      "floor_left_censored": false,
+      "lag_from_floor": 27.2,
+      "lsec_rate_pp_per_yr": 0.77,
+      "in_rate_subset": false
+    },
+    {
+      "country": "saudi arabia",
+      "T_joint": 2003,
+      "tfr_year": 2003,
+      "le_year": 1993,
+      "lsec_at_T": 70.3,
+      "year_reached_floor": 1973.6,
+      "floor_left_censored": false,
+      "lag_from_floor": 29.4,
+      "lsec_rate_pp_per_yr": 1.35,
+      "in_rate_subset": true
+    },
+    {
+      "country": "united arab emirates",
+      "T_joint": 1995,
+      "tfr_year": 1995,
+      "le_year": 1984,
+      "lsec_at_T": 65.2,
+      "year_reached_floor": 1961.5,
+      "floor_left_censored": false,
+      "lag_from_floor": 33.5,
+      "lsec_rate_pp_per_yr": 1.17,
+      "in_rate_subset": false
+    }
+  ],
+  "left_censored_T": [
+    {
+      "country": "argentina",
+      "T_observed": 1985
+    },
+    {
+      "country": "australia",
+      "T_observed": 1960
+    },
+    {
+      "country": "austria",
+      "T_observed": 1964
+    },
+    {
+      "country": "belarus",
+      "T_observed": 1964
+    },
+    {
+      "country": "belgium",
+      "T_observed": 1961
+    },
+    {
+      "country": "bulgaria",
+      "T_observed": 1961
+    },
+    {
+      "country": "canada",
+      "T_observed": 1963
+    },
+    {
+      "country": "croatia",
+      "T_observed": 1973
+    },
+    {
+      "country": "cyprus",
+      "T_observed": 1975
+    },
+    {
+      "country": "czech republic",
+      "T_observed": 1960
+    },
+    {
+      "country": "north korea",
+      "T_observed": 1988
+    },
+    {
+      "country": "denmark",
+      "T_observed": 1960
+    },
+    {
+      "country": "estonia",
+      "T_observed": 1964
+    },
+    {
+      "country": "finland",
+      "T_observed": 1970
+    },
+    {
+      "country": "france",
+      "T_observed": 1960
+    },
+    {
+      "country": "georgia",
+      "T_observed": 1996
+    },
+    {
+      "country": "germany",
+      "T_observed": 1963
+    },
+    {
+      "country": "greece",
+      "T_observed": 1960
+    },
+    {
+      "country": "hungary",
+      "T_observed": 1966
+    },
+    {
+      "country": "iceland",
+      "T_observed": 1966
+    },
+    {
+      "country": "ireland",
+      "T_observed": 1974
+    },
+    {
+      "country": "israel",
+      "T_observed": 1974
+    },
+    {
+      "country": "italy",
+      "T_observed": 1964
+    },
+    {
+      "country": "japan",
+      "T_observed": 1964
+    },
+    {
+      "country": "latvia",
+      "T_observed": 1961
+    },
+    {
+      "country": "lithuania",
+      "T_observed": 1960
+    },
+    {
+      "country": "luxembourg",
+      "T_observed": 1968
+    },
+    {
+      "country": "malta",
+      "T_observed": 1968
+    },
+    {
+      "country": "montenegro",
+      "T_observed": 1969
+    },
+    {
+      "country": "netherlands",
+      "T_observed": 1960
+    },
+    {
+      "country": "new zealand",
+      "T_observed": 1965
+    },
+    {
+      "country": "norway",
+      "T_observed": 1960
+    },
+    {
+      "country": "poland",
+      "T_observed": 1966
+    },
+    {
+      "country": "portugal",
+      "T_observed": 1977
+    },
+    {
+      "country": "moldova",
+      "T_observed": 2010
+    },
+    {
+      "country": "romania",
+      "T_observed": 1998
+    },
+    {
+      "country": "russia",
+      "T_observed": 2012
+    },
+    {
+      "country": "serbia",
+      "T_observed": 1967
+    },
+    {
+      "country": "slovakia",
+      "T_observed": 1960
+    },
+    {
+      "country": "slovenia",
+      "T_observed": 1974
+    },
+    {
+      "country": "spain",
+      "T_observed": 1964
+    },
+    {
+      "country": "sweden",
+      "T_observed": 1960
+    },
+    {
+      "country": "switzerland",
+      "T_observed": 1960
+    },
+    {
+      "country": "ukraine",
+      "T_observed": 1961
+    },
+    {
+      "country": "united kingdom",
+      "T_observed": 1960
+    },
+    {
+      "country": "uruguay",
+      "T_observed": 1976
+    }
+  ],
+  "left_censored_lag": [
+    {
+      "country": "antigua and barbuda",
+      "T": 1971,
+      "T_minus_lag": 1971
+    },
+    {
+      "country": "barbados",
+      "T": 1976,
+      "T_minus_lag": 1976
+    },
+    {
+      "country": "brunei",
+      "T": 1985,
+      "T_minus_lag": 1985
+    },
+    {
+      "country": "grenada",
+      "T": 1987,
+      "T_minus_lag": 1987
+    },
+    {
+      "country": "guam",
+      "T": 1979,
+      "T_minus_lag": 1979
+    },
+    {
+      "country": "libya",
+      "T": 1994,
+      "T_minus_lag": 1994
+    },
+    {
+      "country": "seychelles",
+      "T": 1982,
+      "T_minus_lag": 1982
+    },
+    {
+      "country": "us virgin islands",
+      "T": 1986,
+      "T_minus_lag": 1986
+    },
+    {
+      "country": "uzbekistan",
+      "T": 2010,
+      "T_minus_lag": 2010
+    }
+  ],
+  "script": "scripts/necessity_floor.py"
+}

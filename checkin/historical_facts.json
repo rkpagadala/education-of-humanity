@@ -1,0 +1,168 @@
+{
+  "_meta": {
+    "description": "Historical facts cited in paper/the_long_childhood.tex and the companion book book_serious/ (How Nations Developed) that are NOT derivable from the WCDE/WDI data pipeline (UK franchise extension, colonial-era famines, pre-1960 US vital statistics that predate the WDI series). Each fact carries the value used and the most authoritative URL available. verify_the_long_childhood.py reads this file via source type 'fact' and FAILS verification if any cited fact lacks a 'url'. Provenance narrative and sourcing rationale: paper/historical_facts.md.",
+    "accessed": "2026-06-10",
+    "used_by": "scripts/verify_the_long_childhood.py (source type 'fact')",
+    "provenance_doc": "paper/historical_facts.md"
+  },
+  "facts": {
+    "uk-electorate-pre-1832": {
+      "value": 400000,
+      "unit": "men entitled to vote (England)",
+      "claim": "Size of the electorate in England immediately before the 1832 Reform Act; on the order of one adult in twenty could vote.",
+      "url": "https://www.parliament.uk/about/living-heritage/evolutionofparliament/houseofcommons/reformacts/overview/reformact1832/",
+      "source": "UK Parliament, 'The Reform Act 1832'. Authoritative reference: House of Commons Library Research Paper 13/14, 'The History of the Parliamentary Franchise' (https://commonslibrary.parliament.uk/research-briefings/rp13-14/).",
+      "note": "The pre-1832 electorate is an estimate (voter registration was lacking and many boroughs were uncontested). ~400,000 of an English population of roughly 13 million adults; the franchise rose to ~650,000 after 1832."
+    },
+    "uk-reform-act-1832-year": {
+      "value": 1832,
+      "unit": "year",
+      "claim": "The (Great) Reform Act 1832.",
+      "url": "https://www.parliament.uk/about/living-heritage/evolutionofparliament/houseofcommons/reformacts/overview/reformact1832/",
+      "source": "UK Parliament, 'The Reform Act 1832'."
+    },
+    "uk-reform-act-1867-year": {
+      "value": 1867,
+      "unit": "year",
+      "claim": "The Second Reform Act 1867.",
+      "url": "https://www.parliament.uk/about/living-heritage/evolutionofparliament/houseofcommons/reformacts/overview/furtherreformacts/",
+      "source": "UK Parliament, 'Further Reform Acts' (Second Reform Act 1867)."
+    },
+    "uk-reform-act-1884-year": {
+      "value": 1884,
+      "unit": "year",
+      "claim": "The Third Reform Act 1884 (Representation of the People Act 1884).",
+      "url": "https://www.parliament.uk/about/living-heritage/evolutionofparliament/houseofcommons/reformacts/overview/one-man-one-vote/",
+      "source": "UK Parliament, 'The Third Reform Act 1884'."
+    },
+    "uk-men-excluded-post-1884-pct": {
+      "value": 40,
+      "unit": "percent of adult men",
+      "claim": "Share of adult men still WITHOUT the vote after the 1884 Third Reform Act (about 60% enfranchised; no women).",
+      "url": "https://www.parliament.uk/about/living-heritage/evolutionofparliament/houseofcommons/reformacts/overview/one-man-one-vote/",
+      "source": "UK Parliament, 'The Third Reform Act 1884': 'about 40% of men did not have the vote'."
+    },
+    "uk-equal-franchise-act-1928-year": {
+      "value": 1928,
+      "unit": "year",
+      "claim": "The Representation of the People (Equal Franchise) Act 1928 gave women the vote on the same terms as men (age 21). 1918 had granted only women over 30 meeting a property qualification.",
+      "url": "https://www.parliament.uk/about/living-heritage/transformingsociety/electionsvoting/womenvote/unesco/equal-franchise-act-1928/",
+      "source": "UK Parliament, 'Equal Franchise Act 1928'."
+    },
+    "bengal-famine-1770-year": {
+      "value": 1770,
+      "unit": "year",
+      "claim": "The Great Bengal famine of 1770, under East India Company revenue authority (diwani).",
+      "url": "https://en.wikipedia.org/wiki/Great_Bengal_famine_of_1770",
+      "source": "Contemporary primary estimate: East India Company Court of Directors (May 1770), summarised in W.W. Hunter, 'The Annals of Rural Bengal' (1868)."
+    },
+    "bengal-famine-1770-deaths": {
+      "value": 10000000,
+      "unit": "deaths",
+      "claim": "Death toll of the Great Bengal famine of 1770: as many as ten million, about one-third of Bengal's population.",
+      "url": "https://en.wikipedia.org/wiki/Great_Bengal_famine_of_1770",
+      "source": "Contemporary estimate (EIC Court of Directors, May 1770): ~one-third of the presidency, c. 7-10 million dead. Some modern scholars argue reliable demographic data were lacking and estimate lower (at least ~1 million).",
+      "note": "Paper uses 'as many as ten million' (the upper contemporary figure) to bound the scale, under Company rule post-1688."
+    },
+    "bengal-famine-1943-deaths": {
+      "value": 3000000,
+      "unit": "deaths",
+      "claim": "Death toll of the Bengal famine of 1943, under the British Raj.",
+      "url": "https://www.britannica.com/topic/Bengal-famine-of-1943",
+      "source": "Encyclopaedia Britannica, 'Bengal famine of 1943' ('some three million'); A.K. Sen, 'Poverty and Famines' (1981), ~3 million; scholarly consensus ~2.1 million (C. O Grada, 'Eating People Is Wrong', 2015).",
+      "note": "Estimates range ~2.1-3 million; paper uses 'three million' (Britannica / Sen upper figure)."
+    },
+    "india-literacy-1951": {
+      "value": 18.33,
+      "unit": "percent",
+      "claim": "Literacy rate of India at the 1951 census, the first taken after independence (persons, all ages).",
+      "url": "https://en.wikipedia.org/wiki/Literacy_in_India",
+      "source": "Census of India 1951: literacy 18.33% (persons), 27.16% (male), 8.86% (female).",
+      "note": "book_serious ch07/ch04b cite 'roughly eighteen percent'; replaces an earlier ~12% (1947) figure."
+    },
+    "india-female-literacy-1951": {
+      "value": 8.86,
+      "unit": "percent",
+      "claim": "Female literacy rate of India at the 1951 census.",
+      "url": "https://en.wikipedia.org/wiki/Literacy_in_India",
+      "source": "Census of India 1951: female literacy 8.86%.",
+      "note": "book_serious ch07/ch04b cite 'around nine percent'."
+    },
+    "irish-famine-1840s-deaths": {
+      "value": 1000000,
+      "unit": "excess deaths",
+      "claim": "Excess deaths in the Great Irish Famine of the 1840s, inside the United Kingdom.",
+      "url": "https://www.britannica.com/event/Great-Famine-Irish-history",
+      "source": "Encyclopaedia Britannica, 'Great Famine (Irish history)'; J. Mokyr, 'Why Ireland Starved' (1983); C. O Grada, 'Black '47 and Beyond' (1999). Approximately one million excess deaths.",
+      "note": "Same value is registered separately for the famine-test section (Ireland-deaths); this entry pins the institutional-challenge occurrence."
+    },
+    "us-life-expectancy-1900": {
+      "value": 47.3,
+      "unit": "years (life expectancy at birth)",
+      "claim": "US life expectancy at birth around 1900 was roughly 47 years (NCHS: 47.3 total, 47.6 white), against ~69.8 in 1960; the book states 'around 47 years in 1900'. Predates the WDI series (begins 1960).",
+      "url": "https://www.cdc.gov/nchs/products/life_tables.htm",
+      "source": "US National Center for Health Statistics (NCHS), United States historical life tables; total life expectancy at birth 1900 = 47.3 years (white 47.6).",
+      "note": "Used by book_serious/ch13_united_states.tex. The chapter's surrounding argument brackets the white population; white 1900 LE (47.6) and total (47.3) both round to ~47."
+    },
+    "us-tfr-babyboom-peak-1957": {
+      "value": 3.77,
+      "unit": "births per woman (total fertility rate)",
+      "claim": "US total fertility rate peaked at the height of the baby boom in 1957 at roughly 3.77; the book states 'nearly four at the 1957 peak'. The 1960 value (3.65) sits just past this peak. Predates the WDI series (begins 1960).",
+      "url": "https://www.cdc.gov/nchs/products/vsus.htm",
+      "source": "US National Center for Health Statistics (NCHS), Vital Statistics of the United States; period total fertility rate peaked in 1957 at ~3.77 births per woman.",
+      "note": "Used by book_serious/ch13_united_states.tex to resolve the baby-boom-peak dating: 1957 peak (~3.77) precedes the 1960 figure (3.65)."
+    },
+    "pakistan-oosc-5-16-2020": {
+      "value": 22.8,
+      "unit": "million children aged 5-16 out of school",
+      "claim": "Pakistan's out-of-school children aged 5-16 numbered roughly 22.8 million around 2020 (PSLM 2019-20 basis); the book states 'roughly twenty-two million'. Survey count, not derivable from the WCDE/WDI panel.",
+      "url": "https://www.unicef.org/pakistan/education",
+      "source": "UNICEF Pakistan, 'Education' (~22.8 million out-of-school children aged 5-16, second-highest in the world), drawing on Pakistan Social and Living Standards Measurement (PSLM) 2019-20 and Pakistan Education Statistics. PIDE/Pakistan Bureau of Statistics report the same 22.8m figure.",
+      "note": "Used by book_serious/ch24_pakistan.tex (stated five times as 'twenty-two million'). The count has since risen toward ~25 million in later readings; the chapter uses the ~2020 (PSLM 2019-20) figure."
+    },
+    "pakistan-population-2020": {
+      "value": 227.2,
+      "unit": "million (total population)",
+      "claim": "Pakistan's total population reached roughly 227 million in 2020 on the UN World Population Prospects (medium variant) basis, consistent with the WCDE/UN series the panel uses (2015 = 209.7m); the book states the population was 'approaching 230 million'.",
+      "url": "https://population.un.org/wpp/",
+      "source": "UN World Population Prospects 2022, medium variant: Pakistan ~227.2 million in 2020. (The World Bank SP.POP.TOTL series reports a higher ~235 million for 2020 under different census assumptions; the book's UN/WCDE basis gives ~227m.)",
+      "note": "Used by book_serious/ch24_pakistan.tex. Pinned to the UN/WCDE basis for consistency with population_2015.csv; 'approaching 230 million' holds on that basis."
+    },
+    "salisbury-india-barrack-1882": {
+      "value": 1882,
+      "unit": "year (remark attributed to Lord Salisbury)",
+      "claim": "Lord Salisbury (1882) characterised British India as 'an English barrack in the Oriental Seas from which we may draw any number of troops without paying for them' -- the directing class naming, without embarrassment, the arrangement by which the metropole drew its imperial manpower surplus from the ruled population. Paper section 'Empire Becomes Impossible to Man' quotes it directly.",
+      "url": "https://www.cambridge.org/core/journals/modern-asian-studies/article/an-english-barrack-in-the-oriental-seas-india-in-the-aftermath-of-the-first-world-war/A6C49BEA957E1A26EE50D9A3B6F9EB29",
+      "source": "The phrase is the title of '\"An English Barrack in the Oriental Seas\"? India in the Aftermath of the First World War', Modern Asian Studies 15(3) (1981), pp. 369--386 (Cambridge University Press), which attributes it to Salisbury, 1882."
+    },
+    "indian-army-1918-imperial-strategic-reserve": {
+      "value": 548311,
+      "unit": "men (Indian Army strength, November 1918)",
+      "claim": "By November 1918 the Indian Army stood at 548,311 men, regarded as the Imperial Strategic Reserve -- garrisoning Egypt, Singapore and China and policing the North-West Frontier. The vivid measure of the borrowed manpower the empire drew from its ruled population, at the peak before it dissolved.",
+      "url": "https://encyclopedia.1914-1918-online.net/article/warfare-1914-1918-india/",
+      "source": "1914-1918-Online International Encyclopedia of the First World War, 'Warfare 1914-1918 (India)'; corroborated by Wikipedia, 'Indian Army during World War I' (548,311 men, November 1918, the Imperial Strategic Reserve).",
+      "note": "Some sources give ~573,000 for November 1918, including Imperial Service Troops from the Princely States; 548,311 is the regular Indian Army count used here."
+    },
+    "uk-tfr-1871": {
+      "value": 4.88,
+      "unit": "births per woman (UK total fertility rate, 1871)",
+      "claim": "The UK total fertility rate stood at 4.88 births per woman in 1871, at the height of the Victorian family, before the sustained fertility decline that carried it to replacement by the end of the First World War and below replacement in the 1930s. Paper section 'Empire Becomes Impossible to Man' uses it as the metropole-end baseline of the demographic transition that dried up the empire's own expendable manpower surplus.",
+      "url": "https://en.wikipedia.org/wiki/Demographics_of_the_United_Kingdom",
+      "source": "Demographics of the United Kingdom (historical TFR series drawn from the Office for National Statistics): 1871 = 4.88, 1901 = 3.58, 1914 = 2.88, 1918 = 2.03."
+    },
+    "uk-tfr-1918": {
+      "value": 2.03,
+      "unit": "births per woman (UK total fertility rate, 1918)",
+      "claim": "The UK total fertility rate had fallen to 2.03 births per woman by 1918 -- essentially replacement level -- in the same year the borrowed Indian Army reserve peaked at 548,311. The metropole had run its own fertility transition to replacement while its dependence on the ruled population's manpower was at its height; British fertility then fell below replacement for the first time in the country's history during the 1930s. Paper section 'Empire Becomes Impossible to Man'.",
+      "url": "https://en.wikipedia.org/wiki/Demographics_of_the_United_Kingdom",
+      "source": "Demographics of the United Kingdom (historical TFR series, Office for National Statistics): 1918 = 2.03; the 1930s marked the first sub-replacement fertility in British history."
+    },
+    "indian-army-1945-peak": {
+      "value": 2500000,
+      "unit": "men (Indian Army strength, August 1945)",
+      "claim": "By August 1945 the Indian Army had grown to over 2,500,000 men, up from just under 200,000 in 1939 -- the borrowed imperial reserve ballooning as the metropole, its own fertility below replacement, could not man a world war from its own population. Within two years the ruled population withdrew that manpower: independence in 1947. Paper section 'Empire Becomes Impossible to Man'. The 'largest volunteer army' label common in the literature is deliberately not adopted here: colonial recruitment ran on rural poverty, martial-race targeting, and wartime economic pressure, not free choice.",
+      "url": "https://en.wikipedia.org/wiki/Indian_Army_during_World_War_II",
+      "source": "Indian Army during World War II (Wikipedia; standard military histories): expanded from just under 200,000 in 1939 to over 2.5 million by August 1945."
+    }
+  }
+}

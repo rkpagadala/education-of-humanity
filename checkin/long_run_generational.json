@@ -1,0 +1,11 @@
+{
+  "numbers": {
+    "LR-countries": 28,
+    "LR-obs": 672,
+    "LR-pooled-beta": 0.889,
+    "LR-pooled-R2": 0.798,
+    "LR-FE-beta": 0.964,
+    "LR-FE-R2": 0.725
+  },
+  "script": "scripts/wcde/long_run_generational.py"
+}

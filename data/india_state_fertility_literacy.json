@@ -1,0 +1,100 @@
+{
+  "description": "State-level fertility-transition timing and female literacy for the eight states used in the BIMARU-vs-South-India contrast: the southern tier (Kerala, Tamil Nadu, Karnataka, undivided Andhra Pradesh) against the northern BIMARU states (Bihar, Madhya Pradesh, Rajasthan, Uttar Pradesh). All eight sit under one constitution, one supreme court, one property regime, one central bank, one body of federal law: national institutions are held constant by construction across the contrast. The variable that moves is schooling. This file records, per state, the year fertility reached replacement (TFR=2.1) and female literacy, each value traced to its source.",
+  "compiled_on": "2026-06-29",
+  "compiled_by": "Human-Development-Prediction repo (data/india_state_fertility_literacy.json)",
+  "note_units": {
+    "replacement_year": "calendar year the state's TFR reached the replacement level of 2.1 children per woman",
+    "replacement_year_status": "'observed' = below 2.1 already recorded by the source; 'projected' = source's projection as of its publication for a state not yet at replacement",
+    "female_literacy_2011": "percent of females aged 7 and above who are literate, Census of India 2011",
+    "tfr_nfhs6": "total fertility rate, children per woman, NFHS-6 / latest round (2023-24), used to corroborate the ordering"
+  },
+
+  "sources": {
+    "bhat_2002": {
+      "citation": "Bhat, P.N. Mari (2002). 'India's Changing Dates with Replacement Fertility: A Review of Recent Fertility Trends and Future Prospects.' Demography India, 31(2): 376-384. (UN Population Division Expert Group Meeting paper.)",
+      "url": "https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/unpd_egm_200203_countrypapers_indias_changing_dates_with_replacement_fertility_bhat.pdf",
+      "table": "Table 5: year of attainment of replacement fertility by major state (observed for states already below 2.1 as of the late 1990s; projected for the rest).",
+      "note": "Kerala and Tamil Nadu are recorded by Bhat as having reached replacement before 1998 (observed). Kerala's commonly cited observed year is 1988 and Tamil Nadu's 1993 (SRS); this file uses Bhat's '<1998' bound and stores the commonly cited observed years in observed_year_commonly_cited for reference. AP/Karnataka/MP/Rajasthan/Bihar/UP are Bhat's 2002 projections."
+    },
+    "census_2011": {
+      "citation": "Census of India 2011, Office of the Registrar General & Census Commissioner, India. Female literacy rate (age 7+) by state.",
+      "url": "https://www.census2011.co.in/literacy.php"
+    },
+    "nfhs6_2023_24": {
+      "citation": "Forbes India, 'India settles into a low-fertility era, but states got there first' (2025), reporting NFHS-6 / latest-round (2023-24) state TFR; corroborated by SRS Statistical Reports 2021-2024 (Registrar General of India).",
+      "url": "https://www.forbesindia.com/article/news/india-settles-into-a-low-fertility-era-but-states-got-there-first/2994837/1",
+      "note": "As of 2023-24, the southern tier has been below 2.1 since at least NFHS-4 (2015-16); among the BIMARU states Bihar remained well above replacement (TFR ~2.76) and Uttar Pradesh at ~2.1, with Madhya Pradesh and Rajasthan only just under. The ordering Bhat projected in 2002 held."
+    }
+  },
+
+  "states": [
+    {
+      "state": "Kerala",
+      "tier": "south",
+      "replacement_year": 1998,
+      "replacement_year_status": "observed",
+      "replacement_year_bound": "before 1998 (Bhat 2002, Table 5)",
+      "observed_year_commonly_cited": 1988,
+      "female_literacy_2011": 92.07,
+      "tfr_nfhs6": 1.8
+    },
+    {
+      "state": "Tamil Nadu",
+      "tier": "south",
+      "replacement_year": 1998,
+      "replacement_year_status": "observed",
+      "replacement_year_bound": "before 1998 (Bhat 2002, Table 5)",
+      "observed_year_commonly_cited": 1993,
+      "female_literacy_2011": 73.44,
+      "tfr_nfhs6": 1.4
+    },
+    {
+      "state": "Andhra Pradesh",
+      "tier": "south",
+      "replacement_year": 2005,
+      "replacement_year_status": "projected",
+      "female_literacy_2011": 59.15,
+      "tfr_nfhs6": 1.5
+    },
+    {
+      "state": "Karnataka",
+      "tier": "south",
+      "replacement_year": 2010,
+      "replacement_year_status": "projected",
+      "female_literacy_2011": 68.08,
+      "tfr_nfhs6": 1.6
+    },
+    {
+      "state": "Madhya Pradesh",
+      "tier": "bimaru",
+      "replacement_year": 2020,
+      "replacement_year_status": "projected",
+      "female_literacy_2011": 59.24,
+      "tfr_nfhs6": 2.0
+    },
+    {
+      "state": "Rajasthan",
+      "tier": "bimaru",
+      "replacement_year": 2020,
+      "replacement_year_status": "projected",
+      "female_literacy_2011": 52.12,
+      "tfr_nfhs6": 2.0
+    },
+    {
+      "state": "Bihar",
+      "tier": "bimaru",
+      "replacement_year": 2030,
+      "replacement_year_status": "projected",
+      "female_literacy_2011": 51.50,
+      "tfr_nfhs6": 2.76
+    },
+    {
+      "state": "Uttar Pradesh",
+      "tier": "bimaru",
+      "replacement_year": 2030,
+      "replacement_year_status": "projected",
+      "female_literacy_2011": 57.18,
+      "tfr_nfhs6": 2.1
+    }
+  ]
+}

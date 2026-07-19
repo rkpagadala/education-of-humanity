@@ -1,0 +1,62 @@
+{
+  "numbers": {
+    "panel_n": 104,
+    "panel_with_primary_hlo": 96,
+    "panel_with_sec_hlo": 67,
+    "tfr": {
+      "n": 67,
+      "A_quant_only_r2": 0.301,
+      "A_quant_beta": -0.538,
+      "A_quant_t": -5.09,
+      "B_qual_only_r2": 0.44,
+      "B_qual_beta": -0.651,
+      "B_qual_t": -6.94,
+      "C_real_only_r2": 0.377,
+      "D_both_r2": 0.443,
+      "D_quant_beta": -0.08,
+      "D_quant_t": -0.54,
+      "D_quant_p": 0.593,
+      "D_qual_beta": -0.59,
+      "D_qual_t": -3.99,
+      "D_qual_p": 0.0,
+      "winner_model": "quantity+quality (D)"
+    },
+    "u5mr": {
+      "n": 67,
+      "A_quant_only_r2": 0.583,
+      "A_quant_beta": -0.705,
+      "A_quant_t": -8.64,
+      "B_qual_only_r2": 0.773,
+      "B_qual_beta": -0.825,
+      "B_qual_t": -13.79,
+      "C_real_only_r2": 0.726,
+      "D_both_r2": 0.783,
+      "D_quant_beta": -0.16,
+      "D_quant_t": -1.72,
+      "D_quant_p": 0.09,
+      "D_qual_beta": -0.702,
+      "D_qual_t": -7.61,
+      "D_qual_p": 0.0,
+      "winner_model": "quantity+quality (D)"
+    },
+    "le": {
+      "n": 67,
+      "A_quant_only_r2": 0.268,
+      "A_quant_beta": 0.457,
+      "A_quant_t": 4.23,
+      "B_qual_only_r2": 0.617,
+      "B_qual_beta": 0.746,
+      "B_qual_t": 9.62,
+      "C_real_only_r2": 0.457,
+      "D_both_r2": 0.624,
+      "D_quant_beta": -0.115,
+      "D_quant_t": -1.07,
+      "D_quant_p": 0.289,
+      "D_qual_beta": 0.825,
+      "D_qual_t": 7.72,
+      "D_qual_p": 0.0,
+      "winner_model": "quantity+quality (D)"
+    }
+  },
+  "script": "scripts/hanushek_horse_race_comprehensive.py"
+}

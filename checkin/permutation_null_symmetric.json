@@ -1,0 +1,411 @@
+{
+  "method": "Symmetric permutation null. One harness, four predictor variants per outcome (raw education, raw log GDP, education residualised against GDP, GDP residualised against education; all country-demeaned, residuals via within-country FWL). Common-sample panel (inner-join of LE and child edu at T+LAG_GENERATION=28, TFR at T+LAG_TFR=5, U5MR at T+LAG_CHILDREARING=12, with edu(T) and log GDP(T); entry=10, ceiling=90). For each (outcome, predictor) the real coefficient is the within-country slope of the demeaned outcome on the predictor. Two permutation schemes: within-year shuffle preserves year-level predictor distribution; full shuffle breaks every systematic link. Z and p-values are two-sided against each null. gdp_resid reproduces permutation_null_gdp.py as an internal consistency check; edu_resid is its symmetric counterpart.",
+  "n_obs": 645,
+  "n_countries": 123,
+  "n_iter": 200,
+  "seed": 2026,
+  "outcome_lag": {
+    "le_tp28": 28,
+    "tfr_tp5": 5,
+    "u5mr_tp12": 12,
+    "ced_tp28": 28
+  },
+  "lag_tfr": 5,
+  "lag_childrearing": 12,
+  "lag_generation": 28,
+  "within_r2_gdp_explains_edu": 0.42848221347090454,
+  "within_r2_edu_explains_gdp": 0.42848221347090454,
+  "full_shuffle_abs_z_bounds": {
+    "raw_edu": {
+      "min": 13.525692870394696,
+      "max": 18.00138947299482
+    },
+    "raw_gdp": {
+      "min": 8.368329124451334,
+      "max": 13.474700994119523
+    },
+    "edu_resid": {
+      "min": 10.84781133995502,
+      "max": 12.893589837097487
+    },
+    "gdp_resid": {
+      "min": 1.1879367212977567,
+      "max": 1.5547012738472665
+    }
+  },
+  "outcomes": {
+    "log_le": {
+      "outcome_col": "log_le_tp28",
+      "predictors": {
+        "raw_edu": {
+          "description": "education, country-demeaned",
+          "real_beta": 0.002844691886225461,
+          "within_year": {
+            "null_mean": 0.003013796524131122,
+            "null_sd": 8.990778036834566e-05,
+            "null_min": 0.002783874885823593,
+            "null_max": 0.0032465431193815435,
+            "z": -1.8808676758880243,
+            "p_two": 0.06,
+            "n_iter": 200
+          },
+          "full": {
+            "null_mean": 1.9040282420191712e-05,
+            "null_sd": 0.00020890993392213655,
+            "null_min": -0.0004979874862862552,
+            "null_max": 0.0005766473036144723,
+            "z": 13.525692870394696,
+            "p_two": 0.0,
+            "n_iter": 200
+          }
+        },
+        "raw_gdp": {
+          "description": "log GDP, country-demeaned",
+          "real_beta": 0.06784952824382087,
+          "within_year": {
+            "null_mean": 0.07421971049489945,
+            "null_sd": 0.005188255108120738,
+            "null_min": 0.06084051466429227,
+            "null_max": 0.08773995148304073,
+            "z": -1.2278082165057511,
+            "p_two": 0.205,
+            "n_iter": 200
+          },
+          "full": {
+            "null_mean": -0.0010931218478329274,
+            "null_sd": 0.008238520386370917,
+            "null_min": -0.028502707474580596,
+            "null_max": 0.02422845677032103,
+            "z": 8.368329124451334,
+            "p_two": 0.0,
+            "n_iter": 200
+          }
+        },
+        "edu_resid": {
+          "description": "education residualised against log GDP (edu \u22a5 GDP)",
+          "real_beta": 0.0030696264615257375,
+          "within_year": {
+            "null_mean": 0.003102327409836387,
+            "null_sd": 0.00016642621323005065,
+            "null_min": 0.002741028371450208,
+            "null_max": 0.003553595524871912,
+            "z": -0.19648916883932713,
+            "p_two": 0.82,
+            "n_iter": 200
+          },
+          "full": {
+            "null_mean": -5.137578403753706e-05,
+            "null_sd": 0.0002817393533905733,
+            "null_min": -0.0007532018219762477,
+            "null_max": 0.0006883209196038003,
+            "z": 11.077622660816754,
+            "p_two": 0.0,
+            "n_iter": 200
+          }
+        },
+        "gdp_resid": {
+          "description": "log GDP residualised against education (GDP \u22a5 edu)",
+          "real_beta": -0.013997123942940642,
+          "within_year": {
+            "null_mean": -0.007238968838749996,
+            "null_sd": 0.00872011644020154,
+            "null_min": -0.027803492251363252,
+            "null_max": 0.015487372013784098,
+            "z": -0.7750074383220565,
+            "p_two": 0.425,
+            "n_iter": 200
+          },
+          "full": {
+            "null_mean": 0.0014893021143749096,
+            "null_sd": 0.011921385762114075,
+            "null_min": -0.02878193422719877,
+            "null_max": 0.04083140092185578,
+            "z": -1.2990457960458845,
+            "p_two": 0.18,
+            "n_iter": 200
+          }
+        }
+      }
+    },
+    "log_tfr": {
+      "outcome_col": "log_tfr_tp5",
+      "predictors": {
+        "raw_edu": {
+          "description": "education, country-demeaned",
+          "real_beta": -0.01588832130389912,
+          "within_year": {
+            "null_mean": -0.01451574295025422,
+            "null_sd": 0.00031698160673181814,
+            "null_min": -0.015641524174452855,
+            "null_max": -0.01363064284917085,
+            "z": -4.3301514172908115,
+            "p_two": 0.0,
+            "n_iter": 200
+          },
+          "full": {
+            "null_mean": -7.757238451258309e-05,
+            "null_sd": 0.0008783071408518426,
+            "null_min": -0.0022306775455683695,
+            "null_max": 0.0021995137003404533,
+            "z": -18.00138947299482,
+            "p_two": 0.0,
+            "n_iter": 200
+          }
+        },
+        "raw_gdp": {
+          "description": "log GDP, country-demeaned",
+          "real_beta": -0.4580092886933832,
+          "within_year": {
+            "null_mean": -0.381781157633684,
+            "null_sd": 0.0191711209846234,
+            "null_min": -0.42901696585007487,
+            "null_max": -0.33118452131483256,
+            "z": -3.9761958166577527,
+            "p_two": 0.0,
+            "n_iter": 200
+          },
+          "full": {
+            "null_mean": -0.001823641758979514,
+            "null_sd": 0.038840521075765314,
+            "null_min": -0.10614013868378709,
+            "null_max": 0.13496207656784587,
+            "z": -11.745095953901668,
+            "p_two": 0.0,
+            "n_iter": 200
+          }
+        },
+        "edu_resid": {
+          "description": "education residualised against log GDP (edu \u22a5 GDP)",
+          "real_beta": -0.014921820929711732,
+          "within_year": {
+            "null_mean": -0.014338274886685085,
+            "null_sd": 0.0005819132140649334,
+            "null_min": -0.016039268530225,
+            "null_max": -0.01240610159955986,
+            "z": -1.0028059664607163,
+            "p_two": 0.295,
+            "n_iter": 200
+          },
+          "full": {
+            "null_mean": -1.1262812721078551e-05,
+            "null_sd": 0.0012059589592410568,
+            "null_min": -0.004313443113489899,
+            "null_max": 0.002369165966286074,
+            "z": -12.364067618332781,
+            "p_two": 0.0,
+            "n_iter": 200
+          }
+        },
+        "gdp_resid": {
+          "description": "log GDP residualised against education (GDP \u22a5 edu)",
+          "real_beta": -0.06014293494159315,
+          "within_year": {
+            "null_mean": 8.882407331638316e-05,
+            "null_sd": 0.03546698350689529,
+            "null_min": -0.08751374289089661,
+            "null_max": 0.09433112149877916,
+            "z": -1.6982487107537527,
+            "p_two": 0.1,
+            "n_iter": 200
+          },
+          "full": {
+            "null_mean": 0.0024932524672843237,
+            "null_sd": 0.052726871967095024,
+            "null_min": -0.14887758014630817,
+            "null_max": 0.12560901698584095,
+            "z": -1.1879367212977567,
+            "p_two": 0.23,
+            "n_iter": 200
+          }
+        }
+      }
+    },
+    "log_u5mr": {
+      "outcome_col": "log_u5mr_tp12",
+      "predictors": {
+        "raw_edu": {
+          "description": "education, country-demeaned",
+          "real_beta": -0.029368765676181203,
+          "within_year": {
+            "null_mean": -0.027801906543656697,
+            "null_sd": 0.000560823775615391,
+            "null_min": -0.029341928309862614,
+            "null_max": -0.02621498659054003,
+            "z": -2.7938529011277984,
+            "p_two": 0.005,
+            "n_iter": 200
+          },
+          "full": {
+            "null_mean": -0.00015210769223578108,
+            "null_sd": 0.0017623593874059164,
+            "null_min": -0.004877829768029338,
+            "null_max": 0.0047639068294995125,
+            "z": -16.57814983296371,
+            "p_two": 0.0,
+            "n_iter": 200
+          }
+        },
+        "raw_gdp": {
+          "description": "log GDP, country-demeaned",
+          "real_beta": -0.8712792166022393,
+          "within_year": {
+            "null_mean": -0.7468600824983068,
+            "null_sd": 0.033051744246353626,
+            "null_min": -0.853970895350129,
+            "null_max": -0.6419070632390361,
+            "z": -3.764374224142763,
+            "p_two": 0.0,
+            "n_iter": 200
+          },
+          "full": {
+            "null_mean": -0.0035239415789830642,
+            "null_sd": 0.06439885199693501,
+            "null_min": -0.1970346671189129,
+            "null_max": 0.22929640162176282,
+            "z": -13.474700994119523,
+            "p_two": 0.0,
+            "n_iter": 200
+          }
+        },
+        "edu_resid": {
+          "description": "education residualised against log GDP (edu \u22a5 GDP)",
+          "real_beta": -0.026888505716305997,
+          "within_year": {
+            "null_mean": -0.026993189933614898,
+            "null_sd": 0.0009512730450305974,
+            "null_min": -0.029482953140032065,
+            "null_max": -0.02433661259987608,
+            "z": 0.11004644550349224,
+            "p_two": 0.895,
+            "n_iter": 200
+          },
+          "full": {
+            "null_mean": -9.020863911292218e-06,
+            "null_sd": 0.0020847169168556104,
+            "null_min": -0.005502931595665529,
+            "null_max": 0.0047947307762085676,
+            "z": -12.893589837097487,
+            "p_two": 0.0,
+            "n_iter": 200
+          }
+        },
+        "gdp_resid": {
+          "description": "log GDP residualised against education (GDP \u22a5 edu)",
+          "real_beta": -0.1543404610995957,
+          "within_year": {
+            "null_mean": -0.02468287443682498,
+            "null_sd": 0.056505346661471494,
+            "null_min": -0.16759952262423355,
+            "null_max": 0.11723675514389358,
+            "z": -2.294607401305946,
+            "p_two": 0.02,
+            "n_iter": 200
+          },
+          "full": {
+            "null_mean": -0.002593525337895669,
+            "null_sd": 0.09791085432582998,
+            "null_min": -0.2670582142678099,
+            "null_max": 0.29429127759307744,
+            "z": -1.549847938786369,
+            "p_two": 0.09,
+            "n_iter": 200
+          }
+        }
+      }
+    },
+    "child_edu": {
+      "outcome_col": "ced_tp28",
+      "predictors": {
+        "raw_edu": {
+          "description": "education, country-demeaned",
+          "real_beta": 0.6044147199387367,
+          "within_year": {
+            "null_mean": 0.6224989700091599,
+            "null_sd": 0.013780746463429703,
+            "null_min": 0.5867031062552608,
+            "null_max": 0.6624178153130483,
+            "z": -1.3122837807381293,
+            "p_two": 0.195,
+            "n_iter": 200
+          },
+          "full": {
+            "null_mean": 0.0007861361837934206,
+            "null_sd": 0.0384347054238028,
+            "null_min": -0.10526802049702334,
+            "null_max": 0.08846296984049831,
+            "z": 15.705300121309456,
+            "p_two": 0.0,
+            "n_iter": 200
+          }
+        },
+        "raw_gdp": {
+          "description": "log GDP, country-demeaned",
+          "real_beta": 17.82460113413462,
+          "within_year": {
+            "null_mean": 15.418605418437053,
+            "null_sd": 0.8030182677834055,
+            "null_min": 13.493239048356124,
+            "null_max": 17.685970044764574,
+            "z": 2.996190512999047,
+            "p_two": 0.0,
+            "n_iter": 200
+          },
+          "full": {
+            "null_mean": -0.011539676692044046,
+            "null_sd": 1.5559796593895938,
+            "null_min": -5.458137756949004,
+            "null_max": 3.6628085893838933,
+            "z": 11.462965279265752,
+            "p_two": 0.0,
+            "n_iter": 200
+          }
+        },
+        "edu_resid": {
+          "description": "education residualised against log GDP (edu \u22a5 GDP)",
+          "real_beta": 0.5563647828291931,
+          "within_year": {
+            "null_mean": 0.6462407065955003,
+            "null_sd": 0.023935709306365575,
+            "null_min": 0.5795061274979388,
+            "null_max": 0.725472586374574,
+            "z": -3.754888673485232,
+            "p_two": 0.0,
+            "n_iter": 200
+          },
+          "full": {
+            "null_mean": 0.0016248006909164495,
+            "null_sd": 0.05113842458662973,
+            "null_min": -0.1360604378178492,
+            "null_max": 0.1521789612236631,
+            "z": 10.84781133995502,
+            "p_two": 0.0,
+            "n_iter": 200
+          }
+        },
+        "gdp_resid": {
+          "description": "log GDP residualised against education (GDP \u22a5 edu)",
+          "real_beta": 2.9900290974606794,
+          "within_year": {
+            "null_mean": -1.6256536330206877,
+            "null_sd": 1.2662412665408558,
+            "null_min": -4.908599082793461,
+            "null_max": 3.3019927149989297,
+            "z": 3.6451842570970583,
+            "p_two": 0.005,
+            "n_iter": 200
+          },
+          "full": {
+            "null_mean": -0.17262479399268515,
+            "null_sd": 2.034251817152665,
+            "null_min": -5.395097935552589,
+            "null_max": 5.709385370438309,
+            "z": 1.5547012738472665,
+            "p_two": 0.13,
+            "n_iter": 200
+          }
+        }
+      }
+    }
+  },
+  "script": "scripts/robustness/permutation_null_symmetric.py"
+}

@@ -1,0 +1,18 @@
+{
+  "n_shards": 100,
+  "n_trials_total": 500,
+  "global_best": {
+    "best_value": 0.7573914090792337,
+    "best_params": {
+      "d_model": 32,
+      "num_layers": 1,
+      "nhead": 8,
+      "ff_mult": 4,
+      "dropout": 0.1086163872174073,
+      "lr": 0.002525378870394232,
+      "weight_decay": 0.005189852053080187
+    },
+    "from_shard": 27
+  },
+  "script": "scripts/ml/chapter9/aggregate_results.py"
+}

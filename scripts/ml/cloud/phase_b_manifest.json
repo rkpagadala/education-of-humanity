@@ -1,0 +1,881 @@
+{
+  "jobs": [
+    {
+      "id": "region_sub_saharan_africa_s42",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "sub_saharan_africa",
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_sub_saharan_africa_s43",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "sub_saharan_africa",
+        "seed": 43,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_sub_saharan_africa_s44",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "sub_saharan_africa",
+        "seed": 44,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_sub_saharan_africa_s45",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "sub_saharan_africa",
+        "seed": 45,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_sub_saharan_africa_s46",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "sub_saharan_africa",
+        "seed": 46,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_south_asia_s42",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "south_asia",
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_south_asia_s43",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "south_asia",
+        "seed": 43,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_south_asia_s44",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "south_asia",
+        "seed": 44,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_south_asia_s45",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "south_asia",
+        "seed": 45,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_south_asia_s46",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "south_asia",
+        "seed": 46,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_east_asia_pacific_s42",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "east_asia_pacific",
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_east_asia_pacific_s43",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "east_asia_pacific",
+        "seed": 43,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_east_asia_pacific_s44",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "east_asia_pacific",
+        "seed": 44,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_east_asia_pacific_s45",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "east_asia_pacific",
+        "seed": 45,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_east_asia_pacific_s46",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "east_asia_pacific",
+        "seed": 46,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_latin_america_caribbean_s42",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "latin_america_caribbean",
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_latin_america_caribbean_s43",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "latin_america_caribbean",
+        "seed": 43,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_latin_america_caribbean_s44",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "latin_america_caribbean",
+        "seed": 44,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_latin_america_caribbean_s45",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "latin_america_caribbean",
+        "seed": 45,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_latin_america_caribbean_s46",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "latin_america_caribbean",
+        "seed": 46,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_europe_central_asia_s42",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "europe_central_asia",
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_europe_central_asia_s43",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "europe_central_asia",
+        "seed": 43,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_europe_central_asia_s44",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "europe_central_asia",
+        "seed": 44,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_europe_central_asia_s45",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "europe_central_asia",
+        "seed": 45,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_europe_central_asia_s46",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "europe_central_asia",
+        "seed": 46,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_middle_east_north_africa_s42",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "middle_east_north_africa",
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_middle_east_north_africa_s43",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "middle_east_north_africa",
+        "seed": 43,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_middle_east_north_africa_s44",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "middle_east_north_africa",
+        "seed": 44,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_middle_east_north_africa_s45",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "middle_east_north_africa",
+        "seed": 45,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "region_middle_east_north_africa_s46",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "middle_east_north_africa",
+        "seed": 46,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "era_1960_1975_s42",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1960,
+          1975
+        ],
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "era_1960_1975_s43",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1960,
+          1975
+        ],
+        "seed": 43,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "era_1960_1975_s44",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1960,
+          1975
+        ],
+        "seed": 44,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "era_1960_1975_s45",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1960,
+          1975
+        ],
+        "seed": 45,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "era_1960_1975_s46",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1960,
+          1975
+        ],
+        "seed": 46,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "era_1975_1990_s42",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1975,
+          1990
+        ],
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "era_1975_1990_s43",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1975,
+          1990
+        ],
+        "seed": 43,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "era_1975_1990_s44",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1975,
+          1990
+        ],
+        "seed": 44,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "era_1975_1990_s45",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1975,
+          1990
+        ],
+        "seed": 45,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "era_1975_1990_s46",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1975,
+          1990
+        ],
+        "seed": 46,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "era_1990_2005_s42",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1990,
+          2005
+        ],
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "era_1990_2005_s43",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1990,
+          2005
+        ],
+        "seed": 43,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "era_1990_2005_s44",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1990,
+          2005
+        ],
+        "seed": 44,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "era_1990_2005_s45",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1990,
+          2005
+        ],
+        "seed": 45,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "era_1990_2005_s46",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1990,
+          2005
+        ],
+        "seed": 46,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "era_2005_2020_s42",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          2005,
+          2020
+        ],
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "era_2005_2020_s43",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          2005,
+          2020
+        ],
+        "seed": 43,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "era_2005_2020_s44",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          2005,
+          2020
+        ],
+        "seed": 44,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "era_2005_2020_s45",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          2005,
+          2020
+        ],
+        "seed": 45,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "era_2005_2020_s46",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          2005,
+          2020
+        ],
+        "seed": 46,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "era_1960_2020_s42",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1960,
+          2020
+        ],
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "era_1960_2020_s43",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1960,
+          2020
+        ],
+        "seed": 43,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "era_1960_2020_s44",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1960,
+          2020
+        ],
+        "seed": 44,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "era_1960_2020_s45",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1960,
+          2020
+        ],
+        "seed": 45,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "era_1960_2020_s46",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1960,
+          2020
+        ],
+        "seed": 46,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_185_spec_curve",
+      "kind": "loo_spec_curve",
+      "params": {
+        "methods": [
+          "ols_within_fe",
+          "ridge",
+          "random_forest",
+          "gradient_boosting"
+        ]
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 12.0
+    },
+    {
+      "id": "counterfactual_swaps",
+      "kind": "counterfactual",
+      "params": {
+        "pairs": [
+          [
+            "south korea",
+            "philippines"
+          ],
+          [
+            "taiwan",
+            "philippines"
+          ],
+          [
+            "cuba",
+            "dominican republic"
+          ],
+          [
+            "sri lanka",
+            "pakistan"
+          ],
+          [
+            "bangladesh",
+            "pakistan"
+          ],
+          [
+            "china",
+            "india"
+          ],
+          [
+            "vietnam",
+            "myanmar"
+          ],
+          [
+            "kerala",
+            "uttar pradesh"
+          ],
+          [
+            "botswana",
+            "zimbabwe"
+          ],
+          [
+            "rwanda",
+            "burundi"
+          ]
+        ]
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 0.5
+    },
+    {
+      "id": "optuna_search",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 200,
+        "seed": 42
+      },
+      "est_gpu_hours": 25.0,
+      "est_cpu_hours": 0.0
+    }
+  ],
+  "summary": {
+    "n_jobs": 58,
+    "by_kind": {
+      "transformer_strat": 55,
+      "loo_spec_curve": 1,
+      "counterfactual": 1,
+      "optuna": 1
+    },
+    "total_gpu_hours": 38.500000000000014,
+    "total_cpu_hours": 12.5,
+    "est_cost_usd_preempt": 9.11,
+    "est_cost_usd_ondemand": 18.35
+  }
+}

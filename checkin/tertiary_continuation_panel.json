@@ -1,0 +1,48 @@
+{
+  "results": {
+    "tertiary_singapore_2020": {
+      "expected": 73.4,
+      "actual": 73.4,
+      "status": "PASS"
+    },
+    "tertiary_taiwan_province_of_china_2020": {
+      "expected": 72.6,
+      "actual": 72.6,
+      "status": "PASS"
+    },
+    "tertiary_republic_of_korea_2020": {
+      "expected": 54.5,
+      "actual": 54.5,
+      "status": "PASS"
+    },
+    "tertiary_sweden_2020": {
+      "expected": 56.6,
+      "actual": 56.6,
+      "status": "PASS"
+    },
+    "tertiary_norway_2020": {
+      "expected": 47.3,
+      "actual": 47.3,
+      "status": "PASS"
+    },
+    "tertiary_japan_2020": {
+      "expected": 32.4,
+      "actual": 32.4,
+      "status": "PASS"
+    }
+  },
+  "numbers": {
+    "singapore": 73.4,
+    "taiwan": 72.6,
+    "korea_rep": 54.5,
+    "sweden": 56.6,
+    "norway": 47.3,
+    "japan": 32.4,
+    "panel_min_pct": 32,
+    "panel_max_pct": 73,
+    "panel_n": 6
+  },
+  "overall": "PASS",
+  "script": "scripts/tertiary_continuation_panel.py",
+  "source": "WCDE v3 (wcde/data/processed/college_both.csv)"
+}

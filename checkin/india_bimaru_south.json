@@ -1,0 +1,39 @@
+{
+  "numbers": {
+    "n_south": 4,
+    "n_bimaru": 4,
+    "south_states": [
+      "Kerala",
+      "Tamil Nadu",
+      "Andhra Pradesh",
+      "Karnataka"
+    ],
+    "bimaru_states": [
+      "Madhya Pradesh",
+      "Rajasthan",
+      "Bihar",
+      "Uttar Pradesh"
+    ],
+    "replacement_tfr": 2.1,
+    "mean_replacement_year_south": 2002.8,
+    "mean_replacement_year_bimaru": 2025.0,
+    "tier_gap_years": 22.2,
+    "latest_south_replacement_year": 2010,
+    "earliest_bimaru_replacement_year": 2020,
+    "fully_separated": true,
+    "separation_gap_years": 10,
+    "mean_female_literacy_2011_south": 73.2,
+    "mean_female_literacy_2011_bimaru": 55.0,
+    "female_literacy_gap_pp": 18.2,
+    "spearman_literacy_vs_replacement_year": {
+      "rho": -0.849,
+      "rho_abs": 0.849,
+      "p": 0.0077
+    },
+    "nfhs6_bimaru_still_at_or_above_replacement": 2,
+    "nfhs6_south_below_replacement": 4,
+    "nfhs6_tfr_bihar": 2.76,
+    "nfhs6_tfr_uttar_pradesh": 2.1
+  },
+  "script": "scripts/diagnostics/india_bimaru_south.py"
+}

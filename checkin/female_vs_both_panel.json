@@ -1,0 +1,136 @@
+{
+  "method": "Horse race: outcome(T+lag) ~ female_lower_sec(T) + male_lower_sec(T), country FE, country-clustered SEs. Entry-cohort design (entry>=10%, ceiling<=90% in both-sexes lower-sec). T=1960-1990. Outcome-specific lag: TFR uses LAG_TFR=5 (biological parent timing); U5MR uses LAG_CHILDREARING=12 (childrearing window); LE uses LAG_GENERATION=28 (time-to-agency). Also reports single-regressor fits for female, male, both, and standardised (z-score) betas on the identical panel.",
+  "params": {
+    "entry": 10,
+    "ceiling": 90,
+    "t_start": 1960,
+    "t_end": 1990,
+    "outcome_lag": {
+      "le": 28,
+      "tfr": 5,
+      "u5mr": 12
+    }
+  },
+  "outcomes": {
+    "LE": {
+      "horse_race": {
+        "beta_female": 0.04524122641372997,
+        "se_female": 0.033841428293788646,
+        "pval_female": 0.18126858485144948,
+        "beta_male": 0.13900024780541226,
+        "se_male": 0.041139493431004405,
+        "pval_male": 0.000728150053766133,
+        "r2": 0.48573170479374195,
+        "n": 830,
+        "countries": 160
+      },
+      "female_only": {
+        "beta": 0.15312917091423012,
+        "se": 0.009943422191485514,
+        "pval": 1.6354997077770477e-53,
+        "r2": 0.4585083782624271
+      },
+      "male_only": {
+        "beta": 0.1910610235808124,
+        "se": 0.011607014588217807,
+        "pval": 7.013918700273548e-61,
+        "r2": 0.48145609853894256
+      },
+      "both_only": {
+        "beta": 0.17470014627530928,
+        "se": 0.010937709249420174,
+        "pval": 1.9936561905125628e-57,
+        "r2": 0.47871731341342805
+      },
+      "standardised_beta_female": 0.67713246729309,
+      "standardised_beta_male": 0.6938703758908737,
+      "standardised_beta_both": 0.6918940044641437
+    },
+    "TFR": {
+      "horse_race": {
+        "beta_female": -0.04168365777305304,
+        "se_female": 0.008064418625321666,
+        "pval_female": 2.3555641425010065e-07,
+        "beta_male": -0.013996937735462308,
+        "se_male": 0.009444582036335787,
+        "pval_male": 0.13833840294903735,
+        "r2": 0.6784308973286874,
+        "n": 826,
+        "countries": 160
+      },
+      "female_only": {
+        "beta": -0.05259953175534181,
+        "se": 0.002886432087560452,
+        "pval": 3.38875308246699e-74,
+        "r2": 0.6750065460724741
+      },
+      "male_only": {
+        "beta": -0.061813594684472215,
+        "se": 0.0032011068011066454,
+        "pval": 4.419777123015055e-83,
+        "r2": 0.6337592679256137
+      },
+      "both_only": {
+        "beta": -0.058342473456900114,
+        "se": 0.0030538584295622833,
+        "pval": 2.3158474507135657e-81,
+        "r2": 0.6689415061539652
+      },
+      "standardised_beta_female": -0.821587820060932,
+      "standardised_beta_male": -0.7960899873290795,
+      "standardised_beta_both": -0.8178884435874892
+    },
+    "U5MR": {
+      "horse_race": {
+        "beta_female": 0.296015040800987,
+        "se_female": 0.2984887131916479,
+        "pval_female": 0.3213377052764347,
+        "beta_male": -1.8267037352241493,
+        "se_male": 0.4047284314524849,
+        "pval_male": 6.379472810363591e-06,
+        "r2": 0.4885788644872967,
+        "n": 795,
+        "countries": 155
+      },
+      "female_only": {
+        "beta": -1.1409838474794938,
+        "se": 0.09730706985115864,
+        "pval": 9.423018948419894e-32,
+        "r2": 0.4111240731486183
+      },
+      "male_only": {
+        "beta": -1.490360199849514,
+        "se": 0.13051350263379471,
+        "pval": 3.352940432227306e-30,
+        "r2": 0.48564107547153756
+      },
+      "both_only": {
+        "beta": -1.334752809502677,
+        "se": 0.11575394968360463,
+        "pval": 9.212332829435725e-31,
+        "r2": 0.45674756015843054
+      },
+      "standardised_beta_female": -0.6411895766063405,
+      "standardised_beta_male": -0.6968795272294471,
+      "standardised_beta_both": -0.6758310144987653
+    }
+  },
+  "summary": {
+    "LE": {
+      "z_female_minus_male": -0.017,
+      "z_female_over_both": 0.979,
+      "female_dominates_horse_race": false
+    },
+    "TFR": {
+      "z_female_minus_male": 0.025,
+      "z_female_over_both": 1.005,
+      "female_dominates_horse_race": true
+    },
+    "U5MR": {
+      "z_female_minus_male": -0.056,
+      "z_female_over_both": 0.949,
+      "female_dominates_horse_race": false
+    }
+  },
+  "script": "scripts/female_vs_both_panel.py"
+}

@@ -1,0 +1,532 @@
+{
+  "method": "Grandparent-channel independence test across all four development outcomes. For each outcome, fit a country-FE panel with cluster-robust SEs: (1) outcome ~ parent_edu, (2) outcome ~ parent_edu + grandparent_edu, (3) outcome ~ grandparent_edu. Per-outcome biological lag: TFR uses parent at T-5 (cohort age 20-24 \u2192 newborn at T) and grandparent at T-33; U5MR uses parent at T-12 (childrearing window) and grandparent at T-40; LE / child-edu use parent at T-28 and grandparent at T-56. WCDE v3 lower secondary completion, both sexes, ages 20-24. Under-5 mortality is log-transformed. Low-education subsample: parent_edu < 50%. Ranking by \u0394R\u00b2 (R\u00b2(M2) \u2212 R\u00b2(M1)).",
+  "outcomes": {
+    "le": {
+      "outcome": "Life expectancy (LE)",
+      "outcome_col": "le",
+      "full": {
+        "parent_only": {
+          "n": 456,
+          "n_countries": 152,
+          "within_r2": 0.3436,
+          "beta_parent_edu": 0.240817,
+          "pval_parent_edu": 0.0,
+          "se_parent_edu": 0.030959
+        },
+        "parent_gp": {
+          "n": 456,
+          "n_countries": 152,
+          "within_r2": 0.4132,
+          "beta_parent_edu": 0.180407,
+          "pval_parent_edu": 1e-06,
+          "se_parent_edu": 0.036386,
+          "beta_grandparent_edu": 0.096884,
+          "pval_grandparent_edu": 0.0,
+          "se_grandparent_edu": 0.015628
+        },
+        "gp_only": {
+          "n": 456,
+          "n_countries": 152,
+          "within_r2": 0.2661,
+          "beta_grandparent_edu": 0.165526,
+          "pval_grandparent_edu": 0.0,
+          "se_grandparent_edu": 0.017554
+        },
+        "r2_gain": 0.0696,
+        "beta_ratio_gp_over_p": 0.537
+      },
+      "low_edu": {
+        "cutoff": 50.0,
+        "parent_only": {
+          "n": 220,
+          "n_countries": 80,
+          "within_r2": 0.3632,
+          "beta_parent_edu": 0.334746,
+          "pval_parent_edu": 0.0,
+          "se_parent_edu": 0.049344
+        },
+        "parent_gp": {
+          "n": 220,
+          "n_countries": 80,
+          "within_r2": 0.4629,
+          "beta_parent_edu": 0.160969,
+          "pval_parent_edu": 0.003114,
+          "se_parent_edu": 0.05445,
+          "beta_grandparent_edu": 0.49865,
+          "pval_grandparent_edu": 3.9e-05,
+          "se_grandparent_edu": 0.121216
+        },
+        "gp_only": {
+          "n": 220,
+          "n_countries": 80,
+          "within_r2": 0.4205,
+          "beta_grandparent_edu": 0.727478,
+          "pval_grandparent_edu": 0.0,
+          "se_grandparent_edu": 0.107007
+        },
+        "r2_gain": 0.0997,
+        "beta_ratio_gp_over_p": 3.0978
+      }
+    },
+    "le_log": {
+      "outcome": "Life expectancy (log LE)",
+      "outcome_col": "le_log",
+      "full": {
+        "parent_only": {
+          "n": 456,
+          "n_countries": 152,
+          "within_r2": 0.3074,
+          "beta_parent_edu": 0.003689,
+          "pval_parent_edu": 0.0,
+          "se_parent_edu": 0.000566
+        },
+        "parent_gp": {
+          "n": 456,
+          "n_countries": 152,
+          "within_r2": 0.3502,
+          "beta_parent_edu": 0.002921,
+          "pval_parent_edu": 1.2e-05,
+          "se_parent_edu": 0.000669,
+          "beta_grandparent_edu": 0.00123,
+          "pval_grandparent_edu": 1e-06,
+          "se_grandparent_edu": 0.000249
+        },
+        "gp_only": {
+          "n": 456,
+          "n_countries": 152,
+          "within_r2": 0.2031,
+          "beta_grandparent_edu": 0.002342,
+          "pval_grandparent_edu": 0.0,
+          "se_grandparent_edu": 0.000267
+        },
+        "r2_gain": 0.0428,
+        "beta_ratio_gp_over_p": 0.4211
+      },
+      "low_edu": {
+        "cutoff": 50.0,
+        "parent_only": {
+          "n": 220,
+          "n_countries": 80,
+          "within_r2": 0.3231,
+          "beta_parent_edu": 0.005285,
+          "pval_parent_edu": 0.0,
+          "se_parent_edu": 0.000857
+        },
+        "parent_gp": {
+          "n": 220,
+          "n_countries": 80,
+          "within_r2": 0.4131,
+          "beta_parent_edu": 0.002521,
+          "pval_parent_edu": 0.007736,
+          "se_parent_edu": 0.000947,
+          "beta_grandparent_edu": 0.00793,
+          "pval_grandparent_edu": 0.000111,
+          "se_grandparent_edu": 0.002052
+        },
+        "gp_only": {
+          "n": 220,
+          "n_countries": 80,
+          "within_r2": 0.376,
+          "beta_grandparent_edu": 0.011514,
+          "pval_grandparent_edu": 0.0,
+          "se_grandparent_edu": 0.001829
+        },
+        "r2_gain": 0.09,
+        "beta_ratio_gp_over_p": 3.1456
+      }
+    },
+    "tfr": {
+      "outcome": "Total fertility rate (TFR)",
+      "outcome_col": "tfr",
+      "full": {
+        "parent_only": {
+          "n": 1216,
+          "n_countries": 152,
+          "within_r2": 0.5624,
+          "beta_parent_edu": -0.05805,
+          "pval_parent_edu": 0.0,
+          "se_parent_edu": 0.003969
+        },
+        "parent_gp": {
+          "n": 1216,
+          "n_countries": 152,
+          "within_r2": 0.5865,
+          "beta_parent_edu": -0.048593,
+          "pval_parent_edu": 0.0,
+          "se_parent_edu": 0.004798,
+          "beta_grandparent_edu": -0.01093,
+          "pval_grandparent_edu": 0.000152,
+          "se_grandparent_edu": 0.002886
+        },
+        "gp_only": {
+          "n": 1216,
+          "n_countries": 152,
+          "within_r2": 0.343,
+          "beta_grandparent_edu": -0.032391,
+          "pval_grandparent_edu": 0.0,
+          "se_grandparent_edu": 0.002984
+        },
+        "r2_gain": 0.0241,
+        "beta_ratio_gp_over_p": 0.2249
+      },
+      "low_edu": {
+        "cutoff": 50.0,
+        "parent_only": {
+          "n": 464,
+          "n_countries": 80,
+          "within_r2": 0.6878,
+          "beta_parent_edu": -0.095596,
+          "pval_parent_edu": 0.0,
+          "se_parent_edu": 0.006153
+        },
+        "parent_gp": {
+          "n": 464,
+          "n_countries": 80,
+          "within_r2": 0.7398,
+          "beta_parent_edu": -0.069372,
+          "pval_parent_edu": 0.0,
+          "se_parent_edu": 0.010812,
+          "beta_grandparent_edu": -0.047567,
+          "pval_grandparent_edu": 0.000434,
+          "se_grandparent_edu": 0.01352
+        },
+        "gp_only": {
+          "n": 464,
+          "n_countries": 80,
+          "within_r2": 0.5583,
+          "beta_grandparent_edu": -0.110343,
+          "pval_grandparent_edu": 0.0,
+          "se_grandparent_edu": 0.015918
+        },
+        "r2_gain": 0.052,
+        "beta_ratio_gp_over_p": 0.6857
+      }
+    },
+    "tfr_log": {
+      "outcome": "Total fertility rate (log TFR)",
+      "outcome_col": "tfr_log",
+      "full": {
+        "parent_only": {
+          "n": 1216,
+          "n_countries": 152,
+          "within_r2": 0.5711,
+          "beta_parent_edu": -0.016413,
+          "pval_parent_edu": 0.0,
+          "se_parent_edu": 0.000992
+        },
+        "parent_gp": {
+          "n": 1216,
+          "n_countries": 152,
+          "within_r2": 0.6448,
+          "beta_parent_edu": -0.011778,
+          "pval_parent_edu": 0.0,
+          "se_parent_edu": 0.001226,
+          "beta_grandparent_edu": -0.005357,
+          "pval_grandparent_edu": 0.0,
+          "se_grandparent_edu": 0.000839
+        },
+        "gp_only": {
+          "n": 1216,
+          "n_countries": 152,
+          "within_r2": 0.463,
+          "beta_grandparent_edu": -0.010559,
+          "pval_grandparent_edu": 0.0,
+          "se_grandparent_edu": 0.000786
+        },
+        "r2_gain": 0.0737,
+        "beta_ratio_gp_over_p": 0.4548
+      },
+      "low_edu": {
+        "cutoff": 50.0,
+        "parent_only": {
+          "n": 464,
+          "n_countries": 80,
+          "within_r2": 0.7038,
+          "beta_parent_edu": -0.021082,
+          "pval_parent_edu": 0.0,
+          "se_parent_edu": 0.001592
+        },
+        "parent_gp": {
+          "n": 464,
+          "n_countries": 80,
+          "within_r2": 0.7488,
+          "beta_parent_edu": -0.015762,
+          "pval_parent_edu": 0.0,
+          "se_parent_edu": 0.002584,
+          "beta_grandparent_edu": -0.00965,
+          "pval_grandparent_edu": 0.000954,
+          "se_grandparent_edu": 0.002921
+        },
+        "gp_only": {
+          "n": 464,
+          "n_countries": 80,
+          "within_r2": 0.5517,
+          "beta_grandparent_edu": -0.023914,
+          "pval_grandparent_edu": 0.0,
+          "se_grandparent_edu": 0.003596
+        },
+        "r2_gain": 0.045,
+        "beta_ratio_gp_over_p": 0.6122
+      }
+    },
+    "u5_log": {
+      "outcome": "Under-5 mortality (log)",
+      "outcome_col": "u5_log",
+      "full": {
+        "parent_only": {
+          "n": 825,
+          "n_countries": 165,
+          "within_r2": 0.4072,
+          "beta_parent_edu": -0.034338,
+          "pval_parent_edu": 0.0,
+          "se_parent_edu": 0.002786
+        },
+        "parent_gp": {
+          "n": 825,
+          "n_countries": 165,
+          "within_r2": 0.6532,
+          "beta_parent_edu": -0.018372,
+          "pval_parent_edu": 0.0,
+          "se_parent_edu": 0.003072,
+          "beta_grandparent_edu": -0.020281,
+          "pval_grandparent_edu": 0.0,
+          "se_grandparent_edu": 0.00155
+        },
+        "gp_only": {
+          "n": 825,
+          "n_countries": 165,
+          "within_r2": 0.5673,
+          "beta_grandparent_edu": -0.026432,
+          "pval_grandparent_edu": 0.0,
+          "se_grandparent_edu": 0.001596
+        },
+        "r2_gain": 0.246,
+        "beta_ratio_gp_over_p": 1.1039
+      },
+      "low_edu": {
+        "cutoff": 50.0,
+        "parent_only": {
+          "n": 366,
+          "n_countries": 89,
+          "within_r2": 0.5313,
+          "beta_parent_edu": -0.040771,
+          "pval_parent_edu": 0.0,
+          "se_parent_edu": 0.00373
+        },
+        "parent_gp": {
+          "n": 366,
+          "n_countries": 89,
+          "within_r2": 0.6454,
+          "beta_parent_edu": -0.02502,
+          "pval_parent_edu": 2e-06,
+          "se_parent_edu": 0.005218,
+          "beta_grandparent_edu": -0.038,
+          "pval_grandparent_edu": 0.0,
+          "se_grandparent_edu": 0.006973
+        },
+        "gp_only": {
+          "n": 366,
+          "n_countries": 89,
+          "within_r2": 0.5273,
+          "beta_grandparent_edu": -0.062744,
+          "pval_grandparent_edu": 0.0,
+          "se_grandparent_edu": 0.006949
+        },
+        "r2_gain": 0.1141,
+        "beta_ratio_gp_over_p": 1.5188
+      }
+    },
+    "child_edu": {
+      "outcome": "Child education (T+28)",
+      "outcome_col": "child_edu",
+      "full": {
+        "parent_only": {
+          "n": 740,
+          "n_countries": 185,
+          "within_r2": 0.306,
+          "beta_parent_edu": 0.896377,
+          "pval_parent_edu": 0.0,
+          "se_parent_edu": 0.10303
+        },
+        "parent_gp": {
+          "n": 740,
+          "n_countries": 185,
+          "within_r2": 0.4078,
+          "beta_parent_edu": 0.575753,
+          "pval_parent_edu": 0.0,
+          "se_parent_edu": 0.112553,
+          "beta_grandparent_edu": 0.412538,
+          "pval_grandparent_edu": 2e-06,
+          "se_grandparent_edu": 0.086546
+        },
+        "gp_only": {
+          "n": 740,
+          "n_countries": 185,
+          "within_r2": 0.3166,
+          "beta_grandparent_edu": 0.618199,
+          "pval_grandparent_edu": 0.0,
+          "se_grandparent_edu": 0.086735
+        },
+        "r2_gain": 0.1018,
+        "beta_ratio_gp_over_p": 0.7165
+      },
+      "low_edu": {
+        "cutoff": 50.0,
+        "parent_only": {
+          "n": 323,
+          "n_countries": 94,
+          "within_r2": 0.5211,
+          "beta_parent_edu": 1.188836,
+          "pval_parent_edu": 0.0,
+          "se_parent_edu": 0.143955
+        },
+        "parent_gp": {
+          "n": 323,
+          "n_countries": 94,
+          "within_r2": 0.6581,
+          "beta_parent_edu": 0.612663,
+          "pval_parent_edu": 0.000239,
+          "se_parent_edu": 0.166768,
+          "beta_grandparent_edu": 1.437878,
+          "pval_grandparent_edu": 0.0,
+          "se_grandparent_edu": 0.251014
+        },
+        "gp_only": {
+          "n": 323,
+          "n_countries": 94,
+          "within_r2": 0.585,
+          "beta_grandparent_edu": 2.159312,
+          "pval_grandparent_edu": 0.0,
+          "se_grandparent_edu": 0.207701
+        },
+        "r2_gain": 0.137,
+        "beta_ratio_gp_over_p": 2.3469
+      }
+    }
+  },
+  "ranking_full": [
+    {
+      "key": "u5_log",
+      "label": "Under-5 mortality (log)",
+      "r2_gain": 0.246,
+      "beta_ratio": 1.1039,
+      "beta_gp": -0.020281,
+      "beta_p": -0.018372,
+      "pval_gp": 0.0,
+      "n": 825
+    },
+    {
+      "key": "child_edu",
+      "label": "Child education (T+28)",
+      "r2_gain": 0.1018,
+      "beta_ratio": 0.7165,
+      "beta_gp": 0.412538,
+      "beta_p": 0.575753,
+      "pval_gp": 2e-06,
+      "n": 740
+    },
+    {
+      "key": "tfr_log",
+      "label": "Total fertility rate (log TFR)",
+      "r2_gain": 0.0737,
+      "beta_ratio": 0.4548,
+      "beta_gp": -0.005357,
+      "beta_p": -0.011778,
+      "pval_gp": 0.0,
+      "n": 1216
+    },
+    {
+      "key": "le",
+      "label": "Life expectancy (LE)",
+      "r2_gain": 0.0696,
+      "beta_ratio": 0.537,
+      "beta_gp": 0.096884,
+      "beta_p": 0.180407,
+      "pval_gp": 0.0,
+      "n": 456
+    },
+    {
+      "key": "le_log",
+      "label": "Life expectancy (log LE)",
+      "r2_gain": 0.0428,
+      "beta_ratio": 0.4211,
+      "beta_gp": 0.00123,
+      "beta_p": 0.002921,
+      "pval_gp": 1e-06,
+      "n": 456
+    },
+    {
+      "key": "tfr",
+      "label": "Total fertility rate (TFR)",
+      "r2_gain": 0.0241,
+      "beta_ratio": 0.2249,
+      "beta_gp": -0.01093,
+      "beta_p": -0.048593,
+      "pval_gp": 0.000152,
+      "n": 1216
+    }
+  ],
+  "ranking_low_edu": [
+    {
+      "key": "child_edu",
+      "label": "Child education (T+28)",
+      "r2_gain": 0.137,
+      "beta_ratio": 2.3469,
+      "beta_gp": 1.437878,
+      "beta_p": 0.612663,
+      "pval_gp": 0.0,
+      "n": 323
+    },
+    {
+      "key": "u5_log",
+      "label": "Under-5 mortality (log)",
+      "r2_gain": 0.1141,
+      "beta_ratio": 1.5188,
+      "beta_gp": -0.038,
+      "beta_p": -0.02502,
+      "pval_gp": 0.0,
+      "n": 366
+    },
+    {
+      "key": "le",
+      "label": "Life expectancy (LE)",
+      "r2_gain": 0.0997,
+      "beta_ratio": 3.0978,
+      "beta_gp": 0.49865,
+      "beta_p": 0.160969,
+      "pval_gp": 3.9e-05,
+      "n": 220
+    },
+    {
+      "key": "le_log",
+      "label": "Life expectancy (log LE)",
+      "r2_gain": 0.09,
+      "beta_ratio": 3.1456,
+      "beta_gp": 0.00793,
+      "beta_p": 0.002521,
+      "pval_gp": 0.000111,
+      "n": 220
+    },
+    {
+      "key": "tfr",
+      "label": "Total fertility rate (TFR)",
+      "r2_gain": 0.052,
+      "beta_ratio": 0.6857,
+      "beta_gp": -0.047567,
+      "beta_p": -0.069372,
+      "pval_gp": 0.000434,
+      "n": 464
+    },
+    {
+      "key": "tfr_log",
+      "label": "Total fertility rate (log TFR)",
+      "r2_gain": 0.045,
+      "beta_ratio": 0.6122,
+      "beta_gp": -0.00965,
+      "beta_p": -0.015762,
+      "pval_gp": 0.000954,
+      "n": 464
+    }
+  ],
+  "script": "scripts/robustness/grandparent_effect_all_outcomes.py"
+}

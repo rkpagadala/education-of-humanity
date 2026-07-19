@@ -1,0 +1,698 @@
+{
+  "_meta": {
+    "schema_version": 1,
+    "description": "Citation registry for paper/the_long_childhood.tex. Insertion order = render order in the paper's References section. text is the full LaTeX paragraph for the entry. doi is preferred; url is fallback for books/reports/web. Verified by scripts/_citations.py via render-and-diff."
+  },
+  "entries": {
+    "acemoglu_2001": {
+      "year": 2001,
+      "doi": "10.1257/aer.91.5.1369",
+      "url": "https://doi.org/10.1257/aer.91.5.1369",
+      "aliases": [
+        "ajr_2001",
+        "johnson_2001"
+      ],
+      "text": "Acemoglu, D., Johnson, S. \\& Robinson, J.A. (2001). The Colonial Origins of Comparative Development: An Empirical Investigation. \\emph{American Economic Review}, 91(5), 1369--1401."
+    },
+    "acemoglu_2012": {
+      "year": 2012,
+      "doi": null,
+      "url": "https://www.penguinrandomhouse.com/books/214/why-nations-fail-by-daron-acemoglu-and-james-a-robinson/",
+      "text": "Acemoglu, D. \\& Robinson, J.A. (2012). \\emph{Why Nations Fail: The\nOrigins of Power, Prosperity, and Poverty}. Crown Publishers."
+    },
+    "aghion_1992": {
+      "year": 1992,
+      "doi": "10.2307/2951599",
+      "url": "https://doi.org/10.2307/2951599",
+      "text": "Aghion, P. \\& Howitt, P. (1992). A Model of Growth Through Creative\nDestruction. \\emph{Econometrica}, 60(2), 323--351."
+    },
+    "anderson_1986": {
+      "year": 1986,
+      "doi": null,
+      "url": "https://www.researchgate.net/publication/236260855_Infant_Mortality_in_the_Soviet_Union_Regional_Differences_and_Measurement_Issues",
+      "text": "Anderson, B.A. \\& Silver, B.D. (1986). Infant Mortality in the Soviet\nUnion: Regional Differences and Measurement Issues. \\emph{Population\nand Development Review}, 12(4), 705--738."
+    },
+    "angrist_2021": {
+      "year": 2021,
+      "doi": "10.1038/s41586-021-03323-7",
+      "url": "https://doi.org/10.1038/s41586-021-03323-7",
+      "text": "Angrist, N., Djankov, S., Goldberg, P.K. \\& Patrinos, H.A. (2021).\nMeasuring Human Capital Using Global Learning Data. \\emph{Nature}, 592,\n403--408."
+    },
+    "auvert_2005": {
+      "year": 2005,
+      "doi": "10.1371/journal.pmed.0020298",
+      "url": "https://doi.org/10.1371/journal.pmed.0020298",
+      "text": "Auvert, B., Taljaard, D., Lagarde, E., Sobngwi-Tambekou, J., Sitta, R.\n\\& Puren, A. (2005). Randomized, Controlled Intervention Trial of Male\nCircumcision for Reduction of HIV Infection Risk: The ANRS 1265 Trial.\n\\emph{PLOS Medicine}, 2(11), e298."
+    },
+    "babiarz_2018": {
+      "year": 2018,
+      "doi": "10.3386/w25130",
+      "url": "https://doi.org/10.3386/w25130",
+      "text": "Babiarz, K.S., Ma, P., Miller, G. \\& Song, S. (2018). The Limits and\nConsequences of Population Policy: Evidence from China's Wan Xi Shao\nCampaign. NBER Working Paper No.~25130."
+    },
+    "baker_2008": {
+      "year": 2008,
+      "doi": "10.1007/s11125-009-9085-2",
+      "url": "https://doi.org/10.1007/s11125-009-9085-2",
+      "text": "Baker, D.P., Collins, J.M. \\& Leon, J. (2008). Risk Factor or Social\nVaccine? The Historical Progression of the Role of Education in HIV and\nAIDS Infection in Sub-Saharan Africa. \\emph{Prospects}, 38(4), 467--486."
+    },
+    "becker_1964": {
+      "year": 1964,
+      "doi": null,
+      "url": "https://www.nber.org/books-and-chapters/human-capital-theoretical-and-empirical-analysis-special-reference-education-third-edition",
+      "text": "Becker, G.S. (1964). \\emph{Human Capital: A Theoretical and Empirical\nAnalysis, with Special Reference to Education}. National Bureau of\nEconomic Research; Columbia University Press."
+    },
+    "bora_2022": {
+      "year": 2022,
+      "doi": "10.1080/17441730.2022.2028253",
+      "url": null,
+      "text": "Bora, J.K., Saikia, N., Kebede, E.B. \\& Lutz, W. (2022). Revisiting\nthe causes of fertility decline in Bangladesh: the relative importance\nof female education and family planning programs. \\emph{Asian Population\nStudies}, 19(1), 81--104."
+    },
+    "boyd_1985": {
+      "year": 1985,
+      "doi": null,
+      "url": "https://press.uchicago.edu/ucp/books/book/chicago/C/bo5970597.html",
+      "text": "Boyd, R. \\& Richerson, P.J. (1985). \\emph{Culture and the Evolutionary\nProcess}. University of Chicago Press."
+    },
+    "brass_1986": {
+      "year": 1986,
+      "doi": "10.2307/2055843",
+      "url": "https://doi.org/10.2307/2055843",
+      "text": "Brass, P.R. (1986). The Political Uses of Crisis: The Bihar Famine of\n1966--1967. \\emph{Journal of Asian Studies}, 45(2), 245--267."
+    },
+    "cai_2010": {
+      "year": 2010,
+      "doi": "10.1111/j.1728-4457.2010.00341.x",
+      "url": "https://doi.org/10.1111/j.1728-4457.2010.00341.x",
+      "text": "Cai, Y. (2010). China's Below-Replacement Fertility: Government Policy\nor Socioeconomic Development? \\emph{Population and Development Review},\n36(3), 419--440."
+    },
+    "caldwell_1979": {
+      "year": 1979,
+      "doi": "10.2307/2173888",
+      "url": "https://doi.org/10.2307/2173888",
+      "text": "Caldwell, J.C. (1979). Education as a Factor in Mortality Decline:\nAn Examination of Nigerian Data. \\emph{Population Studies}, 33(3),\n395--413."
+    },
+    "cleland_1988": {
+      "year": 1988,
+      "doi": "10.1016/0277-9536(88)90201-8",
+      "url": "https://doi.org/10.1016/0277-9536(88)90201-8",
+      "text": "Cleland, J.G. \\& Van Ginneken, J.K. (1988). Maternal education and\nchild survival in developing countries: the search for pathways of\ninfluence. \\emph{Social Science \\& Medicine}, 27(12), 1357--1368."
+    },
+    "davis_2001": {
+      "year": 2001,
+      "doi": null,
+      "url": "https://www.versobooks.com/products/1719-late-victorian-holocausts",
+      "text": "Davis, M. (2001). \\emph{Late Victorian Holocausts: El Niño Famines and\nthe Making of the Third World}. Verso."
+    },
+    "de_neve_2015": {
+      "year": 2015,
+      "doi": "10.1016/S2214-109X(15)00087-X",
+      "url": "https://doi.org/10.1016/S2214-109X(15)00087-X",
+      "text": "De~Neve, J.-W., Fink, G., Subramanian, S.V., Moyo, S. \\& Bor, J.\n(2015). Length of Secondary Schooling and Risk of HIV Infection in\nBotswana: Evidence from a Natural Experiment. \\emph{Lancet Global\nHealth}, 3(8), e470--e477."
+    },
+    "de_waal_2013": {
+      "year": 2013,
+      "doi": null,
+      "url": "https://wwnorton.com/books/The-Bonobo-and-the-Atheist/",
+      "text": "de Waal, F.B.M. (2013). \\emph{The Bonobo and the Atheist: In Search\nof Humanism Among the Primates}. W.W. Norton."
+    },
+    "de_walque_2007": {
+      "year": 2007,
+      "doi": "10.1016/j.jdeveco.2006.12.003",
+      "url": "https://doi.org/10.1016/j.jdeveco.2006.12.003",
+      "text": "De~Walque, D. (2007). How Does the Impact of an HIV/AIDS Information\nCampaign Vary with Educational Attainment? Evidence from Rural Uganda.\n\\emph{Journal of Development Economics}, 84(2), 686--714."
+    },
+    "deaton_2013": {
+      "year": 2013,
+      "doi": null,
+      "url": "https://press.princeton.edu/books/hardcover/9780691153544/the-great-escape",
+      "text": "Deaton, A. (2013). \\emph{The Great Escape: Health, Wealth, and the\nOrigins of Inequality}. Princeton University Press."
+    },
+    "dehaene_1997": {
+      "year": 1997,
+      "doi": null,
+      "url": "https://global.oup.com/academic/product/the-number-sense-9780199753871",
+      "text": "Dehaene, S. (1997). \\emph{The Number Sense: How the Mind Creates\nMathematics}. Oxford University Press."
+    },
+    "dehaene_2009": {
+      "year": 2009,
+      "doi": null,
+      "url": "https://www.penguinrandomhouse.com/books/297089/reading-in-the-brain-by-stanislas-dehaene/",
+      "text": "Dehaene, S. (2009). \\emph{Reading in the Brain: The New Science of\nHow We Read}. Viking."
+    },
+    "dehaene_2010": {
+      "year": 2010,
+      "doi": "10.1126/science.1194140",
+      "url": "https://doi.org/10.1126/science.1194140",
+      "text": "Dehaene, S., Pegado, F., Braga, L.W., Ventura, P., Nunes Filho, G.,\nJobert, A., Dehaene-Lambertz, G., Kolinsky, R., Morais, J. \\& Cohen, L.\n(2010). How Learning to Read Changes the Cortical Networks for Vision and\nLanguage. \\emph{Science}, 330(6009), 1359--1364."
+    },
+    "diamond_1997": {
+      "year": 1997,
+      "doi": null,
+      "url": "https://wwnorton.com/books/9780393354324",
+      "text": "Diamond, J. (1997). \\emph{Guns, Germs, and Steel: The Fates of Human\nSocieties}. W.W. Norton."
+    },
+    "drèze_1989": {
+      "year": 1989,
+      "doi": null,
+      "url": "https://global.oup.com/academic/product/hunger-and-public-action-9780198283652",
+      "text": "Drèze, J. \\& Sen, A. (1989). \\emph{Hunger and Public Action}. Clarendon\nPress."
+    },
+    "drèze_2001": {
+      "year": 2001,
+      "doi": "10.1111/j.1728-4457.2001.00033.x",
+      "url": "https://doi.org/10.1111/j.1728-4457.2001.00033.x",
+      "text": "Drèze, J. \\& Murthi, M. (2001). Fertility, Education, and Development:\nEvidence from India. \\emph{Population and Development Review}, 27(1),\n33--63."
+    },
+    "duflo_2012": {
+      "year": 2012,
+      "doi": "10.1257/jel.50.4.1051",
+      "url": "https://doi.org/10.1257/jel.50.4.1051",
+      "text": "Duflo, E. (2012). Women Empowerment and Economic Development.\n\\emph{Journal of Economic Literature}, 50(4), 1051--1079."
+    },
+    "dyson_1992": {
+      "year": 1992,
+      "doi": null,
+      "url": "https://www.jstor.org/stable/4398453",
+      "text": "Dyson, T. \\& Maharatna, A. (1992). Bihar Famine, 1966--67, and\nMaharashtra Drought, 1970--73: The Demographic Consequences.\n\\emph{Economic and Political Weekly}, 27(26), 1325--1332."
+    },
+    "easterlin_1981": {
+      "year": 1981,
+      "doi": "10.1017/S0022050700082395",
+      "url": "https://doi.org/10.1017/S0022050700082395",
+      "text": "Easterlin, R.A. (1981). Why Isn't the Whole World Developed?\n\\emph{Journal of Economic History}, 41(1), 1--19."
+    },
+    "eveleth_1990": {
+      "year": 1990,
+      "doi": null,
+      "url": "https://www.cambridge.org/core/books/worldwide-variation-in-human-growth/0D010CF59CA08811222E4051C5189AB3",
+      "text": "Eveleth, P.B. \\& Tanner, J.M. (1990). \\emph{Worldwide Variation in\nHuman Growth} (2nd ed.). Cambridge University Press."
+    },
+    "fortson_2008": {
+      "year": 2008,
+      "doi": "10.1353/dem.0.0001",
+      "url": "https://doi.org/10.1353/dem.0.0001",
+      "text": "Fortson, J.G. (2008). The Gradient in Sub-Saharan Africa: Socioeconomic\nStatus and HIV/AIDS. \\emph{Demography}, 45(2), 303--322."
+    },
+    "frank_2008": {
+      "year": 2008,
+      "doi": "10.1016/j.cognition.2008.04.007",
+      "url": "https://doi.org/10.1016/j.cognition.2008.04.007",
+      "text": "Frank, M.C., Everett, D.L., Fedorenko, E. \\& Gibson, E. (2008). Number\nas a cognitive technology: Evidence from Pirahã language and cognition.\n\\emph{Cognition}, 108(3), 819--824."
+    },
+    "gakidou_2010": {
+      "year": 2010,
+      "doi": "10.1016/S0140-6736(10)61257-3",
+      "url": "https://doi.org/10.1016/S0140-6736(10)61257-3",
+      "text": "Gakidou, E., Cowling, K., Lozano, R. \\& Murray, C.J.L. (2010).\nIncreased Educational Attainment and Its Effect on Child Mortality in\n175 Countries between 1970 and 2009: A Systematic Analysis.\n\\emph{The Lancet}, 376(9745), 959--974."
+    },
+    "galor_2011": {
+      "year": 2011,
+      "doi": null,
+      "url": "https://press.princeton.edu/books/hardcover/9780691130026/unified-growth-theory",
+      "text": "Galor, O. (2011). \\emph{Unified Growth Theory}. Princeton University\nPress."
+    },
+    "gao_1999": {
+      "year": 1999,
+      "doi": null,
+      "url": "https://uhpress.hawaii.edu/title/gao-village-rural-life-in-modern-china/",
+      "text": "Gao, M. (1999). \\emph{Gao Village: Rural Life in Modern China}.\nUniversity of Hawai'i Press."
+    },
+    "gao_2008": {
+      "year": 2008,
+      "doi": null,
+      "url": "https://www.plutobooks.com/9780745327808/the-battle-for-chinas-past/",
+      "text": "Gao, M. (2008). \\emph{The Battle for China's Past: Mao and the Cultural\nRevolution}. Pluto Press."
+    },
+    "glaeser_2004": {
+      "year": 2004,
+      "doi": "10.1023/B:JOEG.0000038933.16398.ed",
+      "url": "https://doi.org/10.1023/B:JOEG.0000038933.16398.ed",
+      "aliases": [
+        "la_porta_2004",
+        "shleifer_2004"
+      ],
+      "text": "Glaeser, E.L., La Porta, R., López-de-Silanes, F. \\& Shleifer, A.\n(2004). Do Institutions Cause Growth? \\emph{Journal of Economic\nGrowth}, 9(3), 271--303."
+    },
+    "goldin_2008": {
+      "year": 2008,
+      "doi": null,
+      "url": "https://www.hup.harvard.edu/catalog.php?isbn=9780674035300",
+      "text": "Goldin, C. \\& Katz, L.F. (2008). \\emph{The Race Between Education and\nTechnology}. Harvard University Press."
+    },
+    "goodall_1986": {
+      "year": 1986,
+      "doi": null,
+      "url": "https://books.google.com/books/about/The_Chimpanzees_of_Gombe.html?id=eloQAQAAMAAJ",
+      "text": "Goodall, J. (1986). \\emph{The Chimpanzees of Gombe: Patterns of\nBehavior}. Belknap Press of Harvard University Press."
+    },
+    "goody_1976": {
+      "year": 1976,
+      "doi": null,
+      "url": "https://www.cambridge.org/core/books/production-and-reproduction/6DC99041E1FAAA2C7C9DB4D1633376C4",
+      "text": "Goody, J. (1976). \\emph{Production and Reproduction: A Comparative\nStudy of the Domestic Domain}. Cambridge University Press."
+    },
+    "gordon_2004": {
+      "year": 2004,
+      "doi": "10.1126/science.1094492",
+      "url": "https://doi.org/10.1126/science.1094492",
+      "text": "Gordon, P. (2004). Numerical Cognition Without Words: Evidence from\nAmazonia. \\emph{Science}, 306(5695), 496--499."
+    },
+    "grantham-mcgregor_2007": {
+      "year": 2007,
+      "doi": "10.1016/S0140-6736(07)60032-4",
+      "url": "https://doi.org/10.1016/S0140-6736(07)60032-4",
+      "text": "Grantham-McGregor, S., Cheung, Y.B., Cueto, S., Glewwe, P., Richter,\nL., Strupp, B.\\ \\& the International Child Development Steering Group.\n(2007). Developmental Potential in the First 5 Years for Children in\nDeveloping Countries. \\emph{The Lancet}, 369(9555), 60--70."
+    },
+    "gwatkin_1979": {
+      "year": 1979,
+      "doi": "10.2307/1971900",
+      "url": "https://doi.org/10.2307/1971900",
+      "text": "Gwatkin, D.R. (1979). Political Will and Family Planning: The\nImplications of India's Emergency Experience. \\emph{Population and\nDevelopment Review}, 5(1), 29--59."
+    },
+    "hajnal_1965": {
+      "year": 1965,
+      "doi": "10.4324/9781315127019-7",
+      "url": null,
+      "text": "Hajnal, J. (1965). European Marriage Patterns in Perspective. In\nD.V.~Glass \\& D.E.C.~Eversley (Eds.), \\emph{Population in History:\nEssays in Historical Demography} (pp.~101--143). Edward Arnold."
+    },
+    "hamilton_1964": {
+      "year": 1964,
+      "doi": "10.1016/0022-5193(64)90038-4",
+      "url": "https://doi.org/10.1016/0022-5193(64)90038-4",
+      "text": "Hamilton, W.D. (1964). The Genetical Evolution of Social Behaviour, I\n\\& II. \\emph{Journal of Theoretical Biology}, 7(1), 1--52."
+    },
+    "hanushek_2008": {
+      "year": 2008,
+      "doi": "10.1257/jel.46.3.607",
+      "url": "https://doi.org/10.1257/jel.46.3.607",
+      "text": "Hanushek, E.A. \\& Woessmann, L. (2008). The Role of Cognitive Skills in\nEconomic Development. \\emph{Journal of Economic Literature}, 46(3),\n607--668."
+    },
+    "hanushek_2012": {
+      "year": 2012,
+      "doi": "10.1007/s10887-012-9081-x",
+      "url": "https://doi.org/10.1007/s10887-012-9081-x",
+      "text": "Hanushek, E.A. \\& Woessmann, L. (2012). Do Better Schools Lead to More\nGrowth? Cognitive Skills, Economic Outcomes, and Causation.\n\\emph{Journal of Economic Growth}, 17(4), 267--321."
+    },
+    "hare_2020": {
+      "year": 2020,
+      "doi": null,
+      "url": "https://www.penguinrandomhouse.com/books/559617/survival-of-the-friendliest-by-brian-hare-and-vanessa-woods/",
+      "text": "Hare, B. \\& Woods, V. (2020). \\emph{Survival of the Friendliest:\nUnderstanding Our Origins and Rediscovering Our Common Humanity}.\nRandom House."
+    },
+    "hawkes_2003": {
+      "year": 2003,
+      "doi": "10.1002/ajhb.10156",
+      "url": "https://doi.org/10.1002/ajhb.10156",
+      "text": "Hawkes, K. (2003). Grandmothers and the evolution of human\nlongevity. \\emph{American Journal of Human Biology}, 15(3), 380--400."
+    },
+    "heckman_2006": {
+      "year": 2006,
+      "doi": "10.1126/science.1128898",
+      "url": "https://doi.org/10.1126/science.1128898",
+      "text": "Heckman, J.J. (2006). Skill Formation and the Economics of Investing\nin Disadvantaged Children. \\emph{Science}, 312(5782), 1900--1902."
+    },
+    "heckman_cunha_2007": {
+      "year": 2007,
+      "doi": "10.1257/aer.97.2.31",
+      "url": "https://doi.org/10.1257/aer.97.2.31",
+      "text": "Heckman, J.J. \\& Cunha, F. (2007). The Technology of Skill Formation.\n\\emph{American Economic Review}, 97(2), 31--47."
+    },
+    "heckman_mosso_2014": {
+      "year": 2014,
+      "doi": "10.1146/annurev-economics-080213-040753",
+      "url": "https://doi.org/10.1146/annurev-economics-080213-040753",
+      "text": "Heckman, J.J. \\& Mosso, S. (2014). The Economics of Human Development\nand Social Mobility. \\emph{Annual Review of Economics}, 6, 689--733."
+    },
+    "herculano-houzel_2016": {
+      "year": 2016,
+      "doi": null,
+      "url": "https://mitpress.mit.edu/9780262533539/the-human-advantage/",
+      "text": "Herculano-Houzel, S. (2016). \\emph{The Human Advantage: A New\nUnderstanding of How Our Brain Became Remarkable}. MIT Press."
+    },
+    "heyes_2018": {
+      "year": 2018,
+      "doi": null,
+      "url": "https://www.hup.harvard.edu/catalog.php?isbn=9780674980150",
+      "text": "Heyes, C. (2018). \\emph{Cognitive Gadgets: The Cultural Evolution of\nThinking}. Harvard University Press."
+    },
+    "hill_1996": {
+      "year": 1996,
+      "doi": null,
+      "url": "https://books.google.com/books/about/Ach%C3%A9_Life_History.html?id=J6NNngEACAAJ",
+      "text": "Hill, K. \\& Hurtado, A.M. (1996). \\emph{Aché Life History: The Ecology\nand Demography of a Foraging People}. Aldine de Gruyter."
+    },
+    "hrdy_2009": {
+      "year": 2009,
+      "doi": null,
+      "url": "https://www.hup.harvard.edu/catalog.php?isbn=9780674060326",
+      "text": "Hrdy, S.B. (2009). \\emph{Mothers and Others: The Evolutionary Origins\nof Mutual Understanding}. Harvard University Press."
+    },
+    "jensen_2010": {
+      "year": 2010,
+      "doi": "10.1162/qjec.2010.125.2.515",
+      "url": "https://doi.org/10.1162/qjec.2010.125.2.515",
+      "text": "Jensen, R. (2010). The (Perceived) Returns to Education and the Demand\nfor Schooling. \\emph{Quarterly Journal of Economics}, 125(2), 515--548."
+    },
+    "kaplan_2000": {
+      "year": 2000,
+      "doi": "10.1002/1520-6505(2000)9:4<156::AID-EVAN5>3.0.CO;2-7",
+      "url": "https://doi.org/10.1002/1520-6505(2000)9:4<156::AID-EVAN5>3.0.CO;2-7",
+      "text": "Kaplan, H., Hill, K., Lancaster, J. \\& Hurtado, A.M. (2000). A Theory\nof Human Life History Evolution: Diet, Intelligence, and Longevity.\n\\emph{Evolutionary Anthropology}, 9(4), 156--185."
+    },
+    "konner_2010": {
+      "year": 2010,
+      "doi": null,
+      "url": "https://www.hup.harvard.edu/books/9780674062016",
+      "text": "Konner, M. (2010). \\emph{The Evolution of Childhood: Relationships,\nEmotion, Mind}. Harvard University Press."
+    },
+    "kramer_2011": {
+      "year": 2011,
+      "doi": "10.1016/j.tree.2011.07.001",
+      "url": "https://doi.org/10.1016/j.tree.2011.07.001",
+      "text": "Kramer, K.L. (2011). The Evolution of Human Parental Care and\nRecruitment of Juvenile Help. \\emph{Trends in Ecology \\& Evolution},\n26(10), 533--540."
+    },
+    "liu_2003": {
+      "year": 2003,
+      "doi": null,
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2627076/",
+      "text": "Liu, Y., Rao, K. \\& Hsiao, W.C. (2003). Medical Expenditure and Rural\nImpoverishment in China. \\emph{Journal of Health, Population and\nNutrition}, 21(3), 216--222."
+    },
+    "lutz_2013": {
+      "year": 2013,
+      "doi": "10.1111/j.1728-4457.2013.00564.x",
+      "url": "https://doi.org/10.1111/j.1728-4457.2013.00564.x",
+      "text": "Lutz, W. (2013). Demographic Metabolism: A Predictive Theory of\nSocioeconomic Change. \\emph{Population and Development Review},\n38(s1), 283--301."
+    },
+    "lutz_2014": {
+      "year": 2014,
+      "doi": "10.1126/science.1257975",
+      "url": "https://doi.org/10.1126/science.1257975",
+      "text": "Lutz, W., Muttarak, R. \\& Striessnig, E. (2014). Universal Education\nis Key to Enhanced Climate Adaptation. \\emph{Science}, 346(6213),\n1061--1062."
+    },
+    "lutz_2018": {
+      "year": 2018,
+      "doi": "10.1111/padr.12141",
+      "url": "https://doi.org/10.1111/padr.12141",
+      "text": "Lutz, W. \\& Kebede, E. (2018). Education and Health: Redrawing the\nPreston Curve. \\emph{Population and Development Review}, 44(2),\n343--361."
+    },
+    "lutz_2021": {
+      "year": 2021,
+      "doi": "10.1073/pnas.2015826118",
+      "url": "https://doi.org/10.1073/pnas.2015826118",
+      "text": "Lutz, W., Reiter, C., Özdemir, C., Yildiz, D., Guimaraes, R. \\& Goujon,\nA. (2021). Skills-adjusted Human Capital Shows Rising Global Gap.\n\\emph{Proceedings of the National Academy of Sciences}, 118(7),\ne2015826118."
+    },
+    "malthus_1798": {
+      "year": 1798,
+      "doi": null,
+      "url": "https://oll.libertyfund.org/title/malthus-an-essay-on-the-principle-of-population-1798-1st-ed",
+      "text": "Malthus, T.R. (1798). \\emph{An Essay on the Principle of Population}.\nLondon: J.~Johnson."
+    },
+    "mankiw_1992": {
+      "year": 1992,
+      "doi": "10.2307/2118477",
+      "url": "https://doi.org/10.2307/2118477",
+      "text": "Mankiw, N.G., D. Romer, \\& Weil, D.N. (1992). A Contribution to the\nEmpirics of Economic Growth. \\emph{Quarterly Journal of Economics},\n107(2), 407--437.",
+      "aliases": [
+        "mankiw-romer-weil_1992",
+        "romer_1992",
+        "weil_1992"
+      ]
+    },
+    "marlowe_2010": {
+      "year": 2010,
+      "doi": null,
+      "url": "https://www.ucpress.edu/book/9780520253421/the-hadza",
+      "text": "Marlowe, F.W. (2010). \\emph{The Hadza: Hunter-Gatherers of Tanzania}.\nUniversity of California Press."
+    },
+    "maynard_smith_1995": {
+      "year": 1995,
+      "doi": null,
+      "url": "https://global.oup.com/academic/product/the-major-transitions-in-evolution-9780198502955",
+      "text": "Maynard Smith, J. \\& Szathmáry, E. (1995). \\emph{The Major Transitions\nin Evolution}. Oxford University Press.",
+      "aliases": [
+        "smith_1995",
+        "szathmary_1995"
+      ]
+    },
+    "mokyr_1983": {
+      "year": 1983,
+      "doi": null,
+      "url": "https://www.allenandunwin.com/browse/book/Joel-Mokyr-Why-Ireland-Starved-9780041560084",
+      "text": "Mokyr, J. (1983). \\emph{Why Ireland Starved: A Quantitative and\nAnalytical History of the Irish Economy, 1800--1850}. George Allen\n\\& Unwin."
+    },
+    "mokyr_1990": {
+      "year": 1990,
+      "doi": null,
+      "url": "https://global.oup.com/academic/product/the-lever-of-riches-9780195074772",
+      "text": "Mokyr, J. (1990). \\emph{The Lever of Riches: Technological Creativity\nand Economic Progress}. Oxford University Press."
+    },
+    "mokyr_2002": {
+      "year": 2002,
+      "doi": null,
+      "url": "https://press.princeton.edu/books/paperback/9780691120133/the-gifts-of-athena",
+      "text": "Mokyr, J. (2002). \\emph{The Gifts of Athena: Historical Origins of the\nKnowledge Economy}. Princeton University Press."
+    },
+    "mokyr_2009": {
+      "year": 2009,
+      "doi": null,
+      "url": "https://yalebooks.yale.edu/book/9780300158182/the-enlightened-economy/",
+      "text": "Mokyr, J. (2009). \\emph{The Enlightened Economy: An Economic History\nof Britain, 1700--1850}. Yale University Press."
+    },
+    "mokyr_2016": {
+      "year": 2016,
+      "doi": null,
+      "url": "https://press.princeton.edu/books/hardcover/9780691168883/a-culture-of-growth",
+      "text": "Mokyr, J. (2016). \\emph{A Culture of Growth: The Origins of the Modern\nEconomy}. Princeton University Press."
+    },
+    "morris_2010": {
+      "year": 2010,
+      "doi": null,
+      "url": "https://us.macmillan.com/books/9780374290023/whythewestrulesfornow",
+      "text": "Morris, I. (2010). \\emph{Why the West Rules---For Now: The Patterns of History, and What They Reveal About the Future}. Farrar, Straus and Giroux."
+    },
+    "mullainathan_2013": {
+      "year": 2013,
+      "doi": null,
+      "url": "https://us.macmillan.com/books/9780805092646/scarcity",
+      "text": "Mullainathan, S. \\& Shafir, E. (2013). \\emph{Scarcity: Why Having Too\nLittle Means So Much}. Times Books."
+    },
+    "myhrvold-hanssen_2003": {
+      "year": 2003,
+      "doi": null,
+      "url": "https://www.duo.uio.no/handle/10852/15095",
+      "text": "Myhrvold-Hanssen, T. (2003). Democracy, News Media, and Famine\nPrevention: Amartya Sen and the Bihar Famine of 1966--67. Masters thesis,\nUniversity of Oslo."
+    },
+    "national_bureau_1982": {
+      "year": 1982,
+      "doi": null,
+      "url": "https://www.stats.gov.cn/english/",
+      "text": "National Bureau of Statistics of China. (1982). \\emph{Third National\nPopulation Census of the People's Republic of China}. China Statistics\nPress. {[}Rural population share: 79.7\\% in 1980.{]}"
+    },
+    "ó_gráda_1995": {
+      "year": 1995,
+      "doi": null,
+      "url": "https://global.oup.com/academic/product/ireland-9780198205982",
+      "text": "Ó~Gráda, C. (1995). \\emph{Ireland: A New Economic History\n1780--1939}. Oxford University Press."
+    },
+    "ó_gráda_1999": {
+      "year": 1999,
+      "doi": null,
+      "url": "https://press.princeton.edu/books/paperback/9780691070155/black-47-and-beyond",
+      "text": "Ó~Gráda, C. (1999). \\emph{Black '47 and Beyond: The Great Irish\nFamine in History, Economy, and Memory}. Princeton University Press.",
+      "aliases": [
+        "gráda_1999"
+      ]
+    },
+    "pearl_2009": {
+      "year": 2009,
+      "doi": null,
+      "url": "https://www.cambridge.org/core/books/causality/B0046844FAE10CBF274D4ACBDAEB5F5B",
+      "text": "Pearl, J. (2009). \\emph{Causality: Models, Reasoning, and Inference}\n(2nd ed.). Cambridge University Press."
+    },
+    "pepper_1996": {
+      "year": 1996,
+      "doi": null,
+      "url": "https://www.cambridge.org/core/books/radicalism-and-education-reform-in-20thcentury-china/A302F581B7E90B1CDF3D6A563B206147",
+      "text": "Pepper, S. (1996). \\emph{Radicalism and Education Reform in 20th-Century\nChina}. Cambridge University Press."
+    },
+    "pinker_2018": {
+      "year": 2018,
+      "doi": null,
+      "url": "https://www.penguinrandomhouse.com/books/317051/enlightenment-now-by-steven-pinker/",
+      "isbn": "9780525427575",
+      "text": "Pinker, S. (2018). \\emph{Enlightenment Now: The Case for Reason, Science, Humanism, and Progress}. Viking."
+    },
+    "prieto_1981": {
+      "year": 1981,
+      "doi": null,
+      "url": "https://www.jstor.org/stable/40031618",
+      "text": "Prieto, A. (1981). Cuba's National Literacy Campaign. \\emph{Journal of\nReading}, 25(3), 215--221. {[}268,000 brigadistas mobilised for the 1961\ncampaign.{]}"
+    },
+    "pritchett_2013": {
+      "year": 2013,
+      "doi": null,
+      "url": "https://www.cgdev.org/publication/9781933286778-rebirth-education-schooling-aint-learning",
+      "text": "Pritchett, L. (2013). \\emph{The Rebirth of Education: Schooling Ain't\nLearning}. Center for Global Development."
+    },
+    "romer_1986": {
+      "year": 1986,
+      "doi": "10.1086/261420",
+      "url": "https://doi.org/10.1086/261420",
+      "text": "Romer, P.M. (1986). Increasing Returns and Long-Run Growth.\n\\emph{Journal of Political Economy}, 94(5), 1002--1037."
+    },
+    "romer_1990": {
+      "year": 1990,
+      "doi": "10.1086/261725",
+      "url": "https://doi.org/10.1086/261725",
+      "text": "Romer, P.M. (1990). Endogenous Technological Change. \\emph{Journal of\nPolitical Economy}, 98(5), S71--S102."
+    },
+    "roser_2013": {
+      "year": 2013,
+      "doi": null,
+      "url": "https://ourworldindata.org/life-expectancy",
+      "text": "Roser, M., Ortiz-Ospina, E. \\& Ritchie, H. (2013, ongoing). Life\nExpectancy. \\emph{Our World in Data}.\n\\url{https://ourworldindata.org/life-expectancy}."
+    },
+    "rosling_2018": {
+      "year": 2018,
+      "doi": null,
+      "url": "https://us.macmillan.com/books/9781250107817/factfulness",
+      "text": "Rosling, H., Rosling, O. \\& Rosling R\\\"{o}nnlund, A. (2018).\n\\emph{Factfulness: Ten Reasons We're Wrong About the World --- and\nWhy Things Are Better Than You Think}. Flatiron Books."
+    },
+    "schultz_1961": {
+      "year": 1961,
+      "doi": null,
+      "url": "https://www.jstor.org/stable/1818907",
+      "text": "Schultz, T.W. (1961). Investment in Human Capital.\n\\emph{American Economic Review}, 51(1), 1--17."
+    },
+    "schultz_2002": {
+      "year": 2002,
+      "doi": "10.1016/S0305-750X(01)00107-3",
+      "url": "https://doi.org/10.1016/S0305-750X(01)00107-3",
+      "text": "Schultz, T.P. (2002). Why Governments Should Invest More to Educate\nGirls. \\emph{World Development}, 30(2), 207--225."
+    },
+    "sen_1999": {
+      "year": 1999,
+      "doi": null,
+      "url": "https://global.oup.com/academic/product/development-as-freedom-9780192893307",
+      "text": "Sen, A. (1999). \\emph{Development as Freedom}. Oxford University Press."
+    },
+    "smil_2017": {
+      "year": 2017,
+      "doi": null,
+      "url": "https://mitpress.mit.edu/9780262035774/energy-and-civilization/",
+      "text": "Smil, V. (2017). \\emph{Energy and Civilization: A History}. MIT Press."
+    },
+    "smith_1776": {
+      "year": 1776,
+      "doi": null,
+      "url": "https://oll.libertyfund.org/title/smith-an-inquiry-into-the-nature-and-causes-of-the-wealth-of-nations-cannan-ed-in-2-vols",
+      "text": "Smith, A. (1776). \\emph{An Inquiry into the Nature and Causes of the\nWealth of Nations}."
+    },
+    "solow_1956": {
+      "year": 1956,
+      "doi": "10.2307/1884513",
+      "url": "https://doi.org/10.2307/1884513",
+      "text": "Solow, R.M. (1956). A Contribution to the Theory of Economic Growth.\n\\emph{Quarterly Journal of Economics}, 70(1), 65--94."
+    },
+    "stearns_1992": {
+      "year": 1992,
+      "doi": null,
+      "url": "https://global.oup.com/academic/product/the-evolution-of-life-histories-9780198577416",
+      "text": "Stearns, S.C. (1992). \\emph{The Evolution of Life Histories}. Oxford\nUniversity Press."
+    },
+    "tainter_1988": {
+      "year": 1988,
+      "doi": "10.1017/CBO9780511790058",
+      "url": "https://doi.org/10.1017/CBO9780511790058",
+      "text": "Tainter, J.A. (1988). \\emph{The Collapse of Complex Societies}. Cambridge University Press."
+    },
+    "tomasello_2014": {
+      "year": 2014,
+      "doi": null,
+      "url": "https://www.hup.harvard.edu/catalog.php?isbn=9780674986831",
+      "text": "Tomasello, M. (2014). \\emph{A Natural History of Human Thinking}.\nHarvard University Press."
+    },
+    "tomasello_2016": {
+      "year": 2016,
+      "doi": null,
+      "url": "https://www.hup.harvard.edu/catalog.php?isbn=9780674088641",
+      "text": "Tomasello, M. (2016). \\emph{A Natural History of Human Morality}.\nHarvard University Press."
+    },
+    "tooby_2010": {
+      "year": 2010,
+      "doi": "10.1007/978-1-137-05001-4_8",
+      "url": null,
+      "text": "Tooby, J. \\& Cosmides, L. (2010). Groups in Mind: The Coalitional Roots\nof War and Morality. In H. H\\\"{o}gh-Olesen (Ed.), \\emph{Human Morality\nand Sociality: Evolutionary and Comparative Perspectives} (pp.~191--234).\nPalgrave Macmillan."
+    },
+    "undp_1990": {
+      "year": 1990,
+      "doi": null,
+      "url": "https://hdr.undp.org/content/human-development-report-1990",
+      "text": "UNDP. (1990). \\emph{Human Development Report 1990}. Oxford University\nPress."
+    },
+    "unesco_2024": {
+      "year": 2024,
+      "doi": null,
+      "url": "https://www.unesco.org/gem-report/en/leadership",
+      "text": "UNESCO. (2024). \\emph{Global Education Monitoring Report 2024/5:\nLeadership in Education --- Lead for Learning}. Paris: UNESCO."
+    },
+    "unger_1982": {
+      "year": 1982,
+      "doi": null,
+      "url": "https://cup.columbia.edu/book/education-under-mao/9780231053433",
+      "text": "Unger, J. (1982). \\emph{Education Under Mao: Class and Competition in\nCanton Schools, 1960--1980}. Columbia University Press."
+    },
+    "united_nations_2015": {
+      "year": 2015,
+      "doi": null,
+      "url": "https://undocs.org/A/RES/70/1",
+      "text": "United Nations. (2015). \\emph{Transforming Our World: The 2030 Agenda\nfor Sustainable Development} (A/RES/70/1). New York: United Nations.",
+      "aliases": [
+        "un_2015"
+      ]
+    },
+    "vicziany_1982": {
+      "year": 1982,
+      "doi": "10.2307/2757154",
+      "url": "https://doi.org/10.2307/2757154",
+      "text": "Vicziany, M. (1982). Coercion in a Soft State: The Family-Planning\nProgram of India. Part~I: The Myth of Voluntarism. \\emph{Pacific\nAffairs}, 55(3), 373--402."
+    },
+    "walker_2006": {
+      "year": 2006,
+      "doi": "10.1002/ajhb.20510",
+      "url": "https://doi.org/10.1002/ajhb.20510",
+      "text": "Walker, R., Gurven, M., Hill, K., Migliano, A., Chagnon, N., De\nSouza, R., Djurovic, G., Hames, R., Hurtado, A.M., Kaplan, H.,\nKramer, K., Oliver, W.J., Valeggia, C. \\& Yamauchi, T. (2006). Growth\nRates and Life Histories in Twenty-Two Small-Scale Societies.\n\\emph{American Journal of Human Biology}, 18(3), 295--311."
+    },
+    "wallace_1870": {
+      "year": 1870,
+      "doi": null,
+      "url": "https://www.gutenberg.org/ebooks/3620",
+      "text": "Wallace, A.R. (1870). \\emph{Contributions to the Theory of Natural\nSelection: A Series of Essays}. Macmillan."
+    },
+    "world_bank_wdi": {
+      "year": null,
+      "doi": null,
+      "url": "https://datatopics.worldbank.org/world-development-indicators/",
+      "text": "World Bank. World Development Indicators. Various years."
+    },
+    "wrangham_1996": {
+      "year": 1996,
+      "doi": null,
+      "url": "https://archive.org/details/demonicmalesapes00wran",
+      "text": "Wrangham, R. \\& Peterson, D. (1996). \\emph{Demonic Males: Apes and\nthe Origins of Human Violence}. Houghton Mifflin."
+    },
+    "wrangham_2009": {
+      "year": 2009,
+      "doi": null,
+      "url": "https://www.basicbooks.com/titles/richard-wrangham/catching-fire/9780465013623/",
+      "text": "Wrangham, R. (2009). \\emph{Catching Fire: How Cooking Made Us Human}.\nBasic Books."
+    },
+    "wrigley_2010": {
+      "year": 2010,
+      "doi": "10.1017/CBO9780511779619",
+      "url": null,
+      "text": "Wrigley, E.A. (2010). \\emph{Energy and the English Industrial\nRevolution}. Cambridge University Press."
+    }
+  }
+}

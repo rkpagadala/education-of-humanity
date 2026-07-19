@@ -1,0 +1,414 @@
+{
+  "method": "Country FE with clustered SEs. \u03b2, SE, p-value for education, raw GDP, residualized GDP. Lower secondary, entry=10%. Outcome-specific lag: TFR uses LAG_TFR=5 (biological parent timing); U5MR uses LAG_CHILDREARING=12 (childrearing window); LE, child education use LAG_GENERATION=28 (time-to-agency / edu\u2192edu one-step).",
+  "outcome_lag": {
+    "le": 12,
+    "tfr": 5,
+    "u5mr": 12,
+    "child_edu": 28
+  },
+  "results": {
+    "LE": {
+      "60": {
+        "Education": {
+          "beta": 0.2549,
+          "se": 0.0228,
+          "pval": 0.0,
+          "r2": 0.4461,
+          "n": 599,
+          "countries": 121
+        },
+        "GDP (raw)": {
+          "beta": 5.3206,
+          "se": 1.3007,
+          "pval": 0.0001,
+          "r2": 0.1418,
+          "n": 507,
+          "countries": 106
+        },
+        "GDP (residualized)": {
+          "beta": -0.4159,
+          "se": 1.6702,
+          "pval": 0.8035,
+          "r2": 0.0006,
+          "n": 507,
+          "countries": 106
+        }
+      },
+      "90": {
+        "Education": {
+          "beta": 0.1943,
+          "se": 0.0158,
+          "pval": 0.0,
+          "r2": 0.4283,
+          "n": 819,
+          "countries": 152
+        },
+        "GDP (raw)": {
+          "beta": 5.5402,
+          "se": 0.8853,
+          "pval": 0.0,
+          "r2": 0.1916,
+          "n": 659,
+          "countries": 126
+        },
+        "GDP (residualized)": {
+          "beta": 0.1603,
+          "se": 1.4178,
+          "pval": 0.91,
+          "r2": 0.0001,
+          "n": 659,
+          "countries": 126
+        }
+      }
+    },
+    "TFR": {
+      "60": {
+        "Education": {
+          "beta": -0.0737,
+          "se": 0.0039,
+          "pval": 0.0,
+          "r2": 0.7012,
+          "n": 599,
+          "countries": 121
+        },
+        "GDP (raw)": {
+          "beta": -1.7023,
+          "se": 0.2842,
+          "pval": 0.0,
+          "r2": 0.2684,
+          "n": 507,
+          "countries": 106
+        },
+        "GDP (residualized)": {
+          "beta": -0.0872,
+          "se": 0.3653,
+          "pval": 0.8115,
+          "r2": 0.0005,
+          "n": 507,
+          "countries": 106
+        }
+      },
+      "90": {
+        "Education": {
+          "beta": -0.0583,
+          "se": 0.003,
+          "pval": 0.0,
+          "r2": 0.6689,
+          "n": 818,
+          "countries": 152
+        },
+        "GDP (raw)": {
+          "beta": -1.669,
+          "se": 0.2004,
+          "pval": 0.0,
+          "r2": 0.2923,
+          "n": 659,
+          "countries": 126
+        },
+        "GDP (residualized)": {
+          "beta": 0.0043,
+          "se": 0.3242,
+          "pval": 0.9895,
+          "r2": 0.0,
+          "n": 659,
+          "countries": 126
+        }
+      }
+    },
+    "U5MR": {
+      "60": {
+        "Education": {
+          "beta": -2.0304,
+          "se": 0.1518,
+          "pval": 0.0,
+          "r2": 0.5669,
+          "n": 590,
+          "countries": 119
+        },
+        "GDP (raw)": {
+          "beta": -45.4919,
+          "se": 9.2085,
+          "pval": 0.0,
+          "r2": 0.1874,
+          "n": 504,
+          "countries": 105
+        },
+        "GDP (residualized)": {
+          "beta": 2.5169,
+          "se": 11.9121,
+          "pval": 0.8328,
+          "r2": 0.0004,
+          "n": 504,
+          "countries": 105
+        }
+      },
+      "90": {
+        "Education": {
+          "beta": -1.3348,
+          "se": 0.1154,
+          "pval": 0.0,
+          "r2": 0.4567,
+          "n": 787,
+          "countries": 147
+        },
+        "GDP (raw)": {
+          "beta": -36.6416,
+          "se": 6.5458,
+          "pval": 0.0,
+          "r2": 0.1701,
+          "n": 645,
+          "countries": 123
+        },
+        "GDP (residualized)": {
+          "beta": 2.9333,
+          "se": 9.494,
+          "pval": 0.7575,
+          "r2": 0.0006,
+          "n": 645,
+          "countries": 123
+        }
+      }
+    },
+    "ChildEdu": {
+      "60": {
+        "Parent Education": {
+          "beta": 0.7592,
+          "se": 0.0455,
+          "pval": 0.0,
+          "r2": 0.6459,
+          "n": 627,
+          "countries": 127
+        },
+        "GDP (raw)": {
+          "beta": 20.6075,
+          "se": 2.9152,
+          "pval": 0.0,
+          "r2": 0.3217,
+          "n": 507,
+          "countries": 106
+        },
+        "GDP (residualized)": {
+          "beta": 4.3626,
+          "se": 4.2655,
+          "pval": 0.307,
+          "r2": 0.0093,
+          "n": 507,
+          "countries": 106
+        }
+      },
+      "90": {
+        "Parent Education": {
+          "beta": 0.5077,
+          "se": 0.0367,
+          "pval": 0.0,
+          "r2": 0.5121,
+          "n": 856,
+          "countries": 157
+        },
+        "GDP (raw)": {
+          "beta": 17.6756,
+          "se": 2.177,
+          "pval": 0.0,
+          "r2": 0.2957,
+          "n": 659,
+          "countries": 126
+        },
+        "GDP (residualized)": {
+          "beta": 2.8447,
+          "se": 3.4715,
+          "pval": 0.4129,
+          "r2": 0.0044,
+          "n": 659,
+          "countries": 126
+        }
+      }
+    }
+  },
+  "country_residuals": {
+    "T3-Maldives-resid": 37.2,
+    "T3-CapeVerde-resid": 24.9,
+    "T3-Bhutan-resid": 25.5,
+    "T3-Tunisia-resid": 20.8,
+    "T3-Nepal-resid": 17.9,
+    "T3-Vietnam-resid": 22.6,
+    "T3-Bangladesh-resid": 17.5,
+    "T3-India-resid": 14.9,
+    "T3-Qatar-resid": -3.1
+  },
+  "common_sample": {
+    "n_obs": 652,
+    "n_countries": 130,
+    "description": "Common sample = intersection of (country, t) cells where all four outcomes (LE, TFR, U5MR, child education) AND education AND log GDP are non-null at ceiling=90, entry=10%. Specs: Education_FE / GDP_raw_FE / GDP_resid_FE use country FE only; Education_2WFE / GDP_resid_2WFE add year FE. The 2WFE year-FE variant is a spec-specific robustness check for the residualised regression where education has been partialled out of the regressor; it does not generalise to the headline spec, which the paper rejects on substantive grounds (year FE absorb the species-level mechanism).",
+    "outcomes": {
+      "LE": {
+        "Education_FE": {
+          "beta": 0.2019,
+          "se": 0.0202,
+          "pval": 0.0,
+          "r2": 0.4241,
+          "n": 645,
+          "countries": 123
+        },
+        "GDP_raw_FE": {
+          "beta": 5.5434,
+          "se": 0.8988,
+          "pval": 0.0,
+          "r2": 0.1927,
+          "n": 645,
+          "countries": 123
+        },
+        "GDP_resid_FE": {
+          "beta": 0.2793,
+          "se": 1.4279,
+          "pval": 0.845,
+          "r2": 0.0003,
+          "n": 645,
+          "countries": 123
+        },
+        "Education_2WFE": {
+          "beta": -0.0082,
+          "se": 0.0504,
+          "pval": 0.8706,
+          "r2": -0.0352,
+          "n": 645,
+          "countries": 123
+        },
+        "GDP_resid_2WFE": {
+          "beta": -0.0137,
+          "se": 1.1493,
+          "pval": 0.9905,
+          "r2": -0.0,
+          "n": 645,
+          "countries": 123
+        }
+      },
+      "TFR": {
+        "Education_FE": {
+          "beta": -0.0623,
+          "se": 0.0038,
+          "pval": 0.0,
+          "r2": 0.6759,
+          "n": 645,
+          "countries": 123
+        },
+        "GDP_raw_FE": {
+          "beta": -1.6649,
+          "se": 0.2036,
+          "pval": 0.0,
+          "r2": 0.2907,
+          "n": 645,
+          "countries": 123
+        },
+        "GDP_resid_FE": {
+          "beta": -0.0053,
+          "se": 0.3262,
+          "pval": 0.9871,
+          "r2": 0.0,
+          "n": 645,
+          "countries": 123
+        },
+        "Education_2WFE": {
+          "beta": -0.0177,
+          "se": 0.0079,
+          "pval": 0.0249,
+          "r2": 0.3301,
+          "n": 645,
+          "countries": 123
+        },
+        "GDP_resid_2WFE": {
+          "beta": -0.0225,
+          "se": 0.2002,
+          "pval": 0.9107,
+          "r2": -0.0,
+          "n": 645,
+          "countries": 123
+        }
+      },
+      "U5MR": {
+        "Education_FE": {
+          "beta": -1.4371,
+          "se": 0.1513,
+          "pval": 0.0,
+          "r2": 0.4341,
+          "n": 645,
+          "countries": 123
+        },
+        "GDP_raw_FE": {
+          "beta": -36.6416,
+          "se": 6.5458,
+          "pval": 0.0,
+          "r2": 0.1701,
+          "n": 645,
+          "countries": 123
+        },
+        "GDP_resid_FE": {
+          "beta": 2.9333,
+          "se": 9.494,
+          "pval": 0.7575,
+          "r2": 0.0006,
+          "n": 645,
+          "countries": 123
+        },
+        "Education_2WFE": {
+          "beta": 0.7314,
+          "se": 0.3084,
+          "pval": 0.0181,
+          "r2": -0.5543,
+          "n": 645,
+          "countries": 123
+        },
+        "GDP_resid_2WFE": {
+          "beta": 5.7841,
+          "se": 6.6826,
+          "pval": 0.3871,
+          "r2": 0.0,
+          "n": 645,
+          "countries": 123
+        }
+      },
+      "ChildEdu": {
+        "Education_FE": {
+          "beta": 0.6044,
+          "se": 0.0465,
+          "pval": 0.0,
+          "r2": 0.5668,
+          "n": 645,
+          "countries": 123
+        },
+        "GDP_raw_FE": {
+          "beta": 17.8246,
+          "se": 2.209,
+          "pval": 0.0,
+          "r2": 0.2971,
+          "n": 645,
+          "countries": 123
+        },
+        "GDP_resid_FE": {
+          "beta": 2.99,
+          "se": 3.5094,
+          "pval": 0.3946,
+          "r2": 0.0048,
+          "n": 645,
+          "countries": 123
+        },
+        "Education_2WFE": {
+          "beta": -0.1139,
+          "se": 0.0735,
+          "pval": 0.122,
+          "r2": -0.2337,
+          "n": 645,
+          "countries": 123
+        },
+        "GDP_resid_2WFE": {
+          "beta": 4.6082,
+          "se": 1.9968,
+          "pval": 0.0214,
+          "r2": 0.0034,
+          "n": 645,
+          "countries": 123
+        }
+      }
+    }
+  },
+  "script": "scripts/tables/regression_tables.py"
+}

@@ -1,0 +1,118 @@
+{
+  "transformer_t25": {
+    "LE": {
+      "n_seeds": 50,
+      "baseline_r2_median": 0.7185046970844269,
+      "baseline_r2_ci95": [
+        0.6904568299651146,
+        0.7535111874341964
+      ],
+      "edu_r2_drop_median": 0.2370568811893463,
+      "edu_r2_drop_ci95": [
+        0.1751520425081253,
+        0.3191934317350388
+      ]
+    },
+    "TFR": {
+      "n_seeds": 50,
+      "baseline_r2_median": 0.7841516137123108,
+      "baseline_r2_ci95": [
+        0.7482460424304008,
+        0.809834460914135
+      ],
+      "edu_r2_drop_median": 0.2839924097061157,
+      "edu_r2_drop_ci95": [
+        0.21219796389341355,
+        0.33281797319650647
+      ]
+    },
+    "U5MR": {
+      "n_seeds": 50,
+      "baseline_r2_median": 0.6954588890075684,
+      "baseline_r2_ci95": [
+        0.6598483026027679,
+        0.733168226480484
+      ],
+      "edu_r2_drop_median": 0.2975066304206848,
+      "edu_r2_drop_ci95": [
+        0.2358206793665886,
+        0.3985244080424309
+      ]
+    }
+  },
+  "spec_curve": [
+    {
+      "method": "gradient_boosting",
+      "target": "LE",
+      "baseline_r2": 0.7696560726224447,
+      "edu_r2_drop_abs": 0.16625436978422536
+    },
+    {
+      "method": "gradient_boosting",
+      "target": "TFR",
+      "baseline_r2": 0.784900613343303,
+      "edu_r2_drop_abs": 0.2560758677981574
+    },
+    {
+      "method": "gradient_boosting",
+      "target": "U5MR",
+      "baseline_r2": 0.7016098076361135,
+      "edu_r2_drop_abs": 0.23675020296731397
+    },
+    {
+      "method": "lasso",
+      "target": "LE",
+      "baseline_r2": 0.7246733070171124,
+      "edu_r2_drop_abs": 0.18385691165181606
+    },
+    {
+      "method": "lasso",
+      "target": "TFR",
+      "baseline_r2": 0.7690909706681319,
+      "edu_r2_drop_abs": 0.2982269260405406
+    },
+    {
+      "method": "lasso",
+      "target": "U5MR",
+      "baseline_r2": 0.6782139878849318,
+      "edu_r2_drop_abs": 0.19306271123710383
+    },
+    {
+      "method": "random_forest",
+      "target": "LE",
+      "baseline_r2": 0.7615488940051767,
+      "edu_r2_drop_abs": 0.14986421537008376
+    },
+    {
+      "method": "random_forest",
+      "target": "TFR",
+      "baseline_r2": 0.7615257014519148,
+      "edu_r2_drop_abs": 0.31454287188206453
+    },
+    {
+      "method": "random_forest",
+      "target": "U5MR",
+      "baseline_r2": 0.7012576389261995,
+      "edu_r2_drop_abs": 0.27073812112307805
+    },
+    {
+      "method": "ridge",
+      "target": "LE",
+      "baseline_r2": 0.706982376750446,
+      "edu_r2_drop_abs": 0.14235937011025457
+    },
+    {
+      "method": "ridge",
+      "target": "TFR",
+      "baseline_r2": 0.7124201616617597,
+      "edu_r2_drop_abs": 0.2134253319735887
+    },
+    {
+      "method": "ridge",
+      "target": "U5MR",
+      "baseline_r2": 0.6349681999237085,
+      "edu_r2_drop_abs": 0.1739479009325745
+    }
+  ],
+  "script": "scripts/ml/chapter9/aggregate_results.py"
+}

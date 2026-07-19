@@ -1,0 +1,59 @@
+{
+  "placebo_nulls": {
+    "placebo_country_scramble": {
+      "n_rows": 45,
+      "median_drop": -0.060805752185530526,
+      "max_abs_drop": 0.2706695318403305,
+      "drop_ci95": [
+        -0.21350767997687997,
+        0.13103304474979324
+      ]
+    },
+    "placebo_edu_replaced_gdprank": {
+      "n_rows": 9,
+      "median_drop": 0.07090518934274093,
+      "max_abs_drop": 0.10738673577369862,
+      "drop_ci95": [
+        0.03104991359715925,
+        0.10249208023590588
+      ]
+    },
+    "placebo_edu_replaced_latitude": {
+      "n_rows": 9,
+      "median_drop": 0.01938403156828572,
+      "max_abs_drop": 0.05705791806608962,
+      "drop_ci95": [
+        -0.0032604527885192526,
+        0.05399442700694374
+      ]
+    },
+    "placebo_edu_replaced_noise": {
+      "n_rows": 45,
+      "median_drop": -0.004999445668525948,
+      "max_abs_drop": 0.034993873384313035,
+      "drop_ci95": [
+        -0.033759575143757305,
+        0.008975419387927496
+      ]
+    },
+    "placebo_outcome_scramble": {
+      "n_rows": 45,
+      "median_drop": -0.019369101805549294,
+      "max_abs_drop": 0.14477025740898686,
+      "drop_ci95": [
+        -0.1427385859029938,
+        0.02643139341075042
+      ]
+    },
+    "placebo_year_scramble": {
+      "n_rows": 45,
+      "median_drop": 0.12289545324948248,
+      "max_abs_drop": 0.18058792279351643,
+      "drop_ci95": [
+        0.05836406800625019,
+        0.1750653348665398
+      ]
+    }
+  },
+  "script": "scripts/ml/chapter9/aggregate_results.py"
+}

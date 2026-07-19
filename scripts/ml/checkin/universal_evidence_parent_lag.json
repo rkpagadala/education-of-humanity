@@ -1,0 +1,159 @@
+{
+  "method": "Parent-vantage UniversalTransformer (no country embedding), 30-seed cloud aggregate (mean across seeds). Three SEPARATE single-target models, one per outcome at its biological horizon: LE at T+12 (childrearing window) (LAG_LE), TFR at T+5 (LAG_TFR), U5MR at T+12 (LAG_CHILDREARING). Same encoder, feature pipeline and fold construction as the T+25 multi-target build; only the target horizon varies. Education / GDP ablation gates averaged across seeds.",
+  "horizons": {
+    "LE": 12,
+    "TFR": 5,
+    "U5MR": 12
+  },
+  "n_seeds": 30,
+  "per_outcome": {
+    "LE": {
+      "horizon": 12,
+      "n_seeds": 30,
+      "B0_joint_5fold": {
+        "overall_r2_oof": [
+          0.7512967566649119
+        ],
+        "overall_r2_oof_std": [
+          0.015546381245514062
+        ],
+        "fold_r2_mean": [
+          0.7446937338511149
+        ],
+        "n_samples": 1477
+      },
+      "B1_B2_gates_on_joint": {
+        "n_evaluated": 1477,
+        "baseline_r2": {
+          "LE": 0.7512967566649119
+        },
+        "g1_education_ablation": {
+          "ablated_r2": {
+            "LE": 0.5168419599533081
+          },
+          "r2_drop_fraction": {
+            "LE": 0.31240246891975404
+          },
+          "r2_drop_fraction_std": {
+            "LE": 0.04854620997224216
+          },
+          "r2_drop_absolute": {
+            "LE": 0.23445479671160385
+          },
+          "max_drop": 0.31240246891975404
+        },
+        "g2_gdp_ablation": {
+          "ablated_r2": {
+            "LE": 0.7364787658055624
+          },
+          "r2_drop_fraction": {
+            "LE": 0.01972133948778113
+          },
+          "r2_drop_absolute": {
+            "LE": 0.014817990859349539
+          },
+          "max_drop": 0.01972133948778113
+        }
+      }
+    },
+    "TFR": {
+      "horizon": 5,
+      "n_seeds": 30,
+      "B0_joint_5fold": {
+        "overall_r2_oof": [
+          0.8557167450586954
+        ],
+        "overall_r2_oof_std": [
+          0.007359087657583559
+        ],
+        "fold_r2_mean": [
+          0.8517385280132294
+        ],
+        "n_samples": 1846
+      },
+      "B1_B2_gates_on_joint": {
+        "n_evaluated": 1846,
+        "baseline_r2": {
+          "TFR": 0.8557167450586954
+        },
+        "g1_education_ablation": {
+          "ablated_r2": {
+            "TFR": 0.5937224249045054
+          },
+          "r2_drop_fraction": {
+            "TFR": 0.3062042703231176
+          },
+          "r2_drop_fraction_std": {
+            "TFR": 0.038633725652639075
+          },
+          "r2_drop_absolute": {
+            "TFR": 0.26199432015419
+          },
+          "max_drop": 0.3062042703231176
+        },
+        "g2_gdp_ablation": {
+          "ablated_r2": {
+            "TFR": 0.8541517992814381
+          },
+          "r2_drop_fraction": {
+            "TFR": 0.0018296437679358253
+          },
+          "r2_drop_absolute": {
+            "TFR": 0.0015649457772572983
+          },
+          "max_drop": 0.0018296437679358253
+        }
+      }
+    },
+    "U5MR": {
+      "horizon": 12,
+      "n_seeds": 30,
+      "B0_joint_5fold": {
+        "overall_r2_oof": [
+          0.7593583484490712
+        ],
+        "overall_r2_oof_std": [
+          0.01666465467395253
+        ],
+        "fold_r2_mean": [
+          0.7498993011315664
+        ],
+        "n_samples": 1477
+      },
+      "B1_B2_gates_on_joint": {
+        "n_evaluated": 1477,
+        "baseline_r2": {
+          "U5MR": 0.7593583484490712
+        },
+        "g1_education_ablation": {
+          "ablated_r2": {
+            "U5MR": 0.36490255196889243
+          },
+          "r2_drop_fraction": {
+            "U5MR": 0.5198728650808334
+          },
+          "r2_drop_fraction_std": {
+            "U5MR": 0.06051027950535026
+          },
+          "r2_drop_absolute": {
+            "U5MR": 0.3944557964801788
+          },
+          "max_drop": 0.5198728650808334
+        },
+        "g2_gdp_ablation": {
+          "ablated_r2": {
+            "U5MR": 0.7539001742998759
+          },
+          "r2_drop_fraction": {
+            "U5MR": 0.007215768502404293
+          },
+          "r2_drop_absolute": {
+            "U5MR": 0.005458174149195361
+          },
+          "max_drop": 0.007215768502404293
+        }
+      }
+    }
+  },
+  "script": "scripts/ml/chapter9/aggregate_parent_vantage.py"
+}

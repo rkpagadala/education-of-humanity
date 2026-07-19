@@ -1,0 +1,62 @@
+{
+  "method": "Parent-vantage double/debiased ML (orthogonal score, GBM nuisances, 5 seeds x 5-fold). Per-outcome single-target panels at biological horizons: LE at T+12 (childrearing window) (LAG_LE), TFR@5, U5MR@12. theta is the doubly-robust effect of the aggregate education signal on each outcome at its own lag.",
+  "n_folds": 5,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "by_target": {
+    "LE": {
+      "horizon": 12,
+      "theta_seed_estimates": [
+        4.607281202365532,
+        5.144608103652391,
+        4.830065050932239,
+        4.849558674245656,
+        5.6114307668563725
+      ],
+      "theta_median": 4.849558674245656,
+      "theta_ci95": [
+        4.629559587222203,
+        5.564748500535974
+      ],
+      "n_samples": 1477
+    },
+    "TFR": {
+      "horizon": 5,
+      "theta_seed_estimates": [
+        -0.9202140864620297,
+        -0.8833879346813417,
+        -0.947169990392446,
+        -0.987466802760409,
+        -0.9350983542148491
+      ],
+      "theta_median": -0.9350983542148491,
+      "theta_ci95": [
+        -0.9834371215236127,
+        -0.8870705498594105
+      ],
+      "n_samples": 1846
+    },
+    "U5MR": {
+      "horizon": 12,
+      "theta_seed_estimates": [
+        -36.632477345679895,
+        -33.2899092317171,
+        -36.51418317975025,
+        -33.469117452186914,
+        -39.34359580723433
+      ],
+      "theta_median": -36.51418317975025,
+      "theta_ci95": [
+        -39.07248396107889,
+        -33.30783005376408
+      ],
+      "n_samples": 1477
+    }
+  },
+  "script": "scripts/ml/chapter9/dml_parent.py"
+}

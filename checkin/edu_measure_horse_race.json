@@ -1,0 +1,261 @@
+{
+  "numbers": {
+    "panel_n": 528,
+    "panel_countries": 132,
+    "tfr_wcde_lsec_coef": -0.0539,
+    "tfr_wcde_lsec_t": -27.23,
+    "tfr_wcde_lsec_r2": 0.697,
+    "tfr_wcde_lsec_rmse": 1.107,
+    "tfr_bl_reach_sec_coef": -0.0604,
+    "tfr_bl_reach_sec_t": -20.77,
+    "tfr_bl_reach_sec_r2": 0.584,
+    "tfr_bl_reach_sec_rmse": 1.297,
+    "tfr_bl_yr_sch_coef": -0.5096,
+    "tfr_bl_yr_sch_t": -26.67,
+    "tfr_bl_yr_sch_r2": 0.689,
+    "tfr_bl_yr_sch_rmse": 1.122,
+    "le_wcde_lsec_coef": 0.2498,
+    "le_wcde_lsec_t": 21.1,
+    "le_wcde_lsec_r2": 0.576,
+    "le_wcde_lsec_rmse": 6.615,
+    "le_bl_reach_sec_coef": 0.2912,
+    "le_bl_reach_sec_t": 18.31,
+    "le_bl_reach_sec_r2": 0.512,
+    "le_bl_reach_sec_rmse": 7.094,
+    "le_bl_yr_sch_coef": 2.4155,
+    "le_bl_yr_sch_t": 21.83,
+    "le_bl_yr_sch_r2": 0.591,
+    "le_bl_yr_sch_rmse": 6.495,
+    "log_u5mr_wcde_lsec_coef": -0.0343,
+    "log_u5mr_wcde_lsec_t": -35.94,
+    "log_u5mr_wcde_lsec_r2": 0.79,
+    "log_u5mr_wcde_lsec_rmse": 0.543,
+    "log_u5mr_bl_reach_sec_coef": -0.0394,
+    "log_u5mr_bl_reach_sec_t": -26.79,
+    "log_u5mr_bl_reach_sec_r2": 0.684,
+    "log_u5mr_bl_reach_sec_rmse": 0.667,
+    "log_u5mr_bl_yr_sch_coef": -0.3194,
+    "log_u5mr_bl_yr_sch_t": -34.48,
+    "log_u5mr_bl_yr_sch_r2": 0.777,
+    "log_u5mr_bl_yr_sch_rmse": 0.56,
+    "tfr_wcde_lsec_agg_bias_sds": 0.54,
+    "tfr_bl_reach_sec_agg_bias_sds": -0.02,
+    "le_wcde_lsec_agg_bias_sds": -1.43,
+    "le_bl_reach_sec_agg_bias_sds": -0.97,
+    "log_u5mr_wcde_lsec_agg_bias_sds": 2.13,
+    "log_u5mr_bl_reach_sec_agg_bias_sds": 1.11,
+    "subgroup_split": {
+      "tfr_wcde_lsec_central_caucasus": {
+        "n": 16,
+        "mean_resid": 2.22,
+        "se": 0.303,
+        "t": 7.32,
+        "bias_sds": 2.01
+      },
+      "tfr_wcde_lsec_baltics": {
+        "n": 12,
+        "mean_resid": 0.149,
+        "se": 0.149,
+        "t": 1.0,
+        "bias_sds": 0.13
+      },
+      "tfr_wcde_lsec_slavic_west": {
+        "n": 8,
+        "mean_resid": -0.041,
+        "se": 0.245,
+        "t": -0.17,
+        "bias_sds": -0.04
+      },
+      "tfr_wcde_lsec_warsaw_pact": {
+        "n": 20,
+        "mean_resid": 0.281,
+        "se": 0.154,
+        "t": 1.82,
+        "bias_sds": 0.25
+      },
+      "tfr_wcde_lsec_yugoslavia_albania": {
+        "n": 16,
+        "mean_resid": 0.143,
+        "se": 0.242,
+        "t": 0.59,
+        "bias_sds": 0.13
+      },
+      "tfr_bl_reach_sec_central_caucasus": {
+        "n": 16,
+        "mean_resid": 2.022,
+        "se": 0.395,
+        "t": 5.12,
+        "bias_sds": 1.56
+      },
+      "tfr_bl_reach_sec_baltics": {
+        "n": 12,
+        "mean_resid": -0.385,
+        "se": 0.361,
+        "t": -1.07,
+        "bias_sds": -0.3
+      },
+      "tfr_bl_reach_sec_slavic_west": {
+        "n": 8,
+        "mean_resid": 0.198,
+        "se": 0.391,
+        "t": 0.51,
+        "bias_sds": 0.15
+      },
+      "tfr_bl_reach_sec_warsaw_pact": {
+        "n": 20,
+        "mean_resid": -0.878,
+        "se": 0.294,
+        "t": -2.98,
+        "bias_sds": -0.68
+      },
+      "tfr_bl_reach_sec_yugoslavia_albania": {
+        "n": 16,
+        "mean_resid": -0.991,
+        "se": 0.342,
+        "t": -2.9,
+        "bias_sds": -0.76
+      },
+      "le_wcde_lsec_central_caucasus": {
+        "n": 16,
+        "mean_resid": -13.982,
+        "se": 1.115,
+        "t": -12.54,
+        "bias_sds": -2.11
+      },
+      "le_wcde_lsec_baltics": {
+        "n": 12,
+        "mean_resid": -9.534,
+        "se": 0.846,
+        "t": -11.27,
+        "bias_sds": -1.44
+      },
+      "le_wcde_lsec_slavic_west": {
+        "n": 8,
+        "mean_resid": -11.402,
+        "se": 1.476,
+        "t": -7.73,
+        "bias_sds": -1.72
+      },
+      "le_wcde_lsec_warsaw_pact": {
+        "n": 20,
+        "mean_resid": -8.696,
+        "se": 0.454,
+        "t": -19.14,
+        "bias_sds": -1.31
+      },
+      "le_wcde_lsec_yugoslavia_albania": {
+        "n": 16,
+        "mean_resid": -4.317,
+        "se": 0.786,
+        "t": -5.49,
+        "bias_sds": -0.65
+      },
+      "le_bl_reach_sec_central_caucasus": {
+        "n": 16,
+        "mean_resid": -13.539,
+        "se": 1.431,
+        "t": -9.46,
+        "bias_sds": -1.91
+      },
+      "le_bl_reach_sec_baltics": {
+        "n": 12,
+        "mean_resid": -7.5,
+        "se": 1.384,
+        "t": -5.42,
+        "bias_sds": -1.06
+      },
+      "le_bl_reach_sec_slavic_west": {
+        "n": 8,
+        "mean_resid": -13.057,
+        "se": 2.029,
+        "t": -6.43,
+        "bias_sds": -1.84
+      },
+      "le_bl_reach_sec_warsaw_pact": {
+        "n": 20,
+        "mean_resid": -3.64,
+        "se": 1.144,
+        "t": -3.18,
+        "bias_sds": -0.51
+      },
+      "le_bl_reach_sec_yugoslavia_albania": {
+        "n": 16,
+        "mean_resid": 0.705,
+        "se": 0.917,
+        "t": 0.77,
+        "bias_sds": 0.1
+      },
+      "log_u5mr_wcde_lsec_central_caucasus": {
+        "n": 16,
+        "mean_resid": 2.133,
+        "se": 0.081,
+        "t": 26.21,
+        "bias_sds": 3.93
+      },
+      "log_u5mr_wcde_lsec_baltics": {
+        "n": 12,
+        "mean_resid": 0.824,
+        "se": 0.094,
+        "t": 8.73,
+        "bias_sds": 1.52
+      },
+      "log_u5mr_wcde_lsec_slavic_west": {
+        "n": 4,
+        "mean_resid": 1.006,
+        "se": 0.137,
+        "t": 7.36,
+        "bias_sds": 1.85
+      },
+      "log_u5mr_wcde_lsec_warsaw_pact": {
+        "n": 24,
+        "mean_resid": 0.919,
+        "se": 0.086,
+        "t": 10.72,
+        "bias_sds": 1.69
+      },
+      "log_u5mr_wcde_lsec_yugoslavia_albania": {
+        "n": 16,
+        "mean_resid": 0.763,
+        "se": 0.129,
+        "t": 5.92,
+        "bias_sds": 1.41
+      },
+      "log_u5mr_bl_reach_sec_central_caucasus": {
+        "n": 16,
+        "mean_resid": 2.048,
+        "se": 0.184,
+        "t": 11.16,
+        "bias_sds": 3.07
+      },
+      "log_u5mr_bl_reach_sec_baltics": {
+        "n": 12,
+        "mean_resid": 0.521,
+        "se": 0.178,
+        "t": 2.93,
+        "bias_sds": 0.78
+      },
+      "log_u5mr_bl_reach_sec_slavic_west": {
+        "n": 4,
+        "mean_resid": 1.252,
+        "se": 0.253,
+        "t": 4.94,
+        "bias_sds": 1.88
+      },
+      "log_u5mr_bl_reach_sec_warsaw_pact": {
+        "n": 24,
+        "mean_resid": 0.212,
+        "se": 0.134,
+        "t": 1.58,
+        "bias_sds": 0.32
+      },
+      "log_u5mr_bl_reach_sec_yugoslavia_albania": {
+        "n": 16,
+        "mean_resid": 0.061,
+        "se": 0.144,
+        "t": 0.43,
+        "bias_sds": 0.09
+      }
+    }
+  },
+  "script": "scripts/which_edu_measure_is_correct.py"
+}

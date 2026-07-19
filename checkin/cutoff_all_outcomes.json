@@ -1,0 +1,280 @@
+{
+  "method": "Country FE (demeaned). Cutoff applied to education(T). T = [1975, 1980, 1985, 1990]. Outcome-specific lags: TFR at T+LAG_TFR=5 (biological parent-of-newborn timing); log U5MR at T+LAG_CHILDREARING=12 (childrearing window); LE and child education at T+LAG_GENERATION=28 (time-to-agency / edu\u2192edu transmission).",
+  "education_variable": "lower secondary completion, both sexes, age 20-24 (WCDE v3)",
+  "gdp_variable": "log GDP per capita, constant 2015 USD (World Bank WDI)",
+  "outcome_variables": {
+    "le": "life expectancy at birth (WDI SP.DYN.LE00.IN), at T+28",
+    "tfr": "total fertility rate (WDI SP.DYN.TFRT.IN), at T+5",
+    "log_u5mr": "log under-5 mortality per 1000 (WDI), at T+12",
+    "child_edu": "lower secondary completion at T+28, same country (WCDE v3)"
+  },
+  "outcome_lags": {
+    "le": 28,
+    "tfr": 5,
+    "log_u5mr": 12,
+    "child_edu": 28
+  },
+  "cutoffs": [
+    "10",
+    "30",
+    "50",
+    "70",
+    "90",
+    "all"
+  ],
+  "panel_size": {
+    "total_obs": 740,
+    "total_countries": 185
+  },
+  "results": {
+    "le": {
+      "lt10": {
+        "cutoff": 10,
+        "edu_r2": 0.484,
+        "gdp_r2": 0.009,
+        "ratio": 56.51,
+        "edu_n": 58,
+        "edu_countries": 18,
+        "gdp_n": 45,
+        "gdp_countries": 14
+      },
+      "lt30": {
+        "cutoff": 30,
+        "edu_r2": 0.456,
+        "gdp_r2": 0.029,
+        "ratio": 15.78,
+        "edu_n": 213,
+        "edu_countries": 59,
+        "gdp_n": 185,
+        "gdp_countries": 54
+      },
+      "lt50": {
+        "cutoff": 50,
+        "edu_r2": 0.411,
+        "gdp_r2": 0.022,
+        "ratio": 18.38,
+        "edu_n": 347,
+        "edu_countries": 92,
+        "gdp_n": 318,
+        "gdp_countries": 88
+      },
+      "lt70": {
+        "cutoff": 70,
+        "edu_r2": 0.406,
+        "gdp_r2": 0.009,
+        "ratio": 47.38,
+        "edu_n": 454,
+        "edu_countries": 118,
+        "gdp_n": 403,
+        "gdp_countries": 108
+      },
+      "lt90": {
+        "cutoff": 90,
+        "edu_r2": 0.375,
+        "gdp_r2": 0.02,
+        "ratio": 19.1,
+        "edu_n": 541,
+        "edu_countries": 140,
+        "gdp_n": 477,
+        "gdp_countries": 128
+      },
+      "all": {
+        "cutoff": null,
+        "edu_r2": 0.354,
+        "gdp_r2": 0.04,
+        "ratio": 8.82,
+        "edu_n": 720,
+        "edu_countries": 180,
+        "gdp_n": 566,
+        "gdp_countries": 148
+      }
+    },
+    "tfr": {
+      "lt10": {
+        "cutoff": 10,
+        "edu_r2": 0.302,
+        "gdp_r2": 0.019,
+        "ratio": 16.02,
+        "edu_n": 58,
+        "edu_countries": 18,
+        "gdp_n": 45,
+        "gdp_countries": 14
+      },
+      "lt30": {
+        "cutoff": 30,
+        "edu_r2": 0.473,
+        "gdp_r2": 0.219,
+        "ratio": 2.16,
+        "edu_n": 213,
+        "edu_countries": 59,
+        "gdp_n": 185,
+        "gdp_countries": 54
+      },
+      "lt50": {
+        "cutoff": 50,
+        "edu_r2": 0.567,
+        "gdp_r2": 0.1,
+        "ratio": 5.66,
+        "edu_n": 347,
+        "edu_countries": 92,
+        "gdp_n": 318,
+        "gdp_countries": 88
+      },
+      "lt70": {
+        "cutoff": 70,
+        "edu_r2": 0.558,
+        "gdp_r2": 0.027,
+        "ratio": 20.85,
+        "edu_n": 452,
+        "edu_countries": 118,
+        "gdp_n": 403,
+        "gdp_countries": 108
+      },
+      "lt90": {
+        "cutoff": 90,
+        "edu_r2": 0.485,
+        "gdp_r2": 0.031,
+        "ratio": 15.82,
+        "edu_n": 539,
+        "edu_countries": 140,
+        "gdp_n": 477,
+        "gdp_countries": 128
+      },
+      "all": {
+        "cutoff": null,
+        "edu_r2": 0.427,
+        "gdp_r2": 0.035,
+        "ratio": 12.05,
+        "edu_n": 718,
+        "edu_countries": 180,
+        "gdp_n": 566,
+        "gdp_countries": 148
+      }
+    },
+    "log_u5mr": {
+      "lt10": {
+        "cutoff": 10,
+        "edu_r2": 0.448,
+        "gdp_r2": 0.022,
+        "ratio": 20.7,
+        "edu_n": 58,
+        "edu_countries": 18,
+        "gdp_n": 45,
+        "gdp_countries": 14
+      },
+      "lt30": {
+        "cutoff": 30,
+        "edu_r2": 0.523,
+        "gdp_r2": 0.128,
+        "ratio": 4.09,
+        "edu_n": 213,
+        "edu_countries": 59,
+        "gdp_n": 185,
+        "gdp_countries": 54
+      },
+      "lt50": {
+        "cutoff": 50,
+        "edu_r2": 0.46,
+        "gdp_r2": 0.024,
+        "ratio": 19.28,
+        "edu_n": 347,
+        "edu_countries": 92,
+        "gdp_n": 318,
+        "gdp_countries": 88
+      },
+      "lt70": {
+        "cutoff": 70,
+        "edu_r2": 0.455,
+        "gdp_r2": 0.004,
+        "ratio": 118.88,
+        "edu_n": 444,
+        "edu_countries": 114,
+        "gdp_n": 401,
+        "gdp_countries": 107
+      },
+      "lt90": {
+        "cutoff": 90,
+        "edu_r2": 0.493,
+        "gdp_r2": 0.038,
+        "ratio": 13.0,
+        "edu_n": 520,
+        "edu_countries": 135,
+        "gdp_n": 468,
+        "gdp_countries": 125
+      },
+      "all": {
+        "cutoff": null,
+        "edu_r2": 0.418,
+        "gdp_r2": 0.098,
+        "ratio": 4.25,
+        "edu_n": 700,
+        "edu_countries": 175,
+        "gdp_n": 556,
+        "gdp_countries": 145
+      }
+    },
+    "child_edu": {
+      "lt10": {
+        "cutoff": 10,
+        "edu_r2": 0.573,
+        "gdp_r2": 0.014,
+        "ratio": 39.71,
+        "edu_n": 58,
+        "edu_countries": 18,
+        "gdp_n": 45,
+        "gdp_countries": 14
+      },
+      "lt30": {
+        "cutoff": 30,
+        "edu_r2": 0.579,
+        "gdp_r2": 0.156,
+        "ratio": 3.7,
+        "edu_n": 213,
+        "edu_countries": 59,
+        "gdp_n": 185,
+        "gdp_countries": 54
+      },
+      "lt50": {
+        "cutoff": 50,
+        "edu_r2": 0.558,
+        "gdp_r2": 0.123,
+        "ratio": 4.53,
+        "edu_n": 349,
+        "edu_countries": 93,
+        "gdp_n": 318,
+        "gdp_countries": 88
+      },
+      "lt70": {
+        "cutoff": 70,
+        "edu_r2": 0.465,
+        "gdp_r2": 0.049,
+        "ratio": 9.42,
+        "edu_n": 466,
+        "edu_countries": 122,
+        "gdp_n": 403,
+        "gdp_countries": 108
+      },
+      "lt90": {
+        "cutoff": 90,
+        "edu_r2": 0.405,
+        "gdp_r2": 0.076,
+        "ratio": 5.33,
+        "edu_n": 559,
+        "edu_countries": 145,
+        "gdp_n": 477,
+        "gdp_countries": 128
+      },
+      "all": {
+        "cutoff": null,
+        "edu_r2": 0.34,
+        "gdp_r2": 0.1,
+        "ratio": 3.41,
+        "edu_n": 740,
+        "edu_countries": 185,
+        "gdp_n": 566,
+        "gdp_countries": 148
+      }
+    }
+  },
+  "script": "scripts/residualization/cutoff_all_outcomes.py"
+}

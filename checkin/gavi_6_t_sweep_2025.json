@@ -1,0 +1,237 @@
+{
+  "method": "T-sweep over the gavi_6 dual-channel counterfactual. For each T \u2208 [1970, 1980, 1990, 2000]: window = [T+5, 2025] (earliest channel responds at LAG_FERT=5); per-channel bio lags U5MR at LAG_MORT=12, TFR at LAG_FERT=5; baseline = frozen at T (lsec held at T's level for each country, TFR shifted by \u03b2_TFR=-0.058\u00b7\u0394lsec; src: scripts/gavi_beta_provenance.py). U5MR via stage 2 trendline (\u03b1=5.5645, \u03b2=-0.0282, headline spec 'developing_no_ussr_wls'). Each scenario (Korea pace 2.13 pp/yr / 15-yr ramp / 9-yr biological floor) reported vs frozen-T (full CF benefit) and vs actual (extra from acceleration). Decomposed into mortality channel and fertility channel.",
+  "headline_spec": "developing_no_ussr_wls",
+  "alpha": 5.564521903619925,
+  "beta_lsec": -0.02816663431360228,
+  "beta_tfr": -0.058,
+  "korea_rate_pp_per_year": 2.13,
+  "T_anchors": [
+    1970,
+    1980,
+    1990,
+    2000
+  ],
+  "end_year": 2025,
+  "u5mr_floor": 3.0,
+  "tfr_floor": 1.2,
+  "lsec_cap": 99.0,
+  "by_T": {
+    "1970": {
+      "T_anchor": 1970,
+      "window": [
+        1975,
+        2025
+      ],
+      "n_countries_used": 100,
+      "actual_education_vs_frozen_T": {
+        "lives_saved_total": 556.6017184533115,
+        "via_mortality": 230.9887345566798,
+        "via_fertility": 325.6129838966318,
+        "kids_not_born": 1847.799155659316
+      },
+      "scenarios_vs_frozen_T": {
+        "bio_9yr": {
+          "lives_saved_total": 973.9249327242827,
+          "via_mortality": 219.82628272394976,
+          "via_fertility": 754.0986500003337,
+          "kids_not_born": 3990.3183286220437
+        },
+        "ramp_15yr": {
+          "lives_saved_total": 945.5979377720685,
+          "via_mortality": 216.90884097806756,
+          "via_fertility": 728.6890967940016,
+          "kids_not_born": 3856.3884702077753
+        },
+        "korea_pace": {
+          "lives_saved_total": 840.1843900217303,
+          "via_mortality": 225.5017287377655,
+          "via_fertility": 614.6826612839716,
+          "kids_not_born": 3291.2933155005317
+        }
+      },
+      "scenarios_extra_vs_actual": {
+        "bio_9yr": {
+          "lives_saved_total": 418.2744649254551,
+          "via_mortality": 112.6286700122022,
+          "via_fertility": 305.6457949132545,
+          "kids_not_born": 2142.5226602489606
+        },
+        "ramp_15yr": {
+          "lives_saved_total": 389.51894944849505,
+          "via_mortality": 109.1481207791988,
+          "via_fertility": 280.3708286692962,
+          "kids_not_born": 2008.592801834696
+        },
+        "korea_pace": {
+          "lives_saved_total": 283.7243120471599,
+          "via_mortality": 100.78639719437444,
+          "via_fertility": 182.93791485278444,
+          "kids_not_born": 1443.5011042393542
+        }
+      }
+    },
+    "1980": {
+      "T_anchor": 1980,
+      "window": [
+        1985,
+        2025
+      ],
+      "n_countries_used": 100,
+      "actual_education_vs_frozen_T": {
+        "lives_saved_total": 318.3205124037982,
+        "via_mortality": 127.46629055171809,
+        "via_fertility": 190.85422185207986,
+        "kids_not_born": 1342.7017198060582
+      },
+      "scenarios_vs_frozen_T": {
+        "bio_9yr": {
+          "lives_saved_total": 617.7054117458863,
+          "via_mortality": 142.45433423421676,
+          "via_fertility": 475.2510775116693,
+          "kids_not_born": 3018.0562743451414
+        },
+        "ramp_15yr": {
+          "lives_saved_total": 592.7053424837624,
+          "via_mortality": 138.28836908379418,
+          "via_fertility": 454.41697339996824,
+          "kids_not_born": 2887.661635337609
+        },
+        "korea_pace": {
+          "lives_saved_total": 505.9684534946569,
+          "via_mortality": 141.02797997670953,
+          "via_fertility": 364.94047351794546,
+          "kids_not_born": 2380.054198737249
+        }
+      },
+      "scenarios_extra_vs_actual": {
+        "bio_9yr": {
+          "lives_saved_total": 300.5950086514003,
+          "via_mortality": 81.18757648388326,
+          "via_fertility": 219.4074321675172,
+          "kids_not_born": 1675.431203435292
+        },
+        "ramp_15yr": {
+          "lives_saved_total": 275.0686293744587,
+          "via_mortality": 76.50896789804337,
+          "via_fertility": 198.55966147641558,
+          "kids_not_born": 1545.0365644277572
+        },
+        "korea_pace": {
+          "lives_saved_total": 187.88429559882036,
+          "via_mortality": 66.23520486244496,
+          "via_fertility": 121.6490907363766,
+          "kids_not_born": 1037.4312371866588
+        }
+      }
+    },
+    "1990": {
+      "T_anchor": 1990,
+      "window": [
+        1995,
+        2025
+      ],
+      "n_countries_used": 100,
+      "actual_education_vs_frozen_T": {
+        "lives_saved_total": 162.64746160805373,
+        "via_mortality": 60.39399866626825,
+        "via_fertility": 102.25346294178554,
+        "kids_not_born": 883.8627760940038
+      },
+      "scenarios_vs_frozen_T": {
+        "bio_9yr": {
+          "lives_saved_total": 356.51012439619444,
+          "via_mortality": 80.19153556613257,
+          "via_fertility": 276.3185888300611,
+          "kids_not_born": 2081.9877716009914
+        },
+        "ramp_15yr": {
+          "lives_saved_total": 333.8917893213234,
+          "via_mortality": 75.29857024859189,
+          "via_fertility": 258.5932190727294,
+          "kids_not_born": 1951.6205757315922
+        },
+        "korea_pace": {
+          "lives_saved_total": 266.33518931351443,
+          "via_mortality": 76.38976841382636,
+          "via_fertility": 189.9454208996878,
+          "kids_not_born": 1518.5733202566753
+        }
+      },
+      "scenarios_extra_vs_actual": {
+        "bio_9yr": {
+          "lives_saved_total": 195.1437569439709,
+          "via_mortality": 50.6659457918074,
+          "via_fertility": 144.47781115216338,
+          "kids_not_born": 1198.6226330268835
+        },
+        "ramp_15yr": {
+          "lives_saved_total": 172.038291487511,
+          "via_mortality": 45.44224378600866,
+          "via_fertility": 126.59604770150261,
+          "kids_not_born": 1068.2554371574884
+        },
+        "korea_pace": {
+          "lives_saved_total": 104.1105099935897,
+          "via_mortality": 37.596594681119335,
+          "via_fertility": 66.5139153124701,
+          "kids_not_born": 635.2335290159048
+        }
+      }
+    },
+    "2000": {
+      "T_anchor": 2000,
+      "window": [
+        2005,
+        2025
+      ],
+      "n_countries_used": 100,
+      "actual_education_vs_frozen_T": {
+        "lives_saved_total": 64.66001054192932,
+        "via_mortality": 20.68121967400316,
+        "via_fertility": 43.97879086792622,
+        "kids_not_born": 476.2001402333803
+      },
+      "scenarios_vs_frozen_T": {
+        "bio_9yr": {
+          "lives_saved_total": 164.98484076973364,
+          "via_mortality": 32.53842958775689,
+          "via_fertility": 132.44641118197666,
+          "kids_not_born": 1190.3889167361276
+        },
+        "ramp_15yr": {
+          "lives_saved_total": 145.04679255561538,
+          "via_mortality": 27.828493496621892,
+          "via_fertility": 117.21829905899378,
+          "kids_not_born": 1053.6242593387858
+        },
+        "korea_pace": {
+          "lives_saved_total": 102.23789834817589,
+          "via_mortality": 29.652652497065592,
+          "via_fertility": 72.58524585111044,
+          "kids_not_born": 738.0708714235058
+        }
+      },
+      "scenarios_extra_vs_actual": {
+        "bio_9yr": {
+          "lives_saved_total": 101.50575752988762,
+          "via_mortality": 22.444174590715974,
+          "via_fertility": 79.06158293917143,
+          "kids_not_born": 714.52683336719
+        },
+        "ramp_15yr": {
+          "lives_saved_total": 81.0540241319575,
+          "via_mortality": 17.351403983623108,
+          "via_fertility": 63.70262014833438,
+          "kids_not_born": 577.7641414536266
+        },
+        "korea_pace": {
+          "lives_saved_total": 37.88947540744626,
+          "via_mortality": 13.39886248825242,
+          "via_fertility": 24.490612919193826,
+          "kids_not_born": 262.2162128800207
+        }
+      }
+    }
+  },
+  "script": "scripts/gavi_6_t_sweep.py"
+}

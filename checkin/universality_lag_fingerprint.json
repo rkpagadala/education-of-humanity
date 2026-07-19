@@ -1,0 +1,563 @@
+{
+  "notes": "Mechanism-fingerprint universality test. The canonical per-outcome bio-lag spec of scripts/wcde/table_contemporaneous.py (lower-sec at T -> log GDP @0, log TFR @5, log LE @12, log U5MR @12; country FE, country-clustered SE) re-estimated on the eleven subsamples of the \u00a7Universality section (six WB regions, two eras at T<1990/>=1990, three GDP terciles on GDP at T). Reports, for each subsample, whether all four signs hold at canonical lags with p<0.05, and the across-subsample band of each semi-elasticity. Produced by scripts/universality_lag_fingerprint.py.",
+  "numbers": {
+    "n_subsamples": 11,
+    "n_outcomes": 4,
+    "n_cells": 44,
+    "cells_sign_correct": 44,
+    "cells_sign_and_sig05": 44,
+    "max_p_across_cells": 0.001969,
+    "subsamples_all_four_signs": 11,
+    "gdp_tercile_q33_loggdp": 7.398,
+    "gdp_tercile_q67_loggdp": 8.775,
+    "band_log_gdp_min": 0.011,
+    "band_log_gdp_max": 0.0257,
+    "band_log_gdp_max_over_min": 2.33,
+    "band_log_tfr_min": -0.0203,
+    "band_log_tfr_max": -0.0128,
+    "band_log_tfr_max_over_min": 0.63,
+    "band_log_le_min": 0.0025,
+    "band_log_le_max": 0.0071,
+    "band_log_le_max_over_min": 2.79,
+    "band_log_u5_min": -0.0549,
+    "band_log_u5_max": -0.0226,
+    "band_log_u5_max_over_min": 0.41
+  },
+  "fingerprint": {
+    "FULL": {
+      "log_gdp": {
+        "beta": 0.0185,
+        "se": 0.0014,
+        "p": 0.0,
+        "n": 1811,
+        "countries": 178,
+        "expected_sign": 1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_tfr": {
+        "beta": -0.0165,
+        "se": 0.0005,
+        "p": 0.0,
+        "n": 2155,
+        "countries": 180,
+        "expected_sign": -1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_le": {
+        "beta": 0.0042,
+        "se": 0.0003,
+        "p": 0.0,
+        "n": 1976,
+        "countries": 180,
+        "expected_sign": 1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_u5": {
+        "beta": -0.0327,
+        "se": 0.0014,
+        "p": 0.0,
+        "n": 1575,
+        "countries": 175,
+        "expected_sign": -1,
+        "sign_ok": true,
+        "sig05": true
+      }
+    },
+    "region:SSA": {
+      "log_gdp": {
+        "beta": 0.0125,
+        "se": 0.0038,
+        "p": 0.001969,
+        "n": 488,
+        "countries": 45,
+        "expected_sign": 1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_tfr": {
+        "beta": -0.0135,
+        "se": 0.0012,
+        "p": 4.663e-15,
+        "n": 540,
+        "countries": 45,
+        "expected_sign": -1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_le": {
+        "beta": 0.0053,
+        "se": 0.0011,
+        "p": 1.716e-05,
+        "n": 495,
+        "countries": 45,
+        "expected_sign": 1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_u5": {
+        "beta": -0.0226,
+        "se": 0.0033,
+        "p": 2.048e-08,
+        "n": 405,
+        "countries": 45,
+        "expected_sign": -1,
+        "sign_ok": true,
+        "sig05": true
+      }
+    },
+    "region:MENA": {
+      "log_gdp": {
+        "beta": 0.0126,
+        "se": 0.0028,
+        "p": 0.0003229,
+        "n": 194,
+        "countries": 19,
+        "expected_sign": 1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_tfr": {
+        "beta": -0.0185,
+        "se": 0.0013,
+        "p": 3.028e-11,
+        "n": 223,
+        "countries": 19,
+        "expected_sign": -1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_le": {
+        "beta": 0.0051,
+        "se": 0.0004,
+        "p": 9.211e-11,
+        "n": 205,
+        "countries": 19,
+        "expected_sign": 1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_u5": {
+        "beta": -0.0437,
+        "se": 0.0027,
+        "p": 4.4e-12,
+        "n": 171,
+        "countries": 19,
+        "expected_sign": -1,
+        "sign_ok": true,
+        "sig05": true
+      }
+    },
+    "region:South Asia": {
+      "log_gdp": {
+        "beta": 0.0252,
+        "se": 0.0033,
+        "p": 0.0001236,
+        "n": 83,
+        "countries": 8,
+        "expected_sign": 1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_tfr": {
+        "beta": -0.0203,
+        "se": 0.0017,
+        "p": 6.705e-06,
+        "n": 96,
+        "countries": 8,
+        "expected_sign": -1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_le": {
+        "beta": 0.0071,
+        "se": 0.0011,
+        "p": 0.0004468,
+        "n": 88,
+        "countries": 8,
+        "expected_sign": 1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_u5": {
+        "beta": -0.0549,
+        "se": 0.0052,
+        "p": 1.538e-05,
+        "n": 72,
+        "countries": 8,
+        "expected_sign": -1,
+        "sign_ok": true,
+        "sig05": true
+      }
+    },
+    "region:East Asia & Pacific": {
+      "log_gdp": {
+        "beta": 0.0255,
+        "se": 0.004,
+        "p": 1.186e-06,
+        "n": 262,
+        "countries": 26,
+        "expected_sign": 1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_tfr": {
+        "beta": -0.0157,
+        "se": 0.0012,
+        "p": 2.658e-13,
+        "n": 336,
+        "countries": 28,
+        "expected_sign": -1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_le": {
+        "beta": 0.004,
+        "se": 0.0007,
+        "p": 2.613e-06,
+        "n": 308,
+        "countries": 28,
+        "expected_sign": 1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_u5": {
+        "beta": -0.0274,
+        "se": 0.0024,
+        "p": 2.363e-11,
+        "n": 234,
+        "countries": 26,
+        "expected_sign": -1,
+        "sign_ok": true,
+        "sig05": true
+      }
+    },
+    "region:LAC": {
+      "log_gdp": {
+        "beta": 0.0158,
+        "se": 0.0021,
+        "p": 1.447e-08,
+        "n": 349,
+        "countries": 31,
+        "expected_sign": 1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_tfr": {
+        "beta": -0.0195,
+        "se": 0.0008,
+        "p": 0.0,
+        "n": 372,
+        "countries": 31,
+        "expected_sign": -1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_le": {
+        "beta": 0.0035,
+        "se": 0.0004,
+        "p": 2.274e-10,
+        "n": 341,
+        "countries": 31,
+        "expected_sign": 1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_u5": {
+        "beta": -0.0324,
+        "se": 0.0027,
+        "p": 1.803e-12,
+        "n": 252,
+        "countries": 28,
+        "expected_sign": -1,
+        "sign_ok": true,
+        "sig05": true
+      }
+    },
+    "region:Europe & N.America": {
+      "log_gdp": {
+        "beta": 0.0257,
+        "se": 0.0023,
+        "p": 3.997e-15,
+        "n": 435,
+        "countries": 49,
+        "expected_sign": 1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_tfr": {
+        "beta": -0.0132,
+        "se": 0.0011,
+        "p": 4.441e-16,
+        "n": 588,
+        "countries": 49,
+        "expected_sign": -1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_le": {
+        "beta": 0.0025,
+        "se": 0.0002,
+        "p": 0.0,
+        "n": 539,
+        "countries": 49,
+        "expected_sign": 1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_u5": {
+        "beta": -0.0348,
+        "se": 0.0024,
+        "p": 0.0,
+        "n": 441,
+        "countries": 49,
+        "expected_sign": -1,
+        "sign_ok": true,
+        "sig05": true
+      }
+    },
+    "era:T<1990": {
+      "log_gdp": {
+        "beta": 0.0189,
+        "se": 0.0014,
+        "p": 0.0,
+        "n": 748,
+        "countries": 141,
+        "expected_sign": 1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_tfr": {
+        "beta": -0.0128,
+        "se": 0.0008,
+        "p": 0.0,
+        "n": 1074,
+        "countries": 179,
+        "expected_sign": -1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_le": {
+        "beta": 0.0033,
+        "se": 0.0003,
+        "p": 0.0,
+        "n": 1076,
+        "countries": 180,
+        "expected_sign": 1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_u5": {
+        "beta": -0.028,
+        "se": 0.0013,
+        "p": 0.0,
+        "n": 1050,
+        "countries": 175,
+        "expected_sign": -1,
+        "sign_ok": true,
+        "sig05": true
+      }
+    },
+    "era:T>=1990": {
+      "log_gdp": {
+        "beta": 0.0182,
+        "se": 0.0017,
+        "p": 0.0,
+        "n": 1056,
+        "countries": 178,
+        "expected_sign": 1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_tfr": {
+        "beta": -0.0143,
+        "se": 0.0011,
+        "p": 0.0,
+        "n": 1080,
+        "countries": 180,
+        "expected_sign": -1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_le": {
+        "beta": 0.0034,
+        "se": 0.0004,
+        "p": 6.661e-16,
+        "n": 900,
+        "countries": 180,
+        "expected_sign": 1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_u5": {
+        "beta": -0.0328,
+        "se": 0.0027,
+        "p": 0.0,
+        "n": 525,
+        "countries": 175,
+        "expected_sign": -1,
+        "sign_ok": true,
+        "sig05": true
+      }
+    },
+    "gdp_tercile:low": {
+      "log_gdp": {
+        "beta": 0.0143,
+        "se": 0.0031,
+        "p": 1.37e-05,
+        "n": 599,
+        "countries": 79,
+        "expected_sign": 1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_tfr": {
+        "beta": -0.017,
+        "se": 0.0014,
+        "p": 0.0,
+        "n": 599,
+        "countries": 79,
+        "expected_sign": -1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_le": {
+        "beta": 0.007,
+        "se": 0.001,
+        "p": 2.445e-10,
+        "n": 556,
+        "countries": 79,
+        "expected_sign": 1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_u5": {
+        "beta": -0.0328,
+        "se": 0.0039,
+        "p": 1.289e-12,
+        "n": 457,
+        "countries": 77,
+        "expected_sign": -1,
+        "sign_ok": true,
+        "sig05": true
+      }
+    },
+    "gdp_tercile:mid": {
+      "log_gdp": {
+        "beta": 0.011,
+        "se": 0.0013,
+        "p": 9.925e-14,
+        "n": 593,
+        "countries": 91,
+        "expected_sign": 1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_tfr": {
+        "beta": -0.0166,
+        "se": 0.001,
+        "p": 0.0,
+        "n": 593,
+        "countries": 91,
+        "expected_sign": -1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_le": {
+        "beta": 0.0034,
+        "se": 0.0004,
+        "p": 7.805e-13,
+        "n": 535,
+        "countries": 89,
+        "expected_sign": 1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_u5": {
+        "beta": -0.0302,
+        "se": 0.0023,
+        "p": 0.0,
+        "n": 412,
+        "countries": 80,
+        "expected_sign": -1,
+        "sign_ok": true,
+        "sig05": true
+      }
+    },
+    "gdp_tercile:high": {
+      "log_gdp": {
+        "beta": 0.0176,
+        "se": 0.0027,
+        "p": 1.025e-08,
+        "n": 600,
+        "countries": 72,
+        "expected_sign": 1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_tfr": {
+        "beta": -0.016,
+        "se": 0.0012,
+        "p": 0.0,
+        "n": 600,
+        "countries": 72,
+        "expected_sign": -1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_le": {
+        "beta": 0.0031,
+        "se": 0.0002,
+        "p": 0.0,
+        "n": 525,
+        "countries": 69,
+        "expected_sign": 1,
+        "sign_ok": true,
+        "sig05": true
+      },
+      "log_u5": {
+        "beta": -0.0378,
+        "se": 0.0024,
+        "p": 0.0,
+        "n": 357,
+        "countries": 52,
+        "expected_sign": -1,
+        "sign_ok": true,
+        "sig05": true
+      }
+    }
+  },
+  "bands": {
+    "log_gdp": {
+      "min": 0.011,
+      "max": 0.0257,
+      "full": 0.0185,
+      "max_over_min": 2.33,
+      "n_subsamples": 11
+    },
+    "log_tfr": {
+      "min": -0.0203,
+      "max": -0.0128,
+      "full": -0.0165,
+      "max_over_min": 0.63,
+      "n_subsamples": 11
+    },
+    "log_le": {
+      "min": 0.0025,
+      "max": 0.0071,
+      "full": 0.0042,
+      "max_over_min": 2.79,
+      "n_subsamples": 11
+    },
+    "log_u5": {
+      "min": -0.0549,
+      "max": -0.0226,
+      "full": -0.0327,
+      "max_over_min": 0.41,
+      "n_subsamples": 11
+    }
+  },
+  "script": "scripts/universality_lag_fingerprint.py"
+}

@@ -1,0 +1,271 @@
+{
+  "panel": {
+    "n_obs": 945,
+    "n_countries": 144
+  },
+  "cooks_d": {
+    "top10_cooks_d": [
+      {
+        "country": "micronesia (federated states of)",
+        "D": 1.7389073513296067,
+        "beta_without": 0.7445659508825786
+      },
+      {
+        "country": "spain",
+        "D": 0.3622521045595896,
+        "beta_without": 0.723912132962572
+      },
+      {
+        "country": "jordan",
+        "D": 0.15874615959729937,
+        "beta_without": 0.718050128463091
+      },
+      {
+        "country": "mongolia",
+        "D": 0.15382880733723114,
+        "beta_without": 0.717870922080448
+      },
+      {
+        "country": "botswana",
+        "D": 0.12266206113831846,
+        "beta_without": 0.6964783449219348
+      },
+      {
+        "country": "congo",
+        "D": 0.10697384090079363,
+        "beta_without": 0.7159939438567057
+      },
+      {
+        "country": "thailand",
+        "D": 0.09503384876708525,
+        "beta_without": 0.6976872526989658
+      },
+      {
+        "country": "oman",
+        "D": 0.07215962894540277,
+        "beta_without": 0.6988297252459353
+      },
+      {
+        "country": "aruba",
+        "D": 0.0686159257379359,
+        "beta_without": 0.7141175263794642
+      },
+      {
+        "country": "qatar",
+        "D": 0.06757278181676683,
+        "beta_without": 0.7140599343104893
+      }
+    ],
+    "max_D": 1.7389073513296067,
+    "rule_of_thumb_4_over_n": 0.027777777777777776
+  },
+  "dfbetas": {
+    "top10_abs_dfbeta": [
+      {
+        "country": "micronesia (federated states of)",
+        "dfbeta": -0.6554426807175853,
+        "beta_without": 0.7445659508825786
+      },
+      {
+        "country": "spain",
+        "dfbeta": -0.29915891881142165,
+        "beta_without": 0.723912132962572
+      },
+      {
+        "country": "jordan",
+        "dfbeta": -0.19803780776672564,
+        "beta_without": 0.718050128463091
+      },
+      {
+        "country": "mongolia",
+        "dfbeta": -0.19494645078793668,
+        "beta_without": 0.717870922080448
+      },
+      {
+        "country": "botswana",
+        "dfbeta": 0.1740811012328419,
+        "beta_without": 0.6964783449219348
+      },
+      {
+        "country": "congo",
+        "dfbeta": -0.1625680854338447,
+        "beta_without": 0.7159939438567057
+      },
+      {
+        "country": "thailand",
+        "dfbeta": 0.1532271258435752,
+        "beta_without": 0.6976872526989658
+      },
+      {
+        "country": "oman",
+        "dfbeta": 0.13351917555151174,
+        "beta_without": 0.6988297252459353
+      },
+      {
+        "country": "aruba",
+        "dfbeta": -0.1301993931035777,
+        "beta_without": 0.7141175263794642
+      },
+      {
+        "country": "qatar",
+        "dfbeta": -0.12920591484837957,
+        "beta_without": 0.7140599343104893
+      }
+    ],
+    "rule_of_thumb_2_over_sqrtN": 0.16666666666666666
+  },
+  "loo": {
+    "n_countries": 144,
+    "full_beta": 0.7065698499317093,
+    "min_beta": 0.6964783449219348,
+    "max_beta": 0.7445659508825786,
+    "median_beta": 0.7063037582090219,
+    "spread": 0.048087605960643764,
+    "5_smallest_when_removed": [
+      {
+        "country": "botswana",
+        "beta": 0.6964783449219348
+      },
+      {
+        "country": "thailand",
+        "beta": 0.6976872526989658
+      },
+      {
+        "country": "oman",
+        "beta": 0.6988297252459353
+      },
+      {
+        "country": "kiribati",
+        "beta": 0.7000633367920971
+      },
+      {
+        "country": "maldives",
+        "beta": 0.7004745575332024
+      }
+    ],
+    "5_largest_when_removed": [
+      {
+        "country": "congo",
+        "beta": 0.7159939438567057
+      },
+      {
+        "country": "mongolia",
+        "beta": 0.717870922080448
+      },
+      {
+        "country": "jordan",
+        "beta": 0.718050128463091
+      },
+      {
+        "country": "spain",
+        "beta": 0.723912132962572
+      },
+      {
+        "country": "micronesia (federated states of)",
+        "beta": 0.7445659508825786
+      }
+    ]
+  },
+  "leverage": {
+    "top10_leverage": [
+      {
+        "country": "micronesia (federated states of)",
+        "sum_h": 0.05946898937309197
+      },
+      {
+        "country": "spain",
+        "sum_h": 0.03450822191506628
+      },
+      {
+        "country": "fiji",
+        "sum_h": 0.03299342772372628
+      },
+      {
+        "country": "jordan",
+        "sum_h": 0.031898876049857555
+      },
+      {
+        "country": "united arab emirates",
+        "sum_h": 0.031320139381266834
+      },
+      {
+        "country": "lebanon",
+        "sum_h": 0.029557185256647533
+      },
+      {
+        "country": "guadeloupe",
+        "sum_h": 0.02874236127343541
+      },
+      {
+        "country": "mexico",
+        "sum_h": 0.02864870632321649
+      },
+      {
+        "country": "occupied palestinian territory",
+        "sum_h": 0.028217708720029107
+      },
+      {
+        "country": "martinique",
+        "sum_h": 0.027453315073709593
+      }
+    ],
+    "rule_of_thumb_avg_x_3": 0.006349206349206349
+  },
+  "studentized_residuals": {
+    "top10_outlying_obs": [
+      {
+        "country": "maldives",
+        "year": 1985,
+        "studres": -4.937047733172726
+      },
+      {
+        "country": "maldives",
+        "year": 2015,
+        "studres": 4.8748792496416575
+      },
+      {
+        "country": "micronesia (federated states of)",
+        "year": 1980,
+        "studres": 4.525065076266999
+      },
+      {
+        "country": "maldives",
+        "year": 2010,
+        "studres": 4.243686804212282
+      },
+      {
+        "country": "maldives",
+        "year": 1990,
+        "studres": -4.146678968873695
+      },
+      {
+        "country": "bhutan",
+        "year": 2015,
+        "studres": 3.8794374402545713
+      },
+      {
+        "country": "cape verde",
+        "year": 2015,
+        "studres": 3.8349327949915075
+      },
+      {
+        "country": "timor-leste",
+        "year": 1980,
+        "studres": -3.7081294130009694
+      },
+      {
+        "country": "mongolia",
+        "year": 1980,
+        "studres": 3.589232487855084
+      },
+      {
+        "country": "micronesia (federated states of)",
+        "year": 1985,
+        "studres": 3.4015941032253387
+      }
+    ],
+    "share_abs_above_3": 0.013756613756613757,
+    "share_abs_above_4": 0.005291005291005291
+  },
+  "script": "scripts/econometric_battery/test_09_influence.py"
+}

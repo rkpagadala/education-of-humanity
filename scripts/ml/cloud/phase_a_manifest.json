@@ -1,0 +1,1023 @@
+{
+  "jobs": [
+    {
+      "id": "trf_t25_s42",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 42
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s43",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 43
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s44",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 44
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s45",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 45
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s46",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 46
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s47",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 47
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s48",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 48
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s49",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 49
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s50",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 50
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s51",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 51
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s52",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 52
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s53",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 53
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s54",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 54
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s55",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 55
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s56",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 56
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s42",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 0,
+        "seed": 42
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s42",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 42
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s42",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 42
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s43",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 0,
+        "seed": 43
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s43",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 43
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s43",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 43
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s44",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 0,
+        "seed": 44
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s44",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 44
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s44",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 44
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s45",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 0,
+        "seed": 45
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s45",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 45
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s45",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 45
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s46",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 0,
+        "seed": 46
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s46",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 46
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s46",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 46
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s47",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 0,
+        "seed": 47
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s47",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 47
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s47",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 47
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s48",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 0,
+        "seed": 48
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s48",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 48
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s48",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 48
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s49",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 0,
+        "seed": 49
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s49",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 49
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s49",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 49
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s50",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 0,
+        "seed": 50
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s50",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 50
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s50",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 50
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s51",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 0,
+        "seed": 51
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s51",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 51
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s51",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 51
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s52",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 0,
+        "seed": 52
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s52",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 52
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s52",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 52
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s53",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 0,
+        "seed": 53
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s53",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 53
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s53",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 53
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s54",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 0,
+        "seed": 54
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s54",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 54
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s54",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 54
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s55",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 0,
+        "seed": 55
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s55",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 55
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s55",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 55
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s56",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 0,
+        "seed": 56
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s56",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 56
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s56",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 56
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1970_s42",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 42,
+        "cutoff_year": 1970
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1970_s43",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 43,
+        "cutoff_year": 1970
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1970_s44",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 44,
+        "cutoff_year": 1970
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1970_s45",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 45,
+        "cutoff_year": 1970
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1970_s46",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 46,
+        "cutoff_year": 1970
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1980_s42",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 42,
+        "cutoff_year": 1980
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1980_s43",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 43,
+        "cutoff_year": 1980
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1980_s44",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 44,
+        "cutoff_year": 1980
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1980_s45",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 45,
+        "cutoff_year": 1980
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1980_s46",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 46,
+        "cutoff_year": 1980
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1990_s42",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 42,
+        "cutoff_year": 1990
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1990_s43",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 43,
+        "cutoff_year": 1990
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1990_s44",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 44,
+        "cutoff_year": 1990
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1990_s45",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 45,
+        "cutoff_year": 1990
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1990_s46",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 46,
+        "cutoff_year": 1990
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c2000_s42",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 42,
+        "cutoff_year": 2000
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c2000_s43",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 43,
+        "cutoff_year": 2000
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c2000_s44",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 44,
+        "cutoff_year": 2000
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c2000_s45",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 45,
+        "cutoff_year": 2000
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c2000_s46",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 46,
+        "cutoff_year": 2000
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c2010_s42",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 42,
+        "cutoff_year": 2010
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c2010_s43",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 43,
+        "cutoff_year": 2010
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c2010_s44",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 44,
+        "cutoff_year": 2010
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c2010_s45",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 45,
+        "cutoff_year": 2010
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c2010_s46",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 46,
+        "cutoff_year": 2010
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "spec_curve_phase_a",
+      "kind": "spec_curve",
+      "params": {
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ]
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 2.0
+    },
+    {
+      "id": "placebos_phase_a",
+      "kind": "placebos",
+      "params": {
+        "seeds": [
+          42,
+          43,
+          44
+        ]
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 6.0
+    },
+    {
+      "id": "dml_phase_a",
+      "kind": "dml",
+      "params": {
+        "n_folds": 5,
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ]
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 1.5
+    }
+  ],
+  "summary": {
+    "n_jobs": 88,
+    "by_kind": {
+      "transformer": 15,
+      "transformer_single": 45,
+      "transformer_walk_forward": 25,
+      "spec_curve": 1,
+      "placebos": 1,
+      "dml": 1
+    },
+    "total_gpu_hours": 26.999999999999957,
+    "total_cpu_hours": 9.5,
+    "est_cost_usd_preempt": 6.67,
+    "est_cost_usd_ondemand": 13.15
+  }
+}

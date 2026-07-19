@@ -1,0 +1,128 @@
+{
+  "notes": "UN WPP 2024 Medium variant, Mean Age at Childbearing (MAC) by country-year, 1950-2020. Joined with WCDE v3 female and both-sex lower-sec completion. Prior under test: MAC \u2248 25 invariant across populations and education levels. Paper \u00a7the-generational-lag cites the 'expansion phase' subset stats (exp_*) which match the panel sample filter.",
+  "numbers": {
+    "n_country_years": 16827,
+    "n_countries": 237,
+    "mac_mean": 28.69,
+    "mac_sd": 1.42,
+    "mac_min": 23.69,
+    "mac_max": 32.98,
+    "mac_p01": 25.14,
+    "mac_p05": 26.21,
+    "mac_p10": 26.79,
+    "mac_p25": 27.72,
+    "mac_p50": 28.81,
+    "mac_p75": 29.68,
+    "mac_p90": 30.43,
+    "mac_p95": 30.87,
+    "mac_p99": 31.85,
+    "mac_p10_p90_span": 3.64,
+    "by_lsec_bin": [
+      {
+        "bin": "<10%",
+        "n": 540,
+        "mean": 29.39,
+        "sd": 0.88,
+        "p10": 28.27,
+        "p50": 29.33,
+        "p90": 30.64
+      },
+      {
+        "bin": "10-25%",
+        "n": 359,
+        "mean": 29.27,
+        "sd": 0.92,
+        "p10": 28.18,
+        "p50": 29.32,
+        "p90": 30.36
+      },
+      {
+        "bin": "25-50%",
+        "n": 423,
+        "mean": 28.82,
+        "sd": 1.13,
+        "p10": 27.42,
+        "p50": 28.87,
+        "p90": 30.17
+      },
+      {
+        "bin": "50-75%",
+        "n": 366,
+        "mean": 28.27,
+        "sd": 1.34,
+        "p10": 26.73,
+        "p50": 28.14,
+        "p90": 30.2
+      },
+      {
+        "bin": "75-90%",
+        "n": 247,
+        "mean": 28.18,
+        "sd": 1.4,
+        "p10": 26.57,
+        "p50": 28.13,
+        "p90": 30.08
+      },
+      {
+        "bin": "\u226590%",
+        "n": 591,
+        "mean": 28.03,
+        "sd": 1.74,
+        "p10": 25.76,
+        "p50": 27.94,
+        "p90": 30.41
+      }
+    ],
+    "exp_n": 1609,
+    "exp_n_countries": 177,
+    "exp_mac_mean": 28.75,
+    "exp_mac_median": 28.87,
+    "exp_mac_p10": 27.06,
+    "exp_mac_p90": 30.27,
+    "exp_by_lsec_bin": [
+      {
+        "bin": "10-25%",
+        "n": 404,
+        "n_ctry": 118,
+        "mean": 29.28,
+        "p50": 29.3,
+        "avg_tfr": null
+      },
+      {
+        "bin": "25-40%",
+        "n": 325,
+        "n_ctry": 130,
+        "mean": 29.02,
+        "p50": 29.13,
+        "avg_tfr": null
+      },
+      {
+        "bin": "40-55%",
+        "n": 279,
+        "n_ctry": 125,
+        "mean": 28.69,
+        "p50": 28.71,
+        "avg_tfr": null
+      },
+      {
+        "bin": "55-70%",
+        "n": 250,
+        "n_ctry": 115,
+        "mean": 28.32,
+        "p50": 28.14,
+        "avg_tfr": null
+      },
+      {
+        "bin": "70-90%",
+        "n": 351,
+        "n_ctry": 115,
+        "mean": 28.24,
+        "p50": 28.22,
+        "avg_tfr": null
+      }
+    ],
+    "exp_bin_range": 1.04,
+    "verdict": "PASS: invariance claim holds within \u00b12 years."
+  },
+  "script": "scripts/mean_age_first_birth_invariance.py"
+}

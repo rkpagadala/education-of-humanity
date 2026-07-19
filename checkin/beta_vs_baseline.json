@@ -1,0 +1,85 @@
+{
+  "numbers": {
+    "Fig1-USA-beta-high": 2.07,
+    "Fig1-USA-beta-low": 0.07,
+    "Fig1-Korea-beta-high": 8.53,
+    "Fig1-Korea-beta-3.6": 4.57,
+    "Fig1-Korea-beta-1.8": 2.05,
+    "Fig1-Korea-beta-low": 0.19,
+    "Fig1-Taiwan-beta": 7.13,
+    "Fig1-Phil-beta-high": 5.68,
+    "Fig1-Phil-beta-low": 0.41,
+    "Universality-n-windows": 1631,
+    "Universality-n-countries": 185,
+    "Universality-fit-intercept": 2.181,
+    "Universality-fit-slope": -0.0255,
+    "Universality-fit-slope-se": 0.0022,
+    "Universality-fit-slope-p": 0.0,
+    "Universality-fit-crossing": 46.3,
+    "Universality-fit-n": 1312,
+    "Universality-fit-countries": 185
+  },
+  "binned_means": [
+    {
+      "bin": "0-10",
+      "baseline_mean": 2.5,
+      "beta_mean": 4.335,
+      "n": 926
+    },
+    {
+      "bin": "10-20",
+      "baseline_mean": 14.4,
+      "beta_mean": 1.711,
+      "n": 196
+    },
+    {
+      "bin": "20-30",
+      "baseline_mean": 24.8,
+      "beta_mean": 1.203,
+      "n": 117
+    },
+    {
+      "bin": "30-40",
+      "baseline_mean": 34.5,
+      "beta_mean": 0.726,
+      "n": 83
+    },
+    {
+      "bin": "40-50",
+      "baseline_mean": 44.5,
+      "beta_mean": 0.627,
+      "n": 65
+    },
+    {
+      "bin": "50-60",
+      "baseline_mean": 54.7,
+      "beta_mean": 0.644,
+      "n": 50
+    },
+    {
+      "bin": "60-70",
+      "baseline_mean": 64.9,
+      "beta_mean": 0.238,
+      "n": 35
+    },
+    {
+      "bin": "70-80",
+      "baseline_mean": 74.8,
+      "beta_mean": 0.164,
+      "n": 38
+    },
+    {
+      "bin": "80-90",
+      "baseline_mean": 84.9,
+      "beta_mean": 0.13,
+      "n": 40
+    },
+    {
+      "bin": "90-100",
+      "baseline_mean": 96.8,
+      "beta_mean": 0.499,
+      "n": 81
+    }
+  ],
+  "script": "scripts/figures/beta_vs_baseline.py"
+}

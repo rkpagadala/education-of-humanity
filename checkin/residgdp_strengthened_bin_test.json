@@ -1,0 +1,221 @@
+{
+  "method": "Strengthened bin test for level-U5MR residGDP residual. Maddison-backfilled GDP. 5pp baseline bins on lower-sec completion (10-15, 15-20, ..., 85-90). Within each bin, country-FE residualisation of log GDP on edu, then country-FE regression of level U5MR on residGDP with country-clustered SE. Inverse-variance-weighted within-meta across bins. 2000-rep country-cluster bootstrap on the within-meta to account for non-independence (countries appear in multiple bins over time).",
+  "parameters": {
+    "T_years": [
+      1960,
+      1965,
+      1970,
+      1975,
+      1980,
+      1985,
+      1990
+    ],
+    "lag": 25,
+    "entry": 10,
+    "ceiling": 90,
+    "n_bins": 16,
+    "n_boot": 2000,
+    "seed": 2026
+  },
+  "panel": {
+    "n_maddison_backfilled": 739,
+    "n_wb_only": 652,
+    "n_countries": 141,
+    "n_pre_2000": 292,
+    "n_post_2000": 447
+  },
+  "results": {
+    "all": {
+      "meta": {
+        "beta": 0.32876389305670906,
+        "se_meta_iv": 2.6933358067727386,
+        "t_iv": 0.12206568977770615,
+        "p_iv": 0.9028469942287352,
+        "n_bins": 9
+      },
+      "bins": {
+        "10-15": {
+          "beta": 51.50705131513667,
+          "se": 40.13636494673208,
+          "n": 52,
+          "n_countries": 22
+        },
+        "15-20": {
+          "beta": 36.399991546457834,
+          "se": 54.74061796050496,
+          "n": 32,
+          "n_countries": 15
+        },
+        "20-25": {
+          "beta": 6.048716196718489,
+          "se": 24.60551044894731,
+          "n": 14,
+          "n_countries": 7
+        },
+        "25-30": {
+          "beta": 36.90599147776233,
+          "se": 43.12039657255196,
+          "n": 16,
+          "n_countries": 7
+        },
+        "30-35": {
+          "beta": 28.294320283819793,
+          "se": 21.180074008841217,
+          "n": 19,
+          "n_countries": 8
+        },
+        "35-40": null,
+        "40-45": null,
+        "45-50": {
+          "beta": 35.426395097564836,
+          "se": 27.491711638231294,
+          "n": 13,
+          "n_countries": 5
+        },
+        "50-55": {
+          "beta": -10.895432126553988,
+          "se": 6.19495936929075,
+          "n": 11,
+          "n_countries": 5
+        },
+        "55-60": null,
+        "60-65": {
+          "beta": 3.420407571841055,
+          "se": 3.681022611341296,
+          "n": 10,
+          "n_countries": 4
+        },
+        "65-70": null,
+        "70-75": null,
+        "75-80": null,
+        "80-85": null,
+        "85-90": {
+          "beta": -3.422214594055682,
+          "se": 5.652377226116789,
+          "n": 12,
+          "n_countries": 6
+        }
+      },
+      "bootstrap": {
+        "median": 0.5076537933407113,
+        "ci_lo": -80.34312645474124,
+        "ci_hi": 34.12421952485105,
+        "excludes_zero_95": false,
+        "n_reps_successful": 2000
+      }
+    },
+    "pre_2000": {
+      "meta": {
+        "beta": 5.976770505556139,
+        "se_meta_iv": 44.38268153608506,
+        "t_iv": 0.13466447494157746,
+        "p_iv": 0.8928771621698668,
+        "n_bins": 1
+      },
+      "bins": {
+        "10-15": {
+          "beta": 5.976770505556139,
+          "se": 44.38268153608506,
+          "n": 17,
+          "n_countries": 8
+        },
+        "15-20": null,
+        "20-25": null,
+        "25-30": null,
+        "30-35": null,
+        "35-40": null,
+        "40-45": null,
+        "45-50": null,
+        "50-55": null,
+        "55-60": null,
+        "60-65": null,
+        "65-70": null,
+        "70-75": null,
+        "75-80": null,
+        "80-85": null,
+        "85-90": null
+      },
+      "bootstrap": {
+        "median": 8.551260167737995,
+        "ci_lo": -25.415818732537847,
+        "ci_hi": 418.04402672130186,
+        "excludes_zero_95": false,
+        "n_reps_successful": 1892
+      }
+    },
+    "post_2000": {
+      "meta": {
+        "beta": 5.281772298777953,
+        "se_meta_iv": 2.4497217527798543,
+        "t_iv": 2.156070293609628,
+        "p_iv": 0.031078176706461402,
+        "n_bins": 8
+      },
+      "bins": {
+        "10-15": {
+          "beta": 88.26620336423898,
+          "se": 47.879501050337105,
+          "n": 27,
+          "n_countries": 11
+        },
+        "15-20": {
+          "beta": 42.15894611065617,
+          "se": 62.480288255445,
+          "n": 22,
+          "n_countries": 10
+        },
+        "20-25": {
+          "beta": 3.1568556094363798,
+          "se": 27.595989979434005,
+          "n": 10,
+          "n_countries": 5
+        },
+        "25-30": {
+          "beta": 65.38930414851632,
+          "se": 55.68271958179312,
+          "n": 13,
+          "n_countries": 6
+        },
+        "30-35": {
+          "beta": 13.890311159130643,
+          "se": 6.732860239315835,
+          "n": 13,
+          "n_countries": 6
+        },
+        "35-40": null,
+        "40-45": null,
+        "45-50": {
+          "beta": 35.426395097564836,
+          "se": 27.491711638231294,
+          "n": 13,
+          "n_countries": 5
+        },
+        "50-55": null,
+        "55-60": null,
+        "60-65": {
+          "beta": 3.420407571841055,
+          "se": 3.681022611341296,
+          "n": 10,
+          "n_countries": 4
+        },
+        "65-70": null,
+        "70-75": null,
+        "75-80": null,
+        "80-85": null,
+        "85-90": {
+          "beta": 2.977684086405565,
+          "se": 3.8597938957774427,
+          "n": 10,
+          "n_countries": 5
+        }
+      },
+      "bootstrap": {
+        "median": 2.9012219990637638,
+        "ci_lo": -103.91185220585945,
+        "ci_hi": 47.53397319882863,
+        "excludes_zero_95": false,
+        "n_reps_successful": 2000
+      }
+    }
+  }
+}

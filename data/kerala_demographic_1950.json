@@ -1,0 +1,173 @@
+{
+  "description": "Kerala state demographic indicators from 1950 onwards: life expectancy at birth (LE), infant mortality rate (IMR), child mortality (4q1), implied under-5 mortality (U5MR), total fertility rate (TFR), and crude birth rate (CBR). Compiled from peer-reviewed demographic literature; each block names its primary source. Where two sources give slightly different values for the same period (e.g. female LE 1951-60), both are kept so the discrepancy is visible.",
+  "compiled_on": "2026-05-10",
+  "compiled_by": "Human-Development-Prediction repo (data/kerala_demographic_1950.json)",
+  "note_units": {
+    "le": "years, life expectancy at birth",
+    "imr": "deaths under age 1 per 1000 live births",
+    "child_mortality_4q1": "probability of death between exact ages 1 and 5, per 1000 children surviving to age 1",
+    "u5mr_implied": "1 - (1 - imr/1000)*(1 - 4q1/1000), expressed per 1000 live births; computed here, not lifted from source",
+    "tfr": "total fertility rate, children per woman",
+    "cbr": "crude birth rate, births per 1000 population"
+  },
+
+  "life_expectancy_by_period": {
+    "source_a": {
+      "citation": "M. V. George (2011), 'The Fertility Decline in India's Kerala State: A Unique Example of Below Replacement Fertility in a High Fertility Country', Canadian Studies in Population, 37(3-4): 563-600, Table 2.",
+      "underlying_sources_for_kerala_LE": "Bhat & Rajan (1990) Table 3 for 1951-61 and 1961-71; Sample Registration System (SRS), Government of India, for later periods.",
+      "url": "https://journals.library.ualberta.ca/csp/index.php/csp/article/download/16043/12848/36702",
+      "values": [
+        {"period": "1951-1961", "male": 44.3, "female": 45.3},
+        {"period": "1961-1971", "male": 54.1, "female": 57.4},
+        {"period": "1970-1975", "male": 60.8, "female": 63.3},
+        {"period": "1976-1980", "male": 63.5, "female": 67.6},
+        {"period": "1981-1985", "male": 65.4, "female": 71.5},
+        {"period": "1986-1990", "male": 66.8, "female": 72.3},
+        {"period": "1991-1995", "male": 69.9, "female": 73.3},
+        {"period": "1995-1999", "male": 70.6, "female": 76.1},
+        {"period": "1999-2000", "male": 70.7, "female": 76.1},
+        {"period": "2000-2001", "male": 70.8, "female": 76.2}
+      ]
+    },
+    "source_b": {
+      "citation": "Mari Bhat / Sample Registration System abridged life tables, as compiled in: 'Changes in mortality and human longevity in Kerala: are they leading to the advanced stage?' Asian Population Studies (Subaiya & Bansod 2013 / cited PMC article).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4028815/",
+      "values": [
+        {"period": "1951-1960", "male": 44.2, "female": 48.1},
+        {"period": "1961-1970", "male": 54.1, "female": 57.6},
+        {"period": "1971-1980", "male": 62.0, "female": 64.7},
+        {"period": "1981-1990", "male": 66.5, "female": 72.3},
+        {"period": "1991-2000", "male": 69.2, "female": 75.1},
+        {"period": "2001-2008", "male": 70.7, "female": 77.1}
+      ]
+    },
+    "source_c_hpa": {
+      "citation": "Dreze & Sen (1989), 'Hunger and Public Action', Oxford: Clarendon. Reports Kerala LE 1976-80 as 66 years (68 female, 64 male) citing SRS Based Abridged Life-Tables 1976-80 (Occasional Paper No. 1, 1985), Registrar General of India.",
+      "values": [
+        {"period": "1976-1980", "male": 64, "female": 68, "both_sexes": 66}
+      ]
+    }
+  },
+
+  "infant_mortality": {
+    "source_a_csp_table2": {
+      "citation": "M. V. George (2011), Canadian Studies in Population 37(3-4), Table 2.",
+      "underlying_sources_for_kerala_IMR": "Zachariah (1984) for 1951-60 and 1931-40; SRS Government of India for later years.",
+      "values": [
+        {"period": "1951-1960", "imr": 120},
+        {"period": "1965-1967", "imr": 74},
+        {"year": 1971, "imr": 61},
+        {"year": 1976, "imr": 56},
+        {"year": 1979, "imr": 44},
+        {"year": 1991, "imr": 16},
+        {"year": 1996, "imr": 14},
+        {"year": 2001, "imr": 11}
+      ]
+    },
+    "source_b_world_bank_kerala_3districts": {
+      "citation": "World Bank / Bhat (1986?), 'Trends and determinants of infant and child mortality in Kerala', Table 1. 3-district Kerala Fertility Survey + SRS comparison.",
+      "url": "https://documents1.worldbank.org/curated/en/478441468915052958/pdf/Trends-and-determinants-of-infant-and-child-mortality-in-Kerala.pdf",
+      "values_fertility_survey": [
+        {"period": "before 1960", "neonatal": 73, "imr": 107, "child_mortality_4q1": 88},
+        {"period": "1960-1965", "neonatal": 62, "imr": 83, "child_mortality_4q1": 57},
+        {"period": "1965-1970", "neonatal": 52, "imr": 68, "child_mortality_4q1": 42},
+        {"period": "1970-1975", "neonatal": 50, "imr": 59, "child_mortality_4q1": 32},
+        {"period": "1975-1980", "neonatal": 41, "imr": 46, "child_mortality_4q1": null}
+      ],
+      "values_srs_kerala": [
+        {"period": "1951-1960", "imr": 120},
+        {"period": "1965-1967", "imr": 74},
+        {"year": 1971, "imr": 60.9},
+        {"year": 1977, "imr": 50.1}
+      ]
+    }
+  },
+
+  "u5mr_implied_from_imr_and_4q1": {
+    "method": "U5MR = 1000 * [1 - (1 - imr/1000) * (1 - 4q1/1000)], using Kerala Fertility Survey 3-district series. This is an indicative state-level series; the source paper does not print U5MR directly.",
+    "source": "Computed here from World Bank Kerala 3-districts Fertility Survey table (see infant_mortality.source_b).",
+    "values": [
+      {"period": "before 1960", "u5mr": 185.6},
+      {"period": "1960-1965", "u5mr": 135.3},
+      {"period": "1965-1970", "u5mr": 107.1},
+      {"period": "1970-1975", "u5mr": 89.1}
+    ]
+  },
+
+  "total_fertility_rate": {
+    "source": {
+      "citation": "M. V. George (2011), Canadian Studies in Population 37(3-4), Table 3: 'Crude Birth Rate and Total Fertility Rates for Kerala and India: 1931-2006'.",
+      "underlying_sources_for_kerala_TFR": "Bhat & Rajan (1990) Table 9 for 1951-61 and 1961-71; SRS Government of India for 1971-1990; NFHS-1, NFHS-2, NFHS-3 for 1992-93 to 2005-06.",
+      "url": "https://journals.library.ualberta.ca/csp/index.php/csp/article/download/16043/12848/36702"
+    },
+    "values": [
+      {"period": "1951-1961", "tfr_kerala": 5.6, "tfr_india": 6.3},
+      {"period": "1961-1971", "tfr_kerala": 5.0, "tfr_india": 6.0},
+      {"period": "1971-1975", "tfr_kerala": 3.4, "tfr_india": 4.8},
+      {"period": "1976-1980", "tfr_kerala": 3.1, "tfr_india": 4.5},
+      {"period": "1981-1985", "tfr_kerala": 2.6, "tfr_india": 4.5},
+      {"period": "1986-1990", "tfr_kerala": 2.1, "tfr_india": 4.0},
+      {"period": "1992-1993", "tfr_kerala": 2.00, "tfr_india": 3.39},
+      {"period": "1998-1999", "tfr_kerala": 1.96, "tfr_india": 2.68},
+      {"period": "2005-2006", "tfr_kerala": 1.93, "tfr_india": 2.68}
+    ]
+  },
+
+  "crude_birth_rate": {
+    "source": {
+      "citation": "M. V. George (2011), Canadian Studies in Population 37(3-4), Table 3.",
+      "underlying_sources_for_kerala_CBR": "Zachariah (1984) Table 3.3 for 1931-40 to 1981; SRS estimates for 1981-85 and 1986-1990.",
+      "url": "https://journals.library.ualberta.ca/csp/index.php/csp/article/download/16043/12848/36702"
+    },
+    "values": [
+      {"period": "1931-1940", "cbr_kerala": 40, "cbr_india": 45},
+      {"period": "1941-1950", "cbr_kerala": 40, "cbr_india": 40},
+      {"period": "1951-1960", "cbr_kerala": 39, "cbr_india": 42},
+      {"period": "1961-1970", "cbr_kerala": 37, "cbr_india": 41},
+      {"year": 1971, "cbr_kerala": 32, "cbr_india": 37},
+      {"year": 1976, "cbr_kerala": 26, "cbr_india": 34},
+      {"year": 1981, "cbr_kerala": 26, "cbr_india": 33},
+      {"period": "1981-1985", "cbr_kerala": 24.6, "cbr_india": 33.6},
+      {"period": "1986-1990", "cbr_kerala": 20.9, "cbr_india": 31.4},
+      {"period": "1992-1993", "cbr_kerala": 19.6, "cbr_india": 28.7},
+      {"period": "1998-1999", "cbr_kerala": 18.8, "cbr_india": 24.8},
+      {"period": "2005-2006", "cbr_kerala": 16.4, "cbr_india": 23.1}
+    ]
+  },
+
+  "key_references": [
+    {
+      "id": "bhat_rajan_1990",
+      "citation": "Mari Bhat, P. N. & Irudaya Rajan, S. (1990). 'Demographic Transition in Kerala Revisited.' Economic and Political Weekly, 25(35-36): 1957-1980.",
+      "note": "The canonical study of Kerala's pre-SRS demography. Source of Kerala LE 1951-61 and 1961-71 and TFR 1951-71 used by later compilations."
+    },
+    {
+      "id": "zachariah_1984",
+      "citation": "Zachariah, K. C. (1984). 'The Anomaly of the Fertility Decline in India's Kerala State.' World Bank Staff Working Paper No. 700. Washington, DC.",
+      "note": "Source of Kerala IMR and CBR 1931-40 to 1981 used by later compilations."
+    },
+    {
+      "id": "george_2011",
+      "citation": "George, M. V. (2011). 'The Fertility Decline in India's Kerala State: A Unique Example of Below Replacement Fertility in a High Fertility Country.' Canadian Studies in Population, 37(3-4): 563-600.",
+      "url": "https://journals.library.ualberta.ca/csp/index.php/csp/article/download/16043/12848/36702",
+      "note": "Compiles Kerala IMR, LE, TFR, CBR 1931-2006 from Bhat & Rajan, Zachariah, SRS, NFHS. Primary source for the long-run series above."
+    },
+    {
+      "id": "subaiya_bansod_2013",
+      "citation": "Subaiya, L. & Bansod, D. W. (2013). 'Changes in mortality and human longevity in Kerala: are they leading to the advanced stage?' (PMC article).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4028815/",
+      "note": "Alternative compilation of Kerala LE by decade 1911-20 to 2001-08, using same Bhat/SRS underlying sources."
+    },
+    {
+      "id": "wb_kerala_imr",
+      "citation": "World Bank (n.d., ~1986). 'Trends and Determinants of Infant and Child Mortality in Kerala.' Population, Health and Nutrition Department.",
+      "url": "https://documents1.worldbank.org/curated/en/478441468915052958/pdf/Trends-and-determinants-of-infant-and-child-mortality-in-Kerala.pdf",
+      "note": "3-district Kerala Fertility Survey + SRS. Source of pre-1971 IMR and child mortality (4q1) used here."
+    },
+    {
+      "id": "dreze_sen_1989",
+      "citation": "Dreze, J. & Sen, A. (1989). Hunger and Public Action. Oxford: Clarendon Press, Chapter 11.",
+      "note": "Reports Kerala LE 1976-80 as 66 (68 F / 64 M). Underlying source: SRS Based Abridged Life-Tables 1976-80, Registrar General of India. Does not contain Kerala TFR or U5MR time series."
+    }
+  ]
+}

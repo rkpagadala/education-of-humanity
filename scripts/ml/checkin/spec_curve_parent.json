@@ -1,0 +1,101 @@
+{
+  "method": "Parent-vantage specification curve: four sklearn model classes, country-clustered 5-fold, education-ablation, on single-target panels at per-outcome biological horizons (LE at T+12 (childrearing window) via LAG_LE, TFR@5 LAG_TFR, U5MR@12 LAG_CHILDREARING). Transformer row from universal_evidence_parent_lag.json.",
+  "horizons": {
+    "LE": 12,
+    "TFR": 5,
+    "U5MR": 12
+  },
+  "n_folds": 5,
+  "seed": 42,
+  "targets": [
+    "LE",
+    "TFR",
+    "U5MR"
+  ],
+  "methods": [
+    "ridge",
+    "lasso",
+    "random_forest",
+    "gradient_boosting"
+  ],
+  "results": {
+    "ridge": {
+      "method": "ridge",
+      "r2_baseline": {
+        "LE": 0.739639905433107,
+        "TFR": 0.7986575182450326,
+        "U5MR": 0.7198381121351163
+      },
+      "r2_ablated_edu": {
+        "LE": 0.5447708262979349,
+        "TFR": 0.5467426897046466,
+        "U5MR": 0.4748872334869316
+      },
+      "r2_drop_absolute": {
+        "LE": 0.19486907913517204,
+        "TFR": 0.25191482854038605,
+        "U5MR": 0.24495087864818466
+      },
+      "r2_drop_abs_mean": 0.23057826210791424
+    },
+    "lasso": {
+      "method": "lasso",
+      "r2_baseline": {
+        "LE": 0.7449954396271141,
+        "TFR": 0.8186906976552997,
+        "U5MR": 0.7370142658073044
+      },
+      "r2_ablated_edu": {
+        "LE": 0.48893287660537643,
+        "TFR": 0.4584696218297868,
+        "U5MR": 0.4639468448682632
+      },
+      "r2_drop_absolute": {
+        "LE": 0.2560625630217377,
+        "TFR": 0.3602210758255129,
+        "U5MR": 0.27306742093904124
+      },
+      "r2_drop_abs_mean": 0.2964503532620973
+    },
+    "random_forest": {
+      "method": "random_forest",
+      "r2_baseline": {
+        "LE": 0.7496214564046323,
+        "TFR": 0.8209796849268483,
+        "U5MR": 0.7482733287940646
+      },
+      "r2_ablated_edu": {
+        "LE": 0.528118943260491,
+        "TFR": 0.46834334281973866,
+        "U5MR": 0.3486153500561351
+      },
+      "r2_drop_absolute": {
+        "LE": 0.22150251314414127,
+        "TFR": 0.3526363421071096,
+        "U5MR": 0.3996579787379295
+      },
+      "r2_drop_abs_mean": 0.3245989446630601
+    },
+    "gradient_boosting": {
+      "method": "gradient_boosting",
+      "r2_baseline": {
+        "LE": 0.753109044089783,
+        "TFR": 0.8344522351177454,
+        "U5MR": 0.7725682561639349
+      },
+      "r2_ablated_edu": {
+        "LE": 0.5618619597301122,
+        "TFR": 0.5039596772921799,
+        "U5MR": 0.40558560523602327
+      },
+      "r2_drop_absolute": {
+        "LE": 0.19124708435967075,
+        "TFR": 0.3304925578255654,
+        "U5MR": 0.3669826509279116
+      },
+      "r2_drop_abs_mean": 0.29624076437104924
+    }
+  },
+  "total_elapsed_sec": 3524.954298019409,
+  "script": "scripts/ml/chapter9/spec_curve.py"
+}

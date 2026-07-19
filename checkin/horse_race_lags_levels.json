@@ -1,0 +1,1220 @@
+{
+  "method": "Horse-race country-FE regressions with the cohort's own education (T) and the prior generation's education (T-28) at three levels (primary, lower secondary, upper secondary). Each OUTCOME is read forward at its biological horizon: TFR at T+5, U5MR and LE at T+12, GDP at T+0. With the two education blocks fixed at T and T-28 while the outcome sits at T+lag, the T block is the parent generation (leading the outcome by its biological lag) and the T-28 block is the grandparent generation, matching the per-outcome lags of the \u00a7The Grandparent Channel decomposition. Same sample within each outcome across all 12 specs (entry-cohort gating on lower_sec\u226510 at T, ceiling 90). Country-clustered SEs. T = 1975-2015 5yr stops (so T-28 \u2265 1950 within WCDE coverage); U5MR's sample is shorter because WDI U5MR ends in 2015, so T+12 \u2264 2015 limits it to T \u2264 2003. Tests which level/block carries unique signal after the others are controlled for.",
+  "specs": {
+    "[1]  pri(T) alone": [
+      "pri_t"
+    ],
+    "[2]  low(T) alone": [
+      "low_t"
+    ],
+    "[3]  upp(T) alone": [
+      "upp_t"
+    ],
+    "[4]  pri(T-28) alone": [
+      "pri_t28"
+    ],
+    "[5]  low(T-28) alone": [
+      "low_t28"
+    ],
+    "[6]  upp(T-28) alone": [
+      "upp_t28"
+    ],
+    "[7]  pri+low+upp at T": [
+      "pri_t",
+      "low_t",
+      "upp_t"
+    ],
+    "[8]  pri+low+upp at T-28": [
+      "pri_t28",
+      "low_t28",
+      "upp_t28"
+    ],
+    "[9]  pri(T) + pri(T-28)": [
+      "pri_t",
+      "pri_t28"
+    ],
+    "[10] low(T) + low(T-28)": [
+      "low_t",
+      "low_t28"
+    ],
+    "[11] upp(T) + upp(T-28)": [
+      "upp_t",
+      "upp_t28"
+    ],
+    "[12] kitchen sink (all 6)": [
+      "pri_t",
+      "low_t",
+      "upp_t",
+      "pri_t28",
+      "low_t28",
+      "upp_t28"
+    ]
+  },
+  "results": {
+    "log(TFR)": {
+      "[1]  pri(T) alone": {
+        "n": 912,
+        "countries": 132,
+        "r2": 0.6451815055625503,
+        "pri_t": {
+          "beta": -0.019538232474991334,
+          "se": 0.0009851050245079686,
+          "p": 1.525442515588157e-87
+        }
+      },
+      "[2]  low(T) alone": {
+        "n": 912,
+        "countries": 132,
+        "r2": 0.6700181052445408,
+        "low_t": {
+          "beta": -0.017129311022000347,
+          "se": 0.0008630893262990705,
+          "p": 1.1812572097171645e-87
+        }
+      },
+      "[3]  upp(T) alone": {
+        "n": 912,
+        "countries": 132,
+        "r2": 0.5735256392412673,
+        "upp_t": {
+          "beta": -0.019515503176728993,
+          "se": 0.0011984372276335879,
+          "p": 1.279433577475622e-59
+        }
+      },
+      "[4]  pri(T-28) alone": {
+        "n": 912,
+        "countries": 132,
+        "r2": 0.6690168902454068,
+        "pri_t28": {
+          "beta": -0.013443904371997472,
+          "se": 0.0007272351516095573,
+          "p": 2.6608847302825777e-76
+        }
+      },
+      "[5]  low(T-28) alone": {
+        "n": 912,
+        "countries": 132,
+        "r2": 0.6008840735777454,
+        "low_t28": {
+          "beta": -0.01568614722953783,
+          "se": 0.000993693654800872,
+          "p": 3.9031214922670193e-56
+        }
+      },
+      "[6]  upp(T-28) alone": {
+        "n": 912,
+        "countries": 132,
+        "r2": 0.572615529407535,
+        "upp_t28": {
+          "beta": -0.025126881699418794,
+          "se": 0.0015856266926141346,
+          "p": 1.4826176865689048e-56
+        }
+      },
+      "[7]  pri+low+upp at T": {
+        "n": 912,
+        "countries": 132,
+        "r2": 0.7028439859552182,
+        "pri_t": {
+          "beta": -0.009458454047765533,
+          "se": 0.0017742434475611143,
+          "p": 9.768487097187295e-08
+        },
+        "low_t": {
+          "beta": -0.008079071476208486,
+          "se": 0.0023559677997681285,
+          "p": 0.0006053758551968624
+        },
+        "upp_t": {
+          "beta": -0.0025349104662163533,
+          "se": 0.0022323644599340966,
+          "p": 0.25615451041704995
+        }
+      },
+      "[8]  pri+low+upp at T-28": {
+        "n": 912,
+        "countries": 132,
+        "r2": 0.6798164026487346,
+        "pri_t28": {
+          "beta": -0.013217631774379256,
+          "se": 0.0016864353741215885,
+          "p": 4.5918307288776e-15
+        },
+        "low_t28": {
+          "beta": 0.006085760030198184,
+          "se": 0.002944495004790609,
+          "p": 0.03875051427859732
+        },
+        "upp_t28": {
+          "beta": -0.011197739622226158,
+          "se": 0.003974664072756146,
+          "p": 0.004843235743193373
+        }
+      },
+      "[9]  pri(T) + pri(T-28)": {
+        "n": 912,
+        "countries": 132,
+        "r2": 0.7681785414602889,
+        "pri_t": {
+          "beta": -0.01090058670828888,
+          "se": 0.0014356773061150506,
+          "p": 3.134427981798991e-14
+        },
+        "pri_t28": {
+          "beta": -0.008203286455607571,
+          "se": 0.0009272664950333571,
+          "p": 9.011225848151078e-19
+        }
+      },
+      "[10] low(T) + low(T-28)": {
+        "n": 912,
+        "countries": 132,
+        "r2": 0.7306198270414184,
+        "low_t": {
+          "beta": -0.011339350454626805,
+          "se": 0.0013083602782113142,
+          "p": 4.4427484659998366e-18
+        },
+        "low_t28": {
+          "beta": -0.007494197510878265,
+          "se": 0.0012240551712267007,
+          "p": 9.215635181463417e-10
+        }
+      },
+      "[11] upp(T) + upp(T-28)": {
+        "n": 912,
+        "countries": 132,
+        "r2": 0.6422095171080986,
+        "upp_t": {
+          "beta": -0.010966609049022488,
+          "se": 0.001777632127611798,
+          "p": 6.862637474834528e-10
+        },
+        "upp_t28": {
+          "beta": -0.014038399705694864,
+          "se": 0.0023396863311287057,
+          "p": 1.971712638450527e-09
+        }
+      },
+      "[12] kitchen sink (all 6)": {
+        "n": 912,
+        "countries": 132,
+        "r2": 0.7933829904561747,
+        "pri_t": {
+          "beta": -0.009051616816387845,
+          "se": 0.0017614397901043973,
+          "p": 2.7655694339734137e-07
+        },
+        "low_t": {
+          "beta": -0.007517079543369935,
+          "se": 0.002268715206211911,
+          "p": 0.0009218088872852819
+        },
+        "upp_t": {
+          "beta": 0.007503592636674838,
+          "se": 0.002480848556116034,
+          "p": 0.002489561501830082
+        },
+        "pri_t28": {
+          "beta": -0.0033655597149094487,
+          "se": 0.001671071881217143,
+          "p": 0.04400821750260872
+        },
+        "low_t28": {
+          "beta": -0.000684786168511234,
+          "se": 0.002769505454679365,
+          "p": 0.8047075022142092
+        },
+        "upp_t28": {
+          "beta": -0.009972164205732166,
+          "se": 0.0034132222758832004,
+          "p": 0.0034820767446868454
+        }
+      }
+    },
+    "log(LE)": {
+      "[1]  pri(T) alone": {
+        "n": 809,
+        "countries": 132,
+        "r2": 0.2873829190086422,
+        "pri_t": {
+          "beta": 0.004775698237753508,
+          "se": 0.0004041024688956235,
+          "p": 3.14955212149713e-32
+        }
+      },
+      "[2]  low(T) alone": {
+        "n": 809,
+        "countries": 132,
+        "r2": 0.23474218140899672,
+        "low_t": {
+          "beta": 0.003719783335119306,
+          "se": 0.0003046021507986264,
+          "p": 2.6841010088890795e-34
+        }
+      },
+      "[3]  upp(T) alone": {
+        "n": 809,
+        "countries": 132,
+        "r2": 0.19235287985115557,
+        "upp_t": {
+          "beta": 0.004196970309790157,
+          "se": 0.0003812436492943516,
+          "p": 3.4724335065691116e-28
+        }
+      },
+      "[4]  pri(T-28) alone": {
+        "n": 809,
+        "countries": 132,
+        "r2": 0.2615634807436962,
+        "pri_t28": {
+          "beta": 0.00299090156220477,
+          "se": 0.00024328848861260644,
+          "p": 9.798979436585162e-35
+        }
+      },
+      "[5]  low(T-28) alone": {
+        "n": 809,
+        "countries": 132,
+        "r2": 0.2204942747728562,
+        "low_t28": {
+          "beta": 0.0034000637805417515,
+          "se": 0.00031578065874118355,
+          "p": 4.918930474134192e-27
+        }
+      },
+      "[6]  upp(T-28) alone": {
+        "n": 809,
+        "countries": 132,
+        "r2": 0.1842127218413524,
+        "upp_t28": {
+          "beta": 0.005091713486333256,
+          "se": 0.0004314441961929855,
+          "p": 3.8315333143591026e-32
+        }
+      },
+      "[7]  pri+low+upp at T": {
+        "n": 809,
+        "countries": 132,
+        "r2": 0.2892146515568612,
+        "pri_t": {
+          "beta": 0.004267788770593204,
+          "se": 0.000831873068995916,
+          "p": 2.8922467878428625e-07
+        },
+        "low_t": {
+          "beta": 0.0001233148256677591,
+          "se": 0.000879339653642253,
+          "p": 0.8884737536713297
+        },
+        "upp_t": {
+          "beta": 0.0005370511995544209,
+          "se": 0.0007434354856551942,
+          "p": 0.4700540395999786
+        }
+      },
+      "[8]  pri+low+upp at T-28": {
+        "n": 809,
+        "countries": 132,
+        "r2": 0.2636588964865053,
+        "pri_t28": {
+          "beta": 0.0034524964216401726,
+          "se": 0.0007058266341762058,
+          "p": 1.001097090103187e-06
+        },
+        "low_t28": {
+          "beta": 0.00010053904496693601,
+          "se": 0.0012555966735238566,
+          "p": 0.9361794167553771
+        },
+        "upp_t28": {
+          "beta": -0.0012380806224771667,
+          "se": 0.001605394139760844,
+          "p": 0.440588149864931
+        }
+      },
+      "[9]  pri(T) + pri(T-28)": {
+        "n": 809,
+        "countries": 132,
+        "r2": 0.3230859746966802,
+        "pri_t": {
+          "beta": 0.0031092874736629687,
+          "se": 0.0005956338958994973,
+          "p": 1.7879578891906053e-07
+        },
+        "pri_t28": {
+          "beta": 0.0015549046736209274,
+          "se": 0.00030162446309489903,
+          "p": 2.534938007229401e-07
+        }
+      },
+      "[10] low(T) + low(T-28)": {
+        "n": 809,
+        "countries": 132,
+        "r2": 0.2634024854501388,
+        "low_t": {
+          "beta": 0.0023290945060619483,
+          "se": 0.0005054720367537761,
+          "p": 4.0702747229025714e-06
+        },
+        "low_t28": {
+          "beta": 0.001795244621554819,
+          "se": 0.0004371271547394536,
+          "p": 4.009765085823781e-05
+        }
+      },
+      "[11] upp(T) + upp(T-28)": {
+        "n": 809,
+        "countries": 132,
+        "r2": 0.21434374294802183,
+        "upp_t": {
+          "beta": 0.002547222955150231,
+          "se": 0.0006552097536614046,
+          "p": 0.00010122150071804824
+        },
+        "upp_t28": {
+          "beta": 0.0026977317909662323,
+          "se": 0.0006663128499963081,
+          "p": 5.1492690962068446e-05
+        }
+      },
+      "[12] kitchen sink (all 6)": {
+        "n": 809,
+        "countries": 132,
+        "r2": 0.3317887667978692,
+        "pri_t": {
+          "beta": 0.0038836435848774316,
+          "se": 0.0008472777262874731,
+          "p": 4.568797120263578e-06
+        },
+        "low_t": {
+          "beta": -1.319632515252758e-05,
+          "se": 0.0008633050287656554,
+          "p": 0.9878041552769533
+        },
+        "upp_t": {
+          "beta": -0.0015636755334298238,
+          "se": 0.0007934152716188089,
+          "p": 0.04874492281685318
+        },
+        "pri_t28": {
+          "beta": 0.0010318374533465847,
+          "se": 0.0007531777341583533,
+          "p": 0.1706935506384205
+        },
+        "low_t28": {
+          "beta": 0.0020047194482704736,
+          "se": 0.0011580551954412158,
+          "p": 0.08343237520529813
+        },
+        "upp_t28": {
+          "beta": -0.0013725973327989912,
+          "se": 0.0012817650168933323,
+          "p": 0.2842301218735339
+        }
+      }
+    },
+    "log(U5)": {
+      "[1]  pri(T) alone": {
+        "n": 560,
+        "countries": 120,
+        "r2": 0.5191779451998861,
+        "pri_t": {
+          "beta": -0.03258428192441481,
+          "se": 0.0026975036269490087,
+          "p": 1.3567172206622091e-33
+        }
+      },
+      "[2]  low(T) alone": {
+        "n": 560,
+        "countries": 120,
+        "r2": 0.5464902205503646,
+        "low_t": {
+          "beta": -0.0308990657991009,
+          "se": 0.002393672999493583,
+          "p": 4.0233835856473533e-38
+        }
+      },
+      "[3]  upp(T) alone": {
+        "n": 560,
+        "countries": 120,
+        "r2": 0.4403092326488396,
+        "upp_t": {
+          "beta": -0.037291801549220724,
+          "se": 0.0038586362411225077,
+          "p": 4.26685908916802e-22
+        }
+      },
+      "[4]  pri(T-28) alone": {
+        "n": 560,
+        "countries": 120,
+        "r2": 0.595906103437098,
+        "pri_t28": {
+          "beta": -0.023918672311576773,
+          "se": 0.0019013856071781227,
+          "p": 2.7340724035005675e-36
+        }
+      },
+      "[5]  low(T-28) alone": {
+        "n": 560,
+        "countries": 120,
+        "r2": 0.5696316149191865,
+        "low_t28": {
+          "beta": -0.030092034389204842,
+          "se": 0.0028216586051162972,
+          "p": 1.4894011183717164e-26
+        }
+      },
+      "[6]  upp(T-28) alone": {
+        "n": 560,
+        "countries": 120,
+        "r2": 0.5103106441693318,
+        "upp_t28": {
+          "beta": -0.04441406711605326,
+          "se": 0.004547629210945278,
+          "p": 1.568949360668073e-22
+        }
+      },
+      "[7]  pri+low+upp at T": {
+        "n": 560,
+        "countries": 120,
+        "r2": 0.5788018692407775,
+        "pri_t": {
+          "beta": -0.014854033588896112,
+          "se": 0.004555655034676328,
+          "p": 0.001111883932001142
+        },
+        "low_t": {
+          "beta": -0.021122494832367437,
+          "se": 0.006424808470811681,
+          "p": 0.0010102884646567753
+        },
+        "upp_t": {
+          "beta": 0.0026638148006198382,
+          "se": 0.006811473411956665,
+          "p": 0.6957398636995168
+        }
+      },
+      "[8]  pri+low+upp at T-28": {
+        "n": 560,
+        "countries": 120,
+        "r2": 0.6039563052910865,
+        "pri_t28": {
+          "beta": -0.017174190072916068,
+          "se": 0.004464958754920276,
+          "p": 0.00011984710562890972
+        },
+        "low_t28": {
+          "beta": -0.006004298017814873,
+          "se": 0.011784909443091346,
+          "p": 0.6104085380466726
+        },
+        "upp_t28": {
+          "beta": -0.005432793462093765,
+          "se": 0.014098827901577323,
+          "p": 0.6999880979825417
+        }
+      },
+      "[9]  pri(T) + pri(T-28)": {
+        "n": 560,
+        "countries": 120,
+        "r2": 0.6801596170068724,
+        "pri_t": {
+          "beta": -0.017206555428949694,
+          "se": 0.0032878699339985275,
+          "p": 1.6647022450157464e-07
+        },
+        "pri_t28": {
+          "beta": -0.016296196737265553,
+          "se": 0.0020673374604693925,
+          "p": 3.20386918782954e-15
+        }
+      },
+      "[10] low(T) + low(T-28)": {
+        "n": 560,
+        "countries": 120,
+        "r2": 0.6594793254961844,
+        "low_t": {
+          "beta": -0.01738422977705744,
+          "se": 0.003316543052322467,
+          "p": 1.5912832916119934e-07
+        },
+        "low_t28": {
+          "beta": -0.018596044867196584,
+          "se": 0.0030284475283043327,
+          "p": 8.228559744095824e-10
+        }
+      },
+      "[11] upp(T) + upp(T-28)": {
+        "n": 560,
+        "countries": 120,
+        "r2": 0.5774111975844578,
+        "upp_t": {
+          "beta": -0.019262079701813466,
+          "se": 0.004614123405443827,
+          "p": 2.9852140575358565e-05
+        },
+        "upp_t28": {
+          "beta": -0.030460058050389552,
+          "se": 0.004621237745138574,
+          "p": 4.3593231855265584e-11
+        }
+      },
+      "[12] kitchen sink (all 6)": {
+        "n": 560,
+        "countries": 120,
+        "r2": 0.7091596356043879,
+        "pri_t": {
+          "beta": -0.01640444474218527,
+          "se": 0.004670310572897389,
+          "p": 0.0004439195679021359
+        },
+        "low_t": {
+          "beta": -0.010560423910618635,
+          "se": 0.006024523617943452,
+          "p": 0.07961813460510679
+        },
+        "upp_t": {
+          "beta": 0.010887296332925846,
+          "se": 0.005736814755257982,
+          "p": 0.05772313866531035
+        },
+        "pri_t28": {
+          "beta": -0.0018105919805204,
+          "se": 0.004010967110947456,
+          "p": 0.6516938407522338
+        },
+        "low_t28": {
+          "beta": -0.014685698691236516,
+          "se": 0.008847758963613546,
+          "p": 0.0969504095681099
+        },
+        "upp_t28": {
+          "beta": -0.005783392241757446,
+          "se": 0.010591258655930406,
+          "p": 0.5850292671549788
+        }
+      }
+    },
+    "log(GDP)": {
+      "[1]  pri(T) alone": {
+        "n": 883,
+        "countries": 130,
+        "r2": 0.201913579777539,
+        "pri_t": {
+          "beta": 0.015486406781146815,
+          "se": 0.002185348507635376,
+          "p": 1.375759578710243e-12
+        }
+      },
+      "[2]  low(T) alone": {
+        "n": 883,
+        "countries": 130,
+        "r2": 0.2648853981319361,
+        "low_t": {
+          "beta": 0.015225515592659642,
+          "se": 0.001657768809462906,
+          "p": 4.140511699732775e-20
+        }
+      },
+      "[3]  upp(T) alone": {
+        "n": 883,
+        "countries": 130,
+        "r2": 0.24033675785539488,
+        "upp_t": {
+          "beta": 0.0179394660827264,
+          "se": 0.0020934568671772853,
+          "p": 1.041133185148598e-17
+        }
+      },
+      "[4]  pri(T-28) alone": {
+        "n": 883,
+        "countries": 130,
+        "r2": 0.21603312348826642,
+        "pri_t28": {
+          "beta": 0.010867409212951476,
+          "se": 0.001777343656790668,
+          "p": 9.691437244440726e-10
+        }
+      },
+      "[5]  low(T-28) alone": {
+        "n": 883,
+        "countries": 130,
+        "r2": 0.20079869776970638,
+        "low_t28": {
+          "beta": 0.013084230546578436,
+          "se": 0.001987496192922342,
+          "p": 4.602021872786975e-11
+        }
+      },
+      "[6]  upp(T-28) alone": {
+        "n": 883,
+        "countries": 130,
+        "r2": 0.16912676507902313,
+        "upp_t28": {
+          "beta": 0.019666623676905977,
+          "se": 0.0030565406739471368,
+          "p": 1.2406394956384509e-10
+        }
+      },
+      "[7]  pri+low+upp at T": {
+        "n": 883,
+        "countries": 130,
+        "r2": 0.2658952589579189,
+        "pri_t": {
+          "beta": 0.00040258522084461913,
+          "se": 0.003940502120582442,
+          "p": 0.9186249385048493
+        },
+        "low_t": {
+          "beta": 0.012463048333246652,
+          "se": 0.00492044558003252,
+          "p": 0.011311982762608938
+        },
+        "upp_t": {
+          "beta": 0.0032709206439027307,
+          "se": 0.004905487000417617,
+          "p": 0.50490745754429
+        }
+      },
+      "[8]  pri+low+upp at T-28": {
+        "n": 883,
+        "countries": 130,
+        "r2": 0.21809891867558484,
+        "pri_t28": {
+          "beta": 0.00853687096932128,
+          "se": 0.004374462969548925,
+          "p": 0.050994703417175075
+        },
+        "low_t28": {
+          "beta": 0.006166978840600412,
+          "se": 0.00808863727064856,
+          "p": 0.4458064218017268
+        },
+        "upp_t28": {
+          "beta": -0.005377840173548383,
+          "se": 0.013238444824641619,
+          "p": 0.6845743494743206
+        }
+      },
+      "[9]  pri(T) + pri(T-28)": {
+        "n": 883,
+        "countries": 130,
+        "r2": 0.24365704802357968,
+        "pri_t": {
+          "beta": 0.008227053236892856,
+          "se": 0.0032408550870858355,
+          "p": 0.01113148045180853
+        },
+        "pri_t28": {
+          "beta": 0.006861101321330269,
+          "se": 0.002416036816739878,
+          "p": 0.004513948542614976
+        }
+      },
+      "[10] low(T) + low(T-28)": {
+        "n": 883,
+        "countries": 130,
+        "r2": 0.27287700409334004,
+        "low_t": {
+          "beta": 0.012159643650674812,
+          "se": 0.0025295098159713873,
+          "p": 1.531241988406855e-06
+        },
+        "low_t28": {
+          "beta": 0.003996320721725139,
+          "se": 0.0026874821727699274,
+          "p": 0.13701139779171514
+        }
+      },
+      "[11] upp(T) + upp(T-28)": {
+        "n": 883,
+        "countries": 130,
+        "r2": 0.24167480925787754,
+        "upp_t": {
+          "beta": 0.016194393559962866,
+          "se": 0.003098090390916839,
+          "p": 1.7207965571605244e-07
+        },
+        "upp_t28": {
+          "beta": 0.0028741700270312684,
+          "se": 0.003724226096266725,
+          "p": 0.44026274333831406
+        }
+      },
+      "[12] kitchen sink (all 6)": {
+        "n": 883,
+        "countries": 130,
+        "r2": 0.27676998924892104,
+        "pri_t": {
+          "beta": -0.0006049802209080186,
+          "se": 0.003846143875156148,
+          "p": 0.8750121516201266
+        },
+        "low_t": {
+          "beta": 0.012908611975889729,
+          "se": 0.00587580314867562,
+          "p": 0.02802685895689742
+        },
+        "upp_t": {
+          "beta": -0.0007077775378750352,
+          "se": 0.00627815638166751,
+          "p": 0.9102394425602286
+        },
+        "pri_t28": {
+          "beta": 0.000922425578778519,
+          "se": 0.005563351413615532,
+          "p": 0.8683112461080326
+        },
+        "low_t28": {
+          "beta": 0.008558664938313072,
+          "se": 0.008469389847644131,
+          "p": 0.3122362088418297
+        },
+        "upp_t28": {
+          "beta": -0.009316695634777748,
+          "se": 0.012033021156617342,
+          "p": 0.43877662678216955
+        }
+      }
+    }
+  },
+  "incremental": {
+    "log(TFR)": {
+      "lag0_r2": 0.7028439859552182,
+      "lag28_r2": 0.6798164026487346,
+      "kitchen_r2": 0.7933829904561747,
+      "gain_from_lag28": 0.09053900450095642,
+      "gain_from_lag0": 0.11356658780744011
+    },
+    "log(LE)": {
+      "lag0_r2": 0.2892146515568612,
+      "lag28_r2": 0.2636588964865053,
+      "kitchen_r2": 0.3317887667978692,
+      "gain_from_lag28": 0.04257411524100796,
+      "gain_from_lag0": 0.06812987031136386
+    },
+    "log(U5)": {
+      "lag0_r2": 0.5788018692407775,
+      "lag28_r2": 0.6039563052910865,
+      "kitchen_r2": 0.7091596356043879,
+      "gain_from_lag28": 0.1303577663636104,
+      "gain_from_lag0": 0.10520333031330142
+    },
+    "log(GDP)": {
+      "lag0_r2": 0.2658952589579189,
+      "lag28_r2": 0.21809891867558484,
+      "kitchen_r2": 0.27676998924892104,
+      "gain_from_lag28": 0.010874730291002166,
+      "gain_from_lag0": 0.058671070573336204
+    }
+  },
+  "numbers": {
+    "logtfr.spec1.r2": 0.6452,
+    "logtfr.spec1.n": 912,
+    "logtfr.spec1.pri_t.beta": -0.019538,
+    "logtfr.spec1.pri_t.se": 0.000985,
+    "logtfr.spec1.pri_t.p": 0.0,
+    "logtfr.spec2.r2": 0.67,
+    "logtfr.spec2.n": 912,
+    "logtfr.spec2.low_t.beta": -0.017129,
+    "logtfr.spec2.low_t.se": 0.000863,
+    "logtfr.spec2.low_t.p": 0.0,
+    "logtfr.spec3.r2": 0.5735,
+    "logtfr.spec3.n": 912,
+    "logtfr.spec3.upp_t.beta": -0.019516,
+    "logtfr.spec3.upp_t.se": 0.001198,
+    "logtfr.spec3.upp_t.p": 0.0,
+    "logtfr.spec4.r2": 0.669,
+    "logtfr.spec4.n": 912,
+    "logtfr.spec4.pri_t28.beta": -0.013444,
+    "logtfr.spec4.pri_t28.se": 0.000727,
+    "logtfr.spec4.pri_t28.p": 0.0,
+    "logtfr.spec5.r2": 0.6009,
+    "logtfr.spec5.n": 912,
+    "logtfr.spec5.low_t28.beta": -0.015686,
+    "logtfr.spec5.low_t28.se": 0.000994,
+    "logtfr.spec5.low_t28.p": 0.0,
+    "logtfr.spec6.r2": 0.5726,
+    "logtfr.spec6.n": 912,
+    "logtfr.spec6.upp_t28.beta": -0.025127,
+    "logtfr.spec6.upp_t28.se": 0.001586,
+    "logtfr.spec6.upp_t28.p": 0.0,
+    "logtfr.spec7.r2": 0.7028,
+    "logtfr.spec7.n": 912,
+    "logtfr.spec7.pri_t.beta": -0.009458,
+    "logtfr.spec7.pri_t.se": 0.001774,
+    "logtfr.spec7.pri_t.p": 0.0,
+    "logtfr.spec7.low_t.beta": -0.008079,
+    "logtfr.spec7.low_t.se": 0.002356,
+    "logtfr.spec7.low_t.p": 0.000605,
+    "logtfr.spec7.upp_t.beta": -0.002535,
+    "logtfr.spec7.upp_t.se": 0.002232,
+    "logtfr.spec7.upp_t.p": 0.256155,
+    "logtfr.spec8.r2": 0.6798,
+    "logtfr.spec8.n": 912,
+    "logtfr.spec8.pri_t28.beta": -0.013218,
+    "logtfr.spec8.pri_t28.se": 0.001686,
+    "logtfr.spec8.pri_t28.p": 0.0,
+    "logtfr.spec8.low_t28.beta": 0.006086,
+    "logtfr.spec8.low_t28.se": 0.002944,
+    "logtfr.spec8.low_t28.p": 0.038751,
+    "logtfr.spec8.upp_t28.beta": -0.011198,
+    "logtfr.spec8.upp_t28.se": 0.003975,
+    "logtfr.spec8.upp_t28.p": 0.004843,
+    "logtfr.spec9.r2": 0.7682,
+    "logtfr.spec9.n": 912,
+    "logtfr.spec9.pri_t.beta": -0.010901,
+    "logtfr.spec9.pri_t.se": 0.001436,
+    "logtfr.spec9.pri_t.p": 0.0,
+    "logtfr.spec9.pri_t28.beta": -0.008203,
+    "logtfr.spec9.pri_t28.se": 0.000927,
+    "logtfr.spec9.pri_t28.p": 0.0,
+    "logtfr.spec10.r2": 0.7306,
+    "logtfr.spec10.n": 912,
+    "logtfr.spec10.low_t.beta": -0.011339,
+    "logtfr.spec10.low_t.se": 0.001308,
+    "logtfr.spec10.low_t.p": 0.0,
+    "logtfr.spec10.low_t28.beta": -0.007494,
+    "logtfr.spec10.low_t28.se": 0.001224,
+    "logtfr.spec10.low_t28.p": 0.0,
+    "logtfr.spec11.r2": 0.6422,
+    "logtfr.spec11.n": 912,
+    "logtfr.spec11.upp_t.beta": -0.010967,
+    "logtfr.spec11.upp_t.se": 0.001778,
+    "logtfr.spec11.upp_t.p": 0.0,
+    "logtfr.spec11.upp_t28.beta": -0.014038,
+    "logtfr.spec11.upp_t28.se": 0.00234,
+    "logtfr.spec11.upp_t28.p": 0.0,
+    "logtfr.spec12.r2": 0.7934,
+    "logtfr.spec12.n": 912,
+    "logtfr.spec12.pri_t.beta": -0.009052,
+    "logtfr.spec12.pri_t.se": 0.001761,
+    "logtfr.spec12.pri_t.p": 0.0,
+    "logtfr.spec12.low_t.beta": -0.007517,
+    "logtfr.spec12.low_t.se": 0.002269,
+    "logtfr.spec12.low_t.p": 0.000922,
+    "logtfr.spec12.upp_t.beta": 0.007504,
+    "logtfr.spec12.upp_t.se": 0.002481,
+    "logtfr.spec12.upp_t.p": 0.00249,
+    "logtfr.spec12.pri_t28.beta": -0.003366,
+    "logtfr.spec12.pri_t28.se": 0.001671,
+    "logtfr.spec12.pri_t28.p": 0.044008,
+    "logtfr.spec12.low_t28.beta": -0.000685,
+    "logtfr.spec12.low_t28.se": 0.00277,
+    "logtfr.spec12.low_t28.p": 0.804708,
+    "logtfr.spec12.upp_t28.beta": -0.009972,
+    "logtfr.spec12.upp_t28.se": 0.003413,
+    "logtfr.spec12.upp_t28.p": 0.003482,
+    "logtfr.lag0_r2": 0.7028,
+    "logtfr.lag28_r2": 0.6798,
+    "logtfr.kitchen_r2": 0.7934,
+    "logtfr.gain_from_lag28": 0.0905,
+    "logtfr.gain_from_lag0": 0.1136,
+    "logle.spec1.r2": 0.2874,
+    "logle.spec1.n": 809,
+    "logle.spec1.pri_t.beta": 0.004776,
+    "logle.spec1.pri_t.se": 0.000404,
+    "logle.spec1.pri_t.p": 0.0,
+    "logle.spec2.r2": 0.2347,
+    "logle.spec2.n": 809,
+    "logle.spec2.low_t.beta": 0.00372,
+    "logle.spec2.low_t.se": 0.000305,
+    "logle.spec2.low_t.p": 0.0,
+    "logle.spec3.r2": 0.1924,
+    "logle.spec3.n": 809,
+    "logle.spec3.upp_t.beta": 0.004197,
+    "logle.spec3.upp_t.se": 0.000381,
+    "logle.spec3.upp_t.p": 0.0,
+    "logle.spec4.r2": 0.2616,
+    "logle.spec4.n": 809,
+    "logle.spec4.pri_t28.beta": 0.002991,
+    "logle.spec4.pri_t28.se": 0.000243,
+    "logle.spec4.pri_t28.p": 0.0,
+    "logle.spec5.r2": 0.2205,
+    "logle.spec5.n": 809,
+    "logle.spec5.low_t28.beta": 0.0034,
+    "logle.spec5.low_t28.se": 0.000316,
+    "logle.spec5.low_t28.p": 0.0,
+    "logle.spec6.r2": 0.1842,
+    "logle.spec6.n": 809,
+    "logle.spec6.upp_t28.beta": 0.005092,
+    "logle.spec6.upp_t28.se": 0.000431,
+    "logle.spec6.upp_t28.p": 0.0,
+    "logle.spec7.r2": 0.2892,
+    "logle.spec7.n": 809,
+    "logle.spec7.pri_t.beta": 0.004268,
+    "logle.spec7.pri_t.se": 0.000832,
+    "logle.spec7.pri_t.p": 0.0,
+    "logle.spec7.low_t.beta": 0.000123,
+    "logle.spec7.low_t.se": 0.000879,
+    "logle.spec7.low_t.p": 0.888474,
+    "logle.spec7.upp_t.beta": 0.000537,
+    "logle.spec7.upp_t.se": 0.000743,
+    "logle.spec7.upp_t.p": 0.470054,
+    "logle.spec8.r2": 0.2637,
+    "logle.spec8.n": 809,
+    "logle.spec8.pri_t28.beta": 0.003452,
+    "logle.spec8.pri_t28.se": 0.000706,
+    "logle.spec8.pri_t28.p": 1e-06,
+    "logle.spec8.low_t28.beta": 0.000101,
+    "logle.spec8.low_t28.se": 0.001256,
+    "logle.spec8.low_t28.p": 0.936179,
+    "logle.spec8.upp_t28.beta": -0.001238,
+    "logle.spec8.upp_t28.se": 0.001605,
+    "logle.spec8.upp_t28.p": 0.440588,
+    "logle.spec9.r2": 0.3231,
+    "logle.spec9.n": 809,
+    "logle.spec9.pri_t.beta": 0.003109,
+    "logle.spec9.pri_t.se": 0.000596,
+    "logle.spec9.pri_t.p": 0.0,
+    "logle.spec9.pri_t28.beta": 0.001555,
+    "logle.spec9.pri_t28.se": 0.000302,
+    "logle.spec9.pri_t28.p": 0.0,
+    "logle.spec10.r2": 0.2634,
+    "logle.spec10.n": 809,
+    "logle.spec10.low_t.beta": 0.002329,
+    "logle.spec10.low_t.se": 0.000505,
+    "logle.spec10.low_t.p": 4e-06,
+    "logle.spec10.low_t28.beta": 0.001795,
+    "logle.spec10.low_t28.se": 0.000437,
+    "logle.spec10.low_t28.p": 4e-05,
+    "logle.spec11.r2": 0.2143,
+    "logle.spec11.n": 809,
+    "logle.spec11.upp_t.beta": 0.002547,
+    "logle.spec11.upp_t.se": 0.000655,
+    "logle.spec11.upp_t.p": 0.000101,
+    "logle.spec11.upp_t28.beta": 0.002698,
+    "logle.spec11.upp_t28.se": 0.000666,
+    "logle.spec11.upp_t28.p": 5.1e-05,
+    "logle.spec12.r2": 0.3318,
+    "logle.spec12.n": 809,
+    "logle.spec12.pri_t.beta": 0.003884,
+    "logle.spec12.pri_t.se": 0.000847,
+    "logle.spec12.pri_t.p": 5e-06,
+    "logle.spec12.low_t.beta": -1.3e-05,
+    "logle.spec12.low_t.se": 0.000863,
+    "logle.spec12.low_t.p": 0.987804,
+    "logle.spec12.upp_t.beta": -0.001564,
+    "logle.spec12.upp_t.se": 0.000793,
+    "logle.spec12.upp_t.p": 0.048745,
+    "logle.spec12.pri_t28.beta": 0.001032,
+    "logle.spec12.pri_t28.se": 0.000753,
+    "logle.spec12.pri_t28.p": 0.170694,
+    "logle.spec12.low_t28.beta": 0.002005,
+    "logle.spec12.low_t28.se": 0.001158,
+    "logle.spec12.low_t28.p": 0.083432,
+    "logle.spec12.upp_t28.beta": -0.001373,
+    "logle.spec12.upp_t28.se": 0.001282,
+    "logle.spec12.upp_t28.p": 0.28423,
+    "logle.lag0_r2": 0.2892,
+    "logle.lag28_r2": 0.2637,
+    "logle.kitchen_r2": 0.3318,
+    "logle.gain_from_lag28": 0.0426,
+    "logle.gain_from_lag0": 0.0681,
+    "logu5.spec1.r2": 0.5192,
+    "logu5.spec1.n": 560,
+    "logu5.spec1.pri_t.beta": -0.032584,
+    "logu5.spec1.pri_t.se": 0.002698,
+    "logu5.spec1.pri_t.p": 0.0,
+    "logu5.spec2.r2": 0.5465,
+    "logu5.spec2.n": 560,
+    "logu5.spec2.low_t.beta": -0.030899,
+    "logu5.spec2.low_t.se": 0.002394,
+    "logu5.spec2.low_t.p": 0.0,
+    "logu5.spec3.r2": 0.4403,
+    "logu5.spec3.n": 560,
+    "logu5.spec3.upp_t.beta": -0.037292,
+    "logu5.spec3.upp_t.se": 0.003859,
+    "logu5.spec3.upp_t.p": 0.0,
+    "logu5.spec4.r2": 0.5959,
+    "logu5.spec4.n": 560,
+    "logu5.spec4.pri_t28.beta": -0.023919,
+    "logu5.spec4.pri_t28.se": 0.001901,
+    "logu5.spec4.pri_t28.p": 0.0,
+    "logu5.spec5.r2": 0.5696,
+    "logu5.spec5.n": 560,
+    "logu5.spec5.low_t28.beta": -0.030092,
+    "logu5.spec5.low_t28.se": 0.002822,
+    "logu5.spec5.low_t28.p": 0.0,
+    "logu5.spec6.r2": 0.5103,
+    "logu5.spec6.n": 560,
+    "logu5.spec6.upp_t28.beta": -0.044414,
+    "logu5.spec6.upp_t28.se": 0.004548,
+    "logu5.spec6.upp_t28.p": 0.0,
+    "logu5.spec7.r2": 0.5788,
+    "logu5.spec7.n": 560,
+    "logu5.spec7.pri_t.beta": -0.014854,
+    "logu5.spec7.pri_t.se": 0.004556,
+    "logu5.spec7.pri_t.p": 0.001112,
+    "logu5.spec7.low_t.beta": -0.021122,
+    "logu5.spec7.low_t.se": 0.006425,
+    "logu5.spec7.low_t.p": 0.00101,
+    "logu5.spec7.upp_t.beta": 0.002664,
+    "logu5.spec7.upp_t.se": 0.006811,
+    "logu5.spec7.upp_t.p": 0.69574,
+    "logu5.spec8.r2": 0.604,
+    "logu5.spec8.n": 560,
+    "logu5.spec8.pri_t28.beta": -0.017174,
+    "logu5.spec8.pri_t28.se": 0.004465,
+    "logu5.spec8.pri_t28.p": 0.00012,
+    "logu5.spec8.low_t28.beta": -0.006004,
+    "logu5.spec8.low_t28.se": 0.011785,
+    "logu5.spec8.low_t28.p": 0.610409,
+    "logu5.spec8.upp_t28.beta": -0.005433,
+    "logu5.spec8.upp_t28.se": 0.014099,
+    "logu5.spec8.upp_t28.p": 0.699988,
+    "logu5.spec9.r2": 0.6802,
+    "logu5.spec9.n": 560,
+    "logu5.spec9.pri_t.beta": -0.017207,
+    "logu5.spec9.pri_t.se": 0.003288,
+    "logu5.spec9.pri_t.p": 0.0,
+    "logu5.spec9.pri_t28.beta": -0.016296,
+    "logu5.spec9.pri_t28.se": 0.002067,
+    "logu5.spec9.pri_t28.p": 0.0,
+    "logu5.spec10.r2": 0.6595,
+    "logu5.spec10.n": 560,
+    "logu5.spec10.low_t.beta": -0.017384,
+    "logu5.spec10.low_t.se": 0.003317,
+    "logu5.spec10.low_t.p": 0.0,
+    "logu5.spec10.low_t28.beta": -0.018596,
+    "logu5.spec10.low_t28.se": 0.003028,
+    "logu5.spec10.low_t28.p": 0.0,
+    "logu5.spec11.r2": 0.5774,
+    "logu5.spec11.n": 560,
+    "logu5.spec11.upp_t.beta": -0.019262,
+    "logu5.spec11.upp_t.se": 0.004614,
+    "logu5.spec11.upp_t.p": 3e-05,
+    "logu5.spec11.upp_t28.beta": -0.03046,
+    "logu5.spec11.upp_t28.se": 0.004621,
+    "logu5.spec11.upp_t28.p": 0.0,
+    "logu5.spec12.r2": 0.7092,
+    "logu5.spec12.n": 560,
+    "logu5.spec12.pri_t.beta": -0.016404,
+    "logu5.spec12.pri_t.se": 0.00467,
+    "logu5.spec12.pri_t.p": 0.000444,
+    "logu5.spec12.low_t.beta": -0.01056,
+    "logu5.spec12.low_t.se": 0.006025,
+    "logu5.spec12.low_t.p": 0.079618,
+    "logu5.spec12.upp_t.beta": 0.010887,
+    "logu5.spec12.upp_t.se": 0.005737,
+    "logu5.spec12.upp_t.p": 0.057723,
+    "logu5.spec12.pri_t28.beta": -0.001811,
+    "logu5.spec12.pri_t28.se": 0.004011,
+    "logu5.spec12.pri_t28.p": 0.651694,
+    "logu5.spec12.low_t28.beta": -0.014686,
+    "logu5.spec12.low_t28.se": 0.008848,
+    "logu5.spec12.low_t28.p": 0.09695,
+    "logu5.spec12.upp_t28.beta": -0.005783,
+    "logu5.spec12.upp_t28.se": 0.010591,
+    "logu5.spec12.upp_t28.p": 0.585029,
+    "logu5.lag0_r2": 0.5788,
+    "logu5.lag28_r2": 0.604,
+    "logu5.kitchen_r2": 0.7092,
+    "logu5.gain_from_lag28": 0.1304,
+    "logu5.gain_from_lag0": 0.1052,
+    "loggdp.spec1.r2": 0.2019,
+    "loggdp.spec1.n": 883,
+    "loggdp.spec1.pri_t.beta": 0.015486,
+    "loggdp.spec1.pri_t.se": 0.002185,
+    "loggdp.spec1.pri_t.p": 0.0,
+    "loggdp.spec2.r2": 0.2649,
+    "loggdp.spec2.n": 883,
+    "loggdp.spec2.low_t.beta": 0.015226,
+    "loggdp.spec2.low_t.se": 0.001658,
+    "loggdp.spec2.low_t.p": 0.0,
+    "loggdp.spec3.r2": 0.2403,
+    "loggdp.spec3.n": 883,
+    "loggdp.spec3.upp_t.beta": 0.017939,
+    "loggdp.spec3.upp_t.se": 0.002093,
+    "loggdp.spec3.upp_t.p": 0.0,
+    "loggdp.spec4.r2": 0.216,
+    "loggdp.spec4.n": 883,
+    "loggdp.spec4.pri_t28.beta": 0.010867,
+    "loggdp.spec4.pri_t28.se": 0.001777,
+    "loggdp.spec4.pri_t28.p": 0.0,
+    "loggdp.spec5.r2": 0.2008,
+    "loggdp.spec5.n": 883,
+    "loggdp.spec5.low_t28.beta": 0.013084,
+    "loggdp.spec5.low_t28.se": 0.001987,
+    "loggdp.spec5.low_t28.p": 0.0,
+    "loggdp.spec6.r2": 0.1691,
+    "loggdp.spec6.n": 883,
+    "loggdp.spec6.upp_t28.beta": 0.019667,
+    "loggdp.spec6.upp_t28.se": 0.003057,
+    "loggdp.spec6.upp_t28.p": 0.0,
+    "loggdp.spec7.r2": 0.2659,
+    "loggdp.spec7.n": 883,
+    "loggdp.spec7.pri_t.beta": 0.000403,
+    "loggdp.spec7.pri_t.se": 0.003941,
+    "loggdp.spec7.pri_t.p": 0.918625,
+    "loggdp.spec7.low_t.beta": 0.012463,
+    "loggdp.spec7.low_t.se": 0.00492,
+    "loggdp.spec7.low_t.p": 0.011312,
+    "loggdp.spec7.upp_t.beta": 0.003271,
+    "loggdp.spec7.upp_t.se": 0.004905,
+    "loggdp.spec7.upp_t.p": 0.504907,
+    "loggdp.spec8.r2": 0.2181,
+    "loggdp.spec8.n": 883,
+    "loggdp.spec8.pri_t28.beta": 0.008537,
+    "loggdp.spec8.pri_t28.se": 0.004374,
+    "loggdp.spec8.pri_t28.p": 0.050995,
+    "loggdp.spec8.low_t28.beta": 0.006167,
+    "loggdp.spec8.low_t28.se": 0.008089,
+    "loggdp.spec8.low_t28.p": 0.445806,
+    "loggdp.spec8.upp_t28.beta": -0.005378,
+    "loggdp.spec8.upp_t28.se": 0.013238,
+    "loggdp.spec8.upp_t28.p": 0.684574,
+    "loggdp.spec9.r2": 0.2437,
+    "loggdp.spec9.n": 883,
+    "loggdp.spec9.pri_t.beta": 0.008227,
+    "loggdp.spec9.pri_t.se": 0.003241,
+    "loggdp.spec9.pri_t.p": 0.011131,
+    "loggdp.spec9.pri_t28.beta": 0.006861,
+    "loggdp.spec9.pri_t28.se": 0.002416,
+    "loggdp.spec9.pri_t28.p": 0.004514,
+    "loggdp.spec10.r2": 0.2729,
+    "loggdp.spec10.n": 883,
+    "loggdp.spec10.low_t.beta": 0.01216,
+    "loggdp.spec10.low_t.se": 0.00253,
+    "loggdp.spec10.low_t.p": 2e-06,
+    "loggdp.spec10.low_t28.beta": 0.003996,
+    "loggdp.spec10.low_t28.se": 0.002687,
+    "loggdp.spec10.low_t28.p": 0.137011,
+    "loggdp.spec11.r2": 0.2417,
+    "loggdp.spec11.n": 883,
+    "loggdp.spec11.upp_t.beta": 0.016194,
+    "loggdp.spec11.upp_t.se": 0.003098,
+    "loggdp.spec11.upp_t.p": 0.0,
+    "loggdp.spec11.upp_t28.beta": 0.002874,
+    "loggdp.spec11.upp_t28.se": 0.003724,
+    "loggdp.spec11.upp_t28.p": 0.440263,
+    "loggdp.spec12.r2": 0.2768,
+    "loggdp.spec12.n": 883,
+    "loggdp.spec12.pri_t.beta": -0.000605,
+    "loggdp.spec12.pri_t.se": 0.003846,
+    "loggdp.spec12.pri_t.p": 0.875012,
+    "loggdp.spec12.low_t.beta": 0.012909,
+    "loggdp.spec12.low_t.se": 0.005876,
+    "loggdp.spec12.low_t.p": 0.028027,
+    "loggdp.spec12.upp_t.beta": -0.000708,
+    "loggdp.spec12.upp_t.se": 0.006278,
+    "loggdp.spec12.upp_t.p": 0.910239,
+    "loggdp.spec12.pri_t28.beta": 0.000922,
+    "loggdp.spec12.pri_t28.se": 0.005563,
+    "loggdp.spec12.pri_t28.p": 0.868311,
+    "loggdp.spec12.low_t28.beta": 0.008559,
+    "loggdp.spec12.low_t28.se": 0.008469,
+    "loggdp.spec12.low_t28.p": 0.312236,
+    "loggdp.spec12.upp_t28.beta": -0.009317,
+    "loggdp.spec12.upp_t28.se": 0.012033,
+    "loggdp.spec12.upp_t28.p": 0.438777,
+    "loggdp.lag0_r2": 0.2659,
+    "loggdp.lag28_r2": 0.2181,
+    "loggdp.kitchen_r2": 0.2768,
+    "loggdp.gain_from_lag28": 0.0109,
+    "loggdp.gain_from_lag0": 0.0587
+  },
+  "script": "scripts/residualization/horse_race_lags_levels.py"
+}

@@ -1,0 +1,161 @@
+{
+  "method": "Grandparent effect test: does grandparent-generation education predict outcomes controlling for parent-generation education? Per-outcome biological lags: TFR parent T-5 / grandparent T-33; LE and child education parent T-28 / grandparent T-56 (LE-at-birth is mortality-dominated and child education is the next generation). Country FE, clustered SEs. WCDE v3 + World Bank WDI, both sexes.",
+  "results": {
+    "tfr": {
+      "parent_only": {
+        "n": 1439,
+        "n_countries": 180,
+        "within_r2": 0.5564,
+        "beta_parent_edu": -0.0586,
+        "pval_parent_edu": 0.0,
+        "se_parent_edu": 0.0036
+      },
+      "parent_gp": {
+        "n": 1439,
+        "n_countries": 180,
+        "within_r2": 0.5842,
+        "beta_parent_edu": -0.0484,
+        "pval_parent_edu": 0.0,
+        "se_parent_edu": 0.0044,
+        "beta_grandparent_edu": -0.0117,
+        "pval_grandparent_edu": 0.0,
+        "se_grandparent_edu": 0.0027
+      },
+      "gp_only": {
+        "n": 1439,
+        "n_countries": 180,
+        "within_r2": 0.3481,
+        "beta_grandparent_edu": -0.0325,
+        "pval_grandparent_edu": 0.0,
+        "se_grandparent_edu": 0.0026
+      },
+      "r2_gain": 0.0278
+    },
+    "le": {
+      "parent_only": {
+        "n": 540,
+        "n_countries": 180,
+        "within_r2": 0.3292,
+        "beta_parent_edu": 0.2346,
+        "pval_parent_edu": 0.0,
+        "se_parent_edu": 0.0288
+      },
+      "parent_gp": {
+        "n": 540,
+        "n_countries": 180,
+        "within_r2": 0.3945,
+        "beta_parent_edu": 0.175,
+        "pval_parent_edu": 0.0,
+        "se_parent_edu": 0.0339,
+        "beta_grandparent_edu": 0.0912,
+        "pval_grandparent_edu": 0.0,
+        "se_grandparent_edu": 0.0135
+      },
+      "gp_only": {
+        "n": 540,
+        "n_countries": 180,
+        "within_r2": 0.2564,
+        "beta_grandparent_edu": 0.157,
+        "pval_grandparent_edu": 0.0,
+        "se_grandparent_edu": 0.0145
+      },
+      "r2_gain": 0.0653
+    },
+    "child_edu": {
+      "parent_only": {
+        "n": 740,
+        "n_countries": 185,
+        "within_r2": 0.306,
+        "beta_parent_edu": 0.8964,
+        "pval_parent_edu": 0.0,
+        "se_parent_edu": 0.103
+      },
+      "parent_gp": {
+        "n": 740,
+        "n_countries": 185,
+        "within_r2": 0.4078,
+        "beta_parent_edu": 0.5758,
+        "pval_parent_edu": 0.0,
+        "se_parent_edu": 0.1126,
+        "beta_grandparent_edu": 0.4125,
+        "pval_grandparent_edu": 0.0,
+        "se_grandparent_edu": 0.0865
+      },
+      "gp_only": {
+        "n": 740,
+        "n_countries": 185,
+        "within_r2": 0.3166,
+        "beta_grandparent_edu": 0.6182,
+        "pval_grandparent_edu": 0.0,
+        "se_grandparent_edu": 0.0867
+      },
+      "r2_gain": 0.1018
+    },
+    "tfr_low_edu": {
+      "parent_only": {
+        "n": 533,
+        "n_countries": 93,
+        "within_r2": 0.6797,
+        "beta_parent_edu": -0.0967,
+        "pval_parent_edu": 0.0,
+        "se_parent_edu": 0.0057
+      },
+      "parent_gp": {
+        "n": 533,
+        "n_countries": 93,
+        "within_r2": 0.7411,
+        "beta_parent_edu": -0.0698,
+        "pval_parent_edu": 0.0,
+        "se_parent_edu": 0.0092,
+        "beta_grandparent_edu": -0.0507,
+        "pval_grandparent_edu": 0.0,
+        "se_grandparent_edu": 0.0114
+      },
+      "r2_gain": 0.0614
+    },
+    "tfr_log_low_edu": {
+      "parent_only": {
+        "n": 533,
+        "n_countries": 93,
+        "within_r2": 0.6859,
+        "beta_parent_edu": -0.0212,
+        "pval_parent_edu": 0.0,
+        "se_parent_edu": 0.0015
+      },
+      "parent_gp": {
+        "n": 533,
+        "n_countries": 93,
+        "within_r2": 0.7504,
+        "beta_parent_edu": -0.0152,
+        "pval_parent_edu": 0.0,
+        "se_parent_edu": 0.0022,
+        "beta_grandparent_edu": -0.0113,
+        "pval_grandparent_edu": 0.0,
+        "se_grandparent_edu": 0.0026
+      },
+      "r2_gain": 0.0645
+    },
+    "gp_to_parent": {
+      "n": 740,
+      "n_countries": 185,
+      "within_r2": 0.2776,
+      "beta_grandparent_edu": 0.3572,
+      "pval_grandparent_edu": 0.0,
+      "se_grandparent_edu": 0.051
+    },
+    "decomposition_tfr": {
+      "gp_total": -0.0325,
+      "gp_direct": -0.0117,
+      "gp_indirect": -0.0208,
+      "pct_direct": 36.0,
+      "pct_indirect": 64.0
+    },
+    "decomposition_le": {
+      "gp_total": 0.157,
+      "gp_direct": 0.0912,
+      "gp_indirect": 0.0658,
+      "pct_direct": 58.1,
+      "pct_indirect": 41.9
+    }
+  }
+}

@@ -1,0 +1,7402 @@
+{
+  "jobs": [
+    {
+      "id": "trf_t25_s42",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 42
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s43",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 43
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s44",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 44
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s45",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 45
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s46",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 46
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s47",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 47
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s48",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 48
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s49",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 49
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s50",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 50
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s51",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 51
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s52",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 52
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s53",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 53
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s54",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 54
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s55",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 55
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s56",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 56
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s57",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 57
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s58",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 58
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s59",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 59
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s60",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 60
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s61",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 61
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s62",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 62
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s63",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 63
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s64",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 64
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s65",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 65
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s66",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 66
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s67",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 67
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s68",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 68
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s69",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 69
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s70",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 70
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s71",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 71
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s72",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 72
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s73",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 73
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s74",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 74
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s75",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 75
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s76",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 76
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s77",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 77
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s78",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 78
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s79",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 79
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s80",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 80
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s81",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 81
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s82",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 82
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s83",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 83
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s84",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 84
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s85",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 85
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s86",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 86
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s87",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 87
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s88",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 88
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s89",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 89
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s90",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 90
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_t25_s91",
+      "kind": "transformer",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 91
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s42",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 42
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s42",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 42
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s42",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 42
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s43",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 43
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s43",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 43
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s43",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 43
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s44",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 44
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s44",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 44
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s44",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 44
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s45",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 45
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s45",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 45
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s45",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 45
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s46",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 46
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s46",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 46
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s46",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 46
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s47",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 47
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s47",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 47
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s47",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 47
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s48",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 48
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s48",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 48
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s48",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 48
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s49",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 49
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s49",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 49
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s49",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 49
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s50",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 50
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s50",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 50
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s50",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 50
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s51",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 51
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s51",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 51
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s51",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 51
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s52",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 52
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s52",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 52
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s52",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 52
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s53",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 53
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s53",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 53
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s53",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 53
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s54",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 54
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s54",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 54
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s54",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 54
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s55",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 55
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s55",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 55
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s55",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 55
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s56",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 56
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s56",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 56
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s56",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 56
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s57",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 57
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s57",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 57
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s57",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 57
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s58",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 58
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s58",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 58
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s58",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 58
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s59",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 59
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s59",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 59
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s59",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 59
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s60",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 60
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s60",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 60
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s60",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 60
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s61",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 61
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s61",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 61
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s61",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 61
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s62",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 62
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s62",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 62
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s62",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 62
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s63",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 63
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s63",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 63
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s63",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 63
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s64",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 64
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s64",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 64
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s64",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 64
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s65",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 65
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s65",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 65
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s65",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 65
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s66",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 66
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s66",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 66
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s66",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 66
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s67",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 67
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s67",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 67
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s67",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 67
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s68",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 68
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s68",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 68
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s68",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 68
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s69",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 69
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s69",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 69
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s69",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 69
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s70",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 70
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s70",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 70
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s70",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 70
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_LE_s71",
+      "kind": "transformer_single",
+      "params": {
+        "target": "LE",
+        "horizon": 12,
+        "seed": 71
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_TFR_s71",
+      "kind": "transformer_single",
+      "params": {
+        "target": "TFR",
+        "horizon": 5,
+        "seed": 71
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_parent_U5MR_s71",
+      "kind": "transformer_single",
+      "params": {
+        "target": "U5MR",
+        "horizon": 12,
+        "seed": 71
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1965_s42",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 42,
+        "cutoff_year": 1965
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1965_s43",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 43,
+        "cutoff_year": 1965
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1965_s44",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 44,
+        "cutoff_year": 1965
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1965_s45",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 45,
+        "cutoff_year": 1965
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1965_s46",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 46,
+        "cutoff_year": 1965
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1975_s42",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 42,
+        "cutoff_year": 1975
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1975_s43",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 43,
+        "cutoff_year": 1975
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1975_s44",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 44,
+        "cutoff_year": 1975
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1975_s45",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 45,
+        "cutoff_year": 1975
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1975_s46",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 46,
+        "cutoff_year": 1975
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1980_s42",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 42,
+        "cutoff_year": 1980
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1980_s43",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 43,
+        "cutoff_year": 1980
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1980_s44",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 44,
+        "cutoff_year": 1980
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1980_s45",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 45,
+        "cutoff_year": 1980
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1980_s46",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 46,
+        "cutoff_year": 1980
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1985_s42",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 42,
+        "cutoff_year": 1985
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1985_s43",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 43,
+        "cutoff_year": 1985
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1985_s44",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 44,
+        "cutoff_year": 1985
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1985_s45",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 45,
+        "cutoff_year": 1985
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1985_s46",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 46,
+        "cutoff_year": 1985
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1990_s42",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 42,
+        "cutoff_year": 1990
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1990_s43",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 43,
+        "cutoff_year": 1990
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1990_s44",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 44,
+        "cutoff_year": 1990
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1990_s45",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 45,
+        "cutoff_year": 1990
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1990_s46",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 46,
+        "cutoff_year": 1990
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1995_s42",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 42,
+        "cutoff_year": 1995
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1995_s43",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 43,
+        "cutoff_year": 1995
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1995_s44",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 44,
+        "cutoff_year": 1995
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1995_s45",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 45,
+        "cutoff_year": 1995
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c1995_s46",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 46,
+        "cutoff_year": 1995
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c2000_s42",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 42,
+        "cutoff_year": 2000
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c2000_s43",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 43,
+        "cutoff_year": 2000
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c2000_s44",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 44,
+        "cutoff_year": 2000
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c2000_s45",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 45,
+        "cutoff_year": 2000
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c2000_s46",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 46,
+        "cutoff_year": 2000
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c2005_s42",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 42,
+        "cutoff_year": 2005
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c2005_s43",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 43,
+        "cutoff_year": 2005
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c2005_s44",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 44,
+        "cutoff_year": 2005
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c2005_s45",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 45,
+        "cutoff_year": 2005
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "walk_c2005_s46",
+      "kind": "transformer_walk_forward",
+      "params": {
+        "mode": "joint",
+        "horizon": 25,
+        "seed": 46,
+        "cutoff_year": 2005
+      },
+      "est_gpu_hours": 0.4,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_sub_saharan_africa_s42",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "sub_saharan_africa",
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_sub_saharan_africa_s43",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "sub_saharan_africa",
+        "seed": 43,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_sub_saharan_africa_s44",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "sub_saharan_africa",
+        "seed": 44,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_sub_saharan_africa_s45",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "sub_saharan_africa",
+        "seed": 45,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_sub_saharan_africa_s46",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "sub_saharan_africa",
+        "seed": 46,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_south_asia_s42",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "south_asia",
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_south_asia_s43",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "south_asia",
+        "seed": 43,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_south_asia_s44",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "south_asia",
+        "seed": 44,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_south_asia_s45",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "south_asia",
+        "seed": 45,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_south_asia_s46",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "south_asia",
+        "seed": 46,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_east_asia_pacific_s42",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "east_asia_pacific",
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_east_asia_pacific_s43",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "east_asia_pacific",
+        "seed": 43,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_east_asia_pacific_s44",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "east_asia_pacific",
+        "seed": 44,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_east_asia_pacific_s45",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "east_asia_pacific",
+        "seed": 45,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_east_asia_pacific_s46",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "east_asia_pacific",
+        "seed": 46,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_latin_america_caribbean_s42",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "latin_america_caribbean",
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_latin_america_caribbean_s43",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "latin_america_caribbean",
+        "seed": 43,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_latin_america_caribbean_s44",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "latin_america_caribbean",
+        "seed": 44,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_latin_america_caribbean_s45",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "latin_america_caribbean",
+        "seed": 45,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_latin_america_caribbean_s46",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "latin_america_caribbean",
+        "seed": 46,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_europe_central_asia_s42",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "europe_central_asia",
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_europe_central_asia_s43",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "europe_central_asia",
+        "seed": 43,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_europe_central_asia_s44",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "europe_central_asia",
+        "seed": 44,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_europe_central_asia_s45",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "europe_central_asia",
+        "seed": 45,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_europe_central_asia_s46",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "europe_central_asia",
+        "seed": 46,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_middle_east_north_africa_s42",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "middle_east_north_africa",
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_middle_east_north_africa_s43",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "middle_east_north_africa",
+        "seed": 43,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_middle_east_north_africa_s44",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "middle_east_north_africa",
+        "seed": 44,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_middle_east_north_africa_s45",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "middle_east_north_africa",
+        "seed": 45,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_region_middle_east_north_africa_s46",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "region",
+        "strat_value": "middle_east_north_africa",
+        "seed": 46,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_era_1960_1975_s42",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1960,
+          1975
+        ],
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_era_1960_1975_s43",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1960,
+          1975
+        ],
+        "seed": 43,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_era_1960_1975_s44",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1960,
+          1975
+        ],
+        "seed": 44,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_era_1960_1975_s45",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1960,
+          1975
+        ],
+        "seed": 45,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_era_1960_1975_s46",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1960,
+          1975
+        ],
+        "seed": 46,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_era_1975_1990_s42",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1975,
+          1990
+        ],
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_era_1975_1990_s43",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1975,
+          1990
+        ],
+        "seed": 43,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_era_1975_1990_s44",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1975,
+          1990
+        ],
+        "seed": 44,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_era_1975_1990_s45",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1975,
+          1990
+        ],
+        "seed": 45,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_era_1975_1990_s46",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1975,
+          1990
+        ],
+        "seed": 46,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_era_1990_2005_s42",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1990,
+          2005
+        ],
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_era_1990_2005_s43",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1990,
+          2005
+        ],
+        "seed": 43,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_era_1990_2005_s44",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1990,
+          2005
+        ],
+        "seed": 44,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_era_1990_2005_s45",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1990,
+          2005
+        ],
+        "seed": 45,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_era_1990_2005_s46",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1990,
+          2005
+        ],
+        "seed": 46,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_era_2005_2020_s42",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          2005,
+          2020
+        ],
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_era_2005_2020_s43",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          2005,
+          2020
+        ],
+        "seed": 43,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_era_2005_2020_s44",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          2005,
+          2020
+        ],
+        "seed": 44,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_era_2005_2020_s45",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          2005,
+          2020
+        ],
+        "seed": 45,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_era_2005_2020_s46",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          2005,
+          2020
+        ],
+        "seed": 46,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_era_1960_2020_s42",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1960,
+          2020
+        ],
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_era_1960_2020_s43",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1960,
+          2020
+        ],
+        "seed": 43,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_era_1960_2020_s44",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1960,
+          2020
+        ],
+        "seed": 44,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_era_1960_2020_s45",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1960,
+          2020
+        ],
+        "seed": 45,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_era_1960_2020_s46",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "era",
+        "strat_value": [
+          1960,
+          2020
+        ],
+        "seed": 46,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.3,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_income_low_s42",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "income",
+        "strat_value": "low",
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_income_low_s43",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "income",
+        "strat_value": "low",
+        "seed": 43,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_income_low_s44",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "income",
+        "strat_value": "low",
+        "seed": 44,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_income_low_s45",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "income",
+        "strat_value": "low",
+        "seed": 45,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_income_low_s46",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "income",
+        "strat_value": "low",
+        "seed": 46,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_income_lower_middle_s42",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "income",
+        "strat_value": "lower_middle",
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_income_lower_middle_s43",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "income",
+        "strat_value": "lower_middle",
+        "seed": 43,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_income_lower_middle_s44",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "income",
+        "strat_value": "lower_middle",
+        "seed": 44,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_income_lower_middle_s45",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "income",
+        "strat_value": "lower_middle",
+        "seed": 45,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_income_lower_middle_s46",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "income",
+        "strat_value": "lower_middle",
+        "seed": 46,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_income_upper_middle_plus_s42",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "income",
+        "strat_value": "upper_middle_plus",
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_income_upper_middle_plus_s43",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "income",
+        "strat_value": "upper_middle_plus",
+        "seed": 43,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_income_upper_middle_plus_s44",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "income",
+        "strat_value": "upper_middle_plus",
+        "seed": 44,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_income_upper_middle_plus_s45",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "income",
+        "strat_value": "upper_middle_plus",
+        "seed": 45,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "strat_income_upper_middle_plus_s46",
+      "kind": "transformer_strat",
+      "params": {
+        "strat_kind": "income",
+        "strat_value": "upper_middle_plus",
+        "seed": 46,
+        "mode": "joint",
+        "horizon": 25
+      },
+      "est_gpu_hours": 0.2,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_00of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 0
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_01of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 1
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_02of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 2
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_03of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 3
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_04of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 4
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_05of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 5
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_06of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 6
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_07of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 7
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_08of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 8
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_09of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 9
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_10of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 10
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_11of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 11
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_12of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 12
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_13of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 13
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_14of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 14
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_15of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 15
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_16of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 16
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_17of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 17
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_18of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 18
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_19of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 19
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_20of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 20
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_21of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 21
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_22of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 22
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_23of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 23
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_24of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 24
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_25of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 25
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_26of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 26
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_27of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 27
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_28of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 28
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_29of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 29
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_30of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 30
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_31of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 31
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_32of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 32
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_33of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 33
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_34of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 34
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_35of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 35
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_36of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 36
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_37of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 37
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_38of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 38
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_39of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 39
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_40of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 40
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_41of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 41
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_42of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 42
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_43of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 43
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_44of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 44
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_45of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 45
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_46of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 46
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_47of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 47
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_48of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 48
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_49of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 49
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_50of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 50
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_51of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 51
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_52of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 52
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_53of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 53
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_54of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 54
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_55of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 55
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_56of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 56
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_57of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 57
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_58of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 58
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_59of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 59
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_60of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 60
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_61of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 61
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_62of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 62
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_63of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 63
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_64of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 64
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_65of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 65
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_66of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 66
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_67of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 67
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_68of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 68
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_69of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 69
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_70of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 70
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_71of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 71
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_72of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 72
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_73of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 73
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_74of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 74
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_75of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 75
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_76of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 76
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_77of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 77
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_78of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 78
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_79of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 79
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_80of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 80
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_81of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 81
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_82of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 82
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_83of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 83
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_84of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 84
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_85of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 85
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_86of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 86
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_87of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 87
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_88of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 88
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_89of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 89
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_90of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 90
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_91of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 91
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_92of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 92
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_93of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 93
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_94of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 94
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_95of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 95
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_96of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 96
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_97of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 97
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_98of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 98
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_99of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 99
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_100of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 100
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_101of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 101
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_102of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 102
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_103of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 103
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_104of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 104
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_105of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 105
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_106of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 106
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_107of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 107
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_108of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 108
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_109of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 109
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_110of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 110
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_111of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 111
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_112of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 112
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_113of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 113
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_114of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 114
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_115of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 115
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_116of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 116
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_117of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 117
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_118of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 118
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_119of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 119
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_120of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 120
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_121of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 121
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_122of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 122
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_123of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 123
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_124of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 124
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_125of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 125
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_126of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 126
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_127of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 127
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_128of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 128
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_129of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 129
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_130of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 130
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_131of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 131
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_132of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 132
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_133of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 133
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_134of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 134
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_135of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 135
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_136of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 136
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_137of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 137
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_138of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 138
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_139of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 139
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_140of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 140
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_141of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 141
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_142of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 142
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_143of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 143
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_144of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 144
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_145of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 145
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_146of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 146
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_147of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 147
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_148of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 148
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_149of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 149
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_150of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 150
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_151of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 151
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_152of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 152
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_153of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 153
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_154of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 154
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_155of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 155
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_156of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 156
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_157of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 157
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_158of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 158
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_159of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 159
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_160of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 160
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_161of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 161
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_162of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 162
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_163of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 163
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_164of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 164
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_165of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 165
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_166of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 166
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_167of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 167
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_168of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 168
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_169of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 169
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_170of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 170
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_171of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 171
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_172of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 172
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_173of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 173
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_174of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 174
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_175of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 175
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_176of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 176
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_177of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 177
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_178of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 178
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_179of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 179
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_180of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 180
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_181of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 181
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_182of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 182
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_183of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 183
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "loo_shard_184of185_s42",
+      "kind": "loo_transformer",
+      "params": {
+        "seed": 42,
+        "mode": "joint",
+        "horizon": 25,
+        "n_shards": 185,
+        "shard_idx": 184
+      },
+      "est_gpu_hours": 0.16216216216216217,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "longrun_twithin_s42",
+      "kind": "transformer_longrun_within",
+      "params": {
+        "tier": "core",
+        "seed": 42
+      },
+      "est_gpu_hours": 0.5,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "longrun_twithin_s43",
+      "kind": "transformer_longrun_within",
+      "params": {
+        "tier": "core",
+        "seed": 43
+      },
+      "est_gpu_hours": 0.5,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "longrun_twithin_s44",
+      "kind": "transformer_longrun_within",
+      "params": {
+        "tier": "core",
+        "seed": 44
+      },
+      "est_gpu_hours": 0.5,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "longrun_twithin_s45",
+      "kind": "transformer_longrun_within",
+      "params": {
+        "tier": "core",
+        "seed": 45
+      },
+      "est_gpu_hours": 0.5,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "longrun_twithin_s46",
+      "kind": "transformer_longrun_within",
+      "params": {
+        "tier": "core",
+        "seed": 46
+      },
+      "est_gpu_hours": 0.5,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "longrun_tforward_s42",
+      "kind": "transformer_longrun_forward",
+      "params": {
+        "tier": "core",
+        "seed": 42
+      },
+      "est_gpu_hours": 0.5,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "longrun_tforward_s43",
+      "kind": "transformer_longrun_forward",
+      "params": {
+        "tier": "core",
+        "seed": 43
+      },
+      "est_gpu_hours": 0.5,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "longrun_tforward_s44",
+      "kind": "transformer_longrun_forward",
+      "params": {
+        "tier": "core",
+        "seed": 44
+      },
+      "est_gpu_hours": 0.5,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "longrun_tforward_s45",
+      "kind": "transformer_longrun_forward",
+      "params": {
+        "tier": "core",
+        "seed": 45
+      },
+      "est_gpu_hours": 0.5,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "longrun_tforward_s46",
+      "kind": "transformer_longrun_forward",
+      "params": {
+        "tier": "core",
+        "seed": 46
+      },
+      "est_gpu_hours": 0.5,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "longrun_fwithin_s42",
+      "kind": "panel_fe_longrun_within",
+      "params": {
+        "tier": "core",
+        "seed": 42
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 0.5
+    },
+    {
+      "id": "longrun_fwithin_s43",
+      "kind": "panel_fe_longrun_within",
+      "params": {
+        "tier": "core",
+        "seed": 43
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 0.5
+    },
+    {
+      "id": "longrun_fwithin_s44",
+      "kind": "panel_fe_longrun_within",
+      "params": {
+        "tier": "core",
+        "seed": 44
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 0.5
+    },
+    {
+      "id": "longrun_fwithin_s45",
+      "kind": "panel_fe_longrun_within",
+      "params": {
+        "tier": "core",
+        "seed": 45
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 0.5
+    },
+    {
+      "id": "longrun_fwithin_s46",
+      "kind": "panel_fe_longrun_within",
+      "params": {
+        "tier": "core",
+        "seed": 46
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 0.5
+    },
+    {
+      "id": "longrun_fforward_s42",
+      "kind": "panel_fe_longrun_forward",
+      "params": {
+        "tier": "core",
+        "seed": 42
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 0.5
+    },
+    {
+      "id": "longrun_fforward_s43",
+      "kind": "panel_fe_longrun_forward",
+      "params": {
+        "tier": "core",
+        "seed": 43
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 0.5
+    },
+    {
+      "id": "longrun_fforward_s44",
+      "kind": "panel_fe_longrun_forward",
+      "params": {
+        "tier": "core",
+        "seed": 44
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 0.5
+    },
+    {
+      "id": "longrun_fforward_s45",
+      "kind": "panel_fe_longrun_forward",
+      "params": {
+        "tier": "core",
+        "seed": 45
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 0.5
+    },
+    {
+      "id": "longrun_fforward_s46",
+      "kind": "panel_fe_longrun_forward",
+      "params": {
+        "tier": "core",
+        "seed": 46
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 0.5
+    },
+    {
+      "id": "trf_bl_s42",
+      "kind": "transformer",
+      "params": {
+        "mode": "bl_only",
+        "horizon": 25,
+        "seed": 42
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_bl_s43",
+      "kind": "transformer",
+      "params": {
+        "mode": "bl_only",
+        "horizon": 25,
+        "seed": 43
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_bl_s44",
+      "kind": "transformer",
+      "params": {
+        "mode": "bl_only",
+        "horizon": 25,
+        "seed": 44
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_bl_s45",
+      "kind": "transformer",
+      "params": {
+        "mode": "bl_only",
+        "horizon": 25,
+        "seed": 45
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_bl_s46",
+      "kind": "transformer",
+      "params": {
+        "mode": "bl_only",
+        "horizon": 25,
+        "seed": 46
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_bl_s47",
+      "kind": "transformer",
+      "params": {
+        "mode": "bl_only",
+        "horizon": 25,
+        "seed": 47
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_bl_s48",
+      "kind": "transformer",
+      "params": {
+        "mode": "bl_only",
+        "horizon": 25,
+        "seed": 48
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_bl_s49",
+      "kind": "transformer",
+      "params": {
+        "mode": "bl_only",
+        "horizon": 25,
+        "seed": 49
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_bl_s50",
+      "kind": "transformer",
+      "params": {
+        "mode": "bl_only",
+        "horizon": 25,
+        "seed": 50
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_bl_s51",
+      "kind": "transformer",
+      "params": {
+        "mode": "bl_only",
+        "horizon": 25,
+        "seed": 51
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_bl_s52",
+      "kind": "transformer",
+      "params": {
+        "mode": "bl_only",
+        "horizon": 25,
+        "seed": 52
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_bl_s53",
+      "kind": "transformer",
+      "params": {
+        "mode": "bl_only",
+        "horizon": 25,
+        "seed": 53
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_bl_s54",
+      "kind": "transformer",
+      "params": {
+        "mode": "bl_only",
+        "horizon": 25,
+        "seed": 54
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_bl_s55",
+      "kind": "transformer",
+      "params": {
+        "mode": "bl_only",
+        "horizon": 25,
+        "seed": 55
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "trf_bl_s56",
+      "kind": "transformer",
+      "params": {
+        "mode": "bl_only",
+        "horizon": 25,
+        "seed": 56
+      },
+      "est_gpu_hours": 0.45,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_00of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 0
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_01of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 1
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_02of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 2
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_03of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 3
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_04of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 4
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_05of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 5
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_06of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 6
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_07of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 7
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_08of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 8
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_09of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 9
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_10of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 10
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_11of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 11
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_12of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 12
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_13of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 13
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_14of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 14
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_15of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 15
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_16of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 16
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_17of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 17
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_18of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 18
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_19of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 19
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_20of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 20
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_21of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 21
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_22of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 22
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_23of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 23
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_24of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 24
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_25of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 25
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_26of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 26
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_27of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 27
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_28of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 28
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_29of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 29
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_30of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 30
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_31of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 31
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_32of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 32
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_33of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 33
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_34of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 34
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_35of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 35
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_36of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 36
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_37of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 37
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_38of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 38
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_39of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 39
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_40of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 40
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_41of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 41
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_42of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 42
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_43of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 43
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_44of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 44
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_45of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 45
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_46of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 46
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_47of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 47
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_48of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 48
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_49of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 49
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_50of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 50
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_51of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 51
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_52of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 52
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_53of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 53
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_54of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 54
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_55of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 55
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_56of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 56
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_57of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 57
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_58of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 58
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_59of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 59
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_60of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 60
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_61of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 61
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_62of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 62
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_63of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 63
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_64of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 64
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_65of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 65
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_66of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 66
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_67of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 67
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_68of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 68
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_69of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 69
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_70of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 70
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_71of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 71
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_72of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 72
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_73of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 73
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_74of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 74
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_75of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 75
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_76of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 76
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_77of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 77
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_78of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 78
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_79of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 79
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_80of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 80
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_81of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 81
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_82of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 82
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_83of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 83
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_84of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 84
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_85of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 85
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_86of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 86
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_87of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 87
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_88of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 88
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_89of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 89
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_90of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 90
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_91of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 91
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_92of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 92
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_93of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 93
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_94of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 94
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_95of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 95
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_96of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 96
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_97of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 97
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_98of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 98
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "optuna_shard_99of100",
+      "kind": "optuna",
+      "params": {
+        "n_trials": 500,
+        "seed": 42,
+        "n_shards": 100,
+        "shard_idx": 99
+      },
+      "est_gpu_hours": 0.35,
+      "est_cpu_hours": 0.0
+    },
+    {
+      "id": "spec_curve_ridge",
+      "kind": "spec_curve",
+      "params": {
+        "methods": [
+          "ridge"
+        ],
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ]
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 0.75
+    },
+    {
+      "id": "spec_curve_lasso",
+      "kind": "spec_curve",
+      "params": {
+        "methods": [
+          "lasso"
+        ],
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ]
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 0.75
+    },
+    {
+      "id": "spec_curve_random_forest",
+      "kind": "spec_curve",
+      "params": {
+        "methods": [
+          "random_forest"
+        ],
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ]
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 0.75
+    },
+    {
+      "id": "spec_curve_gradient_boosting",
+      "kind": "spec_curve",
+      "params": {
+        "methods": [
+          "gradient_boosting"
+        ],
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ]
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 0.75
+    },
+    {
+      "id": "placebos_outcome_scramble",
+      "kind": "placebos",
+      "params": {
+        "placebos": [
+          "placebo_outcome_scramble"
+        ],
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ]
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 1.3333333333333333
+    },
+    {
+      "id": "placebos_year_scramble",
+      "kind": "placebos",
+      "params": {
+        "placebos": [
+          "placebo_year_scramble"
+        ],
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ]
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 1.3333333333333333
+    },
+    {
+      "id": "placebos_country_scramble",
+      "kind": "placebos",
+      "params": {
+        "placebos": [
+          "placebo_country_scramble"
+        ],
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ]
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 1.3333333333333333
+    },
+    {
+      "id": "placebos_edu_replaced_noise",
+      "kind": "placebos",
+      "params": {
+        "placebos": [
+          "placebo_edu_replaced_noise"
+        ],
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ]
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 1.3333333333333333
+    },
+    {
+      "id": "placebos_edu_replaced_latitude",
+      "kind": "placebos",
+      "params": {
+        "placebos": [
+          "placebo_edu_replaced_latitude"
+        ],
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ]
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 1.3333333333333333
+    },
+    {
+      "id": "placebos_edu_replaced_gdprank",
+      "kind": "placebos",
+      "params": {
+        "placebos": [
+          "placebo_edu_replaced_gdprank"
+        ],
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ]
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 1.3333333333333333
+    },
+    {
+      "id": "dml_s42",
+      "kind": "dml",
+      "params": {
+        "n_folds": 5,
+        "seeds": [
+          42
+        ]
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 0.5
+    },
+    {
+      "id": "dml_s43",
+      "kind": "dml",
+      "params": {
+        "n_folds": 5,
+        "seeds": [
+          43
+        ]
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 0.5
+    },
+    {
+      "id": "dml_s44",
+      "kind": "dml",
+      "params": {
+        "n_folds": 5,
+        "seeds": [
+          44
+        ]
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 0.5
+    },
+    {
+      "id": "dml_s45",
+      "kind": "dml",
+      "params": {
+        "n_folds": 5,
+        "seeds": [
+          45
+        ]
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 0.5
+    },
+    {
+      "id": "dml_s46",
+      "kind": "dml",
+      "params": {
+        "n_folds": 5,
+        "seeds": [
+          46
+        ]
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 0.5
+    },
+    {
+      "id": "counterfactual_big",
+      "kind": "counterfactual",
+      "params": {
+        "pairs": [
+          [
+            "south korea",
+            "philippines"
+          ],
+          [
+            "taiwan",
+            "philippines"
+          ],
+          [
+            "cuba",
+            "dominican republic"
+          ],
+          [
+            "sri lanka",
+            "pakistan"
+          ],
+          [
+            "bangladesh",
+            "pakistan"
+          ],
+          [
+            "china",
+            "india"
+          ],
+          [
+            "vietnam",
+            "myanmar"
+          ],
+          [
+            "botswana",
+            "zimbabwe"
+          ],
+          [
+            "rwanda",
+            "burundi"
+          ],
+          [
+            "kenya",
+            "tanzania"
+          ],
+          [
+            "south africa",
+            "zimbabwe"
+          ],
+          [
+            "malaysia",
+            "philippines"
+          ],
+          [
+            "singapore",
+            "malaysia"
+          ],
+          [
+            "japan",
+            "south korea"
+          ],
+          [
+            "turkey",
+            "iran"
+          ],
+          [
+            "indonesia",
+            "vietnam"
+          ],
+          [
+            "ghana",
+            "nigeria"
+          ],
+          [
+            "ethiopia",
+            "kenya"
+          ],
+          [
+            "egypt",
+            "morocco"
+          ],
+          [
+            "mexico",
+            "brazil"
+          ]
+        ],
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71
+        ]
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 1.5
+    },
+    {
+      "id": "cond_perm_LE",
+      "kind": "cond_perm",
+      "params": {
+        "n_repeats": 50,
+        "targets": [
+          "LE"
+        ]
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 1.3333333333333333
+    },
+    {
+      "id": "cond_perm_TFR",
+      "kind": "cond_perm",
+      "params": {
+        "n_repeats": 50,
+        "targets": [
+          "TFR"
+        ]
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 1.3333333333333333
+    },
+    {
+      "id": "cond_perm_U5MR",
+      "kind": "cond_perm",
+      "params": {
+        "n_repeats": 50,
+        "targets": [
+          "U5MR"
+        ]
+      },
+      "est_gpu_hours": 0.0,
+      "est_cpu_hours": 1.3333333333333333
+    }
+  ],
+  "summary": {
+    "n_jobs": 589,
+    "by_kind": {
+      "transformer": 65,
+      "transformer_single": 90,
+      "transformer_walk_forward": 40,
+      "transformer_strat": 70,
+      "loo_transformer": 185,
+      "transformer_longrun_within": 5,
+      "transformer_longrun_forward": 5,
+      "panel_fe_longrun_within": 5,
+      "panel_fe_longrun_forward": 5,
+      "optuna": 100,
+      "spec_curve": 4,
+      "placebos": 6,
+      "dml": 5,
+      "counterfactual": 1,
+      "cond_perm": 3
+    },
+    "total_gpu_hours": 149.7,
+    "total_cpu_hours": 24.0,
+    "est_cost_usd_spot": 17.6,
+    "est_cost_usd_ondemand": 61.77,
+    "est_cost_usd_spot_with_buffer": 22.87
+  }
+}

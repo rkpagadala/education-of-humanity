@@ -1,0 +1,178 @@
+{
+  "method": "Per-outcome unique-R^2 decomposition. For each outcome (LE, TFR, log U5MR, child education), run three within-country FE regressions on the entry-cohort sample (entry >= 10%, ceiling 90%, T=1960-1990): GDP alone, education alone, both. Outcome-specific lags: TFR at T+LAG_TFR=5 (biological parent-of-newborn timing); U5MR at T+LAG_CHILDREARING=12 (childrearing window); LE and child education at T+LAG_GENERATION=28 (time-to-agency / edu\u2192edu transmission). Compute education's unique R^2 beyond GDP and GDP's unique R^2 beyond education, plus their ratio. Two samples: per-outcome (each on its own GDP-merged subset) and common-sample (inner-join on (country, t) over all four).",
+  "parameters": {
+    "T_years": [
+      1960,
+      1965,
+      1970,
+      1975,
+      1980,
+      1985,
+      1990
+    ],
+    "outcome_lags": {
+      "le_tp28": 28,
+      "tfr_tp5": 5,
+      "u5mr_tp12": 12,
+      "ced_tp28": 28
+    },
+    "entry_threshold": 10,
+    "ceiling": 90,
+    "edu_measure": "lower_sec"
+  },
+  "per_outcome": {
+    "life_expectancy_log": {
+      "edu_alone_r2": 0.4262,
+      "gdp_alone_r2": 0.1478,
+      "both_r2": 0.4297,
+      "edu_unique_r2": 0.2819,
+      "gdp_unique_r2": 0.0035,
+      "ratio": 81.39,
+      "edu_beta_joint": 0.0031,
+      "edu_se_joint": 0.0003,
+      "edu_p_joint": 0.0,
+      "gdp_beta_joint": -0.0139,
+      "gdp_se_joint": 0.0131,
+      "gdp_p_joint": 0.2897,
+      "n": 659,
+      "n_countries": 126
+    },
+    "tfr_log": {
+      "edu_alone_r2": 0.7258,
+      "gdp_alone_r2": 0.3642,
+      "both_r2": 0.7292,
+      "edu_unique_r2": 0.365,
+      "gdp_unique_r2": 0.0034,
+      "ratio": 107.45,
+      "edu_beta_joint": -0.015,
+      "edu_se_joint": 0.0009,
+      "edu_p_joint": 0.0,
+      "gdp_beta_joint": -0.059,
+      "gdp_se_joint": 0.0403,
+      "gdp_p_joint": 0.1429,
+      "n": 659,
+      "n_countries": 126
+    },
+    "u5mr_log": {
+      "edu_alone_r2": 0.7299,
+      "gdp_alone_r2": 0.3872,
+      "both_r2": 0.7369,
+      "edu_unique_r2": 0.3497,
+      "gdp_unique_r2": 0.0069,
+      "ratio": 50.36,
+      "edu_beta_joint": -0.0269,
+      "edu_se_joint": 0.002,
+      "edu_p_joint": 0.0,
+      "gdp_beta_joint": -0.1543,
+      "gdp_se_joint": 0.0817,
+      "gdp_p_joint": 0.0588,
+      "n": 645,
+      "n_countries": 123
+    },
+    "child_education": {
+      "edu_alone_r2": 0.5657,
+      "gdp_alone_r2": 0.2957,
+      "both_r2": 0.5701,
+      "edu_unique_r2": 0.2744,
+      "gdp_unique_r2": 0.0044,
+      "ratio": 63.02,
+      "edu_beta_joint": 0.553,
+      "edu_se_joint": 0.0476,
+      "edu_p_joint": 0.0,
+      "gdp_beta_joint": 2.8447,
+      "gdp_se_joint": 2.0844,
+      "gdp_p_joint": 0.1723,
+      "n": 659,
+      "n_countries": 126
+    }
+  },
+  "u5mr_pre_post_2000": {
+    "pre_2000": {
+      "edu_alone_r2": 0.7472,
+      "gdp_alone_r2": 0.4805,
+      "both_r2": 0.7618,
+      "edu_unique_r2": 0.2814,
+      "gdp_unique_r2": 0.0147,
+      "ratio": 19.17,
+      "edu_beta_joint": -0.025,
+      "edu_se_joint": 0.0019,
+      "edu_p_joint": 0.0,
+      "gdp_beta_joint": -0.228,
+      "gdp_se_joint": 0.0765,
+      "gdp_p_joint": 0.0029,
+      "n": 529,
+      "n_countries": 115
+    }
+  },
+  "common_sample": {
+    "n": 652,
+    "n_countries": 130,
+    "results": {
+      "life_expectancy_log": {
+        "edu_alone_r2": 0.4216,
+        "gdp_alone_r2": 0.1445,
+        "both_r2": 0.4251,
+        "edu_unique_r2": 0.2806,
+        "gdp_unique_r2": 0.0035,
+        "ratio": 79.8,
+        "edu_beta_joint": 0.0031,
+        "edu_se_joint": 0.0003,
+        "edu_p_joint": 0.0,
+        "gdp_beta_joint": -0.014,
+        "gdp_se_joint": 0.0133,
+        "gdp_p_joint": 0.2908,
+        "n": 645,
+        "n_countries": 123
+      },
+      "tfr_log": {
+        "edu_alone_r2": 0.7216,
+        "gdp_alone_r2": 0.3614,
+        "both_r2": 0.7252,
+        "edu_unique_r2": 0.3638,
+        "gdp_unique_r2": 0.0036,
+        "ratio": 102.13,
+        "edu_beta_joint": -0.0149,
+        "edu_se_joint": 0.001,
+        "edu_p_joint": 0.0,
+        "gdp_beta_joint": -0.0601,
+        "gdp_se_joint": 0.0408,
+        "gdp_p_joint": 0.1401,
+        "n": 645,
+        "n_countries": 123
+      },
+      "u5mr_log": {
+        "edu_alone_r2": 0.7299,
+        "gdp_alone_r2": 0.3872,
+        "both_r2": 0.7369,
+        "edu_unique_r2": 0.3497,
+        "gdp_unique_r2": 0.0069,
+        "ratio": 50.36,
+        "edu_beta_joint": -0.0269,
+        "edu_se_joint": 0.002,
+        "edu_p_joint": 0.0,
+        "gdp_beta_joint": -0.1543,
+        "gdp_se_joint": 0.0817,
+        "gdp_p_joint": 0.0588,
+        "n": 645,
+        "n_countries": 123
+      },
+      "child_education": {
+        "edu_alone_r2": 0.5668,
+        "gdp_alone_r2": 0.2971,
+        "both_r2": 0.5716,
+        "edu_unique_r2": 0.2745,
+        "gdp_unique_r2": 0.0048,
+        "ratio": 57.45,
+        "edu_beta_joint": 0.5564,
+        "edu_se_joint": 0.0487,
+        "edu_p_joint": 0.0,
+        "gdp_beta_joint": 2.99,
+        "gdp_se_joint": 2.1012,
+        "gdp_p_joint": 0.1547,
+        "n": 645,
+        "n_countries": 123
+      }
+    }
+  },
+  "script": "scripts/residualization/unique_r2_decomposition.py"
+}

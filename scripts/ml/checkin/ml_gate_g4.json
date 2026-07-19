@@ -1,0 +1,65 @@
+{
+  "soviet_bloc_hollow_education": {
+    "signature": {
+      "countries_present": [
+        "russia",
+        "kazakhstan",
+        "uzbekistan",
+        "kyrgyzstan",
+        "tajikistan",
+        "turkmenistan",
+        "belarus",
+        "ukraine",
+        "moldova",
+        "georgia",
+        "armenia",
+        "azerbaijan",
+        "latvia",
+        "lithuania",
+        "estonia"
+      ],
+      "countries_missing": [],
+      "mean_resid_LE": -0.8687889417012532,
+      "mean_resid_TFR": 0.1360839136441549,
+      "mean_resid_U5MR": 10.090010430415472,
+      "mean_divergence": 3.354635740915934
+    },
+    "direction_matches": true,
+    "wcde_bl_divergence_high": true
+  },
+  "out_migration_artifact": {
+    "signature": {
+      "countries_present": [
+        "guyana",
+        "suriname"
+      ],
+      "countries_missing": [],
+      "mean_resid_LE": -5.925881862640381,
+      "mean_resid_TFR": 0.6871186137199402,
+      "mean_resid_U5MR": 8.270756959915161,
+      "mean_divergence": 1.658149456977844
+    },
+    "direction_matches": false
+  },
+  "oil_rent_bypass": {
+    "signature": {
+      "countries_present": [
+        "saudi arabia",
+        "kuwait",
+        "qatar",
+        "united arab emirates",
+        "oman",
+        "bahrain",
+        "equatorial guinea"
+      ],
+      "countries_missing": [],
+      "mean_resid_LE": 0.1710294314793178,
+      "mean_resid_TFR": 0.026398738792964376,
+      "mean_resid_U5MR": 1.2896042551313127,
+      "mean_divergence": 0.34409411634717674
+    },
+    "direction_matches": false
+  },
+  "pass": false,
+  "script": "scripts/ml/residual_atlas.py"
+}

@@ -1,0 +1,440 @@
+{
+  "method": "Biological-lag (parent-vantage) ML robustness battery. Each diagnostic run once per outcome at its biological horizon (LE@12, TFR@5, U5MR@12) over the 28/56/84 generational cohort stack. Feeds ECONOMETRICS.md and the Every-Method-Agrees narrative; the make-verify ML numbers live in spec_curve_parent.json / universal_evidence_parent_lag.json.",
+  "vantage": "parent",
+  "horizons": {
+    "LE": 12,
+    "TFR": 5,
+    "U5MR": 12
+  },
+  "n_results": 424,
+  "walk_forward": {
+    "1975": {
+      "TFR": {
+        "r2_baseline_median": 0.6698342561721802,
+        "edu_drop_median": 0.17000728845596313,
+        "n_seeds": 5
+      },
+      "U5MR": {
+        "r2_baseline_median": 0.6917116641998291,
+        "edu_drop_median": 0.20106184482574463,
+        "n_seeds": 5
+      },
+      "LE": {
+        "r2_baseline_median": 0.6617389917373657,
+        "edu_drop_median": 0.12489116191864014,
+        "n_seeds": 5
+      }
+    },
+    "1980": {
+      "TFR": {
+        "r2_baseline_median": 0.7736266851425171,
+        "edu_drop_median": 0.22261828184127808,
+        "n_seeds": 5
+      },
+      "U5MR": {
+        "r2_baseline_median": 0.720033586025238,
+        "edu_drop_median": 0.26112598180770874,
+        "n_seeds": 5
+      },
+      "LE": {
+        "r2_baseline_median": 0.7194627523422241,
+        "edu_drop_median": 0.12448811531066895,
+        "n_seeds": 5
+      }
+    },
+    "1985": {
+      "TFR": {
+        "r2_baseline_median": 0.825321614742279,
+        "edu_drop_median": 0.2468591332435608,
+        "n_seeds": 5
+      },
+      "U5MR": {
+        "r2_baseline_median": 0.7526803016662598,
+        "edu_drop_median": 0.23622894287109375,
+        "n_seeds": 5
+      },
+      "LE": {
+        "r2_baseline_median": 0.7357943058013916,
+        "edu_drop_median": 0.10272705554962158,
+        "n_seeds": 5
+      }
+    },
+    "1990": {
+      "TFR": {
+        "r2_baseline_median": 0.8530192375183105,
+        "edu_drop_median": 0.2653377056121826,
+        "n_seeds": 5
+      },
+      "U5MR": {
+        "r2_baseline_median": 0.7018511891365051,
+        "edu_drop_median": 0.14439767599105835,
+        "n_seeds": 5
+      },
+      "LE": {
+        "r2_baseline_median": 0.7888219952583313,
+        "edu_drop_median": 0.08937525749206543,
+        "n_seeds": 5
+      }
+    },
+    "1995": {
+      "TFR": {
+        "r2_baseline_median": 0.9077551364898682,
+        "edu_drop_median": 0.4415498375892639,
+        "n_seeds": 5
+      },
+      "U5MR": {
+        "r2_baseline_median": 0.737721860408783,
+        "edu_drop_median": 0.23024708032608032,
+        "n_seeds": 5
+      },
+      "LE": {
+        "r2_baseline_median": 0.8621628880500793,
+        "edu_drop_median": 0.17507213354110718,
+        "n_seeds": 5
+      }
+    },
+    "2000": {
+      "TFR": {
+        "r2_baseline_median": 0.8984507918357849,
+        "edu_drop_median": 0.5083580613136292,
+        "n_seeds": 5
+      },
+      "U5MR": {
+        "r2_baseline_median": 0.7005425691604614,
+        "edu_drop_median": 0.12088829278945923,
+        "n_seeds": 5
+      },
+      "LE": {
+        "r2_baseline_median": 0.8764494061470032,
+        "edu_drop_median": 0.1819756031036377,
+        "n_seeds": 5
+      }
+    }
+  },
+  "loo": {
+    "TFR": {
+      "n_countries": 184,
+      "r2_baseline_median": 0.8270415365695953,
+      "r2_baseline_min": -65.44270324707031,
+      "edu_drop_median": 0.6725677847862244
+    },
+    "U5MR": {
+      "n_countries": 184,
+      "r2_baseline_median": 0.818728506565094,
+      "r2_baseline_min": -22.477432250976562,
+      "edu_drop_median": 1.3298900723457336
+    },
+    "LE": {
+      "n_countries": 184,
+      "r2_baseline_median": 0.7768184542655945,
+      "r2_baseline_min": -18.10761833190918,
+      "edu_drop_median": 1.0350850820541382
+    }
+  },
+  "placebos": {
+    "TFR": {
+      "placebo_country_scramble": {
+        "median_edu_r2_drop": -0.0453463289859275,
+        "n": 15
+      },
+      "placebo_edu_replaced_gdprank": {
+        "median_edu_r2_drop": 0.11010188709934621,
+        "n": 3
+      },
+      "placebo_edu_replaced_latitude": {
+        "median_edu_r2_drop": 0.0008546651078484846,
+        "n": 3
+      },
+      "placebo_edu_replaced_noise": {
+        "median_edu_r2_drop": -0.003618285627693174,
+        "n": 15
+      },
+      "placebo_outcome_scramble": {
+        "median_edu_r2_drop": -0.01450267778883485,
+        "n": 15
+      },
+      "placebo_year_scramble": {
+        "median_edu_r2_drop": 0.10931998093272621,
+        "n": 15
+      }
+    },
+    "U5MR": {
+      "placebo_country_scramble": {
+        "median_edu_r2_drop": -0.051946992091130406,
+        "n": 15
+      },
+      "placebo_edu_replaced_gdprank": {
+        "median_edu_r2_drop": 0.07060968232914644,
+        "n": 3
+      },
+      "placebo_edu_replaced_latitude": {
+        "median_edu_r2_drop": 0.01186965875938828,
+        "n": 3
+      },
+      "placebo_edu_replaced_noise": {
+        "median_edu_r2_drop": -0.0024108609402633263,
+        "n": 15
+      },
+      "placebo_outcome_scramble": {
+        "median_edu_r2_drop": -0.022793616329899846,
+        "n": 15
+      },
+      "placebo_year_scramble": {
+        "median_edu_r2_drop": 0.1351228831898379,
+        "n": 15
+      }
+    },
+    "LE": {
+      "placebo_country_scramble": {
+        "median_edu_r2_drop": -0.04644239568519959,
+        "n": 15
+      },
+      "placebo_edu_replaced_gdprank": {
+        "median_edu_r2_drop": 0.07693598826064063,
+        "n": 3
+      },
+      "placebo_edu_replaced_latitude": {
+        "median_edu_r2_drop": 0.014141700953965719,
+        "n": 3
+      },
+      "placebo_edu_replaced_noise": {
+        "median_edu_r2_drop": -0.004708932282184497,
+        "n": 15
+      },
+      "placebo_outcome_scramble": {
+        "median_edu_r2_drop": -0.022054022977513688,
+        "n": 15
+      },
+      "placebo_year_scramble": {
+        "median_edu_r2_drop": 0.07403436791316398,
+        "n": 15
+      }
+    }
+  },
+  "optuna": {
+    "best_value": 0.8018296400705974,
+    "best_params": {
+      "d_model": 128,
+      "num_layers": 1,
+      "nhead": 2,
+      "ff_mult": 2,
+      "dropout": 0.12530906978016165,
+      "lr": 0.0005498845050874993,
+      "weight_decay": 1.633667183579468e-05
+    },
+    "shard": "parent_optuna_shard_63of100"
+  },
+  "cond_perm": {
+    "LE": {
+      "drop_mean": 0.3197262721167192,
+      "drop_std": 0.03568928652883697,
+      "drop_ci95": [
+        0.2517427229432961,
+        0.39120731452921353
+      ]
+    },
+    "TFR": {
+      "drop_mean": 0.5269310320538331,
+      "drop_std": 0.025863545684192683,
+      "drop_ci95": [
+        0.4827833209199976,
+        0.5793073287191407
+      ]
+    },
+    "U5MR": {
+      "drop_mean": 0.45834942704448506,
+      "drop_std": 0.03373678159110391,
+      "drop_ci95": [
+        0.39845430834674145,
+        0.5178721597747438
+      ]
+    }
+  },
+  "strat": {
+    "era_1960_1975": {
+      "TFR": {
+        "r2_oof_median": 0.8182632923126221,
+        "n_seeds": 5
+      },
+      "U5MR": {
+        "r2_oof_median": 0.7192928194999695,
+        "n_seeds": 5
+      },
+      "LE": {
+        "r2_oof_median": 0.7155090570449829,
+        "n_seeds": 5
+      }
+    },
+    "era_1960_2020": {
+      "TFR": {
+        "r2_oof_median": 0.852022647857666,
+        "n_seeds": 4
+      },
+      "U5MR": {
+        "r2_oof_median": 0.7569499313831329,
+        "n_seeds": 4
+      },
+      "LE": {
+        "r2_oof_median": 0.7392400503158569,
+        "n_seeds": 4
+      }
+    },
+    "era_1975_1990": {
+      "TFR": {
+        "r2_oof_median": 0.8253969550132751,
+        "n_seeds": 5
+      },
+      "U5MR": {
+        "r2_oof_median": 0.7291582822799683,
+        "n_seeds": 5
+      },
+      "LE": {
+        "r2_oof_median": 0.7058762311935425,
+        "n_seeds": 5
+      }
+    },
+    "era_1990_2005": {
+      "TFR": {
+        "r2_oof_median": 0.8249180912971497,
+        "n_seeds": 5
+      },
+      "U5MR": {
+        "r2_oof_median": 0.7296266555786133,
+        "n_seeds": 5
+      },
+      "LE": {
+        "r2_oof_median": 0.7462393045425415,
+        "n_seeds": 5
+      }
+    },
+    "income_low": {
+      "TFR": {
+        "r2_oof_median": 0.6977461576461792,
+        "n_seeds": 5
+      },
+      "U5MR": {
+        "r2_oof_median": 0.5483450889587402,
+        "n_seeds": 5
+      },
+      "LE": {
+        "r2_oof_median": 0.48648911714553833,
+        "n_seeds": 5
+      }
+    },
+    "income_lower_middle": {
+      "TFR": {
+        "r2_oof_median": 0.8301050662994385,
+        "n_seeds": 5
+      },
+      "U5MR": {
+        "r2_oof_median": 0.686174750328064,
+        "n_seeds": 5
+      },
+      "LE": {
+        "r2_oof_median": 0.6427050828933716,
+        "n_seeds": 5
+      }
+    },
+    "income_upper_middle_plus": {
+      "TFR": {
+        "r2_oof_median": 0.8078529834747314,
+        "n_seeds": 5
+      },
+      "U5MR": {
+        "r2_oof_median": 0.6598937511444092,
+        "n_seeds": 5
+      },
+      "LE": {
+        "r2_oof_median": 0.7276352643966675,
+        "n_seeds": 5
+      }
+    },
+    "region_east_asia_pacific": {
+      "TFR": {
+        "r2_oof_median": 0.7461837530136108,
+        "n_seeds": 5
+      },
+      "U5MR": {
+        "r2_oof_median": 0.6398093700408936,
+        "n_seeds": 5
+      },
+      "LE": {
+        "r2_oof_median": 0.6250531673431396,
+        "n_seeds": 5
+      }
+    },
+    "region_europe_central_asia": {
+      "TFR": {
+        "r2_oof_median": 0.732256293296814,
+        "n_seeds": 5
+      },
+      "U5MR": {
+        "r2_oof_median": 0.7800003290176392,
+        "n_seeds": 5
+      },
+      "LE": {
+        "r2_oof_median": 0.7489529252052307,
+        "n_seeds": 5
+      }
+    },
+    "region_latin_america_caribbean": {
+      "TFR": {
+        "r2_oof_median": 0.793449878692627,
+        "n_seeds": 5
+      },
+      "U5MR": {
+        "r2_oof_median": 0.8139124512672424,
+        "n_seeds": 5
+      },
+      "LE": {
+        "r2_oof_median": 0.8220597505569458,
+        "n_seeds": 5
+      }
+    },
+    "region_middle_east_north_africa": {
+      "TFR": {
+        "r2_oof_median": 0.7680538296699524,
+        "n_seeds": 5
+      },
+      "U5MR": {
+        "r2_oof_median": 0.6983466148376465,
+        "n_seeds": 5
+      },
+      "LE": {
+        "r2_oof_median": 0.6724225878715515,
+        "n_seeds": 5
+      }
+    },
+    "region_sub_saharan_africa": {
+      "TFR": {
+        "r2_oof_median": 0.6774318814277649,
+        "n_seeds": 5
+      },
+      "U5MR": {
+        "r2_oof_median": 0.5910062193870544,
+        "n_seeds": 5
+      },
+      "LE": {
+        "r2_oof_median": 0.3803793787956238,
+        "n_seeds": 5
+      }
+    }
+  },
+  "barro_lee": {
+    "LE": {
+      "r2_median": 0.7463953971862793,
+      "edu_drop_fraction_median": 0.14062711596488953,
+      "n_seeds": 15
+    },
+    "TFR": {
+      "r2_median": 0.8455473899841308,
+      "edu_drop_fraction_median": 0.11471138149499893,
+      "n_seeds": 15
+    },
+    "U5MR": {
+      "r2_median": 0.740973711013794,
+      "edu_drop_fraction_median": 0.1434037685394287,
+      "n_seeds": 15
+    }
+  }
+}

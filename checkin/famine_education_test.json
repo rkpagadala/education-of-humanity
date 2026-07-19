@@ -1,0 +1,17 @@
+{
+  "numbers": {
+    "Famine-count": 21,
+    "Famine-below-50-ct": 19,
+    "Famine-median-edu": 19.6,
+    "Famine-mean-edu": 25.4,
+    "NM-median-edu": 71.6,
+    "Famine-p-val": 8.144112901501489e-06
+  },
+  "metadata": {
+    "description": "Famine vs education test: 21 major famines since 1950",
+    "data_source": "WCDE v3 (lower secondary completion)",
+    "test": "Mann-Whitney U (famine < near-miss)",
+    "famine_count": 21,
+    "near_miss_count": 18
+  }
+}
